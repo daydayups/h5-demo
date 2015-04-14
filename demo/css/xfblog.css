@@ -2,11 +2,13 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   margin: 0;
   padding: 0;
   background-color: #f8f8f8;
 }
+
 /* css module */
 a {
   text-decoration: none;
@@ -87,8 +89,6 @@ li {
   height: 100%;
 }
 
-
-
 #container {
   /*background: #646464;*/
   text-align: center;
@@ -114,7 +114,6 @@ li {
   /*there is no space between the two class */
   width: 840px;
   height: 1065px;
-  overflow: scroll;
   background: #ffffff;
 }
 
@@ -161,6 +160,7 @@ li {
   left: 0;
   color: #646464;
 }
+
 .thumbnail .on-info-category {
   position: absolute;
   top: 175px;
@@ -203,16 +203,14 @@ li {
   background: #ffffff;
   position: relative;
   top: 56px;
+  overflow: scroll;
 }
 
 .content figure {
   max-width: 840px;
   max-height: 840px;
-  overflow: hidden;
 }
 
 .content p {
   color: #646464;
 }
-
-/* 后台 */
