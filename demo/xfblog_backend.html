@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>index</title>
+  <link rel='stylesheet' href='../css/nprogress.css'/>
+  <link rel="stylesheet" href="css/xfblog.css"/>
+
+  <script src='../js/nprogress.js'></script>
+  <script src="../js/jquery-2.1.1.js"></script>
+  <script src="js/xfblog.js"></script>
+</head>
+<body>
+
+<script>
+  NProgress.start();
+  setTimeout(function () {
+    NProgress.done();
+    $('.fade').removeClass('out');
+  }, 1000);
+</script>
+
+<div class="wrap">
+  <div class="left-bar">
+    <ul>
+      <li><a href="">首页</a></li>
+      <li><a href="">文章管理</a></li>
+      <li><a href="">标签管理</a></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+
+<script>
+  //    NProgress.done();
+</script>
+
+</html>
