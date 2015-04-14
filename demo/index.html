@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <title>index</title>
+
+    <link rel='stylesheet' href='../css/nprogress.css'/>
+    <link rel="stylesheet" href="css/index.css"/>
+
+    <script src='../js/nprogress.js'></script>
+    <script src="../js/jquery-2.1.1.js"></script>
+    <script src="../js/isotope.pkgd.js"></script>
+    <script src="../js/jquery.shuffleLetters.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+
+<body>
+
+<script>
+    NProgress.start();
+    setTimeout(function() { NProgress.done(); $('.fade').removeClass('out'); }, 1000);
+</script>
+
+<div id="click-area"></div>
+<header>
+    <h1>XFBlog</h1>
+
+    <p>I love coding!</p>
+
+    <div id="filter">
+        <ul class="click-filter">
+
+            <li id="filter-all">
+                <a href=".all" class="filtering current">ALL</a>
+            </li>
+            <li id="filter-programming">
+                <a href=".programming" class="filtering">PROGRAMMING</a>
+            </li>
+            <li id="filter-drawing">
+                <a href=".drawing" class="filtering">DRAWING</a>
+            </li>
+            <li id="filter-uid">
+                <a href=".uid" class="filtering">UID</a>
+            </li>
+            <li id="filter-about">
+                <a href=".about" class="filtering">ABOUT</a>
+            </li>
+
+        </ul>
+    </div>
+
+</header>
+
+<!--<div id="click-area" class="available"></div>-->
+<div id="block-area">
+<ul id="container">
+<li class="block about">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b001.jpg" alt=""/></figure>
+        <time class="on-info">14.7.29</time>
+        <h2>STORY1</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY1</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content001.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block about">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b002.jpg" alt=""/></figure>
+        <time class="on-info">14.7.29</time>
+        <h2>STORY2</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY2</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content002.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block about">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b003.jpg" alt=""/></figure>
+        <time class="on-info">14.7.29</time>
+        <h2>STORY3</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY3</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content003.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block about">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b004.jpg" alt=""/></figure>
+        <time class="on-info">14.7.29</time>
+        <h2>STORY4</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY4</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content004.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block about">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b005.jpg" alt=""/></figure>
+        <time class="on-info">14.7.29</time>
+        <h2>STORY5</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY5</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content005.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block about">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b006.jpg" alt=""/></figure>
+        <time class="on-info">14.7.29</time>
+        <h2>STORY6</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY6</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content006.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block about">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b007.jpg" alt=""/></figure>
+        <time class="on-info">14.7.29</time>
+        <h2>STORY7</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY7</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content007.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block about">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b008.jpg" alt=""/></figure>
+        <time class="on-info">14.7.29</time>
+        <h2>STORY8</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY8</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content008.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block about">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b009.jpg" alt=""/></figure>
+        <time class="on-info">14.7.29</time>
+        <h2>STORY9</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY9</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content009.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block programming">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b010.jpg" alt=""/></figure>
+        <time class="on-info">14.7.29</time>
+        <h2>STORY10</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY10</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content010.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block about">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b011.jpg" alt=""/></figure>
+        <time class="on-info">14.7.29</time>
+        <h2>STORY11</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY11</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content011.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block about">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b012.jpg" alt=""/></figure>
+        <time class="on-info">14.7.29</time>
+        <h2>STORY12</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY12</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content012.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block drawing">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b013.jpg" alt=""/></figure>
+        <time class="on-info">14.7.29</time>
+        <h2>STORY13</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time data-time="14.7.29 00:00:00">14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY13</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content013.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block drawing">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b014.jpg" alt=""/></figure>
+        <time class="on-info" data-time="14.7.29 00:02:00">14.7.29</time>
+        <h2>STORY14</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY14</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content014.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block drawing">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b015.jpg" alt=""/></figure>
+        <time class="on-info" data-time="14.7.29 00:01:00">14.7.29</time>
+        <h2>STORY15</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY15</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content015.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block uid">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b016.jpg" alt=""/></figure>
+        <time class="on-info" data-time="14.7.29 00:05:00">14.7.29</time>
+        <h2>STORY16</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY16</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content016.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block uid">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b017.jpg" alt=""/></figure>
+        <time class="on-info" data-time="14.7.29 00:04:00">14.7.29</time>
+        <h2>STORY17</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY17</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content017.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+<li class="block uid">
+    <div class="thumbnail">
+        <figure><img src="../img/aldnoah/thumbnail/thum_b018.jpg" alt=""/></figure>
+        <time class="on-info" data-time="14.7.29 00:03:00">14.7.29</time>
+        <h2>STORY18</h2>
+    </div>
+    <div class="display">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">
+            <h2>STORY18</h2>
+
+            <p>The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+                in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet)
+                square and almost flat, and is a famous tourist attraction in Norway.</p>
+            <figure><img src="../img/aldnoah/content/content018.jpg" alt=""/></figure>
+        </div>
+    </div>
+</li>
+</ul>
+</div>
+
+</body>
+
+<script>
+    /*NProgress.done();*/
+</script>
+
+</html>

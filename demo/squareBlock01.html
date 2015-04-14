@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../js/jquery-2.1.1.js"></script>
+    <title>squareBlock01</title>
+
+    <style>
+
+        body {
+            background-color: #000000;
+        }
+
+        div {
+            display: block;
+        }
+
+        #container {
+            text-align: center;
+            /*width: 1080px;*/
+            position: relative;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /*block css that*/
+        .block {
+            width: 150px;
+            height: 150px;
+            background-color: #ffffff;
+            margin: 30px;
+            float: left;
+            /*border: 1px solid #1169fe;*/
+            visibility: visible;
+            transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+            -moz-transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+            -webkit-transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+            -o-transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+
+        }
+
+        .block:hover {
+            cursor: pointer;
+            /*background-color: #2299dd;*/
+        }
+
+        .block-active {
+
+            width: 780px;
+            height: 975px;
+            /*background-color: #dddada;*/
+            margin: 30px;
+            position: relative;
+            /*float: left;*/
+            /*需要环绕排版*/
+        }
+
+        .thumbnail {
+            /*display: block;*/
+        }
+
+        .close {
+            /*background-color: #1169fe;*/
+        }
+
+        .display {
+            /*background-color: red;*/
+            cursor: default;
+            font-size: 14px;
+        }
+
+        .display time {
+            position: absolute;
+            top: 13px;
+            left: 20px;
+
+        }
+
+        .display .category {
+            position: absolute;
+            top: 13px;
+            left: 100px;
+            /*font-size: 14px;*/
+        }
+
+        .display .close {
+            cursor: pointer;
+            position: absolute;
+            right: 1px;
+            top: 1px;
+        }
+
+        .display .meta {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+            width: 100%;
+            height: 40px;
+            font-weight: 400;
+        }
+
+        .content {
+            background: #ffffff;
+            min-height: 163px;
+            max-height: 925px;
+            color: #000000;
+            position: relative;
+            font-weight: 400;
+            margin-top: 50px;
+        }
+    </style>
+
+</head>
+<body>
+
+<script>
+    $(function () {
+
+        var blocks = document.querySelectorAll("li.block");
+
+        /**
+         * when a div.square is clicked, change the class of
+         * this element to square-active
+         */
+        $("li.block").click(function () {
+            reset();
+
+            $(this).addClass("block-active");
+            this.querySelector(".display").style.display = "";
+            this.querySelector(".thumbnail").style.display = "none";
+            //alert(this.querySelector(".display").innerHTML);
+        });
+
+        $(".close").click(function (event) {
+            reset();
+            //stop event propagation
+            event.stopPropagation();
+        });
+
+        function reset() {
+            //alert("reset");
+            /*
+             iterate the blocks back to default status
+             and div.display should be none.
+             */
+            for (var i = 0; i < blocks.length; i++) {
+                blocks[i].querySelector(".display").style.display = "none";
+                blocks[i].querySelector(".thumbnail").style.display = "";
+                blocks[i].className = "block";
+            }
+
+        };
+
+    });
+</script>
+
+<div>
+<!--
+    ul#container>li.block*18>(div.thumbnail>figure>img[src="../img/thum$.png"]+time{14.7.29}+h2{STORY$})
+      +div.display[style="display: none;"]>(div.meta>time{14.7.29}+div.category{ARTICLE}+div.close>img[src="../img/block_close.png"])
+      +div.content>h2{STORY$}+p{The Pulpit Rock is a massive cliff 604 metres (1982 feet) above Lysefjorden, opposite the Kjerag plateau,
+      in Forsand, Ryfylke, Norway. The top of the cliff is approximately 25 by 25 metres (82 by 82 feet) square and
+      almost flat, and is a famous tourist attraction in Norway.}+figure>img[src="../img/story$.png"]
+-->
+<ul id="container">
+<li class="block">
+    <div class="thumbnail">
+        <figure>1</figure>
+        <time>14.7.29</time>
+        <h2>STORY1</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE1</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content1</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>2</figure>
+        <time>14.7.29</time>
+        <h2>STORY2</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE2</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content2</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>3</figure>
+        <time>14.7.29</time>
+        <h2>STORY3</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE3</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content3</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>4</figure>
+        <time>14.7.29</time>
+        <h2>STORY4</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE4</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content4</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>5</figure>
+        <time>14.7.29</time>
+        <h2>STORY5</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE5</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content5</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>6</figure>
+        <time>14.7.29</time>
+        <h2>STORY6</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE6</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content6</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>7</figure>
+        <time>14.7.29</time>
+        <h2>STORY7</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE7</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content7</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>8</figure>
+        <time>14.7.29</time>
+        <h2>STORY8</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE8</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content8</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>9</figure>
+        <time>14.7.29</time>
+        <h2>STORY9</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE9</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content9</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>10</figure>
+        <time>14.7.29</time>
+        <h2>STORY10</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE10</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content10</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>11</figure>
+        <time>14.7.29</time>
+        <h2>STORY11</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE11</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content11</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>12</figure>
+        <time>14.7.29</time>
+        <h2>STORY12</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE12</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content12</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>13</figure>
+        <time>14.7.29</time>
+        <h2>STORY13</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE13</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content13</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>14</figure>
+        <time>14.7.29</time>
+        <h2>STORY14</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE14</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content14</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>15</figure>
+        <time>14.7.29</time>
+        <h2>STORY15</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE15</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content15</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>16</figure>
+        <time>14.7.29</time>
+        <h2>STORY16</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE16</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content16</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>17</figure>
+        <time>14.7.29</time>
+        <h2>STORY17</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE17</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content17</div>
+    </div>
+</li>
+<li class="block">
+    <div class="thumbnail">
+        <figure>18</figure>
+        <time>14.7.29</time>
+        <h2>STORY18</h2>
+    </div>
+    <div class="display" style="display: none;">
+        <div class="meta">
+            <time>14.7.29</time>
+            <div class="category">ARTICLE18</div>
+            <div class="close"><img src="../img/block_close.png" alt=""/></div>
+        </div>
+        <div class="content">This is content18</div>
+    </div>
+</li>
+</ul>
+
+</div>
+</body>
+</html>
