@@ -2,11 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11be4ce2-61a1-48f9-856b-b5bdb5bd1e9b" name="Default" comment="jquery dragbox test">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demo/css/xfblog_backend.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/PureCSSNav.html" afterPath="$PROJECT_DIR$/demo/PureCSSNav.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/css/xfblog.css" afterPath="$PROJECT_DIR$/demo/css/xfblog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo/xfblog_backend.html" afterPath="$PROJECT_DIR$/demo/xfblog_backend.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\demo\EmmetCode" afterPath="$PROJECT_DIR$/EmmetCode" />
+      <change type="MOVED" beforePath="F:\Github\Demos\demo\PureCSSNav.html" afterPath="$PROJECT_DIR$/PureCSSNav.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\demo\css\index.css" afterPath="$PROJECT_DIR$/css/index.css" />
+      <change type="MOVED" beforePath="F:\Github\Demos\demo\css\xfblog.css" afterPath="$PROJECT_DIR$/css/xfblog.css" />
+      <change type="MOVED" beforePath="F:\Github\Demos\demo\css\xfblog_backend.css" afterPath="$PROJECT_DIR$/css/xfblog_backend.css" />
+      <change type="MOVED" beforePath="F:\Github\Demos\demo\dragbox.html" afterPath="$PROJECT_DIR$/dragbox.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\demo\index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\demo\isotope00.html" afterPath="$PROJECT_DIR$/isotope00.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\demo\isotope01.html" afterPath="$PROJECT_DIR$/isotope01.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\demo\js\index.js" afterPath="$PROJECT_DIR$/js/index.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\demo\js\xfblog.js" afterPath="$PROJECT_DIR$/js/xfblog.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\demo\squareBlock00.html" afterPath="$PROJECT_DIR$/squareBlock00.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\demo\squareBlock01.html" afterPath="$PROJECT_DIR$/squareBlock01.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\demo\squareBlock02.html" afterPath="$PROJECT_DIR$/squareBlock02.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\demo\xfblog.html" afterPath="$PROJECT_DIR$/xfblog.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\demo\xfblog_backend.html" afterPath="$PROJECT_DIR$/xfblog_backend.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\isotope.pkgd.js" afterPath="$PROJECT_DIR$/js/plugins/isotope.pkgd.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\jquery-2.1.1.js" afterPath="$PROJECT_DIR$/js/plugins/jquery-2.1.1.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\jquery.shuffleLetters.js" afterPath="$PROJECT_DIR$/js/plugins/jquery.shuffleLetters.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\nprogress.js" afterPath="$PROJECT_DIR$/js/plugins/nprogress.js" />
     </list>
     <ignored path="XFBlog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,30 +46,67 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="xfblog_backend.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/css/xfblog_backend.css">
+        <entry file="file://$PROJECT_DIR$/css/xfblog_backend.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="1536" max-vertical-offset="2794">
               <caret line="109" column="22" selection-start-line="109" selection-start-column="22" selection-end-line="109" selection-end-column="22" />
-              <folding>
-                <element signature="e#1737#2090#2" expanded="true" />
-                <element signature="e#2280#2669#2" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xfblog_backend.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo/xfblog_backend.html">
+      <file leaf-file-name="xfblog_backend.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xfblog_backend.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5935335" vertical-offset="234" max-vertical-offset="1100">
-              <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+            <state vertical-scroll-proportion="-0.9677419" vertical-offset="168" max-vertical-offset="1100">
+              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dragbox.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dragbox.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.580646" vertical-offset="450" max-vertical-offset="2530">
+              <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="squareBlock00.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/squareBlock00.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.0645162" vertical-offset="517" max-vertical-offset="2178">
+              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="squareBlock02.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/squareBlock02.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.806452" vertical-offset="0" max-vertical-offset="12958">
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xfblog.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/xfblog.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4064665" vertical-offset="330" max-vertical-offset="10560">
+              <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="xfblog.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/js/xfblog.js">
+        <entry file="file://$PROJECT_DIR$/js/xfblog.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2464">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -63,9 +116,9 @@
         </entry>
       </file>
       <file leaf-file-name="PureCSSNav.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/PureCSSNav.html">
+        <entry file="file://$PROJECT_DIR$/PureCSSNav.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.806452" vertical-offset="2376" max-vertical-offset="3476">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2376" max-vertical-offset="3476">
               <caret line="119" column="91" selection-start-line="119" selection-start-column="91" selection-end-line="119" selection-end-column="91" />
               <folding />
             </state>
@@ -109,6 +162,8 @@
         <option value="$PROJECT_DIR$/demo/css/xfblog.css" />
         <option value="$PROJECT_DIR$/demo/css/xfblog_backend.css" />
         <option value="$PROJECT_DIR$/demo/xfblog_backend.html" />
+        <option value="$PROJECT_DIR$/xfblog_backend.html" />
+        <option value="$PROJECT_DIR$/xfblog.html" />
       </list>
     </option>
   </component>
@@ -191,38 +246,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -252,13 +275,22 @@
       <recent name="E:\workspace\XFBlog\demo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Github\Demos" />
+      <recent name="F:\Github\Demos\js" />
+      <recent name="F:\Github\Demos\js\plugins" />
+      <recent name="F:\Github\Demos\css" />
       <recent name="E:\workspace\XFBlog\img" />
-      <recent name="E:\workspace\XFBlog\demo" />
-      <recent name="E:\workspace\XFBlog\css" />
-      <recent name="E:\workspace\XFBlog\js" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -269,12 +301,14 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
       <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -282,16 +316,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
-      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="NodeunitConfigurationType" factoryName="Nodeunit">
@@ -307,11 +331,11 @@
     <configuration default="true" type="JavaScriptTraceType" factoryName="Spy-js" node="" config="" has-config="false" system-proxy="true" proxy-port="3546">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="NodeWebKit" factoryName="Node-webkit">
       <option name="name" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
@@ -323,9 +347,6 @@
       <extra-mocha-options />
       <test-directory />
       <recursive>false</recursive>
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="XSLT" factoryName="XSLT">
@@ -342,6 +363,9 @@
       <OutputType value="CONSOLE" save-to-file="false" />
       <FileType name="XML" />
       <JdkChoice value="FROM_MODULE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
     <list size="0" />
@@ -403,7 +427,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11696523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16227607" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -411,12 +435,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -446,23 +470,15 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo/xfblog.html">
+    <entry file="file://$PROJECT_DIR$/xfblog_backend.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10560">
-          <caret line="406" column="41" selection-start-line="406" selection-start-column="41" selection-end-line="406" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="1100">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/xfblog_backend.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="506" max-vertical-offset="968">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/js/xfblog.js">
+    <entry file="file://$PROJECT_DIR$/js/xfblog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2464">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -470,15 +486,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/css/xfblog.css">
+    <entry file="file://$PROJECT_DIR$/PureCSSNav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4928">
-          <caret line="201" column="10" selection-start-line="201" selection-start-column="10" selection-end-line="201" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2376" max-vertical-offset="3476">
+          <caret line="119" column="91" selection-start-line="119" selection-start-column="91" selection-end-line="119" selection-end-column="91" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/xfblog.html">
+    <entry file="file://$PROJECT_DIR$/xfblog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10560">
           <caret line="406" column="41" selection-start-line="406" selection-start-column="41" selection-end-line="406" selection-end-column="41" />
@@ -486,7 +502,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/js/xfblog.js">
+    <entry file="file://$PROJECT_DIR$/xfblog_backend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="506" max-vertical-offset="968">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/xfblog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2464">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/xfblog.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4928">
+          <caret line="201" column="10" selection-start-line="201" selection-start-column="10" selection-end-line="201" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xfblog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="10560">
+          <caret line="406" column="41" selection-start-line="406" selection-start-column="41" selection-end-line="406" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/xfblog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="2464">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -494,7 +542,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/css/xfblog.css">
+    <entry file="file://$PROJECT_DIR$/css/xfblog.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4862">
           <caret line="166" column="10" selection-start-line="166" selection-start-column="10" selection-end-line="166" selection-end-column="10" />
@@ -502,147 +550,147 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/dragbox.html">
+    <entry file="file://$PROJECT_DIR$/dragbox.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2530">
           <caret line="107" column="147" selection-start-line="107" selection-start-column="147" selection-end-line="107" selection-end-column="147" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/dragbox.html">
+    <entry file="file://$PROJECT_DIR$/dragbox.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="844" max-vertical-offset="2530">
           <caret line="107" column="147" selection-start-line="107" selection-start-column="147" selection-end-line="107" selection-end-column="147" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/dragbox.html">
+    <entry file="file://$PROJECT_DIR$/dragbox.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="792" max-vertical-offset="2244">
           <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/js/index.js">
+    <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2464">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/index.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="603" max-vertical-offset="2464">
           <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/js/index.js">
+    <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2464">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/index.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="603" max-vertical-offset="2464">
           <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/js/index.js">
+    <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2050" max-vertical-offset="2800">
           <caret line="82" column="45" selection-start-line="82" selection-start-column="45" selection-end-line="82" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/css/index.css">
+    <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2020" max-vertical-offset="3920">
           <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/isotope00.html">
+    <entry file="file://$PROJECT_DIR$/isotope00.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3898" max-vertical-offset="11380">
           <caret line="200" column="23" selection-start-line="200" selection-start-column="23" selection-end-line="200" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/isotope00.html">
+    <entry file="file://$PROJECT_DIR$/isotope00.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1638" max-vertical-offset="10520">
           <caret line="96" column="52" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/isotope00.html">
+    <entry file="file://$PROJECT_DIR$/isotope00.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1560" max-vertical-offset="9700">
           <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/squareBlock01.html">
+    <entry file="file://$PROJECT_DIR$/squareBlock01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="8980">
           <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/isotope00.html">
+    <entry file="file://$PROJECT_DIR$/isotope00.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="10620">
           <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/squareBlock01.html">
+    <entry file="file://$PROJECT_DIR$/squareBlock01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2501" max-vertical-offset="8820">
           <caret line="156" column="39" selection-start-line="156" selection-start-column="39" selection-end-line="156" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/squareBlock01.html">
+    <entry file="file://$PROJECT_DIR$/squareBlock01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="8780">
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/squareBlock01.html">
+    <entry file="file://$PROJECT_DIR$/squareBlock01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2096" max-vertical-offset="7860">
           <caret line="116" column="28" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/squareBlock01.html">
+    <entry file="file://$PROJECT_DIR$/squareBlock01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4656" max-vertical-offset="5900">
           <caret line="235" column="35" selection-start-line="235" selection-start-column="35" selection-end-line="235" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/squareBlock00.html">
+    <entry file="file://$PROJECT_DIR$/squareBlock00.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="886" max-vertical-offset="1980">
           <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/nprogress.js">
+    <entry file="file://$PROJECT_DIR$/js/plugins/nprogress.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9480">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery-2.1.1.js">
+    <entry file="file://$PROJECT_DIR$/js/plugins/jquery-2.1.1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="58954" max-vertical-offset="183680">
           <caret line="2968" column="4" selection-start-line="2968" selection-start-column="4" selection-end-line="2968" selection-end-column="4" />
@@ -654,49 +702,35 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/squareBlock00.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.036036037" vertical-offset="480" max-vertical-offset="1980">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/squareBlock02.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40590405" vertical-offset="0" max-vertical-offset="11780">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/squareBlock01.html">
+    <entry file="file://$PROJECT_DIR$/squareBlock01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.0295203" vertical-offset="1500" max-vertical-offset="8980">
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.shuffleLetters.js">
+    <entry file="file://$PROJECT_DIR$/js/plugins/jquery.shuffleLetters.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44520548" vertical-offset="0" max-vertical-offset="2900">
           <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/EmmetCode">
+    <entry file="file://$PROJECT_DIR$/EmmetCode">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="592" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/isotope01.html">
+    <entry file="file://$PROJECT_DIR$/isotope01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.724138" vertical-offset="3880" max-vertical-offset="13060">
           <caret line="211" column="12" selection-start-line="203" selection-start-column="10" selection-end-line="211" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/css/index.css">
+    <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3788904" vertical-offset="480" max-vertical-offset="3920">
           <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
@@ -710,42 +744,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/js/index.js">
+    <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2464">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/isotope00.html">
+    <entry file="file://$PROJECT_DIR$/isotope00.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9849711" vertical-offset="2778" max-vertical-offset="12518">
           <caret line="165" column="28" selection-start-line="165" selection-start-column="28" selection-end-line="165" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/dragbox.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32258064" vertical-offset="450" max-vertical-offset="2530">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/index.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09150327" vertical-offset="1088" max-vertical-offset="10318">
           <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/isotope.pkgd.js">
+    <entry file="file://$PROJECT_DIR$/js/plugins/isotope.pkgd.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.05263158" vertical-offset="29503" max-vertical-offset="85756">
           <caret line="1343" column="36" selection-start-line="1343" selection-start-column="23" selection-end-line="1343" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/js/xfblog.js">
+    <entry file="file://$PROJECT_DIR$/js/xfblog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="2464">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -753,15 +780,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/PureCSSNav.html">
+    <entry file="file://$PROJECT_DIR$/PureCSSNav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.806452" vertical-offset="2376" max-vertical-offset="3476">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2376" max-vertical-offset="3476">
           <caret line="119" column="91" selection-start-line="119" selection-start-column="91" selection-end-line="119" selection-end-column="91" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/css/xfblog.css">
+    <entry file="file://$PROJECT_DIR$/css/xfblog.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.9921963" vertical-offset="929" max-vertical-offset="4884">
           <caret line="205" column="19" selection-start-line="205" selection-start-column="19" selection-end-line="205" selection-end-column="19" />
@@ -769,29 +796,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/xfblog.html">
+    <entry file="file://$PROJECT_DIR$/css/xfblog_backend.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.48845264" vertical-offset="9333" max-vertical-offset="10560">
-          <caret line="405" column="26" selection-start-line="405" selection-start-column="26" selection-end-line="405" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1536" max-vertical-offset="2794">
+          <caret line="109" column="22" selection-start-line="109" selection-start-column="22" selection-end-line="109" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/css/xfblog_backend.css">
+    <entry file="file://$PROJECT_DIR$/xfblog_backend.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1536" max-vertical-offset="2794">
-          <caret line="109" column="22" selection-start-line="109" selection-start-column="22" selection-end-line="109" selection-end-column="22" />
-          <folding>
-            <element signature="e#1737#2090#2" expanded="true" />
-            <element signature="e#2280#2669#2" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-0.9677419" vertical-offset="168" max-vertical-offset="1100">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/xfblog_backend.html">
+    <entry file="file://$PROJECT_DIR$/dragbox.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5935335" vertical-offset="234" max-vertical-offset="1100">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+        <state vertical-scroll-proportion="-14.580646" vertical-offset="450" max-vertical-offset="2530">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squareBlock00.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0645162" vertical-offset="517" max-vertical-offset="2178">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squareBlock02.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.806452" vertical-offset="0" max-vertical-offset="12958">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xfblog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4064665" vertical-offset="330" max-vertical-offset="10560">
+          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
           <folding />
         </state>
       </provider>
