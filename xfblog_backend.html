@@ -2,16 +2,16 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title>index</title>
+  <title>XFBLOG-Backend</title>
   <link rel='stylesheet' href='css/nprogress.css'/>
   <link rel="stylesheet" href="css/xfblog_backend.css"/>
 
   <script src='js/plugins/nprogress.js'></script>
   <script src="js/plugins/jquery-2.1.1.js"></script>
-  <script src="js/xfblog.js"></script>
+  <!--<script src="js/xfblog.js"></script>-->
 </head>
 <body>
-
+<!-- processing进度条 -->
 <script>
   NProgress.start();
   setTimeout(function () {
@@ -20,26 +20,76 @@
   }, 1000);
 </script>
 
+  <!-- 左侧导航 -->
   <ul class="navigation">
-    <li class="nav-item"><a href="xfblog.html">Home</a></li>
-    <li class="nav-item"><a href="#">Portfolio</a></li>
-    <li class="nav-item"><a href="#">About</a></li>
-    <li class="nav-item"><a href="#">Blog</a></li>
-    <li class="nav-item"><a href="#">Contact</a></li>
+    <li class="nav-item"><a href="xfblog.html">首页</a></li>
+    <li class="nav-item"><a class="curr" href="#">写作</a></li>
+    <li class="nav-item"><a href="#">图片</a></li>
+    <li class="nav-item"><a href="#">收藏</a></li>
+    <li class="nav-item"><a href="#">小伙伴们</a></li>
   </ul>
 
-  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" checked >
   <label for="nav-trigger"></label>
+  <!-- 左侧导航结束 -->
 
-  <div class="site-wrap">
-fdsfsdf
-
+  <!-- 右侧内容页 写作 -->
+  <div class="site-wrap" id="write">
+    <!-- 内容左侧栏 -->
+    <div class="left-aside">
+      <div class="search-box">
+        <!--使用js 即时筛选-->
+        <input type="text" id="search-input" placeholder="搜索" >
+      </div>
+      <div class="article-list">
+        <div class="article-item">
+          <p class="title">Hello World <span class="time">2015-04-12</span></p>
+          <p class="content">MySQL版本：mysql-5.6.11-win32.zip （社区版）
+            操作系统：Win7 32bit， 和 Windows 2008 Server 32bit
+            MySql 的这个版本的安装与以往稍有不同，记录以备忘；</p>
+        </div>
+        <div class="article-item">
+          <p class="title">Hello World <span class="time">2015-04-12</span></p>
+          <p class="content">MySQL版本：mysql-5.6.11-win32.zip （社区版）
+            操作系统：Win7 32bit， 和 Windows 2008 Server 32bit
+            MySql 的这个版本的安装与以往稍有不同，记录以备忘；</p>
+        </div>
+        <div class="article-item">
+          <p class="title">Hello World <span class="time">2015-04-12</span></p>
+          <p class="content">MySQL版本：mysql-5.6.11-win32.zip （社区版）
+            操作系统：Win7 32bit， 和 Windows 2008 Server 32bit
+            MySql 的这个版本的安装与以往稍有不同，记录以备忘；</p>
+        </div>
+        <div class="article-item">
+          <p class="title">Hello World <span class="time">2015-04-12</span></p>
+          <p class="content">MySQL版本：mysql-5.6.11-win32.zip （社区版）
+            操作系统：Win7 32bit， 和 Windows 2008 Server 32bit
+            MySql 的这个版本的安装与以往稍有不同，记录以备忘；</p>
+        </div>
+      </div>
+    </div>
+    <!-- 内容右侧栏 -->
+    <div class="right-aside">
+      <div class="article-bar">
+        <button>预览</button>
+        <button>保存</button>
+        <button class="release">发布</button>
+      </div>
+      <div class="article-write">
+        <div class="title">
+          <input type="text" class="title-input" placeholder="无标题文章">
+        </div>
+        <div class="content">
+          <textarea class="content-input" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+    </div>
   </div>
-
+  <!-- 右侧内容页 结束 -->
 </body>
 
 <script>
-  //    NProgress.done();
+  //NProgress.done();
 </script>
 
 </html>

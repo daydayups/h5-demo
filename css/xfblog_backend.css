@@ -1,6 +1,276 @@
 * {
   font-family: "Microsoft YaHei";
 }
+
+body {
+  /* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
+}
+
+/* Additional non-critical styles */
+
+code {
+  padding: 2px;
+  background: #ddd;
+}
+
+/* Micro reset */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Microsoft Yahei', tahoma, Arial, Hiragino Sans GB, \5b8b\4f53, Helvetica, Arial, sans-serif;
+}
+
+/* modules */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-table;
+}
+
+/* - Hides from IE-mac - \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* - End hide from IE-mac - */
+
+/* 样式组件 */
+/* -float- */
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+/* -font- */
+.f-14 {
+  font-size: 14px;
+}
+
+.f-16 {
+  font-size: 16px;
+}
+
+.f-18 {
+  font-size: 18px;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.f-22 {
+  font-size: 22px;
+}
+
+.f-24 {
+  font-size: 24px;
+}
+
+.f-30 {
+  font-size: 30px;
+}
+
+.f-36 {
+  font-size: 36px;
+}
+
+.f-bold {
+  font-weight: bold;
+}
+
+/* -margin- */
+.ml-5 {
+  margin-left: 5px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.ml-25 {
+  margin-left: 25px;
+}
+
+.mr-25 {
+  margin-right: 25px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.ml-35 {
+  margin-left: 35px;
+}
+
+.mr-35 {
+  margin-right: 35px;
+}
+
+.mt-35 {
+  margin-top: 35px;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.mr-50 {
+  margin-right: 50px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+/* -color- */
+.cl-102 {
+  color: #666;
+}
+
+.cl-119 {
+  color: #777;
+}
+
+.cl-153 {
+  color: #999;
+}
+
+.cl-deepred {
+  color: #c50024;
+}
+
+.cl-red {
+  color: #df0000;
+}
+
+.cl-yellow {
+  color: #fddf58;
+}
+
 /* Navigation Menu - Background */
 .navigation {
   /* critical sizing and position styles */
@@ -42,22 +312,9 @@
   background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(75, 20, 20, 0.65) 100%);
 }
 
-/* Site Wrapper - Everything that isn't navigation */
-.site-wrap {
-  /* Critical position and size styles */
-  min-height: 100%;
-  min-width: 100%;
-  background-color: white; /* Needs a background or else the nav will show through */
-  position: relative;
-  top: 0;
-  bottom: 100%;
-  left: 0;
-  z-index: 1;
-
-  /* non-critical apperance styles */
-  padding: 4em;
-  background-image: linear-gradient(135deg, rgb(254, 255, 255) 0%, rgb(221, 241, 249) 35%, rgb(160, 216, 239) 100%);
-  background-size: 200%;
+.nav-item a.curr {
+  color: #c74438;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(75, 20, 20, 0.65) 100%);
 }
 
 /* Nav Trigger */
@@ -71,7 +328,7 @@ label[for="nav-trigger"] {
   /* critical positioning styles */
   position: fixed;
   left: 15px;
-  top: 15px;
+  bottom: 15px;
   z-index: 2;
 
   /* non-critical apperance styles */
@@ -97,29 +354,135 @@ label[for="nav-trigger"] {
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-body {
-  /* Without this, the body has excess horizontal scroll when the menu is open */
-  overflow-x: hidden;
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+  /* Critical position and size styles */
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white; /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  /* non-critical apperance styles */
+  /*padding: 4em;*/
+  /*background-size: 200%;*/
 }
 
-/* Additional non-critical styles */
-
-code {
-  padding: 2px;
-  background: #ddd;
+.left-aside {
+  width: 15%;
+  min-height: 100%;
+  background-color: #FFF;
+  /*background-image: linear-gradient(90deg, rgb(221, 241, 249) 2%, rgb(255, 255, 255) 10%);*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
 }
 
-/* Micro reset */
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.right-aside {
+  width: 85%;
+  min-height: 100%;
+  border-left: 3px solid #CCCBD0;
+  background-image: linear-gradient(90deg, rgb(221, 241, 249) 0.5%, rgb(255, 255, 255) 10%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 
-html, body {
-  height: 100%;
+/* 写文章 */
+#search-input {
+  background: none;
+  border-top: 1px solid #CCCBD0;
+  border-bottom: 1px solid #CCCBD0;
+  border-left: 0;
+  border-right: 0;
+  line-height: 50px;
   width: 100%;
-  font-family: Helvetica, Arial, sans-serif;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.article-item {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 10px;
+}
+
+.article-item:hover {
+  cursor: default;
+  background-color: #f1f1f1;
+}
+
+.article-item .title {
+  font-size: 24px;
+  color: #171717;
+  line-height: 35px;
+}
+
+.article-item .time {
+  font-size: 12px;
+  color: #999;
+  line-height: 35px;
+  float: right;
+}
+
+.article-item .content {
+  font-size: 14px;
+  color: #666;
+  line-height: 24px;
+  height: 96px;
+  overflow: hidden;
+}
+
+.article-bar {
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #CCCBD0;
+}
+
+button {
+  height: 34px;
+  width: 100px;
+  border-radius: 4px;
+  border: 1px solid #999;
+  background-color: #fff;
+}
+
+button:hover {
+  border: 1px solid #333;
+}
+
+button:active {
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, .1);
+  background-color: #f2f2f2;
+}
+
+button.release {
+  background-color: #3c77dd;
+  color: #fff;
+}
+
+/* article-write */
+.article-write .title-input {
+  width: 100%;
+  font-size: 30px;
+  line-height: 60px;
+  background: none;
+  border: 0;
+  border-bottom:1px solid #CCCBD0;
+  padding-left: 20px;
+}
+.article-write .content-input {
+  width:100%;
+  height:100%;
+  font-size: 18px;
+  background: none;
+  border: 0;
+  border-bottom:1px solid #CCCBD0;
+  padding: 20px;
 }
