@@ -32,11 +32,31 @@ li {
   font-size: 30px;
 }
 
+/* 样式组件 */
+/* -float- */
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
 /* xf blog */
 .logo {
   width: 300px;
   text-align: center;
   display: inline-block;
+}
+
+.loginfo {
+  float: right;
+  padding-right: 100px;
+  line-height: 50px;
+}
+
+.loginfo a {
+  color: #fff;
 }
 
 .navigation {

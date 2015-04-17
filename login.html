@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>登录</title>
+  <script src="js/particles.js"></script>
+  <link href="css/application.css" media="all" rel="stylesheet"/>
+  <script src="js/application.js"></script>
+  <!-- head-meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit">
+  <link rel="shortcut icon" href="<!-- @path favicon.ico -->">
+
+  <!--iOS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-title" content="Title">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+
+  <!-- Prefetch
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//google-analytics.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//platform.twitter.com">
+    -->
+
+  <!--<meta content="authenticity_token" name="csrf-param"/>-->
+  <!--<meta content="5BHEmMSmnVILdFqcbT03TwsdV7IagwWyXPIYsky8pm4=" name="csrf-token"/>-->
+  <!---->
+  <style type='text/css' id='hot_style_patch'>
+    .main-wechat {
+      padding-top: 45px !important
+    }
+
+    .done, .alert {
+      position: static !important
+    }
+
+  </style>
+</head>
+<body class=" ">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div id="particles-js"></div>
+<section class="wrapper">
+  <div class="card">
+    <div class="front">
+      <header class="header">
+        <h1>XFBlog</h1>
+      </header>
+
+      <div class="main">
+        <div class="main-login">
+          <form accept-charset="UTF-8" action="" class="simple_form new_user" id="new_user" method="post"><div style="display:none"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="5BHEmMSmnVILdFqcbT03TwsdV7IagwWyXPIYsky8pm4="></div>
+
+            <div class="form-group">
+              <input aria-required="true" autocomplete="off" class="string required form-control" id="username" name="username" placeholder="用户名" required="required" type="text">
+              <input aria-required="true" autocomplete="off" class="string required form-control" id="password" name="password" placeholder="密码" required="required" type="password">
+              <!--<div id="sms_verify_code_wrapper" style="display:none;">-->
+                <!--<input autocomplete="off" autofocus="autofocus" class="input-verify" id="verify_code" maxlength="6" name="verify_code" placeholder="短信验证码" type="text">-->
+                <!--<a class="btn input-resent" data-counter-text="已发送(#seconds#)" data-limit-time-left="0" data-loading-text="发送中.." data-method="post" data-remote="true" data-reset-text="重新获取" href="" id="send_user_sign_in_token" rel="nofollow" title="接收短信是免费的">点击获取</a>-->
+              <!--</div>-->
+              <input class="btn input-submit" name="commit" type="submit" value="登录">
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <footer class="footer">
+        <footer class="footer">
+          <span><a href="/xfblog.html">返回</a></span>
+        </footer>
+
+      </footer>
+    </div>
+  </div>
+</section>
+
+<!--<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-1268479-19', 'auto');
+  ga('send', 'pageview');
+</script>-->
+
+</body>
+</html>
