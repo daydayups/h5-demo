@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>发财金-赚钱不等待</title>
+  <style>
+    .register-success {
+      text-align: center;
+    }
+    .register-success .head {
+      margin: 0;
+      line-height: 40px;
+      background-color: #f1f1f1;
+    }
+    .register-success .body {
+      margin-top: 15px;
+    }
+    .register-success .number {
+      font-size: 20px;
+      color: #cc0000;
+    }
+    #num {
+      font-weight: bold;
+      color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-success">
+    <p class="head">提示</p>
+    <div class="body">
+      <p class="">恭喜，<span class="number">13162342680</span>注册成功！</p>
+      <p class=""><span id="num">3</span>秒后，自动关闭</p>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script>
+    $(function(){
+      var t = 3;
+      remaintime = setInterval(function(){
+        $("#num").html(--t);
+        if(t == 0){
+          clearInterval(remaintime);
+//          $(".register-success").hide();
+        }
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
