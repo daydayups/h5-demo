@@ -2,21 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11be4ce2-61a1-48f9-856b-b5bdb5bd1e9b" name="Default" comment="jquery dragbox test">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/circleAnimate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/circleAnimate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/circleAnimate01.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/circleAnimate01.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/circleAnimate02.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/circleAnimate02.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/circleAnimate03.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/circleAnimate03.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/circlejs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/spin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/spin02.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/spin03.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/application.css" afterPath="$PROJECT_DIR$/css/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/application.js" afterPath="$PROJECT_DIR$/js/application.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/squareBlock/squareBlock00.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/squareBlock/squareBlock01.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/squareBlock/squareBlock02.html" />
+      <change type="DELETED" beforePath="F:\Github\Demos\squareBlock00.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Github\Demos\squareBlock01.html" afterPath="" />
+      <change type="DELETED" beforePath="F:\Github\Demos\squareBlock02.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="F:\Github\Demos\EmmetCode" afterPath="$PROJECT_DIR$/others/EmmetCode" />
+      <change type="MOVED" beforePath="F:\Github\Demos\PureCSSNav.html" afterPath="$PROJECT_DIR$/others/PureCSSNav.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\circleAnimate.html" afterPath="$PROJECT_DIR$/circleAnimate/circleAnimate.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\circleAnimate01.html" afterPath="$PROJECT_DIR$/circleAnimate/circleAnimate01.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\circleAnimate02.html" afterPath="$PROJECT_DIR$/circleAnimate/circleAnimate02.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\circleAnimate03.html" afterPath="$PROJECT_DIR$/circleAnimate/circleAnimate03.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\circlejs.html" afterPath="$PROJECT_DIR$/others/circlejs.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\css\application.css" afterPath="$PROJECT_DIR$/_statics/css/application.css" />
+      <change type="MOVED" beforePath="F:\Github\Demos\css\circleAnimate.css" afterPath="$PROJECT_DIR$/circleAnimate/css/circleAnimate.css" />
+      <change type="MOVED" beforePath="F:\Github\Demos\css\index.css" afterPath="$PROJECT_DIR$/_statics/css/index.css" />
+      <change type="MOVED" beforePath="F:\Github\Demos\css\nprogress.css" afterPath="$PROJECT_DIR$/_statics/css/nprogress.css" />
+      <change type="MOVED" beforePath="F:\Github\Demos\css\xfblog.css" afterPath="$PROJECT_DIR$/xfblog/xfblog.css" />
+      <change type="MOVED" beforePath="F:\Github\Demos\css\xfblog_backend.css" afterPath="$PROJECT_DIR$/xfblog/xfblog_backend.css" />
+      <change type="MOVED" beforePath="F:\Github\Demos\dragbox.html" afterPath="$PROJECT_DIR$/others/dragbox.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content001.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content001.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content002.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content002.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content003.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content003.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content004.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content004.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content005.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content005.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content006.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content006.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content007.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content007.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content008.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content008.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content009.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content009.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content010.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content010.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content011.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content011.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content012.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content012.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content013.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content013.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content014.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content014.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content015.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content015.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content016.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content016.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content017.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content017.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content018.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content018.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b001.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b001.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b002.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b002.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b003.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b003.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b004.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b004.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b005.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b005.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b006.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b006.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b007.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b007.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b008.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b008.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b009.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b009.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b010.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b010.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b011.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b011.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b012.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b012.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b013.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b013.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b014.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b014.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b015.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b015.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b016.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b016.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b017.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b017.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b018.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b018.jpg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\block_close.png" afterPath="$PROJECT_DIR$/_statics/img/block_close.png" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\icons.svg" afterPath="$PROJECT_DIR$/_statics/img/icons.svg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\img\social.svg" afterPath="$PROJECT_DIR$/_statics/img/social.svg" />
+      <change type="MOVED" beforePath="F:\Github\Demos\index.html" afterPath="$PROJECT_DIR$/others/index.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\isotope00.html" afterPath="$PROJECT_DIR$/isotope/isotope00.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\isotope01.html" afterPath="$PROJECT_DIR$/isotope/isotope01.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\application.js" afterPath="$PROJECT_DIR$/_statics/js/application.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\circleAnimate01.js" afterPath="$PROJECT_DIR$/circleAnimate/js/circleAnimate01.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\circleAnimate02.js" afterPath="$PROJECT_DIR$/circleAnimate/js/circleAnimate02.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\circleAnimate03.js" afterPath="$PROJECT_DIR$/circleAnimate/js/circleAnimate03.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\contextmenu.js" afterPath="$PROJECT_DIR$/_statics/js/contextmenu.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\index.js" afterPath="$PROJECT_DIR$/_statics/js/index.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\particles.js" afterPath="$PROJECT_DIR$/_statics/js/particles.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\plugins\isotope.pkgd.js" afterPath="$PROJECT_DIR$/_statics/js/plugins/isotope.pkgd.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\plugins\jquery-2.1.1.js" afterPath="$PROJECT_DIR$/_statics/js/plugins/jquery-2.1.1.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\plugins\jquery.shuffleLetters.js" afterPath="$PROJECT_DIR$/_statics/js/plugins/jquery.shuffleLetters.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\plugins\nprogress.js" afterPath="$PROJECT_DIR$/_statics/js/plugins/nprogress.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\spin.js" afterPath="$PROJECT_DIR$/circleAnimate/js/spin.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\spin02.js" afterPath="$PROJECT_DIR$/circleAnimate/js/spin02.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\spin03.js" afterPath="$PROJECT_DIR$/circleAnimate/js/spin03.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\js\xfblog.js" afterPath="$PROJECT_DIR$/xfblog/xfblog.js" />
+      <change type="MOVED" beforePath="F:\Github\Demos\login.html" afterPath="$PROJECT_DIR$/others/login.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\xfblog.html" afterPath="$PROJECT_DIR$/xfblog/xfblog.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\xfblog_backend.html" afterPath="$PROJECT_DIR$/xfblog/xfblog_backend.html" />
     </list>
     <ignored path="XFBlog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,38 +104,7 @@
     <favorites_list name="XFBlog" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="circleAnimate03.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/circleAnimate03.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.096774" vertical-offset="0" max-vertical-offset="704">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spin03.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/spin03.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5829493" vertical-offset="726" max-vertical-offset="2024">
-              <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="circleAnimate03.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/circleAnimate03.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1606">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -133,9 +168,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1895" />
-    <option name="height" value="1040" />
+    <option name="x" value="265" />
+    <option name="y" value="59" />
+    <option name="width" value="1610" />
+    <option name="height" value="864" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -192,7 +228,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -211,54 +246,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Demos" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -285,14 +275,22 @@
       <recent name="F:\Github\Demos\demo\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Github\Demos" />
-      <recent name="F:\Github\Demos\js" />
-      <recent name="F:\Github\Demos\js\plugins" />
-      <recent name="F:\Github\Demos\css" />
-      <recent name="E:\workspace\XFBlog\img" />
+      <recent name="F:\Github\Demos\others" />
+      <recent name="F:\Github\Demos\isotope" />
+      <recent name="F:\Github\Demos\squareBlock" />
+      <recent name="F:\Github\Demos\statics" />
+      <recent name="F:\Github\Demos\circleAnimate\js" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -303,12 +301,14 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
       <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -316,16 +316,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
-      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="NodeunitConfigurationType" factoryName="Nodeunit">
@@ -341,11 +331,11 @@
     <configuration default="true" type="JavaScriptTraceType" factoryName="Spy-js" node="" config="" has-config="false" system-proxy="true" proxy-port="3546">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="NodeWebKit" factoryName="Node-webkit">
       <option name="name" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
@@ -357,9 +347,6 @@
       <extra-mocha-options />
       <test-directory />
       <recursive>false</recursive>
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="XSLT" factoryName="XSLT">
@@ -376,6 +363,9 @@
       <OutputType value="CONSOLE" save-to-file="false" />
       <FileType name="XML" />
       <JdkChoice value="FROM_MODULE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
     <list size="0" />
@@ -430,14 +420,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1895" height="1040" extended-state="0" />
+    <frame x="265" y="59" width="1610" height="864" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32808718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18901454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22328244" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -445,12 +436,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -480,173 +470,152 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/isotope00.html">
+    <entry file="file://$PROJECT_DIR$/isotope/isotope00.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1638" max-vertical-offset="10520">
           <caret line="96" column="52" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/isotope00.html">
+    <entry file="file://$PROJECT_DIR$/isotope/isotope00.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1560" max-vertical-offset="9700">
           <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squareBlock01.html">
+    <entry file="file://$PROJECT_DIR$/squareBlock/squareBlock01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="8980">
           <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/isotope00.html">
+    <entry file="file://$PROJECT_DIR$/isotope/isotope00.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="478" max-vertical-offset="10620">
           <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squareBlock01.html">
+    <entry file="file://$PROJECT_DIR$/squareBlock/squareBlock01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2501" max-vertical-offset="8820">
           <caret line="156" column="39" selection-start-line="156" selection-start-column="39" selection-end-line="156" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squareBlock01.html">
+    <entry file="file://$PROJECT_DIR$/squareBlock/squareBlock01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="8780">
           <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squareBlock01.html">
+    <entry file="file://$PROJECT_DIR$/squareBlock/squareBlock01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2096" max-vertical-offset="7860">
           <caret line="116" column="28" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squareBlock01.html">
+    <entry file="file://$PROJECT_DIR$/squareBlock/squareBlock01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4656" max-vertical-offset="5900">
           <caret line="235" column="35" selection-start-line="235" selection-start-column="35" selection-end-line="235" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squareBlock00.html">
+    <entry file="file://$PROJECT_DIR$/squareBlock/squareBlock00.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="886" max-vertical-offset="1980">
           <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/plugins/nprogress.js">
+    <entry file="file://$PROJECT_DIR$/_statics/js/plugins/nprogress.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9480">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/plugins/jquery-2.1.1.js">
+    <entry file="file://$PROJECT_DIR$/_statics/js/plugins/jquery-2.1.1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="58954" max-vertical-offset="183680">
           <caret line="2968" column="4" selection-start-line="2968" selection-start-column="4" selection-end-line="2968" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/block_close.png">
+    <entry file="file://$PROJECT_DIR$/_statics/img/block_close.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/squareBlock01.html">
+    <entry file="file://$PROJECT_DIR$/squareBlock/squareBlock01.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.0295203" vertical-offset="1500" max-vertical-offset="8980">
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/plugins/jquery.shuffleLetters.js">
+    <entry file="file://$PROJECT_DIR$/_statics/js/plugins/jquery.shuffleLetters.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44520548" vertical-offset="0" max-vertical-offset="2900">
           <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EmmetCode">
+    <entry file="file://$PROJECT_DIR$/others/EmmetCode">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="592" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/isotope01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.724138" vertical-offset="3880" max-vertical-offset="13060">
-          <caret line="211" column="12" selection-start-line="203" selection-start-column="10" selection-end-line="211" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
+    <entry file="file://$PROJECT_DIR$/_statics/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3788904" vertical-offset="480" max-vertical-offset="3920">
           <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/nprogress.css">
+    <entry file="file://$PROJECT_DIR$/_statics/css/nprogress.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2449256" vertical-offset="0" max-vertical-offset="1380">
           <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/isotope00.html">
+    <entry file="file://$PROJECT_DIR$/isotope/isotope00.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9849711" vertical-offset="2778" max-vertical-offset="12518">
           <caret line="165" column="28" selection-start-line="165" selection-start-column="28" selection-end-line="165" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PureCSSNav.html">
+    <entry file="file://$PROJECT_DIR$/others/PureCSSNav.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2376" max-vertical-offset="3476">
           <caret line="119" column="91" selection-start-line="119" selection-start-column="91" selection-end-line="119" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dragbox.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="2530">
-          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squareBlock00.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="517" max-vertical-offset="2178">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/squareBlock02.html">
+    <entry file="file://$PROJECT_DIR$/squareBlock/squareBlock02.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="12958">
           <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/contextmenu.js">
+    <entry file="file://$PROJECT_DIR$/_statics/js/contextmenu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.329989" vertical-offset="0" max-vertical-offset="2530">
           <caret line="95" column="32" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/xfblog.css">
+    <entry file="file://$PROJECT_DIR$/xfblog/xfblog.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.2374582" vertical-offset="3195" max-vertical-offset="5346">
           <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
@@ -664,67 +633,66 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="28040" max-vertical-offset="83952">
           <caret line="1287" column="17" selection-start-line="1287" selection-start-column="17" selection-end-line="1287" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/xfblog.js">
+    <entry file="file://$PROJECT_DIR$/xfblog/xfblog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45498782" vertical-offset="88" max-vertical-offset="2464">
           <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xfblog.html">
+    <entry file="file://$PROJECT_DIR$/xfblog/xfblog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.528445" vertical-offset="1276" max-vertical-offset="10736">
           <caret line="77" column="24" selection-start-line="77" selection-start-column="24" selection-end-line="77" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/xfblog_backend.css">
+    <entry file="file://$PROJECT_DIR$/xfblog/xfblog_backend.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24087591" vertical-offset="154" max-vertical-offset="13002">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xfblog_backend.html">
+    <entry file="file://$PROJECT_DIR$/xfblog/xfblog_backend.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30099502" vertical-offset="1584" max-vertical-offset="3850">
           <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/others/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.6019901" vertical-offset="164" max-vertical-offset="10318">
           <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
+    <entry file="file://$PROJECT_DIR$/others/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.8387096" vertical-offset="0" max-vertical-offset="2376">
           <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/application.css">
+    <entry file="file://$PROJECT_DIR$/_statics/css/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.51672435" vertical-offset="8946" max-vertical-offset="15774">
           <caret line="427" column="8" selection-start-line="427" selection-start-column="8" selection-end-line="427" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/application.js">
+    <entry file="file://$PROJECT_DIR$/_statics/js/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="53.312572" vertical-offset="0" max-vertical-offset="49808">
           <caret line="2101" column="45" selection-start-line="2101" selection-start-column="45" selection-end-line="2101" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
+    <entry file="file://$PROJECT_DIR$/_statics/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.95" vertical-offset="0" max-vertical-offset="2464">
           <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
@@ -738,86 +706,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/circleAnimate.css">
+    <entry file="file://$PROJECT_DIR$/circleAnimate/css/circleAnimate.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09988649" vertical-offset="0" max-vertical-offset="881">
           <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/particles.js">
+    <entry file="file://$PROJECT_DIR$/_statics/js/particles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33253872" vertical-offset="2251" max-vertical-offset="4510">
           <caret line="115" column="14" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/plugins/isotope.pkgd.js">
+    <entry file="file://$PROJECT_DIR$/_statics/js/plugins/isotope.pkgd.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22765197" vertical-offset="33073" max-vertical-offset="85844">
           <caret line="1512" column="70" selection-start-line="1512" selection-start-column="70" selection-end-line="1512" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/spin.js">
+    <entry file="file://$PROJECT_DIR$/circleAnimate/js/spin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1178" max-vertical-offset="2222">
           <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="79" selection-end-column="100" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/circleAnimate01.js">
+    <entry file="file://$PROJECT_DIR$/circleAnimate/js/circleAnimate01.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05107832" vertical-offset="659" max-vertical-offset="1606">
           <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/circleAnimate02.html">
+    <entry file="file://$PROJECT_DIR$/circleAnimate/circleAnimate02.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.741936" vertical-offset="0" max-vertical-offset="704">
           <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/circleAnimate02.js">
+    <entry file="file://$PROJECT_DIR$/circleAnimate/js/circleAnimate02.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47446084" vertical-offset="0" max-vertical-offset="1606">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/circleAnimate.html">
+    <entry file="file://$PROJECT_DIR$/circleAnimate/circleAnimate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6482353" vertical-offset="1033" max-vertical-offset="1914">
           <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/circlejs.html">
+    <entry file="file://$PROJECT_DIR$/others/circlejs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5435294" vertical-offset="1496" max-vertical-offset="3322">
           <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/circleAnimate01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5176471" vertical-offset="0" max-vertical-offset="850">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circleAnimate03.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.096774" vertical-offset="0" max-vertical-offset="704">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/spin02.js">
+    <entry file="file://$PROJECT_DIR$/circleAnimate/js/spin02.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32949308" vertical-offset="264" max-vertical-offset="2024">
           <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
@@ -825,7 +777,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/circleAnimate03.js">
+    <entry file="file://$PROJECT_DIR$/circleAnimate/js/circleAnimate03.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1606">
           <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
@@ -833,10 +785,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/spin03.js">
+    <entry file="file://$PROJECT_DIR$/circleAnimate/circleAnimate01.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5829493" vertical-offset="726" max-vertical-offset="2024">
-          <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.652819" vertical-offset="0" max-vertical-offset="704">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/squareBlock/squareBlock00.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81602377" vertical-offset="0" max-vertical-offset="2178">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circleAnimate/js/spin03.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12716763" vertical-offset="726" max-vertical-offset="2024">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circleAnimate/circleAnimate03.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28189912" vertical-offset="30" max-vertical-offset="704">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/isotope/isotope01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.4553704" vertical-offset="0" max-vertical-offset="14366">
+          <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/others/dragbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6838124" vertical-offset="450" max-vertical-offset="2530">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
           <folding />
         </state>
       </provider>
