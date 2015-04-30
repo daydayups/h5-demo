@@ -1,89 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11be4ce2-61a1-48f9-856b-b5bdb5bd1e9b" name="Default" comment="jquery dragbox test">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/squareBlock/squareBlock00.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/squareBlock/squareBlock01.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/squareBlock/squareBlock02.html" />
-      <change type="DELETED" beforePath="F:\Github\Demos\squareBlock00.html" afterPath="" />
-      <change type="DELETED" beforePath="F:\Github\Demos\squareBlock01.html" afterPath="" />
-      <change type="DELETED" beforePath="F:\Github\Demos\squareBlock02.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="F:\Github\Demos\EmmetCode" afterPath="$PROJECT_DIR$/others/EmmetCode" />
-      <change type="MOVED" beforePath="F:\Github\Demos\PureCSSNav.html" afterPath="$PROJECT_DIR$/others/PureCSSNav.html" />
-      <change type="MOVED" beforePath="F:\Github\Demos\circleAnimate.html" afterPath="$PROJECT_DIR$/circleAnimate/circleAnimate.html" />
-      <change type="MOVED" beforePath="F:\Github\Demos\circleAnimate01.html" afterPath="$PROJECT_DIR$/circleAnimate/circleAnimate01.html" />
-      <change type="MOVED" beforePath="F:\Github\Demos\circleAnimate02.html" afterPath="$PROJECT_DIR$/circleAnimate/circleAnimate02.html" />
-      <change type="MOVED" beforePath="F:\Github\Demos\circleAnimate03.html" afterPath="$PROJECT_DIR$/circleAnimate/circleAnimate03.html" />
-      <change type="MOVED" beforePath="F:\Github\Demos\circlejs.html" afterPath="$PROJECT_DIR$/others/circlejs.html" />
-      <change type="MOVED" beforePath="F:\Github\Demos\css\application.css" afterPath="$PROJECT_DIR$/_statics/css/application.css" />
-      <change type="MOVED" beforePath="F:\Github\Demos\css\circleAnimate.css" afterPath="$PROJECT_DIR$/circleAnimate/css/circleAnimate.css" />
-      <change type="MOVED" beforePath="F:\Github\Demos\css\index.css" afterPath="$PROJECT_DIR$/_statics/css/index.css" />
-      <change type="MOVED" beforePath="F:\Github\Demos\css\nprogress.css" afterPath="$PROJECT_DIR$/_statics/css/nprogress.css" />
-      <change type="MOVED" beforePath="F:\Github\Demos\css\xfblog.css" afterPath="$PROJECT_DIR$/xfblog/xfblog.css" />
-      <change type="MOVED" beforePath="F:\Github\Demos\css\xfblog_backend.css" afterPath="$PROJECT_DIR$/xfblog/xfblog_backend.css" />
-      <change type="MOVED" beforePath="F:\Github\Demos\dragbox.html" afterPath="$PROJECT_DIR$/others/dragbox.html" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content001.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content001.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content002.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content002.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content003.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content003.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content004.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content004.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content005.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content005.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content006.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content006.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content007.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content007.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content008.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content008.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content009.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content009.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content010.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content010.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content011.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content011.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content012.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content012.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content013.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content013.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content014.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content014.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content015.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content015.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content016.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content016.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content017.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content017.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\content\content018.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/content/content018.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b001.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b001.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b002.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b002.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b003.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b003.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b004.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b004.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b005.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b005.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b006.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b006.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b007.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b007.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b008.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b008.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b009.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b009.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b010.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b010.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b011.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b011.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b012.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b012.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b013.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b013.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b014.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b014.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b015.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b015.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b016.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b016.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b017.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b017.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\aldnoah\thumbnail\thum_b018.jpg" afterPath="$PROJECT_DIR$/_statics/img/aldnoah/thumbnail/thum_b018.jpg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\block_close.png" afterPath="$PROJECT_DIR$/_statics/img/block_close.png" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\icons.svg" afterPath="$PROJECT_DIR$/_statics/img/icons.svg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\img\social.svg" afterPath="$PROJECT_DIR$/_statics/img/social.svg" />
-      <change type="MOVED" beforePath="F:\Github\Demos\index.html" afterPath="$PROJECT_DIR$/others/index.html" />
-      <change type="MOVED" beforePath="F:\Github\Demos\isotope00.html" afterPath="$PROJECT_DIR$/isotope/isotope00.html" />
-      <change type="MOVED" beforePath="F:\Github\Demos\isotope01.html" afterPath="$PROJECT_DIR$/isotope/isotope01.html" />
-      <change type="MOVED" beforePath="F:\Github\Demos\js\application.js" afterPath="$PROJECT_DIR$/_statics/js/application.js" />
-      <change type="MOVED" beforePath="F:\Github\Demos\js\circleAnimate01.js" afterPath="$PROJECT_DIR$/circleAnimate/js/circleAnimate01.js" />
-      <change type="MOVED" beforePath="F:\Github\Demos\js\circleAnimate02.js" afterPath="$PROJECT_DIR$/circleAnimate/js/circleAnimate02.js" />
-      <change type="MOVED" beforePath="F:\Github\Demos\js\circleAnimate03.js" afterPath="$PROJECT_DIR$/circleAnimate/js/circleAnimate03.js" />
-      <change type="MOVED" beforePath="F:\Github\Demos\js\contextmenu.js" afterPath="$PROJECT_DIR$/_statics/js/contextmenu.js" />
-      <change type="MOVED" beforePath="F:\Github\Demos\js\index.js" afterPath="$PROJECT_DIR$/_statics/js/index.js" />
-      <change type="MOVED" beforePath="F:\Github\Demos\js\particles.js" afterPath="$PROJECT_DIR$/_statics/js/particles.js" />
-      <change type="MOVED" beforePath="F:\Github\Demos\js\plugins\isotope.pkgd.js" afterPath="$PROJECT_DIR$/_statics/js/plugins/isotope.pkgd.js" />
-      <change type="MOVED" beforePath="F:\Github\Demos\js\plugins\jquery-2.1.1.js" afterPath="$PROJECT_DIR$/_statics/js/plugins/jquery-2.1.1.js" />
-      <change type="MOVED" beforePath="F:\Github\Demos\js\plugins\jquery.shuffleLetters.js" afterPath="$PROJECT_DIR$/_statics/js/plugins/jquery.shuffleLetters.js" />
-      <change type="MOVED" beforePath="F:\Github\Demos\js\plugins\nprogress.js" afterPath="$PROJECT_DIR$/_statics/js/plugins/nprogress.js" />
-      <change type="MOVED" beforePath="F:\Github\Demos\js\spin.js" afterPath="$PROJECT_DIR$/circleAnimate/js/spin.js" />
-      <change type="MOVED" beforePath="F:\Github\Demos\js\spin02.js" afterPath="$PROJECT_DIR$/circleAnimate/js/spin02.js" />
-      <change type="MOVED" beforePath="F:\Github\Demos\js\spin03.js" afterPath="$PROJECT_DIR$/circleAnimate/js/spin03.js" />
-      <change type="MOVED" beforePath="F:\Github\Demos\js\xfblog.js" afterPath="$PROJECT_DIR$/xfblog/xfblog.js" />
-      <change type="MOVED" beforePath="F:\Github\Demos\login.html" afterPath="$PROJECT_DIR$/others/login.html" />
-      <change type="MOVED" beforePath="F:\Github\Demos\xfblog.html" afterPath="$PROJECT_DIR$/xfblog/xfblog.html" />
-      <change type="MOVED" beforePath="F:\Github\Demos\xfblog_backend.html" afterPath="$PROJECT_DIR$/xfblog/xfblog_backend.html" />
-    </list>
+    <list default="true" id="11be4ce2-61a1-48f9-856b-b5bdb5bd1e9b" name="Default" comment="jquery dragbox test" />
     <ignored path="XFBlog.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -169,9 +87,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="265" />
-    <option name="y" value="59" />
+    <option name="y" value="60" />
     <option name="width" value="1610" />
-    <option name="height" value="864" />
+    <option name="height" value="863" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -420,7 +338,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="265" y="59" width="1610" height="864" extended-state="0" />
+    <frame x="265" y="60" width="1610" height="863" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32808718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
