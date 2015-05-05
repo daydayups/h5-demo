@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>订单详情-发财金-赚钱不等待</title>
+  <link rel="stylesheet" href="../../css/nmain.css">
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <div class="site-nav-top">
+    <div class="inner clearfix">
+      <p class="pull-left base-phone">客服热线 <span class="phone-icon-white"></span></p>
+      <p class="pull-left"><span class="f-18 ml-5">400-638-0808</span></p>
+      <p class="pull-right">欢迎您，请
+        <a href="">登录</a>
+        <a class="ml-5 mr-5" href="">免费注册</a> |
+        <a class="ml-5 mr-5" href="">帮助中心</a> |
+        <a class="ml-5 mr-5" href="">免费体验</a> |
+        <a class="ml-5" href="">软件下载</a>
+      </p>
+    </div>
+  </div>
+  <div class="site-nav clearfix">
+    <a class="simple-logo-bg pull-left" href=""></a>
+    <p class="sub-title">订单详情</p>
+    <p class="pull-right mt-10 f-14 cl-153">您好, <span class="cl-deepred f-18">18868945420</span> <button class="logout-btn" >[退出]</button></p>
+  </div>
+  <div style="border-bottom:1px solid #f2f2f2;"></div>
+
+
+  <div style="border-bottom:1px solid #f2f2f2;"></div>
+  <!-- 内容 -->
+  <div class="detail-wrap clearfix">
+
+    <!-- 用户的操作界面 -->
+    <div class="detail-main">
+      <div class="main-title"><p class="f-16">资金明细</p></div>
+      <div class="main-content">
+        <!-- 账户信息概览 -->
+        <div class="cash-info clearfix">
+          <div class="clearfix">
+            <div class="pull-left">
+              <p class="f-song cl-153">总资产（元）</p>
+              <p class="mt-10 cl-deepred"><span class="f-30 f-bold">1320</span><span class="f-20">.00</span></p>
+            </div>
+            <div class="pull-right mr-50">
+              <div class="mt-10">
+                <button class="btn-micro-red cl-red">充值</button>
+                <button class="btn-micro-gray ml-10">提现</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sub-line-bg"></div>
+        <div class="sub-cash-info clearfix">
+          <table class="sub-cash-table">
+            <tr class="th">
+              <td>预付保证金（元）</td>
+              <td rowspan="2"><span class="icon-plus" ></span></td>
+              <td>预付服务费（元）</td>
+              <td rowspan="2"><span class="icon-plus"></span></td>
+              <td>可用余额（元）</td>
+            </tr>
+            <tr class="tb">
+              <td>1000.00</td>
+              <td>20.00</td>
+              <td>300.00</td>
+            </tr>
+          </table>
+        </div>
+        <div style="border-bottom: 1px solid #e6e6e6;"></div>
+        <!-- 用户操盘信息概览 结束 -->
+
+        <!-- 订单列表 -->
+        <div class="cash-list mt-40">
+          <!-- 具备切换功能的标签标题 -->
+          <div class="switch-title">
+            <ul class="switch-tab-wrap">
+              <li><a class="switch-tab curr" href="javascript:;">全部</a></li>
+              <li><a class="switch-tab" href="javascript:;">充值提现</a></li>
+              <li><a class="switch-tab" href="javascript:;">配资明细</a></li>
+              <li><a class="switch-tab" href="javascript:;">管理费明细</a></li>
+            </ul>
+
+            <div class="select-box">
+              <select name="money-type" id="money-type">
+                <option value="0" selected>资金类型</option>
+                <option value="1">全部</option>
+                <option value="2">充值</option>
+                <option value="3">提现</option>
+              </select>
+              <select name="time-bucket" id="time-bucket">
+                <option value="0" selected>时间</option>
+                <option value="1">一周内</option>
+                <option value="2">一月内</option>
+                <option value="3">三个月内</option>
+              </select>
+              <button class="btn-micro-gray ml-10">查询</button>
+            </div>
+
+          </div>
+          <!-- 具备切换功能的标签标题 结束 -->
+
+          <!-- 订单表格 -->
+          <!-- 有订单 -->
+          <table class="cash-list-table table-module">
+            <tr class="th">
+              <th width="25%">时间</th>
+              <th width="20%">类型</th>
+              <th width="15%">收入（元）</th>
+              <th width="15%">支出（元）</th>
+              <th width="10%">余额</th>
+              <th width=""></th>
+            </tr>
+
+            <!-- 一条记录占两行 -->
+            <tr>
+              <td>
+                <p class="f-14">2015-03-23 11:14:07</p>
+              </td>
+              <td>
+                <p class="f-14">提现支出</p>
+              </td>
+              <td>
+                <p class="f-14 f-bold"></p>
+              </td>
+              <td>
+                <p class="f-14 f-bold">6000.00</p>
+              </td>
+              <td>
+                <div>
+                  <p class="f-bold f-14">0.00</p>
+                </div>
+              </td>
+              <td>
+                <a class="show-detail-btn f-14" href="javascript:;">查看</a>
+              </td>
+            </tr>
+            <tr class="sub-detail">
+              <td>编号 <span class="f-14">32899483937922</span></td>
+              <td colspan="5">操盘订单 [<span class="f-14 cl-blue">PZ32435343</span>] 支付2015.03.31日 管理费1000.00元</td>
+            </tr>
+            <!-- 一条记录占两行 结束 -->
+
+            <!-- 一条记录占两行 -->
+            <tr>
+              <td>
+                <p class="f-14">2015-03-23 11:14:07</p>
+              </td>
+              <td>
+                <p class="f-14">提现支出</p>
+              </td>
+              <td>
+                <p class="f-14 f-bold"></p>
+              </td>
+              <td>
+                <p class="f-14 f-bold">6000.00</p>
+              </td>
+              <td>
+                <div>
+                  <p class="f-bold f-14">0.00</p>
+                </div>
+              </td>
+              <td>
+                <a class="show-detail-btn f-14" href="javascript:;">查看</a>
+              </td>
+            </tr>
+            <tr class="sub-detail">
+              <td>编号 <span class="f-14">32899483937922</span></td>
+              <td colspan="5">操盘订单 [<span class="f-14 cl-blue">PZ32435343</span>] 支付2015.03.31日 管理费1000.00元</td>
+            </tr>
+            <!-- 一条记录占两行 结束 -->
+            <!-- 一条记录占两行 -->
+            <tr>
+              <td>
+                <p class="f-14">2015-03-23 11:14:07</p>
+              </td>
+              <td>
+                <p class="f-14">提现支出</p>
+              </td>
+              <td>
+                <p class="f-14 f-bold"></p>
+              </td>
+              <td>
+                <p class="f-14 f-bold">6000.00</p>
+              </td>
+              <td>
+                <div>
+                  <p class="f-bold f-14">0.00</p>
+                </div>
+              </td>
+              <td>
+                <a class="show-detail-btn f-14" href="javascript:;">查看</a>
+              </td>
+            </tr>
+            <tr class="sub-detail">
+              <td>编号 <span class="f-14">32899483937922</span></td>
+              <td colspan="5">操盘订单 [<span class="f-14 cl-blue">PZ32435343</span>] 支付2015.03.31日 管理费1000.00元</td>
+            </tr>
+            <!-- 一条记录占两行 结束 -->
+            <!-- 一条记录占两行 -->
+            <tr>
+              <td>
+                <p class="f-14">2015-03-23 11:14:07</p>
+              </td>
+              <td>
+                <p class="f-14">提现支出</p>
+              </td>
+              <td>
+                <p class="f-14 f-bold">6000.00</p>
+              </td>
+              <td>
+                <p class="f-14 f-bold"></p>
+              </td>
+              <td>
+                <div>
+                  <p class="f-bold f-14">0.00</p>
+                </div>
+              </td>
+              <td>
+                <a class="show-detail-btn f-14" href="javascript:;">查看</a>
+              </td>
+            </tr>
+            <tr class="sub-detail">
+              <td>编号 <span class="f-14">32899483937922</span></td>
+              <td colspan="5">操盘订单 [<span class="f-14 cl-blue">PZ32435343</span>] 支付2015.03.31日 管理费1000.00元</td>
+            </tr>
+            <!-- 一条记录占两行 结束 -->
+            <!-- 一条记录占两行 -->
+            <tr>
+              <td>
+                <p class="f-14">2015-03-23 11:14:07</p>
+              </td>
+              <td>
+                <p class="f-14">提现支出</p>
+              </td>
+              <td>
+                <p class="f-14 f-bold">6000.00</p>
+              </td>
+              <td>
+                <p class="f-14 f-bold"></p>
+              </td>
+              <td>
+                <div>
+                  <p class="f-bold f-14">0.00</p>
+                </div>
+              </td>
+              <td>
+                <a class="show-detail-btn f-14" href="javascript:;">查看</a>
+              </td>
+            </tr>
+            <tr class="sub-detail">
+              <td>编号 <span class="f-14">32899483937922</span></td>
+              <td colspan="5">操盘订单 [<span class="f-14 cl-blue">PZ32435343</span>] 支付2015.03.31日 管理费1000.00元</td>
+            </tr>
+            <!-- 一条记录占两行 结束 -->
+
+          </table>
+          <!-- 有订单 结束 -->
+
+          <!-- 分页 -->
+          <div class="page clearfix" >
+            <button class="previous"></button> <span>1</span>/<span>2</span> <button class="next"></button>
+          </div>
+          <!-- 分页 结束 -->
+
+          <!-- 无订单 -->
+          <div style="display: none;">
+          <table class="cash-list-table">
+            <tr class="th">
+              <th width="25%">时间</th>
+              <th width="20%">类型</th>
+              <th width="15%">收入（元）</th>
+              <th width="15%">支出（元）</th>
+              <th width="10%">余额</th>
+              <th width=""></th>
+            </tr>
+          </table>
+          <!-- 无订单 结束 -->
+          <div class="icon-stock-big"></div>
+          <p class="f-16 txt-center cl-153">没有行动，哪有收获！</p>
+          <p class="txt-center mt-10"><a href="javascript:;" class="cl-deepred f-18">立即配资 >></a></p>
+          <!-- 订单表格 结束 -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- 用户的操盘界面 结束 -->
+  </div>
+  <!-- 内容结束 -->
+
+  <!-- 底部信息 -->
+  <div class="footer clearfix">
+    <div class="inner">
+      <div class="clearfix">
+        <div class="pull-left">
+          <dl class="pull-left">
+            <dt>帮助中心</dt>
+            <dd class="mt-20"><a href="">发财金</a></dd>
+            <dd><a href="">参与规则</a></dd>
+            <dd><a href="">如何充值</a></dd>
+            <dd><a href="">如何提现</a></dd>
+          </dl>
+          <dl class="pull-left">
+            <dt>常见问题</dt>
+            <dd class="mt-20"><a href="">禁止股票</a></dd>
+            <dd><a href="">收费说明</a></dd>
+            <dd><a href="">操盘止损</a></dd>
+            <dd><a href="">操盘时间</a></dd>
+          </dl>
+          <dl class="pull-left">
+            <dt>交易流程</dt>
+            <dd class="mt-20"><a href="">申请操盘</a></dd>
+            <dd><a href="">操盘补亏</a></dd>
+            <dd><a href="">操盘清算</a></dd>
+            <dd><a href="">盈利提取</a></dd>
+          </dl>
+          <dl class="pull-left">
+            <dt>了解我们</dt>
+            <dd class="mt-20"><a href="">公司介绍</a></dd>
+            <dd><a href="">网站公告</a></dd>
+            <dd><a href="">联系我们</a></dd>
+            <dd><a href="">诚聘英才</a></dd>
+          </dl>
+          <div class="pull-left service">
+            <p class="f-16 f-bold">客户服务</p>
+            <p class="mt-20 f-14 cl-119">（服务时间：8:00-24:00）</p>
+            <p class="mt-10 f-20 cl-119 clearfix"><span class="phone-icon pull-left" ></span><span class="pull-left ml-10 f-20">400-638-0808</span></p>
+            <p class="mt-10 f-14 cl-119 clearfix"><span class="qq-icon pull-left" ></span><a class="pull-left ml-10" href="">QQ在线交谈</a></p>
+          </div>
+        </div>
+        <div class="pull-right">
+          <a class="logo-bg-gray"></a>
+        </div>
+      </div>
+      <!-- 版权声明与权威认证 -->
+      <div class="clearfix others">
+        <p class="copyright pull-left">版权所有 © 杭州袋狮信息技术有限公司	  Copyright Reserved 2014-2015	   浙ICP备14037891</p>
+        <div class="pull-right">
+          <a href="javascript:;" class="ml-20" target="_blank">
+            <img width="93" height="33" border="0" src="../../images/certificate/faith1.png" alt="">
+          </a>
+          <a class="ml-20" href="http://webscan.360.cn/index/checkwebsite/url/www.facaijin.com" target="_blank">
+            <img width="93" height="33" border="0" src="../../images/certificate/360safe.png" alt="360网站完全认证"/>
+          </a>
+          <a class="ml-20" href="#" target="_blank">
+            <img width="91" height="33" border="0" src="../../images/certificate/norton1.png" alt="">
+          </a>
+          <a class="ml-20" href="http://www.anquan.org/authenticate/cert/?site=facaijin.com&at=business" target="_blank">
+            <img width="91" height="33" border="0" src="../../images/certificate/hy_124x47.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 底部信息 结束 -->
+  <script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+  <script>
+    $(function(){
+      $(".sub-detail").hide();
+      $(".show-detail-btn").click(function(){
+        $(this).parents("tr").find("td").toggleClass("td-border-none");
+        $(this).parents("tr").next().eq(0).toggle();
+      });
+    });
+  </script>
+</body>
+</html>

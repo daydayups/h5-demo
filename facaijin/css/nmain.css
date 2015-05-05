@@ -207,9 +207,19 @@ img {
 .cl-red {
   color: #df0000;
 }
+.cl-blue {
+  color: #2489f0;
+}
 .cl-yellow {
   color: #fddf58;
 }
+.cl-green {
+  color: #07a10e;
+}
+.txt-center {
+  text-align: center;
+}
+
 /* 首页样式 */
 /* site-nav-top 头部导航 */
 .site-nav-top {
@@ -664,15 +674,35 @@ img {
 }
 .apply-btn {
   width: 250px;
-  height: 40px;
+  line-height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
   font-size: 18px;
   background-color: #cc0000;
   border: 0;
   color: #fff;
   border-radius: 4px;
 }
+.apply-btn-disable {
+  width: 250px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18px;
+  background-color: #c2c8cc;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+}
 .apply-btn:hover {
+  color: #fff;
   background-color: #de0029;
+  text-decoration: none;
+}
+.apply-btn:active,.apply-btn:focus {
+  color: #fff;
 }
 
 /* 标签切换 */
@@ -911,6 +941,468 @@ span.sort-icon.sort-icon-hover {
   font-size: 14px;
 }
 
+/* 用户中心 样式 */
+.user-wrap {
+  background-color: #f2f2f2;
+  border: 1px solid #dedede;
+  width: 1200px;
+  margin: 30px auto;
+}
+/* 用户中心 导航 */
+.user-nav {
+  float: left;
+  width: 165px;
+  /*background-color: #f2f2f2;*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*border-right: 1px solid #dedede;*/
+}
+.user-nav * {
+  font-size: 14px;
+}
+.user-nav a:hover, .user-nav a:active {
+  text-decoration: none;
+  color: #000000;
+}
+.user-nav .nav-group {
+  border-bottom: 1px solid #eaeaed;
+}
+.user-nav .group-title,.user-nav .group-item {
+  display: block;
+  line-height: 43px;
+  padding-left: 60px;
+}
+.user-nav .group-title.active, .user-nav .group-item.active {
+  width: 106px;
+  color: #c50024;
+  background-color: #fff;
+}
+.user-nav .group-title {
+  position: relative;
+}
+.user-nav .icon-stock {
+  display: block;
+  width: 24px;
+  height: 24px;
+  float: left;
+  background: url(../images/user/icons.png) no-repeat -22px -16px;
+  position: absolute;
+  left: 22px;
+  top: 10px;
+}
+.user-nav .icon-stock-active {
+  display: block;
+  width: 24px;
+  height: 24px;
+  float: left;
+  background: url(../images/user/icons.png) no-repeat -22px -52px;
+  position: absolute;
+  left: 22px;
+  top: 10px;
+}
+.user-nav .icon-money {
+  display: block;
+  width: 24px;
+  height: 24px;
+  float: left;
+  background: url(../images/user/icons.png) no-repeat -67px -15px;
+  position: absolute;
+  left: 22px;
+  top: 10px;
+}
+.user-nav .icon-money-active {
+  display: block;
+  width: 24px;
+  height: 24px;
+  float: left;
+  background: url(../images/user/icons.png) no-repeat -67px -52px;
+  position: absolute;
+  left: 22px;
+  top: 10px;
+}
+.user-nav .icon-person {
+  display: block;
+  width: 24px;
+  height: 24px;
+  float: left;
+  background: url(../images/user/icons.png) no-repeat -111px -15px;
+  position: absolute;
+  left: 22px;
+  top: 10px;
+}
+.user-nav .icon-feedback {
+  display: block;
+  width: 24px;
+  height: 24px;
+  float: left;
+  background: url(../images/user/icons.png) no-repeat -153px -15px;
+  position: absolute;
+  left: 22px;
+  top: 10px;
+}
+.user-nav .icon-click-me {
+  display: block;
+  width: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  float: left;
+  background: url(../images/user/icons.png) no-repeat -25px -239px;
+  position: absolute;
+  right: 22px;
+  top: 13px;
+}
+.user-nav .icon-service {
+  display: block;
+  width: 24px;
+  height: 24px;
+  float: left;
+  background: url(../images/user/icons.png) no-repeat -196px -15px;
+  position: absolute;
+  left: 22px;
+  top: 10px;
+}
+.user-nav .avatar {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #dedede;
+  overflow: hidden;
+  margin: auto;
+}
+.user-nav .txt-center {
+  text-align: center;
+}
+.user-nav .service-info {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+.user-nav .service-wrap {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* 用户中心 操作界面 */
+.f-song {
+  font-family: "SimSun";
+}
+.user-main {
+  background-color: #fff;
+  border-left: 1px solid #dedede;
+  width: 993px;
+  padding: 20px;
+  float: left;
+}
+.user-main .main-title {
+  line-height: 43px;
+  border-bottom: 1px solid #f2f2f2;
+}
+/* 用户中心 操盘概览 */
+.user-main .summary {
+  padding: 20px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.user-main .summary-table {
+  width: 605px;
+  float: left;
+  line-height: 26px;
+}
+.user-main table .th td, .user-main table th {
+  font-family: "SimSun";
+  font-weight: normal;
+  font-size: 12px;
+  color: #999;
+}
+.user-main table .tb td {
+  font-size: 20px;
+}
+.user-main .summary-left {
+  float: left;
+  line-height: 26px;
+  padding-left: 40px;
+  border-left: 1px solid #f2f2f2;
+}
+.btn-micro-red {
+  background-color: #fff;
+  border: 1px solid #e0322d;
+  width: 80px;
+  line-height: 30px;
+}
+.btn-micro-red:hover {
+  background-color: #e0322d;
+  color: #fff;
+}
+.btn-micro-gray {
+  background-color: #fff;
+  border: 1px solid #d2d2d2;
+  width: 80px;
+  line-height: 30px;
+}
+.btn-micro-gray:hover {
+  /*background-color: #d2d2d2;*/
+  color: #DF0000;
+}
+.btn-micro {
+  background-color: #fff;
+  border: 1px solid #d2d2d2;
+  width: 80px;
+  line-height: 30px;
+}
+/* 标签切换组件 */
+.user-main .switch-tab-wrap {
+  padding-left: 37px;
+  height: 41px;
+  border-bottom: 2px solid #f2f2f2;
+}
+.user-main .switch-tab-wrap li {
+  float: left;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 25px;
+}
+.user-main .switch-tab {
+  display: block;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #000;
+  float: left;
+}
+.user-main .switch-tab:hover {
+  color: #c50024;
+  border-bottom: 3px solid #c50024;
+  text-decoration: none;
+}
+.user-main .switch-tab.curr {
+  color: #c50024;
+  text-decoration: none;
+  border-bottom: 3px solid #c50024;
+}
+
+/* 订单列表 表格 */
+.user-main .order-list-table {
+  width: 100%;
+}
+.user-main .order-list-table .brd {
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+}
+.table-module th {
+  border-bottom: 2px dotted #f2f2f2;
+}
+.table-module .tb td {
+  padding: 15px 0;
+}
+.table-module td {
+  font-size: 14px;
+  border-bottom: 2px dotted #f2f2f2;
+}
+.user-main .order-list-table td {
+  text-align: center;
+}
+.table-module .th {
+  line-height: 50px;
+}
+/* 订单列表 表格 分页 */
+.order-list .page {
+  width: 120px;
+  margin: 20px auto;
+  line-height: 32px;
+  text-align: center;
+}
+.order-list .page .previous {
+  display: block;
+  float: left;
+  width: 32px;
+  height: 32px;
+  background: url(../images/user/paging_bg.png) no-repeat 13px 10px;
+  border: 1px solid #dedede;
+}
+.order-list .page .next {
+  display: block;
+  float: right;
+  width: 32px;
+  height: 32px;
+  background: url(../images/user/paging_bg.png) no-repeat -31px 10px;
+  border: 1px solid #dedede;
+}
+/* 表格无记录 */
+.order-list .icon-stock-big {
+  display: block;
+  width: 90px;
+  height: 78px;
+  background: url(../images/user/icons.png) no-repeat -17px -298px;
+  margin:30px auto 20px auto;
+}
+.steps-introduction {
+  text-align: center;
+  width: 744px;
+  margin: 30px auto 20px auto;
+}
+.steps-introduction li {
+  font-size: 14px;
+  float: left;
+  width: 246px;
+  text-align: center;
+}
+.steps-introduction .steps-arrow-bg {
+  display: block;
+  line-height: 40px;
+  background: url(../images/user/steps_arrow_bg.png) no-repeat;
+}
+
+/* 资金明细 */
+.user-main .cash-info {
+  padding: 20px 40px 0 20px;
+}
+.sub-line-bg {
+  height: 12px;
+  background: url(../images/user/sub_line_bg.png) no-repeat;
+}
+.sub-cash-info {
+  padding: 20px 0;
+}
+.sub-cash-table {
+  line-height: 35px;
+  padding-left: 30px;
+}
+.sub-cash-table {
+  line-height: 35px;
+  padding-left: 30px;
+}
+.icon-plus {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-left: 60px;
+  margin-right: 60px;
+  background: url(../images/user/icons.png) no-repeat -146px -163px;
+}
+/* 资金列表 表格 */
+.cash-list {
+  min-height: 580px;
+}
+.cash-list .switch-title {
+  position: relative;
+}
+.cash-list .switch-title .select-box {
+  position: absolute;
+  right: 100px;
+  top: 2px;
+}
+.cash-list .switch-title .select-box select {
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-color: #dedede;
+  color: #999;
+  height: 30px;
+}
+.user-main .cash-list-table {
+  width: 100%;
+}
+.user-main .brd {
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+}
+.user-main .cash-list-table th {
+  text-align: left;
+}
+.user-main .cash-list-table td {
+  line-height: 50px;
+}
+.user-main .cash-list-table .td-border-none {
+  border: none;
+}
+.user-main .cash-list-table .th {
+  line-height: 50px;
+}
+.user-main .cash-list-table .th th {
+  /*padding-left: 10px;*/
+}
+.user-main .cash-list-table {
+  color: #666;
+}
+.user-main .cash-list-table .sub-detail td {
+  color: #999;
+}
+/* 订单列表 表格 分页 */
+.cash-list .page {
+  width: 120px;
+  margin: 20px auto;
+  line-height: 32px;
+  text-align: center;
+}
+.cash-list .page .previous {
+  display: block;
+  float: left;
+  width: 32px;
+  height: 32px;
+  background: url(../images/user/paging_bg.png) no-repeat 13px 10px;
+  border: 1px solid #dedede;
+}
+.cash-list .page .next {
+  display: block;
+  float: right;
+  width: 32px;
+  height: 32px;
+  background: url(../images/user/paging_bg.png) no-repeat -31px 10px;
+  border: 1px solid #dedede;
+}
+/* 表格无记录 */
+.cash-list .icon-stock-big {
+  display: block;
+  width: 103px;
+  height: 78px;
+  background: url(../images/user/icons.png) no-repeat -17px -298px;
+  margin:30px auto 20px auto;
+}
+.cash-introduction {
+  text-align: center;
+  width: 744px;
+  margin: 30px auto 20px auto;
+}
+.cash-introduction li {
+  font-size: 14px;
+  float: left;
+  width: 246px;
+  text-align: center;
+}
+.cash-introduction .steps-arrow-bg {
+  display: block;
+  line-height: 40px;
+  background: url(../images/user/steps_arrow_bg.png) no-repeat;
+}
+/* 订单详情 */
+.simple-logo-bg {
+  display: block;
+  width: 132px;
+  height: 46px;
+  background: url(../images/icons.png) no-repeat 0 0;
+}
+.site-nav .sub-title {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #dedede;
+  font-size: 20px;
+}
+.logout-btn {
+  cursor: pointer;
+  font-size: 14px;
+  color: #999;
+  background: none;
+  border: none;
+}
+.logout-btn:hover {
+  color: #c50024;
+}
+.detail-wrap {
+  width:1200px;
+  margin: 0 auto;
+}
 @media screen and (max-width: 1200px){
   .ml-30 {
     margin-left: 15px;

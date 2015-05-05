@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>用户中心-发财金-赚钱不等待</title>
+  <link rel="stylesheet" href="../css/nmain.css">
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <div class="site-nav-top">
+    <div class="inner clearfix">
+      <p class="pull-left base-phone">客服热线 <span class="phone-icon-white"></span></p>
+      <p class="pull-left"><span class="f-18 ml-5">400-638-0808</span></p>
+      <p class="pull-right">欢迎您，请
+        <a href="">登录</a>
+        <a class="ml-5 mr-5" href="">免费注册</a> |
+        <a class="ml-5 mr-5" href="">帮助中心</a> |
+        <a class="ml-5 mr-5" href="">免费体验</a> |
+        <a class="ml-5" href="">软件下载</a>
+      </p>
+    </div>
+  </div>
+  <!-- 主导航与logo -->
+  <div class="site-nav clearfix">
+    <a class="logo-bg pull-left" href=""></a>
+    <ul class="pull-right mt-10">
+      <li class="mr-30"><a href="">首页</a></li>
+      <li class="ml-30 mr-30"><a href="">天天发</a></li>
+      <li class="ml-30 mr-30"><a href="">周周发</a></li>
+      <li class="ml-30 mr-30"><a href="">月月发</a></li>
+      <li class="ml-30 mr-30"><a href="">免费体验</a><span class="new-icon"></span></li>
+      <li class="ml-30 mr-30"><a href="">我的账户</a></li>
+    </ul>
+  </div>
+  <div style="border-bottom:1px solid #f2f2f2;"></div>
+  <!-- 内容 -->
+  <div class="user-wrap clearfix">
+    <!-- 用户的操作导航 -->
+    <div class="user-nav">
+      <div class="nav-group">
+        <a class="group-title active" href="index.html"><span class="icon-stock-active"></span>我的操盘</a>
+      </div>
+      <div class="nav-group">
+        <p class="group-title cl-153"><span class="icon-money"></span>资金管理</p>
+        <ul>
+          <li><a class="group-item" href="cash/history.html">资金明细</a></li>
+          <li><a class="group-item" href="cash/charge.html">充值</a></li>
+          <li><a class="group-item" href="cash/withdraw.html">提现</a></li>
+        </ul>
+      </div>
+      <div class="nav-group">
+        <p class="group-title cl-153"><span class="icon-person"></span>个人设置</p>
+        <ul>
+          <li><a class="group-item" href="person/index.html">基础信息</a></li>
+          <li><a class="group-item" href="person/bank.html">银行卡</a></li>
+          <li><a class="group-item" href="spread/index.html">推广链接</a></li>
+        </ul>
+      </div>
+      <div class="nav-group">
+        <a class="group-title" href="feedback.html"><span class="icon-feedback"></span>投诉咨询 <span class="icon-click-me">15</span></a>
+      </div>
+      <div class="service-wrap">
+        <p class="group-title"><span class="icon-service"></span>专属客服</p>
+        <div class="avatar">
+          <img src="../images/user/service_avatar.png" alt="service"/>
+        </div>
+        <p class="txt-center f-bold mt-10">金燕</p>
+        <p class="service-info cl-153">手机 400-638-0808</p>
+        <p class="service-info cl-153">Q Q 400-638-0808</p>
+      </div>
+    </div>
+
+    <!-- 用户的操作界面 -->
+    <div class="user-main">
+      <div class="main-title"><p class="f-16">我的操盘</p></div>
+      <div class="main-content">
+        <!-- 用户操盘信息概览 -->
+        <div class="summary clearfix">
+          <table class="summary-table">
+            <tr class="th">
+              <td>配资总额</td>
+              <td>保证金</td>
+              <td>配资累计盈亏</td>
+            </tr>
+            <tr class="tb">
+              <td>520000.00</td>
+              <td>52000.00</td>
+              <td>+188.00</td>
+            </tr>
+            <tr class="th">
+              <td>累计配资总额</td>
+              <td>累计配资笔数</td>
+              <td>累计收益率</td>
+            </tr>
+            <tr class="tb">
+              <td>182830.00</td>
+              <td>10</td>
+              <td>28%</td>
+            </tr>
+          </table>
+          <div class="summary-right">
+            <p class="f-song cl-153">可用余额</p>
+            <p class="mt-10"><span class="f-30 f-bold">10000</span><span class="f-20">.00</span></p>
+            <div class="mt-10">
+              <button class="btn-micro-red cl-red">充值</button>
+              <button class="btn-micro-gray ml-10">提现</button>
+            </div>
+          </div>
+        </div>
+        <!-- 用户操盘信息概览 结束 -->
+
+        <!-- 订单列表 -->
+        <div class="order-list mt-40">
+          <!-- 具备切换功能的标签标题 -->
+          <div class="switch-title">
+            <ul class="switch-tab-wrap">
+              <li><a class="switch-tab curr" href="javascript:;">所有订单</a></li>
+              <li><a class="switch-tab" href="javascript:;">代付款 <span class="f-14 cl-deepred">0</span></a></li>
+              <li><a class="switch-tab" href="javascript:;">操盘中 <span class="f-14 cl-deepred">0</span></a></li>
+              <li><a class="switch-tab" href="javascript:;">已结算 <span class="f-14 cl-deepred">0</span></a></li>
+            </ul>
+          </div>
+          <!-- 具备切换功能的标签标题 结束 -->
+
+          <!-- 订单表格 -->
+          <!-- 有订单 -->
+          <table class="order-list-table table-module" >
+            <tr class="th">
+              <th>操盘金额（元）</th>
+              <th>证券总资产（元）</th>
+              <th>盈利金额</th>
+              <th>配资结算时间</th>
+              <th>预付服务费</th>
+              <th>状态</th>
+            </tr>
+
+            <!-- 状态 操盘中 的记录 -->
+            <tr class="tb" valign="top">
+              <td>
+                <p class="f-bold f-14">2000.00</p>
+                <p class="f-song cl-153 mt-5">按天</p>
+                <div>
+                  <button class="btn-micro cl-red mt-20">帐号密码</button>
+                </div>
+              </td>
+              <td>
+                <p class="f-bold f-14">2130.00</p>
+                <p class="f-song cl-153 mt-5">止损值 <span>1850.00</span></p>
+                <div>
+                  <button class="btn-micro cl-red mt-20">补 充</button>
+                </div>
+              </td>
+              <td>
+                <p class="f-bold f-14 cl-red">+130.00</p>
+                <p class="f-song cl-153 mt-5">收益率 <span>6.50%</span></p>
+                <div>
+                  <button class="btn-micro cl-red mt-20">提 盈</button>
+                </div>
+              </td>
+              <td>
+                <p class="f-14">2015.04.05 14:54</p>
+                <p class="f-song cl-red mt-5">剩余<span>1</span>天</p>
+                <div>
+                  <button class="btn-micro cl-red mt-20">延期</button>
+                </div>
+              </td>
+              <td>
+                <div class="brd">
+                  <p class="f-bold f-14">213.00</p>
+                </div>
+              </td>
+              <td>
+                <p class="cl-green">操盘中</p>
+                <a class="mt-5" href="javascript:;" target="_blank">详情</a>
+                <div class="mt-20">
+                  <button class="btn-micro-gray">结算</button>
+                </div>
+              </td>
+            </tr>
+            <!-- 状态 操盘中 的记录 结束 -->
+
+            <!-- 状态 待付款 的记录 -->
+            <tr class="tb" valign="top">
+              <td>
+                <p class="f-bold f-14">2000.00</p>
+                <p class="f-song cl-153 mt-5">按天</p>
+              </td>
+              <td>
+                <p class="f-bold f-14">2130.00</p>
+                <p class="f-song cl-153 mt-5">止损值 <span>1850.00</span></p>
+              </td>
+              <td>
+                <p class="f-bold f-14">0.00</p>
+              </td>
+              <td>
+                <p class="f-14">2015.04.05 14:54</p>
+                <p class="f-song mt-5">共<span>5</span>天</p>
+              </td>
+              <td>
+                <div class="brd">
+                  <p class="f-bold f-14">213.00</p>
+                </div>
+              </td>
+              <td>
+                <p class="">待付款</p>
+                <a class="mt-5" href="javascript:;" target="_blank">详情</a>
+                <div class="mt-20">
+                  <button class="btn-micro-red cl-red">立即付款</button>
+                </div>
+              </td>
+            </tr>
+            <!-- 状态 待付款 的记录 结束 -->
+
+            <!-- 状态 已结算 的记录 -->
+            <tr class="tb" valign="top">
+              <td>
+                <p class="f-bold f-14">2000.00</p>
+                <p class="f-song cl-153 mt-5">按天</p>
+              </td>
+              <td>
+                <p class="f-bold f-14">2130.00</p>
+                <p class="f-song cl-153 mt-5">止损值 <span>1850.00</span></p>
+              </td>
+              <td>
+                <p class="f-bold f-14 cl-green">-50.00</p>
+                <p class="f-song cl-153 mt-5">收益率 <span>0.00%</span></p>
+              </td>
+              <td>
+                <p class="f-14">2015.04.05 14:54</p>
+                <p class="f-song mt-5 cl-153">已结束</p>
+              </td>
+              <td>
+                <div class="brd">
+                  <p class="f-bold f-14">213.00</p>
+                </div>
+              </td>
+              <td>
+                <p class="">已结算</p>
+                <a class="mt-5" href="javascript:;" target="_blank">详情</a>
+              </td>
+            </tr>
+            <!-- 状态 已结算 的记录 结束 -->
+          </table>
+          <!-- 有订单 结束 -->
+
+          <!-- 分页 -->
+          <div class="page clearfix" >
+            <button class="previous"></button> <span>1</span>/<span>2</span> <button class="next"></button>
+          </div>
+          <!-- 分页 结束 -->
+
+          <!-- 无订单 -->
+          <div style="display: none;">
+            <table class="order-list-table">
+              <tr class="th">
+                <th>操盘金额（元）</th>
+                <th>证券总资产（元）</th>
+                <th>盈利金额</th>
+                <th>配资结算时间</th>
+                <th>预付服务费</th>
+                <th>状态</th>
+              </tr>
+            </table>
+            <!-- 无订单 结束 -->
+            <div class="icon-stock-big"></div>
+            <a href="javascript:;" class="apply-btn">立即配资</a>
+            <div class="steps-introduction">
+              <p class="f-16 cl-153">配资买股流程</p>
+              <ul class="steps-arrow-bg mt-20 clearfix">
+                <li>1.申请实盘资金</li>
+                <li>2.领取交易账户</li>
+                <li>3.下载客户端，开始赚钱</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 订单表格 结束 -->
+        </div>
+
+      </div>
+    </div>
+    <!-- 用户的操盘界面 结束 -->
+  </div>
+  <!-- 内容结束 -->
+
+  <!-- 底部信息 -->
+  <div class="footer clearfix">
+    <div class="inner">
+      <div class="clearfix">
+        <div class="pull-left">
+          <dl class="pull-left">
+            <dt>帮助中心</dt>
+            <dd class="mt-20"><a href="">发财金</a></dd>
+            <dd><a href="">参与规则</a></dd>
+            <dd><a href="">如何充值</a></dd>
+            <dd><a href="">如何提现</a></dd>
+          </dl>
+          <dl class="pull-left">
+            <dt>常见问题</dt>
+            <dd class="mt-20"><a href="">禁止股票</a></dd>
+            <dd><a href="">收费说明</a></dd>
+            <dd><a href="">操盘止损</a></dd>
+            <dd><a href="">操盘时间</a></dd>
+          </dl>
+          <dl class="pull-left">
+            <dt>交易流程</dt>
+            <dd class="mt-20"><a href="">申请操盘</a></dd>
+            <dd><a href="">操盘补亏</a></dd>
+            <dd><a href="">操盘清算</a></dd>
+            <dd><a href="">盈利提取</a></dd>
+          </dl>
+          <dl class="pull-left">
+            <dt>了解我们</dt>
+            <dd class="mt-20"><a href="">公司介绍</a></dd>
+            <dd><a href="">网站公告</a></dd>
+            <dd><a href="">联系我们</a></dd>
+            <dd><a href="">诚聘英才</a></dd>
+          </dl>
+          <div class="pull-left service">
+            <p class="f-16 f-bold">客户服务</p>
+            <p class="mt-20 f-14 cl-119">（服务时间：8:00-24:00）</p>
+            <p class="mt-10 f-20 cl-119 clearfix"><span class="phone-icon pull-left" ></span><span class="pull-left ml-10 f-20">400-638-0808</span></p>
+            <p class="mt-10 f-14 cl-119 clearfix"><span class="qq-icon pull-left" ></span><a class="pull-left ml-10" href="">QQ在线交谈</a></p>
+          </div>
+        </div>
+        <div class="pull-right">
+          <a class="logo-bg-gray"></a>
+        </div>
+      </div>
+      <!-- 版权声明与权威认证 -->
+      <div class="clearfix others">
+        <p class="copyright pull-left">版权所有 © 杭州袋狮信息技术有限公司	  Copyright Reserved 2014-2015	   浙ICP备14037891</p>
+        <div class="pull-right">
+          <a href="javascript:;" class="ml-20" target="_blank">
+            <img width="93" height="33" border="0" src="../images/certificate/faith1.png" alt="">
+          </a>
+          <a class="ml-20" href="http://webscan.360.cn/index/checkwebsite/url/www.facaijin.com" target="_blank">
+            <img width="93" height="33" border="0" src="../images/certificate/360safe.png" alt="360网站完全认证"/>
+          </a>
+          <a class="ml-20" href="#" target="_blank">
+            <img width="91" height="33" border="0" src="../images/certificate/norton1.png" alt="">
+          </a>
+          <a class="ml-20" href="http://www.anquan.org/authenticate/cert/?site=facaijin.com&at=business" target="_blank">
+            <img width="91" height="33" border="0" src="../images/certificate/hy_124x47.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 底部信息 结束 -->
+  <script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+</body>
+</html>
