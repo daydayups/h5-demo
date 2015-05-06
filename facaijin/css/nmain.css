@@ -219,6 +219,11 @@ img {
 .txt-center {
   text-align: center;
 }
+.w1200 {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* 首页样式 */
 /* site-nav-top 头部导航 */
@@ -1109,7 +1114,7 @@ span.sort-icon.sort-icon-hover {
   float: left;
   line-height: 26px;
 }
-.user-main table .th td, .user-main table th {
+.user-main .th td, .user-main th {
   font-family: "SimSun";
   font-weight: normal;
   font-size: 12px;
@@ -1125,6 +1130,7 @@ span.sort-icon.sort-icon-hover {
   border-left: 1px solid #f2f2f2;
 }
 .btn-micro-red {
+  cursor: pointer;
   background-color: #fff;
   border: 1px solid #e0322d;
   width: 80px;
@@ -1135,6 +1141,7 @@ span.sort-icon.sort-icon-hover {
   color: #fff;
 }
 .btn-micro-gray {
+  cursor: pointer;
   background-color: #fff;
   border: 1px solid #d2d2d2;
   width: 80px;
@@ -1145,36 +1152,37 @@ span.sort-icon.sort-icon-hover {
   color: #DF0000;
 }
 .btn-micro {
+  cursor: pointer;
   background-color: #fff;
   border: 1px solid #d2d2d2;
   width: 80px;
   line-height: 30px;
 }
 /* 标签切换组件 */
-.user-main .switch-tab-wrap {
+.switch-title .switch-tab-wrap {
   padding-left: 37px;
   height: 41px;
   border-bottom: 2px solid #f2f2f2;
 }
-.user-main .switch-tab-wrap li {
+.switch-title .switch-tab-wrap li {
   float: left;
   line-height: 40px;
   text-align: center;
   margin-right: 25px;
 }
-.user-main .switch-tab {
+.switch-title .switch-tab {
   display: block;
   padding: 0 5px;
   font-size: 14px;
   color: #000;
   float: left;
 }
-.user-main .switch-tab:hover {
+.switch-title .switch-tab:hover {
   color: #c50024;
   border-bottom: 3px solid #c50024;
   text-decoration: none;
 }
-.user-main .switch-tab.curr {
+.switch-title .switch-tab.curr {
   color: #c50024;
   text-decoration: none;
   border-bottom: 3px solid #c50024;
@@ -1188,7 +1196,12 @@ span.sort-icon.sort-icon-hover {
   border-left: 1px solid #f2f2f2;
   border-right: 1px solid #f2f2f2;
 }
+
 .table-module th {
+  font-family: "SimSun";
+  font-weight: normal;
+  font-size: 12px;
+  color: #999;
   border-bottom: 2px dotted #f2f2f2;
 }
 .table-module .tb td {
@@ -1328,13 +1341,13 @@ span.sort-icon.sort-icon-hover {
   color: #999;
 }
 /* 订单列表 表格 分页 */
-.cash-list .page {
+.page {
   width: 120px;
   margin: 20px auto;
   line-height: 32px;
   text-align: center;
 }
-.cash-list .page .previous {
+.page .previous {
   display: block;
   float: left;
   width: 32px;
@@ -1342,7 +1355,7 @@ span.sort-icon.sort-icon-hover {
   background: url(../images/user/paging_bg.png) no-repeat 13px 10px;
   border: 1px solid #dedede;
 }
-.cash-list .page .next {
+.page .next {
   display: block;
   float: right;
   width: 32px;
@@ -1384,8 +1397,8 @@ span.sort-icon.sort-icon-hover {
 .site-nav .sub-title {
   float: left;
   margin-top: 10px;
-  margin-left: 10px;
-  padding-left: 10px;
+  margin-left: 20px;
+  padding-left: 20px;
   border-left: 1px solid #dedede;
   font-size: 20px;
 }
@@ -1402,6 +1415,142 @@ span.sort-icon.sort-icon-hover {
 .detail-wrap {
   width:1200px;
   margin: 0 auto;
+}
+.detail-steps {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.detail-steps .detail-steps-items {
+  width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.detail-steps .item {
+  float: left;
+  line-height: 21px;
+  margin-left: 20px;
+}
+.icon-tick-gray {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url(../images/user/icons.png) -231px -158px;
+}
+.icon-tick-active {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background: url(../images/user/icons.png) -189px -158px;
+}
+.icon-arrow {
+  display: block;
+  width: 14px;
+  height: 21px;
+  background: url(../images/user/icons.png) -272px -158px;
+}
+.detail-summary {
+  border-top: 1px solid #dedede;
+  background-color: #fafafa;
+}
+.simple-btn {
+  cursor: pointer;
+  font-size: 14px;
+  background: none;
+  border: none;
+}
+.btn-small-red {
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #e0322d;
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 30px;
+}
+.btn-small-red:hover {
+  background-color: #e0322d;
+  color: #fff;
+}
+.btn-small-gray {
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #d2d2d2;
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 30px;
+}
+.btn-small-gray:hover {
+  color: #df0000;
+}
+.detail-summary .item {
+  margin-left: 70px;
+  line-height: 50px;
+  float: left;
+}
+.details-table {
+  width: 760px;
+}
+.details-table .th {/*table head*/
+  line-height: 40px;
+}
+.td-border {
+  border-bottom: 2px dotted #f2f2f2;
+}
+.details-table .tb {/*table body*/
+  line-height: 50px;
+}
+.details-table .stop-loss-base {
+  position: relative;
+}
+.details-table .stop-loss {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  width: 100px;
+  height: 50px;
+  background: url(../images/user/icons.png) -151px -320px;
+}
+.details-table .stop-loss p {
+  line-height: 16px;
+  padding-left: 10px;
+}
+.detail-wrap .download-box {
+  margin-top: 70px;
+  margin-left: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 40px;
+  border-left: 1px solid #dedede;
+}
+.trading-list-table tr .col-1st {
+  padding-left: 50px;
+}
+.trading-list-table .buy-bg {
+  background-color: #fafafa;
+}
+/* 订单详情 无记录 */
+.details-table .icon-warning-base {
+  position: relative;
+}
+.details-table .icon-warning-small {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/user/icons.png) -19px -266px;
+  position: absolute;
+  left: 120px;
+  top: 10px;
+}
+.trading-list-table .icon-warning-small-gray {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/user/icons.png) -159px -292px;
+}
+.trading-list-table .no-record-hint {
+  margin: 60px auto;
+  width: 130px;
+  line-height: 30px;
 }
 @media screen and (max-width: 1200px){
   .ml-30 {

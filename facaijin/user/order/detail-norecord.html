@@ -47,7 +47,7 @@
               <td width="15%" align="right"><span class="cl-153">可用</span></td>
               <td width="15%"><span class="f-14 f-bold"><span class="">441.33</span></span></td>
               <td width="15%" align="right"><span class="cl-153">收益率</span></td>
-              <td><span class="f-14 f-bold cl-deepred">+46.73%</span></td>
+              <td><span class="f-14 f-bold cl-green">-25.73%</span></td>
             </tr>
             <tr>
               <td colspan="6" class="td-border"></td>
@@ -72,7 +72,7 @@
                   <p class="cl-153 f-song mt-10">止损</p>
                 </div>
               </td>
-              <td colspan="3"><button class="btn-small-red f-song cl-red">补 充</button></td>
+              <td colspan="3" class="icon-warning-base"><button class="btn-small-red f-song cl-red">补 充</button> <span class="icon-warning-small pull-left"></span> <span class="cl-deepred ml-40">项目已止损，补充保证金继续使用或结算订单</span> </td>
             </tr>
             <tr class="tb">
               <td align="right"><span class="cl-153">结算日</span></td>
@@ -113,100 +113,13 @@
               <th align="left" width="">清算金额</th>
               <th align="left" width="">参考盈亏</th>
             </tr>
-            <!-- 买入记录 背景灰 -->
-            <tr class="tb buy-bg">
-              <td class="col-1st">
-                <p class="f-14">000001 平安银行</p>
-              </td>
-              <td>
-                <p class="f-14">买入</p>
-              </td>
-              <td>
-                <p class="f-14 f-bold">16.05</p>
-              </td>
-              <td>
-                <p class="f-14">100</p>
-              </td>
-              <td>
-                <p class="f-14">1526.00</p>
-              </td>
-              <td>
-                <p class="f-bold f-14">1526.00</p>
-              </td>
-              <td>
-                <p class="f-bold f-14 cl-deepred">+25.00</p>
-              </td>
-            </tr>
-            <!-- 买入记录 背景灰 -->
-            <tr class="tb buy-bg">
-              <td class="col-1st">
-                <p class="f-14">000001 平安银行</p>
-              </td>
-              <td>
-                <p class="f-14">买入</p>
-              </td>
-              <td>
-                <p class="f-14 f-bold">16.05</p>
-              </td>
-              <td>
-                <p class="f-14">100</p>
-              </td>
-              <td>
-                <p class="f-14">1526.00</p>
-              </td>
-              <td>
-                <p class="f-bold f-14">1526.00</p>
-              </td>
-              <td>
-                <p class="f-bold f-14">-25.00</p>
-              </td>
-            </tr>
-            <!-- 买入记录 背景灰 -->
-            <tr class="tb sell-bg">
-              <td class="col-1st">
-                <p class="f-14">000001 平安银行</p>
-              </td>
-              <td>
-                <p class="f-14">卖出</p>
-              </td>
-              <td>
-                <p class="f-14 f-bold">16.05</p>
-              </td>
-              <td>
-                <p class="f-14">100</p>
-              </td>
-              <td>
-                <p class="f-14">1526.00</p>
-              </td>
-              <td>
-                <p class="f-bold f-14">1526.00</p>
-              </td>
-              <td>
-                <p class="f-bold f-14">-25.00</p>
-              </td>
-            </tr>
-            <!-- 买入记录 背景灰 -->
-            <tr class="tb sell-bg">
-              <td class="col-1st">
-                <p class="f-14">000001 平安银行</p>
-              </td>
-              <td>
-                <p class="f-14">卖出</p>
-              </td>
-              <td>
-                <p class="f-14 f-bold">16.05</p>
-              </td>
-              <td>
-                <p class="f-14">100</p>
-              </td>
-              <td>
-                <p class="f-14">1526.00</p>
-              </td>
-              <td>
-                <p class="f-bold f-14">1526.00</p>
-              </td>
-              <td>
-                <p class="f-bold f-14 cl-deepred">+25.00</p>
+            <!-- 无记录 -->
+            <tr>
+              <td colspan="7">
+                <div class="no-record-hint clearfix">
+                  <span class="icon-warning-small-gray pull-left"></span>
+                  <span class="f-14 cl-153">当前无持仓股票</span>
+                </div>
               </td>
             </tr>
           </table>
@@ -214,7 +127,7 @@
 
           <!-- 分页 -->
           <div class="page clearfix" >
-            <button class="previous"></button> <span>1</span>/<span>2</span> <button class="next"></button>
+            <button class="previous"></button> <span>1</span>/<span>1</span> <button class="next"></button>
           </div>
           <!-- 分页 结束 -->
 
@@ -290,5 +203,13 @@
   </div>
   <!-- 底部信息 结束 -->
   <script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+  <script>
+    $(function(){
+      $("button.profit-withdraw").hide();
+      $("button.increase").hide();
+      $("button.reduce").hide();
+      $("button.postpone").hide();
+    });
+  </script>
 </body>
 </html>
