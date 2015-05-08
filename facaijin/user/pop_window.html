@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>弹窗-发财金-赚钱不等待</title>
+  <link rel="stylesheet" href="../css/nmain.css">
+  <style>
+    .btn-box {
+      width: 970px;
+      margin-top: 30px;
+      padding-left: 30px;
+      line-height: 60px;
+      border: 2px dotted #dddddd;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- 按钮区域 -->
+  <div class="btn-box">
+    <!-- 交易帐号 -->
+    <button class="btn-account btn-micro cl-red">帐号密码</button>
+    <!-- 补充保证金 -->
+    <button class="btn-replenish btn-micro cl-red ml-30">补充</button>
+    <!-- 盈利提取 -->
+    <button class="btn-takeprofit btn-micro cl-red ml-30">提盈</button>
+    <!-- 延期 -->
+    <button class="btn-postpone btn-micro cl-red ml-30">延期</button>
+    <!-- 终止操盘 -->
+    <button class="btn-stop-order simple-btn cl-red ml-30">终止操盘</button>
+
+    <!-- 结算 -->
+    <button class="btn-stop-order simple-btn cl-red ml-30">[我要结算]</button>
+
+    <!-- 支付成功 -->
+    <button class="btn-trading-hint simple-btn ml-30">支付提示</button>
+    <br/>
+
+    <!-- 加配 -->
+    <button class="btn-increase btn-micro cl-red">加配</button>
+    <!-- 减配 -->
+    <button class="btn-reduce simple-btn cl-153 ml-30">[减配]</button>
+
+    <!-- 确认按钮 -->
+    <button class="btn-confirm ml-30">确 认</button>
+    <!-- 确认按钮 -->
+    <button class="btn-cancel ml-30">取 消</button>
+  </div>
+  <!-- 按钮区域 结束 -->
+
+  <!-- 弹窗区域 -->
+  <div>
+    <!-- 帐号密码 -->
+    <div id="pop-account" class="pop-window">
+      <div class="window-title">
+        <span class="f-14 f-bold">帐号密码</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="" cellspacing="10" width="100%">
+          <tr>
+            <td><span class="cl-153">交易账户</span></td>
+            <td align="left"><span class="f-16 f-bold">56468498</span></td>
+            <td align="center"><span class="f-bold">同花顺股票交易软件</span></td>
+          </tr>
+          <tr>
+            <td><span class="cl-153">交易密码</span></td>
+            <td align="left"><span class="f-16 f-bold">211658</span></td>
+            <td align="center"><button class="btn-small-red cl-red">立即下载</button></td>
+          </tr>
+        </table>
+        <div class="brd-dotted mt-10"></div>
+        <div class="mt-20 mb-20">
+          <button class="btn-confirm">确定</button>
+        </div>
+        <p class="cl-153">重点提醒交易前请先阅读《发财金规则说明》 《今日限制股》</p>
+      </div>
+    </div>
+    <!-- 补充保证金 弹窗 -->
+    <div id="pop-replenish" class="pop-window">
+      <div class="window-title">
+        <span class="f-14 f-bold">补充保证金</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="" cellspacing="20" width="100%">
+          <tr>
+            <td><span class="cl-153 f-14">剩余保证金</span></td>
+            <td align="left" class="stop-loss-base">
+              <span class="f-16 f-bold">1000.00</span>
+              <span class="f-14 ml-5">元</span>
+
+              <div class="stop-loss">
+                <p class="cl-153 f-bold">750.00</p>
+                <p class="cl-153 f-song mt-10">止损</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><span class="cl-153 f-14">补充金额</span></td>
+            <td align="left">
+              <div class="inp-box">
+                <input type="text" class="f-20" >
+                <span class="f-14 mr-10">元</span>
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div class="mt-20">
+          <button class="btn-confirm">确认支付</button>
+        </div>
+      </div>
+    </div>
+    <!-- 补充保证金 成功 弹窗 -->
+    <div id="pop-replenish-success" class="pop-window">
+      <div class="window-title">
+        <span class="f-14 f-bold">补充保证金</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="ml-50" cellspacing="20">
+        <tr>
+          <td>
+            <span class="icon-warning-middle"></span>
+          </td>
+          <td align="left" class="stop-loss-base">
+            <p class="f-16">保证补充成功，保证金剩余20000.元！</p>
+          </td>
+        </tr>
+        </table>
+        <div class="mt-20">
+          <button class="btn-confirm">完成</button>
+        </div>
+      </div>
+    </div>
+    <!-- 支付提示 弹窗 -->
+    <div id="pop-trading-hint" class="pop-window">
+      <div class="window-title">
+        <span class="f-14 f-bold">支付提示</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="ml-50" cellspacing="20">
+          <tr>
+            <td>
+              <span class="icon-warning-middle"></span>
+            </td>
+            <td align="left" class="stop-loss-base">
+              <p class="f-16">请在新打开的页面完成支付</p>
+              <p class="f-14 cl-153 mt-10">完成前请不要关闭窗口</p>
+            </td>
+          </tr>
+        </table>
+        <div class="mt-20">
+          <button class="btn-confirm">已完成支付</button>
+          <button class="simple-btn cl-blue ml-20">支付失败</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="mark"></div>
+  <script src="../js/jquery-1.11.2.min.js"></script>
+  <script src="../js/fcj.js"></script>
+  <script>
+    $(function(){
+      $.fcj.fn.markInit("#mark");
+      $(".btn-account").click(function () {
+        $("#mark").show().fadeTo(200, 0.2);
+        $.fcj.fn.popup("#pop-account");
+      });
+
+      $(".btn-replenish").click(function () {
+        $("#mark").show().fadeTo(200, 0.2);
+        $.fcj.fn.popup("#pop-replenish");
+      });
+
+      $(".btn-trading-hint").click(function () {
+        $("#mark").show().fadeTo(200, 0.2);
+        $.fcj.fn.popup("#pop-trading-hint");
+      });
+
+      $("#pop-replenish .btn-confirm").click(function () {
+        $("#pop-replenish").hide()
+//        $("#mark").show().fadeTo(200, 0.2);
+        $.fcj.fn.popup("#pop-replenish-success");
+      });
+
+      /* 关闭操作 */
+      $(".btn-close").click(function () {
+        $("#mark").hide();
+        $(this).parents(".pop-window").hide();
+      });
+    });
+  </script>
+</body>
+</html>

@@ -55,12 +55,12 @@
             <tr class="tb">
               <td align="right"><span class="cl-153">盈亏</span></td>
               <td colspan="2"><span class="f-14 f-bold">4568.11</span></td>
-              <td colspan="3"><button class="profit-withdraw btn-small-red f-song cl-red">提 盈</button></td>
+              <td colspan="3"><button class="btn-takeprofit btn-small-red f-song cl-red">提 盈</button></td>
             </tr>
             <tr class="tb">
               <td align="right"><span class="cl-153">操盘金额</span></td>
               <td colspan="2"><span class="f-14 f-bold">10000.00</span></td>
-              <td colspan="3"><button class="increase btn-small-red f-song cl-red">加 配</button>
+              <td colspan="3"><button class="btn-increase btn-small-red f-song cl-red">加 配</button>
                 <button class="reduce simple-btn f-song ml-10 cl-153">[减配]</button></td>
             </tr>
             <tr class="tb">
@@ -72,12 +72,12 @@
                   <p class="cl-153 f-song mt-10">止损</p>
                 </div>
               </td>
-              <td colspan="3"><button class="btn-small-red f-song cl-red">补 充</button></td>
+              <td colspan="3"><button class="btn-replenish btn-small-red f-song cl-red">补 充</button></td>
             </tr>
             <tr class="tb">
               <td align="right"><span class="cl-153">结算日</span></td>
               <td colspan="2"><span class="f-14 f-bold">2015-04-30 14:54</span><span class="cl-153 f-song ml-10">剩余1天</span></td>
-              <td colspan="3"><button class="postpone btn-small-red f-song cl-red">延 期</button></td>
+              <td colspan="3"><button class="btn-postpone btn-small-red f-song cl-red">延 期</button></td>
             </tr>
           </table>
           <div class="download-box pull-left">
@@ -404,7 +404,7 @@
   <script src="../../js/fcj.js"></script>
   <script>
     $(function(){
-      fcj.fn.switchTabs(".switch-title .switch-tab", ".trading-list-table", "curr");
+      $.fcj.fn.switchTabs(".switch-title .switch-tab", ".trading-list-table", "curr");
     });
   </script>
 </body>

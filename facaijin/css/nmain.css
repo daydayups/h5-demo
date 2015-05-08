@@ -1543,7 +1543,7 @@ span.sort-icon.sort-icon-hover {
 .details-table .icon-warning-base {
   position: relative;
 }
-.icon-warning-small {
+.details-table .icon-warning-small {
   display: block;
   width: 30px;
   height: 30px;
@@ -1791,13 +1791,6 @@ table .apply-btn {
   line-height: 30px;
   display: none;
 }
-.icon-success-small {
-  display: block;
-  width: 30px;
-  height: 30px;
-  background: url(../images/user/icons.png) -204px -291px;
-}
-
 /* 我的银行卡 */
 .info-table td {
   padding: 30px 0;
@@ -1866,6 +1859,18 @@ textarea {
   height: 64px;
   background: url(../images/user/icons.png) no-repeat  -68px -206px;
 }
+.icon-success-middle {
+  display: block;
+  width: 49px;
+  height: 49px;
+  background: url(../images/user/icons.png) no-repeat  -151px -214px;
+}
+.icon-warning-middle {
+  display: block;
+  width: 49px;
+  height: 49px;
+  background: url(../images/user/icons.png) no-repeat  -218px -214px;
+}
 .withdraw-steps {
   height: 62px;
   background: url(../images/user/withdraw_steps_bg.png) no-repeat 20px 45px;
@@ -1890,7 +1895,7 @@ textarea {
   display: block;
   width: 27px;
   height: 20px;
-  background: url(../images/user/icons.png) no-repeat -152px -366px;
+  background: url(../images/user/icons.png) no-repeat -152px -376px;
 }
 .feedback-record .consult-tag {
   padding: 2px 3px;
@@ -1908,6 +1913,75 @@ textarea {
   height: 50px;
   border: 1px solid #dedede;
   overflow: hidden;
+}
+/* 弹窗样式 pop-window */
+.btn-confirm {
+  line-height: 32px;
+  background-color: #e0322d;
+  color: #fff;
+  width: 117px;
+  text-align: center;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.btn-cancel {
+  line-height: 32px;
+  background-color: #eeeeee;
+  color: #999999;
+  width: 117px;
+  text-align: center;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.pop-window {
+  position: fixed;
+  border: 1px solid #d2d2d2;
+  border-radius: 2px;
+  min-width: 500px;
+  display: none;
+}
+.window-title {
+  padding-left: 20px;
+  line-height: 45px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #d2d2d2;
+  position: relative;
+}
+.window-body {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+.window-title .btn-close {
+  cursor: pointer;
+  display: block;
+  width: 17px;
+  height: 17px;
+  background: url(../images/user/icons.png) no-repeat -213px -375px;
+  position: absolute;
+  right: 18px;
+  top: 14px;
+}
+.window-title .btn-close:hover {
+  background: url(../images/user/icons.png) no-repeat -263px -375px;
+}
+.pop-window .stop-loss-base {
+  position: relative;
+}
+.pop-window .stop-loss {
+  display: block;
+  position: absolute;
+  right: 70px;
+  top: -10px;
+  width: 100px;
+  height: 50px;
+  background: url(../images/user/icons.png) -151px -320px;
+}
+.pop-window .stop-loss p {
+  line-height: 16px;
+  padding-left: 10px;
 }
 @media screen and (max-width: 1200px){
   .ml-30 {

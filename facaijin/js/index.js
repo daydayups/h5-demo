@@ -45,7 +45,7 @@ $(function(){
           $forms.hide();
           $forms.eq($(this).index()).show();
         });*/
-      fcj.fn.switchTabs("#apply-box .tab-wrap .tab", "#apply-box .apply-form","current");
+        $.fcj.fn.switchTabs("#apply-box .tab-wrap .tab", "#apply-box .apply-form","current");
 
       //格式化金额
       function toThousands(num) {

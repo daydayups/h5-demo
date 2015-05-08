@@ -206,7 +206,11 @@
             </table>
             <div class="brd-dotted mt-10"></div>
           </div>
-
+          <!-- 分页 -->
+          <div class="page clearfix" >
+            <button class="previous"></button> <span>1</span>/<span>2</span> <button class="next"></button>
+          </div>
+          <!-- 分页 结束 -->
         </div>
         <!-- 我要投诉 结束 -->
 
@@ -285,7 +289,7 @@
   <script src="../../js/fcj.js"></script>
   <script>
     $(function(){
-      fcj.fn.switchTabs(".switch-title .switch-block", ".switch-box", "curr");
+      $.fcj.fn.switchTabs(".switch-title .switch-block", ".switch-box", "curr");
 
 
     });

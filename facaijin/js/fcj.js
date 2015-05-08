@@ -1,11 +1,20 @@
 /**
  * Created by Administrator on 2015/5/6 0006.
  */
+jQuery.browser = {};
+(function () {
+  jQuery.browser.msie = false;
+  jQuery.browser.version = 0;
+  if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+    jQuery.browser.msie = true;
+    jQuery.browser.version = RegExp.$1;
+  }
+})();
 //需要 Jquery依赖
-
-  var fcj = {
-    fn:{
-      switchTabs : function (tabs, boxs, current) {
+;(function(window, $, undefined) {
+  $.fcj = {
+    fn: {
+      switchTabs: function (tabs, boxs, current) {
         //标签切换
         /*
          * tabs: 标签的类如 ".switch-title .switch-tab"
@@ -17,15 +26,60 @@
         var currStr = current;
         $boxs.hide();
         $boxs.eq(0).show();
-        $tabs.click(function(){
+        $tabs.click(function () {
           $tabs.removeClass(currStr);
           $(this).addClass(currStr);
           $boxs.hide();
           $boxs.eq($tabs.index(this)).show();
         });
       },
-      fun2 : function () {
+      popup: function (popWindow) {
 
+        /*
+         * button: string example: ".btn-simple" 按钮
+         * popWindow: string example: ".pop-window" 弹窗
+         * mark: string example: "#mark" 透明层
+         * closeBtn: string example: ".btn-close" 关闭按钮
+         */
+        var $popWindow = $(popWindow)
+
+        var _width = $(popWindow).outerWidth(),
+            _height = $(popWindow).outerHeight(),
+            _windowHeight = $(window).height();
+
+        // 给弹出层添加默认定位位置
+        var isIE6 = (window.ActiveXObject) && ($.browser.version == "6.0") && !$.support.style;
+        var cssPosition = isIE6 ? "absolute" : "fixed";
+        var cssTop = isIE6 ? "400px" : (_windowHeight - _height) / 2 + "px";
+
+//        console.info("popwindow:" + $popWindow.get(0));
+
+        //样式初始化
+        $popWindow.css({
+          "position": cssPosition,
+          "display": "none",
+          "z-index": 1100,
+          "margin-left": -(_width / 2) + "px",
+          "left": 50 + "%",
+          "top": cssTop
+        });
+
+        $popWindow.show().fadeTo(200, 1);
+      },
+      markInit: function (markId) {
+        $(markId).css({
+          "position": "fixed",
+          "z-index": 100,
+          "top": 0,
+          "left": 0,
+          "display": "none",
+          "width": "100%",
+          "height": "100%",
+          "background-color": "#000",
+          "opacity": 0.2,
+          "filter": "alpha(opacity=0.2)"
+        });
       }
     }
   }
+})(window, jQuery);
