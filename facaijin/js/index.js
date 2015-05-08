@@ -35,16 +35,17 @@ $(function(){
       });
 
       /* 申请操盘 标签切换 */
-      var $tabs = $("#apply-box .tab-wrap .tab");
-      var $forms = $("#apply-box .apply-form");
-      $forms.hide();
-      $forms.eq(0).show();
-      $tabs.click(function(){
-        $tabs.removeClass("current");
-        $(this).addClass("current");
+      /*var $tabs = $("#apply-box .tab-wrap .tab");
+        var $forms = $("#apply-box .apply-form");
         $forms.hide();
-        $forms.eq($(this).index()).show();
-      });
+        $forms.eq(0).show();
+        $tabs.click(function(){
+          $tabs.removeClass("current");
+          $(this).addClass("current");
+          $forms.hide();
+          $forms.eq($(this).index()).show();
+        });*/
+      fcj.fn.switchTabs("#apply-box .tab-wrap .tab", "#apply-box .apply-form","current");
 
       //格式化金额
       function toThousands(num) {

@@ -88,7 +88,6 @@
           </div>
         </div>
 
-
         <!-- 订单列表 -->
         <div class="mt-40">
           <!-- 具备切换功能的标签标题 -->
@@ -102,115 +101,227 @@
           <!-- 具备切换功能的标签标题 结束 -->
 
           <!-- 订单表格 -->
-          <!-- 有订单 -->
+          <!-- 持仓 有订单 -->
           <table class="trading-list-table table-module" width="100%" cellspacing="0">
-            <tr class="th">
-              <th class="col-1st" align="left" width="20%">股票代码/名称</th>
-              <th align="left" width="">买卖</th>
-              <th align="left" width="">成交价格</th>
-              <th align="left" width="">成交数量</th>
-              <th align="left" width="">成交金额</th>
-              <th align="left" width="">清算金额</th>
-              <th align="left" width="">参考盈亏</th>
-            </tr>
-            <!-- 买入记录 背景灰 -->
-            <tr class="tb buy-bg">
-              <td class="col-1st">
-                <p class="f-14">000001 平安银行</p>
-              </td>
-              <td>
-                <p class="f-14">买入</p>
-              </td>
-              <td>
-                <p class="f-14 f-bold">16.05</p>
-              </td>
-              <td>
-                <p class="f-14">100</p>
-              </td>
-              <td>
-                <p class="f-14">1526.00</p>
-              </td>
-              <td>
-                <p class="f-bold f-14">1526.00</p>
-              </td>
-              <td>
-                <p class="f-bold f-14 cl-deepred">+25.00</p>
-              </td>
-            </tr>
-            <!-- 买入记录 背景灰 -->
-            <tr class="tb buy-bg">
-              <td class="col-1st">
-                <p class="f-14">000001 平安银行</p>
-              </td>
-              <td>
-                <p class="f-14">买入</p>
-              </td>
-              <td>
-                <p class="f-14 f-bold">16.05</p>
-              </td>
-              <td>
-                <p class="f-14">100</p>
-              </td>
-              <td>
-                <p class="f-14">1526.00</p>
-              </td>
-              <td>
-                <p class="f-bold f-14">1526.00</p>
-              </td>
-              <td>
-                <p class="f-bold f-14">-25.00</p>
-              </td>
-            </tr>
-            <!-- 买入记录 背景灰 -->
-            <tr class="tb sell-bg">
-              <td class="col-1st">
-                <p class="f-14">000001 平安银行</p>
-              </td>
-              <td>
-                <p class="f-14">卖出</p>
-              </td>
-              <td>
-                <p class="f-14 f-bold">16.05</p>
-              </td>
-              <td>
-                <p class="f-14">100</p>
-              </td>
-              <td>
-                <p class="f-14">1526.00</p>
-              </td>
-              <td>
-                <p class="f-bold f-14">1526.00</p>
-              </td>
-              <td>
-                <p class="f-bold f-14">-25.00</p>
-              </td>
-            </tr>
-            <!-- 买入记录 背景灰 -->
-            <tr class="tb sell-bg">
-              <td class="col-1st">
-                <p class="f-14">000001 平安银行</p>
-              </td>
-              <td>
-                <p class="f-14">卖出</p>
-              </td>
-              <td>
-                <p class="f-14 f-bold">16.05</p>
-              </td>
-              <td>
-                <p class="f-14">100</p>
-              </td>
-              <td>
-                <p class="f-14">1526.00</p>
-              </td>
-              <td>
-                <p class="f-bold f-14">1526.00</p>
-              </td>
-              <td>
-                <p class="f-bold f-14 cl-deepred">+25.00</p>
-              </td>
-            </tr>
-          </table>
-          <!-- 有订单 结束 -->
+              <tr class="th">
+                <th class="col-1st" align="left" width="20%">股票代码/名称</th>
+                <th align="left" width="">成本价</th>
+                <th align="left" width="">最新价</th>
+                <th align="left" width="">持仓数量</th>
+                <th align="left" width="">持仓陈本</th>
+                <th align="left" width="">持仓市值</th>
+                <th align="left" width="">参考盈亏</th>
+              </tr>
+              <!-- 买入记录 背景灰 -->
+              <tr class="tb suspended">
+                <td class="col-1st">
+                  <p class="f-14">000001 平安银行 <span class="suspended-icon">停牌</span></p>
+                </td>
+                <td>
+                  <p class="f-14">15.57</p>
+                </td>
+                <td>
+                  <p class="f-14 f-bold">16.05</p>
+                </td>
+                <td>
+                  <p class="f-14">100</p>
+                </td>
+                <td>
+                  <p class="f-14">1526.00</p>
+                </td>
+                <td>
+                  <p class="f-bold f-14">1526.00</p>
+                </td>
+                <td>
+                  <p class="f-bold f-14 cl-deepred">+25.00</p>
+                </td>
+              </tr>
+              <!-- 买入记录 背景灰 -->
+              <tr class="tb stop-bg">
+                <td class="col-1st">
+                  <p class="f-14">000001 平安银行</p>
+                </td>
+                <td>
+                  <p class="f-14">15.57</p>
+                </td>
+                <td>
+                  <p class="f-14 f-bold">16.05</p>
+                </td>
+                <td>
+                  <p class="f-14">100</p>
+                </td>
+                <td>
+                  <p class="f-14">1526.00</p>
+                </td>
+                <td>
+                  <p class="f-bold f-14">1526.00</p>
+                </td>
+                <td>
+                  <p class="f-bold f-14">-25.00</p>
+                </td>
+              </tr>
+              <!-- 买入记录 背景灰 -->
+              <tr class="tb">
+                <td class="col-1st">
+                  <p class="f-14">000001 平安银行</p>
+                </td>
+                <td>
+                  <p class="f-14">15.57</p>
+                </td>
+                <td>
+                  <p class="f-14 f-bold">16.05</p>
+                </td>
+                <td>
+                  <p class="f-14">100</p>
+                </td>
+                <td>
+                  <p class="f-14">1526.00</p>
+                </td>
+                <td>
+                  <p class="f-bold f-14">1526.00</p>
+                </td>
+                <td>
+                  <p class="f-bold f-14">-25.00</p>
+                </td>
+              </tr>
+              <!-- 买入记录 背景灰 -->
+              <tr class="tb">
+                <td class="col-1st">
+                  <p class="f-14">000001 平安银行</p>
+                </td>
+                <td>
+                  <p class="f-14">15.57</p>
+                </td>
+                <td>
+                  <p class="f-14 f-bold">16.05</p>
+                </td>
+                <td>
+                  <p class="f-14">100</p>
+                </td>
+                <td>
+                  <p class="f-14">1526.00</p>
+                </td>
+                <td>
+                  <p class="f-bold f-14">1526.00</p>
+                </td>
+                <td>
+                  <p class="f-bold f-14 cl-deepred">+25.00</p>
+                </td>
+              </tr>
+            </table>
+          <!-- 持仓 有订单 结束 -->
+
+          <!-- 成交 有订单 -->
+          <table class="trading-list-table table-module" width="100%" cellspacing="0">
+              <tr class="th">
+                <th class="col-1st" align="left" width="20%">股票代码/名称</th>
+                <th align="left" width="">买卖</th>
+                <th align="left" width="">成交价格</th>
+                <th align="left" width="">成交数量</th>
+                <th align="left" width="">成交金额</th>
+                <th align="left" width="">清算金额</th>
+                <th align="left" width="">参考盈亏</th>
+              </tr>
+              <!-- 买入记录 背景灰 -->
+              <tr class="tb buy-bg">
+                <td class="col-1st">
+                  <p class="f-14">000001 平安银行</p>
+                </td>
+                <td>
+                  <p class="f-14">买入</p>
+                </td>
+                <td>
+                  <p class="f-14 f-bold">16.05</p>
+                </td>
+                <td>
+                  <p class="f-14">100</p>
+                </td>
+                <td>
+                  <p class="f-14">1526.00</p>
+                </td>
+                <td>
+                  <p class="f-bold f-14">1526.00</p>
+                </td>
+                <td>
+                  <p class="f-bold f-14 cl-deepred">+25.00</p>
+                </td>
+              </tr>
+              <!-- 买入记录 背景灰 -->
+              <tr class="tb buy-bg">
+                <td class="col-1st">
+                  <p class="f-14">000001 平安银行</p>
+                </td>
+                <td>
+                  <p class="f-14">买入</p>
+                </td>
+                <td>
+                  <p class="f-14 f-bold">16.05</p>
+                </td>
+                <td>
+                  <p class="f-14">100</p>
+                </td>
+                <td>
+                  <p class="f-14">1526.00</p>
+                </td>
+                <td>
+                  <p class="f-bold f-14">1526.00</p>
+                </td>
+                <td>
+                  <p class="f-bold f-14">-25.00</p>
+                </td>
+              </tr>
+              <!-- 买入记录 背景灰 -->
+              <tr class="tb sell-bg">
+                <td class="col-1st">
+                  <p class="f-14">000001 平安银行</p>
+                </td>
+                <td>
+                  <p class="f-14">卖出</p>
+                </td>
+                <td>
+                  <p class="f-14 f-bold">16.05</p>
+                </td>
+                <td>
+                  <p class="f-14">100</p>
+                </td>
+                <td>
+                  <p class="f-14">1526.00</p>
+                </td>
+                <td>
+                  <p class="f-bold f-14">1526.00</p>
+                </td>
+                <td>
+                  <p class="f-bold f-14">-25.00</p>
+                </td>
+              </tr>
+              <!-- 买入记录 背景灰 -->
+              <tr class="tb sell-bg">
+                <td class="col-1st">
+                  <p class="f-14">000001 平安银行</p>
+                </td>
+                <td>
+                  <p class="f-14">卖出</p>
+                </td>
+                <td>
+                  <p class="f-14 f-bold">16.05</p>
+                </td>
+                <td>
+                  <p class="f-14">100</p>
+                </td>
+                <td>
+                  <p class="f-14">1526.00</p>
+                </td>
+                <td>
+                  <p class="f-bold f-14">1526.00</p>
+                </td>
+                <td>
+                  <p class="f-bold f-14 cl-deepred">+25.00</p>
+                </td>
+              </tr>
+            </table>
+          <!-- 成交 有订单 结束 -->
+
+
 
           <!-- 分页 -->
           <div class="page clearfix" >
@@ -289,6 +400,12 @@
     </div>
   </div>
   <!-- 底部信息 结束 -->
-  <script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+  <script src="../../js/jquery-1.11.2.min.js"></script>
+  <script src="../../js/fcj.js"></script>
+  <script>
+    $(function(){
+      fcj.fn.switchTabs(".switch-title .switch-tab", ".trading-list-table", "curr");
+    });
+  </script>
 </body>
 </html>

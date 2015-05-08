@@ -581,8 +581,7 @@ img {
   width: 142px;
   height: 106px;
   border: 2px solid #ea4040;
-  background: url(../images/tick.png) no-repeat;
-  background-position: 110px 74px;
+  background: url(../images/tick.png) no-repeat 110px 74px;
 }
 .base-inp {
   margin-left: 80px;
@@ -678,6 +677,7 @@ img {
   text-align: center;
 }
 .apply-btn {
+  cursor: pointer;
   width: 250px;
   line-height: 40px;
   margin-left: auto;
@@ -1035,6 +1035,16 @@ span.sort-icon.sort-icon-hover {
   left: 22px;
   top: 10px;
 }
+.user-nav .icon-person-active {
+  display: block;
+  width: 24px;
+  height: 24px;
+  float: left;
+  background: url(../images/user/icons.png) no-repeat -111px -52px;
+  position: absolute;
+  left: 22px;
+  top: 10px;
+}
 .user-nav .icon-feedback {
   display: block;
   width: 24px;
@@ -1097,6 +1107,7 @@ span.sort-icon.sort-icon-hover {
   background-color: #fff;
   border-left: 1px solid #dedede;
   width: 993px;
+  min-height: 680px;
   padding: 20px;
   float: left;
 }
@@ -1532,7 +1543,7 @@ span.sort-icon.sort-icon-hover {
 .details-table .icon-warning-base {
   position: relative;
 }
-.details-table .icon-warning-small {
+.icon-warning-small {
   display: block;
   width: 30px;
   height: 30px;
@@ -1552,6 +1563,300 @@ span.sort-icon.sort-icon-hover {
   width: 130px;
   line-height: 30px;
 }
+/* 停牌样式 */
+.trading-list-table .suspended {
+  background-color: #eeeeee;
+}
+.trading-list-table .suspended .suspended-icon{
+  padding: 2px 3px;
+  background-color: #707070;
+  color: #fff;
+}
+
+/* 充值 样式 */
+.switch-block-base {
+  position: relative;
+}
+.switch-block-wrap {
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+}
+.switch-block-wrap .switch-block {
+  cursor: pointer;
+  float: left;
+  line-height: 40px;
+  padding: 0 30px;
+  font-size: 14px;
+}
+.switch-block-wrap .switch-block.curr {
+  border-top: 3px solid #c50024;
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  background-color: #fff;
+}
+/* 充值选择银行卡 */
+table .apply-btn {
+  margin-left: 0;
+}
+.form-table {
+  width: 832px;
+}
+.inp-box {
+  line-height: 45px;
+  padding-left: 15px;
+  border: 1px solid #e6e6e6;
+  max-width: 269px;
+  position: relative;
+}
+.inp-box input {
+  height: 45px;
+  border: none;
+}
+.inp-box input:focus {
+  outline: none;
+}
+.inp-box .bank-inp {
+  margin-top: 5px;
+  float: left;
+  width: 125px;
+  line-height: 35px;
+}
+.inp-box .inp-fl-hint {
+  cursor: pointer;
+  color: #999;
+  text-decoration: underline;
+  position: absolute;
+  right: -70px;
+  top: 0;
+}
+.inp-box .bank-trigger {
+  cursor: pointer;
+  float: right;
+  width: 98px;
+  padding-left: 15px;
+  padding-right: 10px;
+  border-left: 1px solid #e6e6e6;
+  background: url(../images/banks/bank_trigger_bg.png) repeat-x center;
+}
+.inp-box .bank-trigger .trigger-arrow {
+  float: right;
+  width: 28px;
+  height: 45px;
+  background: url(../images/user/icons.png) -240px -3px;
+}
+.inp-box .bank-trigger .trigger-arrow.down {
+  float: right;
+  width: 28px;
+  height: 45px;
+  background: url(../images/user/icons.png) -240px -37px;
+}
+.bank-list {
+  border: 1px solid #e6e6e6;
+  width: 600px;
+  padding: 25px;
+}
+.bank-list-table {
+  border: 1px solid #eeeeee;
+  border-collapse:collapse;
+}
+.bank-list-table td {
+  padding: 5px 10px;
+}
+.bank-img {
+  cursor: pointer;
+  display:block;
+  width: 125px;
+  height: 35px;
+}
+.bank-img.ICBC {
+  /* 中国工商银行 */
+  background: url(../images/banks/banks.png) no-repeat 0 0;
+}
+.bank-img.ABC {
+  /* 中国农业银行 */
+  background: url(../images/banks/banks.png) no-repeat 0 -34px;
+}
+.bank-img.CCB {
+  /* 中国建设银行 */
+  background: url(../images/banks/banks.png) no-repeat 0 -72px;
+}
+.bank-img.BOCO {
+  /* 交通银行 */
+  background: url(../images/banks/banks.png) no-repeat 0 -217px;
+}
+.bank-img.CIB {
+  /* 兴业银行 */
+  background: url(../images/banks/banks.png) no-repeat 0 -361px;
+}
+.bank-img.CMBC {
+  /* 中国民生银行 */
+  background: url(../images/banks/banks.png) no-repeat 0 -288px;
+}
+.bank-img.CEB {
+  /* 中国光大银行 */
+  background: url(../images/banks/banks.png) no-repeat 0 -325px;
+}
+.bank-img.BOC {
+  /* 中国银行 */
+  background: url(../images/banks/banks.png) no-repeat 0 -145px;
+}
+.bank-img.ECITIC {
+  /* 中信银行 */
+  background: url(../images/banks/banks.png) no-repeat 0 -251px;
+}
+.bank-img.GDB {
+  /* 广发银行 */
+  background: url(../images/banks/banks.png) no-repeat 0 -432px;
+}
+.bank-img.HXB {
+  /* 华夏银行 */
+  background: url(../images/banks/banks.png) no-repeat 0 -467px;
+}
+.bank-img.CMBCHINA {
+  /* 招商银行 */
+  background: url(../images/banks/banks.png) no-repeat 0 -108px;
+}
+.bank-img.POST {
+  /* 中国邮政储蓄银行 */
+  background: url(../images/banks/banks.png) no-repeat 0 -179px;
+}
+/* 限额表 */
+.limits-table {
+  width: 652px;
+  line-height: 30px;
+  border: 1px solid #e6e6e6;
+}
+.limits-table td {
+  text-align: center;
+}
+.limits-table th {
+  background-color: #eeeeee;
+}
+/* 支付宝 */
+.zfb-logo {
+  display: block;
+  width: 67px;
+  height: 22px;
+  background: url(../images/user/zfb_logo.png) no-repeat;
+}
+.zfb-hint {
+  line-height: 22px;
+}
+/* 柜台/ATM 转账 */
+.charge-box .bank-ccb {
+  display: block;
+  width: 300px;
+  height: 100px;
+  background: url(../images/banks/bank_bg.png) 0 0;
+}
+.charge-box .bank-abc {
+  display: block;
+  width: 300px;
+  height: 100px;
+  background: url(../images/banks/bank_bg.png) 600px 0;
+}
+.charge-box .bank-icbc {
+  display: block;
+  width: 300px;
+  height: 100px;
+  background: url(../images/banks/bank_bg.png) 300px 0;
+}
+.strong-hint {
+  line-height: 24px;
+  padding-left: 20px;
+  background-color: #fffce3;
+  color: #c50024;
+  font-size: 14px;
+}
+.bank-account {
+  width: 100%;
+  border-top: 2px dotted #dedede;
+}
+.bank-account td.brd-dotted {
+  padding: 10px;
+  border-bottom: 2px dotted #dedede;
+}
+.bank-account .account-info * {
+  font-size: 14px;
+  line-height: 30px;
+}
+.charge-box .bottom-hint {
+  text-align: center;
+}
+.message-sended {
+  line-height: 30px;
+  display: none;
+}
+.icon-success-small {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/user/icons.png) -204px -291px;
+}
+
+/* 我的银行卡 */
+.info-table td {
+  padding: 30px 0;
+  border-bottom: 2px dotted #dedede;
+}
+.icon-bank {
+  display: block;
+  width: 36px;
+  height: 24px;
+  background: url(../images/user/icons.png) no-repeat -16px -101px;
+}
+.bankcard-box {
+  padding: 5px 10px;
+  line-height: 35px;
+  width: 280px;
+  border: 1px solid #e6e6e6;
+}
+.icon-people {
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: url(../images/user/icons.png) no-repeat -78px -96px;
+}
+.icon-lock {
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: url(../images/user/icons.png) no-repeat -134px -96px;
+}
+.icon-mobile {
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: url(../images/user/icons.png) no-repeat -183px -94px;
+}
+.icon-mail {
+  display: block;
+  width: 34px;
+  height: 34px;
+  background: url(../images/user/icons.png) no-repeat -236px -94px;
+}
+.icon-weixin {
+  display: block;
+  width: 39px;
+  height: 34px;
+  background: url(../images/user/icons.png) no-repeat -16px -154px;
+}
+.icon-qq-num {
+  display: block;
+  width: 39px;
+  height: 34px;
+  background: url(../images/user/icons.png) no-repeat -79px -152px;
+}
+textarea {
+  border: 1px solid #e6e6e6;
+}
+.contact-way {
+  height: 25px;
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+}
+
 @media screen and (max-width: 1200px){
   .ml-30 {
     margin-left: 15px;
