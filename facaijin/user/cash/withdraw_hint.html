@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title>添加银行卡-发财金-赚钱不等待</title>
+  <title>提现-发财金-赚钱不等待</title>
   <link rel="stylesheet" href="../../css/nmain.css">
 </head>
 <body>
@@ -38,7 +38,7 @@
     <!-- 用户的操作导航 -->
     <div class="user-nav">
       <div class="nav-group">
-        <a class="group-title" href="../index.html"><span class="icon-stock"></span>资金明细</a>
+        <a class="group-title" href="../index.html"><span class="icon-stock"></span>我的操盘</a>
       </div>
       <div class="nav-group">
         <p class="group-title cl-153"><span class="icon-money"></span>资金管理</p>
@@ -80,38 +80,81 @@
         <div class="ml-40 mt-40">
           <table class="form-table" cellspacing="20">
             <tr>
-              <td width="15%" align="right"><span class="f-14 cl-153">余 额</span></td>
-              <td>
-                <span class="f-14 f-bold">100.00</span><span class="f-14 ml-5">元</span>
+              <td width="15%" align="right">
+                <span class="icon-success"></span>
               </td>
-            </tr>
-            <tr>
-              <td align="right"><span class="f-14 cl-153">提现银行卡</span></td>
               <td>
-                <div class="bankcard-box clearfix">
-                  <span class="bank-img ICBC pull-left"></span>
-                  <span class="pull-left f-14 f-bold">**** **** **** 7822</span>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td align="right"><span class="f-14 cl-153">提现金额</span></td>
-              <td>
-                <div class="inp-box">
-                  <input type="text" class="charge-money f-20" >
-                  <span class="f-14 ml-15">元</span>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td align="right"><span class="f-14 cl-153">预计到帐时间</span></td>
-              <td>
-                <span class="f-14">18:00</span> <span class="f-14">之前</span>
+                <p class="f-16 f-bold">提现申请已提交，等待银行处理。</p>
+                <p class="f-14 cl-153 mt-10">银行处理完成，既提现成功。</p>
               </td>
             </tr>
             <tr>
               <td></td>
-              <td><button type="submit" class="apply-btn">提 交</button></td>
+              <td>
+                <div class="dotted-line"></div>
+              </td>
+            </tr>
+            <tr>
+              <td align="right"></td>
+              <td>
+                <table cellspacing="10">
+                  <tr>
+                    <td><span class="f-14 cl-153">银行名称</span></td>
+                    <td><span class="f-16 f-bold">工商银行</span><span class="ml-5 f-14">尾号8888</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="f-14 cl-153">提现金额</span></td>
+                    <td><span class="f-16 f-bold">100.00</span><span class="ml-5 f-14">元</span></td>
+                  </tr>
+                  <tr>
+                    <td><span class="f-14 cl-153">到帐时间</span></td>
+                    <td><span class="f-16 f-bold">14:00</span><span class="ml-5 f-14">前</span></td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <ul class="withdraw-steps clearfix">
+                  <li class="one">
+                    <p class="cl-deepred">提现申请</p>
+                    <p class="cl-153 mt-5">2015-04-29 22:59</p>
+                  </li>
+                  <li class="two">
+                    <p class="cl-deepred">提现处理</p>
+                    <p class="cl-153 mt-5">2015-04-29 22:59</p>
+                  </li>
+                  <li class="three">
+                    <p class="cl-deepred">提现成功</p>
+                    <p class="cl-153 mt-5">2015-04-29 22:59</p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <p class="cl-153">1.如果您的银行卡信息设置不正确导致提现失败，资金将自动退回到您的账户。</p>
+                <p class="cl-153 mt-10">2.因系统原因或银行升级导致无法按时到账，我们会已短信方式通知您。</p>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <div class="brd-dotted"></div>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <button class="simple-btn cl-blue">继续提现</button>
+                <button class="simple-btn cl-blue ml-30">查看提现记录</button>
+              </td>
             </tr>
           </table>
         </div>
@@ -205,6 +248,7 @@
           $(".bank-trigger").find(".trigger-text").html("更换银行卡");
           flag = true
         }
+
       });
 
       /* 银行选择 */

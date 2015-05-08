@@ -1086,7 +1086,7 @@ span.sort-icon.sort-icon-hover {
   overflow: hidden;
   margin: auto;
 }
-.user-nav .txt-center {
+.txt-center {
   text-align: center;
 }
 .user-nav .service-info {
@@ -1777,6 +1777,9 @@ table .apply-btn {
   padding: 10px;
   border-bottom: 2px dotted #dedede;
 }
+.brd-dotted {
+  border-bottom: 2px dotted #dedede;
+}
 .bank-account .account-info * {
   font-size: 14px;
   line-height: 30px;
@@ -1856,7 +1859,56 @@ textarea {
   border: 1px solid #e6e6e6;
   padding: 10px;
 }
+/* 提现成功 */
+.icon-success {
+  display: block;
+  width: 64px;
+  height: 64px;
+  background: url(../images/user/icons.png) no-repeat  -68px -206px;
+}
+.withdraw-steps {
+  height: 62px;
+  background: url(../images/user/withdraw_steps_bg.png) no-repeat 20px 45px;
+}
+.withdraw-steps li {
+  float: left;
+}
+.withdraw-steps .one {
 
+}
+.withdraw-steps .two {
+  margin-left: 28px;
+}
+.withdraw-steps .three {
+  margin-left: 125px;
+}
+/* 投诉咨询 */
+.feedback-record {
+
+}
+.icon-feedback-big {
+  display: block;
+  width: 27px;
+  height: 20px;
+  background: url(../images/user/icons.png) no-repeat -152px -366px;
+}
+.feedback-record .consult-tag {
+  padding: 2px 3px;
+  color: #fff;
+  background-color: #2489f0;
+}
+.feedback-record .complain-tag {
+  padding: 2px 3px;
+  color: #fff;
+  background-color: #e30a20;
+}
+.avatar {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #dedede;
+  overflow: hidden;
+}
 @media screen and (max-width: 1200px){
   .ml-30 {
     margin-left: 15px;
