@@ -1,6 +1,7 @@
 /**
  * Created by Administrator on 2015/5/6 0006.
  */
+//判断ie版本
 jQuery.browser = {};
 (function () {
   jQuery.browser.msie = false;
@@ -48,11 +49,9 @@ jQuery.browser = {};
             _windowHeight = $(window).height();
 
         // 给弹出层添加默认定位位置
-        var isIE6 = (window.ActiveXObject) && ($.browser.version == "6.0") && !$.support.style;
+        var isIE6 = $.browser.msie && ($.browser.version == "6") && !$.support.style;
         var cssPosition = isIE6 ? "absolute" : "fixed";
-        var cssTop = isIE6 ? "400px" : (_windowHeight - _height) / 2 + "px";
-
-//        console.info("popwindow:" + $popWindow.get(0));
+        var cssTop = isIE6 ? "150px" : (_windowHeight - _height) / 2 + "px";
 
         //样式初始化
         $popWindow.css({
@@ -67,18 +66,26 @@ jQuery.browser = {};
         $popWindow.show().fadeTo(200, 1);
       },
       markInit: function (markId) {
-        $(markId).css({
-          "position": "fixed",
-          "z-index": 100,
-          "top": 0,
-          "left": 0,
-          "display": "none",
-          "width": "100%",
-          "height": "100%",
-          "background-color": "#000",
-          "opacity": 0.2,
-          "filter": "alpha(opacity=0.2)"
-        });
+        // 给弹出层添加默认定位位置
+        var isIE6 = $.browser.msie && ($.browser.version == "6") && !$.support.style;
+
+        if(isIE6) {
+          return;
+        } else {
+          $(markId).css({
+            "position": "fixed",
+            "z-index": 100,
+            "top": 0,
+            "left": 0,
+            "display": "none",
+            "width": "100%",
+            "height": "100%",
+            "background-color": "#000",
+            "opacity": 0.2,
+            "filter": "alpha(opacity=0.2)"
+          });
+        }
+
       }
     }
   }

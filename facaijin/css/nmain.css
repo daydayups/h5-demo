@@ -525,10 +525,10 @@ img {
   line-height: 54px;
 }
 #week-apply .rules tr {
-  line-height: 48px;
+  line-height: 42px;
 }
 #mouth-apply .rules tr {
-  line-height: 50px;
+  line-height: 48px;
 }
 .dotted-line {
   height: 1px;
@@ -1162,6 +1162,7 @@ span.sort-icon.sort-icon-hover {
   /*background-color: #d2d2d2;*/
   color: #DF0000;
 }
+
 .btn-micro {
   cursor: pointer;
   background-color: #fff;
@@ -1611,7 +1612,7 @@ table .apply-btn {
 }
 .inp-box input {
   height: 45px;
-  border: none;
+  border: 0 none;
 }
 .inp-box input:focus {
   outline: none;
@@ -1651,6 +1652,36 @@ table .apply-btn {
   height: 45px;
   background: url(../images/user/icons.png) -240px -37px;
 }
+.inp-box-small {
+  line-height: 45px;
+  padding-left: 15px;
+  border: 1px solid #e6e6e6;
+  width: 100px;
+  position: relative;
+}
+.inp-box-small input {
+  width: 70px;
+  height: 45px;
+  border: 0 none;
+}
+.inp-box-small input:focus {
+  outline: 0 none;
+}
+.inp-warning {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  line-height: 20px;
+  display: none;
+}
+
+.icon-wrong {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/user/icons.png) no-repeat -23px -205px;
+}
+
 .bank-list {
   border: 1px solid #e6e6e6;
   width: 600px;
@@ -1939,7 +1970,7 @@ textarea {
   position: fixed;
   border: 1px solid #d2d2d2;
   border-radius: 2px;
-  min-width: 500px;
+  width: 500px;
   display: none;
 }
 .window-title {
@@ -1981,6 +2012,54 @@ textarea {
 }
 .pop-window .stop-loss p {
   line-height: 16px;
+  padding-left: 10px;
+}
+.txt-left {
+  text-align: left;
+}
+.inp-small {
+  /* 验证码 */
+  width: 117px;
+  height: 35px;
+  border: 1px solid #d2d2d2;
+  padding-left: 10px;
+
+}
+.btn-resend {
+  background-color: #f3f3f3;
+  border: 1px solid #d2d2d2;
+  width: 130px;
+  text-align: center;
+  padding: 0 10px;
+  line-height: 35px;
+  color: #c5c5c5;
+}
+.btn-verify-code {
+  background-color: #fff;
+  border: 1px solid #e0322d;
+  width: 130px;
+  text-align: center;
+  padding: 0 10px;
+  line-height: 35px;
+}
+.btn-verify-code:hover {
+  background-color: #e0322d;
+  color: #fff;
+}
+.inp-smallx {
+  /* 验证码 */
+  height: 35px;
+  border: 1px solid #d2d2d2;
+  padding-left: 10px;
+
+}
+#pop-addweixin {
+  width: 710px;
+}
+.inp-weixin {
+  width: 360px;
+  height: 35px;
+  border: 1px solid #d2d2d2;
   padding-left: 10px;
 }
 @media screen and (max-width: 1200px){
