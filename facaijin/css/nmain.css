@@ -231,7 +231,7 @@ img {
   border-bottom:1px solid #f2f2f2;
 }
 .site-nav-top .inner {
-  width: 1200px;
+  width: 960px;
   margin: 0 auto;
 }
 .site-nav-top .inner p {
@@ -252,7 +252,7 @@ img {
 }
 /* logo + 导航栏 */
 .site-nav {
-  width: 1200px;
+  width: 960px;
   margin: 25px auto;
 }
 .site-nav li {
@@ -306,7 +306,7 @@ img {
 }
 /* - banner漂浮框 - */
 .fl-base {
-  width: 1200px;
+  width: 960px;
   height: 1px;
   margin: 0 auto;
   position: relative;
@@ -370,7 +370,7 @@ img {
   border-bottom:1px solid #f2f2f2;
 }
 .slogan ul {
-  width: 1200px;
+  width: 960px;
   margin: 0 auto;
 }
 .slogan li {
@@ -532,7 +532,7 @@ img {
 }
 .dotted-line {
   height: 1px;
-  background: url(../images/dotted_line.png) repeat;
+  background: url(../images/dotted_line.png) repeat-x;
 }
 
 /* mouth 按月操盘 */
@@ -746,7 +746,7 @@ a.tab {
 }
 .info .line-bg {
   display: block;
-  width: 1200px;
+  width: 960px;
   height: 10px;
   background: url(../images/line_bg.png) no-repeat center;
 }
@@ -890,7 +890,7 @@ span.sort-icon.sort-icon-hover {
   padding-bottom: 35px;
 }
 .footer .inner {
-  width: 1200px;
+  width: 960px;
   margin: 0 auto;
 }
 .footer dl {
@@ -950,7 +950,7 @@ span.sort-icon.sort-icon-hover {
 .user-wrap {
   background-color: #f2f2f2;
   border: 1px solid #dedede;
-  width: 1200px;
+  width: 960px;
   margin: 30px auto;
 }
 /* 用户中心 导航 */
@@ -978,7 +978,7 @@ span.sort-icon.sort-icon-hover {
   padding-left: 60px;
 }
 .user-nav .group-title.active, .user-nav .group-item.active {
-  width: 106px;
+  /*width: 106px;*/
   color: #c50024;
   background-color: #fff;
 }
@@ -994,6 +994,8 @@ span.sort-icon.sort-icon-hover {
   position: absolute;
   left: 22px;
   top: 10px;
+  _left:-40px;
+  _top: 0;
 }
 .user-nav .icon-stock-active {
   display: block;
@@ -1004,6 +1006,8 @@ span.sort-icon.sort-icon-hover {
   position: absolute;
   left: 22px;
   top: 10px;
+  _left:-40px;
+  _top: 0;
 }
 .user-nav .icon-money {
   display: block;
@@ -1014,6 +1018,8 @@ span.sort-icon.sort-icon-hover {
   position: absolute;
   left: 22px;
   top: 10px;
+  _left:-40px;
+  _top: 0;
 }
 .user-nav .icon-money-active {
   display: block;
@@ -1024,6 +1030,8 @@ span.sort-icon.sort-icon-hover {
   position: absolute;
   left: 22px;
   top: 10px;
+  _left:-40px;
+  _top: 0;
 }
 .user-nav .icon-person {
   display: block;
@@ -1034,6 +1042,8 @@ span.sort-icon.sort-icon-hover {
   position: absolute;
   left: 22px;
   top: 10px;
+  _left:-40px;
+  _top: 0;
 }
 .user-nav .icon-person-active {
   display: block;
@@ -1044,6 +1054,8 @@ span.sort-icon.sort-icon-hover {
   position: absolute;
   left: 22px;
   top: 10px;
+  _left:-40px;
+  _top: 0;
 }
 .user-nav .icon-feedback {
   display: block;
@@ -1054,6 +1066,8 @@ span.sort-icon.sort-icon-hover {
   position: absolute;
   left: 22px;
   top: 10px;
+  _left:-40px;
+  _top: 0;
 }
 .user-nav .icon-click-me {
   display: block;
@@ -1067,6 +1081,7 @@ span.sort-icon.sort-icon-hover {
   position: absolute;
   right: 22px;
   top: 13px;
+  _top: 0;
 }
 .user-nav .icon-service {
   display: block;
@@ -1077,6 +1092,8 @@ span.sort-icon.sort-icon-hover {
   position: absolute;
   left: 22px;
   top: 10px;
+  _left:-40px;
+  _top: 0;
 }
 .user-nav .avatar {
   display: block;
@@ -1106,8 +1123,9 @@ span.sort-icon.sort-icon-hover {
 .user-main {
   background-color: #fff;
   border-left: 1px solid #dedede;
-  width: 993px;
+  width: 753px;
   min-height: 680px;
+  _height:900px;
   padding: 20px;
   float: left;
 }
@@ -1118,10 +1136,11 @@ span.sort-icon.sort-icon-hover {
 /* 用户中心 操盘概览 */
 .user-main .summary {
   padding: 20px;
+  *height: 163px;
   border-bottom: 1px solid #f2f2f2;
 }
 .user-main .summary-table {
-  width: 605px;
+  width: 490px;
   float: left;
   line-height: 26px;
 }
@@ -1139,6 +1158,11 @@ span.sort-icon.sort-icon-hover {
   line-height: 26px;
   padding-left: 40px;
   border-left: 1px solid #f2f2f2;
+}
+.user-main .summary-right {
+  float: left;
+  padding-left: 30px;
+  border-left: 1px solid #eeeeee;
 }
 .btn-micro-red {
   cursor: pointer;
@@ -1203,6 +1227,7 @@ span.sort-icon.sort-icon-hover {
 /* 订单列表 表格 */
 .user-main .order-list-table {
   width: 100%;
+  line-height: 25px;
 }
 .user-main .order-list-table .brd {
   border-left: 1px solid #f2f2f2;
@@ -1283,6 +1308,7 @@ span.sort-icon.sort-icon-hover {
 }
 .sub-line-bg {
   height: 12px;
+  width: 100%;
   background: url(../images/user/sub_line_bg.png) no-repeat;
 }
 .sub-cash-info {
@@ -1313,7 +1339,7 @@ span.sort-icon.sort-icon-hover {
 }
 .cash-list .switch-title .select-box {
   position: absolute;
-  right: 100px;
+  right: 0;
   top: 2px;
 }
 .cash-list .switch-title .select-box select {
@@ -1354,7 +1380,7 @@ span.sort-icon.sort-icon-hover {
 }
 /* 订单列表 表格 分页 */
 .page {
-  width: 120px;
+  width: 162px;
   margin: 20px auto;
   line-height: 32px;
   text-align: center;
@@ -1425,7 +1451,7 @@ span.sort-icon.sort-icon-hover {
   color: #c50024;
 }
 .detail-wrap {
-  width:1200px;
+  width:960px;
   margin: 0 auto;
 }
 .detail-steps {
@@ -1474,8 +1500,10 @@ span.sort-icon.sort-icon-hover {
   cursor: pointer;
   background-color: #fff;
   border: 1px solid #e0322d;
-  padding-left: 40px;
-  padding-right: 40px;
+  width: 112px;
+  text-align: center;
+  /*padding-left: 40px;*/
+  /*padding-right: 40px;*/
   line-height: 30px;
 }
 .btn-small-red:hover {
@@ -1494,12 +1522,12 @@ span.sort-icon.sort-icon-hover {
   color: #df0000;
 }
 .detail-summary .item {
-  margin-left: 70px;
+  margin-left: 50px;
   line-height: 50px;
   float: left;
 }
 .details-table {
-  width: 760px;
+  width: 690px;
 }
 .details-table .th {/*table head*/
   line-height: 40px;
@@ -1528,14 +1556,14 @@ span.sort-icon.sort-icon-hover {
 }
 .detail-wrap .download-box {
   margin-top: 70px;
-  margin-left: 40px;
+  margin-left: 20px;
   padding-top: 80px;
   padding-bottom: 80px;
-  padding-left: 40px;
+  padding-left: 20px;
   border-left: 1px solid #dedede;
 }
 .trading-list-table tr .col-1st {
-  padding-left: 50px;
+  padding-left: 20px;
 }
 .trading-list-table .buy-bg {
   background-color: #fafafa;
@@ -1550,7 +1578,7 @@ span.sort-icon.sort-icon-hover {
   height: 30px;
   background: url(../images/user/icons.png) -19px -266px;
   position: absolute;
-  left: 120px;
+  left: 116px;;
   top: 10px;
 }
 .trading-list-table .icon-warning-small-gray {
@@ -1561,7 +1589,7 @@ span.sort-icon.sort-icon-hover {
 }
 .trading-list-table .no-record-hint {
   margin: 60px auto;
-  width: 130px;
+  width: 145px;
   line-height: 30px;
 }
 /* 停牌样式 */
@@ -1582,6 +1610,7 @@ span.sort-icon.sort-icon-hover {
   position: absolute;
   right: 0;
   bottom: -1px;
+  _bottom:40px;
 }
 .switch-block-wrap .switch-block {
   cursor: pointer;
@@ -1595,24 +1624,27 @@ span.sort-icon.sort-icon-hover {
   border-left: 1px solid #f2f2f2;
   border-right: 1px solid #f2f2f2;
   background-color: #fff;
+  _border-bottom:0 none;
 }
 /* 充值选择银行卡 */
 table .apply-btn {
   margin-left: 0;
 }
 .form-table {
-  width: 832px;
+  width: 740px;
 }
 .inp-box {
+  height: 45px;
   line-height: 45px;
   padding-left: 15px;
   border: 1px solid #e6e6e6;
-  max-width: 269px;
+  width: 269px;
   position: relative;
 }
 .inp-box input {
   height: 45px;
   border: 0 none;
+  width: 219px;
 }
 .inp-box input:focus {
   outline: none;
@@ -1684,8 +1716,8 @@ table .apply-btn {
 
 .bank-list {
   border: 1px solid #e6e6e6;
-  width: 600px;
-  padding: 25px;
+  /*width: 586px;*/
+  padding: 15px;
 }
 .bank-list-table {
   border: 1px solid #eeeeee;
@@ -1754,7 +1786,7 @@ table .apply-btn {
 }
 /* 限额表 */
 .limits-table {
-  width: 652px;
+  width: 617px;
   line-height: 30px;
   border: 1px solid #e6e6e6;
 }
@@ -1777,21 +1809,21 @@ table .apply-btn {
 /* 柜台/ATM 转账 */
 .charge-box .bank-ccb {
   display: block;
-  width: 300px;
+  width: 230px;
   height: 100px;
-  background: url(../images/banks/bank_bg.png) 0 0;
+  background: url(../images/banks/bank_bg.png) -16px 0;
 }
 .charge-box .bank-abc {
   display: block;
-  width: 300px;
+  width: 230px;
   height: 100px;
-  background: url(../images/banks/bank_bg.png) 600px 0;
+  background: url(../images/banks/bank_bg.png) 584px 0;
 }
 .charge-box .bank-icbc {
   display: block;
-  width: 300px;
+  width: 230px;
   height: 100px;
-  background: url(../images/banks/bank_bg.png) 300px 0;
+  background: url(../images/banks/bank_bg.png) 284px 0;
 }
 .strong-hint {
   line-height: 24px;
