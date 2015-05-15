@@ -23,14 +23,15 @@ $(function(){
       }
       var scroll = setInterval(fun, time);
 
-      $lis_focus.click(function(){
+      $lis_focus.mouseenter(function(){
         clearInterval(scroll);
         targetId = $(this).index();
 //        console.info("targetid:"+targetId);
-        $lis.fadeOut("slow");
-        $lis.eq(targetId).fadeIn("slow");
+        $lis.fadeOut("fast");
+        $lis.eq(targetId).fadeIn("fast");
         $lis_focus.find("a").removeClass("curr");
         $lis_focus.eq(targetId).find("a").addClass("curr");
+      }).mouseleave(function(){
         scroll = setInterval(fun, time);
       });
 

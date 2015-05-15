@@ -17,7 +17,7 @@ a {
   color: #000;
   text-decoration: none;
 }
-li {
+ul {
   list-style: none;
 }
 h1 {
@@ -280,7 +280,7 @@ img {
 }
 .logo-bg {
   display: block;
-  width: 320px;
+  width: 360px;
   height: 46px;
   background: url(../images/icons.png) no-repeat 0 0;
 }
@@ -345,7 +345,7 @@ img {
 .banner-focus {
   position: absolute;
   top: 266px;
-  left: 459px;
+  left: 300px;
   z-index: 11;
 }
 .banner-focus li {
@@ -362,12 +362,25 @@ img {
 .banner-focus .focus.curr {
   filter:alpha(opacity=100); -moz-opacity:1; opacity:1;
 }
-
-
+/* 数据简述 */
+.simple-datas {
+  width: 960px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.simple-datas .item {
+  float: left;
+  padding-left: 90px;
+  width: 140px;
+}
+.simple-datas .item.brd-l {
+  border-left: 1px solid #eeeeee;
+}
 /* slogan 标语，宣传语 */
 .slogan {
-  padding: 25px 0;
-  border-bottom:1px solid #f2f2f2;
+  padding: 30px 0;
+  background-color:#f8f8f8 ;
+  /*border-bottom:1px solid #f2f2f2;*/
 }
 .slogan ul {
   width: 960px;
@@ -375,7 +388,7 @@ img {
 }
 .slogan li {
   float: left;
-  width: 300px;
+  width: 240px;
 }
 .slogan-icon1 {
   display: block;
@@ -402,7 +415,9 @@ img {
   background: url(../images/icons.png) no-repeat -248px -70px;
 }
 .slogan-title {
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
 }
 .slogan-desc {
   line-height: 20px;
@@ -411,19 +426,44 @@ img {
 
 /* apply-box 申请操盘 */
 .apply-box {
-  padding: 30px 0 40px 0;
+  padding: 30px 0 30px 0;
   background-color: #f8f8f8;
 }
-.apply-box .steps {
-  margin: 0 auto;
-  width: 735px;
-  height: 40px;
-  background: url(../images/apply_steps.png) no-repeat;
+.main-steps {
+  /*margin-top: 20px;*/
+  margin-bottom: 20px;
+}
+.main-steps-items {
+  line-height: 30px;
+}
+.main-steps .steps-num-bg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  color: #cccccc;
+  background: url(../images/steps_num_bg.png) no-repeat;
+}
+.main-steps .main-steps-arrow {
+  display: block;
+  width: 21px;
+  height: 30px;
+  background: url(../images/steps_arrow.png) no-repeat center;
+}
+.main-steps .main-steps-items {
+  width: 570px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-steps .item {
+  float: left;
+  margin-left: 20px;
 }
 .apply-area {
   margin: 30px auto 0 auto;
-  padding: 40px 0 40px 0;
-  width: 1198px;
+  padding: 20px 0 20px 0;
+  width: 960px;
   /*height: 525px;*/
   border: 1px solid #efefef;
   border-radius: 4px;
@@ -435,35 +475,36 @@ img {
 
 }
 .apply .title {
-  margin-left: 80px;
+  /*margin-left: 20px;*/
 }
 .apply .content {
-  margin-top: 35px;
+  margin-top: 20px;
 }
 .apply .choosen-area {
-  width: 578px;
-  height: 434px;
+  width:  437px;
+  height: 415px;
+  margin-left: 10px;
   overflow: hidden;
 }
 /* -- 申请操盘选择区 -- */
 .apply .cho {
-  margin-left: 70px;
+  /*margin-left: 20px;*/
 }
 .apply .cho-item p {
-  font-size: 14px;
+  /*font-size: 14px;*/
 }
 .apply .cho-item {
   cursor: pointer;
-  width: 144px;
-  height: 108px;
+  width: 118px;
+  height: 98px;
   text-align: center;
   border-radius: 4px;
   border: 1px solid #dddddd;
 }
 .apply .other-cho-btn {
   cursor: pointer;
-  width: 144px;
-  height: 108px;
+  width: 120px;
+  height: 100px;
   text-align: center;
   border-radius: 4px;
   border: 1px solid #dddddd;
@@ -476,16 +517,15 @@ img {
 }
 .apply .selected {
   color: #df0000;
-  width: 142px;
-  height: 106px;
+  width: 116px;
+  height: 96px;
   border: 2px solid #ea4040;
-  background: url(../images/tick.png) no-repeat;
-  background-position: 110px 74px;
+  background: url(../images/tick.png) no-repeat 86px 67px;
 }
 /* - 其他金额 - */
 .other-cho {
-  margin-left: 162px;
-  margin-top: 128px;
+  margin-left: 80px;
+  margin-top: 174px;
 }
 
 .other-cho-inp {
@@ -505,7 +545,7 @@ img {
   height: 345px;
   background: url(../images/mid_arrow_bg.png) no-repeat;
   float: left;
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   margin-top: 60px;
 }
 /* - 操盘规则 - */
@@ -516,19 +556,19 @@ img {
 }
 
 .rules {
-  width: 462px;
+  width: 420px;
 }
 .rules td {
   font-size: 14px;
 }
 .rules tr {
-  line-height: 54px;
+  line-height: 47px;
 }
 #week-apply .rules tr {
-  line-height: 42px;
+  line-height: 40px;
 }
 #mouth-apply .rules tr {
-  line-height: 48px;
+  line-height: 45px;
 }
 .dotted-line {
   height: 1px;
@@ -537,14 +577,15 @@ img {
 
 /* mouth 按月操盘 */
 #mouth-apply .title {
-  margin-left: 80px;
+  /*margin-left: 20px;*/
 }
 #mouth-apply .content {
-  margin-top: 35px;
+  margin-top: 20px;
 }
 #mouth-apply .choosen-area {
-  width: 578px;
-  height: 434px;
+  width: 437px;
+  height: 415px;
+  margin-left: 10px;
   overflow: hidden;
 }
 /* -- 申请操盘选择区 -- */
@@ -552,20 +593,20 @@ img {
   margin-left: 70px;
 }
 #mouth-apply .cho-item p {
-  font-size: 14px;
+  /*font-size: 14px;*/
 }
 #mouth-apply .cho-item {
   cursor: pointer;
-  width: 144px;
-  height: 108px;
+  width: 120px;
+  height: 100px;
   text-align: center;
   border-radius: 4px;
   border: 1px solid #dddddd;
 }
 #mouth-apply .other-cho-btn {
   cursor: pointer;
-  width: 144px;
-  height: 108px;
+  width: 120px;
+  height: 100px;
   text-align: center;
   border-radius: 4px;
   border: 1px solid #dddddd;
@@ -578,16 +619,16 @@ img {
 }
 #mouth-apply .selected {
   color: #df0000;
-  width: 142px;
-  height: 106px;
+  width: 116px;
+  height: 96px;
   border: 2px solid #ea4040;
   background: url(../images/tick.png) no-repeat 110px 74px;
 }
 .base-inp {
-  margin-left: 80px;
+  margin-left: 30px;
 }
 .mouth-inp {
-  width: 403px;
+  width: 336px;
   line-height: 50px;
   font-size: 24px;
   margin-top: 10px;
@@ -596,12 +637,13 @@ img {
   border: 1px solid #dddddd;
 }
 .mouth-cho {
-  margin-left: 70px;
+  margin-left: 10px;
   margin-top: 20px;
 }
 .gray-box {
-  width: 458px;
+  width: 400px;
   margin-top: 10px;
+  margin-left: 20px;
   padding-top: 70px;
   height: 160px;
   border-radius: 4px;
@@ -628,8 +670,8 @@ img {
 /* 选项不可选的样式 */
 .mouth-cho .disable {
   cursor: default;
-  width: 144px;
-  height: 108px;
+  width: 120px;
+  height: 100px;
   text-align: center;
   border-radius: 4px;
   border: 1px solid #dddddd;
@@ -644,7 +686,13 @@ img {
   color: #fff;
   background-color: #ddd;
 }
-
+/* 使用时长选择 */
+#cycle {
+  height: 30px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
 /* -- hint 操盘提示 -- */
 .hint-base {
   display: inline;
@@ -669,6 +717,7 @@ img {
   left: 40px;
   top: -14px;
   display: none;
+  z-index:10;
 }
 
 
@@ -739,10 +788,10 @@ a.tab {
   background-color: #ffffff;
 }
 .info .inner {
-  width: 1200px;
+  width: 960px;
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 70px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .info .line-bg {
   display: block;
@@ -862,13 +911,45 @@ span.sort-icon.sort-icon-hover {
   left: 50px;
   top: 20px;
 }
+/* 新闻栏 */
+.news {
+  width: 960px;
+  margin: 0 auto;
+}
+.news .panel-one {
+  width: 306px;
+  float: left;
+}
+.news .panel-two {
+  width: 284px;
+  float: left;
+}
+.news ul {
+  list-style-type: disc;
+  color:#cccccc;
+  padding-left: 15px;
+  font-size: 16px;
+}
+.news li {
+  line-height: 28px;
+}
+.news p {
+  width: 224px;
+}
+.stock-block-red {
+  width: 90px;
+  height: 70px;
+  background-color: #ffe9ea;
+  border: 1px solid #f5d8d9;
+}
+
 /* - partners 合作机构 - */
 .partners {
 
 }
 .partners li {
   display: inline;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 .partners img {
   border: 1px solid #eeeeee;
@@ -878,7 +959,7 @@ span.sort-icon.sort-icon-hover {
 .download {
   padding-left: 58px;
   border-left: 1px solid #eeeeee;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
 }
 
 
@@ -943,7 +1024,7 @@ span.sort-icon.sort-icon-hover {
 }
 .copyright {
   color: #777777;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* 用户中心 样式 */
@@ -1136,8 +1217,8 @@ span.sort-icon.sort-icon-hover {
 /* 用户中心 操盘概览 */
 .user-main .summary {
   padding: 20px;
-  *height: 163px;
   border-bottom: 1px solid #f2f2f2;
+  *height: 163px;
 }
 .user-main .summary-table {
   width: 490px;
@@ -2093,122 +2174,4 @@ textarea {
   height: 35px;
   border: 1px solid #d2d2d2;
   padding-left: 10px;
-}
-@media screen and (max-width: 1200px){
-  .ml-30 {
-    margin-left: 15px;
-  }
-  .mr-30 {
-    margin-right: 15px;
-  }
-  .mt-30 {
-    margin-top: 15px;
-  }
-  .mb-30 {
-    margin-bottom: 15px;
-  }
-
-  .footer .inner {
-    width: 950px;
-  }
-  .site-nav-top {
-  }
-  .site-nav-top .inner {
-    width: 950px;
-    margin: 0 auto;
-  }
-  .site-nav {
-    width: 950px;
-    margin: 25px auto;
-  }
-  .fl-base {
-    width: 950px;
-  }
-  .slogan ul {
-    width: 950px;
-  }
-  .slogan li {
-    width: 220px;
-    margin-left: 16px
-  }
-  .apply .title {
-    margin-left: 20px;
-  }
-  .apply-area {
-    width: 900px;
-  }
-  .apply .choosen-area {
-    width: 420px;
-  }
-  .apply .cho {
-    margin-left: 10px;
-  }
-  .apply .cho-item {
-    width: 120px;
-    height: 100px;
-  }
-  .apply .other-cho-btn {
-    width: 120px;
-    height: 100px;
-  }
-  .apply .selected {
-    width: 118px;
-    height: 98px;
-  }
-  .rules {
-    width: 390px;
-  }
-  .ml-40 {
-    margin-left: 20px;
-  }
-  .mid-arrow-bg {
-    margin-left: 0;
-  }
-  .mouth-inp {
-    width: 344px;
-  }
-  #mouth-apply .cho-item {
-    width: 120px;
-    height: 100px;
-  }
-  #mouth-apply .selected {
-    width: 118px;
-    height: 98px;
-  }
-  .mouth-cho .disable {
-    width: 120px;
-    height: 100px;
-  }
-  #mouth-apply .choosen-area {
-    width: 420px;
-  }
-  .base-inp {
-    margin-left: 20px;
-  }
-  .mouth-cho {
-    margin-left: 10px;
-  }
-  .gray-box {
-    width: 400px;
-    margin-top: 10px;
-    padding-top: 70px;
-  }
-  .info .inner {
-    width: 950px;
-    margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 70px;
-  }
-  .partners li {
-    margin-right: 15px;
-  }
-  .download {
-    padding-left: 29px;
-  }
-  .partners img {
-    width: 164px;
-  }
-  .copyright {
-    clear: both;
-  }
 }
