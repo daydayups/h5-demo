@@ -70,7 +70,7 @@ jQuery.browser = {};
         var isIE6 = $.browser.msie && ($.browser.version == "6") && !$.support.style;
 
         if(isIE6) {
-          return;
+          return false;
         } else {
           $(markId).css({
             "position": "fixed",

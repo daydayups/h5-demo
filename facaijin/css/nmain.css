@@ -201,6 +201,9 @@ img {
 .cl-153 {
   color: #999;
 }
+.cl-204 {
+  color: #ccc;
+}
 .cl-deepred {
   color: #c50024;
 }
@@ -459,6 +462,13 @@ img {
 .main-steps .item {
   float: left;
   margin-left: 20px;
+}
+.main-steps .item.curr .steps-num-bg {
+  color: #fff;
+  background: url(../images/steps_num_bg_curr.png) no-repeat;
+}
+.main-steps .item.curr .steps-text {
+  color: #df0000;
 }
 .apply-area {
   margin: 30px auto 0 auto;
@@ -933,14 +943,25 @@ span.sort-icon.sort-icon-hover {
 .news li {
   line-height: 28px;
 }
-.news p {
-  width: 224px;
+.news .notice p {
+  width: 210px;
 }
 .stock-block-red {
   width: 90px;
   height: 70px;
+  text-align: center;
   background-color: #ffe9ea;
   border: 1px solid #f5d8d9;
+}
+.stock-block-green {
+  width: 90px;
+  height: 70px;
+  text-align: center;
+  background-color: #f2fee3;
+  border: 1px solid #e0efcd;
+}
+.link-relation {
+  color: #6c88c4;
 }
 
 /* - partners 合作机构 - */
@@ -1026,6 +1047,45 @@ span.sort-icon.sort-icon-hover {
   color: #777777;
   font-size: 12px;
 }
+/* 申请操盘子页 样式 */
+.main-box {
+  padding: 30px 0 30px 0;
+  background-color: #f8f8f8;
+}
+.main-box .confirm-box {
+  width: 760px;
+  padding: 30px 100px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+}
+.brd-solid {
+  border-top: 1px solid #dedede;
+}
+.confirm-table {
+
+}
+.confirm-table .th {
+  background-color: #f8f8f8;
+}
+.confirm-table td {
+  height: 53px;
+}
+.select-style {
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.goback-btn {
+  cursor: pointer;
+  background: none;
+  border: 0 none;
+  font-size: 14px;
+  color: #6c88c4;
+}
+
 
 /* 用户中心 样式 */
 .user-wrap {
@@ -1723,7 +1783,7 @@ table .apply-btn {
   position: relative;
 }
 .inp-box input {
-  height: 45px;
+  height: 44px;
   border: 0 none;
   width: 219px;
 }
