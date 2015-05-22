@@ -2,13 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11be4ce2-61a1-48f9-856b-b5bdb5bd1e9b" name="Default" comment="jquery dragbox test">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/apply/apply.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/apply/confirm.html" />
-      <change type="DELETED" beforePath="F:\Github\Demos\facaijin\images\apply_steps.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/images/spread/120_240.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/images/spread/120_600.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/images/spread/160_600.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/images/spread/200_200.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/images/spread/250_250.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/images/spread/300_100.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/images/spread/300_250.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/images/spread/336_280.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/images/spread/468_60.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/images/spread/640_90.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/images/spread/720_90.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/images/spread/728_90.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/images/spread/760_90.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/images/spread/950_90.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/help_center.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/help_center_article.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/help_center_q&amp;a.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/user/spread/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/news_detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/news_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/notice_detail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/notice_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/pop_login_register.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/register.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/retrieve_pwd/step_01.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/retrieve_pwd/step_02.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/retrieve_pwd/step_03.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/retrieve_pwd/step_04.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/facaijin/user/cash/withdraw_confirm.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/images/icons.png" afterPath="$PROJECT_DIR$/facaijin/images/icons.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/images/user/icons.png" afterPath="$PROJECT_DIR$/facaijin/images/user/icons.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/user/person/addbank.html" afterPath="$PROJECT_DIR$/facaijin/user/person/addbank.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/user/cash/charge.html" afterPath="$PROJECT_DIR$/facaijin/user/cash/charge.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/user/order/detail-norecord.html" afterPath="$PROJECT_DIR$/facaijin/user/order/detail-norecord.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/user/order/detail.html" afterPath="$PROJECT_DIR$/facaijin/user/order/detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/js/fcj.js" afterPath="$PROJECT_DIR$/facaijin/js/fcj.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/user/cash/history.html" afterPath="$PROJECT_DIR$/facaijin/user/cash/history.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/index.html" afterPath="$PROJECT_DIR$/facaijin/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/user/index.html" afterPath="$PROJECT_DIR$/facaijin/user/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/js/index.js" afterPath="$PROJECT_DIR$/facaijin/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/css/nmain.css" afterPath="$PROJECT_DIR$/facaijin/css/nmain.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/user/person/person_info.html" afterPath="$PROJECT_DIR$/facaijin/user/person/person_info.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/user/pop_window.html" afterPath="$PROJECT_DIR$/facaijin/user/pop_window.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/user/cash/withdraw.html" afterPath="$PROJECT_DIR$/facaijin/user/cash/withdraw.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="F:\Github\Demos\facaijin\user\cash\withdraw_hint.html" afterPath="$PROJECT_DIR$/facaijin/user/cash/withdraw_success.html" />
+      <change type="MOVED" beforePath="F:\Github\Demos\facaijin\user\feedback\feedback.html" afterPath="$PROJECT_DIR$/facaijin/user/feedback/index.html" />
     </list>
     <ignored path="XFBlog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,58 +71,33 @@
     <favorites_list name="XFBlog" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.54379565">
       <split-first>
         <leaf>
-          <file leaf-file-name="apply.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/facaijin/apply/apply.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="792" max-vertical-offset="17292">
-                  <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="confirm.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/facaijin/apply/confirm.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1562" max-vertical-offset="3498">
-                  <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/facaijin/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1892" max-vertical-offset="28446">
-                  <caret line="86" column="15" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/facaijin/user/index.html">
+            <entry file="file://$PROJECT_DIR$/facaijin/user/spread/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.064327486" vertical-offset="330" max-vertical-offset="6798">
-                  <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.41292134" vertical-offset="10464" max-vertical-offset="11264">
+                  <caret line="551" column="13" selection-start-line="551" selection-start-column="13" selection-end-line="551" selection-end-column="13" />
                   <folding>
-                    <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-                    <element signature="tag#div#0;tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#3;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#4;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pop_window.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/facaijin/user/pop_window.html">
+          <file leaf-file-name="history.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/facaijin/user/cash/history.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="17431" max-vertical-offset="22088">
-                  <caret line="809" column="25" selection-start-line="809" selection-start-column="25" selection-end-line="809" selection-end-column="25" />
+                <state vertical-scroll-proportion="-5.483871" vertical-offset="2514" max-vertical-offset="9064">
+                  <caret line="122" column="36" selection-start-line="122" selection-start-column="36" selection-end-line="128" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -90,8 +106,8 @@
           <file leaf-file-name="fcj.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/facaijin/js/fcj.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="770" max-vertical-offset="2156">
-                  <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="93" max-vertical-offset="2574">
+                  <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -104,8 +120,8 @@
           <file leaf-file-name="nmain.css" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/facaijin/css/nmain.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3902098" vertical-offset="23085" max-vertical-offset="49346">
-                  <caret line="1062" column="32" selection-start-line="1062" selection-start-column="32" selection-end-line="1062" selection-end-column="32" />
+                <state vertical-scroll-proportion="0.5558546" vertical-offset="60637" max-vertical-offset="61468">
+                  <caret line="2775" column="6" selection-start-line="2775" selection-start-column="6" selection-end-line="2775" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -131,27 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/demo/css/xfblog.css" />
-        <option value="$PROJECT_DIR$/demo/css/xfblog_backend.css" />
-        <option value="$PROJECT_DIR$/demo/xfblog_backend.html" />
-        <option value="$PROJECT_DIR$/a.css" />
-        <option value="$PROJECT_DIR$/a.html" />
-        <option value="$PROJECT_DIR$/js/contextmenu.js" />
-        <option value="$PROJECT_DIR$/css/xfblog.css" />
-        <option value="$PROJECT_DIR$/sign_in.html" />
-        <option value="$PROJECT_DIR$/xfblog.html" />
-        <option value="$PROJECT_DIR$/js/particles.js" />
-        <option value="$PROJECT_DIR$/login.html" />
-        <option value="$PROJECT_DIR$/xfblog_backend.html" />
-        <option value="$PROJECT_DIR$/css/xfblog_backend.css" />
-        <option value="$PROJECT_DIR$/css/application.css" />
-        <option value="$PROJECT_DIR$/js/application.js" />
-        <option value="$PROJECT_DIR$/circleAnimate.html" />
-        <option value="$PROJECT_DIR$/circlejs.html" />
-        <option value="$PROJECT_DIR$/js/circleAnimate01.js" />
-        <option value="$PROJECT_DIR$/css/circleAnimate.css" />
-        <option value="$PROJECT_DIR$/circleAnimate01.html" />
-        <option value="$PROJECT_DIR$/js/spin.js" />
         <option value="$PROJECT_DIR$/circleAnimate02.html" />
         <option value="$PROJECT_DIR$/js/circleAnimate02.js" />
         <option value="$PROJECT_DIR$/circleAnimate03.html" />
@@ -163,33 +158,54 @@
         <option value="$PROJECT_DIR$/facaijin/user/order/history1.html" />
         <option value="$PROJECT_DIR$/facaijin/user/card/addbank.html" />
         <option value="$PROJECT_DIR$/facaijin/user/啊.html" />
-        <option value="$PROJECT_DIR$/facaijin/user/pop_window.html" />
-        <option value="$PROJECT_DIR$/facaijin/user/index.html" />
-        <option value="$PROJECT_DIR$/facaijin/user/cash/withdraw.html" />
         <option value="$PROJECT_DIR$/facaijin/user/cash/withdraw_hint.html" />
         <option value="$PROJECT_DIR$/facaijin/user/cash/withdraw_nocard.html" />
         <option value="$PROJECT_DIR$/facaijin/user/order/detail-norecord.html" />
-        <option value="$PROJECT_DIR$/facaijin/user/order/detail.html" />
-        <option value="$PROJECT_DIR$/facaijin/user/person/addbank.html" />
+        <option value="$PROJECT_DIR$/facaijin/user/person/addbank_added.html" />
+        <option value="$PROJECT_DIR$/facaijin/apply/apply.html" />
+        <option value="$PROJECT_DIR$/facaijin/apply/confirm.html" />
+        <option value="$PROJECT_DIR$/facaijin/retireve_pwd/step_one.html" />
+        <option value="$PROJECT_DIR$/facaijin/retrieve_pwd/step_two.html" />
+        <option value="$PROJECT_DIR$/facaijin/retrieve_pwd/step_one.html" />
+        <option value="$PROJECT_DIR$/facaijin/retrieve_pwd/step_03.html" />
+        <option value="$PROJECT_DIR$/facaijin/retrieve_pwd/step_04.html" />
+        <option value="$PROJECT_DIR$/facaijin/login.html" />
+        <option value="$PROJECT_DIR$/facaijin/register.html" />
+        <option value="$PROJECT_DIR$/facaijin/index.html" />
+        <option value="$PROJECT_DIR$/facaijin/user/index.html" />
+        <option value="$PROJECT_DIR$/facaijin/news_more.html" />
+        <option value="$PROJECT_DIR$/facaijin/news_more_detail.html" />
+        <option value="$PROJECT_DIR$/facaijin/notice_list.html" />
+        <option value="$PROJECT_DIR$/facaijin/news_detail.html" />
+        <option value="$PROJECT_DIR$/facaijin/news_list.html" />
+        <option value="$PROJECT_DIR$/facaijin/notice_detail.html" />
+        <option value="$PROJECT_DIR$/facaijin/help_center.html" />
+        <option value="$PROJECT_DIR$/facaijin/help_center_article.html" />
+        <option value="$PROJECT_DIR$/facaijin/help_center_q&amp;a.html" />
+        <option value="$PROJECT_DIR$/facaijin/js/index.js" />
         <option value="$PROJECT_DIR$/facaijin/user/cash/charge.html" />
         <option value="$PROJECT_DIR$/facaijin/user/feedback/feedback.html" />
+        <option value="$PROJECT_DIR$/facaijin/user/order/detail.html" />
+        <option value="$PROJECT_DIR$/facaijin/pop_login_register.html" />
+        <option value="$PROJECT_DIR$/facaijin/user/cash/withdraw_success.html" />
+        <option value="$PROJECT_DIR$/facaijin/user/cash/withdraw_confirm.html" />
+        <option value="$PROJECT_DIR$/facaijin/user/pop_window.html" />
+        <option value="$PROJECT_DIR$/facaijin/user/cash/withdraw.html" />
+        <option value="$PROJECT_DIR$/facaijin/user/spread/spread.html" />
+        <option value="$PROJECT_DIR$/facaijin/user/person/addbank.html" />
         <option value="$PROJECT_DIR$/facaijin/user/person/person_info.html" />
-        <option value="$PROJECT_DIR$/facaijin/user/person/addbank_added.html" />
-        <option value="$PROJECT_DIR$/facaijin/user/cash/history.html" />
-        <option value="$PROJECT_DIR$/facaijin/js/index.js" />
         <option value="$PROJECT_DIR$/facaijin/js/fcj.js" />
-        <option value="$PROJECT_DIR$/facaijin/apply/apply.html" />
-        <option value="$PROJECT_DIR$/facaijin/index.html" />
-        <option value="$PROJECT_DIR$/facaijin/apply/confirm.html" />
         <option value="$PROJECT_DIR$/facaijin/css/nmain.css" />
+        <option value="$PROJECT_DIR$/facaijin/user/cash/history.html" />
+        <option value="$PROJECT_DIR$/facaijin/user/spread/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
-    <option name="y" value="42" />
+    <option name="x" value="37" />
+    <option name="y" value="49" />
     <option name="width" value="1936" />
-    <option name="height" value="887" />
+    <option name="height" value="944" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -316,7 +332,65 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="apply" />
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cash" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facaijin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="retrieve_pwd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facaijin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Demos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facaijin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -336,26 +410,34 @@
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://F:/Github/XFBlog/demo/js/index.js" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../google-styleguide" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/facaijin/retrieve_pwd" />
     <property name="LayoutCode.rearrangeEntriesCSS" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Github\Demos\facaijin\apply" />
-      <recent name="F:\Github\Demos\facaijin" />
+      <recent name="F:\Github\Demos\facaijin\images\spread" />
       <recent name="F:\Github\Demos\facaijin\user" />
       <recent name="F:\Github\Demos\facaijin\user\cash" />
-      <recent name="F:\Github\Demos\facaijin\user\feedback" />
+      <recent name="F:\Github\Demos\facaijin" />
+      <recent name="F:\Github\Demos\facaijin\retrieve_pwd" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Github\Demos\facaijin\user\spread" />
+      <recent name="F:\Github\Demos\facaijin" />
+      <recent name="F:\Github\Demos\facaijin\retireve_pwd" />
       <recent name="F:\Github\Demos\facaijin\apply" />
       <recent name="F:\Github\Demos\facaijin\user\person" />
-      <recent name="F:\Github\Demos\facaijin\user\order" />
-      <recent name="F:\Github\Demos\facaijin\alipay" />
-      <recent name="F:\Github\Demos\facaijin\user\cash" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -366,12 +448,14 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
       <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -379,16 +463,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
-      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="NodeunitConfigurationType" factoryName="Nodeunit">
@@ -404,11 +478,11 @@
     <configuration default="true" type="JavaScriptTraceType" factoryName="Spy-js" node="" config="" has-config="false" system-proxy="true" proxy-port="3546">
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="NodeWebKit" factoryName="Node-webkit">
       <option name="name" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
@@ -420,9 +494,6 @@
       <extra-mocha-options />
       <test-directory />
       <recursive>false</recursive>
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="XSLT" factoryName="XSLT">
@@ -439,6 +510,9 @@
       <OutputType value="CONSOLE" save-to-file="false" />
       <FileType name="XML" />
       <JdkChoice value="FROM_MODULE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
     <list size="0" />
@@ -492,28 +566,48 @@
     <option name="localTasksCounter" value="10" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="42" width="1936" height="887" extended-state="0" />
-    <editor active="false" />
+    <frame x="37" y="49" width="1936" height="944" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32808718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293124" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32638037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13435195" sideWeight="0.49940687" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13382508" sideWeight="0.49940687" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13435195" sideWeight="0.5005931" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32678133" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833788" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -543,125 +637,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xfblog/xfblog_backend.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24087591" vertical-offset="154" max-vertical-offset="13002">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xfblog/xfblog_backend.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30099502" vertical-offset="1584" max-vertical-offset="3850">
-          <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/others/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6019901" vertical-offset="164" max-vertical-offset="10318">
-          <caret line="66" column="32" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/others/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8387096" vertical-offset="0" max-vertical-offset="2376">
-          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_statics/css/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51672435" vertical-offset="8946" max-vertical-offset="15774">
-          <caret line="427" column="8" selection-start-line="427" selection-start-column="8" selection-end-line="427" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_statics/js/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="53.312572" vertical-offset="0" max-vertical-offset="49808">
-          <caret line="2101" column="45" selection-start-line="2101" selection-start-column="45" selection-end-line="2101" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_statics/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.95" vertical-offset="0" max-vertical-offset="2464">
-          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33295456" vertical-offset="30375" max-vertical-offset="48114">
-          <caret line="1394" column="0" selection-start-line="1394" selection-start-column="0" selection-end-line="1394" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circleAnimate/css/circleAnimate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09988649" vertical-offset="0" max-vertical-offset="881">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_statics/js/particles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33253872" vertical-offset="2251" max-vertical-offset="4510">
-          <caret line="115" column="14" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_statics/js/plugins/isotope.pkgd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22765197" vertical-offset="33073" max-vertical-offset="85844">
-          <caret line="1512" column="70" selection-start-line="1512" selection-start-column="70" selection-end-line="1512" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circleAnimate/js/spin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1178" max-vertical-offset="2222">
-          <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="79" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circleAnimate/js/circleAnimate01.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05107832" vertical-offset="659" max-vertical-offset="1606">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circleAnimate/circleAnimate02.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.741936" vertical-offset="0" max-vertical-offset="704">
-          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circleAnimate/js/circleAnimate02.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47446084" vertical-offset="0" max-vertical-offset="1606">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circleAnimate/circleAnimate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6482353" vertical-offset="1033" max-vertical-offset="1914">
-          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/others/circlejs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5435294" vertical-offset="1496" max-vertical-offset="3322">
-          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/circleAnimate/js/spin02.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32949308" vertical-offset="264" max-vertical-offset="2024">
@@ -750,48 +725,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/index-bak.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6857143" vertical-offset="0" max-vertical-offset="20108">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/register_success.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6905041" vertical-offset="379" max-vertical-offset="1232">
-          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/user/cash/withdraw_hint.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44073457" vertical-offset="396" max-vertical-offset="6314">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/user/cash/withdraw.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47746244" vertical-offset="1452" max-vertical-offset="5346">
-          <caret line="79" column="20" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/user/cash/withdraw_nocard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7419353" vertical-offset="1652" max-vertical-offset="6666">
-          <caret line="86" column="46" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/user/person/addbank.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21715076" vertical-offset="1801" max-vertical-offset="6622">
-          <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facaijin/user/order/detail-norecord.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.69709545" vertical-offset="1520" max-vertical-offset="4840">
@@ -799,112 +732,311 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/user/cash/charge.html">
+    <entry file="file://$PROJECT_DIR$/facaijin/apply/confirm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64315355" vertical-offset="988" max-vertical-offset="7216">
-          <caret line="59" column="49" selection-start-line="59" selection-start-column="49" selection-end-line="59" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/user/person/person_info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="6336">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/user/person/addbank_added.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="4862">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/user/cash/history.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2002" max-vertical-offset="9064">
-          <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/user/feedback/feedback.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25071225" vertical-offset="462" max-vertical-offset="6666">
-          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18008186" vertical-offset="396" max-vertical-offset="7370">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/user/order/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="9152">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/js/fcj.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="2156">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1562" max-vertical-offset="3498">
+          <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/facaijin/apply/apply.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="792" max-vertical-offset="17292">
+        <state vertical-scroll-proportion="0.8761062" vertical-offset="198" max-vertical-offset="17292">
           <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/retrieve_pwd/step_02.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0271084" vertical-offset="1122" max-vertical-offset="3894">
+          <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/retrieve_pwd/step_03.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.677419" vertical-offset="1320" max-vertical-offset="3872">
+          <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/index-bak.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.4838705" vertical-offset="1232" max-vertical-offset="20108">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8387096" vertical-offset="0" max-vertical-offset="3982">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/retrieve_pwd/step_04.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6968326" vertical-offset="792" max-vertical-offset="2948">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/notice_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.935484" vertical-offset="726" max-vertical-offset="3102">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/notice_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2672065" vertical-offset="3454" max-vertical-offset="4708">
+          <caret line="166" column="15" selection-start-line="166" selection-start-column="15" selection-end-line="166" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/news_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.682861" vertical-offset="396" max-vertical-offset="7326">
+          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/news_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75438595" vertical-offset="343" max-vertical-offset="4334">
+          <caret line="41" column="102" selection-start-line="41" selection-start-column="102" selection-end-line="41" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/help_center_article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.064516" vertical-offset="1161" max-vertical-offset="3476">
+          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/help_center_q&amp;a.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8016194" vertical-offset="858" max-vertical-offset="6622">
+          <caret line="66" column="64" selection-start-line="66" selection-start-column="64" selection-end-line="66" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22459893" vertical-offset="888" max-vertical-offset="7414">
+          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3373" max-vertical-offset="4114">
+          <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/help_center.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14844805" vertical-offset="1056" max-vertical-offset="7348">
+          <caret line="53" column="66" selection-start-line="53" selection-start-column="66" selection-end-line="53" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/register_success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08221024" vertical-offset="379" max-vertical-offset="1232">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/pop_login_register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46495956" vertical-offset="1591" max-vertical-offset="3916">
+          <caret line="88" column="14" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_statics/js/plugins/jquery-2.1.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3324709" vertical-offset="163709" max-vertical-offset="202048">
+          <caret line="7465" column="2" selection-start-line="7465" selection-start-column="2" selection-end-line="7465" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/retrieve_pwd/step_01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-32.64516" vertical-offset="792" max-vertical-offset="3894">
+          <caret line="82" column="49" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/user/cash/withdraw_nocard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2521739" vertical-offset="1652" max-vertical-offset="6666">
+          <caret line="83" column="18" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/user/cash/withdraw_success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7014493" vertical-offset="1320" max-vertical-offset="6468">
+          <caret line="82" column="14" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/facaijin/user/pop_window.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="17431" max-vertical-offset="22088">
-          <caret line="809" column="25" selection-start-line="809" selection-start-column="25" selection-end-line="809" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.62588906" vertical-offset="8646" max-vertical-offset="23056">
+          <caret line="413" column="16" selection-start-line="413" selection-start-column="16" selection-end-line="413" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/css/nmain.css">
+    <entry file="file://$PROJECT_DIR$/facaijin/user/cash/withdraw_confirm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3902098" vertical-offset="23085" max-vertical-offset="49346">
-          <caret line="1062" column="32" selection-start-line="1062" selection-start-column="32" selection-end-line="1062" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.51014495" vertical-offset="1782" max-vertical-offset="5698">
+          <caret line="97" column="16" selection-start-line="97" selection-start-column="16" selection-end-line="100" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/apply/confirm.html">
+    <entry file="file://$PROJECT_DIR$/facaijin/user/person/addbank.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1562" max-vertical-offset="3498">
-          <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+        <state vertical-scroll-proportion="-17.290323" vertical-offset="674" max-vertical-offset="5258">
+          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+          <folding>
+            <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/user/person/addbank_added.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.28695652" vertical-offset="858" max-vertical-offset="4862">
+          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/user/person/person_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79710144" vertical-offset="660" max-vertical-offset="6336">
+          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/user/cash/withdraw.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.225806" vertical-offset="3204" max-vertical-offset="3916">
+          <caret line="247" column="48" selection-start-line="247" selection-start-column="48" selection-end-line="247" selection-end-column="48" />
+          <folding>
+            <element signature="tag#div#0;tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/user/order/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="18.451612" vertical-offset="1056" max-vertical-offset="9152">
+          <caret line="22" column="129" selection-start-line="22" selection-start-column="129" selection-end-line="22" selection-end-column="129" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/user/cash/charge.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-30.806452" vertical-offset="761" max-vertical-offset="6644">
+          <caret line="78" column="51" selection-start-line="78" selection-start-column="51" selection-end-line="78" selection-end-column="51" />
+          <folding>
+            <element signature="tag#div#1;tag#div#1;tag#div#1;tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/user/feedback/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.056521" vertical-offset="843" max-vertical-offset="6666">
+          <caret line="291" column="6" selection-start-line="291" selection-start-column="6" selection-end-line="291" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/facaijin/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1892" max-vertical-offset="28446">
-          <caret line="86" column="15" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
+        <state vertical-scroll-proportion="7.780027" vertical-offset="1869" max-vertical-offset="10912">
+          <caret line="1018" column="31" selection-start-line="1018" selection-start-column="31" selection-end-line="1018" selection-end-column="31" />
+          <folding>
+            <element signature="tag#form#0;tag#div#1;tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#form#1;tag#div#1;tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#form#2;tag#div#1;tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#2;tag#div#0;tag#div#6;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#6;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/js/fcj.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="93" max-vertical-offset="2574">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/facaijin/user/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.064327486" vertical-offset="330" max-vertical-offset="6798">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state vertical-scroll-proportion="-7.870968" vertical-offset="6114" max-vertical-offset="7502">
+          <caret line="311" column="54" selection-start-line="311" selection-start-column="54" selection-end-line="311" selection-end-column="54" />
           <folding>
             <element signature="tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="tag#div#0;tag#div#3;tag#body#0;tag#html#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/user/cash/history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.483871" vertical-offset="2514" max-vertical-offset="9064">
+          <caret line="122" column="36" selection-start-line="122" selection-start-column="36" selection-end-line="128" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/user/spread/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41292134" vertical-offset="10464" max-vertical-offset="11264">
+          <caret line="551" column="13" selection-start-line="551" selection-start-column="13" selection-end-line="551" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#div#1;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#1;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="tag#div#4;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/css/nmain.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5558546" vertical-offset="60637" max-vertical-offset="61468">
+          <caret line="2775" column="6" selection-start-line="2775" selection-start-column="6" selection-end-line="2775" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>

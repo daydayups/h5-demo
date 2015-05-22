@@ -21,6 +21,8 @@
   <div class="btn-box">
     <!-- 交易帐号 -->
     <button class="btn-account btn-micro cl-red">帐号密码</button>
+    <!-- 交易帐号 -->
+    <button class="btn-account2 btn-micro cl-red ml-30">帐号密码2</button>
     <!-- 补充保证金 -->
     <button class="btn-replenish btn-micro cl-red ml-30">补充</button>
     <!-- 盈利提取 -->
@@ -67,7 +69,7 @@
     <!-- 帐号密码 -->
     <div id="pop-account" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">帐号密码</span>
+        <span class="f-14">帐号密码</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -91,10 +93,48 @@
       </div>
     </div>
 
+    <!-- 帐号密码2 -->
+    <div id="pop-account2" class="pop-window">
+      <div class="window-title clearfix">
+        <span class="f-14">帐号密码</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="" cellspacing="10" width="100%">
+          <tr>
+            <td align="right"><span class="cl-153">交易账户</span></td>
+            <td width="20%" align="left"><span class="f-16 f-bold">56468498</span></td>
+            <td align="center">
+              <img src="../images/other/icon_ths.jpg" width="60" height="60" alt=""/>
+            </td>
+          </tr>
+          <tr>
+            <td align="right"><span class="cl-153">交易密码</span></td>
+            <td align="left"><span class="f-16 f-bold">211658</span></td>
+            <td align="center">
+              <span class="f-bold">同花顺股票交易软件</span>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td align="center">
+              <button class="btn-small-red cl-red">立即下载</button>
+            </td>
+          </tr>
+        </table>
+        <div class="brd-dotted mt-10"></div>
+        <div class="mt-20 mb-20">
+          <button class="btn-confirm">确定</button>
+        </div>
+        <p class="cl-153">重点提醒交易前请先阅读《发财金规则说明》 《今日限制股》</p>
+      </div>
+    </div>
+
     <!-- 补充保证金 弹窗 -->
     <div id="pop-replenish" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">补充保证金</span>
+        <span class="f-14">补充保证金</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -130,7 +170,7 @@
     <!-- 补充保证金 成功 弹窗 -->
     <div id="pop-replenish-success" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">补充保证金</span>
+        <span class="f-14">补充保证金</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -153,7 +193,7 @@
     <!-- 支付提示 弹窗 -->
     <div id="pop-trading-hint" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">支付提示</span>
+        <span class="f-14">支付提示</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -178,13 +218,13 @@
     <!-- 盈利提取 -->
     <div id="pop-takeprofit" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">盈利提取</span>
+        <span class="f-14">盈利提取</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
         <table class="" cellspacing="20" width="100%">
           <tr>
-            <td><span class="cl-153 f-14">可提金额</span></td>
+            <td><span class="cl-153 f-14">最大可提金额</span></td>
             <td align="left" class="">
               <span class="f-16 f-bold cl-deepred">4681.33</span>
               <span class="f-14 ml-5">元</span>
@@ -218,7 +258,7 @@
     <!-- 盈利提取 提示 -->
     <div id="pop-takeprofit-hint" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">盈利提取</span>
+        <span class="f-14">盈利提取</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -243,7 +283,7 @@
     <!-- 操盘延期 -->
     <div id="pop-postpone" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">操盘延期</span>
+        <span class="f-14">操盘延期</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -284,7 +324,7 @@
     <!-- 操盘延期  提示 -->
     <div id="pop-postpone-success" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">操盘延期</span>
+        <span class="f-14">操盘延期</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -308,7 +348,7 @@
     <!-- 结算1 未清仓 提示 -->
     <div id="pop-stop-order1" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">结算</span>
+        <span class="f-14">结算</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -331,7 +371,7 @@
     <!-- 结算2 已清仓 提示 -->
     <div id="pop-stop-order2" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">结算</span>
+        <span class="f-14">结算</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -341,7 +381,10 @@
               <span class="icon-warning-middle"></span>
             </td>
             <td align="left" class="stop-loss-base">
-              <p class="f-16 f-bold">确定要结算此次配资操盘？</p>
+              <p class="f-16 f-bold">
+                结算盈亏后保证金和盈亏将转入账户余额 <br/>
+                确定要结算此次配资操盘？
+              </p>
             </td>
           </tr>
         </table>
@@ -355,7 +398,7 @@
     <!-- 结算3 结算 提示 -->
     <div id="pop-stop-order3" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">结算</span>
+        <span class="f-14">结算</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -365,7 +408,7 @@
               <span class="icon-success-middle"></span>
             </td>
             <td align="left" class="stop-loss-base">
-              <p class="f-16 f-bold">您的股票账户还未清仓，请清仓后操作</p>
+              <p class="f-16 f-bold">结算已受理，X分钟内资金转到帐户余额。</p>
             </td>
           </tr>
         </table>
@@ -379,7 +422,7 @@
     <!-- 加配资金 -->
     <div id="pop-increase" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">加配资金</span>
+        <span class="f-14">加配资金</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -422,7 +465,7 @@
     <!-- 加配资金 提示 -->
     <div id="pop-increase-hint" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">加配资金</span>
+        <span class="f-14">加配资金</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -448,7 +491,7 @@
     <!-- 减配资金 -->
     <div id="pop-reduce" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">减配资金</span>
+        <span class="f-14">减配资金</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -499,7 +542,7 @@
     <!-- 减配资金 提示 -->
     <div id="pop-reduce-hint" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">减配资金</span>
+        <span class="f-14">减配资金</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -524,7 +567,7 @@
     <!-- 绑定银行卡验证 提示 -->
     <div id="pop-bank-verify" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">绑定银行卡验证</span>
+        <span class="f-14">绑定银行卡验证</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -539,11 +582,11 @@
               <span class="f-14 cl-153 mr-20">请输入短信验证码</span>
             </td>
             <td>
-              <input class="f-18 inp-small" type="text" />
+              <input class="f-18 inp-smallx" type="text" />
             </td>
             <td>
-              <button class="btn-verify-code cl-red ml-20">发送验证码</button>
-              <button class="btn-resend cl-red ml-20">（ <span id="num">60</span> ）重发验证码</button>
+              <button class="btn-verify-codex cl-red ml-20">发送验证码</button>
+              <button class="btn-resendx cl-red ml-20">（ <span id="num">60</span> ）重发验证码</button>
             </td>
           </tr>
         </table>
@@ -558,7 +601,7 @@
     <!-- 修改登录密码 提示 -->
     <div id="pop-modify-password" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">修改登录密码</span>
+        <span class="f-14">修改登录密码</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -600,7 +643,7 @@
     <!-- 修改登录密码 成功 提示 -->
     <div id="pop-modify-password-hint" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">修改登录密码</span>
+        <span class="f-14">修改登录密码</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -625,7 +668,7 @@
     <!-- 添加邮箱 提示 -->
     <div id="pop-email" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">添加邮箱</span>
+        <span class="f-14">添加邮箱</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -649,7 +692,7 @@
     <!-- 添加邮箱 成功 提示 -->
     <div id="pop-email-hint" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">添加邮箱</span>
+        <span class="f-14">添加邮箱</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -673,7 +716,7 @@
     <!-- 添加QQ 提示 -->
     <div id="pop-addQQ" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">添加QQ</span>
+        <span class="f-14">添加QQ</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -697,7 +740,7 @@
     <!-- 添加QQ 成功 提示 -->
     <div id="pop-addQQ-hint" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">添加QQ</span>
+        <span class="f-14">添加QQ</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -721,7 +764,7 @@
     <!-- 绑定微信 提示 -->
     <div id="pop-addweixin" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">添加QQ</span>
+        <span class="f-14">添加QQ</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -742,7 +785,7 @@
     <!-- 绑定微信 成功 提示 -->
     <div id="pop-addweixin-hint" class="pop-window">
       <div class="window-title clearfix">
-        <span class="f-14 f-bold">绑定微信</span>
+        <span class="f-14">绑定微信</span>
         <span class="btn-close"></span>
       </div>
       <div class="window-body">
@@ -766,35 +809,40 @@
   </div>
   <!-- 弹窗区域 结束 -->
 
-  <div id="mark"></div>
+  <div id="modal"></div>
   <script src="../js/jquery-1.11.2.min.js"></script>
   <script src="../js/fcj.js"></script>
   <script>
     $(function(){
       //帐号密码弹窗
-      $.fcj.fn.markInit("#mark");
+      $.fcj.modalInit("#modal");
       $(".btn-account").click(function () {
-        $("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-account");
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-account");
+      });
+      //帐号密码弹窗
+      $(".btn-account2").click(function () {
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-account2");
       });
 
       //补充保证金
       $(".btn-replenish").click(function () {
-        $("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-replenish");
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-replenish");
       });
 
       //支付成功
       $(".btn-trading-hint").click(function () {
-        $("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-trading-hint");
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-trading-hint");
       });
 
       //补充保证金 成功
       $("#pop-replenish .btn-confirm").click(function () {
         $("#pop-replenish").hide();
-        //$("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-replenish-success");
+        //$("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-replenish-success");
       });
 
       //盈利提取
@@ -825,41 +873,41 @@
       });
       //弹出盈利提取窗口
       $(".btn-takeprofit").click(function () {
-        $("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-takeprofit");
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-takeprofit");
       });
       //点击提交后，弹出提示
       $("#pop-takeprofit .btn-confirm").click(function () {
         $("#pop-takeprofit").hide();
-        $("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-takeprofit-hint");
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-takeprofit-hint");
       });
 
       //操盘延期
       $(".btn-postpone").click(function () {
-        $("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-postpone");
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-postpone");
       });
       $("#pop-postpone .btn-confirm").click(function () {
         $("#pop-postpone").hide();
-        $.fcj.fn.popup("#pop-postpone-success");
+        $.fcj.popup("#pop-postpone-success");
       });
 
       //结算
       //1.未清仓
       $(".btn-stop-order1").click(function () {
-        $("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-stop-order1");
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-stop-order1");
       });
       //2.已清仓
       $(".btn-stop-order2").click(function () {
-        $("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-stop-order2");
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-stop-order2");
       });
       //2.结算提示
       $(".btn-stop-order3").click(function () {
-        $("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-stop-order3");
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-stop-order3");
       });
 
       //加配资金
@@ -883,12 +931,12 @@
         }
       });
       $(".btn-increase").click(function () {
-        $("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-increase");
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-increase");
       });
       $("#pop-increase .btn-confirm").click(function () {
         $("#pop-increase").hide();
-        $.fcj.fn.popup("#pop-increase-hint");
+        $.fcj.popup("#pop-increase-hint");
       });
 
       //减配资金
@@ -912,85 +960,81 @@
         }
       });
       $(".btn-reduce").click(function () {
-        $("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-reduce");
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-reduce");
       });
       $("#pop-reduce .btn-confirm").click(function () {
         $("#pop-reduce").hide();
-        $.fcj.fn.popup("#pop-reduce-hint");
+        $.fcj.popup("#pop-reduce-hint");
       });
 
       //绑定银行卡验证
       $(".btn-bank-verify").click(function () {
-        $("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-bank-verify");
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-bank-verify");
       });
 
       $(".btn-resend").hide();
       //发送验证码
-      $(".btn-verify-code").click(function () {
+      $(".btn-verify-codex").click(function () {
         var $this = $(this).hide();
-        $(".btn-resend").show();
-        //倒计时
-        var t = 60;
-        var $num = $(".btn-resend #num");
-        var remaintime = setInterval(function(){
-          $num.html(--t);
-          if(t == 0){
-            clearInterval(remaintime);
-            $this.html("重发验证码");
-            $(".btn-resend").hide();
-            $this.show();
-          }
-        }, 1000);
+        $(".btn-resendx").show();
+        var $num = $(".btn-resendx #num");
+        $.fcj.countdown($num.get(0), 60, 1000, function(){
+          $this.html("重发验证码");
+          $num.html(60);
+          $(".btn-resend").hide();
+          $this.show();
+        });
+
       });
 
       //修改登录密码
       $(".modify-password").click(function () {
-        $("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-modify-password");
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-modify-password");
       });
       $("#pop-modify-password .btn-confirm").click(function () {
         $("#pop-modify-password").hide();
-        $.fcj.fn.popup("#pop-modify-password-hint");
+        $.fcj.popup("#pop-modify-password-hint");
       });
 
       //添加邮箱
       $(".btn-email").click(function () {
-        $("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-email");
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-email");
       });
       $("#pop-email .btn-confirm").click(function () {
         $("#pop-email").hide();
-        $.fcj.fn.popup("#pop-email-hint");
+        $.fcj.popup("#pop-email-hint");
       });
       //添加QQ
       $(".btn-addQQ").click(function () {
-        $("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-addQQ");
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-addQQ");
       });
       $("#pop-addQQ .btn-confirm").click(function () {
         $("#pop-addQQ").hide();
-        $.fcj.fn.popup("#pop-addQQ-hint");
+        $.fcj.popup("#pop-addQQ-hint");
       });
 
       //添加微信
       $(".btn-addweixin").click(function () {
-        $("#mark").show().fadeTo(200, 0.2);
-        $.fcj.fn.popup("#pop-addweixin");
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-addweixin");
       });
       $("#pop-addweixin .btn-confirm").click(function () {
         $("#pop-addweixin").hide();
-        $.fcj.fn.popup("#pop-addweixin-hint");
+        $.fcj.popup("#pop-addweixin-hint");
       });
 
       /* 关闭操作 */
       $(".btn-close").click(function () {
-        $("#mark").hide();
+        $("#modal").hide();
         $(this).parents(".pop-window").hide();
       });
       $(".btn-cancel").click(function () {
-        $("#mark").hide();
+        $("#modal").hide();
         $(this).parents(".pop-window").hide();
       });
     });

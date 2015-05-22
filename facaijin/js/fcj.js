@@ -14,7 +14,6 @@ jQuery.browser = {};
 //需要 Jquery依赖
 ;(function(window, $, undefined) {
   $.fcj = {
-    fn: {
       switchTabs: function (tabs, boxs, current) {
         //标签切换
         /*
@@ -39,7 +38,7 @@ jQuery.browser = {};
         /*
          * button: string example: ".btn-simple" 按钮
          * popWindow: string example: ".pop-window" 弹窗
-         * mark: string example: "#mark" 透明层
+         * modal: string example: "#modal" 透明层
          * closeBtn: string example: ".btn-close" 关闭按钮
          */
         var $popWindow = $(popWindow)
@@ -65,14 +64,14 @@ jQuery.browser = {};
 
         $popWindow.show().fadeTo(200, 1);
       },
-      markInit: function (markId) {
+      modalInit: function (modalId) {
         // 给弹出层添加默认定位位置
         var isIE6 = $.browser.msie && ($.browser.version == "6") && !$.support.style;
 
         if(isIE6) {
           return false;
         } else {
-          $(markId).css({
+          $(modalId).css({
             "position": "fixed",
             "z-index": 100,
             "top": 0,
@@ -86,7 +85,27 @@ jQuery.browser = {};
           });
         }
 
+      },
+      countdown: function (targetElement, num, intervalTime, endFunction) {//数字倒计时
+        /*
+         * targetElement: 倒计时的目标标签,原生DOM
+         * num: 倒计时的数字
+         * intervalTime: 时间间隔
+         * callback: 回调函数，结束后执行的函数
+         */
+        var t = num;
+        var $el = $(targetElement);
+//        console.info($el);
+        $el.html(num);
+        var remaintime = setInterval(function(){
+          $el.html(--t);
+          if(t == 0){
+            clearInterval(remaintime);
+            endFunction();
+          }
+        }, intervalTime);
+
       }
-    }
-  }
+
+  };
 })(window, jQuery);

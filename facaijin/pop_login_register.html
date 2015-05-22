@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>弹窗登录和注册-发财金-赚钱不等待</title>
+  <link rel="stylesheet" href="css/nmain.css">
+  <style>
+    .btn-box {
+      width: 970px;
+      margin-top: 30px;
+      padding-left: 30px;
+      line-height: 60px;
+      border: 2px dotted #dddddd;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- 按钮区域 -->
+  <div class="btn-box">
+    <!-- 弹窗登录 -->
+    <button class="btn-login btn-micro cl-red">弹窗登录</button>
+    <!-- 弹窗注册 -->
+    <button class="btn-register btn-micro cl-red ml-30">弹窗注册</button>
+
+    <!-- 弹窗验证手机号 -->
+    <button class="btn-mobile-verify btn-small-gray cl-red ml-30">弹窗验证手机号</button>
+
+  </div>
+  <!-- 按钮区域 结束 -->
+
+  <!-- 弹窗区域 -->
+  <div>
+    <!-- 登录弹窗 -->
+    <div id="pop-login" class="pop-window">
+      <div class="window-title clearfix">
+        <span class="f-14 f-bold">登录</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="" cellspacing="10" width="100%">
+          <tr>
+            <td><span class="cl-153">交易账户</span></td>
+            <td align="left"><span class="f-16 f-bold">56468498</span></td>
+            <td align="center"><span class="f-bold">同花顺股票交易软件</span></td>
+          </tr>
+          <tr>
+            <td><span class="cl-153">交易密码</span></td>
+            <td align="left"><span class="f-16 f-bold">211658</span></td>
+            <td align="center"><button class="btn-small-red cl-red">立即下载</button></td>
+          </tr>
+        </table>
+        <div class="brd-dotted mt-10"></div>
+        <div class="mt-20 mb-20">
+          <button class="btn-confirm">确定</button>
+        </div>
+        <p class="cl-153">重点提醒交易前请先阅读《发财金规则说明》 《今日限制股》</p>
+      </div>
+    </div>
+    <!-- 登录弹窗 结束 -->
+
+
+    <!-- 手机验证  -->
+    <div id="pop-mobile-verify" class="pop-window">
+      <div class="window-title clearfix">
+        <span class="f-14">手机验证</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="ml-20 w430" cellspacing="10">
+          <tr>
+            <td colspan="3">
+              <span class="icon-yes-16X16 mr-5 pull-left"></span>
+              <p class="f-14 mb-20">已经向 <span class="f-14">138****8888</span> 发送短信，请再输入4位验证码完成注册</p>
+            </td>
+          </tr>
+          <tr>
+            <td align="right">
+              <span class="">请输入短信验证码：</span>
+            </td>
+            <td>
+              <input id="inp-verify-code" class="f-18 inp-small pull-left" type="text" />
+              <button class="btn-verify-code pull-left cl-red">发送验证码</button>
+              <button class="btn-resend pull-left cl-red">（ <span id="num">60</span> ）重发验证码</button>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td align="left">
+              <span class="warning cl-red">请输入短信验证码</span>
+              <span>&nbsp;</span>
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td align="left">
+              <button class="btn-confirm">确 定</button>
+            </td>
+            <td></td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+    <!-- 手机验证 结束 -->
+
+
+  </div>
+  <!-- 弹窗区域 结束 -->
+
+  <div id="modal"></div>
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/fcj.js"></script>
+  <script>
+    $(function(){
+      //登录弹窗
+      $.fcj.modalInit("#modal");
+      $(".btn-login").click(function () {
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-login");
+      });
+      //注册弹窗
+      $(".btn-register").click(function () {
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-register");
+      });
+      //手机验证弹窗
+      $(".btn-mobile-verify").click(function () {
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-mobile-verify");
+      });
+
+      $(".btn-resend").hide();
+      //发送验证码
+      $(".btn-verify-code").click(function () {
+        var $this = $(this).hide();
+        $(".btn-resend").show();
+        var $num = $(".btn-resend #num");
+        $.fcj.countdown($num.get(0), 60, 1000, function(){
+          $this.html("重发验证码");
+          $num.html(60);
+          $(".btn-resend").hide();
+          $this.show();
+        });
+
+      });
+
+      $("#pop-mobile-verify").find(".warning").hide();
+      $("#inp-verify-code").blur(function(){
+
+        if (!$(this).val()) {
+          $("#pop-mobile-verify").find(".warning").show();
+        }
+
+      });
+
+      /* 关闭操作 */
+      $(".btn-close").click(function () {
+        $("#modal").hide();
+        $(this).parents(".pop-window").hide();
+      });
+      $(".btn-cancel").click(function () {
+        $("#modal").hide();
+        $(this).parents(".pop-window").hide();
+      });
+
+    });
+  </script>
+</body>
+</html>
