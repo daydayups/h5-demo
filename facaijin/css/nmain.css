@@ -55,6 +55,9 @@ img {
   float:left;
 }
 /* -font- */
+.f-12 {
+  font-size: 12px !important;
+}
 .f-14 {
   font-size: 14px;
 }
@@ -84,6 +87,9 @@ img {
 }
 .f-italic {
   font-style: italic;
+}
+.f-underline {
+  text-decoration: underline;
 }
 /* -margin- */
 .ml-5 {
@@ -1071,7 +1077,7 @@ span.sort-icon.sort-icon-hover {
 .confirm-table .th {
   background-color: #f8f8f8;
 }
-.confirm-table td {
+.confirm-table td.th, .confirm-table td.td {
   height: 53px;
 }
 .select-style {
@@ -1745,6 +1751,12 @@ span.sort-icon.sort-icon-hover {
   background-color: #707070;
   color: #fff;
 }
+/* 订单日志 弹窗 */
+.log-detail-title {
+  background-color: #fff;
+  position: relative;
+}
+
 
 /* 充值 样式 */
 .switch-block-base {
@@ -2078,6 +2090,12 @@ table .apply-btn {
   height: 34px;
   background: url(../images/user/icons.png) no-repeat -78px -96px;
 }
+.icon-identity-verify {
+  display: block;
+  width: 32px;
+  height: 22px;
+  background: url(../images/user/icons.png) no-repeat -289px -100px;
+}
 .icon-lock {
   display: block;
   width: 34px;
@@ -2218,7 +2236,7 @@ textarea {
   text-align: center;
   background-color: #fff;
 }
-.window-title .btn-close {
+.window-title .btn-close, .log-detail-title .btn-close {
   cursor: pointer;
   display: block;
   width: 17px;
@@ -2228,7 +2246,7 @@ textarea {
   right: 18px;
   top: 14px;
 }
-.window-title .btn-close:hover {
+.window-title .btn-close:hover,.log-detail-title .btn-close:hover {
   background: url(../images/user/icons.png) no-repeat -263px -375px;
 }
 .pop-window .stop-loss-base {
@@ -2451,7 +2469,7 @@ img.verify-img {
   height: 16px;
   background: url(../images/retrieve_pwd/icon_yes_16X16.png) no-repeat;
 }
-.btn-verify-codex {
+.btn-verify-codey {
   background-color: #cc0000;
   border: 1px solid #cc0000;
   width: 130px;
@@ -2649,6 +2667,9 @@ img.verify-img {
 .w640 {
   width: 640px;
 }
+.w700 {
+  width: 700px;
+}
 .question-list {
   border-bottom: 2px dotted #eeeeee;
 }
@@ -2688,7 +2709,7 @@ img.verify-img {
   /*font-size: 14px;*/
 }
 
-/* 弹窗登录和注册 */
+/* 弹窗校验码 */
 .btn-resend {
   background-color: #dedede;
   border: 1px solid #dedede;

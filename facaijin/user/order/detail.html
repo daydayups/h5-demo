@@ -6,406 +6,798 @@
   <link rel="stylesheet" href="../../css/nmain.css">
 </head>
 <body>
-  <div class="site-nav clearfix">
-    <a class="simple-logo-bg pull-left" href=""></a>
-    <p class="sub-title">订单详情</p>
-    <p class="pull-right mt-10 f-14 cl-153">您好, <span class="cl-deepred f-18">18868945420</span> <button class="logout-btn mr-30" >[退出]</button></p>
-  </div>
-  <div style="border-bottom:1px solid #f2f2f2;"></div>
+<div class="site-nav clearfix">
+  <a class="simple-logo-bg pull-left" href=""></a>
 
-  <!-- 内容 -->
-  <div class="detail-wrap clearfix">
+  <p class="sub-title">订单详情</p>
 
-    <!-- 用户的操作界面 -->
-    <div class="detail-main">
-      <div class="detail-steps">
-        <ul class="detail-steps-items clearfix">
-          <li class="item"><span class="icon-tick-gray pull-left mr-10"></span><span class="pull-left">选择炒股资金</span><span class="icon-arrow pull-left ml-20"></span></li>
-          <li class="item"><span class="icon-tick-gray pull-left mr-10"></span><span class="pull-left">支付保证金</span><span class="icon-arrow pull-left ml-20"></span></li>
-          <li class="item"><span class="icon-tick-gray pull-left mr-10"></span><span class="pull-left">下载证券软件领取账户并登录</span><span class="icon-arrow pull-left ml-20"></span></li>
-          <li class="item"><span class="icon-tick-active pull-left mr-10"></span><span class="pull-left cl-deepred">购买股票赚钱</span><span class="icon-arrow pull-left ml-20"></span></li>
-          <li class="item"><span class="icon-tick-gray pull-left mr-10"></span><span class="pull-left">结算</span></li>
-        </ul>
-      </div>
-      <div class="main-title">
-        <!-- 订单详情 主要信息 -->
-        <ul class="detail-summary clearfix">
-          <li class="item"><span class="cl-153 mr-20">订单状态</span><span class="f-bold">操盘中</span></li>
-          <li class="item"><span class="cl-153 mr-20">订单号</span><span class="">1205849798</span></li>
-          <li class="item"><span class="cl-153 mr-20">申请日期</span><span class="">2015-01-21 11:09</span></li>
-          <li class="item"><span class="cl-153 mr-20">预付服务费</span><span class="f-14 f-bold">1000.00</span></li>
-          <li class="item"><button class="stop-trading-btn simple-btn cl-deepred">[我要结算]</button></li>
-        </ul>
-      </div>
-      <div class="main-content">
-        <div class="clearfix">
-          <!-- 订单详情及相关操作 -->
-          <table class="details-table mt-40 pull-left" cellspacing="10">
-            <tr class="th">
-              <td width="20%" align="right"><span class="cl-153">证券总资产</span></td>
-              <td width="20%"><span class="f-14 f-bold">14780.99</span></td>
-              <td width="15%" align="right"><span class="cl-153">可用</span></td>
-              <td width="15%"><span class="f-14 f-bold"><span class="">441.33</span></span></td>
-              <td width="15%" align="right"><span class="cl-153">收益率</span></td>
-              <td><span class="f-14 f-bold cl-deepred">+46.73%</span></td>
-            </tr>
-            <tr>
-              <td colspan="6" class="td-border"></td>
-            </tr>
-            <tr class="tb">
-              <td align="right"><span class="cl-153">盈亏</span></td>
-              <td colspan="2"><span class="f-14 f-bold">4568.11</span></td>
-              <td colspan="3"><button class="btn-takeprofit btn-small-red f-song cl-red">提 盈</button></td>
-            </tr>
-            <tr class="tb">
-              <td align="right"><span class="cl-153">操盘金额</span></td>
-              <td colspan="2"><span class="f-14 f-bold">10000.00</span></td>
-              <td colspan="3"><button class="btn-increase btn-small-red f-song cl-red">加 配</button>
-                <button class="reduce simple-btn f-song ml-10 cl-153">[减配]</button></td>
-            </tr>
-            <tr class="tb">
-              <td align="right"><span class="cl-153">保证金剩余</span></td>
-              <td colspan="2" class="stop-loss-base">
-                <span class="f-14 f-bold">2000.00</span>
-                <div class="stop-loss">
-                  <p class="cl-153 f-bold">750.00</p>
-                  <p class="cl-153 f-song mt-10">止损</p>
-                </div>
-              </td>
-              <td colspan="3"><button class="btn-replenish btn-small-red f-song cl-red">补 充</button></td>
-            </tr>
-            <tr class="tb">
-              <td align="right"><span class="cl-153">结算日</span></td>
-              <td colspan="2"><span class="f-14 f-bold">2015-04-30 14:54</span><span class="cl-153 f-song ml-10">剩余1天</span></td>
-              <td colspan="3"><button class="btn-postpone btn-small-red f-song cl-red">延 期</button></td>
-            </tr>
-          </table>
-          <div class="download-box pull-left">
-            <p><span class="cl-153 f-song">实盘交易账户</span> <span class="f-bold f-14 ml-10">78495894</span></p>
-            <p class="mt-20"> <span class="cl-153 f-song">实盘交易账户</span> <span class="f-bold f-14 ml-10">78495</span></p>
-            <div class="mt-20"><button class="btn-small-gray f-song">下载操盘软件</button></div>
-            <p class="mt-20"><span class="cl-153 f-song">操盘交易软件 HOMS涌金版</span></p>
-          </div>
-        </div>
-
-        <!-- 订单列表 -->
-        <div class="mt-20">
-          <!-- 具备切换功能的标签标题 -->
-          <div class="switch-title">
-            <ul class="switch-tab-wrap">
-              <li><a class="switch-tab curr" href="javascript:;">持仓</a></li>
-              <li><a class="switch-tab" href="javascript:;">成交</a></li>
-            </ul>
-
-          </div>
-          <!-- 具备切换功能的标签标题 结束 -->
-
-          <!-- 订单表格 -->
-          <!-- 持仓 有订单 -->
-          <table class="trading-list-table table-module" width="100%" cellspacing="0">
-              <tr class="th">
-                <th class="col-1st" align="left" width="20%">股票代码/名称</th>
-                <th align="left" width="">成本价</th>
-                <th align="left" width="">最新价</th>
-                <th align="left" width="">持仓数量</th>
-                <th align="left" width="">持仓陈本</th>
-                <th align="left" width="">持仓市值</th>
-                <th align="left" width="">参考盈亏</th>
-              </tr>
-              <!-- 买入记录 背景灰 -->
-              <tr class="tb suspended">
-                <td class="col-1st">
-                  <p class="f-14">000001 平安银行 <span class="suspended-icon">停牌</span></p>
-                </td>
-                <td>
-                  <p class="f-14">15.57</p>
-                </td>
-                <td>
-                  <p class="f-14 f-bold">16.05</p>
-                </td>
-                <td>
-                  <p class="f-14">100</p>
-                </td>
-                <td>
-                  <p class="f-14">1526.00</p>
-                </td>
-                <td>
-                  <p class="f-bold f-14">1526.00</p>
-                </td>
-                <td>
-                  <p class="f-bold f-14 cl-deepred">+25.00</p>
-                </td>
-              </tr>
-              <!-- 买入记录 背景灰 -->
-              <tr class="tb stop-bg">
-                <td class="col-1st">
-                  <p class="f-14">000001 平安银行</p>
-                </td>
-                <td>
-                  <p class="f-14">15.57</p>
-                </td>
-                <td>
-                  <p class="f-14 f-bold">16.05</p>
-                </td>
-                <td>
-                  <p class="f-14">100</p>
-                </td>
-                <td>
-                  <p class="f-14">1526.00</p>
-                </td>
-                <td>
-                  <p class="f-bold f-14">1526.00</p>
-                </td>
-                <td>
-                  <p class="f-bold f-14">-25.00</p>
-                </td>
-              </tr>
-              <!-- 买入记录 背景灰 -->
-              <tr class="tb">
-                <td class="col-1st">
-                  <p class="f-14">000001 平安银行</p>
-                </td>
-                <td>
-                  <p class="f-14">15.57</p>
-                </td>
-                <td>
-                  <p class="f-14 f-bold">16.05</p>
-                </td>
-                <td>
-                  <p class="f-14">100</p>
-                </td>
-                <td>
-                  <p class="f-14">1526.00</p>
-                </td>
-                <td>
-                  <p class="f-bold f-14">1526.00</p>
-                </td>
-                <td>
-                  <p class="f-bold f-14">-25.00</p>
-                </td>
-              </tr>
-              <!-- 买入记录 背景灰 -->
-              <tr class="tb">
-                <td class="col-1st">
-                  <p class="f-14">000001 平安银行</p>
-                </td>
-                <td>
-                  <p class="f-14">15.57</p>
-                </td>
-                <td>
-                  <p class="f-14 f-bold">16.05</p>
-                </td>
-                <td>
-                  <p class="f-14">100</p>
-                </td>
-                <td>
-                  <p class="f-14">1526.00</p>
-                </td>
-                <td>
-                  <p class="f-bold f-14">1526.00</p>
-                </td>
-                <td>
-                  <p class="f-bold f-14 cl-deepred">+25.00</p>
-                </td>
-              </tr>
-            </table>
-          <!-- 持仓 有订单 结束 -->
-
-          <!-- 成交 有订单 -->
-          <table class="trading-list-table table-module" width="100%" cellspacing="0">
-              <tr class="th">
-                <th class="col-1st" align="left" width="20%">股票代码/名称</th>
-                <th align="left" width="">买卖</th>
-                <th align="left" width="">成交价格</th>
-                <th align="left" width="">成交数量</th>
-                <th align="left" width="">成交金额</th>
-                <th align="left" width="">清算金额</th>
-                <th align="left" width="">参考盈亏</th>
-              </tr>
-              <!-- 买入记录 背景灰 -->
-              <tr class="tb buy-bg">
-                <td class="col-1st">
-                  <p class="f-14">000001 平安银行</p>
-                </td>
-                <td>
-                  <p class="f-14">买入</p>
-                </td>
-                <td>
-                  <p class="f-14 f-bold">16.05</p>
-                </td>
-                <td>
-                  <p class="f-14">100</p>
-                </td>
-                <td>
-                  <p class="f-14">1526.00</p>
-                </td>
-                <td>
-                  <p class="f-bold f-14">1526.00</p>
-                </td>
-                <td>
-                  <p class="f-bold f-14 cl-deepred">+25.00</p>
-                </td>
-              </tr>
-              <!-- 买入记录 背景灰 -->
-              <tr class="tb buy-bg">
-                <td class="col-1st">
-                  <p class="f-14">000001 平安银行</p>
-                </td>
-                <td>
-                  <p class="f-14">买入</p>
-                </td>
-                <td>
-                  <p class="f-14 f-bold">16.05</p>
-                </td>
-                <td>
-                  <p class="f-14">100</p>
-                </td>
-                <td>
-                  <p class="f-14">1526.00</p>
-                </td>
-                <td>
-                  <p class="f-bold f-14">1526.00</p>
-                </td>
-                <td>
-                  <p class="f-bold f-14">-25.00</p>
-                </td>
-              </tr>
-              <!-- 买入记录 背景灰 -->
-              <tr class="tb sell-bg">
-                <td class="col-1st">
-                  <p class="f-14">000001 平安银行</p>
-                </td>
-                <td>
-                  <p class="f-14">卖出</p>
-                </td>
-                <td>
-                  <p class="f-14 f-bold">16.05</p>
-                </td>
-                <td>
-                  <p class="f-14">100</p>
-                </td>
-                <td>
-                  <p class="f-14">1526.00</p>
-                </td>
-                <td>
-                  <p class="f-bold f-14">1526.00</p>
-                </td>
-                <td>
-                  <p class="f-bold f-14">-25.00</p>
-                </td>
-              </tr>
-              <!-- 买入记录 背景灰 -->
-              <tr class="tb sell-bg">
-                <td class="col-1st">
-                  <p class="f-14">000001 平安银行</p>
-                </td>
-                <td>
-                  <p class="f-14">卖出</p>
-                </td>
-                <td>
-                  <p class="f-14 f-bold">16.05</p>
-                </td>
-                <td>
-                  <p class="f-14">100</p>
-                </td>
-                <td>
-                  <p class="f-14">1526.00</p>
-                </td>
-                <td>
-                  <p class="f-bold f-14">1526.00</p>
-                </td>
-                <td>
-                  <p class="f-bold f-14 cl-deepred">+25.00</p>
-                </td>
-              </tr>
-            </table>
-          <!-- 成交 有订单 结束 -->
-
-
-
-          <!-- 分页 -->
-          <div class="pagex clearfix" >
-            <button class="previous"></button> <span>1</span>/<span>2</span> <button class="next"></button>
-          </div>
-          <!-- 分页 结束 -->
-
-      </div>
-    </div>
-    <!-- 用户的操盘界面 结束 -->
-  </div>
-  <!-- 内容结束 -->
+  <p class="pull-right mt-10 f-14 cl-153">您好, <span class="cl-deepred f-18">18868945420</span>
+    <button class="logout-btn mr-30">[退出]</button>
+  </p>
 </div>
-  <!-- 底部信息 -->
-  <div class="footer clearfix">
-    <div class="inner">
-      <div class="clearfix">
-        <div class="pull-left">
-          <dl class="pull-left">
-            <dt>帮助中心</dt>
-            <dd class="mt-20"><a href="">发财金</a></dd>
-            <dd><a href="">参与规则</a></dd>
-            <dd><a href="">如何充值</a></dd>
-            <dd><a href="">如何提现</a></dd>
-          </dl>
-          <dl class="pull-left">
-            <dt>常见问题</dt>
-            <dd class="mt-20"><a href="">禁止股票</a></dd>
-            <dd><a href="">收费说明</a></dd>
-            <dd><a href="">操盘止损</a></dd>
-            <dd><a href="">操盘时间</a></dd>
-          </dl>
-          <dl class="pull-left">
-            <dt>交易流程</dt>
-            <dd class="mt-20"><a href="">申请操盘</a></dd>
-            <dd><a href="">操盘补亏</a></dd>
-            <dd><a href="">操盘清算</a></dd>
-            <dd><a href="">盈利提取</a></dd>
-          </dl>
-          <dl class="pull-left">
-            <dt>了解我们</dt>
-            <dd class="mt-20"><a href="">公司介绍</a></dd>
-            <dd><a href="">网站公告</a></dd>
-            <dd><a href="">联系我们</a></dd>
-            <dd><a href="">诚聘英才</a></dd>
-          </dl>
-          <div class="pull-left service">
-            <p class="f-16 f-bold">客户服务</p>
-            <p class="mt-20 f-14 cl-119">（服务时间：8:00-24:00）</p>
-            <p class="mt-10 f-20 cl-119 clearfix"><span class="phone-icon pull-left" ></span><span class="pull-left ml-10 f-20">400-638-0808</span></p>
-            <p class="mt-10 f-14 cl-119 clearfix"><span class="qq-icon pull-left" ></span><a class="pull-left ml-10" href="">QQ在线交谈</a></p>
-          </div>
+<div style="border-bottom:1px solid #f2f2f2;"></div>
+
+<!-- 内容 -->
+<div class="detail-wrap clearfix">
+
+<!-- 用户的操作界面 -->
+<div class="detail-main">
+<div class="detail-steps">
+  <ul class="detail-steps-items clearfix">
+    <li class="item"><span class="icon-tick-gray pull-left mr-10"></span><span class="pull-left">选择炒股资金</span><span
+        class="icon-arrow pull-left ml-20"></span></li>
+    <li class="item"><span class="icon-tick-gray pull-left mr-10"></span><span class="pull-left">支付保证金</span><span
+        class="icon-arrow pull-left ml-20"></span></li>
+    <li class="item"><span class="icon-tick-gray pull-left mr-10"></span><span
+        class="pull-left">下载证券软件领取账户并登录</span><span class="icon-arrow pull-left ml-20"></span></li>
+    <li class="item"><span class="icon-tick-active pull-left mr-10"></span><span
+        class="pull-left cl-deepred">购买股票赚钱</span><span class="icon-arrow pull-left ml-20"></span></li>
+    <li class="item"><span class="icon-tick-gray pull-left mr-10"></span><span class="pull-left">结算</span></li>
+  </ul>
+</div>
+<div class="main-title">
+  <!-- 订单详情 主要信息 -->
+  <ul class="detail-summary clearfix">
+    <li class="item"><span class="f-bold mr-20">按天操盘</span><span class="">操盘中</span></li>
+    <li class="item"><span class="cl-153 mr-20">订单号</span><span class="">1205849798</span></li>
+    <li class="item"><span class="cl-153 mr-20">申请日期</span><span class="">2015-01-21 11:09</span></li>
+    <li class="item"><span class="cl-153 mr-20">预付服务费</span><span class="f-14 f-bold">1000.00</span></li>
+    <li class="item">
+      <button class="stop-trading-btn simple-btn cl-deepred">[我要结算]</button>
+    </li>
+  </ul>
+</div>
+<div class="main-content">
+<div class="clearfix">
+  <!-- 订单详情及相关操作 -->
+  <table class="details-table mt-40 pull-left" cellspacing="10">
+    <tr class="th">
+      <td width="20%" align="right"><span class="cl-153">证券总资产</span></td>
+      <td width="20%"><span class="f-14 f-bold">14780.99</span></td>
+      <td width="15%" align="right"><span class="cl-153">可用</span></td>
+      <td width="15%"><span class="f-14 f-bold"><span class="">441.33</span></span></td>
+      <td width="15%" align="right"><span class="cl-153">收益率</span></td>
+      <td><span class="f-14 f-bold cl-deepred">+46.73%</span></td>
+    </tr>
+    <tr>
+      <td colspan="6" class="td-border"></td>
+    </tr>
+    <tr class="tb">
+      <td align="right"><span class="cl-153">盈亏</span></td>
+      <td colspan="2"><span class="f-14 f-bold">4568.11</span></td>
+      <td colspan="3">
+        <button id="btn-takeprofit" class="btn-small-red f-song cl-red">提 盈</button>
+      </td>
+    </tr>
+    <tr class="tb">
+      <td align="right"><span class="cl-153">操盘金额</span></td>
+      <td colspan="2"><span class="f-14 f-bold">10000.00</span></td>
+      <td colspan="3">
+        <button id="btn-increase" class="btn-small-red f-song cl-red">加 配</button>
+        <button class="reduce simple-btn f-song ml-10 cl-153">[减配]</button>
+      </td>
+    </tr>
+    <tr class="tb">
+      <td align="right"><span class="cl-153">保证金剩余</span></td>
+      <td colspan="2" class="stop-loss-base">
+        <span class="f-14 f-bold">2000.00</span>
+
+        <div class="stop-loss">
+          <p class="cl-153 f-bold">750.00</p>
+
+          <p class="cl-153 f-song mt-10">止损</p>
         </div>
-        <div class="pull-right">
-          <a class="logo-bg-gray"></a>
+      </td>
+      <td colspan="3">
+        <button id="btn-replenish" class="btn-small-red f-song cl-red">补 充</button>
+      </td>
+    </tr>
+    <tr class="tb">
+      <td align="right"><span class="cl-153">结算日</span></td>
+      <td colspan="2"><span class="f-14 f-bold">2015-04-30 14:54</span><span class="cl-153 f-song ml-10">剩余1天</span>
+      </td>
+      <td colspan="2">
+        <button id="btn-postpone" class="btn-small-red f-song cl-red">延 期</button>
+      </td>
+      <td colspan="2">
+        <button id="btn-log-detail" class="simple-btn f-song f-12 cl-153">订单操作日志>></button>
+      </td>
+    </tr>
+  </table>
+  <div class="download-box pull-left">
+    <p><span class="cl-153 f-song">实盘交易账户</span> <span class="f-bold f-14 ml-10">78495894</span></p>
+
+    <p class="mt-20"><span class="cl-153 f-song">实盘交易账户</span> <span class="f-bold f-14 ml-10">78495</span></p>
+
+    <div class="mt-20">
+      <button class="btn-small-gray f-song">下载操盘软件</button>
+    </div>
+    <p class="mt-20"><span class="cl-153 f-song">操盘交易软件 HOMS涌金版</span></p>
+  </div>
+</div>
+
+<!-- 订单列表 -->
+<div class="mt-20">
+<!-- 具备切换功能的标签标题 -->
+<div class="switch-title">
+  <ul class="switch-tab-wrap">
+    <li><a class="order-switch switch-tab curr" href="javascript:;">持仓</a></li>
+    <li><a class="order-switch switch-tab" href="javascript:;">成交</a></li>
+  </ul>
+
+</div>
+<!-- 具备切换功能的标签标题 结束 -->
+
+<!-- 订单表格 -->
+<!-- 持仓 有订单 -->
+<table class="trading-list-table table-module" width="100%" cellspacing="0">
+  <tr class="th">
+    <th class="col-1st" align="left" width="20%">股票代码/名称</th>
+    <th align="left" width="">成本价</th>
+    <th align="left" width="">最新价</th>
+    <th align="left" width="">持仓数量</th>
+    <th align="left" width="">持仓陈本</th>
+    <th align="left" width="">持仓市值</th>
+    <th align="left" width="">参考盈亏</th>
+    <th width="10%" align="left" width=""></th>
+  </tr>
+  <!-- 买入记录 背景灰 -->
+  <tr class="tb suspended">
+    <td class="col-1st">
+      <p class="f-14">000001 平安银行 <span class="suspended-icon">停牌</span></p>
+    </td>
+    <td>
+      <p class="f-14">15.57</p>
+    </td>
+    <td>
+      <p class="f-14 f-bold">16.05</p>
+    </td>
+    <td>
+      <p class="f-14">100</p>
+    </td>
+    <td>
+      <p class="f-14">1526.00</p>
+    </td>
+    <td>
+      <p class="f-bold f-14">1526.00</p>
+    </td>
+    <td>
+      <p class="f-bold f-14 cl-deepred">+25.00</p>
+    </td>
+    <td>
+      <button class="btn-micro-red cl-red">处理</button>
+    </td>
+  </tr>
+  <!-- 买入记录 背景灰 -->
+  <tr class="tb stop-bg">
+    <td class="col-1st">
+      <p class="f-14">000001 平安银行</p>
+    </td>
+    <td>
+      <p class="f-14">15.57</p>
+    </td>
+    <td>
+      <p class="f-14 f-bold">16.05</p>
+    </td>
+    <td>
+      <p class="f-14">100</p>
+    </td>
+    <td>
+      <p class="f-14">1526.00</p>
+    </td>
+    <td>
+      <p class="f-bold f-14">1526.00</p>
+    </td>
+    <td>
+      <p class="f-bold f-14">-25.00</p>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <!-- 买入记录 背景灰 -->
+  <tr class="tb">
+    <td class="col-1st">
+      <p class="f-14">000001 平安银行</p>
+    </td>
+    <td>
+      <p class="f-14">15.57</p>
+    </td>
+    <td>
+      <p class="f-14 f-bold">16.05</p>
+    </td>
+    <td>
+      <p class="f-14">100</p>
+    </td>
+    <td>
+      <p class="f-14">1526.00</p>
+    </td>
+    <td>
+      <p class="f-bold f-14">1526.00</p>
+    </td>
+    <td>
+      <p class="f-bold f-14">-25.00</p>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <!-- 买入记录 背景灰 -->
+  <tr class="tb">
+    <td class="col-1st">
+      <p class="f-14">000001 平安银行</p>
+    </td>
+    <td>
+      <p class="f-14">15.57</p>
+    </td>
+    <td>
+      <p class="f-14 f-bold">16.05</p>
+    </td>
+    <td>
+      <p class="f-14">100</p>
+    </td>
+    <td>
+      <p class="f-14">1526.00</p>
+    </td>
+    <td>
+      <p class="f-bold f-14">1526.00</p>
+    </td>
+    <td>
+      <p class="f-bold f-14 cl-deepred">+25.00</p>
+    </td>
+    <td>
+    </td>
+  </tr>
+</table>
+<!-- 持仓 有订单 结束 -->
+
+<!-- 成交 有订单 -->
+<table class="trading-list-table table-module" style="display: none;" width="100%" cellspacing="0">
+  <tr class="th">
+    <th class="col-1st" align="left" width="20%">股票代码/名称</th>
+    <th align="left" width="">买卖</th>
+    <th align="left" width="">成交价格</th>
+    <th align="left" width="">成交数量</th>
+    <th align="left" width="">成交金额</th>
+    <th align="left" width="">清算金额</th>
+    <th align="left" width="">参考盈亏</th>
+  </tr>
+  <!-- 买入记录 背景灰 -->
+  <tr class="tb buy-bg">
+    <td class="col-1st">
+      <p class="f-14">000001 平安银行</p>
+    </td>
+    <td>
+      <p class="f-14">买入</p>
+    </td>
+    <td>
+      <p class="f-14 f-bold">16.05</p>
+    </td>
+    <td>
+      <p class="f-14">100</p>
+    </td>
+    <td>
+      <p class="f-14">1526.00</p>
+    </td>
+    <td>
+      <p class="f-bold f-14">1526.00</p>
+    </td>
+    <td>
+      <p class="f-bold f-14 cl-deepred">+25.00</p>
+    </td>
+  </tr>
+  <!-- 买入记录 背景灰 -->
+  <tr class="tb buy-bg">
+    <td class="col-1st">
+      <p class="f-14">000001 平安银行</p>
+    </td>
+    <td>
+      <p class="f-14">买入</p>
+    </td>
+    <td>
+      <p class="f-14 f-bold">16.05</p>
+    </td>
+    <td>
+      <p class="f-14">100</p>
+    </td>
+    <td>
+      <p class="f-14">1526.00</p>
+    </td>
+    <td>
+      <p class="f-bold f-14">1526.00</p>
+    </td>
+    <td>
+      <p class="f-bold f-14">-25.00</p>
+    </td>
+  </tr>
+  <!-- 买入记录 背景灰 -->
+  <tr class="tb sell-bg">
+    <td class="col-1st">
+      <p class="f-14">000001 平安银行</p>
+    </td>
+    <td>
+      <p class="f-14">卖出</p>
+    </td>
+    <td>
+      <p class="f-14 f-bold">16.05</p>
+    </td>
+    <td>
+      <p class="f-14">100</p>
+    </td>
+    <td>
+      <p class="f-14">1526.00</p>
+    </td>
+    <td>
+      <p class="f-bold f-14">1526.00</p>
+    </td>
+    <td>
+      <p class="f-bold f-14">-25.00</p>
+    </td>
+  </tr>
+  <!-- 买入记录 背景灰 -->
+  <tr class="tb sell-bg">
+    <td class="col-1st">
+      <p class="f-14">000001 平安银行</p>
+    </td>
+    <td>
+      <p class="f-14">卖出</p>
+    </td>
+    <td>
+      <p class="f-14 f-bold">16.05</p>
+    </td>
+    <td>
+      <p class="f-14">100</p>
+    </td>
+    <td>
+      <p class="f-14">1526.00</p>
+    </td>
+    <td>
+      <p class="f-bold f-14">1526.00</p>
+    </td>
+    <td>
+      <p class="f-bold f-14 cl-deepred">+25.00</p>
+    </td>
+  </tr>
+</table>
+<!-- 成交 有订单 结束 -->
+
+
+<!-- 分页 -->
+<div class="pagex clearfix">
+  <button class="previous"></button>
+  <span>1</span>/<span>2</span>
+  <button class="next"></button>
+</div>
+<!-- 分页 结束 -->
+
+</div>
+</div>
+<!-- 用户的操盘界面 结束 -->
+</div>
+<!-- 内容结束 -->
+</div>
+
+<!-- 弹窗 -->
+<div id="modal"></div>
+<!-- 订单日志 -->
+<div id="pop-log-detail" class="pop-window w700">
+  <div class="log-detail-title switch-title">
+    <ul class="switch-tab-wrap">
+      <li><a class="order-log-switch switch-tab curr" href="javascript:;">订单操作</a></li>
+      <li><a class="order-log-switch switch-tab" href="javascript:;">账户管理费</a></li>
+    </ul>
+    <span class="btn-close"></span>
+  </div>
+  <div class="window-body">
+
+    <div class="log-detail-table">
+    <!-- 订单日志表 -->
+    <table class="table-module" width="100%" cellspacing="0">
+      <!-- 记录 -->
+      <tr class="tb">
+        <td align="left">
+          <p class="f-bold f-song">结算操盘</p>
+          <p class="mt-5 cl-153">2015-05-14 09:15</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">结算盈亏金额（元）</p>
+          <p class="mt-5">100000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">证券账户金额</p>
+          <p class="mt-5">2500000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">返还保证金（元）</p>
+          <p class="mt-5">400000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">操作成功</p>
+        </td>
+      </tr>
+      <!-- 记录 结束 -->
+      <!-- 记录 -->
+      <tr class="tb">
+        <td align="left">
+          <p class="f-bold f-song">提取盈利</p>
+          <p class="mt-5 cl-153">2015-05-14 09:15</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">提盈金额（元）</p>
+          <p class="mt-5">50000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">证券账户余额</p>
+          <p class="mt-5">2500000.00</p>
+        </td>
+        <td align="left">
+        </td>
+        <td align="left">
+          <button class="simple-btn cl-153 f-song f-12">取消操作</button>
+        </td>
+      </tr>
+      <!-- 记录 结束 -->
+      <!-- 记录 -->
+      <tr class="tb">
+        <td align="left">
+          <p class="f-bold f-song">提取盈利</p>
+          <p class="mt-5 cl-153">2015-05-14 09:15</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">提盈金额（元）</p>
+          <p class="mt-5">50000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">证券账户余额</p>
+          <p class="mt-5">2500000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">收入金额（元）</p>
+          <p class="mt-5">50000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">操作成功</p>
+        </td>
+      </tr>
+      <!-- 记录 结束 -->
+      <!-- 记录 -->
+      <tr class="tb">
+        <td align="left">
+          <p class="f-bold f-song">配资延期</p>
+          <p class="mt-5 cl-153">2015-05-14 09:15</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">延期天数</p>
+          <p class="mt-5">5</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">操盘结束时间</p>
+          <p class="mt-5">2015-05-14 09:15</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">预付管理费（元）</p>
+          <p class="mt-5">2000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">操作成功</p>
+        </td>
+      </tr>
+      <!-- 记录 结束 -->
+      <!-- 记录 -->
+      <tr class="tb">
+        <td align="left">
+          <p class="f-bold f-song">补充保证金</p>
+          <p class="mt-5 cl-153">2015-05-14 09:15</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">补充保证金（元）</p>
+          <p class="mt-5">100000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">保证金余额</p>
+          <p class="mt-5">500000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">预付保证金（元）</p>
+          <p class="mt-5">10000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">操作成功</p>
+        </td>
+      </tr>
+      <!-- 记录 结束 -->
+      <!-- 记录 -->
+      <tr class="tb">
+        <td align="left">
+          <p class="f-bold f-song">减配操盘资金</p>
+          <p class="mt-5 cl-153">2015-05-14 09:15</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">减配金额（元）</p>
+          <p class="mt-5">1200000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">操盘金额</p>
+          <p class="mt-5">1200000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">返还保证金（元）</p>
+          <p class="mt-5">200000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">操作成功</p>
+        </td>
+      </tr>
+      <!-- 记录 结束 -->
+      <!-- 记录 -->
+      <tr class="tb">
+        <td align="left">
+          <p class="f-bold f-song">加配操盘资金</p>
+          <p class="mt-5 cl-153">2015-05-14 09:15</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">加配金额（元）</p>
+          <p class="mt-5">1200000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">操盘金额</p>
+          <p class="mt-5">1200000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">预付保证金（元）</p>
+          <p class="mt-5">200000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">操作成功</p>
+        </td>
+      </tr>
+      <!-- 记录 结束 -->
+      <!-- 记录 -->
+      <tr class="tb">
+        <td align="left">
+          <p class="f-bold f-song">资金转入</p>
+          <p class="mt-5 cl-153">2015-05-14 09:15</p>
+        </td>
+        <td align="left">
+
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">初始操盘资金（元）</p>
+          <p class="mt-5">1200000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">预付保证金（元）</p>
+          <p class="mt-5">200000.00</p>
+        </td>
+        <td align="left">
+          <p class="f-song cl-153">操作成功</p>
+        </td>
+      </tr>
+      <!-- 记录 结束 -->
+    </table>
+    <!-- 订单日志表 结束 -->
+    <!-- 分页 -->
+    <div class="pagex clearfix">
+      <button class="previous"></button>
+      <span>1</span>/<span>2</span>
+      <button class="next"></button>
+    </div>
+    <!-- 分页 结束 -->
+  </div>
+
+    <div class="log-detail-table" style="display: none;">
+      <!-- 订单日志表格 -->
+      <table class="table-module" width="100%" cellspacing="0">
+        <tr class="th">
+          <th align="left">支付时间</th>
+          <th align="left">账户服务费（元）</th>
+          <th align="left">状态</th>
+        </tr>
+        <!-- 记录 -->
+        <tr class="tb">
+          <td align="left">
+            <p class="cl-153">2015-05-15 21:32</p>
+          </td>
+          <td align="left">
+            <p class="f-bold">100.00</p>
+          </td>
+          <td align="left">
+            <p class="">已支付</p>
+          </td>
+        </tr>
+        <!-- 记录 -->
+        <tr class="tb">
+          <td align="left">
+            <p class="cl-153">2015-05-15 21:32</p>
+          </td>
+          <td align="left">
+            <p class="f-bold">100.00</p>
+          </td>
+          <td align="left">
+            <p class="">已支付</p>
+          </td>
+        </tr>
+        <!-- 记录 -->
+        <tr class="tb">
+          <td align="left">
+            <p class="cl-153">2015-05-15 21:32</p>
+          </td>
+          <td align="left">
+            <p class="f-bold">100.00</p>
+          </td>
+          <td align="left">
+            <p class="">已支付</p>
+          </td>
+        </tr>
+        <!-- 记录 -->
+        <tr class="tb">
+          <td align="left">
+            <p class="cl-153">2015-05-15 21:32</p>
+          </td>
+          <td align="left">
+            <p class="f-bold">100.00</p>
+          </td>
+          <td align="left">
+            <p class="">已支付</p>
+          </td>
+        </tr>
+        <!-- 记录 -->
+        <tr class="tb">
+          <td align="left">
+            <p class="cl-153">2015-05-15 21:32</p>
+          </td>
+          <td align="left">
+            <p class="f-bold">100.00</p>
+          </td>
+          <td align="left">
+            <p class="">已支付</p>
+          </td>
+        </tr>
+        <!-- 记录 -->
+        <tr class="tb">
+          <td align="left">
+            <p class="cl-153">2015-05-15 21:32</p>
+          </td>
+          <td align="left">
+            <p class="f-bold">100.00</p>
+          </td>
+          <td align="left">
+            <p class="">已支付</p>
+          </td>
+        </tr>
+        <!-- 记录 -->
+        <tr class="tb">
+          <td align="left">
+            <p class="cl-153">2015-05-15 21:32</p>
+          </td>
+          <td align="left">
+            <p class="f-bold">100.00</p>
+          </td>
+          <td align="left">
+            <p class="">已支付</p>
+          </td>
+        </tr>
+        <!-- 记录 -->
+        <tr class="tb">
+          <td align="left">
+            <p class="cl-153">2015-05-15 21:32</p>
+          </td>
+          <td align="left">
+            <p class="f-bold">100.00</p>
+          </td>
+          <td align="left">
+            <p class="">已支付</p>
+          </td>
+        </tr>
+      </table>
+      <!-- 订单日志表格 结束 -->
+
+      <!-- 分页 -->
+      <div class="pagex clearfix">
+        <button class="previous"></button>
+        <span>1</span>/<span>2</span>
+        <button class="next"></button>
+      </div>
+      <!-- 分页 结束 -->
+    </div>
+  </div>
+</div>
+<!-- 订单日志 结束 -->
+<!-- 弹窗结束 -->
+
+<!-- 底部信息 -->
+<div class="footer clearfix">
+  <div class="inner">
+    <div class="clearfix">
+      <div class="pull-left">
+        <dl class="pull-left">
+          <dt>帮助中心</dt>
+          <dd class="mt-20"><a href="">发财金</a></dd>
+          <dd><a href="">参与规则</a></dd>
+          <dd><a href="">如何充值</a></dd>
+          <dd><a href="">如何提现</a></dd>
+        </dl>
+        <dl class="pull-left">
+          <dt>常见问题</dt>
+          <dd class="mt-20"><a href="">禁止股票</a></dd>
+          <dd><a href="">收费说明</a></dd>
+          <dd><a href="">操盘止损</a></dd>
+          <dd><a href="">操盘时间</a></dd>
+        </dl>
+        <dl class="pull-left">
+          <dt>交易流程</dt>
+          <dd class="mt-20"><a href="">申请操盘</a></dd>
+          <dd><a href="">操盘补亏</a></dd>
+          <dd><a href="">操盘清算</a></dd>
+          <dd><a href="">盈利提取</a></dd>
+        </dl>
+        <dl class="pull-left">
+          <dt>了解我们</dt>
+          <dd class="mt-20"><a href="">公司介绍</a></dd>
+          <dd><a href="">网站公告</a></dd>
+          <dd><a href="">联系我们</a></dd>
+          <dd><a href="">诚聘英才</a></dd>
+        </dl>
+        <div class="pull-left service">
+          <p class="f-16 f-bold">客户服务</p>
+
+          <p class="mt-20 f-14 cl-119">（服务时间：8:00-24:00）</p>
+
+          <p class="mt-10 f-20 cl-119 clearfix"><span class="phone-icon pull-left"></span><span
+              class="pull-left ml-10 f-20">400-638-0808</span></p>
+
+          <p class="mt-10 f-14 cl-119 clearfix"><span class="qq-icon pull-left"></span><a class="pull-left ml-10"
+                                                                                          href="">QQ在线交谈</a></p>
         </div>
       </div>
-      <!-- 版权声明与权威认证 -->
-      <div class="clearfix others">
-        <p class="copyright pull-left">版权所有 © 杭州袋狮信息技术有限公司	  Copyright Reserved 2014-2015	   浙ICP备14037891</p>
-        <div class="pull-right">
-          <a href="javascript:;" class="ml-20" target="_blank">
-            <img width="93" height="33" border="0" src="../../images/certificate/faith1.png" alt="">
-          </a>
-          <a class="ml-20" href="http://webscan.360.cn/index/checkwebsite/url/www.facaijin.com" target="_blank">
-            <img width="93" height="33" border="0" src="../../images/certificate/360safe.png" alt="360网站完全认证"/>
-          </a>
-          <a class="ml-20" href="#" target="_blank">
-            <img width="91" height="33" border="0" src="../../images/certificate/norton1.png" alt="">
-          </a>
-          <a class="ml-20" href="http://www.anquan.org/authenticate/cert/?site=facaijin.com&at=business" target="_blank">
-            <img width="91" height="33" border="0" src="../../images/certificate/hy_124x47.png" alt="">
-          </a>
-        </div>
+      <div class="pull-right">
+        <a class="logo-bg-gray"></a>
+      </div>
+    </div>
+    <!-- 版权声明与权威认证 -->
+    <div class="clearfix others">
+      <p class="copyright pull-left">版权所有 © 杭州袋狮信息技术有限公司 Copyright Reserved 2014-2015 浙ICP备14037891</p>
+
+      <div class="pull-right">
+        <a href="javascript:;" class="ml-20" target="_blank">
+          <img width="93" height="33" border="0" src="../../images/certificate/faith1.png" alt="">
+        </a>
+        <a class="ml-20" href="http://webscan.360.cn/index/checkwebsite/url/www.facaijin.com" target="_blank">
+          <img width="93" height="33" border="0" src="../../images/certificate/360safe.png" alt="360网站完全认证"/>
+        </a>
+        <a class="ml-20" href="#" target="_blank">
+          <img width="91" height="33" border="0" src="../../images/certificate/norton1.png" alt="">
+        </a>
+        <a class="ml-20" href="http://www.anquan.org/authenticate/cert/?site=facaijin.com&at=business" target="_blank">
+          <img width="91" height="33" border="0" src="../../images/certificate/hy_124x47.png" alt="">
+        </a>
       </div>
     </div>
   </div>
-  <!-- 底部信息 结束 -->
-  <script src="../../js/jquery-1.11.2.min.js"></script>
-  <script src="../../js/fcj.js"></script>
-  <script>
-    $(function(){
-      $.fcj.switchTabs(".switch-title .switch-tab", ".trading-list-table", "curr");
+</div>
+<!-- 底部信息 结束 -->
+<script src="../../js/jquery-1.11.2.min.js"></script>
+<script src="../../js/fcj.js"></script>
+<script>
+  $(function () {
+    $.fcj.switchTabs(".switch-title .order-switch", ".trading-list-table", "curr");
+    $.fcj.switchTabs(".log-detail-title .order-log-switch", ".log-detail-table", "curr");
+
+    //订单日志
+    $.fcj.modalInit("#modal");
+    $("#btn-log-detail").click(function () {
+      $("#modal").show().fadeTo(200, 0.2);
+      $.fcj.popup("#pop-log-detail");
     });
-  </script>
+
+    /* 关闭操作 */
+    $(".btn-close").click(function () {
+      $("#modal").hide();
+      $(this).parents(".pop-window").hide();
+    });
+    $(".btn-cancel").click(function () {
+      $("#modal").hide();
+      $(this).parents(".pop-window").hide();
+    });
+  });
+</script>
 </body>
 </html>

@@ -61,6 +61,9 @@
     <!-- 添加微信 -->
     <button class="btn-addweixin btn-small-gray cl-red ml-30">添加微信</button>
 
+    <br/>
+    <!-- 实名认证 -->
+    <button class="btn-identity-verify btn-small-gray cl-red">实名认证</button>
   </div>
   <!-- 按钮区域 结束 -->
 
@@ -586,7 +589,7 @@
             </td>
             <td>
               <button class="btn-verify-codex cl-red ml-20">发送验证码</button>
-              <button class="btn-resendx cl-red ml-20">（ <span id="num">60</span> ）重发验证码</button>
+              <button class="btn-resendx cl-red ml-20" style="display: none;">（ <span id="num">60</span> ）重发验证码</button>
             </td>
           </tr>
         </table>
@@ -805,6 +808,63 @@
       </div>
     </div>
     <!-- 绑定微信 成功  结束 -->
+
+
+    <!-- 实名认证 提示 -->
+    <div id="pop-identity-verify" class="pop-window">
+      <div class="window-title clearfix">
+        <span class="f-14">实名认证</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="" width="100%" cellspacing="20">
+          <tr>
+            <td align="right" width="32%">
+              <span class="f-14 cl-153">身份证号码</span>
+            </td>
+            <td align="left" class="">
+              <input class="inp-smallx w240 f-14" type="text"/>
+            </td>
+          </tr>
+          <tr>
+            <td align="right" width="32%">
+              <span class="f-14 cl-153">再次输入</span>
+            </td>
+            <td align="left" class="">
+              <input class="inp-smallx w240 f-14" type="text"/>
+            </td>
+          </tr>
+        </table>
+        <div class="mt-20">
+          <button class="btn-confirm">提 交</button>
+        </div>
+      </div>
+    </div>
+    <!-- 实名认证  结束 -->
+
+    <!-- 实名认证 成功 提示 -->
+    <div id="pop-identity-verify-hint" class="pop-window">
+      <div class="window-title clearfix">
+        <span class="f-14">实名认证</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="ml-20" width="100%" cellspacing="20">
+          <tr>
+            <td align="right">
+              <span class="icon-success-middle"></span>
+            </td>
+            <td align="left" class="">
+              <p class="f-16 f-bold">恭喜，实名认证已通过！</p>
+            </td>
+          </tr>
+        </table>
+        <div class="mt-20">
+          <button class="btn-confirm">确 定</button>
+        </div>
+      </div>
+    </div>
+    <!-- 实名认证 成功  结束 -->
 
   </div>
   <!-- 弹窗区域 结束 -->
@@ -1026,6 +1086,16 @@
       $("#pop-addweixin .btn-confirm").click(function () {
         $("#pop-addweixin").hide();
         $.fcj.popup("#pop-addweixin-hint");
+      });
+
+      //实名认证
+      $(".btn-identity-verify").click(function () {
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-identity-verify");
+      });
+      $("#pop-identity-verify .btn-confirm").click(function () {
+        $("#pop-identity-verify").hide();
+        $.fcj.popup("#pop-identity-verify-hint");
       });
 
       /* 关闭操作 */
