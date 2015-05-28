@@ -273,13 +273,14 @@ img {
 }
 /* - 新 icon */
 .new-icon {
+  background: url(../images/icons.png) no-repeat -35px -69px;
   display: block;
-  width: 22px;
   height: 18px;
   position: absolute;
-  top: -22px;
   right: -19px;
-  background: url(../images/icons.png) no-repeat -35px -69px;
+  top: -22px;
+  _right:390px;
+  width: 22px;
 }
 .site-nav a {
   font-size: 16px;
@@ -2199,13 +2200,17 @@ textarea {
 /* 弹窗样式 pop-window */
 .btn-confirm {
   line-height: 32px;
-  background-color: #e0322d;
+  /*background-color: #e0322d;*/
+  background-color: #cc0000;
   color: #fff;
   width: 117px;
   text-align: center;
   border: 0;
   border-radius: 4px;
   font-size: 14px;
+}
+.btn-confirm:hover {
+  background-color: #de0029;
 }
 .btn-cancel {
   line-height: 32px;
@@ -2357,6 +2362,7 @@ textarea {
 }
 .inp-x input {
   height: 40px;
+  _line-height:40px;
   font-size: 16px;
   border: 0 none;
 }
@@ -2377,6 +2383,15 @@ textarea {
   width: 18px;
   height: 22px;
   background: url(../images/icons.png) no-repeat -63px -211px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.icon-password-confirm {
+  display: block;
+  width: 18px;
+  height: 22px;
+  background: url(../images/icons.png) no-repeat -103px -211px;
   position: absolute;
   left: 10px;
   top: 10px;
@@ -2734,6 +2749,7 @@ img.verify-img {
   /* 验证码 */
   width: 120px;
   height: 30px;
+  _line-height:30px;
   border: 1px solid #d2d2d2;
   padding-left: 10px;
 }
@@ -2798,13 +2814,146 @@ img.verify-img {
   width: 90px;
 }
 .inp-spread {
-  height: 35px;
-  padding-left: 10px;
-  min-width: 180px;
-  font-size: 14px;
-  _width:240px;
   border: 1px solid #dddddd;
+  font-size: 14px;
+  height: 35px;
+  min-width: 180px;
+  _line-height:35px;
+  padding-left: 10px;
+  _width:240px;
 }
 .spread .table-module td {
   padding: 10px 0;
+}
+.w400 {
+  width: 400px;
+}
+.w334 {
+  width: 334px;
+}
+.w100 {
+  width: 100px;
+}
+#pop-login .window-body, #pop-register .window-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#pop-login .window-title, #pop-register .window-title {
+  padding-left: 0;
+}
+.btnx-confirm {
+  line-height: 32px;
+  /*background-color: #e0322d;*/
+  background-color: #cc0000;
+  color: #fff;
+  padding: 0 20px;
+  text-align: center;
+  border: 0;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.btnx-confirm:hover {
+  background-color: #de0029;
+}
+.btnx-cancel {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 32px;
+  _line-height: 32px;
+  background-color: #c2c8cc;
+  border: 0 none;
+  border-radius: 2px;
+  color: #fff;
+}
+.iconx-qq-online {
+  display: block;
+  width: 77px;
+  height: 22px;
+  background: url(../images/iconx_qq_online.png) no-repeat;
+}
+/* 期指 */
+.futures-index {
+  margin: 0 auto;
+  padding: 30px;
+  width: 960px;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  background-color: #fff;
+  position: relative;
+}
+.cl-light-pink {
+  color: #e18d8d;
+}
+.cl-pink {
+  color: #ff4652;
+}
+.cl-gray {
+  color: #dcdfe1;
+}
+.cl-white {
+  color: #fff;
+}
+.switch-blockx-wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+.switch-blockx {
+  background-color: #c2c8cc;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  display: block;
+  width: 280px;
+  line-height: 40px;
+  _height:40px;
+  text-align: center;
+}
+.switch-blockx.curr {
+  background-color: #cc0000;
+}
+.switch-blockx.curr:hover {
+  background-color: #cc0000 !important;
+}
+.switch-blockx:hover {
+  background-color: #aaafb5;
+  text-decoration: none;
+}
+.futures-index .data-summary {
+  padding: 30px 20px;
+  background-color: #fffafa;
+}
+.icon-up-pink {
+  display: block;
+  width: 23px;
+  height: 26px;
+  background: url(../images/futures_index/icons.png) no-repeat 0 0;
+}
+.icon-up-gray {
+  display: block;
+  width: 23px;
+  height: 26px;
+  background: url(../images/futures_index/icons.png) no-repeat -81px 0;
+}
+.icon-up-green {
+  display: block;
+  width: 23px;
+  height: 26px;
+  background: url(../images/futures_index/icons.png) no-repeat -42px 0;
+}
+.icon-update {
+  border: 0 none;
+  cursor: pointer;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/futures_index/icons.png) no-repeat -2px -41px;
+}
+.w410 {
+  width: 410px;
+}
+.chart .switch-chart:hover {
+  text-decoration: none;
+}
+.chart-box {
+  width: 415px;
+  height: 158px;
 }

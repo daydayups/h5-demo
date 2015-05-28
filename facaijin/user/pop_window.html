@@ -64,6 +64,10 @@
     <br/>
     <!-- 实名认证 -->
     <button class="btn-identity-verify btn-small-gray cl-red">实名认证</button>
+
+    <!-- 排队提示 -->
+    <button class="btn-waiting-hint btn-small-gray cl-red ml-30">排队提示</button>
+
   </div>
   <!-- 按钮区域 结束 -->
 
@@ -866,6 +870,30 @@
     </div>
     <!-- 实名认证 成功  结束 -->
 
+    <!-- 排队提示 -->
+    <div id="pop-waiting-hint" class="pop-window">
+      <div class="window-title clearfix">
+        <span class="f-14">温馨提示</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="ml-20" width="100%" cellspacing="">
+          <tr>
+            <td align="right">
+              <span class="icon-warning-middle"></span>
+            <td align="left" class="">
+              <p class="f-16 ml-10">因当前申请资金量过大，需要排队等待</p>
+              <p class="cl-153 ml-10 mt-10">已有 <span class="cl-red">123</span> 笔订单，交纳保证金排队中</p>
+          <tr>
+            <td>
+            <td align="left">
+              <button class="btnx-confirm mt-10 ml-10">交纳保证金，有限获得资金</button>
+              <button class="btnx-cancel f-14 mt-10 ml-10">排队结束再联系我</button>
+        </table>
+      </div>
+    </div>
+    <!-- 排队提示 成功  结束 -->
+
   </div>
   <!-- 弹窗区域 结束 -->
 
@@ -1096,6 +1124,12 @@
       $("#pop-identity-verify .btn-confirm").click(function () {
         $("#pop-identity-verify").hide();
         $.fcj.popup("#pop-identity-verify-hint");
+      });
+
+      //实名认证
+      $(".btn-waiting-hint").click(function () {
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-waiting-hint");
       });
 
       /* 关闭操作 */
