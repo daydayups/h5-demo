@@ -1072,6 +1072,9 @@ span.sort-icon.sort-icon-hover {
 .brd-solid {
   border-top: 1px solid #dedede;
 }
+.brd-solid-light {
+  border-top: 1px solid #f2f2f2;
+}
 .confirm-table {
 
 }
@@ -2546,6 +2549,9 @@ img.verify-img {
 .page {
   text-align: center;
   line-height: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
 }
 .page a {
   display: block;
@@ -2907,8 +2913,14 @@ img.verify-img {
   _height:40px;
   text-align: center;
 }
+.switch-blockx .switch-blockx-num {
+  color: #dcdfe1;
+}
 .switch-blockx.curr {
   background-color: #cc0000;
+}
+.switch-blockx.curr .switch-blockx-num {
+  color: #e18d8d;
 }
 .switch-blockx.curr:hover {
   background-color: #cc0000 !important;
@@ -2933,7 +2945,7 @@ img.verify-img {
   height: 26px;
   background: url(../images/futures_index/icons.png) no-repeat -81px 0;
 }
-.icon-up-green {
+.icon-down-green {
   display: block;
   width: 23px;
   height: 26px;
@@ -2951,9 +2963,82 @@ img.verify-img {
   width: 410px;
 }
 .chart .switch-chart:hover {
+  color: #000000;
   text-decoration: none;
 }
 .chart-box {
   width: 415px;
   height: 158px;
+}
+.icon-manx {
+  display: block;
+  height: 16px;
+  width: 15px;
+  background: url(../images/futures_index/icons.png) -125px -8px;
+}
+.w450 {
+  width: 450px;
+}
+/* 自定义 radio 选择框 */
+.choosen-block {
+  border: 2px solid #dddddd;
+  cursor: pointer;
+  line-height: 36px;
+  _height: 36px;
+  text-align: center;
+  width: 136px;
+}
+.choosen-block:hover {
+  border: 2px solid #ea4040;
+}
+.choosen-block.selected {
+  border: 2px solid #ea4040;
+  background: url(../images/tickx.png) no-repeat 116px 15px;
+}
+.choosen-block.selected .choosen-txt {
+  color: #df0000;
+}
+.w360 {
+  width: 360px;
+}
+.icon-small-up {
+  display: block;
+  width: 11px;
+  height: 12px;
+  background: url(../images/futures_index/icons.png) no-repeat -162px -6px;
+}
+.icon-small-down {
+  display: block;
+  width: 11px;
+  height: 12px;
+  background: url(../images/futures_index/icons.png) no-repeat -187px -6px;
+}
+.futures-index .center-box {
+  width: 240px;
+  margin: 100px auto;
+}
+.futures-index .center-box .icon-empty {
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon-empty {
+  display: block;
+  width: 71px;
+  height: 65px;
+  background: url(../images/futures_index/icons.png) no-repeat -95px -35px;
+}
+.btnx-big-red {
+  background-color: #cc0000;
+  border: 0 none;
+  border-bottom: 3px solid #ae0000;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  _height: 50px;
+}
+.btnx-big-red:hover {
+  background-color: #de001f;
 }
