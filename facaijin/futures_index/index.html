@@ -97,13 +97,13 @@
                 <tr>
                   <td><span class="cl-153">点买方向</span>
                   <td>
-                    <div class="choosen-block selected pull-left">
+                    <div class="chosen-block selected pull-left">
                       <input name="buy-type" value="buy-more" type="radio" checked style="display: none;">
-                      <span class="choosen-txt">看多</span>
+                      <span class="chosen-txt">看多</span>
                     </div>
-                    <div class="choosen-block pull-left ml-10">
+                    <div class="chosen-block pull-left ml-10">
                       <input name="buy-type" value="buy-empty" type="radio" style="display: none;">
-                      <span class="choosen-txt">看空</span>
+                      <span class="chosen-txt">看空</span>
                     </div>
                 <tr>
                   <td><span class="cl-153">交易数量</span>
@@ -120,15 +120,15 @@
                 <tr>
                   <td><span class="cl-153">点买方向</span>
                   <td>
-                    <div class="choosen-block selected pull-left">
+                    <div class="chosen-block selected pull-left">
                       <input name="stop-lose" value="-90000" checked type="radio" style="display: none;">
-                      <span class="choosen-txt">-90000</span>
-                      <span class="choosen-txt ml-5">元</span>
+                      <span class="chosen-txt">-90000</span>
+                      <span class="chosen-txt ml-5">元</span>
                     </div>
-                    <div class="choosen-block pull-left ml-10">
+                    <div class="chosen-block pull-left ml-10">
                       <input name="stop-lose" value="-180000" type="radio" style="display: none;">
-                      <span class="choosen-txt">-180000</span>
-                      <span class="choosen-txt ml-5">元</span>
+                      <span class="chosen-txt">-180000</span>
+                      <span class="chosen-txt ml-5">元</span>
                     </div>
                 <tr>
                   <td class="brd-dotted" colspan="2">
@@ -545,8 +545,9 @@
   <script type="text/javascript" src="../js/fcj.js"></script>
   <script>
     $(function () {
-      $(".choosen-block").click(function () {
-        $(this).addClass("selected").siblings().removeClass("selected");
+      $(".chosen-block").click(function () {
+        $(this).addClass("selected").siblings().removeClass("selected").find("input").attr("checked",false);
+        $(this).find("input").attr("checked","checked");
       });
       $.fcj.switchTabs(".switch-blockx", ".futures-index-box", "curr")
     })

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>弹窗-发财金-赚钱不等待</title>
+  <link rel="stylesheet" href="../css/nmain.css">
+  <style>
+    .btn-box {
+      width: 970px;
+      margin-top: 30px;
+      padding-left: 30px;
+      line-height: 60px;
+      border: 2px dotted #dddddd;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- 按钮区域 -->
+  <div class="btn-box">
+    <!-- 点买-非交易时间提示 -->
+    <button class="btn-warning1 btn-small-gray cl-red">点买-非交易时间提示</button>
+    <!-- 点买-余额不足 -->
+    <button class="btn-warning2 btn-small-gray cl-red ml-20">点买-余额不足</button>
+
+    <!-- 点买-交易确认 -->
+    <button class="btn-confirm1 btn-small-gray cl-red ml-20">点买-交易确认</button>
+
+  </div>
+  <!-- 按钮区域 结束 -->
+
+  <!-- 弹窗区域 -->
+  <div>
+    <!-- 点买-非交易时间提示 -->
+    <div id="pop-warning1" class="pop-window w430">
+      <div class="window-title clearfix">
+        <span class="f-14">提醒</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="mb-20" width="100%" cellspacing="">
+          <tr>
+            <td align="right">
+              <span class="icon-warning-middle"></span>
+            <td align="left" class="">
+              <p class="f-16 ml-10">当前时间不能点买，请在交易时间再试。
+        </table>
+      </div>
+    </div>
+    <!-- 点买-非交易时间提示 结束 -->
+
+    <!-- 点买-非交易时间提示 -->
+    <div id="pop-warning2" class="pop-window w430">
+      <div class="window-title clearfix">
+        <span class="f-14">提醒</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="mb-20" width="100%" cellspacing="">
+          <tr>
+            <td align="right">
+              <span class="icon-warning-middle"></span>
+            <td align="left" class="">
+              <p class="f-16 ml-10">您的可用余额不足，您可以充值后再做操作。
+          <tr>
+            <td>
+            <td align="left">
+              <button class="btnx-confirm w120 ml-10">立即充值</button>
+        </table>
+      </div>
+    </div>
+    <!-- 点买-非交易时间提示 结束 -->
+
+    <!-- 点买-交易确认 -->
+    <div id="pop-confirm1" class="pop-window w580">
+      <div class="window-title clearfix">
+        <span class="f-14">交易确认</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="pop-futures-index-table" width="100%" cellspacing="0">
+          <tr>
+            <td class="bg-248" width="20%" align="right">
+              <span class="cl-153">交易品种：</span>
+            <td class="bg-248" align="left" width="30%">
+              <span class="ml-10">期指</span><span class="ml-5">IF1506</span>
+            <td class="bg-248" align="right" width="20%">
+              <span class="cl-153">交易方向：</span>
+            <td class="bg-248" align="left">
+              <span class="cl-red ml-10">看多</span>
+          <tr>
+            <td class="" align="right">
+              <span class="cl-153">持仓时间：</span>
+            <td class="" align="left">
+              <span class="ml-10">截止至今日</span><span class="ml-5">15:12:59</span>
+            <td class="" align="right">
+              <span class="cl-153">交易数量：</span>
+            <td class="" align="left">
+              <span class="ml-10">1</span><span class="ml-5">手</span>
+          <tr>
+            <td class="bg-248" align="right">
+              <span class="cl-153">对<span class="ml-5 mr-5">手</span>价：</span>
+            <td class="bg-248" align="left">
+              <span class="cl-green ml-10">4654.20</span>
+            <td class="bg-248" align="right">
+            <td class="bg-248" align="left">
+          <tr>
+            <td colspan="2">
+              <div class="chosen-blockx selected mt-10 mr-10">
+                <input type="radio" name="trading-type" style="display: none;" checked>
+                <span class="chosen-txt ml-30">即时买入</span>
+              </div>
+            <td colspan="2">
+              <div class="chosen-blockx mt-10 ml-10">
+                <input type="radio" name="trading-type" style="display: none;">
+                <span class="chosen-txt ml-30">价格触发</span>
+                <input class="inp-tiny" type="text" placeholder="输入价格">
+                <span class="chosen-txt ml-5">时，即时买入</span>
+              </div>
+          <tr>
+            <td colspan="4" align="center">
+              <button class="btn-confirm mt-20">立即买入</button>
+        </table>
+      </div>
+    </div>
+    <!-- 点买-交易确认 结束 -->
+
+  </div>
+  <!-- 弹窗区域 结束 -->
+
+  <div id="modal"></div>
+  <script src="../js/jquery-1.11.2.min.js"></script>
+  <script src="../js/fcj.js"></script>
+  <script>
+    $(function(){
+      //点买-非交易时间提示 弹窗
+      $.fcj.modalInit("#modal");
+      $(".btn-warning1").click(function () {
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-warning1");
+      });
+      $(".btn-warning2").click(function () {
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-warning2");
+      });
+      $(".btn-confirm1").click(function () {
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-confirm1");
+      });
+
+      /* 订单确认 选择买入模式 */
+      $(".chosen-blockx").click(function () {
+        var $chosen = $(this).parents("tr").find(".chosen-blockx");
+        $chosen.removeClass("selected").find("input").attr("checked",false);
+        $(this).addClass("selected").find("input").attr("checked","checked");
+      });
+
+      /* 关闭操作 */
+      $(".btn-close").click(function () {
+        $("#modal").hide();
+        $(this).parents(".pop-window").hide();
+      });
+      $(".btn-cancel").click(function () {
+        $("#modal").hide();
+        $(this).parents(".pop-window").hide();
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1582,7 +1582,7 @@ span.sort-icon.sort-icon-hover {
 /* 订单详情 */
 .simple-logo-bg {
   display: block;
-  width: 132px;
+  width: 177px;
   height: 46px;
   background: url(../images/icons.png) no-repeat 0 0;
 }
@@ -2959,6 +2959,9 @@ img.verify-img {
   height: 30px;
   background: url(../images/futures_index/icons.png) no-repeat -2px -41px;
 }
+.icon-update:hover {
+  background: url(../images/futures_index/icons.png) no-repeat -53px -41px;
+}
 .w410 {
   width: 410px;
 }
@@ -2980,7 +2983,7 @@ img.verify-img {
   width: 450px;
 }
 /* 自定义 radio 选择框 */
-.choosen-block {
+.chosen-block {
   border: 2px solid #dddddd;
   cursor: pointer;
   line-height: 36px;
@@ -2988,14 +2991,14 @@ img.verify-img {
   text-align: center;
   width: 136px;
 }
-.choosen-block:hover {
+.chosen-block:hover {
   border: 2px solid #ea4040;
 }
-.choosen-block.selected {
+.chosen-block.selected {
   border: 2px solid #ea4040;
   background: url(../images/tickx.png) no-repeat 116px 15px;
 }
-.choosen-block.selected .choosen-txt {
+.chosen-block.selected .chosen-txt {
   color: #df0000;
 }
 .w360 {
@@ -3041,4 +3044,37 @@ img.verify-img {
 }
 .btnx-big-red:hover {
   background-color: #de001f;
+}
+.pop-futures-index-table {
+  line-height: 40px;
+}
+.chosen-blockx {
+  background: url(../images/futures_index/choosen_point.png) no-repeat 10px 12px;
+  border: 2px solid #dddddd;
+  _height:36px;
+  line-height: 36px;
+  text-align: left;
+}
+.chosen-blockx:hover {
+  border: 2px solid #ea4040;
+}
+.chosen-blockx.selected {
+  background: url(../images/futures_index/choosen_point_selected.png) no-repeat 10px 12px;
+  border: 2px solid #ea4040;
+  _height:36px;
+  line-height: 36px;
+  text-align: left;
+}
+.chosen-blockx.selected .chosen-txt {
+  color: #df0000;
+}
+.w580 {
+  width: 580px;
+}
+.inp-tiny {
+  border: 1px solid #dddddd;
+  height: 24px;
+  _line-height:24px;
+  padding-left: 5px;
+  width: 70px;
 }
