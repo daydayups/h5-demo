@@ -27,6 +27,9 @@
     <!-- 点买-交易确认 -->
     <button class="btn-confirm1 btn-small-gray cl-red ml-20">点买-交易确认</button>
 
+    <!-- 点买人数列表 -->
+    <button class="btn-buying-list btn-small-gray cl-red ml-20">点买人数列表</button>
+
   </div>
   <!-- 按钮区域 结束 -->
 
@@ -126,6 +129,48 @@
     </div>
     <!-- 点买-交易确认 结束 -->
 
+    <!-- 点买人数列表 -->
+    <div id="pop-buying-list" class="pop-window w640">
+      <div class="window-title clearfix">
+        <span class="f-14">今日已有</span>
+        <span class="f-14 cl-red ml-5 mr-5">314</span>
+        <span class="f-14">人点买</span>
+        <span class="f-14 cl-153 ml-5 mr-5">IF1506</span>
+        <span class="f-14">合计</span>
+        <span class="f-14 cl-red ml-5 mr-5">2368</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="pop-futures-index-table" width="100%" cellspacing="0">
+          <tr>
+            <td class="bg-248">
+              <span class="cl-153">交易时间</span>
+            <td class="bg-248">
+              <span class="cl-153">点买用户</span>
+            <td class="bg-248">
+              <span class="cl-153">交易方向</span>
+            <td class="bg-248">
+              <span class="cl-153">买入数量</span>
+            <td class="bg-248">
+              <span class="cl-153">买入价</span>
+          <tr>
+            <td class="" align="right">
+              <span class="cl-153">5月22日</span>
+              <span class="cl-153 ml-5">15:05</span>
+            <td class="" align="left">
+              <span class="">1888****215</span>
+            <td class="" align="right">
+              <span class="cl-red">看多</span>
+            <td class="" align="left">
+              <span class="cl-red">1</span><span class="ml-5">手</span>
+            <td class="" align="left">
+              <span>4675.25</span><span>元</span>
+
+        </table>
+      </div>
+    </div>
+    <!-- 点买人数列表 结束 -->
+
   </div>
   <!-- 弹窗区域 结束 -->
 
@@ -147,6 +192,11 @@
       $(".btn-confirm1").click(function () {
         $("#modal").show().fadeTo(200, 0.2);
         $.fcj.popup("#pop-confirm1");
+      });
+
+      $(".btn-buying-list").click(function () {
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-buying-list");
       });
 
       /* 订单确认 选择买入模式 */

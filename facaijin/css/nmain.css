@@ -545,7 +545,7 @@ img {
 /* - 其他金额 - */
 .other-cho {
   margin-left: 80px;
-  margin-top: 174px;
+  margin-top: 130px;
 }
 
 .other-cho-inp {
@@ -1790,6 +1790,9 @@ span.sort-icon.sort-icon-hover {
 table .apply-btn {
   margin-left: 0;
 }
+table .apply-btn-disable {
+  margin-left: 0;
+}
 .form-table {
   width: 740px;
 }
@@ -1803,6 +1806,7 @@ table .apply-btn {
 }
 .inp-box input {
   height: 44px;
+  _height:44px;
   border: 0 none;
   width: 219px;
 }
@@ -1894,6 +1898,10 @@ table .apply-btn {
 .bank-list-table td {
   padding: 5px 10px;
 }
+.bank-img-wrap {
+  padding: 5px 10px;
+  border: 1px solid #eeeeee;
+}
 .bank-img {
   cursor: pointer;
   display:block;
@@ -1975,6 +1983,14 @@ table .apply-btn {
   line-height: 22px;
 }
 /* 柜台/ATM 转账 */
+.charge-steps {
+  padding: 10px;
+  background-color: #fffce3;
+}
+.charge-steps .curr .steps-text {
+  color: #c50024;
+  font-weight: bold;
+}
 .charge-box .bank-ccb {
   display: block;
   width: 230px;
@@ -2766,6 +2782,9 @@ img.verify-img {
 .w430 {
   width: 430px;
 }
+.w440 {
+  width: 440px;
+}
 /* 提现过程 */
 .withdraw-stepsx-base{
   position: relative;
@@ -3077,4 +3096,143 @@ img.verify-img {
   _line-height:24px;
   padding-left: 5px;
   width: 70px;
+}
+/* 免费体验 */
+#experience {
+  width: 680px;
+  height: 544px;
+  padding: 15px 20px 20px 20px;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+}
+#experience a.button-gray {
+  display: block;
+  width: 260px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 290px;
+  margin-top: 35px;
+  padding-left: 50px;
+  background: gray;
+  color:white;
+}
+#experience a:hover {
+  text-decoration: none;
+}
+#experience .title {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f2f2f2;
+}
+#experience .sub-hint {
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.experience-bg {
+  width: 610px;
+  height: 381px;
+  margin: 20px auto;
+  background: url(../images/experience/experience_bg.png) no-repeat;
+}
+.experience-bg p {
+  line-height: 30px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+.experience-bg .ex-step01 {
+  margin-left: 164px;
+}
+.experience-bg .ex-step02 {
+  margin-left: 222px;
+}
+.experience-bg .ex-step03 {
+  margin-left: 238px;
+}
+.experience-bg .ex-step04 {
+  margin-left: 240px;
+}
+.consult {
+  width: 200px;
+  height: 579px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+}
+.consult-title {
+  display: block;
+  margin: 30px auto 0 auto;
+}
+.consult .avatar {
+  width: 100px;
+  height: 130px;;
+  border: 1px solid #f2f2f2;
+  overflow: hidden;
+  margin: 20px auto;
+}
+.consult .qq-online {
+  display: block;
+  width: 100px;
+  height: 30px;
+  background: url(../images/experience/qq_online.png?v=20150409) no-repeat;
+  margin: 20px auto 10px auto;
+}
+/* 股票推荐 */
+.recommend {
+  padding: 15px 20px 20px 20px;
+  background-color: #fff;
+  border:1px solid #f2f2f2;
+}
+.recommend .title {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.recommend .stocks li {
+  float: left;
+}
+.recommend .stocks li p {
+  text-align: center;
+}
+/* 蓝色 下跌 股票*/
+.recommend .stock-blue {
+  display: block;
+  width: 180px;
+  height: 146px;
+  background: url(../images/recommend/stock_blue.png?v=20150409) no-repeat center;
+}
+.recommend .stock-blue .name {
+  margin-top: 24px;
+  font-size: 18px;
+  color: #fff;
+}
+.recommend .stock-blue .code {
+  font-size: 18px;
+  color: #fff;
+}
+.recommend .stock-blue .rate {
+  font-size: 24px;
+  color: #4691ee;
+  margin-top: 20px;
+}
+/* 红色 上涨 股票*/
+.recommend .stock-red {
+  display: block;
+  width: 180px;
+  height: 146px;
+  background: url(../images/recommend/stock_red.png?v=20150409) no-repeat center;
+}
+.recommend .stock-red .name {
+  margin-top: 24px;
+  font-size: 18px;
+  color: #fff;
+}
+.recommend .stock-red .code {
+  font-size: 18px;
+  color: #fff;
+}
+.recommend .stock-red .rate {
+  font-size: 24px;
+  color: #c71c24;
+  margin-top: 20px;
 }
