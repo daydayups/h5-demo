@@ -778,6 +778,14 @@ img {
 .apply-btn:active,.apply-btn:focus {
   color: #fff;
 }
+.check-base {
+  position: relative;
+}
+.check-hint {
+  position: absolute;
+  right: -102px;
+  bottom: 0;
+}
 
 /* 标签切换 */
 .tab-wrap {
@@ -3236,3 +3244,4 @@ img.verify-img {
   color: #c71c24;
   margin-top: 20px;
 }
+

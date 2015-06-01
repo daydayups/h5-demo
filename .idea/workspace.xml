@@ -4,7 +4,7 @@
     <list default="true" id="11be4ce2-61a1-48f9-856b-b5bdb5bd1e9b" name="Default" comment="jquery dragbox test">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/index.html" afterPath="$PROJECT_DIR$/facaijin/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/js/index.js" afterPath="$PROJECT_DIR$/facaijin/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facaijin/css/nmain.css" afterPath="$PROJECT_DIR$/facaijin/css/nmain.css" />
     </list>
     <ignored path="XFBlog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,17 +26,20 @@
     <favorites_list name="XFBlog" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.52944356">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/facaijin/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.19480519" vertical-offset="15790" max-vertical-offset="17460">
-                  <caret line="797" column="13" selection-start-line="797" selection-start-column="13" selection-end-line="797" selection-end-column="13" />
+                <state vertical-scroll-proportion="-13.448276" vertical-offset="16070" max-vertical-offset="17520">
+                  <caret line="823" column="262" selection-start-line="823" selection-start-column="262" selection-end-line="823" selection-end-column="262" />
                   <folding>
+                    <element signature="n#style#0;n#span#0;n#label#0;n#p#0;n#div#1;n#form#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#span#0;n#label#0;n#p#0;n#div#1;n#form#1;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#1;n#form#1;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#span#0;n#label#0;n#p#0;n#div#1;n#form#2;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#1;n#form#2;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="tag#div#5;tag#body#0;tag#html#0" expanded="false" />
                     <element signature="tag#div#0;tag#div#6;tag#body#0;tag#html#0" expanded="false" />
@@ -49,21 +52,71 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="pop_window.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/facaijin/futures_index/pop_window.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-34.931034" vertical-offset="467" max-vertical-offset="4520">
+                  <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="confirm.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/facaijin/apply/confirm.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="12.413794" vertical-offset="1800" max-vertical-offset="3180">
+                  <caret line="72" column="53" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pop_login_register.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/facaijin/pop_login_register.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-26.172413" vertical-offset="3901" max-vertical-offset="5060">
+                  <caret line="233" column="0" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pop_window.html" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/facaijin/user/pop_window.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.37662336" vertical-offset="16410" max-vertical-offset="23040">
+                  <caret line="835" column="17" selection-start-line="835" selection-start-column="17" selection-end-line="835" selection-end-column="17" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/facaijin/js/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.67459327" vertical-offset="6381" max-vertical-offset="7260">
-                  <caret line="346" column="18" selection-start-line="346" selection-start-column="18" selection-end-line="346" selection-end-column="18" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="6461" max-vertical-offset="7340">
+                  <caret line="353" column="18" selection-start-line="353" selection-start-column="18" selection-end-line="353" selection-end-column="18" />
                   <folding>
-                    <marker date="1433171244516" expanded="true" signature="5585:5670" placeholder="..." />
-                    <marker date="1433171244516" expanded="true" signature="6242:6327" placeholder="..." />
-                    <marker date="1433171244516" expanded="true" signature="7304:7389" placeholder="..." />
-                    <marker date="1433171244516" expanded="true" signature="8005:8090" placeholder="..." />
+                    <marker date="1433171791225" expanded="true" signature="5585:5670" placeholder="..." />
+                    <marker date="1433171791225" expanded="true" signature="6242:6327" placeholder="..." />
+                    <marker date="1433171791225" expanded="true" signature="7304:7389" placeholder="..." />
+                    <marker date="1433171791225" expanded="true" signature="8005:8090" placeholder="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="nmain.css" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/facaijin/css/nmain.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.55819774" vertical-offset="15274" max-vertical-offset="65060">
+                  <caret line="786" column="12" selection-start-line="786" selection-start-column="12" selection-end-line="786" selection-end-column="12" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -136,16 +189,16 @@
         <option value="$PROJECT_DIR$/facaijin/futures_index/pop_window.html" />
         <option value="$PROJECT_DIR$/facaijin/experience/experience.html" />
         <option value="$PROJECT_DIR$/facaijin/user/cash/charge_s2.html" />
+        <option value="$PROJECT_DIR$/facaijin/js/index.js" />
         <option value="$PROJECT_DIR$/facaijin/css/nmain.css" />
         <option value="$PROJECT_DIR$/facaijin/index.html" />
-        <option value="$PROJECT_DIR$/facaijin/js/index.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="104" />
+    <option name="x" value="-3" />
     <option name="y" value="19" />
-    <option name="width" value="1782" />
+    <option name="width" value="1889" />
     <option name="height" value="971" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -255,7 +308,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="futures_index" />
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -507,14 +560,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="104" y="19" width="1782" height="971" extended-state="0" />
-    <editor active="true" />
+    <frame x="-3" y="19" width="1889" height="971" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32808718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293124" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21444954" sideWeight="0.49940687" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20205295" sideWeight="0.49940687" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13435195" sideWeight="0.5005931" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -732,31 +785,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/apply/confirm.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5116279" vertical-offset="1386" max-vertical-offset="3498">
-          <caret line="78" column="71" selection-start-line="78" selection-start-column="67" selection-end-line="78" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facaijin/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.5689923" vertical-offset="1122" max-vertical-offset="3982">
           <caret line="97" column="45" selection-start-line="97" selection-start-column="45" selection-end-line="97" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/apply/waiting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.32258" vertical-offset="577" max-vertical-offset="1804">
-          <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/pop_login_register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.1690364" vertical-offset="2196" max-vertical-offset="4642">
-          <caret line="233" column="0" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -830,13 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/user/pop_window.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6623681" vertical-offset="17453" max-vertical-offset="23848">
-          <caret line="847" column="0" selection-start-line="847" selection-start-column="0" selection-end-line="847" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facaijin/images/experience/experience_bg.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -846,13 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-32.64516" vertical-offset="6094" max-vertical-offset="7986">
           <caret line="323" column="36" selection-start-line="323" selection-start-column="36" selection-end-line="323" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/futures_index/pop_window.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5915493" vertical-offset="528" max-vertical-offset="3168">
-          <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -878,13 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/css/nmain.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58492976" vertical-offset="43502" max-vertical-offset="64880">
-          <caret line="2198" column="15" selection-start-line="2198" selection-start-column="15" selection-end-line="2198" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facaijin/experience/experience.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.7402598" vertical-offset="0" max-vertical-offset="3300">
@@ -903,13 +914,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/apply/waiting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.051948052" vertical-offset="1540" max-vertical-offset="2820">
+          <caret line="75" column="42" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6461" max-vertical-offset="7340">
+          <caret line="353" column="18" selection-start-line="353" selection-start-column="18" selection-end-line="353" selection-end-column="18" />
+          <folding>
+            <marker date="1433171791225" expanded="true" signature="5585:5670" placeholder="..." />
+            <marker date="1433171791225" expanded="true" signature="6242:6327" placeholder="..." />
+            <marker date="1433171791225" expanded="true" signature="7304:7389" placeholder="..." />
+            <marker date="1433171791225" expanded="true" signature="8005:8090" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/css/nmain.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55819774" vertical-offset="15274" max-vertical-offset="65060">
+          <caret line="786" column="12" selection-start-line="786" selection-start-column="12" selection-end-line="786" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/facaijin/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19480519" vertical-offset="15790" max-vertical-offset="17460">
-          <caret line="797" column="13" selection-start-line="797" selection-start-column="13" selection-end-line="797" selection-end-column="13" />
+        <state vertical-scroll-proportion="-13.448276" vertical-offset="16070" max-vertical-offset="17520">
+          <caret line="823" column="262" selection-start-line="823" selection-start-column="262" selection-end-line="823" selection-end-column="262" />
           <folding>
+            <element signature="n#style#0;n#span#0;n#label#0;n#p#0;n#div#1;n#form#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#p#0;n#div#1;n#form#1;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#form#1;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#p#0;n#div#1;n#form#2;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#form#2;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="tag#div#5;tag#body#0;tag#html#0" expanded="false" />
             <element signature="tag#div#0;tag#div#6;tag#body#0;tag#html#0" expanded="false" />
@@ -921,16 +964,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/facaijin/js/index.js">
+    <entry file="file://$PROJECT_DIR$/facaijin/futures_index/pop_window.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67459327" vertical-offset="6381" max-vertical-offset="7260">
-          <caret line="346" column="18" selection-start-line="346" selection-start-column="18" selection-end-line="346" selection-end-column="18" />
-          <folding>
-            <marker date="1433171244516" expanded="true" signature="5585:5670" placeholder="..." />
-            <marker date="1433171244516" expanded="true" signature="6242:6327" placeholder="..." />
-            <marker date="1433171244516" expanded="true" signature="7304:7389" placeholder="..." />
-            <marker date="1433171244516" expanded="true" signature="8005:8090" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-34.931034" vertical-offset="467" max-vertical-offset="4520">
+          <caret line="74" column="10" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/apply/confirm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="12.413794" vertical-offset="1800" max-vertical-offset="3180">
+          <caret line="72" column="53" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/pop_login_register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.172413" vertical-offset="3901" max-vertical-offset="5060">
+          <caret line="233" column="0" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/facaijin/user/pop_window.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37662336" vertical-offset="16410" max-vertical-offset="23040">
+          <caret line="835" column="17" selection-start-line="835" selection-start-column="17" selection-end-line="835" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

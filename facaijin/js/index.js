@@ -335,21 +335,25 @@ $(function(){
     * 如果原来状态为 1
     * 则将其变为 0
     * 按钮变为不可点状态
+    * 红色提示：同意后才能继续
     */
     var flag = $(this).data("selected"),
         $btnArea = $(this).parents(".btn-area"),
         $btn = $btnArea.find(".apply-btn"),
-        $btnDisable = $btnArea.find(".apply-btn-disable");
+        $btnDisable = $btnArea.find(".apply-btn-disable"),
+        $hint = $btnArea.find(".check-hint");
 
 //    console.info("original-flag: " + flag);
     if (flag) {
       $(this).data("selected", 0);
       $btn.hide();
       $btnDisable.show();
+      $hint.show();
     } else {
       $(this).data("selected", 1);
       $btn.show();
       $btnDisable.hide();
+      $hint.hide();
     }
 //    console.info("current-flag: " + flag)
 
