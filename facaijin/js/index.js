@@ -328,5 +328,31 @@ $(function(){
       $(this).find(".sort-icon").addClass("red");
   });
 
+  /* 选中协议 按钮可点 未选中协议 按钮不可点 */
+  $(".agree").data("selected", 1);
+  $(".agree").click(function () {
+    /*
+    * 如果原来状态为 1
+    * 则将其变为 0
+    * 按钮变为不可点状态
+    */
+    var flag = $(this).data("selected"),
+        $btnArea = $(this).parents(".btn-area"),
+        $btn = $btnArea.find(".apply-btn"),
+        $btnDisable = $btnArea.find(".apply-btn-disable");
+
+//    console.info("original-flag: " + flag);
+    if (flag) {
+      $(this).data("selected", 0);
+      $btn.hide();
+      $btnDisable.show();
+    } else {
+      $(this).data("selected", 1);
+      $btn.show();
+      $btnDisable.hide();
+    }
+//    console.info("current-flag: " + flag)
+
+  });
 
 })
