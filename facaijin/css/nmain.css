@@ -3244,4 +3244,27 @@ img.verify-img {
   color: #c71c24;
   margin-top: 20px;
 }
+.order-pay-wrap {
+  padding: 30px;
+  min-height: 600px;
+}
 
+.switch-blocky-base {
+}
+.switch-blocky-wrap {
+
+}
+.switch-blocky-wrap .switch-blocky {
+  cursor: pointer;
+  float: left;
+  line-height: 40px;
+  padding: 0 30px;
+  font-size: 14px;
+}
+.switch-blocky-wrap .switch-blocky.curr {
+  border-top: 3px solid #c50024;
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  background-color: #fff;
+  _border-bottom:0 none;
+}

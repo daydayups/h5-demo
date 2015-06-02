@@ -356,7 +356,6 @@ $(function(){
       $hint.hide();
     }
 //    console.info("current-flag: " + flag)
-
   });
 
 })
