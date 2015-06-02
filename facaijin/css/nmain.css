@@ -587,7 +587,7 @@ img {
 #week-apply .rules tr {
   line-height: 40px;
 }
-#mouth-apply .rules tr {
+#month-apply .rules tr {
   line-height: 45px;
 }
 .dotted-line {
@@ -595,27 +595,27 @@ img {
   background: url(../images/dotted_line.png) repeat-x;
 }
 
-/* mouth 按月操盘 */
-#mouth-apply .title {
+/* month 按月操盘 */
+#month-apply .title {
   /*margin-left: 20px;*/
 }
-#mouth-apply .content {
+#month-apply .content {
   margin-top: 20px;
 }
-#mouth-apply .choosen-area {
+#month-apply .choosen-area {
   width: 437px;
   height: 415px;
   margin-left: 10px;
   overflow: hidden;
 }
 /* -- 申请操盘选择区 -- */
-#mouth-apply .cho {
+#month-apply .cho {
   margin-left: 70px;
 }
-#mouth-apply .cho-item p {
+#month-apply .cho-item p {
   /*font-size: 14px;*/
 }
-#mouth-apply .cho-item {
+#month-apply .cho-item {
   cursor: pointer;
   width: 120px;
   height: 100px;
@@ -623,7 +623,7 @@ img {
   border-radius: 4px;
   border: 1px solid #dddddd;
 }
-#mouth-apply .other-cho-btn {
+#month-apply .other-cho-btn {
   cursor: pointer;
   width: 120px;
   height: 100px;
@@ -631,13 +631,13 @@ img {
   border-radius: 4px;
   border: 1px solid #dddddd;
 }
-#mouth-apply .cho-item-hover {
+#month-apply .cho-item-hover {
   border: 1px solid #ea4040;
 }
-#mouth-apply .other-cho-hover {
+#month-apply .other-cho-hover {
   border: 1px solid #ea4040;
 }
-#mouth-apply .selected {
+#month-apply .selected {
   color: #df0000;
   width: 116px;
   height: 96px;
@@ -647,7 +647,7 @@ img {
 .base-inp {
   margin-left: 30px;
 }
-.mouth-inp {
+.month-inp {
   width: 336px;
   line-height: 50px;
   font-size: 24px;
@@ -656,7 +656,7 @@ img {
   border-radius: 4px;
   border: 1px solid #dddddd;
 }
-.mouth-cho {
+.month-cho {
   margin-left: 10px;
   margin-top: 20px;
 }
@@ -688,7 +688,7 @@ img {
   background-color: #ea4040;
 }
 /* 选项不可选的样式 */
-.mouth-cho .disable {
+.month-cho .disable {
   cursor: default;
   width: 120px;
   height: 100px;
@@ -696,13 +696,13 @@ img {
   border-radius: 4px;
   border: 1px solid #dddddd;
 }
-.mouth-cho .disable span {
+.month-cho .disable span {
   color: #999;
 }
-.mouth-cho .disable .special {
+.month-cho .disable .special {
   border-color: #ddd;
 }
-.mouth-cho .disable .special .special-mark {
+.month-cho .disable .special .special-mark {
   color: #fff;
   background-color: #ddd;
 }

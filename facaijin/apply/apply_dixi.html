@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>发财金-赚钱不等待</title>
+  <link rel="stylesheet" href="../css/nmain.css">
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <div class="site-nav-top">
+    <div class="inner clearfix">
+      <p class="pull-left base-phone">客服热线 <span class="phone-icon-white"></span></p>
+      <p class="pull-left"><span class="f-18 ml-5">400-638-0808</span></p>
+      <p class="pull-right">欢迎您，请
+        <a href="">登录</a>
+        <a class="ml-5 mr-5" href="">免费注册</a> |
+        <a class="ml-5 mr-5" href="">帮助中心</a> |
+        <a class="ml-5 mr-5" href="">免费体验</a> |
+        <a class="ml-5" href="">软件下载</a>
+      </p>
+    </div>
+  </div>
+  <!-- 主导航与logo -->
+  <div class="site-nav clearfix">
+    <a class="logo-bg pull-left" href=""></a>
+    <ul class="pull-right mt-10">
+      <li class="mr-15"><a href="">首页</a></li>
+      <li class="ml-15 mr-15"><a href="">天天发</a></li>
+      <li class="ml-15 mr-15"><a href="">周周发</a></li>
+      <li class="ml-15 mr-15"><a href="">月月发</a></li>
+      <li class="ml-15 mr-15"><a href="">免费体验</a><span class="new-icon"></span></li>
+      <li class="ml-15 mr-15"><a href="">我的账户</a></li>
+    </ul>
+  </div>
+
+  <!-- 申请操盘 -->
+  <div id="apply-box" class="apply-box">
+
+    <div class="main-steps">
+      <ul class="main-steps-items clearfix">
+        <li class="item curr"><span class="steps-num-bg pull-left mr-10">1</span><span class="steps-text pull-left f-14 cl-153">选择炒股资金</span><span class="main-steps-arrow pull-left ml-20"></span></li>
+        <li class="item"><span class="steps-num-bg pull-left mr-10">2</span><span class="steps-text pull-left f-14 cl-153">支付保证金</span><span class="main-steps-arrow pull-left ml-20"></span></li>
+        <li class="item"><span class="steps-num-bg pull-left mr-10">3</span><span class="steps-text pull-left f-14 cl-153">领取账号开始赚钱</span></li>
+      </ul>
+    </div>
+    <div class="apply-area">
+      <!-- 切换标签 -->
+      <div class="tab-wrap">
+        <a class="tab current" href="javascript:;">
+          免<br>息<br>配<br>资
+        </a>
+      </div>
+      <!-- 标签切换 结束 -->
+      <!-- 免息 -->
+      <form class="apply-form" id="month-apply" action="" method="POST">
+      <input type="hidden" name="apply-money" id="apply-money-month" >
+      <div class="clearfix">
+      <div class="pull-left">
+        <div class="title ml-30">
+          <p class="f-18">申请资金 <span class="">（1-5倍）</span></p>
+        </div>
+        <div class="content choosen-area">
+          <div class="base-inp">
+            <p class="f-14">投入本金（3千-500万）</p>
+            <p><input id="month-inp" class="month-inp" name="month-basemoney" type="text"> <span class="f-16">元</span></p>
+          </div>
+          <div class="month-cho">
+            <p class="ml-20 f-16 cl-153">您可以申请</p>
+            <div class="gray-box">
+              <p class="f-14 cl-153">请先输入您的投资本金</p>
+              <p class="f-14 cl-153">根据您的本金可申请 1~5倍的资金</p>
+            </div>
+            <table cellspacing="20">
+              <tr>
+                <td>
+                  <div class="cho-item selected" data-lever="1"  id="l1">
+                    <p class="mt-15 mb-5"><span class="f-24" id="lever1">0</span>元</p>
+                    <p class="special clearfix"><span class="special-mark">优惠</span><span class="cl-red"><span class="bond" id="bond1_rate">0</span> 分/月</span></p>
+                    <p class="mt-5 cl-153">实盘资金</p>
+                    <input style="display: none;" type="radio" name="money" value="10000" checked>
+                  </div>
+            </table>
+          </div>
+
+        </div>
+      </div>
+      <div class="mid-arrow-bg"></div>
+      <div class="pull-left ml-20">
+        <div class="title">
+          <p class="f-18">操盘规则</p>
+        </div>
+        <div class="content">
+          <table class="rules">
+            <tr>
+              <td width="35%" class="cl-102">操盘须知</td>
+              <td class="trading-position">投资沪深A股，仓位不限制，盈利全归您</td>
+            </tr>
+            <tr>
+              <td class="dotted-line"></td>
+              <td class="dotted-line"></td>
+            </tr>
+            <tr>
+              <td class="cl-102">操盘总额</td>
+              <td class="cl-red"><span class="f-18 cpze" id="orange1">0</span> 元<span id="total_f63" class="cl-153 ml-10">0元</span></td>
+            </tr>
+            <tr>
+            <tr>
+              <td class="dotted-line"></td>
+              <td class="dotted-line"></td>
+            </tr>
+            <tr>
+              <td class="cl-102">
+                警戒金额
+                <div class="hint-base">
+                  <div class="hint-icon">
+                  </div>
+                  <div class="hint-content">
+                    当总操盘资金低于警戒金额以下时，只能平仓不能建仓，需要尽快补充风险保证金，以免低于亏损平仓金额被平仓
+                  </div>
+                </div>
+              </td>
+              <td class="cl-red"><span  id="jj" class="f-18 jjje">0</span> 元</td>
+            </tr>
+            <tr>
+              <td class="dotted-line"></td>
+              <td class="dotted-line"></td>
+            </tr>
+            <tr>
+              <td class="cl-102">
+                平仓金额
+                <div class="hint-base">
+                  <div class="hint-icon">
+                  </div>
+                  <div class="hint-content">
+                    当总操盘资金低于平仓金额以下时，我们将有权把您的股票进行平仓，为避免平仓发生，请时刻关注风险保证金是否充足
+                  </div>
+                </div>
+              </td>
+              <td class="cl-red"><span class="f-18 zsje" id="pc">0</span> 元</td>
+            </tr>
+            <tr>
+              <td class="dotted-line"></td>
+              <td class="dotted-line"></td>
+            </tr>
+            <tr>
+              <td class="cl-102">
+                使用时长
+                <div class="hint-base">
+                  <div class="hint-icon">
+                  </div>
+                  <div class="hint-content">
+                    按自然月计算，包含各类节假日
+                    <br>
+                    如需提前终止操盘，且还有未支付服务费的剩余月份，则需罚一个月服务费。如申请6个月，做了2个月提前终止操盘，罚一个月服务费。
+                  </div>
+                </div>
+              </td>
+              <td >
+                <select class="cycle" name="cycle" id="cycle">
+                  <option value="1">1个月</option>
+                </select>
+                <span class="f-14 cl-153 ml-10">借款多、期限长、越优惠</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="dotted-line"></td>
+              <td class="dotted-line"></td>
+            </tr>
+            <tr>
+              <td class="cl-102">
+                服务费
+                <div class="hint-base">
+                  <div class="hint-icon">
+                  </div>
+                  <div class="hint-content">
+                    每月月初支付服务费，如1月8日申请，1月8日支付第1个月服务费，2月9日支付第2个月服务费，以此类推。
+                  </div>
+                </div>
+              </td>
+              <td>
+                <span class="f-14 cl-deepred">完全免费</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="dotted-line"></td>
+              <td class="dotted-line"></td>
+            </tr>
+            <tr>
+              <td class="cl-102">
+                开始交易时间
+                <div class="hint-base">
+                  <div class="hint-icon">
+                  </div>
+                  <div class="hint-content">
+                    申请资金在100万以上时，通常选择下个交易日（资金在下个交易日到账）
+                  </div>
+                </div>
+              </td>
+              <td >
+                <label class="f-14 date1">
+                  <input type="radio" name="trade-time" value="0"  checked="checked"/>今日
+                </label>
+                <label class="ml-10 f-14 date2">
+                  <input type="radio" name="trade-time" value="1"/>下个交易日
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td class="dotted-line"></td>
+              <td class="dotted-line"></td>
+            </tr>
+            <tr>
+              <td class="cl-102">操盘帐号</td>
+              <td>
+                <label class="f-14">
+                  <input type="radio" name="account-type" value="0"  checked="checked"/>同花顺
+                </label>
+                <label class="ml-10 f-14">
+                  <input type="radio" name="account-type" value="1"/>恒生
+                </label>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      </div>
+        <!-- 确认区域 -->
+        <div class="btn-area">
+          <p class="mb-20"><label class="check-base f-14 cl-153"><input class="agree" type="checkbox" name="agree" data-selected="1" checked>我已阅读并同意<a class="f-14 cl-153" href="">《发财金操盘协议》</a><span class="check-hint cl-deepred f-14" style="display: none;">同意后才能继续</span>
+          </label></p>
+          <input type="submit" class="apply-btn" value="申请操盘">
+          <div class="apply-btn-disable" style="display: none;">申请操盘</div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+  <!-- 申请操盘 结束 -->
+
+  <!-- 底部信息 -->
+  <div class="footer clearfix">
+    <div class="inner">
+      <div class="clearfix">
+        <div class="pull-left">
+          <dl class="pull-left">
+            <dt>帮助中心</dt>
+            <dd class="mt-20"><a href="">发财金</a></dd>
+            <dd><a href="">参与规则</a></dd>
+            <dd><a href="">如何充值</a></dd>
+            <dd><a href="">如何提现</a></dd>
+          </dl>
+          <dl class="pull-left">
+            <dt>常见问题</dt>
+            <dd class="mt-20"><a href="">禁止股票</a></dd>
+            <dd><a href="">收费说明</a></dd>
+            <dd><a href="">操盘止损</a></dd>
+            <dd><a href="">操盘时间</a></dd>
+          </dl>
+          <dl class="pull-left">
+            <dt>交易流程</dt>
+            <dd class="mt-20"><a href="">申请操盘</a></dd>
+            <dd><a href="">操盘补亏</a></dd>
+            <dd><a href="">操盘清算</a></dd>
+            <dd><a href="">盈利提取</a></dd>
+          </dl>
+          <dl class="pull-left">
+            <dt>了解我们</dt>
+            <dd class="mt-20"><a href="">公司介绍</a></dd>
+            <dd><a href="">网站公告</a></dd>
+            <dd><a href="">联系我们</a></dd>
+            <dd><a href="">诚聘英才</a></dd>
+          </dl>
+          <div class="pull-left service">
+            <p class="f-16 f-bold">客户服务</p>
+            <p class="mt-20 f-14 cl-119">（服务时间：8:00-24:00）</p>
+            <p class="mt-10 f-20 cl-119 clearfix"><span class="phone-icon pull-left" ></span><span class="pull-left ml-10 f-20">400-638-0808</span></p>
+            <p class="mt-10 f-14 cl-119 clearfix"><span class="qq-icon pull-left" ></span><a class="pull-left ml-10" href="">QQ在线交谈</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- 版权声明与权威认证 -->
+      <div class="clearfix others">
+        <p class="copyright pull-left">版权所有 © 杭州袋狮信息技术有限公司	  Copyright Reserved 2014-2015	   浙ICP备14037891</p>
+        <div class="pull-right">
+          <a href="javascript:;" class="ml-20" target="_blank">
+            <img width="93" height="33" border="0" src="../images/certificate/faith1.png" alt="">
+          </a>
+          <a class="ml-20" href="http://webscan.360.cn/index/checkwebsite/url/www.facaijin.com" target="_blank">
+            <img width="93" height="33" border="0" src="../images/certificate/360safe.png" alt="360网站完全认证"/>
+          </a>
+          <a class="ml-20" href="#" target="_blank">
+            <img width="91" height="33" border="0" src="../images/certificate/norton1.png" alt="">
+          </a>
+          <a class="ml-20" href="http://www.anquan.org/authenticate/cert/?site=facaijin.com&at=business" target="_blank">
+            <img width="91" height="33" border="0" src="../images/certificate/hy_124x47.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="../js/fcj.js"></script>
+  <script type="text/javascript" src="../js/index.js"></script>
+  <script type="text/javascript" src="../js/dixi.js"></script>
+</body>
+</html>

@@ -11,6 +11,16 @@ jQuery.browser = {};
     jQuery.browser.version = RegExp.$1;
   }
 })();
+
+$.fn.setfocus = function(){
+  return this.each(function(){
+    var dom = this;
+    setTimeout(function() {
+      try { dom.focus(); } catch (e) { }
+    }, 0);
+  });
+};
+
 //需要 Jquery依赖
 ;(function(window, $, undefined) {
   $.fcj = {
