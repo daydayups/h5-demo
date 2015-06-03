@@ -1077,6 +1077,13 @@ span.sort-icon.sort-icon-hover {
   background-color: #fff;
   border: 1px solid #f2f2f2;
 }
+.main-box .inner-box {
+  width: 900px;
+  padding: 30px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+}
 .brd-solid {
   border-top: 1px solid #dedede;
 }
@@ -1377,12 +1384,14 @@ span.sort-icon.sort-icon-hover {
 }
 .switch-title .switch-tab:hover {
   color: #c50024;
+  _background-color: #fff;
   border-bottom: 3px solid #c50024;
   text-decoration: none;
 }
 .switch-title .switch-tab.curr {
   color: #c50024;
   text-decoration: none;
+  _background-color: #fff;
   border-bottom: 3px solid #c50024;
 }
 
@@ -2268,7 +2277,7 @@ textarea {
   text-align: center;
   background-color: #fff;
 }
-.window-title .btn-close, .log-detail-title .btn-close {
+.window-title .btn-close, .pop-window .switch-title .btn-close {
   cursor: pointer;
   display: block;
   width: 17px;
@@ -2278,7 +2287,7 @@ textarea {
   right: 18px;
   top: 14px;
 }
-.window-title .btn-close:hover,.log-detail-title .btn-close:hover {
+.window-title .btn-close:hover, .pop-window .switch-title .btn-close:hover {
   background: url(../images/user/icons.png) no-repeat -263px -375px;
 }
 .pop-window .stop-loss-base {
@@ -3267,4 +3276,108 @@ img.verify-img {
   border-right: 1px solid #f2f2f2;
   background-color: #fff;
   _border-bottom:0 none;
+}
+/* 软件下载 */
+.btn-red {
+  background-color: #cc0000;
+  border-radius: 2px;
+  color: #ffffff;
+  display: block;
+  font-size: 14px;
+  _height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  text-align: center;
+}
+.btn-red:hover {
+  background-color: #de0029;
+  color: #ffffff;
+  text-decoration: none;
+}
+.btn-orange {
+  background-color: #f3750f;
+  border-radius: 2px;
+  color: #ffffff;
+  display: block;
+  font-size: 14px;
+  _height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  text-align: center;
+}
+.btn-orange:hover {
+  background-color: #ff7912;
+  color: #ffffff;
+  text-decoration: none;
+}
+.w220 {
+  width: 220px;
+}
+.w200 {
+  width: 200px;
+}
+.w180 {
+  width: 180px;
+}
+.w130 {
+  width: 130px;
+}
+.w80 {
+  width: 80px;
+}
+.icon-ths {
+  background: url(../images/download/icon_ths.png) no-repeat;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.icon-homs {
+  background: url(../images/download/icon_homs.png) no-repeat;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.line-vertical {
+  width: 1px;
+  height: 400px;
+  border-left: 1px solid #eeeeee;
+}
+.btn-android {
+  border: 2px solid #dddddd;
+  border-radius: 4px;
+  background: url(../images/download/icons.png) no-repeat 0 -10px;
+  display: block;
+  _height:40px;
+  line-height: 40px;
+  padding-left: 50px;
+  font-size: 16px;
+}
+.btn-android:hover {
+  color: #000000;
+  text-decoration: none;
+}
+.btn-iphone {
+  border: 2px solid #dddddd;
+  border-radius: 4px;
+  background: url(../images/download/icons.png) no-repeat 0 -68px;
+  display: block;
+  _height:40px;
+  line-height: 40px;
+  padding-left: 50px;
+  font-size: 16px;
+}
+.btn-iphone:hover {
+  color: #000000;
+  text-decoration: none;
+}
+/* 手册弹窗 */
+.manual-ths-title, .manual-homs-title {
+  background-color: #FFFFFF;
+}
+#pop-manual-homs .window-body, #pop-manual-ths .window-body {
+  height: 600px;
+  overflow-y: scroll;
+}
+.manual-step-arrow {
+  margin-top: 215px;
 }
