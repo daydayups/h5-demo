@@ -2,6 +2,13 @@ $(function(){
 
   $("#month-inp").setfocus();
 
+  /* 鼠标上移 提示 */
+  $(".hint-icon").hover(function(){
+    $(this).siblings(".hint-content").show();
+  },function(){
+    $(this).siblings(".hint-content").hide();
+  });
+
   var p,t2,t1,t,jj,pc,interest,discount,i1,i2,i3,i4,a,b,money,lever,cycle,tt,m;
   //interest  月利率   lever 杠杆  cycle 月数  
   var formatMoney = function(num,n) {

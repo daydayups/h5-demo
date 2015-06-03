@@ -24,22 +24,22 @@ $(function(){
   }
 
   var fwf = function(t1){
-    a = $(".mouth-cho .selected .special span.bond").text();
+    a = $(".month-cho .selected .special span.bond").text();
 
     // debug：值是否为 not a number
     // console.info("a:"+a+"  "+isNaN(a));
     // result: a is a number
 
-    $("#mouth-apply .new_fwf").html(a);
+    $("#month-apply .new_fwf").html(a);
     if(t1==0){
-     $("#mouth-apply .new_fwf").html(0); 
+     $("#month-apply .new_fwf").html(0); 
     }
     $("#fwf").html((money*a/100).toFixed(0));
   }
 
   var myfunc = function(t1,cycle,lever){
     var money = tt;
-　　var interest = 190;
+    var interest = 190;
     if(money&&cycle&&lever){
       if(money>=1000000){
         if(cycle>=3){
@@ -112,7 +112,7 @@ $(function(){
 
     if (t1*5>5000000) {
       //将第五选项变为不可选
-      $(".mouth-cho .cho-item").removeClass("selected");
+      $(".month-cho .cho-item").removeClass("selected");
       // console.info("5: selected removed");
       $("#l5").removeClass("cho-item").addClass("disable");
       //第一选项 选中状态
@@ -122,36 +122,36 @@ $(function(){
       $("#l5").removeClass("disable").addClass("cho-item");
     }
 
-    $(".mouth-cho .disable").removeClass("selected");
+    $(".month-cho .disable").removeClass("selected");
     
   }  
 
   var xianzhi = function(){
     if(money<500000){
-      $("#mouth-apply .trading-position").html("投资沪深A股，仓位无限制，盈利全归您");
+      $("#month-apply .trading-position").html("投资沪深A股，仓位无限制，盈利全归您");
     }else if(money<=1000000){
-      $("#mouth-apply .trading-position").html("<b style='position:absolute;right:0;top:8px;font-size:14px;font-weight:normal;line-height:18px;'>投资沪深A股，<span class='cl-red f-14'>仓位有限制</span>，盈利全归您<br><span class='cl-red f-14'>单股不超总操盘资金的50%</span></b>");            
+      $("#month-apply .trading-position").html("<b style='position:absolute;right:0;top:8px;font-size:14px;font-weight:normal;line-height:18px;'>投资沪深A股，<span class='cl-red f-14'>仓位有限制</span>，盈利全归您<br><span class='cl-red f-14'>单股不超总操盘资金的50%</span></b>");            
     }else{
-      $("#mouth-apply .trading-position").html("<b style='position:absolute;right:0;top:8px;font-size:14px;font-weight:normal;line-height:18px;'>投资沪深A股，<span class='cl-red f-14'>仓位有限制</span>，盈利全归您<br><span class='cl-red f-14'>单股不超总操盘资金的50%（创业板33%）</span></b>");
+      $("#month-apply .trading-position").html("<b style='position:absolute;right:0;top:8px;font-size:14px;font-weight:normal;line-height:18px;'>投资沪深A股，<span class='cl-red f-14'>仓位有限制</span>，盈利全归您<br><span class='cl-red f-14'>单股不超总操盘资金的50%（创业板33%）</span></b>");
     }
   }
 
   // $(document).ready(function(){
-  //     t1 = $("#mouth-inp").val()
+  //     t1 = $("#month-inp").val()
   //     if(!t1)
-  //         $("#mouth-inp").addClass("mouth-inp_null");
+  //         $("#month-inp").addClass("month-inp_null");
   // })
 
   //选择杠杆        
-  $(".mouth-cho .cho-item").click(function(){
+  $(".month-cho .cho-item").click(function(){
     if($(this).attr("class") != 'disable') {
-      $(".mouth-cho .cho-item").removeClass("selected");
-      $(".mouth-cho .cho-item").find("input").attr("checked", false);
+      $(".month-cho .cho-item").removeClass("selected");
+      $(".month-cho .cho-item").find("input").attr("checked", false);
       $(this).addClass("selected");
       $(this).find("input").attr("checked","checked");
-      // $(".mouth-cho .cho-item").not(this).removeClass("li_5");
-      t1 = $("#mouth-inp").val().replace(/,/g,"");  //投入本金 
-      t2 = $(".mouth-cho .selected").data("lever");  //选中的杠杆倍数
+      // $(".month-cho .cho-item").not(this).removeClass("li_5");
+      t1 = $("#month-inp").val().replace(/,/g,"");  //投入本金 
+      t2 = $(".month-cho .selected").data("lever");  //选中的杠杆倍数
 
       if (isNaN(t2)) {
         t2 = 0;
@@ -169,30 +169,30 @@ $(function(){
       $("#pc").html(formatMoney(parseInt(pc), 0));
       xianzhi();
       m = t1*t2;
-      if($("#mouth-apply label.date1")){
+      if($("#month-apply label.date1")){
         if (m>=1000000) {
-          $("#mouth-apply label.date1").hide();
-          $("#mouth-apply input[type='radio'][value=1]").attr("checked","checked" );
+          $("#month-apply label.date1").hide();
+          $("#month-apply input[type='radio'][value=1]").attr("checked","checked" );
         } else {
-          $("#mouth-apply label.date1").show();
+          $("#month-apply label.date1").show();
         }
       } 
       fwf(t1);                
     }   
   });    
-  $("#mouth-inp").click(function(){
-      $(".mouth-cho table").show();
-      $(".mouth-cho .gray-box").hide();
-      // $("#mouth-inp").removeClass("mouth-inp_null");
+  $("#month-inp").click(function(){
+      $(".month-cho table").show();
+      $(".month-cho .gray-box").hide();
+      // $("#month-inp").removeClass("month-inp_null");
       // $("#bb").css("opacity","1");
   });
   /*document.body.onmouseout="func()"*/
-  $("#mouth-inp").keyup(function(){
+  $("#month-inp").keyup(function(){
       this.value = this.value.replace(/[^\d]/g,"");
-      $(".mouth-cho table").show();
-      $(".mouth-cho .gray-box").hide();
-      // $("#mouth-inp").removeClass("mouth-inp_null");
-      t1 = $("#mouth-inp").val().replace(/,/g,"");
+      $(".month-cho table").show();
+      $(".month-cho .gray-box").hide();
+      // $("#month-inp").removeClass("month-inp_null");
+      t1 = $("#month-inp").val().replace(/,/g,"");
 
       // debug：值是否为 not a number
       // console.info("t1:"+t1+"  "+isNaN(t1));
@@ -200,15 +200,15 @@ $(function(){
       
       if(t1>5000000) {
         t1 = 5000000;
-        $("#mouth-inp").val(formatMoney(parseInt(t1), 0));
+        $("#month-inp").val(formatMoney(parseInt(t1), 0));
         /*clickchange();*/
       }
       if (!t1) {
         return;
       }
-      $("#mouth-inp").val(formatMoney(parseInt(t1), 0));
+      $("#month-inp").val(formatMoney(parseInt(t1), 0));
       hidden();
-      t2 = $(".mouth-cho .selected").data("lever");
+      t2 = $(".month-cho .selected").data("lever");
 
       // debug：值是否为 not a number
       // console.info("t2:"+t2+"  "+isNaN(t2));
@@ -250,12 +250,12 @@ $(function(){
         tt = t1; 
       };
       m = t1*t2;
-      if($("#mouth-apply label.date1")){
+      if($("#month-apply label.date1")){
         if (m>=1000000) {
-          $("#mouth-apply label.date1").hide();
-          $("#mouth-apply input[type='radio'][value=1]").attr("checked","checked" );
+          $("#month-apply label.date1").hide();
+          $("#month-apply input[type='radio'][value=1]").attr("checked","checked" );
         } else {
-          $("#mouth-apply label.date1").show();
+          $("#month-apply label.date1").show();
         }
       }
       // $("#bb").css("opacity","1"); 
@@ -263,22 +263,22 @@ $(function(){
       fwf(t1);
   });
 
-  $("#mouth-inp").blur(function(){
-    t1 = $("#mouth-inp").val().replace(/,/g,"");
+  $("#month-inp").blur(function(){
+    t1 = $("#month-inp").val().replace(/,/g,"");
     if (t1 > 0&&t1 <= 5000000) {
       t1 = Math.round(t1 / 1000) * 1000;
-      $("#mouth-inp").val(formatMoney(parseInt(t1), 0));
+      $("#month-inp").val(formatMoney(parseInt(t1), 0));
     }
     if(t1<3000){
       t1 = 0; 
     } 
     if(!t1||t1==0){
-      $(".mouth-cho table").hide();
-      $(".mouth-cho .gray-box").show();
-      $("#mouth-inp").val('');
+      $(".month-cho table").hide();
+      $(".month-cho .gray-box").show();
+      $("#month-inp").val('');
     }
     hidden();
-    t2 = $(".mouth-cho .selected").data("lever");
+    t2 = $(".month-cho .selected").data("lever");
     
     // debug：值是否为 not a number
     // console.info("blur t2:"+t2+"  "+isNaN(t2));
@@ -317,21 +317,21 @@ $(function(){
       tt = t1;  
     };
     m = t1*t2;
-    if($("#mouth-apply label.date1")){
+    if($("#month-apply label.date1")){
       if (m>=1000000) {
-        $("#mouth-apply label.date1").hide();
-        $("#mouth-apply input[type='radio'][value=1]").attr("checked","checked" );
+        $("#month-apply label.date1").hide();
+        $("#month-apply input[type='radio'][value=1]").attr("checked","checked" );
       } else {
-        $("#mouth-apply label.date1").show();
+        $("#month-apply label.date1").show();
       }
     }
     // $("#bb").css("opacity","0");
     fwf(t1);
   })
   $("#cycle").click(function(){
-    t1 = parseInt($("#mouth-inp").val().replace(/,/g, ""));
+    t1 = parseInt($("#month-inp").val().replace(/,/g, ""));
     //投入本金  
-    t2 = $(".mouth-cho .selected").data("lever");  
+    t2 = $(".month-cho .selected").data("lever");  
     //选中的杠杆倍数
     if(!t1){
       t1 = 0;
