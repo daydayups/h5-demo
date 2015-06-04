@@ -1708,6 +1708,7 @@ span.sort-icon.sort-icon-hover {
 .btn-small-gray {
   cursor: pointer;
   background-color: #fff;
+  display: block;
   border: 1px solid #d2d2d2;
   padding-left: 40px;
   padding-right: 40px;
@@ -1715,6 +1716,7 @@ span.sort-icon.sort-icon-hover {
 }
 .btn-small-gray:hover {
   color: #df0000;
+  text-decoration: none;
 }
 .detail-summary .item {
   margin-left: 50px;
