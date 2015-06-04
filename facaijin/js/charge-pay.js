@@ -5,13 +5,15 @@ $(function(){
   /* 隐藏/显示 bank-list */
   var flag = false;
   $(".bank-trigger").click(function(){
+    var $table = $(this).parents(".form-table");
+
     $(this).find(".trigger-arrow").toggleClass("down");
-    $(".bank-list").parents("tr").toggle();
+    $table.find(".bank-list").parents("tr").toggle();
     if (flag) {
-      $(".bank-trigger").find(".trigger-text").html("收 起");
+      $table.find(".trigger-text").html("收 起");
       flag = false;
     } else {
-      $(".bank-trigger").find(".trigger-text").html("更换银行卡");
+      $table.find(".trigger-text").html("更换银行卡");
       flag = true;
     }
   });
@@ -25,9 +27,19 @@ $(function(){
   $(".bank-list .bank-img").click(function(){
     var bankClass = $(this).attr("class");
     var bankName = $(this).data("bank");
+    var $table = $(this).parents(".form-table");
 //        var bankName = $(this).attr("class").split(" ")[1];
 //        console.info("bankName[1]: " + bankName[1]);
-    $(".bank-inp").html("<div class='" + bankClass + "' data-bank='"+ bankName +"'></div>")
+    $table.find(".bank-inp").html("<div class='" + bankClass + "' data-bank='"+ bankName +"'></div>")
+    $table.find(".trigger-arrow").toggleClass("down");
+    $(this).parents(".bank-list").parents("tr").toggle();
+    if (flag) {
+      $(this).parents(".form-table").find(".trigger-text").html("收 起");
+      flag = false;
+    } else {
+      $(this).parents(".form-table").find(".trigger-text").html("更换银行卡");
+      flag = true;
+    }
   });
 
   /* 金额验证 */

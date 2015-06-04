@@ -200,6 +200,19 @@ img {
 .mb-50 {
   margin-bottom: 50px;
 }
+.pt-20 {
+  padding-top: 20px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+.pl-20 {
+  padding-left: 20px;
+}
+.pr-20 {
+  padding-right: 20px;
+}
+
 /* -color- */
 .cl-102 {
   color: #666;
@@ -287,6 +300,7 @@ img {
 }
 .site-nav a.curr {
   color: #c50024;
+  _background-color: #fff;
 }
 .site-nav a:hover {
   text-decoration: none;
@@ -1923,6 +1937,9 @@ table .apply-btn-disable {
   border-collapse:collapse;
 }
 .bank-list-table td {
+  border: 1px solid #eeeeee;
+}
+.bank-list-table td {
   padding: 5px 10px;
 }
 .bank-img-wrap {
@@ -3043,6 +3060,7 @@ img.verify-img {
 .chosen-block.selected {
   border: 2px solid #ea4040;
   background: url(../images/tickx.png) no-repeat 116px 15px;
+  _background-image: none;
 }
 .chosen-block.selected .chosen-txt {
   color: #df0000;
@@ -3092,12 +3110,19 @@ img.verify-img {
   background-color: #de001f;
 }
 .pop-futures-index-table {
-  line-height: 40px;
+  line-height: 50px;
+}
+.pop-futures-index-table .brd-solid {
+  border-bottom: 1px solid #eeeeee;
+  border-top: 0 none;
+}
+.pop-futures-index-table th {
+  font-weight: normal;
 }
 .chosen-blockx {
-  background: url(../images/futures_index/choosen_point.png) no-repeat 10px 12px;
+  background: url(../images/futures_index/chosen_point.png) no-repeat 10px 12px;
   border: 2px solid #dddddd;
-  _height:36px;
+  /*_height:36px;*/
   line-height: 36px;
   text-align: left;
 }
@@ -3105,14 +3130,15 @@ img.verify-img {
   border: 2px solid #ea4040;
 }
 .chosen-blockx.selected {
-  background: url(../images/futures_index/choosen_point_selected.png) no-repeat 10px 12px;
+  background: url(../images/futures_index/chosen_point_selected.png) no-repeat 10px 12px;
   border: 2px solid #ea4040;
-  _height:36px;
+  /*_height:36px;*/
   line-height: 36px;
   text-align: left;
 }
 .chosen-blockx.selected .chosen-txt {
   color: #df0000;
+  _text-align: center;
 }
 .w580 {
   width: 580px;
