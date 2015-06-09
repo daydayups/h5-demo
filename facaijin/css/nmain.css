@@ -212,6 +212,18 @@ img {
 .pr-20 {
   padding-right: 20px;
 }
+.pt-30 {
+  padding-top: 30px;
+}
+.pb-30 {
+  padding-bottom: 30px;
+}
+.pl-30 {
+  padding-left: 30px;
+}
+.pr-30 {
+  padding-right: 30px;
+}
 
 /* -color- */
 .cl-102 {
@@ -976,8 +988,12 @@ span.sort-icon.sort-icon-hover {
   width: 284px;
   float: left;
 }
-.news ul {
+.news .panel-two ul {
+  padding: 0;
+}
+.news .panel-two ul {
   list-style-type: disc;
+  z-index: 2;
   color:#cccccc;
   padding-left: 15px;
   font-size: 16px;
@@ -987,6 +1003,15 @@ span.sort-icon.sort-icon-hover {
 }
 .news .notice p {
   width: 210px;
+  /*overflow: hidden;*/
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.today-news ul p {
+  width: 260px;
+  /*overflow: hidden;*/
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .stock-block-red {
   width: 90px;
@@ -1704,6 +1729,14 @@ span.sort-icon.sort-icon-hover {
 .btn-small-red:hover {
   background-color: #e0322d;
   color: #fff;
+}
+.btn-small-disable {
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  color: #999999;
+  width: 112px;
+  text-align: center;
+  line-height: 30px;
 }
 .btn-small-gray {
   cursor: pointer;
@@ -2558,6 +2591,15 @@ img.verify-img {
   padding: 0 10px;
   line-height: 40px;
 }
+.btn-resendy {
+  background-color: #dedede;
+  border: 1px solid #dedede;
+  width: 130px;
+  text-align: center;
+  color: #fff;
+  padding: 0 10px;
+  line-height: 40px;
+}
 /* 新闻-更多 列表 */
 .breadcrumbs {
   background-color: #f8f8f8;
@@ -2913,10 +2955,11 @@ img.verify-img {
   padding-left: 0;
 }
 .btnx-confirm {
+  display: block;
   line-height: 32px;
-  /*background-color: #e0322d;*/
   background-color: #cc0000;
   color: #fff;
+  cursor: pointer;
   padding: 0 20px;
   text-align: center;
   border: 0;
@@ -2925,6 +2968,32 @@ img.verify-img {
 }
 .btnx-confirm:hover {
   background-color: #de0029;
+}
+.btnx-disable {
+  background-color: #eeeeee;
+  border: 0;
+  border-radius: 4px;
+  color: #999;
+  display: block;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+}
+.btnx-detail, .btnx-detail:active {
+  background-color: #fff;
+  cursor: pointer;
+  color: #6c88c4;
+  display: block;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #6c88c4;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.btnx-detail:hover {
+  border-color: #df0000;
+  color: #df0000;
+  text-decoration: none;
 }
 .btnx-cancel {
   padding-left: 10px;
@@ -2946,7 +3015,7 @@ img.verify-img {
 .futures-index {
   margin: 0 auto;
   padding: 30px;
-  width: 960px;
+  width: 900px;
   border: 1px solid #efefef;
   border-radius: 4px;
   background-color: #fff;
@@ -3015,6 +3084,12 @@ img.verify-img {
   width: 23px;
   height: 26px;
   background: url(../images/futures_index/icons.png) no-repeat -42px 0;
+}
+.icon-arrow-gray {
+  display: block;
+  width: 11px;
+  height: 7px;
+  background: url(../images/futures_index/icons.png) no-repeat -215px -9px;
 }
 .icon-update {
   border: 0 none;
@@ -3121,10 +3196,18 @@ img.verify-img {
 .pop-futures-index-table th {
   font-weight: normal;
 }
+.pop-window .sub-desc {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+.contract-text {
+  line-height: 24px;
+  text-align: left;
+}
 .chosen-blockx {
   background: url(../images/futures_index/chosen_point.png) no-repeat 10px 12px;
   border: 2px solid #dddddd;
-  /*_height:36px;*/
+  _height:36px;
   line-height: 36px;
   text-align: left;
 }
@@ -3134,7 +3217,7 @@ img.verify-img {
 .chosen-blockx.selected {
   background: url(../images/futures_index/chosen_point_selected.png) no-repeat 10px 12px;
   border: 2px solid #ea4040;
-  /*_height:36px;*/
+  _height:36px;
   line-height: 36px;
   text-align: left;
 }
@@ -3145,6 +3228,9 @@ img.verify-img {
 .w580 {
   width: 580px;
 }
+.w600 {
+  width: 600px;
+}
 .inp-tiny {
   border: 1px solid #dddddd;
   height: 24px;
@@ -3152,6 +3238,36 @@ img.verify-img {
   padding-left: 5px;
   width: 70px;
 }
+.futures-index .group-title {
+  line-height: 40px;
+}
+.futures-index-detail-table {
+  width: 800px;
+}
+.futures-index-detail-table td {
+  height: 40px;
+}
+.m-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+#pop-buying-success {
+  background-color: #fff;
+  height: 208px;
+}
+.icon-successx {
+  background: url(../images/user/iconsx.png) no-repeat 0 0;
+  display: block;
+  width: 64px;
+  height: 64px;
+}
+.icon-warningx {
+  background: url(../images/user/iconsx.png) no-repeat -90px -8px;
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
 /* 免费体验 */
 #experience {
   width: 680px;
@@ -3418,4 +3534,9 @@ img.verify-img {
 }
 .manual-step-arrow {
   margin-top: 215px;
+}
+/* 注册成功页 */
+.success-info {
+  padding: 50px 0;
+  text-align: center;
 }

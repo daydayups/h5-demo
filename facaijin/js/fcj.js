@@ -100,7 +100,7 @@ $.fn.setfocus = function(){
         /*
          * targetElement: 倒计时的目标标签,原生DOM
          * num: 倒计时的数字
-         * intervalTime: 时间间隔
+         * intervalTime: 时间间隔 毫秒单位
          * callback: 回调函数，结束后执行的函数
          */
         var t = num;

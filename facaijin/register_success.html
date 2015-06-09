@@ -3,49 +3,783 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>发财金-赚钱不等待</title>
-  <style>
-    .register-success {
-      text-align: center;
-    }
-    .register-success .head {
-      margin: 0;
-      line-height: 40px;
-      background-color: #f1f1f1;
-    }
-    .register-success .body {
-      margin-top: 15px;
-    }
-    .register-success .number {
-      font-size: 20px;
-      color: #cc0000;
-    }
-    #num {
-      font-weight: bold;
-      color: #cc0000;
-    }
-  </style>
+  <link rel="stylesheet" href="css/nmain.css">
 </head>
 <body>
-  <div class="register-success">
-    <p class="head">提示</p>
-    <div class="body">
-      <p class="">恭喜，<span class="number">13162342680</span>注册成功！</p>
-      <p class=""><span id="num">3</span>秒后，自动关闭</p>
+<!-- 顶部导航 -->
+<div class="site-nav-top">
+  <div class="inner clearfix">
+    <p class="pull-left base-phone">客服热线 <span class="phone-icon-white"></span></p>
+
+    <p class="pull-left"><span class="f-18 ml-5">400-638-0808</span></p>
+
+    <p class="pull-right">欢迎您，请
+      <a href="">登录</a>
+      <a class="ml-5 mr-5" href="">免费注册</a> |
+      <a class="ml-5 mr-5" href="">新手帮助</a> |
+      <a class="ml-5 mr-5" href="">推广赚钱</a> |
+      <a class="ml-5 mr-5" href="">免费体验</a> |
+      <a class="ml-5" href="">软件下载</a>
+    </p>
+  </div>
+</div>
+<!-- 主导航与logo -->
+<div class="site-nav clearfix">
+  <a class="logo-bg pull-left" href=""></a>
+  <ul class="pull-right mt-10">
+    <li class="mr-15"><a href="">首页</a></li>
+    <li class="ml-15 mr-15"><a href="">天天发</a></li>
+    <li class="ml-15 mr-15"><a href="">周周发</a></li>
+    <li class="ml-15 mr-15"><a href="">月月发</a></li>
+    <li class="ml-15 mr-15"><a href="">免费体验</a><span class="new-icon"></span></li>
+    <li class="ml-15 mr-15"><a href="">我的账户</a></li>
+  </ul>
+</div>
+
+<!-- 申请操盘 -->
+<div id="apply-box" class="apply-box">
+<div class="success-info">
+  <div class="inner">
+    <p class="f-18">恭喜，<span class="f-24 f-bold cl-deepred">18868945429</span> 已注册成功！</p>
+  </div>
+</div>
+<div class="apply-area">
+<!-- 切换标签 -->
+<div class="tab-wrap">
+  <a class="tab current" href="javascript:;">
+    天<br/>天<br/>发
+  </a>
+  <a class="tab" href="javascript:;">
+    周<br/>周<br/>发
+  </a>
+  <a class="tab" href="javascript:;">
+    月<br/>月<br/>发
+  </a>
+</div>
+<!-- 标签切换 结束 -->
+
+<!-- 天天发 -->
+<form class="apply-form" id="day-apply" action="" method="POST">
+<input type="hidden" name="apply-money" id="apply-money-day">
+
+<div class="apply clearfix">
+<div class="pull-left">
+  <div class="title ml-30">
+    <p class="f-18">申请资金 <span class="">（3千-100万）</span></p>
+  </div>
+  <div class="content choosen-area">
+    <table class="cho" cellspacing="20">
+      <tr>
+        <td>
+          <div class="cho-item selected" data-money="3000">
+            <p class="mt-20"><span class="f-24">3000</span>元</p>
+
+            <p class="mt-10 cl-red">免费操盘</p>
+            <input style="display: none;" type="radio" name="money" value="3000">
+          </div>
+        </td>
+        <td>
+          <div class="cho-item" data-money="5000">
+            <p class="mt-20"><span class="f-24">5000</span>元</p>
+
+            <p class="mt-10 cl-red">免费操盘</p>
+            <input style="display: none;" type="radio" name="money" value="5000"/>
+          </div>
+        </td>
+        <td>
+          <div class="cho-item" data-money="10000">
+            <p class="mt-20"><span class="f-24">10000</span>元</p>
+
+            <p class="mt-10 cl-red">免费操盘</p>
+            <input style="display: none;" type="radio" name="money" value="10000"/>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cho-item" data-money="50000">
+            <p class="mt-20"><span class="f-24">5万</span>元</p>
+
+            <p class="mt-10 cl-153">实盘资金</p>
+            <input style="display: none;" type="radio" name="money" value="50000"/>
+          </div>
+        </td>
+        <td>
+          <div class="cho-item" data-money="100000">
+            <p class="mt-20"><span class="f-24">10万</span>元</p>
+
+            <p class="mt-10 cl-153">实盘资金</p>
+            <input style="display: none;" type="radio" name="money" value="100000"/>
+          </div>
+        </td>
+        <td>
+          <div class="cho-item" data-money="200000">
+            <p class="mt-20"><span class="f-24">20万</span>元</p>
+
+            <p class="mt-10 cl-153">实盘资金</p>
+            <input style="display: none;" type="radio" name="money" value="200000"/>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cho-item" data-money="500000">
+            <p class="mt-20"><span class="f-24">50万</span>元</p>
+
+            <p class="mt-10 cl-153">实盘资金</p>
+            <input style="display: none;" type="radio" name="money" value="500000"/>
+          </div>
+        </td>
+        <td>
+          <div class="cho-item" data-money="1000000">
+            <p class="mt-20"><span class="f-24">100万</span>元</p>
+
+            <p class="mt-10 cl-153">实盘资金</p>
+            <input style="display: none;" type="radio" name="money" value="1000000"/>
+          </div>
+        </td>
+        <td>
+          <div class="other-cho-btn">
+            <p class="mt-20 "><span class="f-24 cl-red">其他金额</span></p>
+
+            <p class="mt-10 cl-153 f-14">手动输入</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div class="other-cho">
+      <p class="f-14 cl-153">请输入您需要的实盘资金</p>
+
+      <p><input class="other-cho-inp" name="other-money" type="text"/> <span class="ml-5 f-14">万元</span></p>
+
+      <p class="mt-10"><a class="f-14 other-cho-back" href="javascript:;">返回</a></p>
     </div>
   </div>
+</div>
+<div class="mid-arrow-bg"></div>
+<div class="pull-left ml-20">
+  <div class="title">
+    <p class="f-18">操盘规则</p>
+  </div>
+  <div class="content">
+    <table class="rules">
+      <tr>
+        <td width="35%" class="cl-102">操盘须知</td>
+        <td class="trading-position">投资沪深A股，仓位不限制，盈利全归您</td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">
+          风险保证金
+          <div class="hint-base">
+            <div class="hint-icon">
+            </div>
+            <div class="hint-content">
+              这笔资金用于保证你的交易活动合法性，资金被第三方交易平台或者银行冻结。如果你有不合理交易，不诚信交易，这笔钱就用于赔偿受害方
+            </div>
+          </div>
+        </td>
+        <td>
+          <label class="cl-red f-14">
+            <input type="radio" name="lever" checked="checked" value="1"/>
+            <span class="f-18 bzj-1">300</span> 元
+          </label>
+          <label class="cl-red ml-10 f-14">
+            <input type="radio" name="lever" value="2"/>
+            <span class="f-18 bzj-2">600</span> 元
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">警戒金额
+          <div class="hint-base">
+            <div class="hint-icon">
+            </div>
+            <div class="hint-content">
+              当总操盘资金低于警戒金额以下时，只能平仓不能建仓，需要尽快补充风险保证金，以免低于亏损平仓金额被平仓
+            </div>
+          </div>
+        </td>
+        <td class="cl-red"><span class="f-18 jjje">2,880</span> 元</td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">
+          平仓金额
+          <div class="hint-base">
+            <div class="hint-icon">
+            </div>
+            <div class="hint-content">
+              当总操盘资金低于平仓金额以下时，我们将有权把您的股票进行平仓，为避免平仓发生，请时刻关注风险保证金是否充足
+            </div>
+          </div>
+        </td>
+        <td class="cl-red"><span class="f-18 zsje">2,820</span> 元</td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">服务费</td>
+        <td><span class="f-14 cl-red fwf">免服务费</span><span class="f-14 ml-10 cl-153">按天收取，周末节假日免费</span></td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">开始交易时间</td>
+        <td>
+          <label class="f-14">
+            <input type="radio" name="trade-time" value="0" checked="checked"/>今日
+          </label>
+          <label class="ml-10 f-14">
+            <input type="radio" name="trade-time" value="1"/>下个交易日
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">操盘帐号</td>
+        <td>
+          <label class="f-14">
+            <input type="radio" name="account-type" value="0" checked="checked"/>同花顺
+          </label>
+          <label class="ml-10 f-14">
+            <input type="radio" name="account-type" value="1"/>恒生
+          </label>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+<!-- 确认区域 -->
+<div class="btn-area">
+  <p class="mb-20">
+    <label class="check-base f-14 cl-153"><input class="agree" type="checkbox" name="agree" data-selected="1" checked>我已阅读并同意<a
+        class="f-14 cl-153" href="">《发财金操盘协议》</a><span class="check-hint cl-deepred f-14"
+                                                       style="display: none;">同意后才能继续</span></label>
 
-  <script src="js/jquery-1.11.2.min.js"></script>
-  <script>
-    $(function(){
-      var t = 3;
-      remaintime = setInterval(function(){
-        $("#num").html(--t);
-        if(t == 0){
-          clearInterval(remaintime);
-//          $(".register-success").hide();
-        }
-      }, 1000);
-    });
-  </script>
+  </p>
+  <input type="submit" class="apply-btn" value="申请操盘">
+
+  <div class="apply-btn-disable" style="display: none;">申请操盘</div>
+</div>
+</form>
+
+<!-- 周周发 -->
+<form class="apply-form" id="week-apply" action="" method="POST">
+<input type="hidden" name="apply-money" id="apply-money-week">
+
+<div class="apply clearfix">
+<div class="pull-left">
+  <div class="title ml-30">
+    <p class="f-18">申请资金 <span class="">（1万-100万）</span></p>
+  </div>
+  <div class="content choosen-area">
+    <table class="cho" cellspacing="20">
+      <tr>
+        <td>
+          <div class="cho-item selected">
+            <p class="mt-20"><span class="f-24">1万</span>元</p>
+
+            <p class="mt-10 cl-153">实盘资金</p>
+            <input style="display: none;" type="radio" name="money" value="10000" checked>
+          </div>
+        </td>
+        <td>
+          <div class="cho-item">
+            <p class="mt-20"><span class="f-24">3万</span>元</p>
+
+            <p class="mt-10 cl-153">实盘资金</p>
+            <input style="display: none;" type="radio" name="money" value="30000"/>
+          </div>
+        </td>
+        <td>
+          <div class="cho-item">
+            <p class="mt-20"><span class="f-24">5万</span>元</p>
+
+            <p class="mt-10 cl-153">实盘资金</p>
+            <input style="display: none;" type="radio" name="money" value="50000"/>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cho-item">
+            <p class="mt-20"><span class="f-24">10万</span>元</p>
+
+            <p class="mt-10 cl-153">实盘资金</p>
+            <input style="display: none;" type="radio" name="money" value="100000"/>
+          </div>
+        </td>
+        <td>
+          <div class="cho-item">
+            <p class="mt-20"><span class="f-24">20万</span>元</p>
+
+            <p class="mt-10 cl-153">实盘资金</p>
+            <input style="display: none;" type="radio" name="money" value="200000"/>
+          </div>
+        </td>
+        <td>
+          <div class="cho-item">
+            <p class="mt-20"><span class="f-24">30万</span>元</p>
+
+            <p class="mt-10 cl-153">实盘资金</p>
+            <input style="display: none;" type="radio" name="money" value="300000"/>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cho-item">
+            <p class="mt-20"><span class="f-24">50万</span>元</p>
+
+            <p class="mt-10 cl-153">实盘资金</p>
+            <input style="display: none;" type="radio" name="money" value="500000"/>
+          </div>
+        </td>
+        <td>
+          <div class="cho-item" data-money="1000000">
+            <p class="mt-20"><span class="f-24">100万</span>元</p>
+
+            <p class="mt-10 cl-153">实盘资金</p>
+            <input style="display: none;" type="radio" name="money" value="1000000"/>
+          </div>
+        </td>
+        <td>
+          <div class="other-cho-btn">
+            <p class="mt-20 "><span class="f-24 cl-red">其他金额</span></p>
+
+            <p class="mt-10 cl-153 f-14">手动输入</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div class="other-cho">
+      <p class="f-14 cl-153">请输入您需要的实盘资金</p>
+
+      <p><input class="other-cho-inp" name="other-money" type="text"/> <span class="ml-5 f-14">万元</span></p>
+
+      <p class="mt-10"><a class="f-14 other-cho-back" href="javascript:;">返回</a></p>
+    </div>
+  </div>
+</div>
+<div class="mid-arrow-bg"></div>
+<div class="pull-left ml-20">
+  <div class="title">
+    <p class="f-18">操盘规则</p>
+  </div>
+  <div class="content">
+    <table class="rules">
+      <tr>
+        <td width="35%" class="cl-102">操盘须知</td>
+        <td class="trading-position">投资沪深A股，仓位不限制，盈利全归您</td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">操盘总额</td>
+        <td class="cl-red"><span class="f-18 cpje">12,000</span> 元</td>
+      </tr>
+      <tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">
+          风险保证金
+          <div class="hint-base">
+            <div class="hint-icon">
+            </div>
+            <div class="hint-content">
+              这笔资金用于保证你的交易活动合法性，资金被第三方交易平台或者银行冻结。如果你有不合理交易，不诚信交易，这笔钱就用于赔偿受害方
+            </div>
+          </div>
+        </td>
+        <td>
+          <label class="cl-red f-14">
+            <span class="f-18 bzj">2,000</span> 元
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">
+          警戒金额
+          <div class="hint-base">
+            <div class="hint-icon">
+            </div>
+            <div class="hint-content">
+              当总操盘资金低于警戒金额以下时，只能平仓不能建仓，需要尽快补充风险保证金，以免低于亏损平仓金额被平仓
+            </div>
+          </div>
+        </td>
+        <td class="cl-red"><span class="f-18 jjje">11,000</span> 元</td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">
+          平仓金额
+          <div class="hint-base">
+            <div class="hint-icon">
+            </div>
+            <div class="hint-content">
+              当总操盘资金低于平仓金额以下时，我们将有权把您的股票进行平仓，为避免平仓发生，请时刻关注风险保证金是否充足
+            </div>
+          </div>
+        </td>
+        <td class="cl-red"><span class="f-18 zsje">10,700</span> 元</td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">服务费</td>
+        <td><span class="f-14 cl-red fwf">完全免费</span></td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">使用时长</td>
+        <td><span class="f-18 cl-red">5</span>个交易日</td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">开始交易时间</td>
+        <td>
+          <label class="f-14">
+            <input type="radio" name="trade-time" value="0" checked="checked"/>今日
+          </label>
+          <label class="ml-10 f-14">
+            <input type="radio" name="trade-time" value="1"/>下个交易日
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">操盘帐号</td>
+        <td>
+          <label class="f-14">
+            <input type="radio" name="account-type" value="0" checked="checked"/>同花顺
+          </label>
+          <label class="ml-10 f-14">
+            <input type="radio" name="account-type" value="1"/>恒生
+          </label>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+<!-- 确认区域 -->
+<div class="btn-area">
+  <p class="mb-20"><label class="check-base f-14 cl-153"><input class="agree" type="checkbox" name="agree"
+                                                                data-selected="1" checked>我已阅读并同意<a
+      class="f-14 cl-153" href="">《发财金操盘协议》</a><span class="check-hint cl-deepred f-14"
+                                                     style="display: none;">同意后才能继续</span></label></p>
+  <input type="submit" class="apply-btn" value="申请操盘">
+
+  <div class="apply-btn-disable" style="display: none;">申请操盘</div>
+</div>
+</form>
+
+<!-- 月月发 -->
+<form class="apply-form" id="month-apply" action="" method="POST">
+<input type="hidden" name="apply-money" id="apply-money-month">
+
+<div class="clearfix">
+<div class="pull-left">
+  <div class="title ml-30">
+    <p class="f-18">申请资金 <span class="">（1-5倍）</span></p>
+  </div>
+  <div class="content choosen-area">
+    <div class="base-inp">
+      <p class="f-14">投入本金（3千-500万）</p>
+
+      <p><input id="month-inp" class="month-inp" name="month-basemoney" type="text"> <span class="f-16">元</span></p>
+    </div>
+    <div class="month-cho">
+      <p class="ml-20 f-16 cl-153">您可以申请</p>
+
+      <div class="gray-box">
+        <p class="f-14 cl-153">请先输入您的投资本金</p>
+
+        <p class="f-14 cl-153">根据您的本金可申请 1~5倍的资金</p>
+      </div>
+      <table cellspacing="20">
+        <tr>
+          <td>
+            <div class="cho-item selected" data-lever="1" id="l1">
+              <p class="mt-15 mb-5"><span class="f-24" id="lever1">0</span>元</p>
+
+              <p class="special clearfix"><span class="special-mark">优惠</span><span class="cl-red"><span class="bond"
+                                                                                                         id="bond1_rate">0</span> 分/月</span>
+              </p>
+
+              <p class="mt-5 cl-153">实盘资金</p>
+              <input style="display: none;" type="radio" name="money" value="10000" checked>
+            </div>
+          </td>
+          <td>
+            <div class="cho-item" data-lever="2" id="l2">
+              <p class="mt-15 mb-5"><span class="f-24" id="lever2">0</span>元</p>
+
+              <p class="special clearfix"><span class="special-mark">优惠</span><span class="cl-red"><span class="bond"
+                                                                                                         id="bond2_rate">0</span> 分/月</span>
+              </p>
+
+              <p class="mt-5 cl-153">实盘资金</p>
+              <input style="display: none;" type="radio" name="money" value="30000"/>
+            </div>
+          </td>
+          <td>
+            <div class="cho-item" data-lever="3" id="l3">
+              <p class="mt-15 mb-5"><span class="f-24" id="lever3">0</span>元</p>
+
+              <p class="special clearfix"><span class="special-mark">优惠</span><span class="cl-red"><span class="bond"
+                                                                                                         id="bond3_rate">0</span> 分/月</span>
+              </p>
+
+              <p class="mt-5 cl-153">实盘资金</p>
+              <input style="display: none;" type="radio" name="money" value="50000"/>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cho-item" data-lever="4" id="l4">
+              <p class="mt-15 mb-5"><span class="f-24" id="lever4">0</span>元</p>
+
+              <p class="special clearfix"><span class="special-mark">优惠</span><span class="cl-red"><span class="bond"
+                                                                                                         id="bond4_rate">0</span> 分/月</span>
+              </p>
+
+              <p class="mt-5 cl-153">实盘资金</p>
+              <input style="display: none;" type="radio" name="money" value="100000"/>
+            </div>
+          </td>
+          <td>
+            <div class="cho-item" data-lever="5" id="l5">
+              <p class="mt-15 mb-5"><span class="f-24" id="lever5">0</span>元</p>
+
+              <p class="special clearfix"><span class="cl-red"><span class="bond" id="bond5_rate">0</span> 分/月</span>
+              </p>
+
+              <p class="mt-5 cl-153">实盘资金</p>
+              <input style="display: none;" type="radio" name="money" value="200000"/>
+            </div>
+          </td>
+          <td>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</div>
+<div class="mid-arrow-bg"></div>
+<div class="pull-left ml-20">
+  <div class="title">
+    <p class="f-18">操盘规则</p>
+  </div>
+  <div class="content">
+    <table class="rules">
+      <tr>
+        <td width="35%" class="cl-102">操盘须知</td>
+        <td class="trading-position">投资沪深A股，仓位不限制，盈利全归您</td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">操盘总额</td>
+        <td class="cl-red"><span class="f-18 cpze" id="orange1">0</span> 元<span id="total_f63"
+                                                                                class="cl-153 ml-10">0元</span></td>
+      </tr>
+      <tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">
+          警戒金额
+          <div class="hint-base">
+            <div class="hint-icon">
+            </div>
+            <div class="hint-content">
+              当总操盘资金低于警戒金额以下时，只能平仓不能建仓，需要尽快补充风险保证金，以免低于亏损平仓金额被平仓
+            </div>
+          </div>
+        </td>
+        <td class="cl-red"><span id="jj" class="f-18 jjje">0</span> 元</td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">
+          平仓金额
+          <div class="hint-base">
+            <div class="hint-icon">
+            </div>
+            <div class="hint-content">
+              当总操盘资金低于平仓金额以下时，我们将有权把您的股票进行平仓，为避免平仓发生，请时刻关注风险保证金是否充足
+            </div>
+          </div>
+        </td>
+        <td class="cl-red"><span class="f-18 zsje" id="pc">0</span> 元</td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">
+          使用时长
+          <div class="hint-base">
+            <div class="hint-icon">
+            </div>
+            <div class="hint-content">
+              按自然月计算，包含各类节假日
+              <br>
+              如需提前终止操盘，且还有未支付服务费的剩余月份，则需罚一个月服务费。如申请6个月，做了2个月提前终止操盘，罚一个月服务费。
+            </div>
+          </div>
+        </td>
+        <td>
+          <select class="cycle" name="cycle" id="cycle">
+            <option value="1">1个月</option>
+            <option value="2">2个月</option>
+            <option value="3">3个月</option>
+            <option value="4">4个月</option>
+            <option value="5">5个月</option>
+            <option value="6">6个月</option>
+          </select>
+          <span class="f-14 cl-153 ml-10">借款多、期限长、越优惠</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">
+          服务费
+          <div class="hint-base">
+            <div class="hint-icon">
+            </div>
+            <div class="hint-content">
+              每月月初支付服务费，如1月8日申请，1月8日支付第1个月服务费，2月9日支付第2个月服务费，以此类推。
+            </div>
+          </div>
+        </td>
+        <td>
+          <span class="new_fwf cl-red f-18">0</span>
+          <span class="new_fwf1 f-14">分/每月</span>
+          <span class="ml-10 f-14 cl-153">每月</span>
+          <span class="f-14 cl-red" id="fwf">0</span>
+          <span class="f-14 cl-153">元</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">
+          开始交易时间
+          <div class="hint-base">
+            <div class="hint-icon">
+            </div>
+            <div class="hint-content">
+              申请资金在100万以上时，通常选择下个交易日（资金在下个交易日到账）
+            </div>
+          </div>
+        </td>
+        <td>
+          <label class="f-14 date1">
+            <input type="radio" name="trade-time" value="0" checked="checked"/>今日
+          </label>
+          <label class="ml-10 f-14 date2">
+            <input type="radio" name="trade-time" value="1"/>下个交易日
+          </label>
+        </td>
+      </tr>
+      <tr>
+        <td class="dotted-line"></td>
+        <td class="dotted-line"></td>
+      </tr>
+      <tr>
+        <td class="cl-102">操盘帐号</td>
+        <td>
+          <label class="f-14">
+            <input type="radio" name="account-type" value="0" checked="checked"/>同花顺
+          </label>
+          <label class="ml-10 f-14">
+            <input type="radio" name="account-type" value="1"/>恒生
+          </label>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+</div>
+<!-- 确认区域 -->
+<div class="btn-area">
+  <p class="mb-20"><label class="check-base f-14 cl-153"><input class="agree" type="checkbox" name="agree"
+                                                                data-selected="1" checked>我已阅读并同意<a class="f-14 cl-153"
+                                                                                                    href="">《发财金操盘协议》</a><span
+      class="check-hint cl-deepred f-14" style="display: none;">同意后才能继续</span>
+  </label></p>
+  <input type="submit" class="apply-btn" value="申请操盘">
+
+  <div class="apply-btn-disable" style="display: none;">申请操盘</div>
+</div>
+</form>
+
+</div>
+</div>
+<!-- 申请操盘 结束 -->
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/fcj.js"></script>
+<script type="text/javascript" src="js/month.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
