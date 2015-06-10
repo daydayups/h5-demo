@@ -50,7 +50,7 @@
           <td>
             <div class="inp-x">
               <span class="icon-phone"></span>
-              <input class="ml-40" type="text" name="phone-number" />
+              <input id="log-phone" class="ml-40" type="text" name="phone-number" />
             </div>
           </td>
           <td><span class="cl-red ml-10">手机号错误</span></td>
@@ -60,7 +60,7 @@
           <td>
             <div class="inp-x">
               <span class="icon-password"></span>
-              <input class="ml-40" type="password" name="password" />
+              <input id="log-password" class="ml-40" type="password" name="password" />
             </div>
           </td>
           <td></td>
@@ -173,9 +173,22 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-  <script type="text/javascript" src="js/fcj.js"></script>
-  <script type="text/javascript" src="js/month.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/fcj.js"></script>
+<script>
+$(function () {
+  $("#log-phone").setfocus();
+  $(".inp-x input").focusin(function () {
+    $(this).parents(".inp-x").css({border:"1px solid #6c88c4"});
+  }).focusout(function () {
+    var value = $(this).val();
+    if(value) {
+      $(this).parents(".inp-x").css({border:"1px solid #dddddd"});
+    } else {
+      $(this).parents(".inp-x").css({border:"1px solid #ff3232"});
+    }
+  });
+});
+</script>
 </body>
 </html>

@@ -18,7 +18,7 @@
 </head>
 <body>
   <!-- 按钮区域 -->
-  <div class="btn-box">
+  <div class="btn-box clearfix">
     <!-- 交易帐号 -->
     <button class="btn-account btn-micro cl-red">帐号密码</button>
     <!-- 交易帐号 -->
@@ -42,31 +42,43 @@
 
     <!-- 加配 -->
     <button class="btn-increase btn-micro cl-red">加配</button>
+
     <!-- 减配 -->
     <button class="btn-reduce simple-btn cl-153 ml-30">[减配]</button>
 
     <br/>
     <!-- 绑定银行卡验证 -->
-    <button class="btn-bank-verify btn-small-gray cl-red">绑定银行卡验证</button>
+    <button class="btn-bank-verify pull-left btn-small-gray cl-red">绑定银行卡验证</button>
 
     <!-- 修改登录密码 -->
-    <button class="modify-password btn-small-gray cl-red ml-30">修改登录密码</button>
+    <button class="modify-password pull-left btn-small-gray cl-red ml-30">修改登录密码</button>
 
     <!-- 添加邮箱 -->
-    <button class="btn-email btn-small-gray cl-red ml-30">添加邮箱</button>
+    <button class="btn-email pull-left btn-small-gray cl-red ml-30">添加邮箱</button>
 
     <!-- 添加QQ -->
-    <button class="btn-addQQ btn-small-gray cl-red ml-30">添加QQ</button>
+    <button class="btn-addQQ pull-left btn-small-gray cl-red ml-30">添加QQ</button>
 
     <!-- 添加微信 -->
-    <button class="btn-addweixin btn-small-gray cl-red ml-30">添加微信</button>
+    <button class="btn-addweixin pull-left btn-small-gray cl-red ml-30">添加微信</button>
 
     <br/>
     <!-- 实名认证 -->
-    <button class="btn-identity-verify btn-small-gray cl-red">实名认证</button>
+    <button class="btn-identity-verify pull-left btn-small-gray cl-red">实名认证</button>
 
     <!-- 排队提示 -->
-    <button class="btn-waiting-hint btn-small-gray cl-red ml-30">排队提示</button>
+    <button class="btn-waiting-hint pull-left btn-small-gray cl-red ml-30">排队提示</button>
+
+    <br>
+    <!-- 加配 -->
+    <button class="btn-increase2 btn-micro cl-red">按天加配2</button>
+    <!-- 减配 -->
+    <button class="btn-reduce2 simple-btn cl-153 ml-30">[按天减配2]</button>
+
+    <!-- 加配 -->
+    <button class="btn-month-increase2 btn-micro cl-red ml-30">按月加配2</button>
+    <!-- 减配 -->
+    <button class="btn-month-reduce2 simple-btn cl-153 ml-30">[按月减配2]</button>
 
   </div>
   <!-- 按钮区域 结束 -->
@@ -426,6 +438,7 @@
     </div>
       <!-- 结算3 结算 提示 结束 -->
 
+
     <!-- 加配资金 -->
     <div id="pop-increase" class="pop-window">
       <div class="window-title clearfix">
@@ -493,7 +506,6 @@
       </div>
     </div>
     <!-- 加配资金 提示  结束 -->
-
 
     <!-- 减配资金 -->
     <div id="pop-reduce" class="pop-window">
@@ -894,6 +906,223 @@
     </div>
     <!-- 排队提示 成功  结束 -->
 
+
+    <!-- 加配资金2 -->
+    <div id="pop-increase2" class="pop-window w600">
+      <div class="window-title clearfix">
+        <span class="f-14">加配资金</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="pop-increase-reduce-table ml-5" cellspacing="0" width="100%">
+          <tr>
+            <td align="center">
+              <label for="block-increase-1" data-money="1" class="chosen-blocky selected">
+                <span class="chosen-txt f-14">+1万元</span>
+                <input id="block-increase-1" type="radio" name="money" value="1" checked style="display: none;">
+              </label>
+            <td align="center">
+              <label for="block-increase-2" data-money="2" class="chosen-blocky">
+                <span class="chosen-txt f-14">+2万元</span>
+                <input id="block-increase-2" type="radio" name="money" value="2" style="display: none;">
+              </label>
+            <td align="center">
+              <label for="block-increase-3" data-money="3" class="chosen-blocky">
+                <span class="chosen-txt f-14">+3万元</span>
+                <input id="block-increase-3" type="radio" name="money" value="3" style="display: none;">
+              </label>
+            <td align="center">
+              <label for="block-increase-5" data-money="5" class="chosen-blocky">
+                <span class="chosen-txt f-14">+5万元</span>
+                <input id="block-increase-5" type="radio" name="money" value="5" style="display: none;">
+              </label>
+          <tr><td colspan="4"><div class="mt-15"></div>
+          <tr>
+            <td align="center">
+              <label for="block-increase-10" data-money="10" class="chosen-blocky">
+                <span class="chosen-txt f-14">+10万元</span>
+                <input id="block-increase-10" type="radio" name="money" value="10" style="display: none;">
+              </label>
+            <td align="center">
+              <label for="block-increase-20" data-money="2" class="chosen-blocky">
+                <span class="chosen-txt f-14">+20万元</span>
+                <input id="block-increase-20" type="radio" name="money" value="20" style="display: none;">
+              </label>
+            <td align="center">
+              <label for="block-increase-30" data-money="30" class="chosen-blocky">
+                <span class="chosen-txt f-14">+30万元</span>
+                <input id="block-increase-30" type="radio" name="money" value="30" style="display: none;">
+              </label>
+            <td align="center">
+              <input class="pop-inpx f-14" type="text" name="other-money" placeholder="手动输入">
+          <tr><td colspan="4"><div class="mt-15"></div>
+          <tr>
+            <td class="bg-248" align="right"><span class="cl-153 mr-10">追加保证金</span>
+            <td class="bg-248" align="left"><span class="f-14 ml-10">1000</span><span class="f-14 ml-5">元</span>
+            <td class="bg-248" align="right"><span class="cl-153 mr-10">追加服务费</span>
+            <td class="bg-248" align="left"><span class="f-14 ml-10">19.9</span><span class="f-14 ml-5">元</span>
+          <tr>
+            <td align="right" colspan="3">
+              <p class="mt-10"><span class="f-14">共计付款：</span><span class="f-18 cl-red">1019.90</span><span class="f-18 cl-red ml-5">元</span></p>
+            <td>
+              <div class="mt-10">
+                <button class="btn-confirm">确认支付</button>
+              </div>
+        </table>
+      </div>
+    </div>
+    <!-- 加配资金2 结束 -->
+    <!-- 减配资金2 -->
+    <div id="pop-reduce2" class="pop-window w600">
+      <div class="window-title clearfix">
+        <span class="f-14">减配资金</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="pop-increase-reduce-table ml-5" cellspacing="0" width="100%">
+          <tr>
+            <td align="center">
+              <label for="block-resuce-1" data-money="1" class="chosen-blocky selected">
+                <span class="chosen-txt f-14">-1万元</span>
+                <input id="block-resuce-1" type="radio" name="money" value="1" checked style="display: none;">
+              </label>
+            <td align="center">
+              <label for="block-resuce-2" data-money="2" class="chosen-blocky">
+                <span class="chosen-txt f-14">-2万元</span>
+                <input id="block-resuce-2" type="radio" name="money" value="2" style="display: none;">
+              </label>
+            <td align="center">
+              <label for="block-resuce-3" data-money="3" class="chosen-blocky">
+                <span class="chosen-txt f-14">-3万元</span>
+                <input id="block-resuce-3" type="radio" name="money" value="3" style="display: none;">
+              </label>
+            <td align="center">
+              <label for="block-resuce-5" data-money="5" class="chosen-blocky">
+                <span class="chosen-txt f-14">-5万元</span>
+                <input id="block-resuce-5" type="radio" name="money" value="5" style="display: none;">
+              </label>
+          <tr><td colspan="4"><div class="mt-15"></div>
+          <tr>
+            <td align="center">
+              <label for="block-resuce-10" data-money="10" class="chosen-blocky">
+                <span class="chosen-txt f-14">-10万元</span>
+                <input id="block-resuce-10" type="radio" name="money" value="10" style="display: none;">
+              </label>
+            <td align="center">
+              <label for="block-resuce-20" data-money="2" class="chosen-blocky">
+                <span class="chosen-txt f-14">-20万元</span>
+                <input id="block-resuce-20" type="radio" name="money" value="20" style="display: none;">
+              </label>
+            <td align="center">
+              <label for="block-resuce-30" data-money="30" class="chosen-blocky">
+                <span class="chosen-txt f-14">-30万元</span>
+                <input id="block-resuce-30" type="radio" name="money" value="30" style="display: none;">
+              </label>
+            <td align="center">
+              <input class="pop-inpx f-14" type="text" name="other-money" placeholder="手动输入">
+          <tr><td colspan="4"><div class="mt-15"></div>
+          <tr>
+            <td class="bg-248" align="right"><span class="cl-153 mr-10">返还保证金</span>
+            <td class="bg-248" align="left"><span class="f-14 ml-10">1000</span><span class="f-14 ml-5">元</span>
+            <td class="bg-248" align="right"><span class="cl-153 mr-10">减少服务费</span>
+            <td class="bg-248" align="left"><span class="f-14 ml-10">19.9</span><span class="f-14 ml-5">元</span>
+          <tr>
+            <td align="right" colspan="3">
+            <td>
+              <div class="mt-10">
+                <button class="btn-confirm">确认减资</button>
+              </div>
+        </table>
+      </div>
+    </div>
+    <!-- 减配资金2 结束 -->
+
+    <!-- 按月加配资金2 -->
+    <div id="pop-month-increase2" class="pop-window w600">
+      <div class="window-title clearfix">
+        <span class="f-14 cl-red">1</span>
+        <span class="f-14 ml-5">倍加配</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="pop-increase-reduce-table ml-5" cellspacing="0" width="100%">
+          <tr>
+            <td colspan="4" align="left">
+              <span class="f-14 cl-153">投入本金：</span>
+              <input class="pop-inpx f-14 w150 pl-10 ml-5" type="text">
+              <span class="f-14 cl-153 ml-5">元</span>
+              <span class="cl-153 ml-10">最少</span>
+              <span class="cl-153">3</span>
+              <span class="cl-153">千，最多</span>
+              <span class="cl-153">378.4</span>
+              <span class="cl-153">万</span>
+
+          <tr><td colspan="4"><div class="mt-15"></div>
+          <tr>
+            <td class="bg-248" align="right"><span class="cl-153 mr-10">追加实盘金</span>
+            <td class="bg-248" align="left"><span class="f-14 cl-red ml-10">2</span><span class="f-14 ml-5">万元</span>
+            <td class="bg-248" align="right"><span class="cl-153 mr-10">追加后实盘总资金</span>
+            <td class="bg-248" align="left"><span class="f-14 ml-10">245.4</span><span class="f-14 ml-5">万元</span>
+          <tr>
+            <td align="right"><span class="cl-153 mr-10">追加服务费</span>
+            <td align="left"><span class="f-14 ml-10">40</span><span class="f-14 ml-5">元</span>
+            <td align="right"><span class="cl-153 mr-10">追加后止损金额</span>
+            <td align="left"><span class="f-14 ml-10">1,312,890</span><span class="f-14 ml-5">元</span>
+          <tr>
+            <td align="right" colspan="3">
+              <p class="mt-10"><span class="f-14">共计付款：</span><span class="f-18 cl-red">10040.0</span><span class="f-18 cl-red ml-5">元</span></p>
+            <td>
+              <div class="mt-10">
+                <button class="btn-confirm">确认支付</button>
+              </div>
+        </table>
+
+      </div>
+    </div>
+    <!-- 按月加配资金2 结束 -->
+
+    <!-- 按月减配资金2 -->
+    <div id="pop-month-reduce2" class="pop-window w600">
+      <div class="window-title clearfix">
+        <span class="f-14 cl-red">1</span>
+        <span class="f-14 ml-5">倍减配</span>
+        <span class="btn-close"></span>
+      </div>
+      <div class="window-body">
+        <table class="pop-increase-reduce-table ml-5" cellspacing="0" width="100%">
+          <tr>
+            <td colspan="4" align="left">
+              <span class="f-14 cl-153">减少本金：</span>
+              <input class="pop-inpx f-14 w150 pl-10 ml-5" type="text">
+              <span class="f-14 cl-153 ml-5">元</span>
+              <span class="cl-153 ml-10">最少</span>
+              <span class="cl-153">3</span>
+              <span class="cl-153">千，最多</span>
+              <span class="cl-153">121.4</span>
+              <span class="cl-153">万</span>
+
+          <tr><td colspan="4"><div class="mt-15"></div>
+          <tr>
+            <td class="bg-248" align="right"><span class="cl-153 mr-10">减少实盘金</span>
+            <td class="bg-248" align="left"><span class="f-14 cl-red ml-10">2</span><span class="f-14 ml-5">万元</span>
+            <td class="bg-248" align="right"><span class="cl-153 mr-10">减少后实盘总资金</span>
+            <td class="bg-248" align="left"><span class="f-14 ml-10">124.4</span><span class="f-14 ml-5">万元</span>
+          <tr>
+            <td align="right"><span class="cl-153 mr-10">月底减少服务费</span>
+            <td align="left"><span class="f-14 ml-10">40</span><span class="f-14 ml-5">元</span>
+            <td align="right"><span class="cl-153 mr-10">减少后止损金额</span>
+            <td align="left"><span class="f-14 ml-10">1,312,890</span><span class="f-14 ml-5">元</span>
+          <tr>
+            <td align="right" colspan="3">
+            <td>
+              <div class="mt-10">
+                <button class="btn-confirm">确认减资</button>
+              </div>
+        </table>
+      </div>
+    </div>
+    <!-- 按月减配资金2 结束 -->
+
   </div>
   <!-- 弹窗区域 结束 -->
 
@@ -1047,6 +1276,7 @@
           });
         }
       });
+
       $(".btn-reduce").click(function () {
         $("#modal").show().fadeTo(200, 0.2);
         $.fcj.popup("#pop-reduce");
@@ -1130,6 +1360,33 @@
       $(".btn-waiting-hint").click(function () {
         $("#modal").show().fadeTo(200, 0.2);
         $.fcj.popup("#pop-waiting-hint");
+      });
+
+      /* 增配选中 */
+      $(".chosen-blocky").click(function () {
+        $(this).parents(".pop-window").find(".chosen-blocky").removeClass("selected");
+        $(this).addClass("selected");
+      });
+
+
+      $(".btn-increase2").click(function () {
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-increase2");
+      });
+
+      $(".btn-reduce2").click(function () {
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-reduce2");
+      });
+
+      $(".btn-month-increase2").click(function () {
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-month-increase2");
+      });
+
+      $(".btn-month-reduce2").click(function () {
+        $("#modal").show().fadeTo(200, 0.2);
+        $.fcj.popup("#pop-month-reduce2");
       });
 
       /* 关闭操作 */

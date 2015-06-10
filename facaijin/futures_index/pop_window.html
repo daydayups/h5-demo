@@ -117,17 +117,17 @@
             <td class="bg-248" align="left">
           <tr>
             <td colspan="2">
-              <div class="chosen-blockx selected mt-20 mr-10">
-                <input type="radio" name="trading-type" style="display: none;" checked>
+              <label for="buying-type-one" class="chosen-blockx selected mt-20 mr-10">
+                <input id="buying-type-one" type="radio" name="buying-type" value="buy-now" style="display: none;" checked>
                 <span class="chosen-txt ml-30">即时买入</span>
-              </div>
+              </label>
             <td colspan="2">
-              <div class="chosen-blockx mt-20 ml-10">
-                <input type="radio" name="trading-type" style="display: none;">
+              <label for="buying-type-two" class="chosen-blockx mt-20 ml-10">
+                <input id="buying-type-two" type="radio" name="buying-type" value="buy-price" style="display: none;">
                 <span class="chosen-txt ml-30">价格触发</span>
                 <input class="inp-tiny" type="text" placeholder="输入价格">
                 <span class="chosen-txt ml-5">时，即时买入</span>
-              </div>
+              </label>
           <tr>
             <td colspan="4">
               <div class="brd-solid-light mb-20 mt-20"></div>
@@ -188,17 +188,17 @@
             <td class="bg-248" align="left"><span class="cl-red">120.00</span><span class="cl-153">（仅供参考）</span>
           <tr>
             <td colspan="2">
-              <div class="chosen-blockx selected mt-20 mr-10">
-                <input type="radio" name="trading-type" style="display: none;" checked>
+              <label for="selling-type-one" class="chosen-blockx selected mt-20 mr-10">
+                <input id="selling-type-one" type="radio" name="buying-type" style="display: none;" checked>
                 <span class="chosen-txt ml-30">即时买入</span>
-              </div>
+              </label>
             <td colspan="2">
-              <div class="chosen-blockx mt-20 ml-10">
-                <input type="radio" name="trading-type" style="display: none;">
+              <label for="selling-type-two" class="chosen-blockx mt-20 ml-10">
+                <input id="selling-type-two" type="radio" name="buying-type" style="display: none;">
                 <span class="chosen-txt ml-30">价格触发</span>
                 <input class="inp-tiny" type="text" placeholder="输入价格">
                 <span class="chosen-txt ml-5">时，即时买入</span>
-              </div>
+              </label>
           <tr>
             <td colspan="2" align="right">
               <button class="btn-confirm mt-20">立即买入</button>
@@ -471,8 +471,8 @@
       /* 订单确认 选择买入模式 */
       $(".chosen-blockx").click(function () {
         var $chosen = $(this).parents("tr").find(".chosen-blockx");
-        $chosen.removeClass("selected").find("input").attr("checked",false);
-        $(this).addClass("selected").find("input").attr("checked","checked");
+        $chosen.removeClass("selected");
+        $(this).addClass("selected");
       });
 
       /* 关闭操作 */

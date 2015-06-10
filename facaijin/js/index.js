@@ -291,7 +291,7 @@ $(function(){
           }
       })*/
   }
-  $(".other-cho-inp").keyup(function(){
+  $("#week-apply .other-cho-inp, #day-apply .other-cho-inp").keyup(function(){
       var s= $(this).val();
       reg = /\./g;
       if( s=='' || s>=1 && s<=100 && !reg.test(s) ){

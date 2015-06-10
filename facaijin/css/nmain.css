@@ -200,6 +200,18 @@ img {
 .mb-50 {
   margin-bottom: 50px;
 }
+.pt-10 {
+  padding-top: 10px;
+}
+.pb-10 {
+  padding-bottom: 10px;
+}
+.pl-10 {
+  padding-left: 10px;
+}
+.pr-10 {
+  padding-right: 10px;
+}
 .pt-20 {
   padding-top: 20px;
 }
@@ -551,6 +563,7 @@ img {
 }
 .apply .cho-item {
   cursor: pointer;
+  display: block;
   width: 118px;
   height: 98px;
   text-align: center;
@@ -559,6 +572,7 @@ img {
 }
 .apply .other-cho-btn {
   cursor: pointer;
+  display: block;
   width: 120px;
   height: 100px;
   text-align: center;
@@ -609,6 +623,7 @@ img {
 .trading-position {
   /* 仅用来js改变仓位提示信息 */
   position: relative;
+  line-height: 20px;
 }
 
 .rules {
@@ -991,19 +1006,24 @@ span.sort-icon.sort-icon-hover {
 .news .panel-two ul {
   padding: 0;
 }
-.news .panel-two ul {
-  list-style-type: disc;
-  z-index: 2;
+.news .panel-two li {
+  /*list-style-type: disc;*/
   color:#cccccc;
   padding-left: 15px;
   font-size: 16px;
+  background: url(../images/list_disc.png) no-repeat 0 12px;
+}
+.news .panel-two ul a {
+  width: 220px;
+  overflow: hidden;
+  text-overflow:ellipsis;
 }
 .news li {
   line-height: 28px;
 }
-.news .notice p {
-  width: 210px;
-  /*overflow: hidden;*/
+.news .notice a {
+  /*width: 210px;
+  overflow: hidden;*/
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -1734,6 +1754,7 @@ span.sort-icon.sort-icon-hover {
   background-color: #eeeeee;
   border: 1px solid #eeeeee;
   color: #999999;
+  display: block;
   width: 112px;
   text-align: center;
   line-height: 30px;
@@ -2542,10 +2563,10 @@ textarea {
   border: 1px solid #cc0000;
 }
 .w120 {
-  width: 120px;
+  width: 120px !important;
 }
 .w150 {
-  width: 150px;
+  width: 150px !important;
 }
 .w240 {
   width: 240px;
@@ -3123,9 +3144,33 @@ img.verify-img {
   width: 450px;
 }
 /* 自定义 radio 选择框 */
+.chosen-blockx {
+  background: url(../images/futures_index/chosen_point.png) no-repeat 10px 12px;
+  border: 2px solid #dddddd;
+  display: block;
+  _height:36px;
+  line-height: 36px;
+  text-align: left;
+}
+.chosen-blockx:hover {
+  border: 2px solid #ea4040;
+}
+.chosen-blockx.selected {
+  background: url(../images/futures_index/chosen_point_selected.png) no-repeat 10px 12px;
+  border: 2px solid #ea4040;
+  _height:36px;
+  line-height: 36px;
+  text-align: left;
+}
+.chosen-blockx.selected .chosen-txt {
+  color: #df0000;
+  _text-align: center;
+}
+
 .chosen-block {
   border: 2px solid #dddddd;
   cursor: pointer;
+  display: block;
   line-height: 36px;
   _height: 36px;
   text-align: center;
@@ -3137,7 +3182,6 @@ img.verify-img {
 .chosen-block.selected {
   border: 2px solid #ea4040;
   background: url(../images/tickx.png) no-repeat 116px 15px;
-  _background-image: none;
 }
 .chosen-block.selected .chosen-txt {
   color: #df0000;
@@ -3204,27 +3248,7 @@ img.verify-img {
   line-height: 24px;
   text-align: left;
 }
-.chosen-blockx {
-  background: url(../images/futures_index/chosen_point.png) no-repeat 10px 12px;
-  border: 2px solid #dddddd;
-  _height:36px;
-  line-height: 36px;
-  text-align: left;
-}
-.chosen-blockx:hover {
-  border: 2px solid #ea4040;
-}
-.chosen-blockx.selected {
-  background: url(../images/futures_index/chosen_point_selected.png) no-repeat 10px 12px;
-  border: 2px solid #ea4040;
-  _height:36px;
-  line-height: 36px;
-  text-align: left;
-}
-.chosen-blockx.selected .chosen-txt {
-  color: #df0000;
-  _text-align: center;
-}
+
 .w580 {
   width: 580px;
 }
@@ -3539,4 +3563,41 @@ img.verify-img {
 .success-info {
   padding: 50px 0;
   text-align: center;
+}
+
+/* 期货申请 */
+#futures-index-apply .rules tr {
+  line-height: 55px;
+}
+
+/* 弹窗增减配 */
+.pop-inpx {
+  border: 1px solid #dddddd;
+  width: 111px;
+  padding-left: 10px;
+  line-height: 38px;
+  _height: 38px;
+  font-size: 14px;
+}
+.chosen-blocky {
+  border: 2px solid #dddddd;
+  cursor: pointer;
+  display: block;
+  line-height: 36px;
+  _height: 36px;
+  text-align: center;
+  width: 120px;
+}
+.chosen-blocky:hover {
+  border: 2px solid #ea4040;
+}
+.chosen-blocky.selected {
+  border: 2px solid #ea4040;
+  background: url(../images/tickx.png) no-repeat 99px 15px;
+}
+.chosen-blocky.selected .chosen-txt {
+  color: #df0000;
+}
+.pop-increase-reduce-table td {
+  line-height: 50px;
 }

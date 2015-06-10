@@ -20,7 +20,14 @@ $.fn.setfocus = function(){
     }, 0);
   });
 };
-
+$.extend($,{
+  formatMoney : function(num, n) {
+    num = String(num.toFixed(n?n:2));
+    var re = /(-?\d+)(\d{3})/;
+    while(re.test(num)) num = num.replace(re,"$1,$2")
+    return n? num:num.replace(/^([0-9,]+\.[1-9])0$/,"$1").replace(/^([0-9,]+)\.00$/,"$1");
+  }
+});
 //需要 Jquery依赖
 ;(function(window, $, undefined) {
   $.fcj = {
