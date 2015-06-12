@@ -2574,6 +2574,9 @@ textarea {
 .w280 {
   width: 280px;
 }
+.w250 {
+  width: 250px !important;
+}
 .simple-blue-btn {
   cursor: pointer;
   color: #6c88c4;
@@ -3600,4 +3603,20 @@ img.verify-img {
 }
 .pop-increase-reduce-table td {
   line-height: 50px;
+}
+.bank-num-zoom-base {
+  position: relative;
+}
+.bank-num-zoom {
+  background-color: #fafa89;
+  display: none;
+  width: 340px;
+  padding-left: 20px;
+  position: absolute;
+  top: -46px;
+  left: -1px;
+  line-height: 45px;
+  height: 45px;
+  overflow: hidden;
+  z-index: 1;
 }

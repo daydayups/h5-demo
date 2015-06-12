@@ -155,9 +155,10 @@
             <tr>
               <td width="10%" align="right"><span class="f-14">卡 号</span></td>
               <td>
-                <div class="inp-box">
-                  <input type="text" class="bank-num f-20" >
-                </div>
+                <div class="inp-box bank-num-zoom-base">
+                <input type="text" class="bank-num w250 f-16" >
+                <span class="bank-num-zoom f-24"></span>
+              </div>
               </td>
             </tr>
             <tr>
@@ -275,14 +276,27 @@
 
       /* 银行卡号验证 */
       $(".bank-num").keyup(function() {
-        var flag =  /\d$/g.test($(this).val().replace(/\s/g,''));//只能输入数字
-        if(flag == true) {
-          var value = $(this).val().replace(/\s/g,'').replace(/(\d{4})(?=\d)/g,"$1 ");
-          $(this).val(value);
+        var val = $(this).val(),
+            $zoom = $(".bank-num-zoom"),
+            flag =  /\d$/g.test(val.replace(/\s/g,''));//只能输入数字
+
+        if(val) {
+          $zoom.show();
+          if(flag == true) {
+            val = val.replace(/\s/g,'').replace(/(\d{4})(?=\d)/g,"$1 ");
+            $(this).val(val);
+            $zoom.text(val);
+          } else {
+            val = val.replace(/[^\d.]/g,"").replace(/\./g,"");
+            $(this).val(val);
+            $zoom.text(val);
+            /*this.value = this.value.replace(/[^\d.]/g,"");
+            this.value = this.value.replace("$#$").replace(/\./g,"").replace("$#$",".");*/
+          }
         } else {
-          this.value = this.value.replace(/[^\d.]/g,"");
-          this.value = this.value.replace("$#$").replace(/\./g,"").replace("$#$",".");
+          $zoom.hide();
         }
+
       });
 
       /* 柜台/ATM汇款 发送短信 */
