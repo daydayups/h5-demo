@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="description" content="发财金为广大股民提供在线申请股票资金服务，金额最高500万元，可按天、按月提供资金。申请股票资金是一种创新的资金融资工具，通过少量的自有资金，向发财金申请1-10倍的资金，用最少的资金赚取最多的利润。" />
+  <meta name="keywords" content="申请股票资金,炒股,融资炒股,借钱炒股,垫资炒股,"/>
+  <meta http-equiv="cleartype" content="on" />
+  <title>发财金 - 中国知名股票配资平台,实力雄厚</title>
+  <link rel="stylesheet" href="css/guess.css">
+</head>
+<body>
+  <!-- banner -->
+  <div class="banner">
+    <img src="images/banner.jpg" width="100%" height="100%" alt="">
+  </div>
+  <!-- banner end -->
+
+  <div class="from form-bg-x">
+    <form action="">
+      <div class="inp-box m-center clearfix mt-10">
+        <span class="cl-102 f-20 pull-right mr-20">点</span>
+        <input type="text" id="stock-index-suffix" class="stock-index-suffix f-30 w40 pull-right mr-40" name="stock-index-suffix"  maxlength="2" >
+        <span class="cl-yellowish-brown f-30 f-bold pull-right ml-10 mr-10">.</span>
+        <input type="text" id="stock-index-prefix" class="stock-index-prefix f-30 w100 txt-right pull-right" name="stock-index-prefix" maxlength="4">
+      </div>
+      <button type="submit" id="submit" class="btn-defualt m-center mt-20">提交</button>
+      <div class="inner clearfix m-center mt-20">
+        <a class="btn-red pull-left" href="invite.html">
+          <span class="icon-lamp pull-left"></span>
+          <span class="f-16 pull-left ml-10 mr-20">邀请好友帮我猜</span>
+        </a>
+        <a class="to-result cl-deepbrown pull-right f-16 mt-5" href="result.html">查看活动结果>></a>
+      </div>
+    </form>
+    <img class="form-bg-img" src="images/form_bg_x.jpg" width="100%" height="100%" alt="">
+  </div>
+
+  <!-- rules -->
+  <div class="rules mt-10">
+    <!-- title -->
+    <div class="title-bg txt-center m-center">
+      <span class="f-18 cl-white">活动规则</span>
+    </div>
+    <!-- title end -->
+
+    <!-- table -->
+    <div class="table-x m-center mt-10">
+      <table width="100%" cellspacing="0">
+        <tr>
+          <td align="center" width="20%"><span>活动时间</span>
+          <td class="brd-b">
+            <p class="mt-10 mb-10">7月1日-7月20日
+        <tr>
+          <td align="center" class=""><span>参与时间</span>
+          <td class="brd-b">
+            <p class="mt-10 mb-10">13点至次日13点（开盘日），都可竞猜当日上证收盘指数。
+        <tr>
+          <td align="center"><span>参与规则</span>
+          <td class="brd-b">
+            <p class="mt-10">1. 一个微信号每个交易日最多可邀请5个好友帮猜。
+            <p class="mt-5 mb-5">2. 竞猜结果排名，与当日收盘指数越接近者，排名越前，竞猜值相同，按时间先后排名。
+            <p class="mb-10">3. 每天下午16:00公布中奖名单
+        <tr>
+          <td align="center"><span>每日奖励</span>
+          <td class="brd-b">
+            <p class="mt-10">排名第1 奖励 500元
+            <p class="mt-5 mb-5">排名第2、3、4 奖励 100元
+            <p class="mb-10">排名第5，6，7，8，9 奖励 50元
+        <tr>
+          <td align="center"><span>活动结束</span>
+          <td class="brd-b">
+            <p class="mt-10 mb-10">对每轮第一名再次进行排名，获奖者两位
+        <tr>
+          <td align="center"><span>最终大奖</span>
+          <td>
+            <p class="mt-10">一等奖 iphone6 plus一部
+            <p class="mb-10 mt-5">二等奖 iwatch一只
+      </table>
+    </div>
+    <!-- table end -->
+
+    <p class="txt-center f-14 mt-20 mb-20">本活动解释权归“发财金”所有，如有疑问请致电：18072842715</p>
+
+  </div>
+  <!-- rules end -->
+
+  <!-- pop-window -->
+  <div id="modal"></div>
+
+  <!-- login -->
+  <div id="login" class="pop-window" style="display: none;">
+    <form action="">
+      <div class="mt-20">
+        <input type="text" class="inp-box-x m-center" name="mobile" placeholder="请输入手机号">
+      </div>
+      <div class="mt-20">
+        <input type="password" class="inp-box-x m-center" name="password" placeholder="请输入密码">
+      </div>
+      <div class="inner m-center mt-20">
+        <span class="f-16">还没帐号？</span><a id="to-register" class="btn-simple f-16">注册</a>
+      </div>
+      <div class="shadow-line mt-20"></div>
+      <div>
+        <button type="submit" class="btn-confirm pull-left">登录</button>
+        <a class="btn-cancel pull-right">取消</a>
+      </div>
+    </form>
+  </div>
+  <!-- login end -->
+
+  <!-- register -->
+  <div id="register" class="pop-window" style="display: none;">
+    <form action="">
+      <div class="mt-20">
+        <input type="text" class="inp-box-x m-center" name="mobile" placeholder="请输入手机号">
+      </div>
+      <div class="mt-20">
+        <input type="password" class="inp-box-x m-center" name="password" placeholder="请输入密码">
+      </div>
+      <div class="mt-20">
+        <input type="password" class="inp-box-x m-center" name="password" placeholder="请再输一遍密码">
+      </div>
+      <div class="inner m-center mt-20 clearfix">
+        <input type="text" class="inp-box-x w100 m-center pull-left" name="v-code">
+        <a class="btn-verify-code pull-right" href="javascript:;">发送验证码</a>
+        <a class="btn-verify-codex pull-right" href="javascript:;" style="display: none;"><span id="num">60</span>重新发送</a>
+      </div>
+      <div class="shadow-line mt-20"></div>
+      <div>
+        <button type="submit" class="btn-confirm pull-left">注册</button>
+        <a class="btn-cancel pull-right">取消</a>
+      </div>
+    </form>
+  </div>
+  <!-- register end -->
+
+  <!-- register -->
+  <div id="warning" class="pop-window" style="display: none;">
+      <div class="icon-warning m-center"></div>
+      <div class="inner m-center mt-20">
+        <p class="f-16 txt-center">服务器故障，请稍候重试！
+      </div>
+      <div class="shadow-line mt-30"></div>
+      <div>
+        <button class="btn-confirmx">确定</button>
+      </div>
+  </div>
+  <!-- register end -->
+
+  <!-- pop-window end -->
+</body>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/fcj.js"></script>
+<script>
+$(function() {
+  $.fcj.modalInit("#modal");
+
+  $("#modal").fadeTo(200, 0.2);
+  $.fcj.popup("#warning");
+
+  $("#submit").click(function (e) {
+    $("#modal").fadeTo(200, 0.2);
+    $.fcj.popup("#login");
+    e.preventDefault();
+  });
+
+  $("#to-register").click(function () {
+    $("#login").hide();
+    $.fcj.popup("#register");
+  });
+
+  $(".btn-cancel, .btn-confirmx").click(function () {
+    $(".pop-window").hide();
+    $("#modal").hide();
+  });
+
+  $(".btn-verify-code").click(function () {
+    var $v_code = $(this).hide(),
+        $v_codex = $(".btn-verify-codex").hide();
+    $v_codex.show();
+    $.fcj.countdown($("#num").get(0), 59, 1000, function() {
+      $v_code.text("重新发送");
+      $v_codex.hide();
+      $v_code.show();
+    });
+  });
+
+});
+</script>
+</html>
+

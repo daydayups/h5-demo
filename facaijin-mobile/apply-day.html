@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="description" content="发财金为广大股民提供在线申请股票资金服务，金额最高500万元，可按天、按月提供资金。申请股票资金是一种创新的资金融资工具，通过少量的自有资金，向发财金申请1-10倍的资金，用最少的资金赚取最多的利润。" />
+  <meta name="keywords" content="申请股票资金,炒股,融资炒股,借钱炒股,垫资炒股,"/>
+  <meta http-equiv="cleartype" content="on" />
+  <title>按天配资</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- top -->
+<div class="top bg-red clearfix">
+  <div class="pull-left">
+    <a class="clearfix" href="">
+      <span class="iconx-arrow-goback pull-left"></span>
+      <span class="cl-white ml-5 pull-left">返回</span>
+    </a>
+  </div>
+
+  <div class="pull-right">
+    <a class="cl-white" href="javascript:;">规则说明</a>
+  </div>
+</div>
+<!-- top end -->
+
+<!-- body -->
+<div class="body bg-light-blue">
+
+  <!-- attention -->
+  <div class="attention clearfix">
+    <span class="iconx-attention pull-left"></span>
+    <p class="cl-204 pull-left ml-5">投资沪深A股，仓位不限制，盈利全归您</p>
+  </div>
+  <!-- attention end -->
+
+  <!-- apply-block -->
+  <div class="apply-block">
+    <table width="100%" cellspacing="0">
+      <tr>
+        <td width="30%" class="brd-r brd-t brd-b txt-center" rowspan="2">
+          <p class="cl-153 mt-20">申请配资
+          <p class="f-18 mt-15">10,000<span class="ml-5">元</span>
+          <button id="btn-pop-chosen" class="iconx-arrow-down m-center"></button>
+        <td class="brd-t">
+          <p class="ml-20 clearfix"><span class="cl-153 pull-left">保证金</span><span class="iconx-help ml-5 pull-left"></span>
+        <td class="brd-t">
+          <select class="selectx f-14" name="" id="deposit">
+            <option id="deposit-one" value="1000">1,000元</option>
+            <option id="deposit-two" value="2000">2,000元</option>
+          </select>
+
+      <tr>
+        <td class="brd-t brd-b"><span class="cl-153 ml-20 pull-left">使用天数</span>
+        <td colspan="2" class="brd-t brd-b">
+          <select class="selectx f-14" name="days" id="days">
+            <option value="1">1天</option>
+            <option value="2">2天</option>
+            <option value="3">3天</option>
+            <option value="4">4天</option>
+            <option value="5">5天</option>
+          </select>
+    </table>
+  </div>
+  <!-- apply-block end -->
+
+  <!-- apply-block -->
+  <div class="list-block mt-20 clearfix">
+    <div class="list-block-item brd-b pull-right clearfix">
+      <p class="pull-left"><span class="cl-153 pull-left">服务费</span><span class="iconx-help mt-20 ml-5 pull-left"></span></p>
+      <span class="cl-red pull-right mr-20">完全免费</span>
+    </div>
+    <div class="list-block-item brd-b pull-right clearfix">
+      <p class="pull-left"><span class="cl-153 pull-left">开始交易时间</span></p>
+      <span class="cl-102 pull-right mr-20">下一个交易日</span>
+    </div>
+    <div class="list-block-item pull-right clearfix">
+      <p class="pull-left"><span class="cl-153 pull-left">交易软件</span></p>
+      <div class="pull-right mr-20">
+        <input id="ths" type="radio" name="software" class="normal-radio" value="ths" checked>
+        <label for="ths" class="cl-102">同花顺</label>
+        <input id="homs" type="radio" name="software" class="normal-radio ml-5" value="ths">
+        <label for="homs" class="cl-102">恒生HOMS</label>
+      </div>
+    </div>
+  </div>
+  <!-- apply-block end -->
+
+  <!-- apply-block -->
+  <div class="list-block mt-20 clearfix">
+    <div class="list-block-item brd-b pull-right clearfix">
+      <p class="pull-left"><span class="cl-153 pull-left">总操盘资金</span></p>
+      <span class="cl-red pull-right mr-20">11,000元</span>
+    </div>
+    <div class="list-block-item brd-b pull-right clearfix">
+      <p class="pull-left"><span class="cl-153 pull-left">预警金额</span><span class="iconx-help mt-20 ml-5 pull-left"></span></p>
+      <span class="cl-102 pull-right mr-20">9,600元</span>
+    </div>
+    <div class="list-block-item pull-right clearfix">
+      <p class="pull-left"><span class="cl-153 pull-left">止损金额</span><span class="iconx-help mt-20 ml-5 pull-left"></span></p>
+      <span class="cl-102 pull-right mr-20">9,400元</span>
+    </div>
+  </div>
+  <!-- apply-block end -->
+  <div class="">
+    <button class="btn-red f-16 m-center mt-20">立即申请</button>
+  </div>
+  <p class="txt-center cl-153 mt-10">申请配资意味着您同意<a class="link-blue" href="">《发财金配资协议》</a></p>
+
+
+  <!-- pop window -->
+  <div id="modal"></div>
+  <!-- pop-chosen -->
+  <div id="pop-chosen" class="pop-window">
+    <table cellspacing="0" class="chosen-area" width="100%">
+      <tr>
+        <td>
+          <div class="chosen-block" data-money="3000">
+            <p class="cl-red f-16 mt-5">3000元</p>
+            <p class="cl-red mt-5">免费配资</p>
+          </div>
+        <td>
+          <div class="chosen-block" data-money="5000">
+            <p class="cl-red f-16 mt-5">5000元</p>
+            <p class="cl-red mt-5">免费配资</p>
+          </div>
+        <td>
+          <div class="chosen-block" data-money="10000">
+            <p class="cl-red f-16 mt-5">10000元</p>
+            <p class="cl-red mt-5">免费配资</p>
+          </div>
+      <tr>
+        <td>
+          <div class="chosen-block" data-money="50000">
+            <p class="f-16 mt-20">5万元</p>
+          </div>
+        <td>
+          <div class="chosen-block" data-money="100000">
+            <p class="f-16 mt-20">10万元</p>
+          </div>
+        <td>
+          <div class="chosen-block" data-money="200000">
+            <p class="f-16 mt-20">20万元</p>
+          </div>
+      <tr>
+        <td>
+          <div class="chosen-block" data-money="500000">
+            <p class="f-16 mt-20">50万元</p>
+          </div>
+        <td>
+          <div class="chosen-block" data-money="1000000">
+            <p class="f-16 mt-20">100万元</p>
+          </div>
+        <td>
+          <button id="btn-pop-other-chosen" class="other-chosen-block">
+            <p class="">其他金额</p>
+            <span class="iconx-write m-center mt-5"></span>
+          </button>
+    </table>
+  </div>
+  <!-- pop-chosen end -->
+
+  <!-- pop-other-chosen -->
+  <div id="pop-other-chosen" class="pop-window">
+    <p class="f-16">请输入您需要申请的配资资金</p>
+    <div class="inp-box">
+      <input id="other-money" class="inp" type="text">
+      <span></span>
+    </div>
+  </div>
+  <!-- pop-other-chosen end -->
+
+  <!-- pop window end -->
+
+</div>
+<!-- body end -->
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jqx.js"></script>
+<script>
+$(function () {
+  $.modalInit("#modal");
+  $("#btn-pop-chosen").click(function () {
+    $("#modal").show().fadeTo(200, 0.2);
+    $.popup("#pop-chosen");
+  });
+  $(".chosen-block").click(function () {
+    $(this).parents(".chosen-area").find(".chosen-block").removeClass("selected");
+    $(this).addClass("selected");
+  });
+
+  $("#btn-pop-other-chosen").click(function () {
+    $("#modal").show().fadeTo(200, 0.2);
+    $.popup("#pop-other-chosen");
+  });
+});
+</script>
+</body>
+</html>

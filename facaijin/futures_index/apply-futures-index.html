@@ -62,63 +62,63 @@
               <table class="cho" cellspacing="20">
                 <tr>
                   <td>
-                    <label class="cho-item selected" data-amount="1">
+                    <label for="it1" class="cho-item selected" data-amount="1">
                       <p class="mt-20"><span class="f-24">1手</span></p>
                       <p class="mt-10 f-14 cl-153">股指合约</p>
-                      <input style="display: none;" type="radio" name="amount" value="1" checked>
+                      <input id="it1" style="display: none;" type="radio" name="amount" value="1" checked>
                     </label>
                   </td>
                   <td>
-                    <label class="cho-item" data-amount="2">
+                    <label for="it2" class="cho-item" data-amount="2">
                       <p class="mt-20"><span class="f-24">2手</span></p>
                       <p class="mt-10 f-14 cl-153">股指合约</p>
-                      <input style="display: none;" type="radio" name="amount" value="2"/>
+                      <input id="it2" style="display: none;" type="radio" name="amount" value="2"/>
                     </label>
                   </td>
                   <td>
-                    <label class="cho-item" data-amount="3">
+                    <label for="it3" class="cho-item" data-amount="3">
                       <p class="mt-20"><span class="f-24">3手</span></p>
                       <p class="mt-10 f-14 cl-153">股指合约</p>
-                      <input style="display: none;" type="radio" name="amount" value="3"/>
+                      <input id="it3" style="display: none;" type="radio" name="amount" value="3"/>
                     </label>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <label class="cho-item" data-amount="4">
+                    <label for="it4" class="cho-item" data-amount="4">
                       <p class="mt-20"><span class="f-24">4手</span></p>
                       <p class="mt-10 f-14 cl-153">股指合约</p>
-                      <input style="display: none;" type="radio" name="amount" value="4"/>
+                      <input id="it4" style="display: none;" type="radio" name="amount" value="4"/>
                     </label>
                   </td>
                   <td>
-                    <label class="cho-item" data-amount="5">
+                    <label for="it5" class="cho-item" data-amount="5">
                       <p class="mt-20"><span class="f-24">5手</span></p>
                       <p class="mt-10 f-14 cl-153">股指合约</p>
-                      <input style="display: none;" type="radio" name="amount" value="5"/>
+                      <input id="it5" style="display: none;" type="radio" name="amount" value="5"/>
                     </label>
                   </td>
                   <td>
-                    <label class="cho-item" data-amount="6">
+                    <label for="it6" class="cho-item" data-amount="6">
                       <p class="mt-20"><span class="f-24">6手</span></p>
                       <p class="mt-10 f-14 cl-153">股指合约</p>
-                      <input style="display: none;" type="radio" name="amount" value="6"/>
+                      <input id="it6" style="display: none;" type="radio" name="amount" value="6"/>
                     </label>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <label class="cho-item" data-amount="7">
+                    <label for="it7" class="cho-item" data-amount="7">
                       <p class="mt-20"><span class="f-24">7手</span></p>
                       <p class="mt-10 f-14 cl-153">股指合约</p>
-                      <input style="display: none;" type="radio" name="amount" value="7"/>
+                      <input id="it7" style="display: none;" type="radio" name="amount" value="7"/>
                     </label>
                   </td>
                   <td>
-                    <label class="cho-item" data-amount="8">
+                    <label for="it8" class="cho-item" data-amount="8">
                       <p class="mt-20"><span class="f-24">8手</span></p>
                       <p class="mt-10 f-14 cl-153">股指合约</p>
-                      <input style="display: none;" type="radio" name="amount" value="8"/>
+                      <input id="it8" style="display: none;" type="radio" name="amount" value="8"/>
                     </label>
                   </td>
                   <td>
@@ -317,8 +317,8 @@ $(function(){
 
   //资金选择的click
   $("#futures-index-apply .cho-item").click(function(){
-    /*$("#futures-index-apply .cho-item").find("input").attr("checked",false);
-    $(this).find("input").attr("checked","checked");*/
+    $("#futures-index-apply .cho-item").find("input").attr("checked",false);
+    $(this).find("input").attr("checked","checked");
     $(this).closest("table").find(".cho-item").removeClass("selected");
     $(this).addClass("selected");
 //    $(this).parents('form').find('input[name=apply-money]').val($(this).find("input").val());

@@ -10,6 +10,15 @@ jQuery.browser = {};
     jQuery.browser.msie = true;
     jQuery.browser.version = RegExp.$1;
   }
+
+  $(".list-down").mouseenter(function () {
+    $(this).addClass("list-down-hover");
+    $(this).find(".list-down-item").show();
+  }).mouseleave(function () {
+    $(this).removeClass("list-down-hover");
+    $(this).find(".list-down-item").hide();
+  });
+
 })();
 
 $.fn.setfocus = function(){
