@@ -1,0 +1,1398 @@
+/*
+ * hj_quicklogin.js 1.0.3 2015-06-10 16:48:23
+ * Copyright (C) 2014 Hujiang.com, http://www.hujiang.com 
+ */
+.hj001_mask {
+  background: #000;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50000
+}
+
+.hj001_mask.hide {
+  display: none;
+}
+
+.hj001_quicklogin {
+  z-index: 9000000;
+  position: fixed;
+  _position: absolute;
+  aatop: 50px;
+  aaleft: 50%;
+  aamargin-left: -214px;
+  _top: expression(document.documentElement.scrollTop + Math.max(0, (document.documentElement.clientHeight - 500)*0.3) + "px")
+}
+
+.hj001_quicklogin_html {
+  background-image: url("about:blank");
+  background-attachment: fixed;
+}
+
+.hj001_quicklogin.hj001_login_box {
+}
+
+.hj001_login_box {
+  font-family: "Helvetica", "Microsoft Yahei", "Arial";
+  *font-family: "Microsoft Yahei", "Arial";
+  text-align: left;
+  width: 427px;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #c6c6c6\\0;
+  *background-color: #c6c6c6;
+  border-radius: 5px;
+}
+
+.hj001_login_box a {
+  font-family: "Helvetica", "Microsoft Yahei", "Arial";
+  *font-family: "Microsoft Yahei", "Arial";
+  text-decoration: none;
+  color: #666666;
+  border: 0px;
+}
+
+.hj001_login_box img {
+  border: 0px;
+}
+
+.hj001_login_box a:hover {
+  text-decoration: none;
+  color: #ff6600
+}
+
+.hj001_login_box hr.hj001_clearfix {
+  font-size: 1px;
+  line-height: 1px;
+  height: 1px;
+  overflow: hidden;
+  clear: both;
+  border: 0px;
+  padding: 0px;
+  margin: -1px 0px 0px 0px;
+  list-style: none;
+  border-style: none;
+  background: none;
+  visibility: hidden;
+}
+
+.hj001_login_box .hj001_login_container {
+  background-color: #fff;
+  margin: 5px;
+  padding: 15px 17px 10px 45px;
+}
+
+.hj001_login_box .hj001_close_btn {
+  background-color: #8A8A8A;
+  border-radius: 16px;
+  color: #FFFFFF;
+  display: block;
+  font-family: Simsun;
+  font-size: 14px;
+  height: 24px;
+  overflow: hidden;
+  padding: 8px 0 0 10px;
+  position: absolute;
+  right: -11px;
+  top: -11px;
+  width: 22px;
+}
+
+.hj001_login_box .hj001_close_btn:hover {
+  background-color: #f62626;
+  color: #fff;
+}
+
+.hj001_login_box .hj001_title_login {
+  display: inline-block;
+  height: 30px;
+  vertical-align: middle;
+  line-height: 25px;
+  text-align: right;
+}
+
+.hj001_login_box .hj001_title_login_txt {
+  font-family: "Helvetica", "Microsoft Yahei", "Arial";
+  *font-family: "Microsoft Yahei", "Arial";
+  font-size: 16px;
+  line-height: 1.2em;
+  padding-top: 2px;
+  float: left;
+}
+
+.hj001_login_box .hj001_icon_gt {
+  display: inline-block;
+  font-family: Verdana;
+  font-size: 16px;
+  width: 6px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+.hj001_login_box .hj001_icon_right {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: 0px -100px;
+}
+
+.hj001_login_box .hj001_icon_error {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: -50px -100px;
+}
+
+.hj001_login_box .hj001_icon_ok {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: -100px -100px;
+  vertical-align: middle;
+  margin-top: -12px;
+  margin-right: 10px;
+}
+
+.hj001_login_box .hj001_title {
+  height: 41px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 24px;
+  width: 316px;
+  position: relative;
+  z-index: 2;
+}
+
+.hj001_login_box .hj001_title .hj001_title_login {
+  position: absolute;
+  right: 2px;
+  bottom: 0;
+  color: #075db3;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  height: 36px;
+  line-height: 26px;
+}
+
+.hj001_login_box .hj001_title .hj001_title_login:hover {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+.hj001_login_box .hj001_title .hj001_title_item {
+  font-family: "Helvetica", "Microsoft Yahei", "Arial";
+  *font-family: "Microsoft Yahei", "Arial";
+  font-size: 16px;
+  text-align: center;
+  float: left;
+  height: 19px;
+  line-height: 19px;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hj001_login_box .hj001_title .hj001_title_item a {
+  font-family: "Helvetica", "Microsoft Yahei", "Arial";
+  *font-family: "Microsoft Yahei", "Arial";
+  color: #9c9c9c;
+  font-size: 16px;
+}
+
+.hj001_login_box .hj001_title .hj001_title_item_selected {
+  border: 1px solid #e5e5e5;
+  border-bottom-color: white;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  border-radius: 2px;
+}
+
+.hj001_login_box .hj001_login_warp {
+  padding-top: 30px;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_item {
+  position: relative;
+  z-index: 2;
+  height: 67px;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_item .validate {
+  width: 99%;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_pwd_warp {
+  padding-bottom: 0px;
+  position: relative;
+  z-index: 2;
+  min-height: 67px;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_ipt {
+  width: 290px;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_ipt_short {
+  width: 123px;
+  float: left;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_ipt, .hj001_login_box .hj001_login_warp .hj001_ipt_short {
+  height: 20px;
+  border: 1px solid #e5e5e5;
+  padding: 10px 13px;
+  line-height: 1.2em;
+  font-size: 14px;
+  color: #666666;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_ipt:focus, .hj001_login_box .hj001_login_warp .hj001_ipt_short:focus {
+  border: 1px solid #60C84D;
+  outline: none;
+  box-shadow: 0 0 2px #60C84D;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_error_txt, .hj001_login_box .hj001_login_warp .hj001_pwd_error_txt {
+  line-height: 20px;
+  height: 20px;
+  font-size: 12px;
+  color: #f62626;
+  display: block;
+  position: absolute;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_error_txt {
+  left: 5px;
+  bottom: 2px;
+}
+
+.hj001_login_box .hj001_pwd_complex_warp .hj001_pwd_error_txt {
+  top: 0px;
+  left: 200px;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_icon_right, .hj001_login_box .hj001_login_warp .hj001_icon_error {
+  position: absolute;
+  right: 2px;
+  top: 11px;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_agreement {
+  height: 34px;
+  padding-bottom: 12px;
+  clear: left;
+}
+
+.hj001_login_box .hj001_agreement .hj001_icon_agree, .hj001_login_box .hj001_agreement .hj001_icon_agree_cur {
+  margin: 9px 10px 0 0;
+  float: left;
+}
+
+.hj001_login_box .hj001_agreement .hj001_agree {
+  color: #666666;
+  font-size: 14px;
+  line-height: 34px;
+  float: left;
+}
+
+.hj001_login_box .hj001_agreement .hj001_agree a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.hj001_login_box .hj001_another {
+  line-height: 34px;
+  height: 34px;
+  color: #075db3;
+  font-size: 14px;
+  text-decoration: none;
+  display: none;
+  margin-bottom: 30px;
+}
+
+.hj001_login_box .hj001_another:hover {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+.hj001_login_box .hj001_pwd_complex_warp {
+  height: 20px;
+  width: 200px;
+  margin-top: 3px;
+  line-height: 25px;
+  position: relative;
+  z-index: 2;
+  float: left;
+  font-size: 1px;
+}
+
+.hj001_login_box .hj001_pwd_complex_warp .hj001_pwd_complex_txt {
+  position: absolute;
+  left: 175px;
+  top: 0px;
+  line-height: 20px;
+  height: 20px;
+  color: #ffffff;
+  font-size: 12px;
+  overflow: hidden;
+  display: none;
+}
+
+.hj001_login_box .hj001_pwd_complex_warp .hj001_pwd_complex_bg, .hj001_login_box .hj001_pwd_complex_warp .hj001_pwd_complex {
+  height: 6px;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.hj001_login_box .hj001_pwd_complex_warp .hj001_pwd_complex_bg {
+  display: inline;
+  width: 150px;
+  background-color: #e4e4e4;
+}
+
+.hj001_login_box .hj001_complex_-1 {
+  display: none;
+}
+
+.hj001_login_box .hj001_complex_-1 .hj001_pwd_complex, .hj001_login_box .hj001_complex_-1 .hj001_pwd_complex_bg {
+  display: none;
+}
+
+.hj001_login_box .hj001_complex_1 .hj001_pwd_complex {
+  display: inline;
+  width: 50px;
+  background-color: #f62626;
+}
+
+.hj001_login_box .hj001_complex_2 .hj001_pwd_complex {
+  display: inline;
+  width: 100px;
+  background-color: #ffc000;
+}
+
+.hj001_login_box .hj001_complex_3 .hj001_pwd_complex {
+  display: inline;
+  width: 150px;
+  background-color: #5cbb00;
+}
+
+.hj001_login_box .hj001_complex_1 .hj001_grade01 {
+  display: inline;
+  color: #f62626;
+}
+
+.hj001_login_box .hj001_complex_2 .hj001_grade02 {
+  display: inline;
+  color: #ffc000;
+}
+
+.hj001_login_box .hj001_complex_3 .hj001_grade03 {
+  display: inline;
+  color: #5cbb00;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_email_list {
+  width: 316px;
+  position: absolute;
+  top: 43px;
+  left: 0px;
+  background-color: #ffffff;
+  z-index: 1;
+  display: none;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_email_list .hj001_row {
+  border: 1px solid #e5e5e5;
+  border-top: 0px;
+  color: #666666;
+  display: block;
+  font-size: 14px;
+  height: 37px;
+  line-height: 37px;
+  overflow: hidden;
+  text-indent: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  background-color: white;
+  cursor: pointer;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_email_list .hj001_row_over {
+  background-color: #f1f1f1;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_email_list .hj001_first {
+  color: #999999;
+  background-color: #eefaff;
+  line-height: 37px;
+  height: 37px;
+  text-indent: 15px;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_forget_pwd {
+  font-size: 14px;
+  float: right;
+  line-height: 34px;
+  margin-right: 30px;
+}
+
+.hj001_login_box .hj001_other_login {
+  border: 1px solid #ccc;
+  display: none;
+  padding: 8px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.hj001_login_box .hj001_weixin_login {
+  position: relative;
+  z-index: 10;
+  margin-top: 46px;
+  font-size: 14px;
+  overflow: hidden;
+  margin-right: 40px;
+  height: 70px;
+}
+
+.hj001_login_box .hj001_weixin_login a, .hj001_login_box .hj001_weixin_register a {
+  cursor: pointer;
+  line-height: 25px;
+}
+
+.hj001_login_box .hj001_weixin_login a:hover, .hj001_login_box .hj001_weixin_register a:hover {
+  color: #44c334;
+}
+
+.hj001_login_box .hj001_weixin_login .hj001_weixin_login_btn, .hj001_login_box .hj001_weixin_register .hj001_weixin_register_btn {
+  float: left;
+  padding-left: 32px;
+}
+
+.hj001_login_box .hj001_weixin_login .hj001_weixin_login_btn i, .hj001_login_box .hj001_weixin_register .hj001_weixin_register_btn i {
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-left: -32px;
+}
+
+.hj001_login_box .hj001_weixin_login .hj001_other_login_btn {
+  float: right;
+}
+
+.hj001_login_box .hj001_other_login .hj001_txt {
+  float: left;
+  color: #666666;
+  font-family: "Helvetica", "Microsoft Yahei", "Arial";
+  *font-family: "Microsoft Yahei", "Arial";
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.hj001_login_box .hj001_other_login .hj001_login_link {
+  float: left;
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
+}
+
+.hj001_login_box .hj001_other_login .hj001_other_login_arrow {
+  position: absolute;
+  top: 0;
+  left: 165px;
+  margin-top: -11px;
+  font-size: 20px;
+  color: #ccc;
+  line-height: 20px;
+}
+
+.hj001_login_box .hj001_other_login .hj001_other_login_arrow b {
+  position: absolute;
+  left: 0px;
+  color: #fff;
+  top: 1px;
+}
+
+.hj001_login_box .hj001_weixin_register {
+  padding: 0 0 0 70px;
+  font-size: 14px;
+  margin-right: 40px;
+  height: 55px;
+  margin-top: 40px;
+}
+
+.hj001_login_box .hj001_icon_weixin {
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: -150px -100px;
+}
+
+.hj001_login_box .hj001_icon_baidu {
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: 0px -50px;
+}
+
+.hj001_login_box .hj001_icon_baidu:hover {
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: 0px 0px;
+}
+
+.hj001_login_box .hj001_icon_douban {
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: -50px -50px;
+}
+
+.hj001_login_box .hj001_icon_douban:hover {
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: -50px 0px;
+}
+
+.hj001_login_box .hj001_icon_qq {
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: -100px -50px;
+}
+
+.hj001_login_box .hj001_icon_qq:hover {
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: -100px 0px;
+}
+
+.hj001_login_box .hj001_icon_renren {
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: -150px -50px;
+}
+
+.hj001_login_box .hj001_icon_renren:hover {
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: -150px 0px;
+}
+
+.hj001_login_box .hj001_icon_weibo {
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: -200px -50px;
+}
+
+.hj001_login_box .hj001_icon_weibo:hover {
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: -200px 0px;
+}
+
+.hj001_login_box .hj001_icon_zhifu {
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: -250px -50px;
+}
+
+.hj001_login_box .hj001_icon_zhifu:hover {
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: -250px 0px;
+}
+
+.hj001_login_box .hj001_success {
+  height: 33px;
+  overflow: hidden; /* text-align: left; */
+  padding: 79px 0 35px 0px;
+}
+
+.hj001_login_box .hj001_success .hj001_span {
+  line-height: 33px;
+  font-family: "Helvetica", "Microsoft Yahei", "Arial";
+  *font-family: "Microsoft Yahei", "Arial";
+  font-size: 28px;
+  height: 33px;
+  color: #68c04a;
+  text-align: center;
+  display: inline-block;
+}
+
+.hj001_login_box .hj001_view_btn {
+  margin-top: 45px;
+}
+
+.hj001_login_box .hj001_free {
+  padding-left: 30px;
+  height: 38px;
+}
+
+.hj001_login_box .hj001_free .hj001_free_link:hover .hj001_free_tip {
+  text-decoration: underline;
+}
+
+.hj001_login_box .hj001_free .hj001_free_hot_icon {
+  border: 9px solid #FF670C;
+  width: 34px;
+  height: 0px;
+  border-right-color: white;
+  border-left: 0px;
+  border-right-width: 6px;
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+}
+
+.hj001_login_box .hj001_free .hj001_free_hot_text {
+  float: left;
+  margin-left: -34px;
+  font-size: 12px;
+  color: white;
+  margin-top: 2px;
+  font-family: arial;
+}
+
+.hj001_login_box .hj001_free .hj001_free_tip {
+  color: rgb(255, 103, 12);
+  font-size: 14px;
+  line-height: 16px;
+  float: left;
+  margin-left: 3px;
+  margin-top: 1px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.hj001_login_box .hj001_txt, .hj001_login_box .hj001_email_txt {
+  line-height: 24px;
+  font-family: "Helvetica", "Microsoft Yahei", "Arial";
+  *font-family: "Microsoft Yahei", "Arial";
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+}
+
+.hj001_login_box .hj001_go_email {
+  color: #075db3;
+  font-family: "Helvetica", "Microsoft Yahei", "Arial";
+  *font-family: "Microsoft Yahei", "Arial";
+  font-size: 14px;
+  padding: 0 5px;
+  text-decoration: none;
+}
+
+.hj001_login_box .hj001_go_email:hover {
+  color: #ff6600;
+}
+
+.hj001_login_box .hj001_txt {
+  padding-bottom: 15px;
+  padding-right: 1px;
+}
+
+.hj001_login_box .hj001_email_txt {
+  padding: 15px 0px 70px 0px;
+}
+
+.hj001_login_box .hj001_auto_close {
+  font-family: "Helvetica", "Microsoft Yahei", "Arial";
+  *font-family: "Microsoft Yahei", "Arial";
+  font-size: 16px;
+  color: #666666;
+  text-align: center;
+  line-height: 30px;
+  padding: 40px 0 40px;
+  border-top: 1px dashed #999999;
+  margin-top: 20px;
+}
+
+.hj001_login_box .hj001_auto_close .hj001_time {
+}
+
+.hj001_login_box .hj001_auto_close em {
+  font-style: normal;
+  font-family: "Helvetica", "Microsoft Yahei", "Arial";
+  *font-family: "Microsoft Yahei", "Arial";
+  font-size: 28px;
+  color: #f62626;
+  padding-right: 5px;
+}
+
+.hj001_login_box .hj001_auto_close .hj001_left_time {
+  font-family: "Helvetica", "Microsoft Yahei", "Arial";
+  *font-family: "Microsoft Yahei", "Arial";
+  font-size: 28px;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_placeholder {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #b5b5b5;
+  position: absolute;
+  z-index: -1;
+  left: 15px;
+  top: 5px;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_agreement .hj001_check_box {
+  display: none;
+}
+
+.hj001_login_box .hj001_login_warp .hj001_agreement .hj001_check {
+  float: left;
+}
+
+.hj001_login_box .hui_checkbox .hui_checkbox_label a {
+  font-size: 14px;
+}
+
+.hj001_login_box .hui_checkbox .hui_checkbox_icon {
+  font-family: Simsun;
+  margin: 7px 10px 0 0;
+  float: left;
+  border: 1px solid #d9d9d9;
+  color: #60c84d;
+  text-indent: -100px;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 1.2em;
+  width: 18px;
+  height: 18px;
+  padding-bottom: 1px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.hj001_login_box .hui_checkbox .hui_checkbox_label {
+  color: #666666;
+  font-family: "Helvetica", "Microsoft Yahei", "Arial";
+  *font-family: "Microsoft Yahei", "Arial";
+  font-size: 14px;
+  line-height: 34px;
+  float: left;
+  padding-left: 0px;
+  cursor: pointer;
+}
+
+.hj001_login_box .hui_checkbox_checked .hui_checkbox_icon {
+  visibility: visible;
+  text-indent: 4px;
+}
+
+.hj001_login_box .hui_textinput {
+  font-family: Arial;
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: 1000px 1000px;
+  background-repeat: no-repeat;
+  *margin-left: -5px;
+}
+
+.hj001_login_box .hui_textinput_placeholder {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-family: "Helvetica", "Microsoft Yahei", "Arial";
+  *font-family: "Microsoft Yahei", "Arial";
+  font-size: 14px;
+  color: #b5b5b5;
+  position: absolute;
+  z-index: -1;
+  left: 15px;
+  top: 5px;
+  *top: 7px;
+}
+
+.hj001_login_box .hui_textinput_eye {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #b5b5b5;
+  position: absolute;
+  z-index: -1;
+  left: 15px;
+  top: 5px;
+}
+
+.hj001_login_box .hui_textinput_eye {
+  width: 25px;
+  height: 13px;
+  display: inline-block;
+  top: 5px;
+  right: 45px;
+  position: absolute;
+  z-index: 2;
+  text-indent: -100px;
+  overflow: hidden;
+  padding: 10px;
+  background-color: white;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  left: auto;
+  bottom: auto;
+}
+
+.hj001_login_box .hui_textinput_eye {
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: -290px -40px;
+}
+
+.hj001_login_box .hui_textinput_eye:hover {
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: -290px 10px;
+}
+
+.hj001_login_box .validate_waiting .validate_icon {
+  position: absolute;
+  right: 2px;
+  top: 11px;
+  background-image: url("http://pass.hujiang.com/quick/img/loading.gif");
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.hj001_login_box .validate_waiting .validate_text {
+  display: none;
+}
+
+.hj001_login_box .validate_ok .validate_icon {
+  position: absolute;
+  right: 2px;
+  top: 11px;
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: 0px -100px;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.hj001_login_box .validate_ok .validate_text {
+  bottom: 2px;
+  left: 5px;
+  color: #F62626;
+  display: none;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.hj001_login_box .hj001_panel_login .validate_ok .validate_icon {
+  display: none;
+}
+
+.hj001_login_box .validate_error .validate_icon {
+  position: absolute;
+  right: 2px;
+  top: 11px;
+  background-image: url("//captcha.hujiang.com/quick/img/icon_v3.png");
+  background-position: -50px -100px;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.hj001_login_box .validate_error .validate_text {
+  color: #F62626;
+  display: block;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  float: left;
+}
+
+.hj001_login_box .hj001_pwd_warp .validate_text {
+  display: none;
+  margin-top: 3px;
+}
+
+.hj001_login_box .hj001_pwd_warp.validate_error .validate_text {
+  display: block;
+  left: 200px;
+  top: 50px;
+}
+
+.hj001_login_box .hj001_login_btn {
+  width: 319px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.hj001_login_box .hj001_send_btn {
+  width: 152px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  font-size: 14px;
+  margin-bottom: 2px;
+  float: left;
+  margin-left: 13px;
+  cursor: pointer;
+}
+
+.hj001_login_box .hj001_send_btn .hui_btn_label {
+  font-size: 14px;
+}
+
+.hj001_login_box .hj001_continue_btn {
+  width: 162px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  font-size: 20px;
+  margin-bottom: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.hj001_login_box .hj001_free_btn {
+  width: 162px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  font-size: 20px;
+  margin-bottom: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.hj001_login_box .hui_btn {
+  cursor: pointer;
+  background-color: #60c84d;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.hj001_login_box .hui_btn:hover {
+  background-color: #44c334;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hj001_login_box .hui_btn_label {
+  font-family: "Helvetica", "Microsoft Yahei", "Arial";
+  *font-family: "Microsoft Yahei", "Arial";
+  font-size: 20px;
+}
+
+.hj001_login_box .hui_btn_disabled {
+  cursor: default;
+  border-radius: 5px;
+  background-color: #c1c1c1;
+  color: #fff;
+}
+
+.hj001_login_box .hui_btn_disabled:hover {
+  cursor: default;
+  border-radius: 5px;
+  background-color: #c1c1c1;
+  color: #fff;
+}
+
+.hj001_login_box .hui_hj_reg_mobile_success {
+  text-align: center;
+  padding-right: 30px;
+}
+
+.hj001_login_box .hj001_onekey_next_tip {
+  color: #666;
+  font-size: 14px;
+  padding: 30px 0px 15px 45px;
+}
+
+.hj001_login_box .hui_hj_reg_onekey_next .hj001_success {
+  padding: 37px 0px 10px 16px;
+}
+
+.hj001_login_box .hui_hj_reg_onekey_next .hj001_login_btn {
+  margin-top: 10px;
+}
+
+.hj001_login_box .hui_hj_reg_email_success {
+  text-align: center;
+  padding-right: 30px;
+}
+
+.hj001_login_box * {
+  margin: 0;
+  padding: 0;
+}
+
+.hj001_login_box ul, .hj001_login_box ol {
+  list-style: none;
+}
+
+/* =commonStyle */
+
+.icon-sprite {
+  background: url(//captcha.hujiang.com/quick/img/icon_v3.png);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.ml68 {
+  margin-left: 68px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+/* =框-1，选择课程内容 */
+.hj-box-lesson {
+  padding-right: 30px;
+  height: 480px;
+}
+
+.hj-box-lesson .slogan {
+  margin-top: 46px;
+  color: #333;
+  font-size: 18px;
+}
+
+.hj-box-lesson .lesson-wrap {
+  margin-top: 62px;
+  padding: 0 34px;
+}
+
+.hj-box-lesson .lesson-wrap li {
+  float: left;
+  width: 94px;
+  height: 146px;
+  color: #333;
+}
+
+.hj-box-lesson .lesson-wrap a {
+  color: #333;
+}
+
+.hj-box-lesson .lesson-wrap i {
+  display: block;
+}
+
+.hj-box-lesson .icon-face {
+  width: 94px;
+  height: 94px;
+}
+
+.hj-box-lesson .tit-1 {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.hj-box-lesson .box-1 {
+  margin-top: 398px;
+  *margin-top: 0;
+  font-size: 14px;
+  text-align: center;
+  clear: both;
+}
+
+.hj-box-lesson .box-1 a {
+  color: #333;
+}
+
+.hj-box-lesson .box-1 a:hover {
+  color: #44b336;
+}
+
+.hj-box-lesson .icon-face {
+  background-image: url('//captcha.hujiang.com/quick/img/icon-group.png');
+  background-repeat: no-repeat;
+}
+
+.hj-box-lesson .icon-job {
+  background-position: 0 -282px;
+}
+
+.hj-box-lesson .icon-job:hover {
+  background-position: 0 -376px;
+}
+
+.hj-box-lesson .icon-lang {
+  background-position: 0 -94px;
+}
+
+.hj-box-lesson .icon-lang:hover {
+  background-position: 0 0;
+}
+
+.hj-box-lesson .icon-study {
+  background-position: 0 -470px;
+}
+
+.hj-box-lesson .icon-study:hover {
+  background-position: 0 -188px;
+}
+
+.hj-box-lesson .icon-young {
+  background-position: 0 -658px;
+}
+
+.hj-box-lesson .icon-young:hover {
+  background-position: 0 -564px;
+}
+
+/* =框2，选择就读年级 */
+.hj-box-grade {
+  padding: 36px 0;
+}
+
+.hj-box-grade .tit-2, .hj-box-grade .desc {
+  text-align: center;
+  font-weight: normal;
+  font-size: 18px;
+  padding-right: 7%;
+}
+
+.hj-box-grade .desc {
+  padding-top: 8px;
+  font-size: 14px;
+  color: #666
+}
+
+.hj-box-grade .tit-3 {
+  padding: 14px 0 10px;
+  font-size: 16px;
+  font-weight: normal;
+  text-indent: 3px;
+}
+
+.hj-box-grade .grade {
+  height: 430px;
+  width: 100%;
+}
+
+.hj-box-grade .grade > li {
+  clear: both;
+}
+
+.hj-box-grade .item li {
+  float: left;
+  margin: 3px;
+  width: 100px;
+  height: 39px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+}
+
+.hj-box-grade .item a {
+  display: block;
+  height: 39px;
+  font-size: 14px;
+  line-height: 39px;
+  text-align: center;
+  color: #333;
+}
+
+.hj-box-grade .item li:hover {
+  background: #68c04a;
+  color: #fff;
+  border: 1px solid #68c04a;
+}
+
+.hj-box-grade .item li:hover a {
+  color: #fff;
+}
+
+/* =框3，注册成功 */
+.hj-box-register {
+  padding: 90px 37px;
+}
+
+.hj-box-register p {
+  color: 666;
+  text-align: center;
+}
+
+.hj-box-register .tit-5 {
+  padding-bottom: 40px;
+}
+
+.hj-box-register .tit-8 {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.hj-box-register .tit-8 .time {
+  color: #f62626;
+  font-size: 28px;
+}
+
+.hj-box-register .sepline {
+  margin: 42px 0;
+  width: 342px;
+  border-top: 1px dashed #999;
+}
+
+/* =框4，注册成功 */
+.hj-box-reg {
+  padding: 56px 30px 72px 14px;
+}
+
+.hj-box-reg .hj-box-title {
+  text-align: center;
+}
+
+.hj-box-reg .tit-5, .hj-box-register .tit-5 {
+  position: relative;
+  display: inline;
+  margin: 0 auto;
+  padding-left: 49px;
+  line-height: 40px;
+  font-size: 28px;
+  color: #68c04a;
+}
+
+.hj-box-reg .icon-tit, .hj-box-register .icon-tit {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  background-position: -100px -100px;
+}
+
+.hj-box-reg .tit-6 {
+  padding-top: 22px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.hj-box-reg .wrap {
+  margin-top: 50px;
+}
+
+.hj-box-reg .wrap .tit-7 {
+  color: #989898;
+  font-size: 14px;
+}
+
+.hj-box-reg .wrap a {
+  display: block;
+  position: relative;
+  width: 180px;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 40px;
+  border-radius: 3px;
+}
+
+.hj-box-reg .wrap .desc-1 {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.hj-box-reg .wrap .btn-group {
+  margin-top: 20px;
+  background: #0993db;
+  text-indent: 39px;
+}
+
+.hj-box-reg .icon-btn-qq {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  width: 16px;
+  height: 16px;
+  background-position: -200px -104px;
+}
+
+.hj-box-reg .wrap .btn-jzh {
+  margin-top: 30px;
+  background: #44b336;
+  text-indent: 39px;
+}
+
+.hj-box-reg .icon-btn-jzh {
+  top: 11px;
+  width: 20px;
+  height: 20px;
+  background-position: -248px -102px;
+}
+
+/* =框5，扫扫二维码家长慧 */
+.hj-box-jzh {
+  padding: 92px 30px 65px 0;
+  text-align: center;
+}
+
+.hj-box-jzh .tit-4 {
+  padding-bottom: 36px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.hj-box-jzh .wrap {
+  padding-top: 34px;
+}
+
+.hj-box-jzh img {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.hj-box-jzh .btn-back {
+  margin: 0 auto;
+  width: 165px;
+  height: 37px;
+  font-size: 14px;
+  line-height: 37px;
+  background: #fff;
+  border-radius: 20px;
+  border: 1px solid #d8d8d8;
+}
+
+.hj-box-jzh .btn-back a {
+  color: #333;
+}
+
+.hj001_login_box .hui_hj_reg_k12_success .hj001_email_txt {
+  padding: 0;
+  margin-bottom: -24px;
+}
+
+.hj-login-needchangepwd {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.hj-login-needchangepwd .btn-continue {
+  margin-top: 56px;
+}
+
+.hj-login-needchangepwd .tip {
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+.hj-login-needchangepwd .tip a {
+  color: #f05134;
+  text-decoration: underline;
+}

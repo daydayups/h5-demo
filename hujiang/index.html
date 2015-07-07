@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="Author" content="www.hujiang.com"/>
+  <meta content="IE=EmulateIE7" http-equiv="X-Ua-Compatible"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta name="Keywords" content="沪江网,沪江学习网"/>
+  <meta name="Description" content="沪江是专业的互联网学习平台，致力于为用户提供便捷、优质的学习资讯、学习社区、学习工具和教学平台等网络学习产品和服务，涵盖中小幼、语言、留学、职场、兴趣等丰富内容"/>
+  <meta name="viewport" content="initial-scale=1.0">
+
+  <link rel="alternate" type="application/vnd.wap.xhtml+xml" media="handheld" href=""/>
+
+  <title>沪江-专业的互联网学习平台。学习，成为更好的自己！</title>
+
+  <link rel="stylesheet" href="css/style2015.css">
+  <style type="text/css">
+    #EditorAD {
+      display: none !important;
+      display: none
+    }</style>
+</head>
+
+<body>
+<div id="topBlock" class="top-slider" style="display:none;">
+  <div class="slider-unit" id="topSlide">
+
+
+    <div class="item"
+         style="background-image: url('http://i2.w.hjfile.cn/news/201506/2015062312083001357.jpg'); background-repeat: no-repeat; background-position: center center;">
+      <div class="r-cont">
+        <a href="http://www.hujiang.com/zt/hystory/Xiaoxinkun/" onclick="SendEvent(38,875,&quot;{'inx':'1'}&quot;);"
+           target="_blank" class="btn-green">读她的故事</a>
+      </div>
+    </div>
+
+    <div class="item"
+         style="background-image: url('http://i2.w.hjfile.cn/news/201505/201505201352479022.jpg'); background-repeat: no-repeat; background-position: center center;">
+      <div class="r-cont">
+        <a href="http://www.hujiang.com/zt/hystory/wule/" onclick="SendEvent(38,875,&quot;{'inx':'2'}&quot;);"
+           target="_blank" class="btn-green">读她的故事</a>
+      </div>
+    </div>
+
+    <div class="item"
+         style="background-image: url('images/topslide_3.jpg'); background-repeat: no-repeat; background-position: center center;">
+      <div class="r-cont">
+        <a href="http://www.hujiang.com/zt/hystory/Bini/" onclick="SendEvent(38,875,&quot;{'inx':'3'}&quot;);"
+           target="_blank" class="btn-green">读她的故事</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="slide_close" id="closeSlide" onclick="SendEvent(38,875,&quot;{'close':'true'}&quot;);">
+    <div class="close_tip">关闭后不再显示</div>
+  </div>
+</div>
+<div class="container-fluid wrap">
+<div class="wrapmask"></div>
+<div class="top-bar cf" id="topBar">
+  <div class="container">
+    <div class="logo fl">
+      <a href="/">
+        <img src="images/logo.png" alt="沪江">
+      </a>
+    </div>
+    <div class="search" id="searchDiv">
+      <div class="search-cont">
+        <input type="text" id="textSearch">
+
+        <div class="search-layer"></div>
+        <a href="javascript:;" id="btnSearch" class="btn-search">
+          <i class="icon icon-search"></i>
+        </a>
+      </div>
+    </div>
+    <div class="user">
+
+      <div class="login cf">
+        <a href="javascript:;" class="fastLogin" data-source="en_top_passport" title="登录" rel="nofollow"><span>登录</span></a>
+        <a href="javascript:;" class="fastRegister" data-source="en_top_passport" title="注册"
+           rel="nofollow"><span>注册</span></a>
+      </div>
+
+    </div>
+    <div class="side-nav">
+      <ul class="cf">
+        <li id="nav_zx">
+          <a onclick="SendEvent(38,876,&quot;{'category':'学习资讯'}&quot;);">
+            <span>学习资讯</span>
+            <i class="icon icon-arrow-down"></i>
+          </a>
+        </li>
+        <li>
+          <a href="/app/" target="_blank" onclick="SendEvent(38,876,&quot;{'category':'学习工具'}&quot;);"><span>学习工具</span></a>
+        </li>
+        <li>
+          <a href="http://st.hujiang.com/" target="_blank" onclick="SendEvent(38,876,&quot;{'category':'沪江社团'}&quot;);"><span>沪江社团</span></a>
+        </li>
+        <li>
+          <a href="http://www.hjclass.com/course" target="_blank"
+             onclick="SendEvent(38,876,&quot;{'category':'沪江网校'}&quot;);"><span>沪江网校</span></a>
+        </li>
+        <li>
+          <a href="http://www.cctalk.com/" target="_blank"
+             onclick="SendEvent(38,876,&quot;{'category':'CC课堂直播'}&quot;);" class="por"><span>CC课堂</span><span
+              class="badge">直播</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="sec-nav">
+    <div class="container">
+      <ul class="pic-list cf">
+        <li>
+          <a href="http://www.hjenglish.com/" target="_blank"
+             onclick="SendEvent(38,883,&quot;{'category':'沪江英语'}&quot;);">
+            <p class="pic">
+              <img src="images/nav1.jpg" alt="沪江英语"/>
+            </p>
+                                <span class="tit">
+                                    沪江英语
+                                </span>
+          </a>
+        </li>
+        <li>
+          <a href="http://jp.hjenglish.com/" target="_blank"
+             onclick="SendEvent(38,884,&quot;{'category':'沪江日语'}&quot;);">
+            <p class="pic">
+              <img src="images/nav2.jpg" alt="沪江日语"/>
+            </p>
+                                <span class="tit">
+                                    沪江日语
+                                </span>
+          </a>
+        </li>
+        <li>
+          <a href="http://kr.hujiang.com/" target="_blank" onclick="SendEvent(38,885,&quot;{'category':'沪江韩语'}&quot;);">
+            <p class="pic">
+              <img src="images/nav3.jpg" alt="沪江韩语"/>
+            </p>
+                                <span class="tit">
+                                    沪江韩语
+                                </span>
+          </a>
+        </li>
+        <li>
+          <a href="http://fr.hujiang.com/" target="_blank" onclick="SendEvent(38,886,&quot;{'category':'沪江法语'}&quot;);">
+            <p class="pic">
+              <img src="images/nav4.jpg" alt="沪江法语"/>
+            </p>
+                                <span class="tit">
+                                    沪江法语
+                                </span>
+          </a>
+        </li>
+        <li class="sm-none">
+          <a href="http://liuxue.hujiang.com/" target="_blank"
+             onclick="SendEvent(38,887,&quot;{'category':'沪江留学'}&quot;);">
+            <p class="pic">
+              <img src="images/nav5.jpg" alt="沪江留学"/>
+            </p>
+                                <span class="tit">
+                                    沪江留学
+                                </span>
+          </a>
+        </li>
+        <li class="sm-none">
+          <a href="http://xiaoxue.hujiang.com/" target="_blank"
+             onclick="SendEvent(38,882,&quot;{'category':'沪江小学'}&quot;);">
+            <p class="pic">
+              <img src="images/nav6.jpg" alt="沪江小学"/>
+            </p>
+                                <span class="tit">
+                                    沪江小学
+                                </span>
+          </a>
+        </li>
+        <li>
+          <a href="/xuexi/" target="_blank" onclick="SendEvent(38,876,&quot;{'category':'更多资讯'}&quot;);">
+            <p class="pic">
+              <img src="images/nav7.jpg" alt="更多资讯"/>
+            </p>
+                                <span class="tit">
+                                    更多资讯
+                                </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="main">
+<div class="container">
+<div class="main-block cf">
+  <div class="b-block bk-3 bk-hori bk-num1" data-url="http://www.hjclass.com/classzt/MKTTopic_292?source=922"
+       onclick="SendEvent(38,881,&quot;{'inx':'1'}&quot;);">
+    <div class="b-cube">
+      <div class="b-cont b-cont1">
+        <div class="b-cube2"><p class="b-title"> 充一夏电 </p>
+
+          <p class="b-desc"> 暑期不错过<br>
+            青春不蹉跎 </p>
+
+          <p><a href="javascripts:;" class="square">现在就去</a></p></div>
+      </div>
+      <div class="b-cont b-cont2">
+        <div class="b-cube2"><p class="b-title"> 充一夏电 </p>
+
+          <p class="b-desc"> 告别烦闷枯燥学习，拒绝补课舟车劳顿！<br>
+            一起来体验更流行的互联网学习吧~<br>
+            逃避酷暑，成就自我，就在这儿！<br>
+            更有限时福利，千元学费红包等你来拿哟！ </p>
+
+          <p><a href="javascript:;" class="square">现在就去</a></p></div>
+        <div class="pic_bg"><img src="http://i2.w.hjfile.cn/news/201507/201507063233682517.png" alt=""></div>
+      </div>
+      <div class="b-hover b-green"></div>
+      <div class="b-cover"><img src="http://i2.w.hjfile.cn/news/201507/201507063232901389.png" alt=""></div>
+    </div>
+  </div>
+  <div class="b-block bk-2 bk-hori bk-num2" data-url="http://www.hujiang.com/classzt/MKTTopic_293"
+       onclick="SendEvent(38,881,&quot;{'inx':'2'}&quot;);">
+    <div class="b-cube">
+      <div class="b-cont b-cont1">
+        <div class="b-cube2"><p class="b-title"> 超给力暑期计划 </p>
+
+          <p class="b-desc"> 带你学得开心进步快！ </p></div>
+      </div>
+      <div class="b-cont b-cont2">
+        <div class="b-cube2 cf"><p class="b-title"> 2015暑期学习计划 </p>
+
+          <p class="b-desc"> 沪江中小学，带你学得开心进步快！<br>
+            三大学科主题周，全科齐上阵！语文、英语、数理化全面提升，更多暑假精彩活动等待你的参与。<br>
+            夏天冲一冲，开学更轻松！ </p>
+
+          <p><a href="javascript:;" class="square">立即参与</a></p></div>
+        <div class="pic_bg"><img src="http://i2.w.hjfile.cn/news/201506/2015062612074477438.png" alt=""></div>
+      </div>
+      <div class="b-hover b-yellow"></div>
+      <div class="b-cover"><img src="http://i2.w.hjfile.cn/news/201506/201506265161617434.jpg" alt=""></div>
+    </div>
+  </div>
+  <div class="b-block bk-2 bk-hori bk-num3" data-url="http://www.cctalk.com/zt/yyzc/"
+       onclick="SendEvent(38,881,&quot;{'inx':'3'}&quot;);">
+    <div class="b-cube">
+      <div class="b-cont b-cont1">
+        <div class="b-cube2"><p class="b-title"> 召唤名师来开课 </p>
+
+          <p class="b-desc"> 英语名师全阵容，等你做决定！ </p></div>
+      </div>
+      <div class="b-cont b-cont2">
+        <div class="b-cube2"><p class="b-title"> 英语名师全阵容，等你做决定！ </p>
+
+          <p class="b-desc"> 谁是你心中最牛英语名师？四六级考神赵建昆、英语写作专家王江涛还是听力口语美女梅雪？决定权交给你！全阵容英语名师，选择属于你的王牌！ </p>
+
+          <p><a href="javascript:;" class="square">你的课堂你做主</a></p></div>
+        <div class="pic_bg"><img src="http://i2.w.hjfile.cn/news/201507/201507037362829188.png" alt=""></div>
+      </div>
+      <div class="b-hover b-blue"></div>
+      <div class="b-cover"><img src="http://i2.w.hjfile.cn/news/201507/201507064293147136.jpg" alt=""></div>
+    </div>
+  </div>
+  <div class="b-block bk-1 bk-hori bk-num4" data-url="http://www.hujiang.com/app/hujiang/"
+       onclick="SendEvent(38,881,&quot;{'inx':'4'}&quot;);">
+    <div class="b-cube">
+      <div class="b-cont b-cont1">
+        <div class="b-cube2"><p class="b-title"> 沪江APP </p>
+
+          <p class="b-desc"> 多语种阅读，学我想学 </p></div>
+      </div>
+      <div class="b-cont b-cont2">
+        <div class="b-cube2"><p class="b-title"> 沪江App </p>
+
+          <p class="b-desc"> 多语种阅读趣味学习<br>
+            便捷智能的内置查词<br>
+            志趣相投的社团互动<br></p>
+
+          <p><a href="javascript:;" class="square">立即下载</a></p></div>
+      </div>
+      <div class="b-hover b-green"></div>
+      <div class="b-cover"><img src="http://i2.w.hjfile.cn/news/201506/2015062311241035744.jpg" alt=""></div>
+    </div>
+  </div>
+  <div class="b-block bk-1 bk-hori bk-num5" data-url="http://jp.hjenglish.com/jlpt/daan/"
+       onclick="SendEvent(38,881,&quot;{'inx':'5'}&quot;);">
+    <div class="b-cube">
+      <div class="b-cont b-cont1">
+        <div class="b-cube2"><p class="b-title"> 能力考答案 </p>
+
+          <p class="b-desc"> 最新能力考答案发布 </p></div>
+      </div>
+      <div class="b-cont b-cont2">
+        <div class="b-cube2"><p class="b-title"> 能力考答案 </p>
+
+          <p class="b-desc"> 7月日语能力考<br>
+            公布最新权威答案<br>
+            考后进阶名师指导<br>
+            考后狂欢尽在此处 </p>
+
+          <p><a href="javascript:;" class="square">立即查看</a></p></div>
+      </div>
+      <div class="b-hover b-blue"></div>
+      <div class="b-cover"><img src="http://i2.w.hjfile.cn/news/201506/201506023024904881.png" alt=""></div>
+    </div>
+  </div>
+  <div class="b-block bk-1 bk-hori bk-num6" data-url="http://www.hujiang.com/about/open/"
+       onclick="SendEvent(38,881,&quot;{'inx':'6'}&quot;);">
+    <div class="b-cube">
+      <div class="b-cont b-cont1">
+        <div class="b-cube2"><p class="b-title"> 我要合作 </p>
+
+          <p class="b-desc"> 开启在线教育之路 </p></div>
+      </div>
+      <div class="b-cont b-cont2">
+        <div class="b-cube2"><p class="b-title"> 成就教育梦想 </p>
+
+          <p class="b-desc"> 善于教学，乐于分享。<br>人人都是互联网名师！<br>入驻沪江，在线授课，<br>这里有更广阔的舞台。 </p>
+
+          <p><a href="/about/open/" target="_blank" class="square">立即合作</a></p></div>
+      </div>
+      <div class="b-hover b-blue2"></div>
+      <div class="b-cover"><img src="images/bk_6.jpg" alt=""></div>
+    </div>
+  </div>
+</div>
+<div class="btm-nav">
+<p class="c-text"><span onclick="SendEvent(38, 929)">更多沪江学习资源</span></p>
+
+<div class="btm-nav-cont">
+<div class="btm-nav-block cf">
+<div class="col-md-4 btm-nav-li">
+  <div class="b-title cf">
+    <i class="icon icon-k12"></i>
+    <span onclick="SendEvent(38, 882,&quot;{'label':'中小幼'}&quot;)">中小幼</span>
+  </div>
+  <div class="b-cont b-cont4 cf sendeventZxx htLinks" data-planID="38" data-eventID="882">
+
+    <a target="_blank" href="http://st.hujiang.com/xiaoxueyuwen/"><span>小学语文</span></a>
+
+    <a target="_blank" href="http://xiaoxue.hujiang.com/shuxue/"><span>小学数学</span></a>
+
+    <a target="_blank" href="http://st.hujiang.com/xiaoxueyingyu/"><span>小学英语</span></a>
+
+    <a target="_blank" href="http://www.hujiang.com/classzt/MKTTopic_230"><span>初中语文</span></a>
+
+    <a target="_blank" href="http://www.hujiang.com/classzt/MKTTopic_102"><span>高中语文</span></a>
+
+    <a target="_blank" href="http://www.hujiang.com/classzt/MKTTopic_41"><span>初中英语</span></a>
+
+    <a target="_blank" href="http://www.hujiang.com/classzt/MKTTopic_58"><span>高中英语</span></a>
+
+    <a target="_blank" href="http://www.hujiang.com/classzt/MKTTopic_254"><span>中学数理化</span></a>
+
+    <a target="_blank" href="http://www.hujiang.com/classzt/MKTTopic_93"><span>中小学留学</span></a>
+
+  </div>
+</div>
+<div class="col-md-4 btm-nav-li">
+  <div class="b-title cf">
+    <i class="icon icon-en"></i>
+    <span onclick="SendEvent(38, 883,&quot;{'label':'英语','url':'http://www.hjenglish.com/'}&quot;)"><a target="_blank"
+                                                                                                       href="http://www.hjenglish.com/">英语</a></span>
+  </div>
+  <div class="b-cont cf sendeventEn htLinks" data-planID="38" data-eventID="883">
+
+    <a target="_blank" href="http://www.hjenglish.com/tingli/"><span>听力</span></a>
+
+    <a target="_blank" href="http://www.hjenglish.com/kouyu/"><span>口语</span></a>
+
+    <a target="_blank" href="http://www.hjenglish.com/lingjichu/"><span>零基础</span></a>
+
+    <a target="_blank" href="http://www.hjenglish.com/new/zt/hjdaily/"><span>双语阅读</span></a>
+
+    <a target="_blank" href="http://www.hujiang.com/classzt/MKTTopic_271#CET46"><span>四六级</span></a>
+
+    <a target="_blank" href="http://cichang.hujiang.com/"><span>词汇</span></a>
+
+    <a target="_blank" href="http://www.hjclass.com/course?cate=11432"><span>新概念</span></a>
+
+    <a target="_blank" href="http://www.hjenglish.com/biz"><span>商务英语</span></a>
+
+    <a target="_blank" href="http://www.hjenglish.com/sitemap"><span>资源大全</span></a>
+
+  </div>
+</div>
+<div class="col-md-4 btm-nav-li">
+  <div class="b-title cf">
+    <i class="icon icon-jp"></i>
+    <span onclick="SendEvent(38, 884,&quot;{'label':'日语','url':'http://jp.hjenglish.com/'}&quot;)"><a target="_blank"
+                                                                                                      href="http://jp.hjenglish.com/">日语</a></span>
+  </div>
+  <div class="b-cont cf sendeventJp htLinks" data-planID="38" data-eventID="884">
+
+    <a target="_blank" href="http://jp.hjenglish.com/subject/pronounce/"><span>五十音图</span></a>
+
+    <a target="_blank" href="http://jp.hjenglish.com/new/zt/chuji/"><span>入门</span></a>
+
+    <a target="_blank" href="http://jp.hjenglish.com/jlpt/"><span>能力考</span></a>
+
+    <a target="_blank" href="http://jp.hjenglish.com/pinpaikouyu/"><span>口语</span></a>
+
+    <a target="_blank" href="http://jp.hjenglish.com/ribenliuxue"><span>留学</span></a>
+
+    <a target="_blank" href="http://jp.hjenglish.com/riju/"><span>日剧</span></a>
+
+    <a target="_blank" href="http://jp.hjenglish.com/dongmanzx/"><span>动漫</span></a>
+
+    <a target="_blank" href="http://jp.hjenglish.com/ribenlvyou/"><span>旅游</span></a>
+
+    <a target="_blank" href="http://st.hujiang.com/topic/162022261064"><span>资源</span></a>
+
+  </div>
+</div>
+<div class="col-md-4 btm-nav-li">
+  <div class="b-title cf">
+    <i class="icon icon-kr"></i>
+    <span onclick="SendEvent(38, 885,&quot;{'label':'韩语','url':'http://kr.hujiang.com/'}&quot;)"><a target="_blank"
+                                                                                                    href="http://kr.hujiang.com/">韩语</a></span>
+  </div>
+  <div class="b-cont cf sendeventKr htLinks" data-planID="38" data-eventID="885">
+
+    <a target="_blank" href="http://kr.hujiang.com/rumen"><span>零基础</span></a>
+
+    <a target="_blank" href="http://kr.hujiang.com/new/zt/topik"><span>考试</span></a>
+
+    <a target="_blank" href="http://kr.hujiang.com/new/zt/hanju"><span>韩剧</span></a>
+
+    <a target="_blank" href="http://kr.hujiang.com/zongyi"><span>综艺</span></a>
+
+    <a target="_blank" href="http://kr.hujiang.com/new/zt/korealiuxue"><span>留学</span></a>
+
+    <a target="_blank" href="http://st.hujiang.com/topic/161900061638"><span>资源</span></a>
+
+    <a target="_blank" href="http://kr.hujiang.com/new/zt/jmhg"><span>文化</span></a>
+
+    <a target="_blank" href="http://kr.hujiang.com/new/zt/zizhuyou"><span>旅游</span></a>
+
+    <a target="_blank" href="http://kr.hujiang.com/new/zt/koreafasion"><span>时尚</span></a>
+
+  </div>
+</div>
+<div class="col-md-4 btm-nav-li">
+  <div class="b-title cf">
+    <i class="icon icon-xyz"></i>
+    <span onclick="SendEvent(38, 886,&quot;{'label':'小语种','url':'http://xyz.hujiang.com/'}&quot;)"><a target="_blank"
+                                                                                                      href="http://xyz.hujiang.com/">小语种</a></span>
+  </div>
+  <div class="b-cont cf sendeventXyz htLinks" data-planID="38" data-eventID="886">
+
+    <a target="_blank" href="http://fr.hujiang.com"><span>法语</span></a>
+
+    <a target="_blank" href="http://de.hujiang.com"><span>德语</span></a>
+
+    <a target="_blank" href="http://es.hujiang.com"><span>西语</span></a>
+
+    <a target="_blank" href="http://th.hujiang.com"><span>泰语</span></a>
+
+    <a target="_blank" href="http://ru.hujiang.com"><span>俄语</span></a>
+
+    <a target="_blank" href="http://cn.hujiang.com"><span>对外汉语</span></a>
+
+    <a target="_blank" href="http://xyz.hujiang.com"><span>其他语种</span></a>
+
+  </div>
+</div>
+<div class="col-md-4 btm-nav-li">
+  <div class="b-title cf">
+    <i class="icon icon-liuxue"></i>
+    <span><a target="_blank" href="http://liuxue.hujiang.com/"
+             onclick="SendEvent(38, 887,&quot;{'label':'留学','url':'http://liuxue.hujiang.com/'}&quot;)">留学</a> · <a
+        target="_blank" href="http://kaoyan.hjenglish.com/"
+        onclick="SendEvent(38, 887,&quot;{'label':'考研','url':'http://kaoyan.hjenglish.com/'}&quot;)">考研</a></span>
+  </div>
+  <div class="b-cont cf sendeventLx htLinks" data-planID="38" data-eventID="887">
+
+    <a target="_blank" href="http://liuxue.hujiang.com/zt/ysrm/"><span>雅思</span></a>
+
+    <a target="_blank" href="http://liuxue.hujiang.com/zt/tfrm"><span>托福</span></a>
+
+    <a target="_blank" href="http://liuxue.hujiang.com/sat"><span>SAT</span></a>
+
+    <a target="_blank" href="http://liuxue.hujiang.com/zt/ets_gre"><span>GRE</span></a>
+
+    <a target="_blank" href="http://liuxue.hujiang.com/gmat"><span>GMAT</span></a>
+
+    <a target="_blank" href="http://www.hjclass.com/course/kaoyan/yingyu"><span>考研英语</span></a>
+
+    <a target="_blank" href="http://www.hjclass.com/course/kaoyan/zhengzhi"><span>考研政治</span></a>
+
+    <a target="_blank" href="http://www.hjclass.com/course/kaoyan/shuxue"><span>考研数学</span></a>
+
+    <a target="_blank" href="http://kaoyan.hjenglish.com/majorcourse/"><span>考研专业课</span></a>
+
+  </div>
+</div>
+
+<div class="col-md-4 btm-nav-li">
+  <div class="b-title cf">
+    <i class="icon icon-ck"></i>
+    <span onclick="SendEvent(38, 888,&quot;{'label':'财会'}&quot;)">财会</span>
+  </div>
+  <div class="b-cont b-cont4 cf sendeventCh htLinks" data-planID="38" data-eventID="888">
+
+    <a target="_blank" href="http://www.hjclass.com/course?cate=1312110"><span>从业考试</span></a>
+
+    <a target="_blank" href="http://www.hjclass.com/course?cate=1312016"><span>注册会计师</span></a>
+
+    <a target="_blank" href="http://www.hjclass.com/course?cate=1311819"><span>投资理财</span></a>
+
+    <a target="_blank" href="http://www.hjclass.com/course?cate=1322016"><span>ACCA</span></a>
+
+    <a target="_blank" href="http://www.hjclass.com/course?cate=1322587"><span>CFA</span></a>
+
+    <a target="_blank" href="http://www.hjclass.com/course?cate=1323973"><span>CMA</span></a>
+
+    <a target="_blank" href="http://www.hjclass.com/course?cate=1311973"><span>职称考试</span></a>
+
+    <a target="_blank" href="http://www.hjclass.com/course?cate=1322728"><span>财经培训</span></a>
+
+    <a target="_blank" href="http://www.hjclass.com/course?cate=1311728"><span>其他考试</span></a>
+
+  </div>
+</div>
+
+<div class="col-md-4 btm-nav-li">
+  <div class="b-title cf">
+    <i class="icon icon-zhiye"></i>
+    <span onclick="SendEvent(38, 889,&quot;{'label':'职场'}&quot;)">职场</span>
+  </div>
+  <div class="b-cont b-cont4 cf sendeventZc htLinks" data-planID="38" data-eventID="889">
+
+    <a target="_blank" href="http://www.cctalk.com/gongkaike/subject/527/"><span>电商创业</span></a>
+
+    <a target="_blank" href="http://www.cctalk.com/gongkaike/subject/281/"><span>求职面试</span></a>
+
+    <a target="_blank" href="http://www.hujiang.com/classzt/MKTTopic_135"><span>职场技能</span></a>
+
+    <a target="_blank" href="http://www.hjclass.com/course/zhichangxingqu/office"><span>Office</span></a>
+
+    <a target="_blank" href="http://www.hujiang.com/classzt/MKTTopic_86"><span>平面设计</span></a>
+
+    <a target="_blank" href="http://www.cctalk.com/gongkaike/subject/292/"><span>自我提升</span></a>
+
+    <a target="_blank" href="http://www.hjclass.com/course/zhichangxingqu/yingshi"><span>影视包装</span></a>
+
+    <a target="_blank" href="http://st.hujiang.com/zhichang/"><span>职业交流</span></a>
+
+  </div>
+</div>
+
+<div class="col-md-4 btm-nav-li">
+  <div class="b-title cf">
+    <i class="icon icon-interest"></i>
+    <span onclick="SendEvent(38, 890,&quot;{'label':'兴趣'}&quot;)">兴趣</span>
+  </div>
+  <div class="b-cont b-cont4 cf sendeventXq htLinks" data-planID="38" data-eventID="890">
+
+    <a target="_blank" href="http://st.hujiang.com/drm/"><span>心理</span></a>
+
+    <a target="_blank" href="http://st.hujiang.com/ifans/"><span>翻译</span></a>
+
+    <a target="_blank" href="http://st.hujiang.com/dushuhui/"><span>读书会</span></a>
+
+    <a target="_blank" href="http://st.hujiang.com/syxy/"><span>摄影</span></a>
+
+    <a target="_blank" href="http://www.cctalk.com/list/c75/"><span>音乐美术</span></a>
+
+    <a target="_blank" href="http://www.cctalk.com/list/c76/"><span>美好生活</span></a>
+
+    <a target="_blank" href="http://www.hjclass.com/course/zhichangxingqu/huihua"><span>绘画技巧</span></a>
+
+    <a target="_blank" href="http://st.hujiang.com/animation/"><span>动漫社</span></a>
+
+    <a target="_blank" href="http://st.hujiang.com/meizhuang/"><span>美妆社</span></a>
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="feedback">
+  <a class="feed-pic" href="http://st.hujiang.com/topic/162793451678/" target="_blank"></a>
+</div>
+</div>
+</div>
+<div class="footer">
+  <div class="container">
+    <div class="row cf">
+      <div class="col-md-3 foot-li">
+        <div class="f-cube">
+          <div class="b-title">
+            关于沪江
+          </div>
+          <div class="b-cont b-link cf">
+            <a target="_blank" rel="nofollow" href="http://www.hujiang.com/about/">企业介绍</a>
+
+            <a target="_blank" rel="nofollow" href="/zt/hystory/">沪友故事</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 foot-li">
+        <div class="f-cube">
+          <div class="b-title">
+            新手指南
+          </div>
+          <div class="b-cont b-link cf">
+            <a target="_blank" rel="nofollow" href="http://kefu.hujiang.com/faq/1159/">如何注册会员</a>
+            <a target="_blank" rel="nofollow" href="http://kefu.hujiang.com/product/17/">如何在网校学习</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 foot-li">
+        <div class="f-cube">
+          <div class="b-title">
+            加入沪江
+          </div>
+          <div class="b-cont b-link cf">
+            <a target="_blank" rel="nofollow" href="http://jobs.hujiang.com/campus">校园招聘</a>
+            <a target="_blank" rel="nofollow" href="http://jobs.hujiang.com/fulltime">社会招聘</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 foot-li foot-li-last">
+        <div class="f-cube">
+          <div class="b-title">
+            客服热线
+          </div>
+          <div class="b-cont b-last cf">
+            <p class="phone fl">
+              4008-220-220
+            </p>
+            <a href="javascript:;" class="qr-a">
+              <i class="icon icon-weibo"></i>
+
+              <div class="qr-pic">
+                <img src="images/weibo_qr.png" alt="">
+              </div>
+            </a>
+            <a href="javascript:;" class="qr-a">
+              <i class="icon icon-weixin"></i>
+
+              <div class="qr-pic">
+                <img src="images/weixin_qr.png" alt="">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <a href="javascript:;" rel="nofollow" onclick="this.href='http://www.miibeian.gov.cn/'" target="_blank"
+         title="沪ICP证">沪B2-20110096</a>
+      &copy;2007-2015&nbsp<a href="http://www.hujiang.com/" target="_blank">沪江</a>&nbsp
+      <a target="_blank" href="http://www.hujiang.com/zt/about/copyright/"><span>版权声明</span></a><span
+        class="spliter"> |</span>
+      <span>教职成司函</span><span class="spliter"> |</span>
+      <a target="_blank" href="http://www.hujiang.com/about/contact/"><span>联系我们</span></a><span
+        class="spliter"> |</span>
+      <a target="_blank" href="http://www.hujiang.com/sitemap/"><span>站点地图</span></a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="side-fix">
+  <ul>
+    <li>
+      <a target="_blank" href="http://st.hujiang.com/topic/162793451678/">
+        <i class="icon icon-feedback"></i>
+        <span class="hover-text">我要<br>反馈</span>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;" id="2013version" onclick="SendEvent(38,908);">
+        <i class="icon icon-return"></i>
+        <span class="hover-text">返回<br>旧版</span>
+      </a>
+    </li>
+    <li class="backTop" style="display: none;">
+      <a href="javascript:scrollTo(0,0);">
+        <i class="icon icon-backtop"></i>
+        <span class="hover-text">回到<br>顶部</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<input type="hidden" id="sildeNewestUrl" value="http://www.hujiang.com/zt/hystory/Xiaoxinkun/">
+<!-- pc -->
+<script type="text/javascript" src="http://res.hjfile.cn/js/lib/jq/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/js.cookie.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="http://pass.hujiang.com/quick/biz/hj_quicklogin.min.js"></script>
+<script type="text/javascript" src="http://common.hjfile.cn/site/js/fastlogin.js?v=2014070801"></script>
+<!-- mobile -->
+
+<!-- business -->
+<script src="js/hj-index2015.js"></script>
+<script type="text/javascript" src="http://common.hjfile.cn/analytics/hotlink/hotlink.js?v=1"></script>
+<script type="text/javascript" src="http://common.hjfile.cn/analytics/site/hujiang.js"></script>
+
+<script
+    type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cspan id='cnzz_stat_icon_1254911350'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/q_stat.php%3Fid%3D1254911350' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</body>
+
+</html>
