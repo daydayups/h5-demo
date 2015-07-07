@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+  <title>Untitled Page</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0
+    }
+
+    #lay1, #lay2, #lay3 {
+      filter: alpha(opacity=50);
+      opacity: 0.5;
+      position: absolute
+    }
+
+    #lay1 {
+      width: 400px;
+      height: 200px;
+      background: #FCC;
+      left: 350px;
+      top: 160px
+    }
+
+    #lay2 {
+      width: 430px;
+      height: 250px;
+      background: #F99;
+      left: 300px;
+      top: 130px
+    }
+
+    #lay3 {
+      width: 460px;
+      height: 280px;
+      background: #F69;
+      left: 250px;
+      top: 110px
+    }
+  </style>
+</head>
+<body style="padding:0; margin:0; height:2000px">
+<div style="width:1300px; height:700px; position:relative">
+  <div id="lay1"></div>
+  <div id="lay2"></div>
+  <div id="lay3"></div>
+</div>
+</body>
+</html>
+<script language="javascript" type="text/javascript">
+  document.onmousemove = function (evt) {
+    evt = evt || window.event;
+    showP(evt.clientX, evt.clientY);
+  }
+  var middleX = 650, middleY = 350//中心坐标
+  function showP(x, y) {
+    xP = (x - 500) / 500;
+    yP = (y - 250) / 250;
+    document.getElementById("lay1").style.left = (350 + xP * 20) + "px";// lay1的左右移动区间是正负20像素
+    document.getElementById("lay1").style.top = (160 + yP * 15) + "px";// lay1的上下移动区间是正负15像素
+
+    document.getElementById("lay2").style.left = (300 + xP * 40) + "px";// lay2的左右移动区间是正负40像素
+    document.getElementById("lay2").style.top = (130 + yP * 27) + "px";// lay2的上下移动区间是正负27像素
+
+    document.getElementById("lay3").style.left = (250 + xP * 60) + "px";// lay3的左右移动区间是正负60像素
+    document.getElementById("lay3").style.top = (110 + yP * 35) + "px";// lay3的上下移动区间是正负35像素
+  }
+
+</script><!--[if !IE]>|xGv00|be9639fb96279d9d358ea2cf5745a3c1<![endif]-->
