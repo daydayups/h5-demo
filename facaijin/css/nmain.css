@@ -819,31 +819,60 @@ img {
   right: -103px;
   z-index: 101;
 }
-.guide-pic-close {
-  /*background-color: #ffffff;*/
+.guide-pic-close-one {
+  _background: url(../images/bg_one_pixel.png);
+  +background: url(../images/bg_one_pixel.png);
+  *background: url(../images/bg_one_pixel.png);
+  background: url(../images/bg_one_pixel.png)\9;
+  background: url(../images/bg_one_pixel.png);
   cursor: pointer;
   display: block;
-  width: 30px;
   height: 30px;
-}
-.guide-pic-close.one {
+  width: 30px;
   position: absolute;
-  right: 27px;
+  right: 20px;
   top: 5px;
+  _left: 232px;
+  _top: 6px;
 }
-.guide-pic-close.two {
+.guide-pic-close-two {
+  _background: url(../images/bg_one_pixel.png);
+  +background: url(../images/bg_one_pixel.png);
+  *background: url(../images/bg_one_pixel.png);
+  background: url(../images/bg_one_pixel.png)\9;
+  background: url(../images/bg_one_pixel.png);
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  width: 30px;
   position: absolute;
   right: 49px;
   top: 5px;
+  _left: 338px;
+  _top: 6px;
 }
-.guide-pic-close.three {
+.guide-pic-close-three {
+  _background: url(../images/bg_one_pixel.png);
+  +background: url(../images/bg_one_pixel.png);
+  *background: url(../images/bg_one_pixel.png);
+  background: url(../images/bg_one_pixel.png)\9;
+  background: url(../images/bg_one_pixel.png);
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  width: 30px;
   position: absolute;
   right: 41px;
   top: 10px;
+  _left: 247px;
+  _top: 6spx;
 }
 .guide-next {
-  background: none;
-  /*background-color: #cccccc;*/
+  _background: url(../images/bg_one_pixel.png);
+  +background: url(../images/bg_one_pixel.png);
+  *background: url(../images/bg_one_pixel.png);
+  background: url(../images/bg_one_pixel.png)\9;
+  background: url(../images/bg_one_pixel.png);
   border: 0 none;
   cursor: pointer;
   display: block;
@@ -854,16 +883,19 @@ img {
   position: absolute;
   bottom: 46px;
   left: 102px;
+  _top: 105px;
 }
 .guide-next.two {
   position: absolute;
   bottom: 19px;
   left: 150px;
+  _top: 124px;
 }
 .guide-next.three {
   position: absolute;
   bottom: 21px;
   left: 126px;
+  _top: 223px;
 }
 /* - 申请操盘 - */
 .apply {
@@ -1171,7 +1203,6 @@ img {
   left: -40px;
   top: 30px;
 }
-
 .tab-wrap a.tab {
   display: block;
   margin-top: 10px;
@@ -1181,13 +1212,11 @@ img {
   padding: 24px 12px;
   border-radius: 4px 0 0 4px;
 }
-
 .tab-wrap .tab:hover {
   color: #fff;
   text-decoration: none;
   background-color: #aab0b5;
 }
-
 .tab-wrap .tab.current {
   background-color: #c50024 !important;
 }
@@ -1379,6 +1408,9 @@ span.sort-icon.sort-icon-hover {
 }
 .link-relation {
   color: #6c88c4;
+}
+.article-ct-style, .article-ct-style * {
+  font-size: 16px !important;
 }
 /* washgold */
 .news .washgold-text  {
@@ -3023,9 +3055,8 @@ img.verify-img {
 .page {
   text-align: center;
   line-height: 32px;
-  margin-left: auto;
   margin-right: auto;
-  width: 200px;
+  width: 400px;
 }
 .page a {
   display: block;
@@ -3855,34 +3886,21 @@ img.verify-img {
   color: #ffffff;
   text-decoration: none;
 }
-
-.w80 {
-  width: 80px !important;
+.w220 {
+  width: 220px !important;
 }
-
-.w130 {
-  width: 130px !important;
+.w200 {
+  width: 200px !important;
 }
 .w180 {
   width: 180px !important;
 }
-
-.w190 {
-  width: 190px !important;
+.w130 {
+  width: 130px !important;
 }
-
-.w200 {
-  width: 200px !important;
+.w80 {
+  width: 80px !important;
 }
-
-.w220 {
-  width: 220px !important;
-}
-
-.w300 {
-  width: 300px !important;
-}
-
 .icon-ths {
   background: url(../images/download/icon_ths.png) no-repeat;
   display: block;
@@ -4166,12 +4184,10 @@ img.verify-img {
 .slide-box .slide-img img {
   width: 740px;
 }
-
 .guide-content .switch-tab-block ul li {
   float: left;
   position: relative;
 }
-
 .guide-content .switch-tab-block .tab {
   background-color: #ffffff;
   cursor: pointer;
@@ -4182,12 +4198,10 @@ img.verify-img {
   width: 184px;
   text-align: center;
 }
-
 .guide-content .switch-tab-block .tab.curr {
   background-color: #cc0000;
   color: #ffffff;
 }
-
 .guide-content .switch-tab-block .tab.curr + .arrow-down-red {
   background: url(../images/help/icons.png) no-repeat -90px 0;
   height: 10px;
