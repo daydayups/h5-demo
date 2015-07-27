@@ -462,12 +462,12 @@ img {
   right: 0;
   width: 300px;
   height: 259px;
-  background: url(../images/banner_float.png);
+  background: url(../images/fl_box_bg.png);
   z-index: 11;
 }
 .fl-content {
   margin-top: 20px;
-  margin-left: 33px;
+  margin-left: 20px;
 }
 .anchor-btn {
   display: block;
