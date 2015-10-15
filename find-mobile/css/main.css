@@ -1,0 +1,643 @@
+/* pre-set */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: arial, 'Microsoft Yahei', sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  display: block;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-table;
+}
+
+/* - Hides from IE-mac - \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* - End hide from IE-mac - */
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* module */
+/* -float- */
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+/* -font- */
+.f-12 {
+  font-size: 12px !important;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.f-16 {
+  font-size: 16px;
+}
+
+.f-18 {
+  font-size: 18px;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.f-22 {
+  font-size: 22px;
+}
+
+.f-24 {
+  font-size: 24px;
+}
+
+.f-28 {
+  font-size: 28px;
+}
+
+.f-30 {
+  font-size: 30px;
+}
+
+.f-36 {
+  font-size: 36px;
+}
+
+.f-bold {
+  font-weight: bold;
+}
+
+.f-italic {
+  font-style: italic;
+}
+
+.f-underline {
+  text-decoration: underline;
+}
+
+.f-song {
+  font-family: 'SimSun';
+}
+
+/* -margin- */
+.ml-5 {
+  margin-left: 5px !important;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.ml-10 {
+  margin-left: 10px !important;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.ml-25 {
+  margin-left: 25px;
+}
+
+.mr-25 {
+  margin-right: 25px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.ml-35 {
+  margin-left: 35px;
+}
+
+.mr-35 {
+  margin-right: 35px;
+}
+
+.mt-35 {
+  margin-top: 35px;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.mr-50 {
+  margin-right: 50px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+/* -color- */
+.cl-102 {
+  color: #666;
+}
+
+.cl-119 {
+  color: #777;
+}
+
+.cl-153 {
+  color: #999;
+}
+
+.cl-193 {
+  color: #c1c1c1;
+}
+
+.cl-204 {
+  color: #ccc;
+}
+
+.cl-white {
+  color: #fff;
+}
+
+.cl-red {
+  color: #ff4f68;
+}
+
+.cl-blue {
+  color: #51befc;
+}
+
+.cl-yellow {
+  color: #fddf58;
+}
+
+.cl-green {
+  color: #07a10e;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.bg-239 {
+  background-color: #efefef;
+}
+
+/* -button- */
+button {
+  background: none;
+  border: 0 none;
+}
+
+/* -brd- */
+.brd-t {
+  border-top: 1px solid #ececec;
+}
+
+.brd-b {
+  border-bottom: 1px solid #ececec;
+}
+
+.brd-l {
+  border-left: 1px solid #ececec;
+}
+
+.brd-r {
+  border-right: 1px solid #ececec;
+}
+
+/* top */
+.top-fixed * {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+.top-fixed {
+  background: #ffffff;
+  line-height: 52px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+button.btn-compose {
+  background: url(../images/icons.png) no-repeat 0 2px;
+  background-size: 144px 102px;
+  display: block;
+  height: 24px;
+  left: 5%;
+  position: absolute;
+  top: 14px;
+  width: 24px;
+}
+
+button.btn-search {
+  background: url(../images/icons.png) no-repeat -32px 2px;
+  background-size: 144px 102px;
+  display: block;
+  height: 24px;
+  right: 5%;
+  position: absolute;
+  top: 14px;
+  width: 24px;
+}
+
+/* switch-wrap */
+.switch-wrap {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.switch-wrap li {
+  text-align: center;
+  width: 25%;
+}
+
+.switch-wrap .tab {
+  color: #646464;
+  display: block;
+  font-size: 14px;
+  line-height: 52px;
+}
+
+.switch-wrap .tab.active {
+  color: #ff4f68;
+  font-size: 18px;
+}
+
+/* body */
+.body {
+  padding-top: 52px;
+  padding-bottom: 20px;
+}
+
+.bg-light-blue {
+  background-color: #efeff4;
+}
+
+/* banner */
+.banner {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.banner:after {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 37.3%;
+}
+
+.banner ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner li {
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner li:first-child {
+  z-index: 1;
+}
+
+.banner li img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.banner .dot {
+  bottom: 10px;
+  font-size: 0;
+  position: absolute;
+  right: 10px;
+  z-index: 5;
+}
+
+.banner .dot span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.banner .dot .cur {
+  background-color: #fff;
+}
+
+/* list */
+.list {
+
+}
+
+.list .item {
+  background: #ffffff;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.list .item .i-top {
+  padding: 20px 20px 0 20px;
+}
+
+.list .item .i-top .avatar img {
+  max-width: 50px;
+}
+
+.list .item .i-title {
+  font-size: 20px;
+}
+
+.list .item .i-middle {
+  padding: 10px 20px 20px 20px;
+}
+
+.list .item .i-bottom {
+  padding: 8px 0;
+}
+
+.list .item .i-bottom .btn {
+  float: left;
+  line-height: 24px;
+  padding-left: 10%;
+  width: 23%;
+}
+
+.list .item .i-pictures img {
+  float: left;
+  margin-right: 8px;
+  max-width: 25%;
+}
+
+.thumb-up .ic {
+  background: url(../images/icons.png) no-repeat -65px 2px;
+  background-size: 144px 102px;
+  display: block;
+  float: left;
+  height: 24px;
+  width: 24px;
+}
+
+.review .ic {
+  background: url(../images/icons.png) no-repeat -92px 2px;
+  background-size: 144px 102px;
+  display: block;
+  float: left;
+  height: 24px;
+  width: 24px;
+}
+
+.reward .ic {
+  background: url(../images/icons.png) no-repeat -120px 2px;
+  background-size: 144px 102px;
+  display: block;
+  float: left;
+  height: 24px;
+  width: 24px;
+}
+
+/* footer-fixed */
+.footer-fixed {
+  background: #ffffff;
+  border-top: 1px solid #d3d3d3;
+  bottom: 0;
+  height: 52px;
+  padding: 5px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.footer-fixed .tab-m {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.footer-fixed .tab-m .ic {
+  display: block;
+  height: 30px;
+  margin: 0 auto;
+  width: 30px;
+}
+
+.footer-fixed .tab-m span {
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.footer-fixed .tab-m.find .ic {
+  background: url(../images/icons.png) no-repeat 0 -34px;
+  background-size: 144px 102px;
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.footer-fixed .tab-m.find.active .ic {
+  background: url(../images/icons.png) no-repeat 0 -71px;
+  background-size: 144px 102px;
+}
+
+.footer-fixed .tab-m.simulate .ic {
+  background: url(../images/icons.png) no-repeat -38px -34px;
+  background-size: 144px 102px;
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.footer-fixed .tab-m.simulate.active .ic {
+  background: url(../images/icons.png) no-repeat -38px -71px;
+  background-size: 144px 102px;
+}
+
+.footer-fixed .tab-m.market .ic {
+  background: url(../images/icons.png) no-repeat -76px -34px;
+  background-size: 144px 102px;
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.footer-fixed .tab-m.market.active .ic {
+  background: url(../images/icons.png) no-repeat -76px -70px;
+  background-size: 144px 102px;
+}
+
+.footer-fixed .tab-m.me .ic {
+  background: url(../images/icons.png) no-repeat -114px -34px;
+  background-size: 144px 102px;
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+
+.footer-fixed .tab-m.me.active .ic {
+  background: url(../images/icons.png) no-repeat -114px -71px;
+  background-size: 144px 102px;
+}
