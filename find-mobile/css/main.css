@@ -2,8 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  font-family: arial, 'Microsoft Yahei', sans-serif;
+  font-size: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial,"Microsoft YaHei", sans-serif;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-text-size-adjust: none;
 }
@@ -60,47 +60,6 @@ img {
   float: left;
 }
 
-/* -font- */
-.f-12 {
-  font-size: 12px !important;
-}
-
-.f-14 {
-  font-size: 14px;
-}
-
-.f-16 {
-  font-size: 16px;
-}
-
-.f-18 {
-  font-size: 18px;
-}
-
-.f-20 {
-  font-size: 20px;
-}
-
-.f-22 {
-  font-size: 22px;
-}
-
-.f-24 {
-  font-size: 24px;
-}
-
-.f-28 {
-  font-size: 28px;
-}
-
-.f-30 {
-  font-size: 30px;
-}
-
-.f-36 {
-  font-size: 36px;
-}
-
 .f-bold {
   font-weight: bold;
 }
@@ -111,10 +70,6 @@ img {
 
 .f-underline {
   text-decoration: underline;
-}
-
-.f-song {
-  font-family: 'SimSun';
 }
 
 /* -margin- */
@@ -369,7 +324,7 @@ button {
 
 button.btn-compose {
   background: url(../images/icons.png) no-repeat 0 2px;
-  background-size: 144px 102px;
+  background-size: 250px 145px;
   display: block;
   height: 24px;
   left: 5%;
@@ -379,8 +334,8 @@ button.btn-compose {
 }
 
 button.btn-search {
-  background: url(../images/icons.png) no-repeat -32px 2px;
-  background-size: 144px 102px;
+  background: url(../images/icons.png) no-repeat -37px 2px;
+  background-size: 250px 145px;
   display: block;
   height: 24px;
   right: 5%;
@@ -403,19 +358,19 @@ button.btn-search {
 .switch-wrap .tab {
   color: #646464;
   display: block;
-  font-size: 14px;
+  font-size: 0.9em;
   line-height: 52px;
 }
 
 .switch-wrap .tab.active {
   color: #ff4f68;
-  font-size: 18px;
+  font-size: 1.2em;
 }
 
 /* body */
 .body {
   padding-top: 52px;
-  padding-bottom: 20px;
+  padding-bottom: 58px;
 }
 
 .bg-light-blue {
@@ -504,11 +459,20 @@ button.btn-search {
 }
 
 .list .item .i-top .avatar img {
+  border-radius: 5px;
   max-width: 50px;
 }
 
 .list .item .i-title {
-  font-size: 20px;
+  font-size: 1.2em;
+}
+
+.list .item .i-subtitle {
+  font-size: 0.8em;
+}
+
+.list .item .i-time {
+  font-size: 0.8em;
 }
 
 .list .item .i-middle {
@@ -533,8 +497,8 @@ button.btn-search {
 }
 
 .thumb-up .ic {
-  background: url(../images/icons.png) no-repeat -65px 2px;
-  background-size: 144px 102px;
+  background: url(../images/icons.png) no-repeat -166px -57px;
+  background-size: 250px 145px;
   display: block;
   float: left;
   height: 24px;
@@ -542,8 +506,8 @@ button.btn-search {
 }
 
 .review .ic {
-  background: url(../images/icons.png) no-repeat -92px 2px;
-  background-size: 144px 102px;
+  background: url(../images/icons.png) no-repeat -84px 5px;
+  background-size: 250px 145px;
   display: block;
   float: left;
   height: 24px;
@@ -551,8 +515,8 @@ button.btn-search {
 }
 
 .reward .ic {
-  background: url(../images/icons.png) no-repeat -120px 2px;
-  background-size: 144px 102px;
+  background: url(../images/icons.png) no-repeat -117px 4px;
+  background-size: 250px 145px;
   display: block;
   float: left;
   height: 24px;
@@ -564,7 +528,6 @@ button.btn-search {
   background: #ffffff;
   border-top: 1px solid #d3d3d3;
   bottom: 0;
-  height: 52px;
   padding: 5px 0;
   position: fixed;
   width: 100%;
@@ -574,6 +537,7 @@ button.btn-search {
 .footer-fixed .tab-m {
   display: block;
   float: left;
+  font-size: 0.8em;
   width: 25%;
 }
 
@@ -586,58 +550,57 @@ button.btn-search {
 
 .footer-fixed .tab-m span {
   display: block;
-  margin-top: 5px;
   text-align: center;
 }
 
 .footer-fixed .tab-m.find .ic {
-  background: url(../images/icons.png) no-repeat 0 -34px;
-  background-size: 144px 102px;
+  background: url(../images/icons.png) no-repeat 3px -25px;
+  background-size: 250px 145px;
   display: block;
   height: 30px;
   width: 30px;
 }
 
 .footer-fixed .tab-m.find.active .ic {
-  background: url(../images/icons.png) no-repeat 0 -71px;
-  background-size: 144px 102px;
+  background: url(../images/icons.png) no-repeat 3px -52px;
+  background-size: 250px 145px;
 }
 
 .footer-fixed .tab-m.simulate .ic {
-  background: url(../images/icons.png) no-repeat -38px -34px;
-  background-size: 144px 102px;
+  background: url(../images/icons.png) no-repeat -33px -24px;
+  background-size: 250px 145px;
   display: block;
   height: 30px;
   width: 30px;
 }
 
 .footer-fixed .tab-m.simulate.active .ic {
-  background: url(../images/icons.png) no-repeat -38px -71px;
-  background-size: 144px 102px;
+  background: url(../images/icons.png) no-repeat -33px -52px;
+  background-size: 250px 145px;
 }
 
 .footer-fixed .tab-m.market .ic {
-  background: url(../images/icons.png) no-repeat -76px -34px;
-  background-size: 144px 102px;
+  background: url(../images/icons.png) no-repeat -68px -26px;
+  background-size: 250px 145px;
   display: block;
   height: 30px;
   width: 30px;
 }
 
 .footer-fixed .tab-m.market.active .ic {
-  background: url(../images/icons.png) no-repeat -76px -70px;
-  background-size: 144px 102px;
+  background: url(../images/icons.png) no-repeat -68px -53px;
+  background-size: 250px 145px;
 }
 
 .footer-fixed .tab-m.me .ic {
-  background: url(../images/icons.png) no-repeat -114px -34px;
-  background-size: 144px 102px;
+  background: url(../images/icons.png) no-repeat -104px -24px;
+  background-size: 250px 145px;
   display: block;
   height: 30px;
   width: 30px;
 }
 
 .footer-fixed .tab-m.me.active .ic {
-  background: url(../images/icons.png) no-repeat -114px -71px;
-  background-size: 144px 102px;
+  background: url(../images/icons.png) no-repeat -104px -52px;
+  background-size: 250px 145px;
 }
