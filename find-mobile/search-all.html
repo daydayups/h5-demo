@@ -16,65 +16,51 @@
 <body class="bg-239">
 <!-- top-fixed -->
 <div class="top-fixed clearfix">
-  <a class="btn-compose"></a>
-  <!-- switch-wrap -->
-  <div class="switch-wrap">
-    <ul class="clearfix">
-      <li class="pull-left"><span class="tab active">热门</span></li>
-      <li class="pull-left"><span class="tab">圈子</span></li>
-      <li class="pull-right"><span class="tab">动态</span></li>
-      <li class="pull-right"><span class="tab">活动</span></li>
-    </ul>
-  </div><!-- /.switch-wrap -->
-  <a class="btn-search" href="search-person.html"></a>
-</div><!-- /.top-fixed -->
-
-<!-- new top-fixed -->
-<div class="new top-big-fixed">
-  <div class="clearfix brd-b">
-    <a class="btn-close"></a>
-    <!-- top-title -->
-    <div class="top-title">
-      <span>发表新内容</span>
-    </div><!-- /.top-title -->
-    <a class="btn-search" href="search-person.html"></a>
+  <div class="search-box pull-left">
+    <span class="ic-arrow-down pull-left ml-10"></span>
+    <input class="search-inp" name="keywords" type="text">
+    <button class="btn-reset ic-reset"></button>
   </div>
-  <div class="top-big-footer m-c">
-    <a class="btn-new pull-left mr-20p" href="#">
-      <span class="ic-new-activity"></span>
-      <span>发动态</span>
-    </a>
-    <a class="btn-new pull-left mr-20p" href="#">
-      <span class="ic-new-article"></span>
-      <span>发文章</span>
-    </a>
-    <a class="btn-new pull-left" href="#">
-      <span class="ic-attendance"></span>
-      <span>签到</span>
-    </a>
-  </div><!-- /.top-big-footer -->
-</div><!-- /.new.top-fixed -->
+  <a class="search-cancel mr-20 pull-right" href="index.html">取消</a>
+</div><!-- /.top-fixed -->
 
 <!-- body -->
 <div class="body">
-  <!-- banner -->
-  <div class="banner" id="slide">
-    <ul>
-      <li><a href="#"><img src="images/banner01.jpg" alt=""></a></li>
-      <li><a href="#"><img src="images/banner02.jpg" alt=""></a></li>
-      <li><a href="#"><img src="images/banner03.jpg" alt=""></a></li>
-      <li><a href="#"><img src="images/banner04.jpg" alt=""></a></li>
-    </ul>
-    <div class="dot">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div><!-- /.banner -->
+  <div class="search-person-result clearfix mt-5">
+    <a class="person pull-left mr-15" href="#">
+      <img src="images/avatar05.png">
+      <span>吕子乔</span>
+    </a><!-- /.person -->
+    <a class="person pull-left mr-15" href="#">
+      <img src="images/avatar05.png">
+      <span>吕子乔</span>
+    </a><!-- /.person -->
+    <a class="person pull-left mr-15" href="#">
+      <img src="images/avatar05.png">
+      <span>吕子乔</span>
+    </a><!-- /.person -->
+    <a class="person pull-left mr-15" href="#">
+      <img src="images/avatar05.png">
+      <span>吕子乔</span>
+    </a><!-- /.person -->
+    <a class="person pull-left" href="#">
+      <div class="more"></div>
+      <img src="images/avatar05.png">
+      <span>更多人...</span>
+    </a><!-- /.person -->
+  </div><!-- /.search-person-result -->
 
-  <!-- list -->
-  <div class="list mt-10">
+  <div class="related clearfix brd-t brd-b">
+    <span class="ic-related pull-left"></span>
+    <span class="cl-100 pull-left ml-5">相关圈子</span>
+    <a class="pull-right" href="#">
+      <span class="ic-arrow-right pull-right"></span>
+      <span class="cl-193 pull-right">23个</span>
+    </a>
+  </div><!-- /.related -->
+
+  <!-- search-result -->
+  <div class="search-result mt-10">
     <div class="item mb-10">
       <div class="i-top clearfix">
         <div class="avatar pull-left">
@@ -160,83 +146,30 @@
         </a><!-- /.reward -->
       </div><!-- /.i-bottom -->
     </div><!-- /.item -->
-  </div><!-- /.list -->
+  </div><!-- /.search-result -->
 
-  <!-- footer-fixed -->
-  <div class="footer-fixed">
-    <a class="tab-m find active">
-      <i class="ic"></i>
-      <span class="cl-100">发现</span>
-    </a>
-    <a class="tab-m simulate">
-      <i class="ic"></i>
-      <span class="cl-100">模拟大赛</span>
-    </a>
-    <a class="tab-m market">
-      <i class="ic"></i>
-      <span class="cl-100">行情</span>
-    </a>
-    <a class="tab-m me">
-      <i class="ic"></i>
-      <span class="cl-100">我</span>
-    </a>
-  </div><!-- /.footer-fixed -->
 </div><!-- /.body -->
 <div class="modal"></div>
 <script src="js/zepto.min.js"></script>
-<script src="js/swipeSlide.min.js"></script>
-<script src="js/app.js"></script>
 <script>
-  $(function(){
-    $.modalInit('.modal');
-
-    //banner slide
-    $('#slide').swipeSlide({
-      continuousScroll:true,
-      speed : 3000,
-      transitionType : 'cubic-bezier(0.22, 0.69, 0.72, 0.88)',
-      firstCallback : function(i,sum,me){
-        me.find('.dot').children().first().addClass('cur');
-      },
-      callback : function(i,sum,me){
-        me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
-      }
-    });
-
-    //dot position relocate
-    var right = ($(window).width() - $('.dot').width()) / 2;
-    $('.dot').css({right: right + 'px'});
-
-    //top tab switch
-    var $tabs = $('.switch-wrap').find('.tab');
-    $tabs.tap(function(){
-      $tabs.removeClass('active');
-      $(this).addClass('active');
-    });
-
-    //footer tab switch
-    var $tabs_m = $('.footer-fixed').find('.tab-m');
-    $tabs_m.tap(function(){
-      $tabs_m.removeClass('active');
-      $(this).addClass('active');
-    });
-
-    //new
-    $('.btn-compose').tap(function(){
-      $.modalPop('.modal');
-      $('.new.top-big-fixed').animate({height: '210px'}, 'fast', 'easing');
-      setTimeout(function(){
-        $('.new.top-big-fixed').animate({height: '202px'}, 'fast', 'easing');
-      }, 250);
-    });
-
-    $('.modal, .btn-close').tap(function(){
-      $('.top-big-fixed').animate({height: '0'}, 'fast', 'easing');
-      setTimeout(function(){
-        $('.modal').hide();
-      }, 0);
-    });
+$(function(){
+  $('.btn-reset').tap(function(){
+    $('.search-box').find('input').val('');
   });
+
+  $('.btn-watch').tap(function(){
+    var flag = $(this).hasClass('un');
+    if (flag) {
+      $(this).removeClass('un');
+      $(this).find('.txt').text('关注ta');
+      //Do something with ajax.
+    } else {
+      $(this).addClass('un');
+      $(this).find('.txt').text('已关注');
+      //Do something with ajax.
+    }
+  });
+});
 </script>
 </body>
 </html>
