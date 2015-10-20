@@ -250,13 +250,13 @@
   </ul>
 </div>
 <div class="modal"></div>
-<script src="js/zepto.min.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/app.js"></script>
 <script>
 $(function(){
   $.modalInit('.modal');
 
-  $('.btn-search').tap(function(){
+  $('.btn-search').click(function(){
     $('.modal').show().fadeTo(200, 0.5);
     $('.search-bar').show();
   });
