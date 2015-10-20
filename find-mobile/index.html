@@ -12,6 +12,7 @@
 <meta http-equiv="cleartype" content="on" />
 <title>理财帮 - 随时随地掌握财富</title>
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/touchTouch.css">
 </head>
 <body class="bg-239">
 <!-- top-fixed -->
@@ -97,9 +98,9 @@
       <div class="i-middle">
         <p>长期不看好中国股市！为什么呢？因为一个不成熟的市场带来的很有可能是个坑<span class="cl-blue">@中国证监会</span></p>
         <div class="i-pictures clearfix mt-15">
-          <img src="images/i-picture00.jpg" alt=""/>
-          <img src="images/i-picture01.jpg" alt=""/>
-          <img src="images/i-picture02.jpg" alt=""/>
+          <img data-image="images/i-picture00.jpg" src="images/i-picture00.jpg" alt=""/>
+          <img data-image="images/i-picture01.jpg" src="images/i-picture01.jpg" alt=""/>
+          <img data-image="images/i-picture02.jpg" src="images/i-picture02.jpg" alt=""/>
         </div>
       </div><!-- /.i-middle -->
       <div class="i-bottom brd-t clearfix">
@@ -140,9 +141,10 @@
       <div class="i-middle">
         <p>长期不看好中国股市！为什么呢？因为一个不成熟的市场带来的很有可能是个坑<span class="cl-blue">@中国证监会</span></p>
         <div class="i-pictures clearfix mt-15">
-          <img src="images/i-picture00.jpg" alt=""/>
-          <img src="images/i-picture01.jpg" alt=""/>
-          <img src="images/i-picture02.jpg" alt=""/>
+          <!--<img data-image="images/i-picture00.jpg" src="images/i-picture00.jpg" alt=""/>
+          <img data-image="images/i-picture01.jpg" src="images/i-picture01.jpg" alt=""/>
+          <img data-image="images/i-picture02.jpg" src="images/i-picture02.jpg" alt=""/>-->
+          <img data-image="images/banner01.jpg" src="images/banner01.jpg" alt=""/>
         </div>
       </div><!-- /.i-middle -->
       <div class="i-bottom brd-t clearfix">
@@ -183,12 +185,17 @@
   </div><!-- /.footer-fixed -->
 </div><!-- /.body -->
 <div class="modal"></div>
-<script src="js/zepto.min.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/swipeSlide.min.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
 <script src="js/app.js"></script>
 <script>
   $(function(){
     $.modalInit('.modal');
+    $('.i-pictures img').click(function(){
+      $(this).parents('.i-pictures').find('img').touchTouch(this);
+//      $.touchTouch($(this).parents('.i-pictures').find('img'), this);
+    });
 
     //banner slide
     $('#slide').swipeSlide({
@@ -209,29 +216,29 @@
 
     //top tab switch
     var $tabs = $('.switch-wrap').find('.tab');
-    $tabs.tap(function(){
+    $tabs.click(function(){
       $tabs.removeClass('active');
       $(this).addClass('active');
     });
 
     //footer tab switch
     var $tabs_m = $('.footer-fixed').find('.tab-m');
-    $tabs_m.tap(function(){
+    $tabs_m.click(function(){
       $tabs_m.removeClass('active');
       $(this).addClass('active');
     });
 
     //new
-    $('.btn-compose').tap(function(){
-      $.modalPop('.modal');
-      $('.new.top-big-fixed').animate({height: '210px'}, 'fast', 'easing');
+    $('.btn-compose').click(function(){
+      $('.modal').show().fadeTo(200, 0.3);
+      $('.new.top-big-fixed').animate({height: '210px'}, 'fast');
       setTimeout(function(){
-        $('.new.top-big-fixed').animate({height: '202px'}, 'fast', 'easing');
+        $('.new.top-big-fixed').animate({height: '202px'}, 'fast');
       }, 250);
     });
 
-    $('.modal, .btn-close').tap(function(){
-      $('.top-big-fixed').animate({height: '0'}, 'fast', 'easing');
+    $('.modal, .btn-close').click(function(){
+      $('.top-big-fixed').animate({height: '0'}, 'fast');
       setTimeout(function(){
         $('.modal').hide();
       }, 0);

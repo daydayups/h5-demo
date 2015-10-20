@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta http-equiv="cleartype" content="on" />
+<title>理财帮 - 随时随地掌握财富</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/touchTouch.css">
+</head>
+<body class="bg-239">
+<!-- top-fixed -->
+<div class="top-fixed clearfix">
+  <a class="btn-back ml-20 pull-left"></a>
+  <!-- top-title -->
+  <div class="top-title">
+    <span>查看图片</span>
+  </div><!-- /.top-title -->
+  <button class="btn-trash"></button>
+</div><!-- /.top-fixed -->
+
+<div class="pictures">
+  <img src="images/picture.png" alt=""/>
+  <div class="pic-page">2/3</div>
+</div>
+
+
+<div class="modal"></div>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/swipeSlide.min.js"></script>
+<script src="js/touchTouch.jquery.js"></script>
+<script src="js/app.js"></script>
+<script>
+  $(function(){
+    $.modalInit('.modal');
+    $('.i-pictures img').click(function(){
+      $(this).parents('.i-pictures').find('img').touchTouch(this);
+//      $.touchTouch($(this).parents('.i-pictures').find('img'), this);
+    });
+
+    //banner slide
+    $('#slide').swipeSlide({
+      continuousScroll:true,
+      speed : 3000,
+      transitionType : 'cubic-bezier(0.22, 0.69, 0.72, 0.88)',
+      firstCallback : function(i,sum,me){
+        me.find('.dot').children().first().addClass('cur');
+      },
+      callback : function(i,sum,me){
+        me.find('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+      }
+    });
+
+    //dot position relocate
+    var right = ($(window).width() - $('.dot').width()) / 2;
+    $('.dot').css({right: right + 'px'});
+
+    //top tab switch
+    var $tabs = $('.switch-wrap').find('.tab');
+    $tabs.click(function(){
+      $tabs.removeClass('active');
+      $(this).addClass('active');
+    });
+
+    //footer tab switch
+    var $tabs_m = $('.footer-fixed').find('.tab-m');
+    $tabs_m.click(function(){
+      $tabs_m.removeClass('active');
+      $(this).addClass('active');
+    });
+
+    //new
+    $('.btn-compose').click(function(){
+      $('.modal').show().fadeTo(200, 0.3);
+      $('.new.top-big-fixed').animate({height: '210px'}, 'fast');
+      setTimeout(function(){
+        $('.new.top-big-fixed').animate({height: '202px'}, 'fast');
+      }, 250);
+    });
+
+    $('.modal, .btn-close').click(function(){
+      $('.top-big-fixed').animate({height: '0'}, 'fast');
+      setTimeout(function(){
+        $('.modal').hide();
+      }, 0);
+    });
+  });
+</script>
+</body>
+</html>

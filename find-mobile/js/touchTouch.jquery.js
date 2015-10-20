@@ -1,21 +1,15 @@
 /**
- * Created by Administrator on 2015/10/19.
+ * @name		jQuery touchTouch plugin
+ * @author		Martin Angelov
+ * @version 	1.0
+ * @url			http://www.sucaijiayuan.com
+ * @license		MIT License
  */
-$.extend($ , {
-  modalInit: function (target) {
-    // initialize modal
-    $(target).css({
-      "position": "fixed",
-      "z-index": 300,
-      "top": 0,
-      "left": 0,
-      "display": "none",
-      "width": "100%",
-      "height": "100%",
-      "background-color": "#000"
-    });
-  },
-  touchTouch: function(items, currentItem){
+
+(function(){
+  /* Creating the plugin */
+
+  $.fn.touchTouch = function(currentItem){
 
     /* Private variables */
 
@@ -23,14 +17,17 @@ $.extend($ , {
       slider = $('<div id="gallerySlider">'),
       prevArrow = $('<a id="prevArrow"></a>'),
       nextArrow = $('<a id="nextArrow"></a>'),
+      page = $('<a id="galleryPage"></a>'),
       overlayVisible = false;
 
     var placeholders = $([]),
-      index = 0;
+      index = 0,
+      items = this;
 
     // Appending the markup to the page
     overlay.hide().appendTo('body');
     slider.appendTo(overlay);
+    page.appendTo(overlay);
 
     // Creating a placeholder for each image
     items.each(function(){
@@ -47,38 +44,57 @@ $.extend($ , {
 
     // Listen for touch events on the body and check if they
     // originated in #gallerySlider img - the images in the slider.
-    $('body').on('swipe', '#gallerySlider img', function(e){
+    $('body').on('touchstart', '#gallerySlider img', function(e){
 
-      slider.on('swipeRight', function(e){
+      var touch = e.originalEvent,
+        startX = touch.changedTouches[0].pageX;
+
+      slider.on('touchmove',function(e){
+
         e.preventDefault();
-        showPrevious();
-      }).on('swipeLeft', function(){
-        e.preventDefault();
-        showNext();
+
+        touch = e.originalEvent.touches[0] ||
+            e.originalEvent.changedTouches[0];
+
+        if(touch.pageX - startX > 10){
+          slider.off('touchmove');
+          showPrevious();
+        }
+        else if (touch.pageX - startX < -10){
+          slider.off('touchmove');
+          showNext();
+        }
       });
 
       // Return false to prevent image
       // highlighting on Android
       return false;
+
+    }).on('touchend',function(){
+      slider.off('touchmove');
+    });
+
+    $('.gallery-cancel').on('click', function(){
+      hideOverlay();
     });
 
     // Listening for clicks on the thumbnails
     /*items.on('click', function(e){
-     e.preventDefault();
+      e.preventDefault();
 
-     // Find the position of this image
-     // in the collection
+      // Find the position of this image
+      // in the collection
 
-     index = items.index(this);
-     showOverlay(index);
-     showImage(index);
+      index = items.index(this);
+      showOverlay(index);
+      showImage(index);
 
-     // Preload the next image
-     preload(index+1);
+      // Preload the next image
+      preload(index+1);
 
-     // Preload the previous
-     preload(index-1);
-     });*/
+      // Preload the previous
+      preload(index-1);
+    });*/
 
     //loadImage immediately
     (function(){
@@ -125,6 +141,8 @@ $.extend($ , {
 
 
     /* Private functions */
+
+
     function showOverlay(index){
 
       // If the overlay is already shown, exit
@@ -142,6 +160,9 @@ $.extend($ , {
 
       // Move the slider to the correct image
       offsetSlider(index);
+
+      //Show page number
+      page.text((index + 1) + '/' + items.length);
 
       // Raise the visible flag
       overlayVisible = true;
@@ -202,8 +223,8 @@ $.extend($ , {
         index++;
         offsetSlider(index);
         preload(index+1);
-      }
-      else{
+        page.text((index + 1) + '/' + items.length);
+      } else {
         // Trigger the spring animation
 
         slider.addClass('rightSpring');
@@ -216,12 +237,12 @@ $.extend($ , {
     function showPrevious(){
 
       // If this is not the first image
-      if(index>0){
+      if (index>0) {
         index--;
         offsetSlider(index);
         preload(index-1);
-      }
-      else{
+        page.text((index + 1) + '/' + items.length);
+      } else{
         // Trigger the spring animation
 
         slider.addClass('leftSpring');
@@ -230,5 +251,6 @@ $.extend($ , {
         },500);
       }
     }
-  }
-});
+  };
+
+})(jQuery);

@@ -153,11 +153,11 @@
 <script src="js/zepto.min.js"></script>
 <script>
 $(function(){
-  $('.btn-reset').tap(function(){
+  $('.btn-reset').click(function(){
     $('.search-box').find('input').val('');
   });
 
-  $('.btn-watch').tap(function(){
+  $('.btn-watch').click(function(){
     var flag = $(this).hasClass('un');
     if (flag) {
       $(this).removeClass('un');
