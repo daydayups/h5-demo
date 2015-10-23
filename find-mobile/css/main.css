@@ -343,6 +343,10 @@ body {
   width: 100%;
   z-index: 200;
 }
+.top-fixed.sp {
+  background: none;
+  color: #ffffff;
+}
 
 .top-fixed * {
   -webkit-transition: all 0.2s ease-in-out 0s;
@@ -529,6 +533,11 @@ body {
 /* body */
 .body {
   padding-top: 52px;
+  padding-bottom: 58px;
+}
+
+.body.sp {
+  padding-top: 0;
   padding-bottom: 58px;
 }
 
@@ -1033,8 +1042,17 @@ body {
   width: 24px;
 }
 .btn-back {
-  background: url(../images/icons-a.png) no-repeat -29px -59px;
+  background: url(../images/icons-a.png) no-repeat -28px -59px;
   background-size: 201px 145px;
+  display: block;
+  height: 24px;
+  position: absolute;
+  top: 14px;
+  width: 24px;
+}
+.btn-back-white {
+  background: url(../images/icons-b.png) no-repeat 0 -21px;
+  background-size: 150px 70px;
   display: block;
   height: 24px;
   position: absolute;
@@ -1119,6 +1137,260 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 92%;
+}
+
+/* artitle */
+.article {
+  background: #ffffff;
+}
+.article .inner {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4% 0 8% 0;
+  width: 92%;
+}
+.article .title h1 {
+  font-size: 1.2em;
+}
+.article .title .info {
+  color: #c1c1c1;
+  font-size: 0.8em;
+}
+.article .a-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.article .txt {
+  font-size: 0.9em;
+}
+
+.index-b {
+  background: #efefef;
+  color: #c1c1c1;
+  font-size: 0.9em;
+  padding: 6px 20px;
+}
+
+/* comments */
+.comments .c-item {
+  background: #ffffff;
+  font-size: 0.9em;
+  padding: 4% 4%;
+}
+.comments .c-item .i-left {
+  float: left;
+  width: 10%;
+}
+.comments .c-item .i-right {
+  float: left;
+  width: 90%;
+}
+.comments .c-item .i-time {
+  font-size: 0.8em;
+}
+.comments .c-item .avatar img {
+  border-radius: 50%;
+  width: 35px;
+}
+.comments .c-item .thumb-up {
+  color: #c1c1c1;
+  font-size: 0.8em;
+  line-height: 20px;
+}
+.comments .c-item .reply {
+  color: #c1c1c1;
+  font-size: 0.8em;
+  line-height: 20px;
+}
+.ic-thumb-up {
+  background: url(../images/icons-b.png) no-repeat -127px 1px;
+  background-size: 150px 70px;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+.ic-reply {
+  background: url(../images/icons-b.png) no-repeat 0 -52px;
+  background-size: 150px 70px;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+/* compose-box */
+.compose-box {
+  background: #efefef;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+  height: 38px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.compose-box .inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 92%;
+}
+.compose-box .inp-box {
+  background: #ffffff;
+  border: 1px solid #d3d3d3;
+  border-radius: 2px;
+  display: block;
+  height: 36px;
+  line-height: 38px;
+  width: 86%;
+}
+.compose-box .inp-box .ic-edit {
+  background: url(../images/icons-b.png) no-repeat -95px 10px;
+  background-size: 150px 70px;
+  display: block;
+  height: 38px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 20px;
+}
+.compose-box .inp-box input {
+  font-size: 0.9em;
+  height: 36px;
+  line-height: 38px;
+  outline: 0 none;
+}
+.compose-box .submit {
+  background: url(../images/icons-b.png) no-repeat -31px -35px;
+  background-size: 150px 70px;
+  display: block;
+  height: 38px;
+  width: 38px;
+}
+
+/* circle */
+.circle {
+
+}
+.circle-info {
+  height: 240px;
+  padding-top: 50px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.circle-info-bg {
+  -webkit-filter: blur(1.8px);
+  -ms-filter: blur(1.8px);
+  filter: blur(1.8px);
+  height: 304px;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  width: 102%;
+  z-index: -1;
+}
+.circle-info .avatar {
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  height: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 37px;
+  width: 75px;
+}
+.circle-info h1 {
+  color: #ffffff;
+  font-size: 1.2em;
+  margin-top: 25px;
+  text-align: center;
+}
+.circle-info .sub {
+  color: #ffffff;
+  font-size: 0.9em;
+  margin-top: 9px;
+  opacity: 0.5;
+  text-align: center;
+}
+
+.circle .detail {
+  background: #ffffff;
+}
+.circle .detail .inner {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4% 0;
+  width: 92%;
+}
+.circle .detail .tags li {
+  float: left;
+  margin-right: 10px;
+}
+.circle .detail .tag {
+  background: #ececec;
+  color: #646464;
+  font-size: 0.9em;
+  line-height: 24px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.circle .detail .introduce {
+  font-size: 0.9em;
+}
+.circle-member {
+  background: #ffffff;
+}
+.circle-member .title {
+  line-height: 45px;
+  padding: 0 4%;
+}
+.circle-member .title .txt {
+  font-size: 1.1em;
+}
+.circle-member .title .num {
+  color: #c1c1c1;
+  font-size: 1em;
+}
+.circle-member .members {
+  padding: 4%;
+}
+.circle-member .members ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+.circle-member .members .person {
+  float: left;
+}
+.footer-fixed.sp {
+  height: 50px;
+  padding: 0;
+}
+.footer-fixed.sp button {
+  float: left;
+  line-height: 50px;
+  width: 50%;
+}
+.footer-fixed.sp .txt {
+  float: left;
+  margin-left: 20px;
+}
+.footer-fixed.sp .ic-plus {
+  background: url(../images/icons-b.png) no-repeat 0 15px;
+  background-size: 150px 70px;
+  display: block;
+  float: left;
+  height: 50px;
+  margin-left: 20px;
+  width: 16px;
+}
+.footer-fixed.sp .ic-detail {
+  background: url(../images/icons-b.png) no-repeat -25px 15px;
+  background-size: 150px 70px;
+  display: block;
+  float: left;
+  height: 50px;
+  margin-left: 20px;
+  width: 16px;
 }
 
 @media screen and (max-width: 360px) {
