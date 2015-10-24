@@ -1393,6 +1393,80 @@ body {
   width: 16px;
 }
 
+.charge .hint {
+  font-size: 0.9em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 92%;
+}
+.white-row-box {
+  background: #ffffff;
+  display: block;
+  font-size: 0.9em;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 4%;
+  position: relative;
+  width: 92%;
+}
+.charge .white-row-box input {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  outline: none;
+  width: 100%;
+}
+.charge .white-row-box .txt {
+  color: #51befc;
+  font-size: 0.8em;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+.charge .white-row-box .ic-reset {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+}
+.charge .white-row-box .ic-arrow-right {
+  position: absolute;
+  right: 16px;
+  top: 13px;
+}
+
+.btn-red {
+  background: #ff4f68;
+  border-radius: 4px;
+  color: #ffffff;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 92%;
+}
+
+.btn-cancel {
+  background: #ffffff;
+  color: #ff4f68;
+  display: block;
+  font-size: 0.9em;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+}
+
+.footer-pop {
+  height: 0;
+  position: fixed;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1000;
+}
+.footer-pop .white-row-box {
+  width: 100%;
+}
 @media screen and (max-width: 360px) {
   .mr-20p {
     margin-right: 14%;

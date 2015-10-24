@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta http-equiv="cleartype" content="on" />
+<title>理财帮 - 随时随地掌握财富</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-239">
+<!-- top-fixed -->
+<div class="top-fixed brd-b clearfix">
+  <a class="btn-back ml-20 pull-left" href="index.html"></a>
+  <!-- top-title -->
+  <div class="top-title">
+    <span>提现</span>
+  </div><!-- /.top-title -->
+</div><!-- /.top-fixed -->
+
+<!-- body -->
+<div class="body">
+  <div class="charge mt-20">
+    <form action="">
+      <div class="hint">
+        <p class="cl-193">您当前可提现金额为200元</p>
+      </div><!-- /.hint -->
+      <div class="white-row-box mt-10 brd-b">
+        <input type="text" value="120.00">
+        <span class="btn-reset ic-reset"></span>
+      </div><!-- /.inp-box -->
+      <div class="choose-card white-row-box brd-b">
+        <span class="title">请选择您提现的银行卡</span>
+        <span class="btn-reset ic-arrow-right"></span>
+      </div><!-- /.inp-box -->
+      <div class="white-row-box">
+        <input type="password" placeholder="输入提现密码">
+        <a class="forget-password txt">忘记提现密码</a>
+      </div><!-- /.inp-box -->
+      <div class="btn-box mt-30">
+        <button class="btn-red">确认</button>
+      </div><!-- /.btn-box -->
+    </form>
+  </div><!-- /.charge -->
+</div><!-- /.body -->
+<div class="modal"></div>
+<div id="pop-choose-card" class="footer-pop">
+  <button class="card white-row-box txt-center brd-b" data-card="6226 0998 **** 7773">
+    <span>6226 0998 **** 7773</span>
+  </button>
+  <button class="white-row-box txt-center">
+    <span>添加新银行卡</span>
+  </button>
+  <button class="btn-cancel mt-5">取消</button>
+</div>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+$(function(){
+  $.modalInit('.modal');
+  $('.btn-reset').click(function(){
+    $('.inp-box').find('input').val('');
+  });
+
+  $('.choose-card').click(function(){
+    $('.modal').show().fadeTo(200, 0.3);
+    $('#pop-choose-card').animate({height: '155px'}, 'fast');
+  });
+
+  var hidePop = function () {
+    $('#pop-choose-card').animate({height: '0'}, 'fast');
+    setTimeout(function(){
+      $('.modal').hide();
+    }, 100);
+  };
+
+  $('.card').click(function(){
+    $('.choose-card').find('.title').text($(this).data('card'));
+    hidePop();
+  });
+
+  $('.modal, .btn-cancel').click(function(){
+    hidePop();
+  });
+
+});
+</script>
+</body>
+</html>

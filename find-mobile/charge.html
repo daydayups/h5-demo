@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta http-equiv="cleartype" content="on" />
+<title>理财帮 - 随时随地掌握财富</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-239">
+<!-- top-fixed -->
+<div class="top-fixed brd-b clearfix">
+  <a class="btn-back ml-20 pull-left" href="index.html"></a>
+  <!-- top-title -->
+  <div class="top-title">
+    <span>在线充值</span>
+  </div><!-- /.top-title -->
+</div><!-- /.top-fixed -->
+
+<!-- body -->
+<div class="body">
+  <div class="charge mt-20">
+    <form action="">
+      <div class="hint">
+        <p class="cl-193">目前只支持在线充值，请输入您要充值的金额</p>
+      </div><!-- /.hint -->
+      <div class="white-row-box mt-10">
+        <input type="text" value="120.00">
+        <span class="btn-reset ic-reset"></span>
+      </div><!-- /.inp-box -->
+      <div class="btn-box mt-30">
+        <button class="btn-red">下一步</button>
+      </div><!-- /.btn-box -->
+    </form>
+  </div><!-- /.charge -->
+</div><!-- /.body -->
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script>
+$(function(){
+  $('.btn-reset').click(function(){
+    $('.inp-box').find('input').val('');
+  });
+});
+</script>
+</body>
+</html>
