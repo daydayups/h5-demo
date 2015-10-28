@@ -370,6 +370,15 @@ body {
   line-height: 52px;
 }
 
+.top-cancel-right {
+  color: #646464;
+  display: block;
+  line-height: 52px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
 /* seach-bar */
 .search-bar {
   z-index: 301;
@@ -973,6 +982,100 @@ body {
   max-width: 25%;
 }
 
+/* members */
+.members {
+
+}
+
+.members .item {
+  background: #ffffff;
+  width: 100%;
+}
+
+.members .item .i-top {
+  padding: 10px 20px 10px 20px;
+}
+
+.check-block {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+
+.check-block .ic-check {
+  background: url(../images/icons-c.png) -28px 0;
+  background-size: 150px 100px;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+.check-block.selected .ic-check {
+  background: url(../images/icons-c.png) 0 0;
+  background-size: 150px 100px;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+.check-block-disable {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+
+.check-block-disable .ic-check {
+  background: url(../images/icons-c.png) -57px 0;
+  background-size: 150px 100px;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+.members .item .i-top .avatar img {
+  border-radius: 5px;
+  max-width: 50px;
+}
+
+.members .item .i-title {
+  font-size: 1em;
+}
+
+.members .item .i-subtitle {
+  font-size: 0.8em;
+  width: 204px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.members .item .i-time {
+  font-size: 0.8em;
+}
+
+.members .item .i-middle {
+  font-size: 0.9em;
+  padding: 10px 20px 20px 20px;
+}
+
+.members .item .i-bottom {
+  padding: 8px 0;
+}
+
+.members .item .i-bottom .btn {
+  float: left;
+  font-size: 0.9em;
+  line-height: 24px;
+  padding-left: 10%;
+  width: 23%;
+}
+
+.members .item .i-pictures img {
+  float: left;
+  margin-right: 8px;
+  max-width: 25%;
+}
+
 /* stocks */
 .stocks {
 
@@ -1391,6 +1494,36 @@ body {
   height: 50px;
   margin-left: 20px;
   width: 16px;
+}
+
+.footer-fixed.sp2 {
+  height: 50px;
+  padding: 0;
+}
+.footer-fixed.sp2 button {
+  float: left;
+  line-height: 50px;
+  width: 50%;
+}
+.footer-fixed.sp2 button.left .txt {
+  float: left;
+  margin-left: 20px;
+}
+.footer-fixed.sp2 button.right .txt {
+  float: right;
+  margin-right: 20px;
+}
+.footer-fixed.sp2 button.right .num {
+  background: #ff4f68;
+  border-radius: 50%;
+  color: #ffffff;
+  float: right;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+  margin-top: 13px;
+  text-align: center;
+  width: 20px;
 }
 
 .charge .hint {
