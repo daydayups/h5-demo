@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta http-equiv="cleartype" content="on" />
+<title>理财帮 - 随时随地掌握财富</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-239">
+<!-- top-fixed -->
+<div class="top-fixed brd-b clearfix">
+  <a class="btn-back ml-20 pull-left" href="index.html"></a>
+  <!-- top-title -->
+  <div class="top-title">
+    <span>圈子标签</span>
+  </div><!-- /.top-title -->
+</div><!-- /.top-fixed -->
+
+<!-- body -->
+<div class="body">
+  <div class="tags mt-20">
+    <div class="picked brd-b">
+      <p class="title">为圈子选择标签</p>
+      <div class="box clearfix">
+        <ul>
+          <li class="tag"><span>凤凰古城</span><i class="ic-close"></i></li>
+          <li class="tag"><span>出行攻略</span><i class="ic-close"></i></li>
+        </ul>
+      </div><!-- /.box -->
+    </div><!-- /.picked -->
+
+    <div class="brd-top"></div>
+
+    <div class="unpicked">
+      <div class="title clearfix">
+        <ul>
+          <li class="tab curr">旅游</li>
+          <li class="tab">股市</li>
+          <li class="tab">投资</li>
+          <li class="tab">游戏</li>
+          <li class="tab">互联网</li>
+          <li class="tab">都市生活</li>
+        </ul>
+      </div><!-- /.title -->
+      <div class="box clearfix">
+        <ul>
+          <li class="tag"><span>骑行中国</span><i class="ic-close"></i></li>
+          <li class="tag"><span>一个人的旅行</span><i class="ic-close"></i></li>
+          <li class="tag"><span>徒步西藏</span><i class="ic-close"></i></li>
+          <li class="tag"><span>云南</span><i class="ic-close"></i></li>
+          <li class="tag"><span>大理</span><i class="ic-close"></i></li>
+          <li class="tag"><span>丽江</span><i class="ic-close"></i></li>
+          <li class="tag disable"><span>凤凰古城</span><i class="ic-close"></i></li>
+          <li class="tag disable"><span>出行攻略</span><i class="ic-close"></i></li>
+        </ul>
+      </div>
+    </div><!-- /.unpicked -->
+    <div class="btn-box mt-30">
+      <button class="btn-red">继续</button>
+    </div><!-- /.btn-box -->
+  </div><!-- /.tags -->
+</div><!-- /.body -->
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script>
+$(function(){
+  $('.tags .unpicked .tab').click(function(){
+    $('.tags .unpicked .tab').removeClass('curr');
+    $(this).addClass('curr');
+  });
+});
+</script>
+</body>
+</html>

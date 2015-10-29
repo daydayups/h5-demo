@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="description" content="" />
+<meta name="keywords" content=""/>
+<meta http-equiv="cleartype" content="on" />
+<title>理财帮 - 随时随地掌握财富</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-239">
+<!-- top-fixed -->
+<div class="top-fixed brd-b clearfix">
+  <a class="btn-back ml-20 pull-left" href="index.html"></a>
+  <!-- top-title -->
+  <div class="top-title">
+    <span>圈子权限</span>
+  </div><!-- /.top-title -->
+</div><!-- /.top-fixed -->
+
+<!-- body -->
+<div class="body">
+  <div class="authority mt-20">
+    <div class="item clearfix brd-b brd-t">
+      <div class="ic-globe pull-left"></div>
+      <div class="pull-left ml-15">
+        <p class="title">所有人可见</p>
+        <p class="txt">本圈子所有内容对所有用户可见</p>
+      </div>
+      <div class="check-tick selected">
+        <input type="radio" name="authority" style="opacity: 0;" checked>
+        <span class="ic-tick"></span>
+      </div>
+    </div><!-- /.item -->
+
+    <div class="item clearfix brd-b">
+      <div class="ic-group pull-left"></div>
+      <div class="pull-left ml-15">
+        <p class="title">圈子成员可见</p>
+        <p class="txt">本圈子所有内容仅本圈子成员可见</p>
+      </div>
+      <div class="check-tick">
+        <input type="radio" name="authority" style="opacity: 0;">
+        <span class="ic-tick"></span>
+      </div>
+    </div><!-- /.item -->
+
+    <div class="btn-box mt-30">
+      <button class="btn-red">完成</button>
+    </div><!-- /.btn-box -->
+  </div><!-- /.charge -->
+</div><!-- /.body -->
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script>
+$(function(){
+  $('.check-tick').click(function(){
+    $('.check-tick').removeClass('selected');
+    $('.check-tick').find('input[type="radio"]').attr('checked', false);
+    $(this).find('input[type="radio"]').attr('checked', true);
+    $(this).addClass('selected');
+  });
+});
+</script>
+</body>
+</html>
