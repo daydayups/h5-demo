@@ -249,7 +249,7 @@ img {
 }
 
 /* -color- */
-.cl-102 {
+.cl-100 {
   color: #646464;
 }
 
@@ -289,16 +289,32 @@ img {
   color: #fddf58;
 }
 
+.cl-orange {
+  color: #ffb72d;
+}
+
 .cl-green {
-  color: #07a10e;
+  color: #9fc617;
 }
 
 .txt-center {
   text-align: center;
 }
 
+.txt-left {
+  text-align: left;
+}
+
 .bg-239 {
   background-color: #efefef;
+}
+
+.f-small {
+  font-size: 0.9em;
+}
+
+.f-big {
+  font-size: 1.2em;
 }
 
 /* -button- */
@@ -338,6 +354,7 @@ body {
 /* top */
 .top-fixed {
   background: #ffffff;
+  height: 52px;
   line-height: 52px;
   position: fixed;
   top: 0;
@@ -410,6 +427,28 @@ body {
   display: block;
   height: 24px;
   right: 5%;
+  position: absolute;
+  top: 14px;
+  width: 24px;
+}
+
+.btn-config {
+  background: url(../images/icons-d.png) no-repeat -62px -31px;
+  background-size: 158px 80px;
+  display: block;
+  height: 24px;
+  right: 5%;
+  position: absolute;
+  top: 14px;
+  width: 24px;
+}
+
+.btn-edit {
+  background: url(../images/icons-d.png) no-repeat -59px 2px;
+  background-size: 158px 80px;
+  display: block;
+  height: 24px;
+  left: 5%;
   position: absolute;
   top: 14px;
   width: 24px;
@@ -934,6 +973,26 @@ body {
   background-size: 250px 145px;
 }
 
+.footer-fixed.sp3 {
+  border-top: 1px solid #d3d3d3;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.footer-fixed.sp3 .tab {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  width: 33.33%;
+}
+
+.footer-fixed.sp3 .tab.active {
+  color: #ff4f68;
+}
+
 /* watchs */
 .watchs {
 
@@ -1009,7 +1068,6 @@ body {
 .check-block {
   display: block;
   float: left;
-  margin-right: 20px;
 }
 
 .check-block .ic-check {
@@ -1031,7 +1089,6 @@ body {
 .check-block-disable {
   display: block;
   float: left;
-  margin-right: 20px;
 }
 
 .check-block-disable .ic-check {
@@ -1962,21 +2019,280 @@ body {
   background: #ffffff;
   width: 100%;
 }
+
 .table-list th {
   color: #646464;
   font-size: 0.9em;
   font-weight: normal;
   line-height: 40px;
 }
+
 .table-list td {
   border-top: 1px solid #ececec;
   height: 50px;
   text-align: center;
 }
+
 .table-list .txt {
   color: #c1c1c1;
   font-size: 0.9em;
 }
+
+/* table-stock-list */
+.table-stock-list {
+  background: #ffffff;
+  width: 100%;
+}
+
+.table-stock-list th {
+  color: #646464;
+  font-size: 0.9em;
+  font-weight: normal;
+  height: 45px;
+}
+
+.table-stock-list td {
+  border-top: 1px solid #ececec;
+  height: 65px;
+  text-align: center;
+}
+
+.table-stock-list .txt {
+  color: #c1c1c1;
+  font-size: 0.9em;
+}
+
+/* table-ranking-list */
+.table-ranking-list {
+  background: #ffffff;
+  width: 100%;
+}
+
+.table-ranking-list th {
+  color: #646464;
+  font-size: 0.9em;
+  font-weight: normal;
+  height: 45px;
+}
+
+.table-ranking-list td {
+  border-top: 1px solid #ececec;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  text-align: center;
+}
+
+.table-ranking-list .txt {
+  color: #c1c1c1;
+  font-size: 0.9em;
+}
+
+.table-ranking-list .avatar img {
+  border-radius: 5px;
+  max-width: 35px;
+}
+
+.table-ranking-list .sub-txt {
+  color: #646464;
+  font-size: 0.9em;
+  line-height: 35px;
+}
+
+/* switch-tab-2 */
+.switch-tab-2 {
+  border: 1px solid #ff4f68;
+  border-radius: 5px;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 53.33%;
+}
+
+.switch-tab-2 li {
+  float: left;
+  width: 50%;
+}
+
+.switch-tab-2 .tab {
+  color: #ff4f68;
+  display: block;
+  text-align: center;
+}
+
+.switch-tab-2 .tab.active {
+  background: #ff4f68;
+  color: #ffffff;
+}
+
+.ic-to-top {
+  background: url(../images/icons-d.png) no-repeat -129px 2px;
+  background-size: 158px 80px;
+  display: block;
+  height: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24px;
+}
+
+.ic-order {
+  background: url(../images/icons-d.png) no-repeat -95px 2px;
+  background-size: 158px 80px;
+  display: block;
+  height: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24px;
+}
+
+.ic-remind {
+  background: url(../images/icons-d.png) no-repeat 1px -30px;
+  background-size: 158px 80px;
+  display: block;
+  height: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24px;
+}
+
+.ic-remind-red {
+  background: url(../images/icons-d.png) no-repeat -28px -30px;
+  background-size: 158px 80px;
+  display: block;
+  height: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24px;
+}
+
+.ic-buy {
+  background: url(../images/icons-d.png) no-repeat 3px 3px;
+  background-size: 158px 80px;
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.ic-sell {
+  background: url(../images/icons-d.png) no-repeat -28px 3px;
+  background-size: 158px 80px;
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+/* undo-list */
+.undo-list .item {
+  background: #ffffff;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.undo-list .item .i-top {
+  padding: 3%;
+}
+
+.undo-list .item .txt {
+  font-size: 0.7em;
+  margin-top: 5px;
+}
+
+.undo-list .item .i-time {
+  color: #c1c1c1;
+  font-size: 0.7em;
+}
+
+.undo-list .item .i-middle {
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.undo-list .item .i-middle li {
+  box-sizing: border-box;
+  float: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 25%;
+}
+
+.simulate-summary {
+  background: #ffffff;
+  padding: 6% 3%;
+}
+
+.simulate-summary .total {
+  color: #ff4f68;
+  font-size: 2.4em;
+}
+
+.simulate-summary .txt {
+  color: #c1c1c1;
+  font-size: 0.9em;
+}
+
+.simulate-summary .s-left {
+  float: left;
+  width: 50%;
+}
+
+.simulate-summary .s-right {
+  box-sizing: border-box;
+  float: left;
+  padding-top: 2%;
+  padding-left: 4%;
+  padding-bottom: 2%;
+}
+
+.simulate-summary .s-right .txt {
+  box-sizing: border-box;
+  float: left;
+  margin-top: 5px;
+}
+
+.simulate-summary .s-top {
+  border-bottom: 1px solid #f5f5f5;
+  padding-bottom: 3%;
+}
+
+.simulate-summary .s-middle {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.simulate-summary .s-middle li {
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  width: 25%;
+}
+
+.simulate-summary .s-middle li .txt {
+  margin-bottom: 5px;
+}
+
+.simulate-summary .s-bottom {
+  border-top: 1px solid #f5f5f5;
+  padding-top: 5%;
+}
+
+.simulate-summary .s-bottom .mr {
+  margin-right: 5%;
+}
+
+.simulate-summary .s-bottom .btn-trade {
+  border: 1px solid #ececec;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 30%;
+}
+
 @media screen and (max-width: 360px) {
   .mr-20p {
     margin-right: 14%;
