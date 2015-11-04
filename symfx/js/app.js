@@ -6,12 +6,12 @@ $(function(){
   $('.nav').find('.item').mouseenter(function(){
     var $dropDown = $(this).find('.drop-down');
     if ($dropDown.length > 0) {
-      $dropDown.fadeIn('fast');
+      $dropDown.fadeIn(100);
     }
   }).mouseleave(function(){
     var $dropDown = $(this).find('.drop-down');
     if ($dropDown.length > 0) {
-      $dropDown.fadeOut('fast');
+      $dropDown.fadeOut(100);
     }
   });
 });

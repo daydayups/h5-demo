@@ -761,7 +761,7 @@ a:hover {
 }
 .index-content .features .item .desc {
   background: #3b516c;
-  bottom: 0;
+  bottom: -3px;
   box-sizing: border-box;
   display: block;
   height: 0;

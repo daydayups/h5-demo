@@ -385,12 +385,12 @@ $(function(){
   $('.features').find('.item').mouseenter(function(){
     var $o = $(this);
     setTimeout(function () {
-      $o.find('.desc').animate({height: 160 + 'px'}, 300);
+      $o.find('.desc').animate({height: 160 + 'px'}, 'fast');
     }, 200);
   }).mouseleave(function(){
     var $o = $(this);
     setTimeout(function () {
-      $o.find('.desc').animate({height: 0}, 300);
+      $o.find('.desc').animate({height: 0}, 100);
     }, 200);
   });
 });
