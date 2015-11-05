@@ -383,15 +383,14 @@ $(function(){
 
   //features hover
   $('.features').find('.item').mouseenter(function(){
-    var $o = $(this);
-    setTimeout(function () {
-      $o.find('.desc').animate({height: 160 + 'px'}, 'fast');
-    }, 200);
+    var $o = $(this).find('.desc');
+    if ($o.outerHeight() === 0) {
+      $o.animate({height: 160 + 'px'}, 'fast');
+    } else {
+      return false;
+    }
   }).mouseleave(function(){
-    var $o = $(this);
-    setTimeout(function () {
-      $o.find('.desc').animate({height: 0}, 100);
-    }, 200);
+    $(this).find('.desc').animate({height: 0}, 'fast');
   });
 });
 </script>
