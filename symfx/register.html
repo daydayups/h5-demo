@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
 <meta charset="UTF-8">
-<title>登录</title>
+<title>注册</title>
 <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
@@ -56,12 +56,12 @@
 
 <div class="mx login">
   <div class="inner clearfix mt-20">
-    <h1 class="title">欢迎登录</h1>
+    <h1 class="title">欢迎注册</h1>
     <div class="in-left brd-r">
       <form action="#">
         <table class="mt-40">
           <tr class="j-mobile">
-            <td width="20%" align="right"><span class="mr-20">注册手机号码</span></td>
+            <td width="20%" align="right"><span class="cl-orange">*</span><span class="mr-20 ml-5">注册手机号码</span></td>
             <td width="40%">
               <div class="inp-box">
                 <i class="ic ic-mobile"></i>
@@ -71,11 +71,21 @@
             <td><span class="warning ml-10"></span></td>
           </tr>
           <tr class="j-password">
-            <td align="right"><span class="mr-20">请输入密码</span></td>
+            <td align="right"><span class="cl-orange">*</span><span class="mr-20 ml-5">设置登录密码</span></td>
             <td>
               <div class="inp-box">
                 <i class="ic ic-lock"></i>
                 <input type="password">
+              </div>
+            </td>
+            <td><span class="warning ml-10"></span></td>
+          </tr>
+          <tr class="j-pwdrepeat">
+            <td align="right"><span class="cl-orange">*</span><span class="mr-20 ml-5">再输入一次</span></td>
+            <td>
+              <div class="inp-box">
+                <i class="ic ic-lock"></i>
+                <input type="password" name="pwdrepeat">
               </div>
             </td>
             <td><span class="warning ml-10"></span></td>
@@ -97,7 +107,7 @@
           <tr>
             <td align="right"></td>
             <td>
-              <input id="auto" type="checkbox"/><label class="f-12 cl-153 ml-5" for="auto">下次自动登录</label>
+              <input id="auto" type="checkbox" checked/><label class="f-12 cl-153 ml-5" for="auto">我已阅读并同意 <a class="btn-gray" href="#">《星汇用户注册协议》</a></label>
             </td>
           </tr>
           <tr>
@@ -117,8 +127,13 @@
     </div><!-- /.in-left -->
     <div class="in-right">
       <div class="mt-50 ml-50">
-        <p>还没账号？</p>
-        <a class="btn-common-gray mt-20" href="#">立即注册</a>
+        <p>已经是星汇会员？</p>
+        <a class="btn-common-gray mt-20" href="#">立即登录</a>
+        <div class="mt-20">
+          <p class="f-12">如需帮助请联系客服</p>
+          <p class="f-24 mt-15">400-638-0808</p>
+          <a class="btn-qq-white mt-15" href="#">QQ客服<i class="ic-qq"></i></a>
+        </div>
       </div>
     </div><!-- /.in-right -->
   </div><!-- /.inner -->
@@ -201,10 +216,59 @@
   </div>
 </div><!-- /.footer -->
 
+<div class="modal"></div>
+<!-- pop-window -->
+<div id="pop-mobile-verify" class="pop-window">
+  <div class="window-title clearfix">
+    <span class="f-14">手机验证</span>
+    <span class="close"></span>
+  </div>
+  <div class="window-body f-14">
+    <form action="#">
+      <table class="">
+        <tr>
+          <td colspan="3">
+            <span class="icon-yes-16X16 mr-5 pull-left"></span>
+            <p class="f-14 mb-20">已经向 <span class="f-14">138****8888</span> 发送短信，请再输入4位验证码完成注册</p>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <span class="pull-right">请输入短信验证码：</span>
+          </td>
+          <td>
+            <div class="inp-box-sp">
+              <input id="inp-verify-code" class="f-18 pull-left" type="text"/>
+              <button class="btn-verify-code pull-left">发送验证码</button>
+            </div>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td align="left">
+            <span class="warning cl-red"></span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td align="left">
+            <button class="btn-confirm">确 定</button>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+<!-- pop-window end -->
+
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/app.js"></script>
 <script>
 $(function(){
+  var $modal = $.modalInit('.modal');
   var warning = {
     mobile: [
         '手机号码格式不正确',
@@ -214,15 +278,18 @@ $(function(){
         '密码不正确',
         '请输入密码'
     ],
-    verify: [
-        '请输入验证码',
-        '验证码错误'
+    repeat: [
+        '两次输入不一致',
+        '请输入密码'
+    ],
+    vcode: [
+      '请输入短信验证码'
     ]
   };
 
-  var count = 0
-    , $mobile = $('.j-mobile')
+  var $mobile = $('.j-mobile')
     , $password = $('.j-password')
+    , $repeat = $('.j-pwdrepeat')
     , $verify = $('.j-verify');
   $mobile.find('input').blur(function(){
     var val = $.trim($(this).val());
@@ -241,36 +308,36 @@ $(function(){
       $password.find('.warning').text(warning.password[1]);
       $password.find('.inp-box').addClass('w');
       $(this).val('');
-      count++;
-      if (count === 5) {
-        $('.j-verify').show();
-      }
     } else {
       $password.find('.warning').text('');
       $password.find('.inp-box').removeClass('w');
     }
   });
 
-  $verify.find('input').blur(function(){
+  $repeat.find('input').blur(function(){
     var val = $.trim($(this).val());
     if (!val) {
-      $verify.find('.warning').text(warning.password[1]);
-      $verify.find('.inp').addClass('w');
+      $repeat.find('.warning').text(warning.repeat[1]);
+      $repeat.find('.inp-box').addClass('w');
       $(this).val('');
+    } else if (val != $.trim($password.find('input').val())) {
+      $repeat.find('.warning').text(warning.repeat[0]);
+      $repeat.find('.inp-box').addClass('w');
     } else {
-      $verify.find('.warning').text('');
-      $verify.find('.inp-box').removeClass('w');
+      $repeat.find('.warning').text('');
+      $repeat.find('.inp-box').removeClass('w');
     }
   });
 
   $('.login').find('form').submit(function(e){
+    e.preventDefault();
     var mobile = $.trim($mobile.find('input').val())
-      , pwd = $.trim($password.find('input').val())
-      , verify = $.trim($verify.find('input').val());
+        , pwd = $.trim($password.find('input').val())
+        , repeat = $.trim($repeat.find('input').val());
     if (!mobile) {
       $mobile.find('.warning').text(warning.mobile[1]);
       $mobile.find('.inp-box').addClass('w');
-      e.preventDefault();
+      return;
     } else {
       $mobile.find('.warning').text('');
       $mobile.find('.inp-box').removeClass('w');
@@ -280,25 +347,68 @@ $(function(){
       $password.find('.warning').text(warning.password[1]);
       $password.find('.inp-box').addClass('w');
       $password.find('input').val('');
-      count++;
-      if (count === 5) {
-        $verify.show();
-      }
-      e.preventDefault();
+      return;
     } else {
       $password.find('.warning').text('');
       $password.find('.inp-box').removeClass('w');
     }
 
-    if (!verify) {
-      $verify.find('.warning').text(warning.password[1]);
-      $verify.find('.inp').addClass('w');
-      $verify.find('input').val('');
+    if (!repeat) {
+      $repeat.find('.warning').text(warning.repeat[1]);
+      $repeat.find('.inp-box').addClass('w');
+      $repeat.val('');
+    } else if (val != $.trim($password.find('input').val())) {
+      $repeat.find('.warning').text(warning.repeat[0]);
+      $repeat.find('.inp-box').addClass('w');
     } else {
-      $verify.find('.warning').text('');
-      $verify.find('.inp-box').removeClass('w');
+      $repeat.find('.warning').text('');
+      $repeat.find('.inp-box').removeClass('w');
     }
+    $modal.show();
+    $.popup('#pop-mobile-verify');
+  });
 
+  //verify-code
+  $('#inp-verify-code').blur(function(){
+    var val = $.trim($(this).val());
+    if (!val) {
+      $(this).parents('.inp-box-sp').addClass('w');
+      $('#pop-mobile-verify').find('warning').text(warning.vcode[0]);
+    } else {
+      $(this).parents('.inp-box-sp').removeClass('w');
+      $('#pop-mobile-verify').find('warning').text('');
+    }
+  });
+
+  $('#pop-mobile-verify').find('form').submit(function(e){
+    var val = $.trim($('#inp-verify-code').val());
+    if (!val) {
+      $(this).parents('.inp-box-sp').addClass('w');
+      $('#pop-mobile-verify').find('warning').text(warning.vcode[0]);
+      e.preventDefault();
+      return false;
+    } else {
+      $(this).parents('.inp-box-sp').removeClass('w');
+      $('#pop-mobile-verify').find('warning').text('');
+    }
+  });
+
+  $('.btn-verify-code').click(function(){
+    var $verify = $(this);
+    if ($verify.hasClass('disable')) {
+      return;
+    } else {
+      $verify.addClass('disable');
+      $verify.html('(<span class="num">60</span>)重发');
+      $.countdown($verify.find('.num').get(0), 60, 1000, function(){
+        $verify.removeClass('disable').html('重发');
+      });
+    }
+  });
+
+  $('.pop-window').find('.close').click(function(){
+    $(this).parents('.pop-window').hide();
+    $modal.hide();
   });
 });
 </script>

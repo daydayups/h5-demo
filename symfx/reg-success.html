@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
 <meta charset="UTF-8">
-<title>登录</title>
+<title>注册成功</title>
 <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
@@ -56,71 +56,48 @@
 
 <div class="mx login">
   <div class="inner clearfix mt-20">
-    <h1 class="title">欢迎登录</h1>
-    <div class="in-left brd-r">
-      <form action="#">
-        <table class="mt-40">
-          <tr class="j-mobile">
-            <td width="20%" align="right"><span class="mr-20">注册手机号码</span></td>
-            <td width="40%">
-              <div class="inp-box">
-                <i class="ic ic-mobile"></i>
-                <input name="mobile" type="text">
-              </div>
-            </td>
-            <td><span class="warning ml-10"></span></td>
-          </tr>
-          <tr class="j-password">
-            <td align="right"><span class="mr-20">请输入密码</span></td>
-            <td>
-              <div class="inp-box">
-                <i class="ic ic-lock"></i>
-                <input type="password">
-              </div>
-            </td>
-            <td><span class="warning ml-10"></span></td>
-          </tr>
-          <tr class="j-verify" style="display: none;">
-            <td align="right"><span class="mr-20">请输入密码</span></td>
-            <td>
-              <input class="inp w76" type="text" placeholder="验证码">
-              <div class="img pull-right">
-                <img class="pull-right" src="images/verify-code.jpg" alt=""/>
-                <a class="v-btn link-blue" href="javascript:;">
-                  <span>看不清</span><br>
-                  <span>换一张</span>
-                </a>
-              </div><!-- /.img -->
-            </td>
-            <td><span class="warning ml-10"></span></td>
-          </tr>
-          <tr>
-            <td align="right"></td>
-            <td>
-              <input id="auto" type="checkbox"/><label class="f-12 cl-153 ml-5" for="auto">下次自动登录</label>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <button class="btn-common">登  录</button>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <a class="link-blue" href="#">忘记密码?</a>
-            </td>
-          </tr>
-        </table>
-      </form>
-    </div><!-- /.in-left -->
-    <div class="in-right">
-      <div class="mt-50 ml-50">
-        <p>还没账号？</p>
-        <a class="btn-common-gray mt-20" href="#">立即注册</a>
-      </div>
-    </div><!-- /.in-right -->
+    <table class="w510 m-center mt-20">
+      <tr>
+        <td width="18%">
+          <div class="ic-big-tick"></div>
+        </td>
+        <td>
+          <span class="f-20">感谢您注册成为星汇会员！</span>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <div class="box-gray">
+            <div class="line">
+              <span>您的交易账号</span>
+            </div><!-- /.line -->
+            <div class="line brd clearfix">
+              <div class="l">
+                <p class="f-12">MT4（真实）：<span class="cl-orange">343424234</span></p>
+                <p class="f-12">MT4（模拟）：<span class="cl-orange">343424234</span></p>
+              </div><!-- /.l-left -->
+              <div class="l">
+                <p class="f-12">二元期权：<span class="cl-orange">343424234</span></p>
+                <p class="f-12">二元期权：<span class="cl-orange">343424234</span></p>
+              </div><!-- /.l-left -->
+            </div><!-- /.line -->
+            <div class="line">
+              <p class="txt-right f-12 cl-153">如您遗忘交易账号，可在 <a class="btn-gray" href="#">我的账户</a> 中查阅</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <div class="mt-30">
+            <a class="btn-blue" href="#">交易平台</a>
+            <a class="btn-blue ml-30" href="#">立即充值</a>
+          </div>
+        </td>
+      </tr>
+    </table>
   </div><!-- /.inner -->
 </div><!-- /.main.user-center -->
 
@@ -203,104 +180,5 @@
 
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/app.js"></script>
-<script>
-$(function(){
-  var warning = {
-    mobile: [
-        '手机号码格式不正确',
-        '请输入手机号码'
-    ],
-    password: [
-        '密码不正确',
-        '请输入密码'
-    ],
-    verify: [
-        '请输入验证码',
-        '验证码错误'
-    ]
-  };
-
-  var count = 0
-    , $mobile = $('.j-mobile')
-    , $password = $('.j-password')
-    , $verify = $('.j-verify');
-  $mobile.find('input').blur(function(){
-    var val = $.trim($(this).val());
-    if (!val) {
-      $mobile.find('.warning').text(warning.mobile[1]);
-      $mobile.find('.inp-box').addClass('w');
-    } else {
-      $mobile.find('.warning').text('');
-      $mobile.find('.inp-box').removeClass('w');
-    }
-  });
-
-  $password.find('input').blur(function(){
-    var val = $.trim($(this).val());
-    if (!val) {
-      $password.find('.warning').text(warning.password[1]);
-      $password.find('.inp-box').addClass('w');
-      $(this).val('');
-      count++;
-      if (count === 5) {
-        $('.j-verify').show();
-      }
-    } else {
-      $password.find('.warning').text('');
-      $password.find('.inp-box').removeClass('w');
-    }
-  });
-
-  $verify.find('input').blur(function(){
-    var val = $.trim($(this).val());
-    if (!val) {
-      $verify.find('.warning').text(warning.password[1]);
-      $verify.find('.inp').addClass('w');
-      $(this).val('');
-    } else {
-      $verify.find('.warning').text('');
-      $verify.find('.inp-box').removeClass('w');
-    }
-  });
-
-  $('.login').find('form').submit(function(e){
-    var mobile = $.trim($mobile.find('input').val())
-      , pwd = $.trim($password.find('input').val())
-      , verify = $.trim($verify.find('input').val());
-    if (!mobile) {
-      $mobile.find('.warning').text(warning.mobile[1]);
-      $mobile.find('.inp-box').addClass('w');
-      e.preventDefault();
-    } else {
-      $mobile.find('.warning').text('');
-      $mobile.find('.inp-box').removeClass('w');
-    }
-
-    if (!pwd) {
-      $password.find('.warning').text(warning.password[1]);
-      $password.find('.inp-box').addClass('w');
-      $password.find('input').val('');
-      count++;
-      if (count === 5) {
-        $verify.show();
-      }
-      e.preventDefault();
-    } else {
-      $password.find('.warning').text('');
-      $password.find('.inp-box').removeClass('w');
-    }
-
-    if (!verify) {
-      $verify.find('.warning').text(warning.password[1]);
-      $verify.find('.inp').addClass('w');
-      $verify.find('input').val('');
-    } else {
-      $verify.find('.warning').text('');
-      $verify.find('.inp-box').removeClass('w');
-    }
-
-  });
-});
-</script>
 </body>
 </html>
