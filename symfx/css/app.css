@@ -77,7 +77,7 @@ table {
   font-size: 12px;
 }
 .f-14 {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 .f-15 {
   font-size: 15px;
@@ -373,8 +373,14 @@ a:hover {
 .w88 {
   width: 88px !important;
 }
+.w110 {
+  width: 110px !important;
+}
 .w120 {
   width: 120px !important;
+}
+.w150 {
+  width: 150px !important;
 }
 .w182 {
   width: 182px !important;
@@ -680,6 +686,12 @@ a:hover {
   display: block;
   height: 16px;
   width: 16px;
+}
+.ic-big-hint {
+  background: url(../images/icons.png) no-repeat -129px -479px;
+  display: block;
+  height: 64px;
+  width: 64px;
 }
 .baofu {
   background: url(../images/pays.jpg) no-repeat;
@@ -1627,6 +1639,18 @@ a:hover {
   position: absolute;
   top: 9px;
 }
+.payment-form .sub-table {
+  border: 1px solid #e6e6e6;
+}
+.payment-form .sub-table th {
+  background: #eeeeee;
+  color: #999999;
+  height: 35px;
+}
+.payment-form .sub-table td {
+  text-align: center;
+}
+
 /* content-wrapper end */
 .no-record {
   padding-top: 50px;

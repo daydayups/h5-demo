@@ -84,7 +84,7 @@
 
     <div class="content-wrapper">
       <div class="clearfix">
-        <h1 class="title pull-left">充值</h1><a class="link-blue f-16 pull-left ml-10" style="display: none;" href="javascript:;">&lt;返回</a>
+        <h1 class="title pull-left">充值</h1><a id="back" class="link-blue f-16 pull-left ml-10" style="display: none;" href="javascript:;">&lt;返回</a>
       </div>
       <div class="payment-choose mt-20 clearfix" style="min-height: 500px;">
         <div class="payment-box pull-left">
@@ -105,18 +105,19 @@
           <p>最低充值金额 <span class="cl-orange">50</span> 美元（折算人民币 <span class="cl-orange">325</span>元），单笔最大不超过 <span class="cl-orange">50000</span> 人民币</p>
         </div>
         <form action="#">
+          <input type="hidden" name="payment" value="baofu">
           <table class="mt-20">
             <tr>
-              <td class="col-1">充值金额（美元）：</td>
+              <td class="col-1" width="20%">充值金额（美元）：</td>
               <td>
-                <input class="inp" type="text"> 美元
+                <input class="j-money inp" name="money" type="text"> 美元
                 <span class="warning ml-10"></span>
               </td>
             </tr>
             <tr>
               <td class="col-1">折算人民币：</td>
               <td>
-                <span class="cl-orange f-bold f-18">0.00</span>
+                <span class="j-rs cl-orange f-bold f-18">0.00</span>
                 <span>元</span>
                 <span class="cl-153">（2015.10.09 今日转换汇率 1美元=6.3450人民币元）</span>
               </td>
@@ -127,7 +128,7 @@
                 <div class="inp-box-a w182 pull-left">
                   <span class="baofu-small ml-15"></span>
                 </div>
-                <a class="btn-blue pull-left mt-15 ml-5" href="javascript:;">重新选择</a>
+                <a class="rechoose btn-blue pull-left mt-15 ml-5" href="javascript:;">重新选择</a>
               </td>
             </tr>
             <tr>
@@ -153,18 +154,19 @@
           <p>最低充值金额 <span class="cl-orange">50</span> 美元（折算人民币 <span class="cl-orange">325</span>元），单笔最大不超过 <span class="cl-orange">50000</span> 人民币</p>
         </div>
         <form action="#">
+          <input type="hidden" name="payment" value="unionpay">
           <table class="mt-20">
             <tr>
-              <td class="col-1">充值金额（美元）：</td>
+              <td class="col-1" width="20%">充值金额（美元）：</td>
               <td>
-                <input class="inp" type="text"> 美元
+                <input class="j-money inp" name="money" type="text"> 美元
                 <span class="warning ml-10"></span>
               </td>
             </tr>
             <tr>
               <td class="col-1">折算人民币：</td>
               <td>
-                <span class="cl-orange f-bold f-18">0.00</span>
+                <span class="j-rs cl-orange f-bold f-18">0.00</span>
                 <span>元</span>
                 <span class="cl-153">（2015.10.09 今日转换汇率 1美元=6.3450人民币元）</span>
               </td>
@@ -175,7 +177,7 @@
                 <div class="inp-box-a w182 pull-left">
                   <span class="union-pay-small ml-15"></span>
                 </div>
-                <a class="btn-blue pull-left mt-15 ml-5" href="javascript:;">重新选择</a>
+                <a class="rechoose btn-blue pull-left mt-15 ml-5" href="javascript:;">重新选择</a>
               </td>
             </tr>
             <tr>
@@ -201,6 +203,38 @@
                     </ul>
                   </div>
                 </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-1"></td>
+              <td>
+                <table class="sub-table">
+                  <tr>
+                    <th>银行卡种类</th>
+                    <th>单笔限额（元）</th>
+                    <th>每日限额（元）</th>
+                    <th>需要满足条件</th>
+                  </tr>
+                  <tr>
+                    <td rowspan="3">
+                      <p>借记卡</p>
+                      <p class="mt-10">信用卡</p>
+                    </td>
+                    <td><span>1万</span></td>
+                    <td><span>1万</span></td>
+                    <td><span>手机短信客户</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>1万</span></td>
+                    <td><span>1万</span></td>
+                    <td><span>电子令牌客户</span></td>
+                  </tr>
+                  <tr>
+                    <td><span>1万</span></td>
+                    <td><span>1万</span></td>
+                    <td><span>UKEY+短信客户</span></td>
+                  </tr>
+                </table>
               </td>
             </tr>
             <tr>
@@ -299,12 +333,47 @@
   </div>
 </div><!-- /.footer -->
 
+<!-- pop-window -->
 <div class="modal-white"></div>
+<div class="modal"></div>
+<div id="pop-payment-hint" class="pop-window">
+  <div class="window-title clearfix">
+    <span class="f-14">提示</span>
+    <span class="close"></span>
+  </div>
+  <div class="window-body">
+    <table class="ml-20" width="100%" cellspacing="">
+      <tr>
+        <td align="right">
+          <span class="ic-big-hint"></span>
+        </td>
+        <td align="left" class="">
+          <p class="f-18 ml-20">请在新打开的页面完成付款</p>
+          <p class="cl-153 ml-20 mt-10">完成前请不要关闭窗口</p>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td align="left">
+          <button class="btn-common f-14 w110 ml-20 pull-left">已完成付款</button>
+          <button class="j-cancel btn-common-gray f-14 w150 f-14 ml-20 pull-left">重新选择付款方式</button>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td align="left">
+          <p class="ml-20 cl-153">如付款遇到问题，请致电 400-8888-8888</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
 <!-- /.pop-window -->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/app.js"></script>
 <script>
 $(function(){
+  var $modal = $.modalInit('.modal');
   //to charge
   $('.j-charge').click(function(){
     var pay = $(this).data('pay');
@@ -316,13 +385,39 @@ $(function(){
       $('.payment-choose').hide();
       $('.payment-form').eq(1).show();
     }
+    $('#back').show();
+  });
+
+  //go back
+  $('#back, .rechoose').click(function(){
+    $('.payment-form').hide();
+    $('.payment-choose').show();
+  });
+
+  //input money
+  $('.j-money').keyup(function(){
+    var digitalOnly = /^\d+$/
+      , noDigital = /[^0-9]+/
+      , value = $.trim($(this).val());
+
+    if (digitalOnly.test(value)) {
+      if (value < 50 || value > 7880) {
+        $(this).siblings('.warning').text('单笔充值最低 50 美元，最大不超过 7880 美元');
+      } else {
+        $(this).siblings('.warning').text('');
+        $(this).parents('table').find('.j-rs').text($.formatMoney(value * 6.3450,2));
+      }
+    } else {
+      $(this).val(value.replace(noDigital, ''));
+      $(this).parents('table').find('.j-rs').text('0.00');
+    }
   });
 
   //bank options
   var $select = $('.select')
-    , $modal =  $('.modal-white');
+    , $modalWhite =  $('.modal-white');
   $select.click(function(){
-    $modal.show();
+    $modalWhite.show();
     $(this).find('.option').show();
   });
 
@@ -339,12 +434,37 @@ $(function(){
 
     //BUG: the hide method working when I pass 'true' value.
     $select.find('.option').hide(1);
-    $modal.hide(1);
+    $modalWhite.hide(1);
   });
 
-  $modal.click(function(){
+  //submit
+  $('.payment-form').find('form').submit(function(e){
+    e.preventDefault();
+    var money = $(this).find('.j-money').val();
+    if (!money) {
+      $(this).find('.j-money').siblings('.warning').text('充值金额不能为空');
+    } else if (money >= 50 && money <= 7880) {
+      $(this).find('.j-money').siblings('.warning').text('');
+      $modal.show();
+      $.popup('#pop-payment-hint');
+    } else {
+      $(this).find('.j-money').siblings('.warning').text('单笔充值最低 50 美元，最大不超过 7880 美元');
+    }
+  });
+
+  $('#pop-payment-hint').find('.j-cancel').click(function(){
+    $modal.hide();
+    $('#pop-payment-hint').hide();
+  });
+
+  $modalWhite.click(function(){
     $select.find('.option').hide();
     $(this).hide();
+  });
+
+  $('.pop-window').find('.close').click(function(){
+    $(this).parents('.pop-window').hide();
+    $modal.hide();
   });
 });
 </script>
