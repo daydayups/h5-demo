@@ -251,9 +251,33 @@ $.extend($,{
 });
 
 $(function(){
+  //top hover
   $('.top').find('.ic').hover(function(){
     $(this).addClass('hover').siblings('.sub-item').show();
   }, function(){
     $(this).removeClass('hover').siblings('.sub-item').hide();
-  })
+  });
+
+  //bar-fixed
+  var $bar = $('.bar-fixed')
+    , $windowHeight = $(window).height()
+    , $elementHeight = $bar.height();
+  //reset the bar position
+  $bar.css({
+    bottom: ($windowHeight - $elementHeight) / 2 + 'px'
+  });
+
+  $bar.find('.item').hover(function(){
+    $(this).find('.ic').hide();
+    $(this).find('.txt').show();
+    $(this).find('.desc').show();
+  }, function(){
+    $(this).find('.txt').hide();
+    $(this).find('.ic').show();
+    $(this).find('.desc').hide();
+  });
+
+  $bar.find('.advisor-trigger').click(function(){
+    $('.advisor-box').toggle();
+  });
 });
