@@ -244,7 +244,9 @@ $.extend($,{
     $target.fadeIn('slow', function(){
       setTimeout(function(){
         $('.callout').fadeOut();
-        callback();
+        if (callback) {
+          callback();
+        }
       }, 1000);
     });
   }

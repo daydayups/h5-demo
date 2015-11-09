@@ -699,6 +699,30 @@ a:hover {
   height: 64px;
   width: 64px;
 }
+.ic-profile-person {
+  background: url(../images/icons.png) no-repeat -1px -568px;
+  display: block;
+  height: 32px;
+  width: 32px;
+}
+.ic-realname-verify {
+  background: url(../images/icons.png) no-repeat -142px -568px;
+  display: block;
+  height: 32px;
+  width: 32px;
+}
+.ic-profile-lock {
+  background: url(../images/icons.png) no-repeat -49px -568px;
+  display: block;
+  height: 32px;
+  width: 32px;
+}
+.ic-profile-mail {
+  background: url(../images/icons.png) no-repeat -92px -568px;
+  display: block;
+  height: 32px;
+  width: 32px;
+}
 .baofoo {
   background: url(../images/pays.jpg) no-repeat;
   display: block;
@@ -1836,7 +1860,43 @@ a:hover {
   color: #fc7000;
   float: right;
 }
-
+.user-center .content-wrapper .trade-summary {
+  width: 100%;
+}
+.user-center .content-wrapper .trade-summary .item {
+  float: left;
+  width: 160px;
+}
+.user-center .content-wrapper .trade-summary .col-2 {
+  background: url(../images/icons-formula.png) no-repeat 0 -10px;
+  display: block;
+  height: 80px;
+  width: 29px;
+}
+.user-center .content-wrapper .trade-summary .col-4 {
+  background: url(../images/icons-formula.png) no-repeat -45px -10px;
+  display: block;
+  height: 80px;
+  width: 29px;
+}
+.user-center .content-wrapper .trade-summary .m {
+  margin-left: 30px;
+}
+.user-center .content-wrapper .record .table .col-1 {
+  padding-left: 20px;
+  width: 30%;
+}
+/* profile */
+.profile-table {
+  border-bottom: 1px dotted #e4e4e4;
+}
+.profile-table table {
+  width: 100%;
+}
+.profile-table td {
+  border-top: 1px dotted #e4e4e4;
+  padding: 20px 0;
+}
 /* content-wrapper end */
 .no-record {
   padding-top: 50px;
@@ -1884,32 +1944,6 @@ a:hover {
 .pagination .pre:hover, .pagination .next:hover {
   border: 1px solid #fc7000;
   text-decoration: none;
-}
-.user-center .content-wrapper .trade-summary {
-  width: 100%;
-}
-.user-center .content-wrapper .trade-summary .item {
-  float: left;
-  width: 160px;
-}
-.user-center .content-wrapper .trade-summary .col-2 {
-  background: url(../images/icons-formula.png) no-repeat 0 -10px;
-  display: block;
-  height: 80px;
-  width: 29px;
-}
-.user-center .content-wrapper .trade-summary .col-4 {
-  background: url(../images/icons-formula.png) no-repeat -45px -10px;
-  display: block;
-  height: 80px;
-  width: 29px;
-}
-.user-center .content-wrapper .trade-summary .m {
-  margin-left: 30px;
-}
-.user-center .content-wrapper .record .table .col-1 {
-  padding-left: 20px;
-  width: 30%;
 }
 /* pop-window */
 .pop-window {
