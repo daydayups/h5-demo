@@ -760,9 +760,10 @@ a:hover {
   border-radius: 4px;
   display: none;
   left: -45px;
+  opacity: 0;
   padding: 15px 0 10px 0;
   position: absolute;
-  top: 30px;
+  top: 45px;
   width: 108px;
   z-index: 10;
 }
@@ -1093,6 +1094,9 @@ a:hover {
   border-bottom: 1px dotted #eeeeee;
   padding: 20px 0;
 }
+.index-middle .new-projects .content tr:hover td {
+  background: #f8f8f8;
+}
 .index-middle .new-projects .content .col-1 {
   padding-left: 40px;
   position: relative;
@@ -1409,7 +1413,8 @@ a:hover {
   border-radius: 4px;
   color: #333333;
   display: none;
-  right: 51px;
+  right: 61px;
+  opacity: 0;
   padding: 15px 10px;
   position: absolute;
   text-align: left;
@@ -1445,6 +1450,19 @@ a:hover {
   padding-top: 9px;
   position: fixed;
   width: 100%;
+}
+.advisor-box .close {
+  background: #f6f6f6 url(../images/icons.png) no-repeat -299px -345px;
+  cursor: pointer;
+  display: block;
+  height: 36px;
+  right: 0;
+  position: absolute;
+  top: 9px;
+  width: 36px;
+}
+.advisor-box .close:hover {
+  background: #f6f6f6 url(../images/icons.png) no-repeat -348px -345px;
 }
 .advisor-box .inner {
   padding: 29px 0 20px 0;

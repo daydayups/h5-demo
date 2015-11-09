@@ -253,9 +253,9 @@ $.extend($,{
 $(function(){
   //top hover
   $('.top').find('.ic').hover(function(){
-    $(this).addClass('hover').siblings('.sub-item').show();
+    $(this).addClass('hover').siblings('.sub-item').show().animate({top: '30px', opacity: 1});
   }, function(){
-    $(this).removeClass('hover').siblings('.sub-item').hide();
+    $(this).removeClass('hover').siblings('.sub-item').animate({top: '45px', opacity: 0}).hide();
   });
 
   //bar-fixed
@@ -268,16 +268,20 @@ $(function(){
   });
 
   $bar.find('.item').hover(function(){
-    $(this).find('.ic').hide();
+    $(this).find('.ic').hide();1
     $(this).find('.txt').show();
-    $(this).find('.desc').show();
+    $(this).find('.desc').show().animate({right: '51px', opacity: 1});
   }, function(){
     $(this).find('.txt').hide();
     $(this).find('.ic').show();
-    $(this).find('.desc').hide();
+    $(this).find('.desc').animate({right: '61px', opacity: 0}).hide();
   });
 
   $bar.find('.advisor-trigger').click(function(){
     $('.advisor-box').toggle();
+  });
+
+  $('.advisor-box').find('.close').click(function(){
+    $('.advisor-box').hide();
   });
 });

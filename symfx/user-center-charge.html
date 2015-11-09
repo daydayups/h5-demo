@@ -89,8 +89,8 @@
       <div class="payment-choose mt-20 clearfix" style="min-height: 500px;">
         <div class="payment-box pull-left">
           <span class="recommend">推荐</span>
-          <div class="baofu m-center mt-30"></div>
-          <button class="j-charge btn-small-orange f-12 w88 m-center mt-20" data-pay="baofu">立即充值</button>
+          <div class="baofoo m-center mt-30"></div>
+          <button class="j-charge btn-small-orange f-12 w88 m-center mt-20" data-pay="baofoo">立即充值</button>
         </div><!-- /.payment-box -->
         <div class="payment-box pull-left ml-20">
           <div class="union-pay m-center mt-30"></div>
@@ -98,14 +98,14 @@
         </div><!-- /.payment-box -->
       </div><!-- /.payment-box -->
 
-      <!-- baofu -->
+      <!-- baofoo -->
       <div class="payment-form mt-20 f-12" style="min-height: 500px;display: none;">
         <div class="hint">
           <span class="ic ic-hint"></span>
           <p>最低充值金额 <span class="cl-orange">50</span> 美元（折算人民币 <span class="cl-orange">325</span>元），单笔最大不超过 <span class="cl-orange">50000</span> 人民币</p>
         </div>
         <form action="#" target="_blank">
-          <input type="hidden" name="payment" value="baofu">
+          <input type="hidden" name="payment" value="baofoo">
           <table class="mt-20">
             <tr>
               <td class="col-1" width="20%">充值金额（美元）：</td>
@@ -126,7 +126,7 @@
               <td class="col-1">充值方式：</td>
               <td>
                 <div class="inp-box-a w182 pull-left">
-                  <span class="baofu-small ml-15"></span>
+                  <span class="baofoo-small ml-15"></span>
                 </div>
                 <a class="rechoose btn-blue pull-left mt-15 ml-5" href="javascript:;">重新选择</a>
               </td>
@@ -377,7 +377,7 @@ $(function(){
   //to charge
   $('.j-charge').click(function(){
     var pay = $(this).data('pay');
-    if (pay === 'baofu') {
+    if (pay === 'baofoo') {
       $('.payment-choose').hide();
       $('.payment-form').eq(0).show();
     } else {
