@@ -265,4 +265,11 @@ $(function(){
       $dropDown.fadeOut(100);
     }
   });
+
+  //help hint
+  $('.help-base').find('.help-trigger').hover(function(){
+    $(this).find('.help-desc').show().animate({opacity: 1, top: '24px'});
+  }, function(){
+    $(this).find('.help-desc').animate({opacity: 0, top: '30px'}, 200).hide(50);
+  });
 });

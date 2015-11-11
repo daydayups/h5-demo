@@ -61,20 +61,30 @@
       <form action="#">
         <table class="mt-40">
           <tr class="j-mobile">
-            <td width="20%" align="right"><span class="cl-orange">*</span><span class="mr-20 ml-5">注册手机号码</span></td>
-            <td width="40%">
-              <div class="inp-box">
-                <i class="ic ic-mobile"></i>
-                <input name="mobile" type="text">
+            <td width="20%" align="right" valign="top">
+              <div class="mt-15">
+                <span class="cl-orange">*</span><span class="mr-20 ml-5">注册手机号码</span>
               </div>
             </td>
-            <td><span class="warning ml-10"></span></td>
+            <td width="40%">
+              <div class="inp-box" style="padding-left: 10px;">
+                <input name="mobile" type="text">
+              </div>
+              <div class="clearfix mt-10">
+                <span class="ic-bulb pull-left"></span>
+                <span class="f-12 cl-153 ml-5 mt-5 pull-left">星汇不会在任何地方泄露您的号码</span>
+              </div>
+            </td>
+            <td valign="top">
+              <div class="mt-15">
+                <span class="warning ml-10"></span>
+              </div>
+            </td>
           </tr>
           <tr class="j-password">
             <td align="right"><span class="cl-orange">*</span><span class="mr-20 ml-5">设置登录密码</span></td>
             <td>
-              <div class="inp-box">
-                <i class="ic ic-lock"></i>
+              <div class="inp-box" style="padding-left: 10px;">
                 <input type="password">
               </div>
             </td>
@@ -83,8 +93,7 @@
           <tr class="j-pwdrepeat">
             <td align="right"><span class="cl-orange">*</span><span class="mr-20 ml-5">再输入一次</span></td>
             <td>
-              <div class="inp-box">
-                <i class="ic ic-lock"></i>
+              <div class="inp-box" style="padding-left: 10px;">
                 <input type="password" name="pwdrepeat">
               </div>
             </td>
@@ -294,10 +303,10 @@ $(function(){
   $mobile.find('input').blur(function(){
     var val = $.trim($(this).val());
     if (!val) {
-      $mobile.find('.warning').text(warning.mobile[1]);
+      $mobile.find('.warning').removeClass('ic-small-tick').text(warning.mobile[1]);
       $mobile.find('.inp-box').addClass('w');
     } else {
-      $mobile.find('.warning').text('');
+      $mobile.find('.warning').text('').addClass('ic-small-tick');
       $mobile.find('.inp-box').removeClass('w');
     }
   });
@@ -305,11 +314,11 @@ $(function(){
   $password.find('input').blur(function(){
     var val = $.trim($(this).val());
     if (!val) {
-      $password.find('.warning').text(warning.password[1]);
+      $password.find('.warning').removeClass('ic-small-tick').text(warning.password[1]);
       $password.find('.inp-box').addClass('w');
       $(this).val('');
     } else {
-      $password.find('.warning').text('');
+      $password.find('.warning').text('').addClass('ic-small-tick');
       $password.find('.inp-box').removeClass('w');
     }
   });
@@ -317,14 +326,14 @@ $(function(){
   $repeat.find('input').blur(function(){
     var val = $.trim($(this).val());
     if (!val) {
-      $repeat.find('.warning').text(warning.repeat[1]);
+      $repeat.find('.warning').removeClass('ic-small-tick').text(warning.repeat[1]);
       $repeat.find('.inp-box').addClass('w');
       $(this).val('');
     } else if (val != $.trim($password.find('input').val())) {
-      $repeat.find('.warning').text(warning.repeat[0]);
+      $repeat.find('.warning').removeClass('ic-small-tick').text(warning.repeat[0]);
       $repeat.find('.inp-box').addClass('w');
     } else {
-      $repeat.find('.warning').text('');
+      $repeat.find('.warning').text('').addClass('ic-small-tick');
       $repeat.find('.inp-box').removeClass('w');
     }
   });
@@ -335,33 +344,33 @@ $(function(){
         , pwd = $.trim($password.find('input').val())
         , repeat = $.trim($repeat.find('input').val());
     if (!mobile) {
-      $mobile.find('.warning').text(warning.mobile[1]);
+      $mobile.find('.warning').removeClass('ic-small-tick').text(warning.mobile[1]);
       $mobile.find('.inp-box').addClass('w');
       return;
     } else {
-      $mobile.find('.warning').text('');
+      $mobile.find('.warning').text('').addClass('ic-small-tick');
       $mobile.find('.inp-box').removeClass('w');
     }
 
     if (!pwd) {
-      $password.find('.warning').text(warning.password[1]);
+      $password.find('.warning').removeClass('ic-small-tick').text(warning.password[1]);
       $password.find('.inp-box').addClass('w');
       $password.find('input').val('');
       return;
     } else {
-      $password.find('.warning').text('');
+      $password.find('.warning').text('').addClass('ic-small-tick');
       $password.find('.inp-box').removeClass('w');
     }
 
     if (!repeat) {
-      $repeat.find('.warning').text(warning.repeat[1]);
+      $repeat.find('.warning').removeClass('ic-small-tick').text(warning.repeat[1]);
       $repeat.find('.inp-box').addClass('w');
       $repeat.val('');
-    } else if (val != $.trim($password.find('input').val())) {
-      $repeat.find('.warning').text(warning.repeat[0]);
+    } else if (repeat != $.trim($password.find('input').val())) {
+      $repeat.find('.warning').removeClass('ic-small-tick').text(warning.repeat[0]);
       $repeat.find('.inp-box').addClass('w');
     } else {
-      $repeat.find('.warning').text('');
+      $repeat.find('.warning').text('').addClass('ic-small-tick');
       $repeat.find('.inp-box').removeClass('w');
     }
     $modal.show();

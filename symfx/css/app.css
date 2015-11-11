@@ -702,6 +702,12 @@ a:hover {
   height: 16px;
   width: 16px;
 }
+.ic-hint-orange {
+  background: url(../images/icons.png) no-repeat -91px -507px;
+  display: block;
+  height: 16px;
+  width: 16px;
+}
 .ic-big-hint {
   background: url(../images/icons.png) no-repeat -129px -479px;
   display: block;
@@ -803,6 +809,30 @@ a:hover {
   display: block;
   height: 8px;
   width: 8px;
+}
+.ic-help {
+  background: url(../images/icons.png) no-repeat -107px -611px;
+  display: block;
+  height: 13px;
+  width: 13px;
+}
+.ic-refresh {
+  background: url(../images/icons.png) no-repeat -224px -297px;
+  display: block;
+  height: 15px;
+  width: 16px;
+}
+.ic-bulb {
+  background: url(../images/icons.png) no-repeat -140px -609px;
+  display: block;
+  height: 17px;
+  width: 11px;
+}
+.ic-small-tick {
+  background: url(../images/icons.png) no-repeat 0 -637px;
+  display: block;
+  height: 16px;
+  width: 16px;
 }
 /* banks */
 .ICBC {
@@ -1829,6 +1859,18 @@ a:hover {
   position: absolute;
   top: 9px;
 }
+.user-center .content-wrapper .hint-orange {
+  background: #fffde6;
+  border: 1px solid #ffd8a4;
+  line-height: 34px;
+  padding-left: 34px;
+  position: relative;
+}
+.user-center .content-wrapper .hint-orange .ic {
+  left: 10px;
+  position: absolute;
+  top: 9px;
+}
 .payment-form .sub-table {
   border: 1px solid #e6e6e6;
 }
@@ -2463,4 +2505,99 @@ a:hover {
 .about .article p {
   line-height: 25px;
   margin-top: 30px;
+}
+/* switcher */
+.switcher {
+  border-bottom: 1px solid #dddddd;
+}
+.switcher .tab {
+  background: #f6f6f6;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  float: left;
+  line-height: 45px;
+  position: relative;
+  bottom: -2px;
+  text-align: center;
+  width: 116px;
+}
+.switcher .tab.active {
+  background: #ffffff;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-top: 2px solid #fc7000;
+  border-bottom: 1px solid #ffffff;
+}
+.switcher .tab.m {
+  margin-left: 10px;
+}
+.switcher .tab a {
+  display: block;
+}
+.switcher .tab a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+/* help hint */
+.help-base {
+  position: relative;
+}
+.help-base .help-desc {
+  background: #fff;
+  border: 1px solid #dddddd;
+  box-shadow: 0 0 10px #dddddd;
+  color: #b6b6b6;
+  /*display: block;*/
+  display: none;
+  left: -42px;
+  line-height: 20px;
+  /*opacity: 1;*/
+  opacity: 0;
+  padding: 12px;
+  position: absolute;
+  text-align: left;
+  /*top: 24px;*/
+  top: 30px;
+  width: 210px;
+  z-index: 10;
+}
+.help-base .help-desc:after, .help-base .help-desc:before {
+  bottom: 100%;
+  left: 20%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.help-base .help-desc:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 7px;
+  margin-left: -7px;
+}
+.help-base .help-desc:before {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #dddddd;
+  border-width: 8px;
+  margin-left: -8px;
+}
+.help-base .ic-help {
+  right: -20px;
+  position: absolute;
+  top: 1px;
+}
+/* refresh */
+.refresh {
+  padding-left: 20px;
+  position: relative;
+}
+.refresh .ic-refresh {
+  left: 0;
+  position: absolute;
+  top: -1px;
+}
+.refresh:hover .ic-refresh {
+  background: url(../images/icons.png) no-repeat -224px -318px;
 }
