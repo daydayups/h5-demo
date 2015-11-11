@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
 <meta charset="UTF-8">
-<title>帮助中心</title>
+<title>关于星汇</title>
 <link rel="stylesheet" href="css/app.css"/>
 </head>
 <body>
@@ -54,30 +54,21 @@
   </ul>
 </div><!-- /.nav -->
 
-<div class="main help-center">
+<div class="main about">
   <div class="inner clearfix">
     <div class="clearfix mt-20">
       <div class="sidebar">
-        <ul class="group-box">
-          <li class="group">
-            <div class="title">关于星汇<i class="ic ic-arrow"></i></div>
-            <ul class="sub-item">
-              <li class="item active"><a href="#">星汇介绍</a></li>
-              <li class="item"><a href="#">联系我们</a></li>
-              <li class="item"><a href="#">诚聘英才</a></li>
-              <li class="item"><a href="#">平台公告</a></li>
-            </ul>
-          </li>
+        <div class="title"><span>关于星汇<i class="ic ic-arrow-down-gray"></i></span></div>
+        <ul>
+          <li class="item active"><i class="ic ic-point"></i><a href="#">星汇介绍</a></li>
+          <li class="item"><i class="ic ic-point"></i><a href="#">联系我们</a></li>
+          <li class="item"><i class="ic ic-point"></i><a href="#">诚聘英才</a></li>
+          <li class="item"><i class="ic ic-point"></i><a href="#">平台公告</a></li>
         </ul>
       </div><!-- /.sidebar -->
 
-      <div class="content-wrapper" style="width: 700px;">
-        <div class="bread-crumb">
-          <a href="#">关于星汇</a>
-          <span class="ml-5 mr-5">&gt;</span>
-          <a href="#">星汇介绍</a>
-        </div>
-        <div class="clearfix mt-20">
+      <div class="content-wrapper">
+        <div class="article">
           <h1 class="title">星汇介绍</h1>
           <div class="content">
             <p>杭州袋狮信息技术有限公司（）于2014年经杭州市政府批准成立并在杭州市工商行政管理局正式注册登记，注册资金1000万元人民币。作为一家专业的互联网金融信息服务机构，发财金由金融管理和电子商务等业界一流的专业团队组成，拥有行业领先的风险管控能力和先进、安全的互联网平台，结合数十年综合的金融、电商及服务经验，通过科学、严谨、安全、高效的业务办理流程，为全国金融投资者提供最专业的金融咨询、股票融资、风险控制等金融信息服务。</p>
@@ -97,8 +88,8 @@
                 <img src="images/partners-a.jpg" alt=""/>
               </div>
             </div><!-- /.block -->
-          </div>
-        </div><!-- /.clearfix -->
+          </div><!-- /.content -->
+        </div><!-- /.article -->
       </div><!-- /.content-wrapper -->
     </div><!-- /.clearfix -->
   </div><!-- /.inner -->
@@ -183,16 +174,5 @@
 
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/app.js"></script>
-<script>
-$(function(){
-  var $sidebar = $('.sidebar');
-  $sidebar.find('.group .title').click(function(){
-    $(this).parents('.group').siblings().addClass('collapse');
-    $(this).parents('.group').siblings().find('.sub-item').slideUp();
-    $(this).parents('.group').toggleClass('collapse');
-    $(this).siblings('.sub-item').slideToggle();
-  });
-});
-</script>
 </body>
 </html>

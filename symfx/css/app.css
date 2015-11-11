@@ -516,6 +516,12 @@ a:hover {
   top: 16px;
   width: 11px;
 }
+.ic-arrow-down-gray {
+  background: url(../images/icons.png) no-repeat -40px -613px;
+  display: block;
+  height: 7px;
+  width: 11px;
+}
 .ic-arrow {
   background: url(../images/icons.png) no-repeat 0 -614px;
   display: block;
@@ -792,6 +798,12 @@ a:hover {
   height: 55px;
   width: 137px;
 }
+.ic-point {
+  background: url(../images/icons.png) no-repeat -65px -613px;
+  display: block;
+  height: 8px;
+  width: 8px;
+}
 /* banks */
 .ICBC {
   background: url(../images/banks.png) no-repeat 0 0;
@@ -1045,6 +1057,7 @@ a:hover {
   color: #5692d5;
   cursor: pointer;
   font-size: 12px;
+  font-weight: normal;
 }
 .link-blue:hover {
   color: #ff8828;
@@ -2370,4 +2383,84 @@ a:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
+}
+/* about */
+.about {
+
+}
+.about .sidebar {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  float: left;
+  line-height: 45px;
+  width: 160px;
+}
+.about .sidebar {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  box-sizing: border-box;
+  float: left;
+  line-height: 45px;
+  overflow: hidden;
+  width: 160px;
+}
+.about .sidebar .title {
+  background: url(../images/about-sidebar-title-bg.jpg) repeat-x;
+  border-bottom: 2px solid #fc7000;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.about .sidebar .title span {
+  right: 6px;
+  position: relative;
+}
+.about .sidebar .title span .ic {
+  right: -20px;
+  position: absolute;
+  top: 4px;
+}
+.about .sidebar ul {
+  padding: 10px 0;
+}
+.about .sidebar .item {
+  padding-left: 52px;
+  position: relative;
+}
+.about .sidebar .item .ic {
+  left: 27px;
+  position: absolute;
+  top: 18px;
+}
+.about .sidebar .item.active a {
+  color: #fc7000;
+}
+.about .sidebar .item.active .ic-point {
+  background: url(../images/icons.png) no-repeat -84px -613px;
+}
+.about .content-wrapper {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  float: right;
+  min-height: 500px;
+  padding: 20px;
+  width: 780px;
+}
+.about .article {
+  font-size: 12px;
+}
+.about .article .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.about .article h1 {
+  font-size: 16px;
+}
+.about .article p {
+  line-height: 25px;
+  margin-top: 30px;
 }
