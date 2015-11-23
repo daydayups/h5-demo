@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title>Drag Event Demo</title>
+<style>
+ul {
+  border-top: 1px solid #eeeeee;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  background: #00468c;
+  border-bottom: 1px solid #eeeeee;
+  color: #ffffff;
+  line-height: 50px;
+  padding-left: 50px;
+  position: relative;
+}
+li.dragging {
+  opacity: 0.4;
+}
+li i {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect fill='#eee' width='15' height='3'/><rect fill='#eee' y='12' width='15' height='3'/><rect fill='#eee' y='6' width='15' height='3'/></svg>");
+  cursor: move;
+  height: 15px;
+  left: 17px;
+  position: absolute;
+  top: 18px;
+  width: 15px;
+}
+aside {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  width: 200px;
+}
+</style>
+</head>
+<body>
+<aside>
+  <ul id="list">
+    <li draggable="true"><i></i>item1</li>
+    <li draggable="true"><i></i>item2</li>
+    <li draggable="true"><i></i>item3</li>
+    <li draggable="true"><i></i>item4</li>
+    <li draggable="true"><i></i>item5</li>
+    <li draggable="true"><i></i>item6</li>
+    <li draggable="true"><i></i>item7</li>
+    <li draggable="true"><i></i>item8</li>
+    <li draggable="true"><i></i>item9</li>
+    <li draggable="true"><i></i>item10</li>
+  </ul>
+</aside>
+<script>
+(function(){
+  var items = document.getElementsByTagName('li');
+  var list = document.getElementById('list');
+
+  var dragSrcEl;
+  var drag = {
+    start: function (e) {
+      console.log("dragStart: dropEffect = " + e.dataTransfer.dropEffect + " ; effectAllowed = " + e.dataTransfer.effectAllowed);
+      this.className = 'dragging';
+
+      dragSrcEl = this;
+
+      e.dataTransfer.effectAllowed = 'move';
+//      e.dataTransfer.setData('text/html', this.innerHTML);
+    },
+    drag: function (e) {
+      console.log("drag: dropEffect = " + e.dataTransfer.dropEffect + " ; effectAllowed = " + e.dataTransfer.effectAllowed);
+      e.preventDefault();
+    },
+    enter: function (e) {
+      console.log("dragEnter: dropEffect = " + e.dataTransfer.dropEffect + " ; effectAllowed = " + e.dataTransfer.effectAllowed);
+      e.preventDefault();
+      // Set the dropEffect to move
+      e.dataTransfer.dropEffect = "move";
+    },
+    over: function (e) {
+      console.log("dragOver: dropEffect = " + e.dataTransfer.dropEffect + " ; effectAllowed = " + e.dataTransfer.effectAllowed);
+      e.preventDefault();
+    },
+    leave: function (e) {
+      console.log("dragLeave: dropEffect = " + e.dataTransfer.dropEffect + " ; effectAllowed = " + e.dataTransfer.effectAllowed);
+      e.preventDefault();
+    },
+    drop: function (e) {
+      console.log("drop: dropEffect = " + e.dataTransfer.dropEffect + " ; effectAllowed = " + e.dataTransfer.effectAllowed);
+      // this/e.target is current target element.
+      if (e.stopPropagation) {
+        e.stopPropagation(); // Stops some browsers from redirecting.
+      }
+
+      // Don't do anything if dropping the same column we're dragging.
+      if (dragSrcEl != this) {
+        // Set the source HTML to the HTML of the column we dropped on.
+//        dragSrcEl.innerHTML = this.innerHTML;
+//        this.innerHTML = e.dataTransfer.getData('text/html');
+
+        var t = this;
+        list.removeChild(dragSrcEl);
+        list.insertBefore(dragSrcEl, t);
+      }
+    },
+    end: function (e) {
+      console.log("dragEnd: dropEffect = " + e.dataTransfer.dropEffect + " ; effectAllowed = " + e.dataTransfer.effectAllowed);
+      e.preventDefault();
+      // Get the id of the target and add the moved element to the target's DOM
+      this.className = '';
+    }
+  };
+
+  Array.prototype.forEach.call(items, function(element, index, arr){
+    element.addEventListener('dragstart', drag.start, false);
+    element.addEventListener('drag', drag.drag, false);
+    element.addEventListener('dragenter', drag.enter, false);
+    element.addEventListener('dragover', drag.over, false);
+    element.addEventListener('dragleave', drag.leave, false);
+    element.addEventListener('drop', drag.drop, false);
+    element.addEventListener('dragend', drag.end, false);
+  });
+})();
+</script>
+</body>
+</html>
