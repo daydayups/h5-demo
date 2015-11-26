@@ -87,18 +87,57 @@
         <h1 class="title pull-left">交易记录 —— MT4（真实）</h1>
         <span class="f-12 cl-153 pull-right">账号：234234234234</span>
       </div>
+
+      <div class="account-summary clearfix mt-20">
+        <div class="item  brd-r">
+          <p><span class="tag-true mr-5">真实</span><span>MT4账号：234234234234</span></p>
+          <div class="clearfix">
+            <div class="pull-left">
+              <!-- type = 1 -->
+              <a class="modify-password btn-gray" href="javascript:;" data-type="1">修改密码</a>
+              <a class="forget-password btn-gray ml-20" href="javascript:;" data-type="1">忘记密码</a>
+            </div>
+            <div class="pull-right">
+              <span class="cl-153">当前杠杆 1:100</span>
+              <a class="modify-lever btn-gray ml-5" href="javascript:;">修改</a>
+            </div>
+          </div><!-- /.clearfix -->
+        </div><!-- /.item -->
+        <div class="item">
+          <p><span class="tag-simulate mr-5">模拟</span><span>MT4账号：234234234234</span></p>
+          <div class="clearfix">
+            <div class="">
+              <!-- type = 0 -->
+              <a class="modify-password btn-gray" href="javascript:;" data-type="0">修改密码</a>
+              <a class="forget-password btn-gray ml-20" href="javascript:;" data-type="0">忘记密码</a>
+            </div>
+          </div><!-- /.clearfix -->
+        </div><!-- /.item -->
+      </div><!-- /.account-summary -->
+
+      <p class="f-14 mt-30">MT4资金总览</p>
       <div class="trade-summary mt-20">
-        <div class="box f-12 mt-20 clearfix">
-          <div class="item col-1">
-            <p><span class="cl-153">MT4净值</span><i class="ic-help"></i></p>
+        <div class="box f-12 clearfix">
+          <div class="item col-1" style="width: 128px;">
+            <p class="help-base" style="width: 48px;">
+              <span class="cl-153">MT4净值</span>
+              <span class="ic-help help-trigger">
+                <span class="help-desc">什么鬼什么鬼什么鬼什么鬼什么鬼什么鬼</span>
+              </span>
+            </p>
             <p class="f-18 mt-15">$<span class="ml-5">22340.00</span></p>
-            <p class="mt-15"><a class="refresh btn-gray ml-30" href="javascript:;">刷新<i class="ic-refresh"></i></a></p>
+            <p class="mt-15"><a class="refresh btn-gray" href="javascript:;">刷新<i class="ic-refresh"></i></a></p>
           </div><!-- /.col-1 -->
 
           <div class="item col-2 m"></div><!-- /.col-2 -->
 
           <div class="item col-3 m">
-            <p><span class="cl-153">可用预付款</span></p>
+            <p class="help-base" style="width: 60px;">
+              <span class="cl-153">可转出金额</span>
+              <span class="ic-help help-trigger">
+                <span class="help-desc">什么鬼什么鬼什么鬼什么鬼什么鬼什么鬼</span>
+              </span>
+            </p>
             <p class="f-14 mt-15">$<span class="ml-5">10000.00</span></p>
             <p class="mt-15"><a class="transfer-in btn-blue" href="javascript:;">转入</a><a class="transfer-out btn-blue ml-10" href="javascript:;">转出</a></p>
           </div><!-- /.col-3 -->
@@ -106,8 +145,25 @@
           <div class="item col-4 m"></div><!-- /.col-4 -->
 
           <div class="item col-5 m">
-            <p><span class="cl-153">已用预付款</span></p>
+            <p class="help-base" style="width: 62px;">
+              <span class="cl-153">已用预付款</span>
+              <span class="ic-help help-trigger">
+                <span class="help-desc">什么鬼什么鬼什么鬼什么鬼什么鬼什么鬼</span>
+              </span>
+            </p>
             <p class="f-14 mt-15">$<span class="ml-5">11340.00</span></p>
+          </div><!-- /.col-5 -->
+
+          <div class="item col-6 m"></div><!-- /.col-4 -->
+
+          <div class="item col-7 m" style="width: 70px;">
+            <p class="help-base" style="width: 52px;">
+              <span class="cl-orange">红包</span>
+              <span class="ic-help help-trigger">
+                <span class="help-desc">什么鬼什么鬼什么鬼什么鬼什么鬼什么鬼</span>
+              </span>
+            </p>
+            <p class="f-14 mt-15 cl-orange">$<span class="ml-5">11340.00</span></p>
           </div><!-- /.col-5 -->
         </div><!-- /.box -->
       </div><!-- /.summary -->
@@ -384,6 +440,191 @@
     </form>
   </div>
 </div>
+
+<div id="pop-password-modify" class="pop-window">
+  <div class="window-title clearfix">
+    <span class="f-14 ttx">修改MT4（模拟）密码</span>
+    <span class="close"></span>
+  </div>
+  <div class="window-body">
+    <form action="#" method="post">
+      <input type="hidden" name="type" value="0">
+      <table>
+        <tr>
+          <td class="col-1" align="right" valign="top" width="32%">
+            <div class="mt-15">当前密码：</div>
+          </td>
+          <td align="left">
+            <div>
+              <input class="j-current inp" type="password" value="">
+              <a class="link-blue ml-5" href="#">忘记密码？</a>
+            </div>
+            <div class="mt-5">
+              <span class="warning"></span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-1" align="right" valign="top">
+            <div class="mt-15">新密码：</div>
+          </td>
+          <td align="left">
+            <div>
+              <input class="j-npwd inp" type="password" value="">
+            </div>
+            <div class="mt-5">
+              <span class="warning"></span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-1" align="right" valign="top">
+            <div class="mt-15">确认新密码：</div>
+          </td>
+          <td align="left">
+            <div>
+              <input class="j-confirm inp" type="password" value="">
+            </div>
+            <div class="mt-5">
+              <span class="warning"></span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button class="btn-confirm">确定</button></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+
+<div id="pop-verify-identity" class="pop-window">
+  <div class="window-title clearfix">
+    <span class="f-14">身份验证</span>
+    <span class="close"></span>
+  </div>
+  <div class="window-body">
+    <table>
+      <tr>
+        <td class="col-1" align="right" width="32%">
+          <div>手机号码：</div>
+        </td>
+        <td align="left">
+          <div>
+            <span>13818838484</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="col-1" align="right" valign="top">
+          <div class="mt-15">短信验证码：</div>
+        </td>
+        <td align="left">
+          <div class="clearfix">
+            <input class="j-verify-code inp pull-left" style="width: 120px;" type="text" value="">
+            <span class="btn-verify-code-b pull-left ml-10">获取验证码</span>
+          </div>
+          <div class="mt-5">
+            <span class="warning"></span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button class="btn-confirm">下一步</button></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td align="left">
+          <p class="cl-153">如果您无法收到短信，请联系客服 400-8888-8888</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><!-- /#pop-verify-identity -->
+
+<div id="pop-reset-password" class="pop-window">
+  <div class="window-title clearfix">
+    <span class="f-14 ttx">重置密码 — MT4（模拟）</span>
+    <span class="close"></span>
+  </div>
+  <div class="window-body">
+    <form action="#" method="post">
+      <input type="hidden" name="type" value="0">
+      <table>
+        <tr>
+          <td class="col-1" align="right" valign="top" width="35%">
+            <div class="mt-15">新密码：</div>
+          </td>
+          <td align="left">
+            <div>
+              <input class="j-npwd inp" type="password" value="">
+            </div>
+            <div class="mt-5">
+              <span class="warning"></span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-1" align="right" valign="top">
+            <div class="mt-15">确认新密码：</div>
+          </td>
+          <td align="left">
+            <div>
+              <input class="j-confirm inp" type="password" value="">
+            </div>
+            <div class="mt-5">
+              <span class="warning"></span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button class="btn-confirm">确定</button></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+
+<div id="pop-lever-modify" class="pop-window">
+  <div class="window-title clearfix">
+    <span class="f-14 ttx">修改杠杆</span>
+    <span class="close"></span>
+  </div>
+  <div class="window-body">
+    <form action="#" method="post">
+      <input type="hidden" name="type" value="0">
+      <table>
+        <tr>
+          <td class="col-1" align="right">
+            <div class="mt-15">当前杠杆：</div>
+          </td>
+          <td align="left">
+            <span>1 : 100</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-1" align="right">
+            <div class="mt-15">修改杠杆：</div>
+          </td>
+          <td align="left">
+            <select class="select" name="lever" id="">
+              <option value="0">1 : 100</option>
+              <option value="1">1 : 200</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button class="btn-confirm">确定</button></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+
 <div class="callout">
   <i class="ic-success ic"></i>
   <span class="msg"></span>
@@ -420,6 +661,206 @@ $(function(){
 
     $.callout('.callout', '转出成功！');
     return false;
+  });
+
+  //password modify
+  var warning = {
+    current: [
+      '请输入当前密码',
+      '原密码错误'
+    ],
+    npwd: [
+      '请输入新密码',
+      '密码长度6~18位，数字、字母、字符至少包含两种',
+      '新密码不能与旧密码一样'
+    ],
+    confirm: [
+      '请输入新密码',
+      '两次输入的密码不一致'
+    ],
+    verifyCode: [
+      '请输入短信验证码',
+      '短信验证码错误'
+    ]
+  };
+
+  var $pwdModify = $('#pop-password-modify')
+      , $current = $pwdModify.find('.j-current')
+      , $npwd = $pwdModify.find('.j-npwd')
+      , $confirm = $pwdModify.find('.j-confirm');
+
+  //password length of 6 to 18, Numbers, letters, characters comprising at least two
+  var regPwd = /((?=.*\d)(?=.*\D)|(?=.*[a-zA-Z])(?=.*[^a-zA-Z]))^.{8,16}$/;
+
+  $('.modify-password').click(function(){
+    var type = $(this).data('type');
+    if (type) {
+      $pwdModify.find('.ttx').text('修改MT4（真实）密码');
+    } else {
+      $pwdModify.find('.ttx').text('修改MT4（模拟）密码');
+    }
+
+    $pwdModify.find('input[name="type"]').val(type);
+    $pwdModify.find('table input').val('');
+    $modal.show();
+    $.popup('#pop-password-modify');
+  });
+
+  $pwdModify.find('form').submit(function(e){
+    e.preventDefault();
+    var currentVal = $current.val()
+        , npwdVal = $npwd.val()
+        , confirmVal = $confirm.val();
+
+    if (!currentVal) {
+      $current.addClass('w');
+      $current.parents('td').find('.warning').text(warning.current[0]);
+      return ;
+    } else {
+      $current.removeClass('w');
+      $current.parents('td').find('.warning').text('');
+    }
+
+    if (!npwdVal) {
+      $npwd.addClass('w');
+      $npwd.parents('td').find('.warning').text(warning.npwd[0]);
+      return ;
+    } else if (!regPwd.test(npwdVal)) {
+      $npwd.addClass('w');
+      $npwd.parents('td').find('.warning').text(warning.npwd[1]);
+      return ;
+    } else if (npwdVal === currentVal) {
+      $npwd.addClass('w');
+      $npwd.parents('td').find('.warning').text(warning.npwd[2]);
+      return ;
+    } else {
+      $npwd.removeClass('w');
+      $npwd.parents('td').find('.warning').text('');
+    }
+
+    if (!confirmVal) {
+      $confirm.addClass('w');
+      $confirm.parents('td').find('.warning').text(warning.confirm[0]);
+      return ;
+    } else if (npwdVal != confirmVal) {
+      $confirm.addClass('w');
+      $confirm.parents('td').find('.warning').text(warning.confirm[1]);
+      return ;
+    } else {
+      $confirm.removeClass('w');
+      $confirm.parents('td').find('.warning').text('');
+    }
+
+    //ajax submit
+    $('#pop-password-modify').hide();
+    $modal.hide();
+    $.callout('.callout', '密码修改成功');
+    return false;
+  });
+
+  //identity verify
+  var $identityVerify = $('#pop-verify-identity')
+    , $resetPassword = $('#pop-reset-password');
+  $('.forget-password').click(function(){
+    $identityVerify.find('.j-verify-code').val('');
+    var type = $(this).data('type');
+    if (type) {
+      $resetPassword.find('.ttx').text('重置密码 — MT4（真实）');
+    } else {
+      $resetPassword.find('.ttx').text('重置密码 — MT4（模拟）');
+    }
+
+    $resetPassword.find('input[name="type"]').val(type);
+    $resetPassword.find('table input').val('');
+    $modal.show();
+    $.popup('#pop-verify-identity');
+  });
+
+  $identityVerify.find('.btn-verify-code-b').click(function(){
+    var $verify = $(this);
+    if ($verify.hasClass('disable')) {
+      return;
+    } else {
+      $verify.addClass('disable');
+      $verify.html('<span class="num">60</span>秒后重发');
+      $.countdown($verify.find('.num').get(0), 60, 1000, function(){
+        $verify.removeClass('disable').html('重新获取');
+      });
+    }
+  });
+
+  $identityVerify.find('.btn-confirm').click(function(){
+    var $verifyCode = $identityVerify.find('.j-verify-code')
+      , code = $verifyCode.val();
+    if (!code) {
+      $verifyCode.parents('div').siblings('div').find('.warning').text(warning.verifyCode[0]);
+    } else {
+      //TODO: get verify code via ajax
+      var result = 'abcd';
+      if (code != result) {
+        $verifyCode.parents('div').siblings('div').find('.warning').text(warning.verifyCode[1]);
+      } else {
+        $verifyCode.parents('div').siblings('div').find('.warning').text('');
+        $identityVerify.hide();
+        $.popup('#pop-reset-password');
+      }
+    }
+  });
+
+  //reset password
+  var $vnpwd = $resetPassword.find('.j-npwd')
+      , $vconfirm = $resetPassword.find('.j-confirm');
+
+  $resetPassword.find('form').submit(function(e){
+    e.preventDefault();
+    var npwdVal = $vnpwd.val()
+        , confirmVal = $vconfirm.val();
+
+    if (!npwdVal) {
+      $vnpwd.addClass('w');
+      $vnpwd.parents('td').find('.warning').text(warning.npwd[0]);
+      return ;
+    } else if (!regPwd.test(npwdVal)) {
+      $vnpwd.addClass('w');
+      $vnpwd.parents('td').find('.warning').text(warning.npwd[1]);
+      return ;
+    } else {
+      $vnpwd.removeClass('w');
+      $vnpwd.parents('td').find('.warning').text('');
+    }
+
+    if (!confirmVal) {
+      $vconfirm.addClass('w');
+      $vconfirm.parents('td').find('.warning').text(warning.confirm[0]);
+      return ;
+    } else if (npwdVal != confirmVal) {
+      $vconfirm.addClass('w');
+      $vconfirm.parents('td').find('.warning').text(warning.confirm[1]);
+      return ;
+    } else {
+      $vconfirm.removeClass('w');
+      $vconfirm.parents('td').find('.warning').text('');
+    }
+
+    //TODO: ajax submit
+    $resetPassword.hide();
+    $modal.hide();
+    $.callout('.callout', '密码重置成功');
+    return false;
+  });
+
+  //lever modify
+  $('.modify-lever').click(function(){
+    $modal.show();
+    $.popup('#pop-lever-modify');
+  });
+
+  $('#pop-lever-modify').find('form').submit(function(e){
+    e.preventDefault();
+    //TODO: ajax submit
+    $('#pop-lever-modify').hide();
+    $modal.hide();
+    $.callout('.callout', '杠杆修改成功');
   });
 
   $('.pop-window').find('.close').click(function(){

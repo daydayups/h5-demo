@@ -3,7 +3,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -488,6 +488,22 @@ a:hover {
   color: #cccccc;
   cursor: default;
 }
+.btn-verify-code-b {
+  border: 1px solid #fc7000;
+  color: #fc7000;
+  cursor: pointer;
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  width: 100px;
+}
+.btn-verify-code-b.disable {
+  background: #f8f8f8;
+  border: 1px solid #eeeeee;
+  color: #cccccc;
+  cursor: default;
+}
 /* -icons- */
 .ic-call {
   background: url(../images/icons.png) no-repeat 0 0;
@@ -726,6 +742,12 @@ a:hover {
   height: 32px;
   width: 32px;
 }
+.ic-profile-phone {
+  background: url(../images/icons.png) no-repeat -38px -643px;
+  display: block;
+  height: 32px;
+  width: 32px;
+}
 .ic-realname-verify {
   background: url(../images/icons.png) no-repeat -142px -568px;
   display: block;
@@ -770,6 +792,24 @@ a:hover {
 }
 .ic-download {
   background: url(../images/icons.png) no-repeat -271px -569px;
+  display: block;
+  height: 31px;
+  width: 31px;
+}
+.ic-question {
+  background: url(../images/icons.png) no-repeat -271px -609px;
+  display: block;
+  height: 31px;
+  width: 31px;
+}
+.ic-envelope {
+  background: url(../images/icons.png) no-repeat -193px -644px;
+  display: block;
+  height: 31px;
+  width: 31px;
+}
+.ic-cash-cards {
+  background: url(../images/icons.png) no-repeat -236px -644px;
   display: block;
   height: 31px;
   width: 31px;
@@ -833,6 +873,12 @@ a:hover {
   display: block;
   height: 16px;
   width: 16px;
+}
+.ic-red-envelope-tick {
+  background: url(../images/icons.png) no-repeat -91px -643px;
+  display: block;
+  height: 9px;
+  width: 12px;
 }
 /* banks */
 .ICBC {
@@ -943,6 +989,34 @@ a:hover {
   top: 8px;
 }
 .btn-normal-ic:hover {
+  background: #ff8828;
+  border-bottom: 3px solid #cc6d20;
+  color: #ffffff;
+  text-decoration: none;
+}
+.btn-normalx-ic {
+  background: #fc7000;
+  border: 0 none;
+  border-bottom: 3px solid #ca5a00;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 30px;
+  position: relative;
+  text-align: center;
+  width: 130px;
+}
+.btn-normalx-ic .ic {
+  left: 12px;
+  position: absolute;
+  top: 4px;
+}
+.btn-normalx-ic:hover {
   background: #ff8828;
   border-bottom: 3px solid #cc6d20;
   color: #ffffff;
@@ -1107,6 +1181,23 @@ a:hover {
   width: 68px;
 }
 .btn-small-orange:hover {
+  background: #ff8828;
+  border-bottom: 1px solid #cc6d20;
+}
+.btn-tiny-orange {
+  background: #fc7000;
+  border: 0 none;
+  border-bottom: 1px solid #ca5a00;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+  width: 44px;
+}
+.btn-tiny-orange:hover {
   background: #ff8828;
   border-bottom: 1px solid #cc6d20;
 }
@@ -1335,7 +1426,18 @@ a:hover {
   font-size: 20px;
   margin-top: 30px;
 }
+.banner .pic {
+  position: relative;
+}
 .banner .item {
+  display: block;
+  height: 300px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.banner .item a {
   display: block;
   height: 300px;
   width: 100%;
@@ -1357,6 +1459,7 @@ a:hover {
   left: 0;
   position: absolute;
   top: 270px;
+  z-index: 100;
 }
 .banner .focus li {
   background: url(../images/icons.png) no-repeat -145px 0;
@@ -1580,6 +1683,17 @@ a:hover {
   line-height: 36px;
   border-top: 1px solid #444444;
 }
+.footer .risk-warning {
+  border-top: 1px solid #444444;
+  color: #777777;
+  font-size: 12px;
+  line-height: 25px;
+  padding-top: 30px;
+  margin-top: 20px;
+}
+.footer .risk-warning .high-light {
+  color: #fa8233;
+}
 .footer .others a:hover {
   text-decoration: none;
 }
@@ -1789,6 +1903,33 @@ a:hover {
   margin-right: auto;
   padding-top: 16px;
   width: 196px;
+}
+.user-center .content-wrapper .summary .box .red-envelope-box {
+  background: #fcf8e2;
+  box-sizing: border-box;
+  height: 40px;
+  line-height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 196px;
+}
+.user-center .content-wrapper .summary .box .red-envelope-box .get-success {
+  background: #fccf9e;
+  border-radius: 14px;
+  color: #ffffff;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 30px;
+  padding-right: 10px;
+  position: relative;
+  margin-top: 7px;
+}
+.user-center .content-wrapper .summary .box .red-envelope-box .get-success .ic {
+  left: 11px;
+  position: absolute;
+  top: 8px;
 }
 .user-center .content-wrapper .record .table table {
   width: 100%;
@@ -2014,12 +2155,41 @@ a:hover {
   color: #fc7000;
   float: right;
 }
+.user-center .content-wrapper .account-summary {
+  background: #f4f9fd;
+  border: 1px solid #d1e0ef;
+  font-size: 12px;
+  padding: 20px 0;
+  width: 100%;
+}
+.user-center .content-wrapper .account-summary .item {
+  box-sizing: border-box;
+  float: left;
+  line-height: 25px;
+  padding: 0 20px;
+  width: 50%;
+}
+.user-center .content-wrapper .account-summary .tag-true {
+  background: #a0c0e1;
+  border-radius: 3px;
+  color: #ffffff;
+  padding: 2px 3px;
+}
+.user-center .content-wrapper .account-summary .tag-simulate {
+  background: #b8d17d;
+  border-radius: 3px;
+  color: #ffffff;
+  padding: 2px 3px;
+}
 .user-center .content-wrapper .trade-summary {
+  box-sizing: border-box;
+  border: 1px solid #eeeeee;
+  padding: 20px;
   width: 100%;
 }
 .user-center .content-wrapper .trade-summary .item {
   float: left;
-  width: 160px;
+  width: 100px;
 }
 .user-center .content-wrapper .trade-summary .col-2 {
   background: url(../images/icons-formula.png) no-repeat 0 -10px;
@@ -2027,7 +2197,7 @@ a:hover {
   height: 80px;
   width: 29px;
 }
-.user-center .content-wrapper .trade-summary .col-4 {
+.user-center .content-wrapper .trade-summary .col-4, .user-center .content-wrapper .trade-summary .col-6 {
   background: url(../images/icons-formula.png) no-repeat -45px -10px;
   display: block;
   height: 80px;
@@ -2600,4 +2770,45 @@ a:hover {
 }
 .refresh:hover .ic-refresh {
   background: url(../images/icons.png) no-repeat -224px -318px;
+}
+#pop-get-red-envelope .window-title {
+  background: #ffffff;
+  border-bottom: 0 none;
+  height: 10px;
+  line-height: 10px;
+}
+#pop-get-red-envelope .tt {
+  color: #fc7000;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+#pop-get-red-envelope .red-envelope {
+  margin: 20px auto;
+}
+#pop-get-red-envelope .txt-desc {
+  color: #999999;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0 auto;
+  text-align: left;
+  width: 385px;
+}
+#pop-get-red-envelope .btn-confirm {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+}
+.red-envelope {
+  background: url(../images/red-envelope.jpg) no-repeat;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: block;
+  font-size: 54px;
+  font-weight: bold;
+  height: 88px;
+  line-height: 88px;
+  padding-left: 50px;
+  width: 240px;
 }
