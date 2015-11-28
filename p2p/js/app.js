@@ -131,18 +131,25 @@ $.extend($,{
    * boxs: 标签要切换的内容区域样式 如".trading-list-table"
    * current: 标签选中的样式名 "current"
    */
-  switchTabs: function (tabs, boxs, current) {
+  switchTabs: function (tabs, boxs, current, callback) {
     //标签切换
     var $tabs = $(tabs);
     var $boxs = $(boxs);
     var currStr = current;
-    $boxs.hide();
-    $boxs.eq(0).show();
+
+    if ($boxs.length) {
+      $boxs.hide();
+      $boxs.eq(0).show();
+    }
+
     $tabs.click(function () {
       $tabs.removeClass(currStr);
       $(this).addClass(currStr);
-      $boxs.hide();
-      $boxs.eq($tabs.index(this)).show();
+      if ($boxs.length) {
+        $boxs.hide();
+        $boxs.eq($tabs.index(this)).show();
+      }
+      typeof callback === 'function' && callback();
     });
   },
   popup: function (popWindow) {

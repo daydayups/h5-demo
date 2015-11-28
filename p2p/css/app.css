@@ -87,7 +87,7 @@ table {
   font-size: 16px !important;
 }
 .f-18 {
-  font-size: 18px;
+  font-size: 18px !important;
 }
 .f-20 {
   font-size: 20px;
@@ -338,8 +338,14 @@ table {
 .cl-red {
   color: #e12b2b;
 }
+.cl-red-lighter {
+  color: #ff5054;
+}
 .cl-blue {
   color: #2489f0;
+}
+.cl-blue-lighter {
+  color: #82c5eb;
 }
 .cl-yellow {
   color: #fddf58;
@@ -549,6 +555,12 @@ a:hover {
   height: 66px;
   width: 66px;
 }
+.ic-time {
+  background: url(../images/icon-a.png) no-repeat 0 0;
+  display: block;
+  height: 22px;
+  width: 22px;
+}
 /* tags */
 .tag-begin {
   background: url(../images/icons.png) no-repeat -336px -164px;
@@ -735,6 +747,26 @@ a:hover {
 .btn-sp-gray:hover .ic-android {
   background: url(../images/icons.png) no-repeat -86px -337px;
 }
+/* inp */
+.inp-a {
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-shadow: inset 2px 2px 8px rgba(221,221,221,0.3);
+  -webkit-box-shadow: inset 2px 2px 8px rgba(221,221,221,0.3);
+  box-shadow: inset 2px 2px 8px rgba(221,221,221,0.3);
+  font-size: 24px;
+  font-weight: bold;
+  height: 40px;
+  padding-right: 15px;
+  text-align: right;
+  width: 100%;
+}
+
 /* select */
 /* top */
 .top {
@@ -1660,4 +1692,202 @@ a:hover {
 }
 .wrapper .line .paragraph {
   line-height: 26px;
+}
+
+/* project detail */
+.normal-gray-bg {
+  background: #f6f6f6;
+}
+.bread-crumbs {
+  font-size: 12px;
+  height: 54px;
+  line-height: 54px;
+}
+.bread-crumbs .crumb {
+  color: #999999;
+}
+.bread-crumbs .delimiter {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.project-detail .line {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.project-detail .line .summary {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  padding: 10px 35px;
+  width: 618px;
+}
+.project-detail .line .summary .s-top {
+  border-bottom: 1px solid #eeeeee;
+  line-height: 55px;
+}
+.project-detail .line .summary .s-top .s-left {
+  float: left;
+}
+.project-detail .line .summary .s-top .s-right {
+  float: right;
+}
+.project-detail .line .summary .s-top .tt {
+  font-size: 24px;
+}
+.project-detail .line .summary .s-top .s-right .time {
+  color: #cccccc;
+  padding-left: 30px;
+  position: relative;
+}
+.project-detail .line .summary .s-top .s-right .time .ic {
+  left: 0;
+  position: absolute;
+  top: -2px;
+}
+.project-detail .line .summary .s-middle {
+  border-bottom: 1px solid #eeeeee;
+  padding: 28px 0;
+}
+.project-detail .line .summary .s-middle .item {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  width: 33.3%;
+}
+.project-detail .line .summary .s-middle .item.m {
+  padding-left: 50px;
+}
+.project-detail .line .summary .s-middle .item .tt {
+  color: #999999;
+}
+.project-detail .line .summary .s-middle .item .txt {
+  font-size: 36px;
+  padding-top: 10px;
+}
+.project-detail .line .summary .s-middle .item.b .txt {
+  border-right: 1px solid #e5e5e5;
+}
+.project-detail .line .summary .s-middle .item .txt .suffix {
+  font-size: 20px;
+}
+.project-detail .line .summary .s-bottom {
+  padding-top: 20px;
+}
+.project-detail .line .summary .s-bottom p {
+  line-height: 30px;
+}
+.project-detail .line .apply-box {
+  background: url(../images/apply-box-left-bg.jpg) repeat-y;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: right;
+  height: 357px;
+  padding: 13px 38px 0 48px;
+  width: 340px;
+}
+.project-detail .line .apply-box table {
+  width: 100%;
+}
+.project-detail .line .apply-box table .row td {
+  padding: 20px 0;
+}
+.project-detail .switcher {
+  border-bottom: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  width: 100%;
+}
+.project-detail .switcher .tab {
+  background: #ffffff;
+  border-top: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 25%;
+}
+.project-detail .switcher .tab.active {
+  border-top: 2px solid #da3228;
+  border-bottom: 1px solid #ffffff;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  top: 1px;
+}
+.project-detail .switcher .tab.m {
+  border-left: 1px solid #e5e5e5;
+}
+.project-detail .detail.line {
+  border-top: 0 none;
+}
+.project-detail .detail .content {
+  padding: 30px 40px;
+}
+.project-detail .detail .content p {
+  line-height: 25px;
+}
+.project-detail .detail .content .steps .item, .project-detail .detail .content .steps .arrow {
+  float: left;
+}
+.project-detail .detail .content .steps .item {
+  background: #f8f8f8;
+  padding: 24px 15px;
+}
+.project-detail .detail .content .steps .arrow {
+  background: url(../images/icon-a.png) no-repeat -79px -101px;
+  display: block;
+  margin: 20px;
+  height: 23px;
+  width: 21px;
+}
+.project-detail .detail .content .b-head {
+  border-bottom: 2px solid #eeeeee;
+  height: 45px;
+  line-height: 45px;
+}
+.project-detail .detail .content .b-head .tt {
+  border-bottom: 2px solid #da3228;
+  display: block;
+  font-size: 16px;
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+  text-align: center;
+  top: 0;
+  width: 140px;
+}
+.project-detail .detail .content .record table {
+  color: #666666;
+  font-size: 12px;
+  line-height: 41px;
+  text-align: left;
+  width: 100%;
+}
+.project-detail .detail .content .record table th {
+  background: #f8f8f8;
+}
+.project-detail .detail .content .record table td {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eeeeee;
+}
+.project-detail .detail .content .record table .col-1 {
+  padding-left: 40px;
+}
+.project-detail .detail .content .list-sp {
+  list-style: disc;
+}
+.project-detail .detail .content .list-sp li {
+  margin-bottom: 30px;
 }
