@@ -555,11 +555,53 @@ a:hover {
   height: 66px;
   width: 66px;
 }
+.ic-beginner-tag {
+  background: url(../images/icon-a.png) no-repeat 0 -90px;
+  display: block;
+  height: 46px;
+  width: 46px;
+}
 .ic-time {
   background: url(../images/icon-a.png) no-repeat 0 0;
   display: block;
   height: 22px;
   width: 22px;
+}
+.ic-tick-a {
+  background: url(../images/icon-a.png) no-repeat 0 -33px;
+  display: block;
+  height: 49px;
+  width: 49px;
+}
+.ic-tick-b {
+  background: url(../images/icon-a.png) no-repeat -126px -33px;
+  display: block;
+  height: 49px;
+  width: 49px;
+}
+.ic-warning-a {
+  background: url(../images/icon-a.png) no-repeat -63px -33px;
+  display: block;
+  height: 49px;
+  width: 49px;
+}
+.ic-warning-small-a {
+  background: url(../images/icon-a.png) no-repeat -32px -3px;
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+.ic-warning-small-b {
+  background: url(../images/icon-a.png) no-repeat -60px -3px;
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+.ic-tick-small-a {
+  background: url(../images/icon-a.png) no-repeat -87px -3px;
+  display: block;
+  height: 16px;
+  width: 16px;
 }
 /* tags */
 .tag-begin {
@@ -637,8 +679,10 @@ a:hover {
 /* -btns- */
 .btn-red {
   background: #e12b2b;
+  border: 0 none;
   border-radius: 3px;
   color: #ffffff;
+  cursor: pointer;
   display: block;
   font-size: 14px;
   height: 30px;
@@ -766,7 +810,48 @@ a:hover {
   text-align: right;
   width: 100%;
 }
-
+/* pop-window */
+.pop-window {
+  border: 1px solid #eeeeee;
+  border-radius: 2px;
+  display: none;
+  width: 400px;
+}
+.window-title {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #eeeeee;
+  line-height: 45px;
+  padding-left: 20px;
+  position: relative;
+}
+.window-title .close {
+  color: #999999;
+  cursor: pointer;
+  display: block;
+  font-size: 28px;
+  height: 15px;
+  line-height: 15px;
+  right: 14px;
+  position: absolute;
+  text-align: center;
+  top: 14px;
+  width: 15px;
+}
+.window-body {
+  background-color: #fff;
+  font-size: 12px;
+  padding: 20px;
+  text-align: center;
+}
+.window-body table {
+  width: 100%;
+}
+.window-body table .col-1 {
+  padding-right: 10px;
+}
+.window-body table td {
+  padding: 10px 0;
+}
 /* select */
 /* top */
 .top {
@@ -856,6 +941,7 @@ a:hover {
 }
 /* nav */
 .nav {
+  border-bottom: 1px solid #eeeeee;
   padding: 15px 0;
 }
 .nav .n-left {
@@ -1723,7 +1809,13 @@ a:hover {
   box-sizing: border-box;
   float: left;
   padding: 10px 35px;
+  position: relative;
   width: 618px;
+}
+.project-detail .line .ic-beginner-tag {
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 .project-detail .line .summary .s-top {
   border-bottom: 1px solid #eeeeee;
@@ -1797,6 +1889,55 @@ a:hover {
 .project-detail .line .apply-box table .row td {
   padding: 20px 0;
 }
+.project-detail .line .apply-box .hint-base {
+  position: relative;
+}
+.project-detail .line .apply-box .hint-base .hint-box {
+  background: #fff9e7;
+  border: 1px solid #f9e9bf;
+  display: none;
+  font-size: 12px;
+  left: 108%;
+  line-height: 24px;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  text-align: left;
+  top: -60%;
+  width: 180px;
+}
+.project-detail .line .apply-box .hint-base .hint-box:after, .project-detail .line .apply-box .hint-base .hint-box:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.project-detail .line .apply-box .hint-base .hint-box:after {
+  border-color: rgba(255, 249, 231, 0);
+  border-right-color: #fff9e7;
+  border-width: 8px;
+  margin-top: -8px;
+}
+.project-detail .line .apply-box .hint-base .hint-box:before {
+  border-color: rgba(249, 233, 191, 0);
+  border-right-color: #f9e9bf;
+  border-width: 9px;
+  margin-top: -9px;
+}
+.project-detail .line .apply-box .hint-base .hint-box .item {
+  padding-left: 24px;
+  position: relative;
+}
+.project-detail .line .apply-box .hint-base .hint-box .item .ic {
+  left: 0;
+  position: absolute;
+  top: 4px;
+}
+
 .project-detail .switcher {
   border-bottom: 1px solid #e5e5e5;
   border-right: 1px solid #e5e5e5;

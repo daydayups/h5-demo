@@ -71,6 +71,7 @@
 
     <div class="line clearfix" style="height: 358px;">
       <div class="summary">
+        <span class="ic-beginner-tag"></span>
         <div class="s-top clearfix">
           <div class="s-left">
             <span class="tt">发财金10号</span>
@@ -101,55 +102,90 @@
         </div><!-- /.s-bottom -->
       </div><!-- /.summary -->
       <div class="apply-box">
-        <table>
-          <tr class="row">
-            <td><span class="cl-blue-lighter">正在筹资</span></td>
-            <td align="right"><span class="cl-153">28%</span></td>
+        <!-- form -->
+        <form id="apply-form" action="#" method="post">
+          <table>
+            <tr class="row">
+              <td><span class="cl-blue-lighter">正在筹资</span></td>
+              <td align="right"><span class="cl-153">28%</span></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div class="progress">
+                  <span class="percent" style="width: 28%;"></span>
+                </div><!-- /.progress -->
+              </td>
+            </tr>
+            <tr class="row m">
+              <td class="brd-b"><span class="cl-153">可投金额</span></td>
+              <td class="brd-b" align="right"><span class="f-18 cl-red-lighter">54000.00</span><span class="cl-red-lighter">元</span></td>
+            </tr>
+            <tr class="row">
+              <td><span class="cl-153">账户金额</span></td>
+              <td align="right">
+                <!--<span class="f-18 cl-153">100100.00</span><span class="cl-153">元</span>-->
+                <a class="f-18 link-blue" href="#">登录</a><span class="cl-153">后查看</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" align="right">
+                <div class="hint-base">
+                  <input id="apply-inp" class="inp-a" type="text" placeholder="0">
+                  <div class="hint-box">
+                    <p class="item"><i class="ic ic-warning-small-a"></i><span class="txt">每次投资不可低于50元</span></p>
+                    <p class="item"><i class="ic ic-warning-small-a"></i><span class="txt">投资额必须为50元的整数倍</span></p>
+                    <p class="item"><i class="ic ic-warning-small-a"></i><span class="txt">投资额不可超过54000元</span></p>
+                  </div><!-- /.hint-box -->
+                </div><!-- /.inp-base -->
+                <p class="cl-153 mt-5">每投资 1万元 收益 <span class="cl-red-lighter">150.38</span> 元</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button class="btn-normal f-14 mt-20" style="width: 100%;">立即投资</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+        <!-- /form -->
+        <!-- success -->
+        <table style="display: none;">
+          <tr class="row brd-b">
+            <td><span class="cl-blue-lighter">正在回款</span></td>
+            <td class="brd-b" align="right"></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="ic-tick-a mt-30"></span>
+            </td>
+            <td>
+              <p class="f-24 mt-50">已筹款成功</p>
+              <p class="f-12 cl-102 mt-10">筹款完成时间：2015-11-28</p>
+              <p class="f-12 cl-102 mt-10">项目状态：正常还款中</p>
+            </td>
           </tr>
           <tr>
             <td colspan="2">
-              <div class="progress">
-                <span class="percent" style="width: 28%;"></span>
-              </div><!-- /.progress -->
-            </td>
-          </tr>
-          <tr class="row m">
-            <td class="brd-b"><span class="cl-153">可投金额</span></td>
-            <td class="brd-b" align="right"><span class="f-18 cl-red-lighter">54000.00</span><span class="cl-red-lighter">元</span></td>
-          </tr>
-          <tr class="row">
-            <td><span class="cl-153">账户金额</span></td>
-            <td align="right">
-              <!--<span class="f-18 cl-153">100100.00</span><span class="cl-153">元</span>-->
-              <a class="f-18 link-blue" href="#">登录</a><span class="cl-153">后查看</span>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" align="right">
-              <input class="inp-a" type="text" placeholder="0">
-              <p class="cl-153 mt-5">每投资 1万元 收益 <span class="cl-red-lighter">150.38</span> 元</p>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <button class="btn-normal f-14 mt-20" style="width: 100%;">立即投资</button>
+              <a class="btn-normal f-14 mt-60" href="#" style="width: 100%;">查看其它投资项目</a>
             </td>
           </tr>
         </table>
+        <!-- /success -->
+
       </div><!-- /.apply-box -->
     </div><!-- /.line -->
 
     <div class="detail line mt-20">
       <div class="switcher">
         <ul class="clearfix">
-          <li class="tab active">项目信息</li>
-          <li class="tab m">投标记录<span class="cl-red">（11）</span></li>
-          <li class="tab m">资金安全</li>
-          <li class="tab m">法律保障</li>
+          <li class="tab active" data-anchor="0">项目信息</li>
+          <li class="tab m" data-anchor="1">投标记录<span class="cl-red">（11）</span></li>
+          <li class="tab m" data-anchor="2">资金安全</li>
+          <li class="tab m" data-anchor="3">法律保障</li>
         </ul>
       </div><!-- /.switcher -->
       <div class="content">
-        <p>项目介绍</p>
+        <p class="anchor">项目介绍</p>
         <p class="f-12 cl-102 mt-10">稳盈宝是发财金推出的个人投融资服务。发财金向投资方（投资人）和融资方（借款人）提稳盈宝服务，帮助双方快捷方便地完成投资和借贷。双方通过平台的电子借贷协议，明确双方的债务与债权关系。稳盈宝服务仅向符合中华人民共和国有关法律法规及本公司相关规定的合格投资人和借款人提供。</p>
         <p class="mt-25">投资流程</p>
         <div class="steps clearfix mt-10">
@@ -164,7 +200,7 @@
           </ul>
         </div><!-- /.steps -->
 
-        <div class="block record mt-25">
+        <div class="block record mt-25 anchor">
           <div class="b-head">
             <span class="tt">投标记录</span>
           </div><!-- /.b-head -->
@@ -205,7 +241,7 @@
           </div><!-- /.b-content -->
         </div><!-- /.block -->
 
-        <div class="block mt-25">
+        <div class="block mt-25 anchor">
           <div class="b-head">
             <span class="tt">资金安全</span>
           </div><!-- /.b-head -->
@@ -217,7 +253,7 @@
           </div><!-- /.b-content -->
         </div><!-- /.block -->
 
-        <div class="block mt-25">
+        <div class="block mt-25 anchor">
           <div class="b-head">
             <span class="tt">法律保障</span>
           </div><!-- /.b-head -->
@@ -421,11 +457,169 @@
   </div><!-- /.inner -->
 </div><!-- /.advisors -->
 
+<!-- pop-window -->
+<div class="modal"></div>
+<div id="pop-warning-1" class="pop-window">
+  <div class="window-title clearfix">
+    <span class="f-14">提示</span>
+    <span class="close">&times;</span>
+  </div>
+  <div class="window-body">
+    <p class="f-14 mt-10">您的账户余额不足1500.00元</p>
+    <p class="f-14 mt-10">当前余额为0.00元，请您充值</p>
+    <button class="btn-red m-center mt-20" style="width: 120px;">充值</button>
+  </div>
+</div><!-- /.pop-window -->
+
+<div id="pop-warning-2" class="pop-window">
+  <div class="window-title clearfix">
+    <span class="f-14">提示</span>
+    <span class="close">&times;</span>
+  </div>
+  <div class="window-body">
+    <table>
+      <tr>
+        <td rowspan="2" align="right"><span class="ic-tick-b mr-20"></span></td>
+        <td align="left"><p class="f-18">投资成功！</p></td>
+      </tr>
+      <tr>
+        <td align="left"><p class="f-14">投资金额：15000.00元</p></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button class="btn-red mt-20" style="width: 120px;">确定</button></td>
+      </tr>
+    </table>
+  </div>
+</div><!-- /.pop-window -->
+
+<div id="pop-warning-3" class="pop-window">
+  <div class="window-title clearfix">
+    <span class="f-14">提示</span>
+    <span class="close">&times;</span>
+  </div>
+  <div class="window-body">
+    <table>
+      <tr>
+        <td rowspan="2" align="right"><span class="ic-warning-a mr-20"></span></td>
+        <td align="left"><p class="f-18">该项目为新手专享</p></td>
+      </tr>
+      <tr>
+        <td align="left"><p class="f-14">只有未进行投资的新用户才可以投标</p></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button class="btn-red mt-20" style="width: 120px;">确定</button></td>
+      </tr>
+    </table>
+  </div>
+</div><!-- /.pop-window -->
+
+<div style="background: #eeeeee; border: 1px solid #eeeeee; width: 200px;height: 30px; line-height: 30px;padding-left: 10px;position: fixed; right: 10px; bottom: 200px;">
+  <a class="hint-1" href="javascript:;">提示1</a>
+  <a class="hint-2" href="javascript:;">提示2</a>
+  <a class="hint-3" href="javascript:;">提示3</a>
+</div>
+
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/app.js"></script>
 <script>
 $(function(){
-  $.switchTabs('.switcher .tab', '', 'active');
+  var $switcher = $('.switcher');
+
+  $.switchTabs('.switcher .tab', '', 'active', function(){
+    var anchor = $switcher.find('.tab.active').data('anchor')
+      , $anchors = $('.detail').find('.content .anchor');
+    $('html, body').animate({scrollTop: $anchors.eq(anchor).offset().top - 70}, 500)
+  });
+
+  $(window).on('scroll', function(){
+    var detailY = $.getElementPos($('.detail').get(0)).y;
+    var option = {
+      a: {
+        borderLeft: '1px solid #e5e5e5',
+        left: ($(window).width() - 960) / 2 + 'px',
+        position: 'fixed',
+        top: 0,
+        width: '960px',
+        zIndex: 10
+      },
+      b: {
+        borderLeft: '0 none',
+        left: 0,
+        position: 'static',
+        top: 0
+      }
+
+    };
+    if (detailY < 0) {
+      $switcher.css(option.a);
+    } else if (detailY >= 0) {
+      $switcher.css(option.b);
+    }
+  });
+
+  //input verify
+  var regNum = /^\d+$/;
+
+  var $form = $('#apply-form')
+    , $inp = $('#apply-inp')
+    , $hintBox = $inp.siblings('.hint-box')
+    , $hintICONs = $hintBox.find('.item .ic');
+
+  $inp.focus(function(){
+    $hintBox.show().animate({left: '105%', opacity: 1});
+  }).blur(function(){
+    $hintBox.animate({left: '108%', opacity: 0}, 400, 'swing', function () {
+      $hintBox.hide();
+    });
+  }).keyup(function(){
+    var val = $(this).val().replace(/[^\d.]/g,"");
+    $(this).val(val);
+    if (regNum.test(val)) {
+      if (val < 50) {
+        $hintICONs.eq(0).attr('class', 'ic ic-warning-small-b');
+      } else {
+        $hintICONs.eq(0).attr('class', 'ic ic-tick-small-a');
+      }
+
+      if (val % 50 != 0) {
+        $hintICONs.eq(1).attr('class', 'ic ic-warning-small-b');
+      } else {
+        $hintICONs.eq(1).attr('class', 'ic ic-tick-small-a');
+      }
+
+      if (val > 54000) {
+        $hintICONs.eq(2).attr('class', 'ic ic-warning-small-b');
+      } else {
+        $hintICONs.eq(2).attr('class', 'ic ic-tick-small-a');
+      }
+    } else {
+      $hintICONs.attr('class', 'ic ic-warning-small-b');
+    }
+  });
+
+  //pop-window
+  var $modal = $.modalInit('.modal');
+  $('.hint-1').click(function(){
+    $modal.show();
+    $.popup('#pop-warning-1');
+  });
+
+  $('.hint-2').click(function(){
+    $modal.show();
+    $.popup('#pop-warning-2');
+  });
+
+  $('.hint-3').click(function(){
+    $modal.show();
+    $.popup('#pop-warning-3');
+  });
+
+  $('.pop-window').find('.close').click(function(){
+    $(this).parents('.pop-window').hide();
+    $modal.hide();
+  });
 });
 </script>
 </body>
