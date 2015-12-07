@@ -2812,3 +2812,88 @@ a:hover {
   padding-left: 50px;
   width: 240px;
 }
+/* 推广赚钱 */
+.spread td {
+  padding: 10px;
+}
+.spread-summary {
+  margin-left: 30px;
+}
+.spread-summary li {
+  width: 160px;
+  float: left;
+}
+.spread-ad span {
+  display: block;
+  float: left;
+  font-size: 12px;
+  line-height: 30px;
+}
+.w50 {
+  width: 50px;
+}
+.w90 {
+  width: 90px;
+}
+.inp-spread {
+  border: 1px solid #dddddd;
+  font-size: 14px;
+  height: 35px;
+  min-width: 180px;
+  _line-height:35px;
+  padding-left: 10px;
+  _width:240px;
+}
+.spread .table-module td {
+  padding: 10px 0;
+}
+/* 标签切换组件 */
+.switch-title .switch-tab-wrap {
+  padding-left: 37px;
+  height: 41px;
+  border-bottom: 2px solid #f2f2f2;
+}
+.switch-title .switch-tab-wrap li {
+  float: left;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 60px;
+}
+.switch-title .switch-tab {
+  display: block;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #000;
+  float: left;
+}
+.switch-title .switch-tab:hover {
+  color: #fc7000;
+  _background-color: #fff;
+  border-bottom: 3px solid #fc7000;
+  text-decoration: none;
+}
+.switch-title .switch-tab.curr {
+  color: #fc7000;
+  text-decoration: none;
+  _background-color: #fff;
+  border-bottom: 3px solid #fc7000;
+}
+.spread .table-module th {
+  font-weight: normal;
+  font-size: 12px;
+  color: #999;
+  border-bottom: 2px dotted #f2f2f2;
+}
+.spread .table-module .tb td {
+  padding: 15px 0;
+}
+.spread .table-module td {
+  font-size: 14px;
+  border-bottom: 2px dotted #f2f2f2;
+}
+.spread .table-module .th {
+  line-height: 50px;
+}
+.spread .brd-solid {
+  border-top: 1px solid #dedede;
+}
