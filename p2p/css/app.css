@@ -3276,6 +3276,7 @@ img.verify-img {
 }
 .group-title {
   font-size: 14px;
+  margin-bottom:10px;/*edit by peng*/
 }
 .left-nav .group-title:hover, .left-nav .group-item:hover, .left-nav .group-title.active, .left-nav .group-item.active {
   color: #fff;
@@ -3302,11 +3303,79 @@ img.verify-img {
 }
 /* 帮助内容 */
 .help-center .right-content {
-  padding: 30px;
+  /*padding: 30px;*/
+  padding: 50px 30px;/*edit by peng*/
   width: 700px;
   background-color: #fff;
+  overflow: hidden;
   float: right;
 }
 .breadcrumbs {
   padding: 20px 0;
 }
+/* Edit by peng */
+/*公司简介*/
+.article-content{
+  padding: 30px 0;
+  border-top: 1px solid #eee;
+  overflow: hidden;
+}
+.article-content p{
+  text-indent: 2em;
+  line-height: 30px;
+  font-size: 17px;
+}
+.article-content p span{
+  color: #f2bc66;
+}
+.article-title{
+  height: 30px;
+  width: 200px;
+  border-bottom: 2px solid #c50024;
+  padding-left: 10px;
+  position: relative;
+  left: -18px;
+  /*border: 1px solid red;*/
+}
+.article-title i{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  margin-right: 8px;
+  background: url(../images/help/circle-icon-1x.png) center center no-repeat;
+}
+.article-content dl{
+  float: left;
+  margin-right:6px;
+}
+
+/*contact us*/
+.article-content h6{
+  font-size: 18px;
+}
+
+/*team-introduction*/
+.article-content div{
+  float: left;
+}
+.article-content-text{
+  padding-top: 30px;
+}
+.article-content-text span{
+  display: inline-block;
+  /*padding: 16px 0;*/
+  color: #666;
+}
+.article-content-text1{
+  margin-left: 20px;
+}
+.article-content-text1 h6{
+  margin-bottom: 16px;
+}
+.article-content-text2{
+  width: 400px;
+  height: 120px;
+  margin-left: 122px
+}
+/* Edit by peng | end */
