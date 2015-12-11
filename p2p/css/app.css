@@ -3614,7 +3614,7 @@ img.verify-img {
 .article-content3{
   box-sizing: border-box;
   width: 100%;
-  /*overflow: hidden;*/
+  overflow: hidden;
   height: 700px;
   padding: 35px 0 0 30px;
 }
@@ -3627,12 +3627,12 @@ img.verify-img {
   line-height: 30px;
 }
 .article-content3-div div{
-  display: inline-block;
+  /*display: inline-block;*/
   width: 640px;
   vertical-align: top;
 }
-.help-new-common-ques{
-  background: url(../images/help-new/common-question-close.png) no-repeat center center;
+.ac-title-icon{
+  background: url(../images/help-new/common-question-close.png) no-repeat center bottom;
   display: inline-block;
   height: 16px;
   width: 16px;
@@ -3640,18 +3640,12 @@ img.verify-img {
   margin: 6px 10px 0 0;
   cursor: pointer;
 }
-.help-new-common-ques-open{
+.ac-title-icon-open{
   background: url(../images/help-new/common-question-open.png) no-repeat center center;
 }
 .article-content3-div{
   overflow: hidden;
-  height: 32px;
-}
-.article-content3-div{
-
-}
-.article-content3-div-default{
-  /*height: 150px;*/
+  /*height: 32px;*/
 }
 .help-ques-qq{
   display: inline-block;
@@ -3664,28 +3658,36 @@ img.verify-img {
 .help-ques-imgs img{
   margin: 10px 40px;
 }
-.article-content3-div1{
-  height: 230px;
+.ac-title-answer{
+  display: none;
+  padding: 10px 10px 0 30px;
 }
-.article-content3-div2{
-  height: 180px;
+.ac-title-show{
+  display: block;
 }
-.article-content3-div3{
-  height: 180px;
-}
-.article-content3-div4{
-  height: 120px;
-}
-.article-content3-div5{
-  height: 380px;
-}
-.article-content3-div6{
-  height: 80px;
-}
-.article-content3-div7{
-  height: 100px;
-}
-.article-content3-div8{
-  height: 120px;
-}
+
+/*.article-content3-div1{*/
+  /*height: 230px;*/
+/*}*/
+/*.article-content3-div2{*/
+  /*height: 180px;*/
+/*}*/
+/*.article-content3-div3{*/
+  /*height: 180px;*/
+/*}*/
+/*.article-content3-div4{*/
+  /*height: 120px;*/
+/*}*/
+/*.article-content3-div5{*/
+  /*height: 380px;*/
+/*}*/
+/*.article-content3-div6{*/
+  /*height: 80px;*/
+/*}*/
+/*.article-content3-div7{*/
+  /*height: 100px;*/
+/*}*/
+/*.article-content3-div8{*/
+  /*height: 120px;*/
+/*}*/
 /* Edit by peng | end */
