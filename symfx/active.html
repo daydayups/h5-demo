@@ -120,12 +120,14 @@
        </table>
     </div>
     <div class="inner-content3">
-      <form action="">
-        <label for="" class="act-form-text">你&nbsp;&nbsp;的&nbsp;&nbsp;&nbsp;建&nbsp;&nbsp;议</label>
-        <textarea name="" id="" cols="60" rows="5" class="act-advice-txt" placeholder="..."></textarea>
+      <form id="form">
+        <label for="" class="act-form-text act-form-top">您&nbsp;&nbsp;的&nbsp;&nbsp;&nbsp;建&nbsp;&nbsp;议</label>
+        <textarea name="" id="" cols="50" rows="3" class="act-advice-txt" placeholder="..."></textarea>
+        <label class="act-form-rem act-form-top" id="act-form-cont"> </label>
         <br>
-        <label for="" class="act-form-text">你的手机号码</label>
-        <input type="text" class="act-ipt" placeholder="请输入你的号码">
+        <label for="" class="act-form-text">您的手机号码</label>
+        <input type="text" class="act-ipt" placeholder="请输入您的号码">
+        <label class="act-form-rem-red act-form-middle" id="act-form-cont2"> </label>
         <input type="submit" class="act-form-sub" value=" ">
       </form>
     </div>
@@ -248,15 +250,68 @@ $(function(){
     $(this).find('.desc').animate({height: 0}, 'fast');
   });
 
-  $(".inner-content2-table td").mouseenter(function(){
+  $('.inner-content2-table td').mouseenter(function(){
     $(this).children().stop(false,true);
-    $(this).children(".active-mask").animate({top: 0},500);
+    $(this).children('.active-mask').animate({top: 0},500);
   }).mouseleave(function(){
     $(this).children().stop(false,true);
-    $(this).children(".active-mask").animate({top: "232px"},500);
+    $(this).children('.active-mask').animate({top: '232px'},500);
   });
 
+  $('#form').submit(function(e){
+    e.preventDefault();
+//    if () {
+//
+//    } else {
+//
+//    }
+    console.log($(this).serialize());
+    return false;
 
+
+    $.ajax({
+      async: true,
+      data: $('#form').serialize(),
+      type: 'post',
+      url: '',
+      success:function(){},
+      error: function(){}
+    });
+  });
+
+  function Trim(str) {//remove blank function
+    var result;
+    result = str.replace(/\s/g,"");
+    return result;
+  }
+
+  function renum(str){
+    var reg=new RegExp(/^[\d]{11}$/);
+    return reg.test(str);
+  }
+
+  $('.act-advice-txt').focus(function(){//form verify
+    $('#act-form-cont').removeClass('act-form-rem-red').removeClass('form-ver').addClass('act-form-rem').text('建议长度在10与50之间');
+  }).blur(function(){
+    var str=$(this).val();
+    var len=Trim(str).length;
+    if(len<10||len>50){
+      $('#act-form-cont').removeClass('act-form-rem').removeClass('form-ver').addClass('act-form-rem-red').text('建议长度不符');
+    }else{
+      $('#act-form-cont').text('').addClass('form-ver');
+    }
+  });
+  $('.act-ipt').blur(function(){
+    var str=$(this).val();
+    str=Trim(str);
+    if(renum(str)){
+      $('#act-form-cont2').text("").addClass('form-ver');
+    }else{
+      $('#act-form-cont2').text("请输入正确的手机号码！").removeClass('form-ver');
+    }
+  }).focus(function(){
+    $('#act-form-cont2').text("")
+  });
 });
 </script>
 </body>

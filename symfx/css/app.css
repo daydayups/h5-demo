@@ -2920,13 +2920,13 @@ a:hover {
   display: inline-block;
   width: 300px;
   height: 64px;
-  background: url(../images/acitve/act-hov.png);
+  background: url(../images/active/act-hov.png);
 }
 .act-icon1:hover,
 .act-icon2:hover,
 .act-icon3:hover,
 .act-icon4:hover{
-  background: url(../images/acitve/act-hov-aft.png);
+  background: url(../images/active/act-hov-aft.png);
 }
 .act-icon1 {
   top: 500px;
@@ -2956,19 +2956,19 @@ a:hover {
   height: 104px;
 }
 .inner-cont-ic1 {
-  background: url(../images/acitve/foreign-icon.png) no-repeat center center;
+  background: url(../images/active/foreign-icon.png) no-repeat center center;
 }
 .inner-cont-ic2 {
-  background: url(../images/acitve/oil-icon.png) no-repeat center center;
+  background: url(../images/active/oil-icon.png) no-repeat center center;
 }
 .inner-cont-ic3 {
-  background: url(../images/acitve/index-icon.png) no-repeat center center;
+  background: url(../images/active/index-icon.png) no-repeat center center;
 }
 .inner-cont-ic4 {
-  background: url(../images/acitve/gold-icon.png) no-repeat center center;
+  background: url(../images/active/gold-icon.png) no-repeat center center;
 }
 .inner-cont-ic5 {
-  background: url(../images/acitve/two-period.png) no-repeat center center;
+  background: url(../images/active/two-period.png) no-repeat center center;
 }
 .cont1-text td {
   text-align: center;
@@ -3012,22 +3012,22 @@ a:hover {
   text-decoration: none;
 }
 .cont2-icon1 {
-  background: url(../images/acitve/tixian.png) no-repeat center 53px;
+  background: url(../images/active/tixian.png) no-repeat center 53px;
 }
 .cont2-icon2 {
-  background: url(../images/acitve/baozhang.png) no-repeat center 53px;
+  background: url(../images/active/baozhang.png) no-repeat center 53px;
 }
 .cont2-icon3 {
-  background: url(../images/acitve/shouyi.png) no-repeat center 53px;
+  background: url(../images/active/shouyi.png) no-repeat center 53px;
 }
 .cont2-icon4 {
-  background: url(../images/acitve/zhidao.png) no-repeat center 53px;
+  background: url(../images/active/zhidao.png) no-repeat center 53px;
 }
 .cont2-icon5 {
-  background: url(../images/acitve/kefu.png) no-repeat center 53px;
+  background: url(../images/active/kefu.png) no-repeat center 53px;
 }
 .cont2-icon6 {
-  background: url(../images/acitve/xuanze.png) no-repeat center 53px;
+  background: url(../images/active/xuanze.png) no-repeat center 53px;
 }
 .active-mask {
   display: inline-block;
@@ -3058,21 +3058,20 @@ a:hover {
 .active-mask:hover {
   color: #fff;
 }
-.inner-content3{
-  width: 800px;
+.inner-content3 {
+  width: 880px;
   height: 240px;
   position: absolute;
-  top: 3128px;
-  left: 80px;
+  top: 3150px;
+  left: 50px;
 }
-.act-form-text{
+.act-form-text {
   font-size: 36px;
   color: #ffbf01;
   font-family: "Microsoft yahei";
-  vertical-align: top;
 }
-.act-ipt{
-  width: 500px;
+.act-ipt {
+  width: 480px;
   height: 32px;
   border: none;
   border-bottom: 4px solid #5a311d;
@@ -3080,24 +3079,46 @@ a:hover {
   font-size: 28px;
   outline: none;
   background: #ffeac5;
-  margin-left: 6px;
+  margin: 10px 0 0 6px;
 }
-.act-advice-txt{
+.act-advice-txt {
   outline: none;
-  font-size: 16px;
+  font-size: 18px;
   background: #ffeac5;
   border: 4px solid #5a311d;
 }
-.act-form-sub{
+.act-form-sub {
   width: 102px;
   height: 44px;
-  background: url(../images/acitve/act-submit.png) no-repeat center center;
+  background: url(../images/active/act-submit.png) no-repeat center center;
   border-radius: 4px;
   outline:none;
   border: none;
   margin: 30px 0 0 364px;
   cursor: pointer;
 }
-.act-form-sub:hover{
-  background-image: url(../images/acitve/act-submit-aft.png);
+.act-form-sub:hover {
+  background-image: url(../images/active/act-submit-aft.png);
+}
+.act-form-top {
+  vertical-align: top;
+}
+.act-form-rem {
+  font-size: 15px;
+  color: green;
+}
+.act-form-rem-red {
+  font-size: 15px;
+  color: red;
+}
+.act-form-middle{
+  vertical-align: middle;
+}
+.form-ver{
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  background: url(../images/active/form-ver.png);
+  margin-left: 30px;
+  vertical-align: top;
 }
