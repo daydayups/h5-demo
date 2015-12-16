@@ -128,11 +128,22 @@
         <label for="" class="act-form-text">您的手机号码</label>
         <input type="text" class="act-ipt" placeholder="请输入您的号码">
         <label class="act-form-rem-red act-form-middle" id="act-form-cont2"> </label>
-        <input type="submit" class="act-form-sub" value=" ">
+        <input type="submit" class="act-form-sub" id="showbtn" value=" ">
       </form>
+    </div>
+    <div class="inner-mask">
+      <div class="mask-none inner-mask-bg" id="inner-bg">
+
+      </div>
+      <div class="mask-none" id="inner-box">
+          <div class="pop-box-btn">
+
+          </div>
+      </div>
     </div>
   </div>
 </div>
+
 
 <!-- footer -->
 <div class="footer clearfix">
@@ -232,7 +243,6 @@
 <script>
 $(function(){
   //banner
-
   //reset focus position to center
   var $focus = $('.banner').find('.focus')
     , $w = $focus.width();
@@ -250,6 +260,8 @@ $(function(){
     $(this).find('.desc').animate({height: 0}, 'fast');
   });
 
+
+  //edit by peng
   $('.inner-content2-table td').mouseenter(function(){
     $(this).children().stop(false,true);
     $(this).children('.active-mask').animate({top: 0},500);
@@ -258,27 +270,12 @@ $(function(){
     $(this).children('.active-mask').animate({top: '232px'},500);
   });
 
+  var v1=false,v2=false;//submit flag
   $('#form').submit(function(e){
     e.preventDefault();
-//    if () {
-//
-//    } else {
-//
-//    }
-    console.log($(this).serialize());
+    judgesub();
     return false;
-
-
-    $.ajax({
-      async: true,
-      data: $('#form').serialize(),
-      type: 'post',
-      url: '',
-      success:function(){},
-      error: function(){}
-    });
   });
-
   function Trim(str) {//remove blank function
     var result;
     result = str.replace(/\s/g,"");
@@ -297,8 +294,10 @@ $(function(){
     var len=Trim(str).length;
     if(len<10||len>50){
       $('#act-form-cont').removeClass('act-form-rem').removeClass('form-ver').addClass('act-form-rem-red').text('建议长度不符');
+      v1=false;
     }else{
       $('#act-form-cont').text('').addClass('form-ver');
+      v1=true;
     }
   });
   $('.act-ipt').blur(function(){
@@ -306,12 +305,55 @@ $(function(){
     str=Trim(str);
     if(renum(str)){
       $('#act-form-cont2').text("").addClass('form-ver');
+      v2=true;
     }else{
       $('#act-form-cont2').text("请输入正确的手机号码！").removeClass('form-ver');
+      v2=false;
     }
   }).focus(function(){
-    $('#act-form-cont2').text("")
+    $('#act-form-cont2').text("");
   });
+
+  function judgesub(){//judge submit
+    if(v1&&v2){
+      $.ajax({//返回码 1正确 0失败
+        async: true,
+        data: $('#form').serialize(),
+        type: 'post',
+        url: '/suggest/to-suggest',
+        success:function(data, textStatus, jqXHR){
+          if(data == 0){
+            //提交成功
+            showrigmask();
+          }else{
+            //提交失败
+            showerrmask();
+          }
+        },
+        error: function(){
+          //服务器故障，与服务器连接失败。
+          showerrmask();
+        }
+      })
+    }else{
+      showerrmask();
+    }
+  }
+
+  function showerrmask(){
+    $('#inner-box').removeClass('mask-none').addClass("inner-mask-faibox");
+    $('#inner-bg').removeClass('mask-none').addClass('inner-mask-bg');
+  }
+  function showrigmask(){
+    $('#inner-bg').removeClass('mask-none').addClass('inner-mask-bg');
+    $('#inner-box').removeClass('mask-none').addClass("inner-mask-sucbox");
+  }
+  //mask close
+  $('.pop-box-btn').click(function(){
+    $('#inner-bg').removeClass('inner-mask-bg');
+    $('#inner-box,#inner-bg').addClass('mask-none');
+  });
+
 });
 </script>
 </body>
