@@ -136,8 +136,10 @@
 
       </div>
       <div class="mask-none" id="inner-box">
-          <div class="pop-box-btn">
+          <div class="pop-box-text">
 
+          </div>
+          <div class="pop-box-btn">
           </div>
       </div>
     </div>
@@ -325,18 +327,32 @@ $(function(){
           if(data == 0){
             //提交成功
             showrigmask();
-          }else{
+          }else if(data == 1){
             //提交失败
             showerrmask();
+          }else if(data == 2){
+            showerrmask();
+            $('.pop-box-text').text('手机号码格式有误，请重新填写！');
+          }else if(data == 3){
+            showerrmask();
+            $('.pop-box-text').text('手机号码长度有误，请重新填写！');
+          }else if(data == 4){
+            showerrmask();
+            $('.pop-box-text').text('手机号码为空，请重新填写！');
+          }else if(data == 5){
+            showerrmask();
+            $('.pop-box-text').text('建议为空，请填写后再提交！');
           }
         },
         error: function(){
           //服务器故障，与服务器连接失败。
           showerrmask();
+          $('.pop-box-text').text('与服务器连接中断，请稍后再试！');
         }
       })
     }else{
       showerrmask();
+      $('.pop-box-text').text('信息为空或格式不符合，请重新填写！');
     }
   }
 

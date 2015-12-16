@@ -3158,11 +3158,19 @@ a:hover {
   width: 100px;
   height: 42px;
   background: url(../images/active/pop-box.png) no-repeat center center;
-  position: relative;
+  position: absolute;
   top: 216px;
   left: 178PX;
   cursor: pointer;
 }
 .pop-box-btn:hover {
   background: url(../images/active/pop-box-aft.png) no-repeat center center;
+}
+.pop-box-text {
+  width:408px;
+  height: 80px;
+  margin: 100px 0 0 10px;
+  font-size: 24px;
+  color: #ffbf01;
+  text-align: center;
 }
