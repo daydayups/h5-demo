@@ -890,7 +890,7 @@ a:hover {
 .CCB {
   background: url(../images/banks.png) no-repeat 0 -65px;
 }
-.BCM {
+.BOCO {
   background: url(../images/banks.png) no-repeat 0 -95px;
 }
 .CIB {
@@ -905,7 +905,7 @@ a:hover {
 .BOC {
   background: url(../images/banks.png) no-repeat 0 -224px;
 }
-.CITIC {
+.ECITIC {
   background: url(../images/banks.png) no-repeat 0 -255px;
 }
 .GDB {
@@ -914,14 +914,50 @@ a:hover {
 .HXB {
   background: url(../images/banks.png) no-repeat 0 -318px;
 }
-.CMB {
+.CMBCHINA {
   background: url(../images/banks.png) no-repeat 0 -256px;
 }
-.PSBC {
+.POST {
   background: url(../images/banks.png) no-repeat 0 -287px;
 }
 .big-ICBC {
   background: url(../images/banks-big.png) no-repeat 0 0;
+}
+.big-ABC {
+  background: url(../images/banks-big.png) no-repeat 0 -42px;
+}
+.big-CCB {
+  background: url(../images/banks-big.png) no-repeat 0 -91px;
+}
+.big-BOCO {
+  background: url(../images/banks-big.png) no-repeat 0 -143px;
+}
+.big-CIB {
+  background: url(../images/banks-big.png) no-repeat 0 -186px;
+}
+.big-CMBC {
+  background: url(../images/banks-big.png) no-repeat 0 -225px;
+}
+.big-CEB {
+  background: url(../images/banks-big.png) no-repeat 0 -272px;
+}
+.big-BOC {
+  background: url(../images/banks-big.png) no-repeat 0 -318px;
+}
+.big-ECITIC {
+  background: url(../images/banks-big.png) no-repeat 0 -367px;
+}
+.big-GDB {
+  background: url(../images/banks-big.png) no-repeat 0 -410px;
+}
+.big-HXB {
+  background: url(../images/banks-big.png) no-repeat 0 -455px;
+}
+.big-CMBCHINA {
+  background: url(../images/banks-big.png) no-repeat 0 -500px;
+}
+.big-POST {
+  background: url(../images/banks-big.png) no-repeat 0 -550px;
 }
 /* -btns- */
 .btn-blue {

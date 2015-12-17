@@ -1299,9 +1299,12 @@ a:hover {
 }
 .project-list .col-1 {
   position: relative;
-  width: 25%;
+  width: 20%;
 }
-.project-list .col-2,
+.project-list .col-2{
+  text-align: center;
+  width: 21%;
+}
 .project-list .col-3 {
   text-align: center;
   width: 15%;
@@ -3691,3 +3694,23 @@ img.verify-img {
   /*height: 120px;*/
 /*}*/
 /* Edit by peng | end */
+
+/* Edit by Xiaofan Zhang */
+.tag-gift-base {
+  position: relative;
+}
+.tag-gift {
+  background: url(../images/tag-gift.png) no-repeat;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 12px;
+  height: 24px;
+  padding-top: 3px;
+  position: absolute;
+  right: -36px;
+  top: -26px;
+  width: 40px;
+}
+/* Edit by Xiaofan Zhang | end */
