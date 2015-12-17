@@ -3222,3 +3222,67 @@ a:hover {
   color: #ffbf01;
   text-align: center;
 }
+
+/* add-information*/
+.features {
+  margin-bottom: 4px;
+}
+.news-and-information {
+  float: left;
+  width: 282px;
+}
+.news-and-information .title {
+  background: url(../images/news-and-information.png) left top no-repeat;
+}
+.technical-analysis {
+  float: right;
+  width: 340px;
+}
+.technical-analysis .title {
+  background: url(../images/technical-analysis.png) left top no-repeat;
+}
+.foreign-exchange-information .title{
+  background: url(../images/foreign-exchange-information.png) left top  no-repeat;
+}
+.information {
+  margin-top: 25px;
+}
+.information .title{
+  line-height: 28px;
+  padding-left:34px; 
+  width:100%;
+  box-sizing:border-box;
+  -weblit-box-sizing:border-box;
+}
+.information .title {
+  border-bottom:1px solid #eeeeee;
+  padding-bottom: 15px;
+}
+.information li,
+.information ul {
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+.information li{
+  line-height: 24px;
+}
+.information span{
+  float: right;
+}
+.information li a {
+  color: #666666;
+  font-size: 14px;
+}
+.information span {
+  font-size: 14px;
+  color:#999999;
+}
+.information li a:hover {
+  color: #fc7000;
+  text-decoration: underline;
+}
+.float-left{
+  float: right;
+}
+/*end-information*/
