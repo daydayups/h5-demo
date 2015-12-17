@@ -281,16 +281,16 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-  <script>
-    $(function(){
-      $(".answer").eq(0).show();
-      $(".question").click(function(){
-        var $currAnswer = $(this).siblings(".answer");
-        $(".question-item .answer").not($currAnswer).slideUp();
-        $currAnswer.slideToggle();
-      });
-    })
-  </script>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script>
+$(function(){
+  $(".answer").eq(0).show();
+  $(".question").click(function(){
+    var $currAnswer = $(this).siblings(".answer");
+    $(".question-item .answer").not($currAnswer).slideUp();
+    $currAnswer.slideToggle();
+  });
+});
+</script>
 </body>
 </html>
