@@ -1,0 +1,128 @@
+/*-Edit by- fanghonghui*/
+/*--start-platform-announcement*/
+/* line 4, ../sass/platform-announcement.scss */
+.announcement {
+  background: #fff;
+  width: 100%;
+  padding: 30px 40px;
+}
+
+/* line 9, ../sass/platform-announcement.scss */
+.announcement .title {
+  border-left: 4px solid #e12b2b;
+  font-size: 18px;
+  line-height: 18px;
+  padding-left: 22px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* line 18, ../sass/platform-announcement.scss */
+.announcement li {
+  border-bottom: 1px solid #eeeeee;
+  font-size: 14px;
+  line-height: 52px;
+}
+
+/* line 23, ../sass/platform-announcement.scss */
+.announcement .item {
+  float: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* line 29, ../sass/platform-announcement.scss */
+.information li a {
+  color: #666666;
+  font-size: 14px;
+}
+
+/* line 33, ../sass/platform-announcement.scss */
+.announcement a:hover {
+  color: #fc7000;
+  text-decoration: underline;
+}
+
+/* line 37, ../sass/platform-announcement.scss */
+.announcement span {
+  color: #999999;
+  float: right;
+  font-size: 14px;
+}
+
+/* line 42, ../sass/platform-announcement.scss */
+.paging {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 300px;
+  margin-top: 30px;
+}
+
+/* line 50, ../sass/platform-announcement.scss */
+.paging a {
+  background: #fff;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  display: inline-block;
+  color: #999;
+  font-size: 14px;
+  line-height: 40px;
+  margin: 0 2px;
+  height: 40px;
+  text-align: center;
+}
+
+/* line 62, ../sass/platform-announcement.scss */
+.paging span {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 15px;
+}
+
+/* line 68, ../sass/platform-announcement.scss */
+.paging a.border-none {
+  border: none;
+}
+
+/* line 71, ../sass/platform-announcement.scss */
+.paging .page-down,
+.paging .next-down {
+  width: 40px;
+}
+
+/* line 75, ../sass/platform-announcement.scss */
+.pre {
+  background: url(../../../images/page-down.png) center center no-repeat;
+}
+
+/* line 78, ../sass/platform-announcement.scss */
+.next {
+  background: url(../../../images/next-down.png) center center no-repeat;
+}
+
+/* line 81, ../sass/platform-announcement.scss */
+.pagination .pre,
+.pagination .next {
+  width: 34px;
+}
+
+/* line 85, ../sass/platform-announcement.scss */
+.pagination {
+  margin-left: 341px;
+}
+
+/* line 88, ../sass/platform-announcement.scss */
+.mb-20 {
+  margin-bottom: -17px;
+}
+
+/* line 91, ../sass/platform-announcement.scss */
+.mt-20 {
+  margin-top: 36px;
+}
+
+/*--start-platform-announcement*/
+/*--Edit by fanghonghui*/
