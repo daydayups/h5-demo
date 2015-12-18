@@ -4,6 +4,7 @@ workspace.xml
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
+**/compassSass/*
 
 # Folder config file
 Desktop.ini
