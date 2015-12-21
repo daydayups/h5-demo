@@ -1,0 +1,453 @@
+/*-Edit by- fanghonghui*/
+/*--start-contact-us*/
+/* line 4, ../sass/about-us.scss */
+.about-us-banner {
+  width: 100%;
+}
+/* line 6, ../sass/about-us.scss */
+.about-us-banner img {
+  width: 100%;
+  height: 200px;
+}
+
+/* line 11, ../sass/about-us.scss */
+.nav .n-right li.active a,
+.in-nav li.active a,
+.in-nav li a:hover {
+  color: #e12b2b;
+}
+
+/* line 17, ../sass/about-us.scss */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 21, ../sass/about-us.scss */
+.in-nav {
+  background: #fff;
+  height: 42px;
+  width: 100%;
+}
+/* line 25, ../sass/about-us.scss */
+.in-nav ul.inner {
+  box-sizing: border-box;
+  padding: 0 80px;
+  -webkit-box-sizing: border-box;
+}
+/* line 30, ../sass/about-us.scss */
+.in-nav li {
+  display: inline-block;
+  line-height: 42px;
+}
+/* line 33, ../sass/about-us.scss */
+.in-nav li a {
+  margin: 0 49px;
+}
+
+/* line 38, ../sass/about-us.scss */
+.headquarters-box,
+.choose,
+.synopsis-box,
+.platform-work {
+  background: #f6f6f6;
+}
+
+/* line 45, ../sass/about-us.scss */
+.platform-borrowing,
+.mission-box {
+  background: #fff;
+}
+
+/* line 49, ../sass/about-us.scss */
+.headquarters-box,
+.team-box ul li,
+.grade,
+.choose,
+.platform-borrowing,
+.platform-work,
+.synopsis-box,
+.mission-box {
+  box-sizing: border-box;
+  padding: 48px 0;
+  -webkit-box-sizing: border-box;
+  width: 100%;
+}
+
+/* line 62, ../sass/about-us.scss */
+.sy-firm {
+  float: left;
+  height: 218px;
+  width: 352px;
+}
+
+/* line 67, ../sass/about-us.scss */
+.sy-details {
+  height: auto;
+  width: 570px;
+  float: right;
+}
+/* line 71, ../sass/about-us.scss */
+.sy-details p:first-child {
+  line-height: 42px;
+}
+
+/* line 75, ../sass/about-us.scss */
+.details-box {
+  line-height: 28px;
+}
+
+/* line 78, ../sass/about-us.scss */
+.mission-box .sy-details {
+  float: left;
+}
+
+/* line 81, ../sass/about-us.scss */
+.mission-box .sy-firm {
+  float: right;
+}
+
+/* line 84, ../sass/about-us.scss */
+.choose .f-18 {
+  font-family: "Helvetica Neue";
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* line 90, ../sass/about-us.scss */
+.choose ul {
+  margin-left: 75px;
+  margin-top: 48px;
+  overflow: hidden;
+}
+/* line 94, ../sass/about-us.scss */
+.choose ul li {
+  display: inline-block;
+  width: auto;
+  margin: 0 74px;
+}
+/* line 98, ../sass/about-us.scss */
+.choose ul li h1 {
+  font-size: 16px;
+  text-align: center;
+}
+/* line 102, ../sass/about-us.scss */
+.choose ul li h2 {
+  margin-top: 18px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+
+/* line 110, ../sass/about-us.scss */
+.choose p {
+  text-align: center;
+}
+
+/* line 113, ../sass/about-us.scss */
+#certificate {
+  color: #4591dc;
+  font-size: 12px;
+  margin-top: 46px;
+}
+
+/* line 118, ../sass/about-us.scss */
+.elegant-demeanour {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  width: 100%;
+}
+/* line 123, ../sass/about-us.scss */
+.elegant-demeanour .img-block {
+  border: 0 none;
+  display: block;
+  float: left;
+  font-size: 0;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  width: 12.5%;
+}
+
+/* line 134, ../sass/about-us.scss */
+.head {
+  float: left;
+  height: 200px;
+  width: 200px;
+}
+
+/* line 139, ../sass/about-us.scss */
+.ntro {
+  float: right;
+  padding-right: 2px;
+  width: 708px;
+}
+
+/* line 144, ../sass/about-us.scss */
+.name {
+  line-height: 53px;
+}
+
+/* line 147, ../sass/about-us.scss */
+.ntro p {
+  font-size: 12px;
+  line-height: 28px;
+  padding-top: 20px;
+}
+
+/* line 152, ../sass/about-us.scss */
+.partner {
+  background: #f6f6f6;
+  padding: 48px 0;
+}
+
+/* line 156, ../sass/about-us.scss */
+.pa-box {
+  height: 544px;
+  overflow: hidden;
+  width: 960px;
+}
+
+/* line 161, ../sass/about-us.scss */
+.pa-box ul {
+  width: 2000px;
+  overflow: hidden;
+}
+/* line 164, ../sass/about-us.scss */
+.pa-box ul li {
+  background: #fff;
+  float: left;
+  margin: 0 15px;
+  width: 300px;
+  height: 544px;
+}
+
+/* line 173, ../sass/about-us.scss */
+.citic .title {
+  text-align: center;
+  width: 100%;
+}
+/* line 176, ../sass/about-us.scss */
+.citic .title span {
+  font-weight: bold;
+}
+
+/* line 180, ../sass/about-us.scss */
+.citic .invest {
+  color: #e12b2b;
+  font-size: 14px;
+}
+
+/* line 184, ../sass/about-us.scss */
+.citic p {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  line-height: 30px;
+  padding: 0 40px;
+  margin-top: 30px;
+}
+
+/* line 191, ../sass/about-us.scss */
+.more {
+  display: block;
+  width: 100%;
+  color: #0093e7;
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* line 198, ../sass/about-us.scss */
+.partner .inner {
+  position: relative;
+}
+
+/* line 201, ../sass/about-us.scss */
+.pre {
+  display: block;
+  background: url(../../../images/about-us/pre.png) 0 0 no-repeat;
+  left: -34px;
+  top: 147px;
+  height: 50px;
+  width: 31px;
+  position: absolute;
+}
+
+/* line 210, ../sass/about-us.scss */
+.next {
+  display: block;
+  background: url(../../../images/about-us/next.png) 0 0 no-repeat;
+  right: -54px;
+  top: 149px;
+  height: 51px;
+  width: 35px;
+  position: absolute;
+}
+
+/*--start-contact-us*/
+/* line 220, ../sass/about-us.scss */
+.headquarters {
+  float: left;
+  width: 430px;
+}
+/* line 223, ../sass/about-us.scss */
+.headquarters p {
+  line-height: 28px;
+  padding-top: 12px;
+}
+/* line 226, ../sass/about-us.scss */
+.headquarters p span {
+  color: #0093e7;
+}
+
+/* line 231, ../sass/about-us.scss */
+.headquarters h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 235, ../sass/about-us.scss */
+.the-environment {
+  float: right;
+  height: 218px;
+  width: 352px;
+}
+
+/* line 240, ../sass/about-us.scss */
+.cooperation dl {
+  margin: 46px 0;
+}
+/* line 242, ../sass/about-us.scss */
+.cooperation dl dt {
+  font-size: 16px;
+}
+/* line 245, ../sass/about-us.scss */
+.cooperation dl dd {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 16px;
+}
+/* line 249, ../sass/about-us.scss */
+.cooperation dl dd span {
+  color: #0093e7;
+}
+
+/* line 254, ../sass/about-us.scss */
+.map-box {
+  padding-bottom: 40px;
+}
+
+/* line 257, ../sass/about-us.scss */
+.map-box .f-12 {
+  line-height: 24px;
+}
+
+/* line 260, ../sass/about-us.scss */
+.join-us {
+  width: 100%;
+  padding-top: 40px;
+  height: 844px;
+  background: url(../../../images/about-us/Join-bg.png) 0 0 no-repeat;
+}
+/* line 265, ../sass/about-us.scss */
+.join-us .jo-margin {
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 18px;
+}
+
+/* line 271, ../sass/about-us.scss */
+.join-us h1 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* line 276, ../sass/about-us.scss */
+.position {
+  margin-top: 40px;
+  background: #f2f2f2;
+  padding: 40px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* line 285, ../sass/about-us.scss */
+.po-nav li {
+  display: inline-block;
+  padding: 6px 10px;
+  margin: 0 18px;
+}
+/* line 290, ../sass/about-us.scss */
+.po-nav li:first-child {
+  margin-left: 0;
+}
+/* line 293, ../sass/about-us.scss */
+.po-nav li.active {
+  background: #e12b2b;
+  color: #fff;
+}
+
+/* line 298, ../sass/about-us.scss */
+.position-details {
+  overflow: hidden;
+}
+/* line 300, ../sass/about-us.scss */
+.position-details ul {
+  display: inline-block;
+  width: 284px;
+  margin-top: 20px;
+}
+/* line 304, ../sass/about-us.scss */
+.position-details ul em {
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: #888888;
+  position: relative;
+  top: 15px;
+}
+/* line 312, ../sass/about-us.scss */
+.position-details ul li {
+  line-height: 24px;
+}
+/* line 314, ../sass/about-us.scss */
+.position-details ul li a {
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+/* line 321, ../sass/about-us.scss */
+.position-margin {
+  margin-top: 18px;
+  line-height: 20px;
+}
+
+/* line 325, ../sass/about-us.scss */
+.resume {
+  margin-top: 46px;
+}
+/* line 327, ../sass/about-us.scss */
+.resume p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+}
+/* line 332, ../sass/about-us.scss */
+.resume .re-bold {
+  font-weight: bold;
+}
+/* line 335, ../sass/about-us.scss */
+.resume a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 28px;
+  background: url(../../../images/about-us/email.png) 0 0 no-repeat;
+}
+
+/*--end-contact-us*/
+/*--Edit by fanghonghui*/

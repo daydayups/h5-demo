@@ -1,0 +1,43 @@
+/*-Edit by- fanghonghui*/
+/*--start-platform-announcement*/
+/* line 4, ../sass/platform-announcement-details.scss */
+.details-box {
+  background: #fff;
+  width: 100%;
+  padding: 40px 40px 50px;
+}
+
+/* line 9, ../sass/platform-announcement-details.scss */
+.pull-left span {
+  padding: 0 4px;
+}
+
+/* line 12, ../sass/platform-announcement-details.scss */
+.details-box .title h1 {
+  font-family: 'Microsoft YaHei';
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 18, ../sass/platform-announcement-details.scss */
+.details-box .title h2 {
+  border-bottom: 1px solid #eeeeee;
+  color: #868686;
+  font-family: 'Microsoft YaHei';
+  font-size: 14px;
+  line-height: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 27, ../sass/platform-announcement-details.scss */
+.details-box p {
+  color: #6b6b6b;
+  font-size: 14px;
+  line-height: 28px;
+  padding-top: 20px;
+}
+
+/*--start-platform-announcement*/
+/*--Edit by fanghonghui*/
