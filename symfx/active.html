@@ -4,6 +4,284 @@
 <meta charset="UTF-8">
 <title>首页</title>
 <link rel="stylesheet" href="css/app.css"/>
+  <style>
+    /*edit by peng start*/
+    .active-ban {
+      width: 100%;
+    }
+    .active-back {
+      background: #5a311d;
+    }
+    .inner-content {
+      position: relative;
+      top: -140px;
+      background: url(images/banner/inner-back.png);
+      height: 3399px;
+    }
+    .act-icon1,
+    .act-icon2,
+    .act-icon3,
+    .act-icon4 {
+      position: absolute;
+      left: 330px;
+      display: inline-block;
+      width: 300px;
+      height: 64px;
+      background: url(images/active/act-hov.png);
+    }
+    .act-icon1:hover,
+    .act-icon2:hover,
+    .act-icon3:hover,
+    .act-icon4:hover{
+      background: url(images/active/act-hov-aft.png);
+    }
+    .act-icon1 {
+      top: 500px;
+    }
+    .act-icon2 {
+      top: 1166px;
+    }
+    .act-icon3 {
+      top: 2166px;
+    }
+    .act-icon4 {
+      top: 2830px;
+    }
+    .inner-content1 {
+      height: 190px;
+      left: 78px;
+      position: absolute;
+      top: 820px;
+      width: 820px;
+    }
+    .inner-cont-ic1,
+    .inner-cont-ic2,
+    .inner-cont-ic3,
+    .inner-cont-ic4,
+    .inner-cont-ic5 {
+      width: 174px;
+      height: 104px;
+    }
+    .inner-cont-ic1 {
+      background: url(images/active/foreign-icon.png) no-repeat center center;
+    }
+    .inner-cont-ic2 {
+      background: url(images/active/oil-icon.png) no-repeat center center;
+    }
+    .inner-cont-ic3 {
+      background: url(images/active/index-icon.png) no-repeat center center;
+    }
+    .inner-cont-ic4 {
+      background: url(images/active/gold-icon.png) no-repeat center center;
+    }
+    .inner-cont-ic5 {
+      background: url(images/active/two-period.png) no-repeat center center;
+    }
+    .cont1-text td {
+      text-align: center;
+    }
+    .cont1-text a {
+      font-size: 24px;
+      color: #482310;
+    }
+    .cont1-text a:hover {
+      color: #af0102;
+      text-decoration: none;
+    }
+    .inner-content2 {
+      left: 30px;
+      overflow: hidden;
+      position: absolute;
+      top: 1504px;
+    }
+    .inner-content2-table {
+      border: 1px solid #e3c098;
+      height: 464px;
+      width: 900px;
+    }
+    .inner-content2-table td {
+      border: 1px solid #e3c098;
+      width: 300px;
+      position: relative;
+      overflow: hidden;
+    }
+    .inner-content2-table a {
+      cursor: pointer;
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      padding-top: 152px;
+      color: #482310;
+      font-size: 36px;
+    }
+    .inner-content2-table a:hover {
+      text-decoration: none;
+    }
+    .cont2-icon1 {
+      background: url(images/active/tixian.png) no-repeat center 53px;
+    }
+    .cont2-icon2 {
+      background: url(images/active/baozhang.png) no-repeat center 53px;
+    }
+    .cont2-icon3 {
+      background: url(images/active/shouyi.png) no-repeat center 53px;
+    }
+    .cont2-icon4 {
+      background: url(images/active/zhidao.png) no-repeat center 53px;
+    }
+    .cont2-icon5 {
+      background: url(images/active/kefu.png) no-repeat center 53px;
+    }
+    .cont2-icon6 {
+      background: url(images/active/xuanze.png) no-repeat center 53px;
+    }
+    .active-mask {
+      display: inline-block;
+      width: 300px;
+      height: 230px;
+      background: #5e3b27;
+      opacity: .9;
+      position: absolute;
+      top: 232px;
+      left: 0;
+      cursor: pointer;
+    }
+    .active-mask p{
+      color: #fff;
+      position: absolute;
+    }
+    .active-mask-t1 {
+      font-size: 24px;
+      top: 35px;
+      left: 77px;
+    }
+    .active-mask-t2 {
+      font-size: 20px;
+      line-height: 28px;
+      top: 90px;
+      text-align: center;
+    }
+    .active-mask:hover {
+      color: #fff;
+    }
+    .inner-content3 {
+      width: 880px;
+      height: 240px;
+      position: absolute;
+      top: 3150px;
+      left: 50px;
+    }
+    .act-form-text {
+      font-size: 36px;
+      color: #ffbf01;
+      font-family: "Microsoft yahei";
+    }
+    .act-ipt {
+      width: 480px;
+      height: 32px;
+      border: none;
+      border-bottom: 4px solid #5a311d;
+      border-radius: 6px;
+      font-size: 28px;
+      outline: none;
+      background: #ffeac5;
+      margin: 10px 0 0 6px;
+    }
+    .act-advice-txt {
+      outline: none;
+      font-size: 18px;
+      background: #ffeac5;
+      border: 4px solid #5a311d;
+    }
+    .act-form-sub {
+      width: 102px;
+      height: 44px;
+      background: url(images/active/act-submit.png) no-repeat center center;
+      border-radius: 4px;
+      outline:none;
+      border: none;
+      margin: 30px 0 0 364px;
+      cursor: pointer;
+    }
+    .act-form-sub:hover {
+      background-image: url(images/active/act-submit-aft.png);
+    }
+    .act-form-top {
+      vertical-align: top;
+    }
+    .act-form-rem {
+      font-size: 15px;
+      color: green;
+    }
+    .act-form-rem-red {
+      font-size: 15px;
+      color: red;
+    }
+    .act-form-middle {
+      vertical-align: middle;
+    }
+    .form-ver {
+      display: inline-block;
+      height: 43px;
+      background: url(images/active/form-ver.png);
+      margin-left: 30px;
+      vertical-align: top;
+      width: 43px;
+    }
+    .inner-mask-sucbox,
+    .inner-mask-faibox {
+      /*background: red;*/
+      width: 432px;
+      height: 289px;
+      position: fixed;
+      left: 50%;
+      top: 200px;
+      display: block;
+      margin-left: -216px;
+      z-index: 900;
+    }
+    .inner-mask-sucbox {
+      background: url(images/active/act-advice-suc.png) no-repeat center center;
+    }
+    .inner-mask-faibox {
+      background: url(images/active/act-advice-fai.png) no-repeat center center;
+    }
+    .inner-mask-bg {
+      background: #888;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index:99;
+      display: block;
+      opacity: .6;
+    }
+    .mask-none {
+      display: none;
+    }
+    .pop-box-btn {
+      width: 100px;
+      height: 42px;
+      background: url(images/active/pop-box.png) no-repeat center center;
+      position: relative;
+      top: 26px;
+      left: 178PX;
+      cursor: pointer;
+    }
+    .pop-box-btn:hover {
+      background: url(images/active/pop-box-aft.png) no-repeat center center;
+    }
+    .pop-box-text {
+      width:408px;
+      height: 80px;
+      margin: 100px 0 0 10px;
+      font-size: 24px;
+      color: #ffbf01;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 <div class="top">
