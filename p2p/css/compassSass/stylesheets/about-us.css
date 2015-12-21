@@ -74,6 +74,23 @@
   width: 100%;
 }
 
+.grade li{
+  width: 190px;
+  height: 190px;
+  display: inline-block;
+  border:1px solid #ccc;
+  border-radius:100%;
+  margin:0 30px;
+}
+.grade p{
+  margin-top:60px;
+  text-align: center;
+}
+.grade p span{
+  color:#e34242;
+  font-size:18px;
+  line-height: 80px;
+}
 /* line 62, ../sass/about-us.scss */
 .sy-firm {
   float: left;
@@ -154,10 +171,37 @@
 
 /* line 118, ../sass/about-us.scss */
 .elegant-demeanour {
+  position:relative;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
   width: 100%;
+}
+.course {
+  padding-bottom: 20px;
+}
+.course p{
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 30px;
+}
+.course table {
+  display: block;
+  margin-left: 273px;
+}
+table td{
+  line-height: 16px;
+}
+.co-line {
+  width: 116px;
+  height: 62px;
+}
+.co-line span {
+  background: url(../../../images/about-us/line.png) 0 0 no-repeat;
+  display: block;
+  width: 21px;
+  height: 62px;
+  margin: 0 auto;
 }
 /* line 123, ../sass/about-us.scss */
 .elegant-demeanour .img-block {
@@ -169,8 +213,97 @@
   margin: 0;
   padding: 0;
   width: 12.5%;
+  z-index:1;
+  overflow: hidden;
 }
+.elegant-demeanour .img-block img {
+  display: block;
+  border:none;
+  opacity: 0.5;
+  width: 100%;
+}
+.elegant-demeanour .img-block img:hover {
+  opacity: 1;
+}
+/*.img-block img {
+  -webkit-transform:scale(1);
+  -moz-transform:scale(1);
+  -o-transform:scale(1);transform:scale(1);
+  -webkit-transition:all 2s ease;
+  -moz-transition:all 2s ease;
+  -o-transition:all 2s ease;transition:all 2s ease;
+}
+.img-block:hover img{
+  -webkit-transform:scale(1.15);
+  -moz-transform:scale(1.15);-o-transform:scale(1.15);
+  transform:scale(1.15);
+  -webkit-transition:all 2s ease;
+  -moz-transition:all 2s ease;
+  -o-transition:all 2s ease;transition:all 2s ease;
+}*/
 
+/* SuperBox*/
+*:after,
+*:before {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  -moz-font-smoothing:antialiased;
+  -o-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+.logo{margin:25px 0;
+  text-align:center;
+}
+.logo-img{max-width:95%;}
+.superbox-list {
+  display:inline-block;
+  *display:inline;zoom:1;
+  width:12.5%;
+}
+.superbox-img{
+  max-width:100%;
+  width:100%;
+  cursor:pointer;
+}
+.superbox-show {
+  text-align:center;
+  position:relative;
+  background:#333;
+  box-shadow:inset 0 1px 5px #111;
+  -webkit-box-shadow:inset 0 1px 5px #111;
+  -moz-box-shadow:inset 0 1px 5px #111;
+  width:100%;
+  float:left;
+  padding:25px 0;
+  display:none;
+}
+.superbox-current-img {
+  max-width:100%;box-shadow:0 1px 4px #222;
+  border:1px solid #222;
+}
+.superbox-img:hover{opacity:0.8;}
+.superbox-float{float:left;}
+.superbox-close {
+  opacity:0.7;
+  cursor:pointer;
+  position:absolute;
+  top:25px;
+  right:25px;
+  background:url(http://demo.lanrenzhijia.com/2014/album1030/images/close.png) no-repeat center center;
+  width:35px;
+  height:35px;
+  z-index:999;
+}
+.superbox-close:hover{opacity:1;}
+@media only screen and (min-width: 320px){.superbox-list{width:50%;}}
+@media only screen and (min-width: 486px){.superbox-list{width:25%;}}
+@media only screen and (min-width: 768px){.superbox-list{width:16.66666667%;}}
+@media only screen and (min-width: 1025px){.superbox-list{width:12.5%;}}
 /* line 134, ../sass/about-us.scss */
 .head {
   float: left;
@@ -208,22 +341,39 @@
   height: 544px;
   overflow: hidden;
   width: 960px;
+  position: relative;
 }
-
+.v_cont {
+  width:6650px;
+  position:absolute;
+  left:0px;
+  top:0px;
+}
 /* line 161, ../sass/about-us.scss */
-.pa-box ul {
-  width: 2000px;
-  overflow: hidden;
+.pa-box ul{
+  float: left;
+}
+.pa-box ul li{
+  float: left;
 }
 /* line 164, ../sass/about-us.scss */
-.pa-box ul li {
+.pa-box ul .v_cont_box {
   background: #fff;
   float: left;
   margin: 0 15px;
   width: 300px;
   height: 544px;
 }
-
+.ic-logo {
+  height: 124px;
+  width:300px; 
+}
+.ic-logo img {
+  width: 140px;
+  height: 40px;
+  margin-top: 42px;
+  margin-left: 80px;
+}
 /* line 173, ../sass/about-us.scss */
 .citic .title {
   text-align: center;
@@ -347,7 +497,7 @@
 .join-us {
   width: 100%;
   padding-top: 40px;
-  height: 844px;
+  height: 700px;
   background: url(../../../images/about-us/Join-bg.png) 0 0 no-repeat;
 }
 /* line 265, ../sass/about-us.scss */
@@ -409,6 +559,7 @@
   position: relative;
   top: 15px;
 }
+
 /* line 312, ../sass/about-us.scss */
 .position-details ul li {
   line-height: 24px;
@@ -424,7 +575,81 @@
   margin-top: 18px;
   line-height: 20px;
 }
+.post-details {
+  display: none;
+  height:100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.p-details-box {
+  background: #fff;
+  position: fixed;
+  top:50%;
+  left:50%;
+  margin-left:-300px;
+  margin-top: -320px;
+  height: 640px;
+  width: 600px;
+}
+.p-details-box h2 {
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  border-bottom:1px solid #ccc;
+  line-height: 54px;
+  padding-left: 30px;
+  height: 54px;
+  width: 100%;
+  overflow: hidden;
+}
 
+.p-details-box h2 em{
+  background:#565656;
+  display: block;
+  width: 2px;
+  height: 2px;
+  position: relative;
+  top: 29px;
+  left: -14px;
+}
+.post-close {
+  position: absolute;
+  right: 15px;
+  top:15px;
+  background:url(../../../images/about-us/close.png)  0 0 no-repeat;
+  width: 15px;
+  height: 15px;
+}
+.p-details-box h3{
+  color:#666666;
+  text-indent: 30px;
+  text-align: left;
+  font-style: normal;
+  font-weight: none;
+  line-height: 30px;
+  margin-top: 20px;
+  width: 100%;
+}
+.p-details-box p {
+  line-height: 24px;
+  padding:0  30px;
+}
+.p-details-box h4 {
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  border-top:1px solid #ccc;
+  line-height: 54px;
+  text-align:right;
+  padding-right: 30px;
+  margin-top: 20px;
+}
+.p-details-box h4 a {
+  color: #5b9fe2;
+  
+}
 /* line 325, ../sass/about-us.scss */
 .resume {
   margin-top: 46px;
@@ -450,4 +675,187 @@
 }
 
 /*--end-contact-us*/
+
+/*--start-popup*/
+.litebox-box,
+.litebox-overlay {
+  display:none;
+  height:100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .8);
+}
+.litebox-box,
+.litebox-overlay {
+  display:block;
+  width: 100%;
+  min-width: 280px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+ @-webkit-keyframes liteboxLoader {
+ 0% {
+-webkit-transform: rotate(0deg);
+}
+ 100% {
+-webkit-transform: rotate(360deg);
+}
+}
+ @-moz-keyframes liteboxLoader {
+ 0% {
+-moz-transform: rotate(0deg);
+}
+ 100% {
+-moz-transform: rotate(360deg);
+}
+}
+ @-ms-keyframes liteboxLoader {
+ 0% {
+-ms-transform: rotate(0deg);
+}
+ 100% {
+-ms-transform: rotate(360deg);
+}
+}
+ @-o-keyframes liteboxLoader {
+ 0% {
+-o-transform: rotate(0deg);
+}
+ 100% {
+-o-transform: rotate(360deg);
+}
+}
+ @keyframes liteboxLoader {
+ 0% {
+transform: rotate(0deg);
+}
+ 100% {
+transform: rotate(360deg);
+}
+}
+ .litebox-loader {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 20px;
+  top: 20px;
+  border: 3px solid #111;
+  border-right-color: #fff;
+  border-radius: 50%;
+  -webkit-animation: liteboxLoader 1s linear infinite;
+  -moz-animation: liteboxLoader 1s linear infinite;
+  -ms-animation: liteboxLoader 1s linear infinite;
+  -o-animation: liteboxLoader 1s linear infinite;
+  animation: liteboxLoader 1s linear infinite;
+}
+.litebox-close {
+  width: 40px;
+  height: 40px;
+  background: url(../../../images/about-us/litebox-close.png) no-repeat center;
+  opacity: .7;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+ .litebox-close:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.litebox-nav {
+  display: none;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  opacity: .2;
+  position: absolute;
+  top: 50%;
+}
+ .litebox-nav:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+ .litebox-prev {
+  background: url(../../../images/about-us/litebox-prev.png) no-repeat center;
+  left: 20px;
+}
+.litebox-next {
+  background: url(../../../images/about-us/litebox-next.png) no-repeat center;
+  right: 20px;
+}
+.litebox-overlay .litebox-container {
+  position: absolute;
+  right: 10%;
+  left: 10%;
+  overflow: hidden;
+}
+.litebox-content{
+  position:fixed;
+  top:50%;
+  left:50%;
+}
+#to-view {
+  color:#5b9fe2;
+  float: 12px;
+  margin-top: 40px;
+}
+ .litebox-container.litebox-scroll {
+  overflow-y: auto;
+}
+.litebox-box img,
+.litebox-overlay img,
+.litebox-overlay iframe {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+.litebox-overlay iframe {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 999999;
+}
+.litebox-inline-html {
+  width: 100%;
+  padding: 20px;
+  background: #FFF;
+  line-height: normal;
+  overflow-x: hidden;
+  line-height: normal !important;
+  position: absolute;
+}
+ .litebox-error {
+  width: 100%;
+  height: 100%;
+  color: #FFF;
+  text-align: center;
+  line-height: inherit;
+}
+ .litebox-error span {
+  background: rgba(0, 0, 0, .9);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 20px;
+  color: #FFF;
+  text-shadow: 1px 1px 0 #000;
+  line-height: normal;
+}
+.litebox-box .litebox-container img {
+  display: block;
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+}
+.litebox-box .litebox-container {
+  width: 960px;
+  height: 640px;
+  overflow: hidden;
+  position: fixed;
+
+}
 /*--Edit by fanghonghui*/

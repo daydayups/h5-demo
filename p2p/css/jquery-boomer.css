@@ -1,0 +1,125 @@
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+@charset "utf-8";
+.boomer {
+	vertical-align:baseline;
+	margin:0;
+	padding:0;
+	border:0;
+	cursor:inherit;
+	box-sizing:content-box;
+	/* AVOID OPENING MOBILE CONTEXT MENU ON TAPHOLD */
+	-webkit-touch-callout:none;
+	-moz-touch-callout:none;
+	-ms-touch-callout:none;
+	-o-touch-callout:none;
+	touch-callout:none;
+	/* AVOID HIGHLIGHTING ON TAP */
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	tap-highlight-color: rgba(0, 0, 0, 0);
+	/* AVOID CHANGING TEXT SIZE ON ORIENTATION CHANGE */
+	-webkit-text-size-adjust:none;
+	-moz-text-size-adjust:none;
+	-ms-text-size-adjust:none;
+	-o-text-size-adjust:none;
+	text-size-adjust:none;
+	/* AVOID SELECTING TEXT AND IMAGES */
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	-o-user-select:none;
+	user-select:none;
+	-o-transform:translate3d(0, 0, 0);
+	-moz-transform:translate3d(0, 0, 0);
+	-ms-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	float:none;
+	font-size:100%;
+	position:absolute;
+	z-index:10000;
+	pointer-events:none;
+}
+.cursor_magic {
+	display:none;
+	width:95px;
+	height:95px;
+	margin-left:-50px;
+	margin-top:-50px;
+	transform:scale(1.25, 1.25);
+	background:transparent url(../cursors/magic.gif) no-repeat;
+}
+.cursor_dog {
+	display:none;
+	width:95px;
+	height:95px;
+	margin-left:-50px;
+	margin-top:-50px;
+	transform:scale(1.25, 1.25);
+	background:transparent url(../cursors/dog.gif) no-repeat;
+}
+.cursor_bouncy_star {
+	display:none;
+	width:95px;
+	height:95px;
+	margin-left:-50px;
+	margin-top:-50px;
+	transform:scale(1.25, 1.25);
+	background:transparent url(../cursors/bouncy_star.gif) no-repeat;
+}
+.cursor_flower {
+	display:none;
+	width:95px;
+	height:95px;
+	margin-left:-60px;
+	margin-top:-60px;
+	transform:scale(1.25, 1.25);
+	background:transparent url(../cursors/flower.gif) no-repeat;
+}
+.cursor_heart {
+	display:none;
+	width:95px;
+	height:95px;
+	margin-left:-60px;
+	margin-top:-60px;
+	transform:scale(1.25, 1.25);
+	background:transparent url(../cursors/heart.gif) no-repeat;
+}
+.cursor_pencil_blue {
+	display:none;
+	width:95px;
+	height:95px;
+	margin-left:-60px;
+	margin-top:-60px;
+	transform:scale(1.25, 1.25);
+	background:transparent url(../cursors/pencil_blue.gif) no-repeat;
+}
+.cursor_pencil_green {
+	display:none;
+	width:95px;
+	height:95px;
+	margin-left:-60px;
+	margin-top:-60px;
+	transform:scale(1.25, 1.25);
+	background:transparent url(../cursors/pencil_green.gif) no-repeat;
+}
+.cursor_pink_tails {
+	display:none;
+	width:95px;
+	height:95px;
+	margin-left:-60px;
+	margin-top:-60px;
+	transform:scale(1.25, 1.25);
+	background:transparent url(../cursors/pink_tails.gif) no-repeat;
+}
+.cursor_star {
+	display:none;
+	width:95px;
+	height:95px;
+	margin-left:-60px;
+	margin-top:-60px;
+	transform:scale(1.25, 1.25);
+	background:transparent url(../cursors/star.gif) no-repeat;
+}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
