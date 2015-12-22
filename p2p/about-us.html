@@ -711,29 +711,33 @@ $(function(){
     'top':opnHight+'px',
     'left':opnWidth+'px'
   });
+
   $(".litebox-overlay").hide();
   $("#to-view").click(function(){
    $(".litebox-overlay").show();
   });
+
   $(".litebox-overlay .litebox-close").click(function(){
     $(".litebox-overlay").hide();
   });
+
   $("#to-view").click(function(){
    $(".litebox-overlay").show();
   });
    $(".litebox-overlay .litebox-content").attr('src',apop[0]);
    $(".litebox-overlay .litebox-prev").click(function(){
      if(popupimg>1){
-      popupimg--
+      popupimg--;
      }else{
       popupimg=0;
      }
    $(".litebox-overlay .litebox-content").attr('src',apop[popupimg]);
   });
-    $(".litebox-overlay .litebox-next").click(function(){
+
+  $(".litebox-overlay .litebox-next").click(function(){
     if(popupimg<4){
-     popupimg++
-    }else{
+     popupimg++;
+    } else {
      popupimg=4;
     }
    $(".litebox-overlay .litebox-content").attr('src',apop[popupimg]);
@@ -741,7 +745,6 @@ $(function(){
   
   //photo 大图展示
   $(".photo-box").css({
-    background:'red',
     'top':oPhotoTop+'px',
     'left':oPhotoLeft+'px'
   });
@@ -753,10 +756,10 @@ $(function(){
   $(".litebox-box .litebox-prev").click(function(){
     var str=$(".photo-box img").attr('src');
       n=str.replace(/[^1-9]+/g, '');
-      if(n>1){
+      if(n>1) {
       n--;
       $(".photo-box img").attr("src", aPhotobig[n-1]);
-      }
+    }
   });
   $(".litebox-box .litebox-next").click(function(){
     var  str=$(".photo-box img").attr('src');
@@ -776,6 +779,7 @@ $(function(){
   $(".post").find('a').on('click',function(){
     $(".post-details").show();
   })
+
   $(".post-close").click(function(){
     $(".post-details").hide();
   });
@@ -807,6 +811,7 @@ $(function(){
       left: "0px"
     }, "slow")
   });
+
   var animateEnd = 1;
   var nextindex = $(this).index();
   var currentindex = $(".v_cont li").first().attr("index");
@@ -814,8 +819,8 @@ $(function(){
   if (nextindex > currentindex) {
     for (var i = 0; i < nextindex - currentindex; i++) {
       var firstItem = $(".v_cont li").first();
-      $(".v_cont ul").append(firstItem)
-    }
+      $(".v_cont ul").append(firstItem);
+    };
     $(".v_cont ul").prepend(curr);
     var offset = ($(".v_cont li").width()) * -1;
     if (animateEnd == 1) {
