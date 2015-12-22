@@ -3719,4 +3719,20 @@ img.verify-img {
   top: -26px;
   width: 40px;
 }
+.partners {
+  margin-top: 20px;
+  background:#fff;
+  padding:20px 0;
+} 
+.partners div{
+  float: left;
+  width: 148px;
+  margin:0 5px;
+}
+.partners img{
+  float: left;
+  width: 100%;
+  display: block;
+  border:none;
+}
 /* Edit by Xiaofan Zhang | end */
