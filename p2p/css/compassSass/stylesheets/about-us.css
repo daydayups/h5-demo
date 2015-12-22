@@ -666,14 +666,29 @@ table td{
 }
 /* line 335, ../sass/about-us.scss */
 .resume a {
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
   display: block;
+  color:#fff;
   width: 200px;
   height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  padding-left: 60px;
   margin: 0 auto;
   margin-top: 28px;
+  position: relative;
+  background: #e42821;
+}
+.resume a span {
+  display: block;
+  width: 30px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  left: 17px;
   background: url(../../../images/about-us/email.png) 0 0 no-repeat;
 }
-
 /*--end-contact-us*/
 
 /*--start-popup*/
