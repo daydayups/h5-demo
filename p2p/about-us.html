@@ -763,7 +763,7 @@ $(function(){
   });
   $(".litebox-box .litebox-prev").click(function(){
     var str=$(".photo-box img").attr('src');
-      n=str.replace(/[^1-9]+/g, '');
+      n=str.replace(/[^0-9]+/g, '');
       if(n>1) {
       n--;
       $(".photo-box img").attr("src", aPhotobig[n-1]);
@@ -771,7 +771,7 @@ $(function(){
   });
   $(".litebox-box .litebox-next").click(function(){
     var  str=$(".photo-box img").attr('src');
-      n=str.replace(/[^1-9]+/g, '');
+      n=str.replace(/[^0-9]+/g, '');
      if(n<16){
       n++;
       $(".photo-box img").attr('src', aPhotobig[n-1]);
