@@ -136,6 +136,7 @@
           <p id="to-view">查看相关证照</p>
         </div><!-- .inner -->
       </div><!-- .choose -->
+
       <div class="grade">
         <ul class="inner clearfix grade-box">
           <li>
@@ -152,6 +153,7 @@
           </li>
         </ul>
       </div><!-- .grade -->
+
       <div class="elegant-demeanour clearfix superbox" id="elegant-demeanour">
         <div class="img-block" data-index='0'><img class="" src="images/about-us/elegant-demeanour01.jpg" alt=""></div>
         <div class="img-block" data-index='1'><img class="" src="images/about-us/elegant-demeanour02.jpg" alt=""></div>
@@ -374,7 +376,7 @@
         <span href="" class="next"></span>
       </div>  <!--inner-->
     </div>
-     <!--end partner-->
+    <!--end partner-->
 
     <!--start-Contact us--> 
     <div class="contact-us page">
@@ -431,6 +433,7 @@
            <li>运营类</li>
            <li>其他职能类</li>
          </ul>
+
          <div class="position-details">
            <p class="position-margin">发财金是一个非常重视技术文化的公司，在我们的技术团队，工程师们不仅仅是同代码简单的对话而已，而是在构建自己所喜欢的、用户所需要的，也是在构建一个宏伟的梦想。在这里，“严谨，开放，投入，乐高”是我们的工程师文化，我们享受着和一流的人一起工作的快乐，欢迎加入我们的技术团队。</p>
            <div class="inner clearfix">
@@ -460,6 +463,7 @@
              </ul>
           </div>
          </div><!-- position-details-->
+
          <div class="position-details">
            <p class="position-margin">发财金333是一个非常重视技术文化的公司，在我们的技术团队，工程师们不仅仅是同代码简单的对话而已，而是在构建自己所喜欢的、用户所需要的，也是在构建一个宏伟的梦想。在这里，“严谨，开放，投入，乐高”是我们的工程师文化，我们享受着和一流的人一起工作的快乐，欢迎加入我们的技术团队。</p>
            <div class="inner clearfix">
@@ -489,6 +493,7 @@
              </ul>
           </div>
          </div><!-- position-details-->
+
          <div class="position-details">
            <p class="position-margin">发财金2222是一个非常重视技术文化的公司，在我们的技术团队，工程师们不仅仅是同代码简单的对话而已，而是在构建自己所喜欢的、用户所需要的，也是在构建一个宏伟的梦想。在这里，“严谨，开放，投入，乐高”是我们的工程师文化，我们享受着和一流的人一起工作的快乐，欢迎加入我们的技术团队。</p>
            <div class="inner clearfix">
@@ -517,7 +522,8 @@
                <li class="post"><em></em><a href="javascript:;">高级IOS研发工程师</a></li>
              </ul>
           </div>
-         </div><!-- position-details-->
+         </div><!-- /.position-details-->
+
          <div class="position-details">
            <p class="position-margin">发财金1111是一个非常重视技术文化的公司，在我们的技术团队，工程师们不仅仅是同代码简单的对话而已，而是在构建自己所喜欢的、用户所需要的，也是在构建一个宏伟的梦想。在这里，“严谨，开放，投入，乐高”是我们的工程师文化，我们享受着和一流的人一起工作的快乐，欢迎加入我们的技术团队。</p>
            <div class="inner clearfix">
@@ -578,9 +584,9 @@
          <p class="re-bold">发财金等你来</p>
          <a href=""><span></span>fadf@facaijin.com</a>
        </div>
-     </div>
-      <!-- end-Join us-->
+     </div><!-- end-Join us-->
   </div> <!-- .container-->
+
   <!-- footer -->
   <div class="footer clearfix">
     <div class="inner">
@@ -604,7 +610,6 @@
             <!--<a class="link-weixin pull-left ml-10" href="#"></a>-->
             <a class="link-weibo pull-left ml-10" href="#"></a>
           </div>
-
         </div><!-- /.f-left -->
 
         <div class="f-right">
@@ -623,6 +628,7 @@
           </div>
         </div><!-- /.f-right -->
       </div><!-- /.clearfix -->
+
       <div class="clearfix others">
         <div class="pull-left">
           <a href="javascript:;" class="" target="_blank">
@@ -695,6 +701,7 @@ $(function(){
    'images/about-us/elegant-demeanour15.jpg',
    'images/about-us/elegant-demeanour16.jpg'
   ];
+
   var oVisualHeight=$(window).height();
   var oVisualWidth=$(window).width();
   var oimgHeight=$(".litebox-overlay .litebox-content").height();
@@ -729,27 +736,28 @@ $(function(){
      if(popupimg>1){
       popupimg--;
      }else{
-      popupimg=0;
+      popupimg = 0;
      }
    $(".litebox-overlay .litebox-content").attr('src',apop[popupimg]);
   });
 
   $(".litebox-overlay .litebox-next").click(function(){
-    if(popupimg<4){
-     popupimg++;
+    if (popupimg < 4) {
+      popupimg++;
     } else {
-     popupimg=4;
+      popupimg = 4;
     }
+
    $(".litebox-overlay .litebox-content").attr('src',apop[popupimg]);
   });//.litebox-overlay
-  
+
   //photo 大图展示
   $(".photo-box").css({
-    'top':oPhotoTop+'px',
-    'left':oPhotoLeft+'px'
+    'top': oPhotoTop+'px',
+    'left': oPhotoLeft+'px'
   });
   $(".img-block").click(function(){
-    var n=$(this).data("index");
+    var n = $(this).data("index");
     $(".litebox-box").show();
     $(".photo-box img").attr("src", aPhotobig[n]);
   });
@@ -786,10 +794,10 @@ $(function(){
 
   //证券滚动
     $(".next").click(function() {
-      nextscroll()
+      nextscroll();
     });
 
-  function nextscroll() {
+  function nextscroll () {
     var vcon = $(".v_cont ");
     var offset = ($(".v_cont li").width()) * -1;
     vcon.stop().animate({
@@ -798,18 +806,19 @@ $(function(){
       var firstItem = $(".v_cont ul li").first();
       vcon.find("ul").append(firstItem);
       $(this).css("left", "0px");
-    })
+    });
   };
 
   $(".pre").click(function() {
-    var vcon = $(".v_cont ");
-    var offset = ($(".v_cont li").width() * -1);
-    var lastItem = $(".v_cont ul li").last();
+    var vcon = $(".v_cont "),
+    offset = ($(".v_cont li").width() * -1),
+    lastItem = $(".v_cont ul li").last();
+
     vcon.find("ul").prepend(lastItem);
     vcon.css("left", offset);
     vcon.animate({
       left: "0px"
-    }, "slow")
+    }, "slow");
   });
 
   var animateEnd = 1;
@@ -821,24 +830,26 @@ $(function(){
       var firstItem = $(".v_cont li").first();
       $(".v_cont ul").append(firstItem);
     };
+
     $(".v_cont ul").prepend(curr);
     var offset = ($(".v_cont li").width()) * -1;
     if (animateEnd == 1) {
       animateEnd = 0;
       $(".v_cont").stop().animate({
         left: offset
-      }, "slow", function() {
+      }, "slow", function(){
         $(".v_cont ul li").first().remove();
         $(".v_cont").css("left", "0px");
-        animateEnd = 1
+        animateEnd = 1;
       })
     }
   } else {
     var curt = $(".v_cont li").last().clone();
     for (var i = 0; i < currentindex - nextindex; i++) {
       var lastItem = $(".v_cont li").last();
-      $(".v_cont ul").prepend(lastItem)
+      $(".v_cont ul").prepend(lastItem);
     }
+
     $(".v_cont ul").append(curt);
     var offset = ($(".v_cont li").width()) * -1;
     $(".v_cont").css("left", offset);
@@ -846,16 +857,13 @@ $(function(){
       animateEnd = 0;
       $(".v_cont").stop().animate({
         left: "0px"
-      }, "slow", function() {
+      }, "slow", function(){
         $(".v_cont ul li").last().remove();
-        animateEnd = 1
-      })
+        animateEnd = 1;
+      });
     };
   };
-
 });
-
 </script>
-<script src="js/superbox-bigimg.js"></script>
 </body>
 </html>
