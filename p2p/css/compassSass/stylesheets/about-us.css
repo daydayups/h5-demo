@@ -546,9 +546,10 @@ table td{
 }
 /* line 300, ../sass/about-us.scss */
 .position-details ul {
-  display: inline-block;
-  width: 284px;
+  display:block;
+  width: auto;
   margin-top: 20px;
+  overflow: hidden;
 }
 /* line 304, ../sass/about-us.scss */
 .position-details ul em {
@@ -561,8 +562,12 @@ table td{
 }
 
 /* line 312, ../sass/about-us.scss */
-.position-details ul li {
+.position-details ul p {
   line-height: 24px;
+}
+.position-details ul li {
+  float: left;
+  width: 320px;
 }
 /* line 314, ../sass/about-us.scss */
 .position-details ul li a {
