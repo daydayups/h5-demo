@@ -495,7 +495,7 @@ input:focus {
   display: block;
   height: 8px;
 }
-.btn-confirm {
+.btn-confirm-a {
   background-color: #d32d20;
   border: 0 none;
   color: #ffffff;
@@ -515,7 +515,7 @@ input:focus {
   width: 100%;
   text-align: center;
 }
-.btn-cancel {
+.btn-cancel-a {
   background-color: #c82017;
   border: 0 none;
   color: #ffffff;

@@ -2694,7 +2694,7 @@ textarea {
   overflow: hidden;
 }
 /* 弹窗样式 pop-window */
-.btn-confirm {
+.btn-confirm-a {
   line-height: 32px;
   /*background-color: #e0322d;*/
   background-color: #cc0000;
@@ -2705,10 +2705,10 @@ textarea {
   border-radius: 4px;
   font-size: 14px;
 }
-.btn-confirm:hover {
+.btn-confirm-a:hover {
   background-color: #de0029;
 }
-.btn-cancel {
+.btn-cancel-a {
   line-height: 32px;
   background-color: #eeeeee;
   color: #999999;
