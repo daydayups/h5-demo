@@ -515,10 +515,107 @@
   </div>
 </div><!-- /.pop-window -->
 
+<div id="pop-warning-4" class="pop-window">
+  <div class="window-title clearfix">
+    <span class="f-14">投资失败</span>
+    <span class="close">&times;</span>
+  </div>
+  <div class="window-body">
+    <table>
+      <tr>
+        <td rowspan="2" align="right"><span class="ic-warning-b mr-20"></span></td>
+        <td align="left"><p class="f-18">很抱歉，投资失败</p></td>
+      </tr>
+      <tr>
+        <td align="left"><p class="f-14">项目可投金额不足或已筹款完毕</p></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button class="btn-red mt-20" style="width: 120px;">确定</button></td>
+      </tr>
+    </table>
+  </div>
+</div><!-- /.pop-window -->
+
+<div id="pop-pay-confirm" class="pop-window" style="width: 500px;">
+  <div class="window-title clearfix">
+    <span class="f-14">确认投资</span>
+    <span class="close">&times;</span>
+  </div>
+  <div class="window-body">
+    <div class="callouts red">
+      <span class="ic ic-warning-small-b"></span>
+      <p class="cl-red">您的账户余额不足，当前余额：100.00元，<a class="link-blue" href="#">请充值</a></p>
+    </div><!-- /.callouts -->
+    <table class="confirm-table mt-10">
+      <tr>
+        <td class="col-1"><span>项目名称</span></td>
+        <td class="col-2"><span class="cl-blue-lighter">发财金10号</span></td>
+      </tr>
+      <tr>
+        <td class="col-1"><span>年化利息</span></td>
+        <td class="col-2"><span class="cl-blue-lighter">12.60%</span></td>
+      </tr>
+      <tr>
+        <td class="col-1"><span>借款期限</span></td>
+        <td class="col-2"><span class="cl-blue-lighter">50天</span></td>
+      </tr>
+      <tr>
+        <td class="col-1"><span>还款方式</span></td>
+        <td class="col-2"><span class="">满标按天付息，到期还本</span></td>
+      </tr>
+      <tr>
+        <td class="col-1"><span>保障方式</span></td>
+        <td class="col-2"><span class="">若项目提前结束，平台补充投资人2天利息</span></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="brd-t"></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="col-1"><span>账户余额</span></td>
+        <td class="col-2"><span>100.00 元</span></td>
+      </tr>
+      <tr>
+        <td class="col-1"><span>投资金额</span></td>
+        <td class="col-2"><span class="f-18 cl-red-lighter">1500.00</span><span class="cl-red-lighter ml-5">元</span></td>
+      </tr>
+      <tr>
+        <td class="col-1"><span>预期收益</span></td>
+        <td class="col-2"><span class="cl-blue-lighter">15.00</span><span class="cl-blue-lighter ml-5">元</span></td>
+      </tr>
+      <tr>
+        <td class="col-1"></td>
+        <td class="col-2">
+          <input type="checkbox" id="agree">
+          <label for="agree">
+            <span>我已阅读并同意签署</span>
+          </label>
+          <a class="link-blue" href="#">《借款协议》</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="col-1"></td>
+        <td class="col-2"><span class="cl-red">请阅读并同意签署《借款协议》</span></td>
+      </tr>
+      <tr>
+        <td class="col-1"></td>
+        <td class="col-2">
+          <button class="btn-confirm-a pull-left">确定</button>
+          <button class="btn-cancel-a pull-left ml-10">取消</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><!-- /.pop-window -->
+
 <div style="background: #eeeeee; border: 1px solid #eeeeee; width: 200px;height: 30px; line-height: 30px;padding-left: 10px;position: fixed; right: 10px; bottom: 200px;">
   <a class="hint-1" href="javascript:;">提示1</a>
   <a class="hint-2" href="javascript:;">提示2</a>
   <a class="hint-3" href="javascript:;">提示3</a>
+  <a class="hint-4" href="javascript:;">提示4</a>
+  <a class="pop-pay-confirm" href="javascript:;">投标</a>
 </div>
 
 <script src="js/jquery-1.11.2.min.js"></script>
@@ -614,6 +711,16 @@ $(function(){
   $('.hint-3').click(function(){
     $modal.show();
     $.popup('#pop-warning-3');
+  });
+
+  $('.hint-4').click(function(){
+    $modal.show();
+    $.popup('#pop-warning-4');
+  });
+
+  $('.pop-pay-confirm').click(function(){
+    $modal.show();
+    $.popup('#pop-pay-confirm');
   });
 
   $('.pop-window').find('.close').click(function(){
