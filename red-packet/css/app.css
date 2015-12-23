@@ -444,13 +444,14 @@ img,.bottom
 .footer .inner{
   position: relative;
 }
-.footer p{
+.footer .p-box{
   bottom:60px;
   color:#fff;
   left:60px;
   line-height: 30px;
   position: absolute;
   z-index: 100;
+  font-size: 18px;
 }
 .container h1 {
   color: #868686;
