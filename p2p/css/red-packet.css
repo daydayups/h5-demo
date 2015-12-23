@@ -1,6 +1,10 @@
 body {
   background: #fef2d4;
 }
+.nav,
+.top {
+  background:#fff;
+}
 .head,
 .bottom {
   display: block;
