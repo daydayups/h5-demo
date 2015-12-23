@@ -419,12 +419,11 @@ a:hover {
 body {
   background: #fef2d4;
 }
-img.top,
-img,.bottom
-{
+.head,
+.bottom {
   display: block;
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 .container {
   background-size:960px 1086px;
@@ -441,10 +440,10 @@ img,.bottom
   width: 377px;
   height: 228px;
 }
-.footer .inner{
+.footer .inner {
   position: relative;
 }
-.footer .p-box{
+.footer .p-box {
   bottom:60px;
   color:#fff;
   left:60px;
@@ -493,7 +492,6 @@ img,.bottom
 }
 .invest {
   padding-top: 189px;
-  padding-right: 193p;
   position: relative;
   right: 163px;
 }
