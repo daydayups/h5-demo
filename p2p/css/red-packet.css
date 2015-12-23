@@ -1,0 +1,79 @@
+body {
+  background: #fef2d4;
+}
+.head,
+.bottom {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.container {
+  background-size:960px 1086px;
+  background: url(../images/red-packet/process.png) 0 0 no-repeat;
+  position: relative;
+  width: 960px;
+  height: 1086px;
+}
+.stern {
+  background: url(../images/red-packet/stern.png) 0 0 no-repeat;
+  bottom:-70px;
+  right: 0;
+  position: absolute;
+  width: 377px;
+  height: 228px;
+}
+.footer-box .inner {
+  position: relative;
+}
+.footer-box .p-box {
+  bottom:60px;
+  color:#fff;
+  left:60px;
+  line-height: 30px;
+  position: absolute;
+  z-index: 100;
+  font-size: 18px;
+}
+.container h1 {
+  color: #868686;
+  font-size: 30px;
+  line-height: 50px;
+}
+.container h1 span {
+  color: #ff5054;
+  font-size: 30px;
+}
+.container a {
+  border-radius:10px;
+  background: #ff5054;
+  color:#fff;
+  display: block;
+  text-align: center;
+  line-height: 55px;
+  font-size: 26px;
+  width: 170px;
+  height: 55px;
+  margin:0 auto;
+  margin-top: 30px;
+}
+.register,
+.recharge,
+.invest {
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  text-align: center;
+}
+.register {
+  padding-top: 148px;
+  padding-right: 193px;
+}
+.recharge {
+  padding-top: 214px;
+  position: relative;
+  left: 133px;
+}
+.invest {
+  padding-top: 189px;
+  position: relative;
+  right: 163px;
+}

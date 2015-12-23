@@ -256,7 +256,8 @@ table td{
   font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
 }
-.logo{margin:25px 0;
+.logo{
+  margin:25px 0;
   text-align:center;
 }
 .logo-img{max-width:95%;}
@@ -426,8 +427,8 @@ table td{
 
 /* line 210, ../sass/about-us.scss */
 .next {
-  display: block;
   background: url(../../../images/about-us/next.png) 0 0 no-repeat;
+  display: block;
   right: -54px;
   top: 149px;
   height: 51px;
