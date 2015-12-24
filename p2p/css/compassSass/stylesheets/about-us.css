@@ -10,12 +10,6 @@
   height: 200px;
 }
 
-/* line 11, ../sass/about-us.scss */
-.nav .n-right li.active a,
-.in-nav li.active a,
-.in-nav li a:hover {
-  color: #e12b2b;
-}
 
 /* line 17, ../sass/about-us.scss */
 .container {
@@ -38,11 +32,24 @@
 /* line 30, ../sass/about-us.scss */
 .in-nav li {
   display: inline-block;
-  line-height: 42px;
+  line-height: 40px;
 }
 /* line 33, ../sass/about-us.scss */
 .in-nav li a {
   margin: 0 49px;
+}
+.in-nav {
+  background :#e6e6e6;
+}
+.in-nav li.active {
+  border-bottom :2px solid #ff0000;
+  background: #fff;
+  height: 40px;
+}
+.nav .n-right li.active a,
+.in-nav li.active a,
+.in-nav li a:hover {
+  color: #e12b2b;
 }
 
 /* line 38, ../sass/about-us.scss */
@@ -94,15 +101,60 @@
 /* line 62, ../sass/about-us.scss */
 .sy-firm {
   float: left;
-  height: 218px;
+  height: auto;
   width: 352px;
 }
 
 /* line 67, ../sass/about-us.scss */
 .sy-details {
   height: auto;
-  width: 570px;
+  width: 580px;
   float: right;
+}
+.mi-firm {
+  width: 452px;
+  float: right;
+}
+
+.mi-details {
+  width: 460px;
+  float: left;
+}
+.mi-details dl dt{
+  color: #e12b2b;
+  text-align: left;
+  font-weight: bold;
+  line-height: 24px;
+  padding-left: 12px;
+  vertical-align: top;
+}
+
+.mi-details dl dt em {
+  background: #e12b2b;
+  display: block;
+  left: -12px;
+  top: 15px;
+  height: 4px;
+  width: 4px;
+  position: relative;
+  margin-right: 8px;
+}
+
+.mission-box dl dd {
+  text-align: left;
+  line-height: 20px;
+  margin-top:  10px;
+}
+.sy-details img {
+  display: block;
+  margin: 0 auto;
+}
+
+.aptitude {
+  border-top: 1px solid #ccc;
+}
+.mi-margin {
+  margin: 24px 0;
 }
 /* line 71, ../sass/about-us.scss */
 .sy-details p:first-child {
@@ -111,25 +163,20 @@
 
 /* line 75, ../sass/about-us.scss */
 .details-box {
-  line-height: 28px;
-}
-
-/* line 78, ../sass/about-us.scss */
-.mission-box .sy-details {
-  float: left;
-}
-
-/* line 81, ../sass/about-us.scss */
-.mission-box .sy-firm {
-  float: right;
+  line-height: 30px;
+  margin-top: 20px;
+  height: 270px;
+  text-indent: 30px;
+  overflow: hidden;
 }
 
 /* line 84, ../sass/about-us.scss */
 .choose .f-18 {
+  color:#df1d1d;
   font-family: "Helvetica Neue";
   text-align: center;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 /* line 90, ../sass/about-us.scss */
@@ -146,8 +193,16 @@
 }
 /* line 98, ../sass/about-us.scss */
 .choose ul li h1 {
+  margin-top: 32px;
   font-size: 16px;
   text-align: center;
+}
+
+.choose li {
+  text-align: center;
+}
+.cloose img {
+  display: inline-block;
 }
 /* line 102, ../sass/about-us.scss */
 .choose ul li h2 {
@@ -191,6 +246,7 @@
 }
 table td{
   line-height: 16px;
+  vertical-align: top;
 }
 .co-line {
   width: 116px;
@@ -497,9 +553,10 @@ table td{
 /* line 260, ../sass/about-us.scss */
 .join-us {
   width: 100%;
-  padding-top: 40px;
-  height: 700px;
+  padding-top:40px;
+  height: auto;
   background: url(../../../images/about-us/Join-bg.png) 0 0 no-repeat;
+  background-size: cover;
 }
 /* line 265, ../sass/about-us.scss */
 .join-us .jo-margin {
@@ -515,20 +572,28 @@ table td{
   font-weight: bold;
 }
 
+.join-us p {
+  line-height: 20px;
+}
 /* line 276, ../sass/about-us.scss */
 .position {
-  margin-top: 40px;
-  background: #f2f2f2;
-  padding: 40px;
+  background: transparent;
+  padding: 30px 0 20px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   overflow: hidden;
 }
-
+.po-nav {
+  display: block;
+  width: 780px;
+  margin :0 auto;
+  padding-left: 32px;
+  overflow :hidden;
+}
 /* line 285, ../sass/about-us.scss */
 .po-nav li {
   display: inline-block;
-  padding: 6px 10px;
+  padding: 10px 18px;
   margin: 0 18px;
 }
 /* line 290, ../sass/about-us.scss */
@@ -581,24 +646,11 @@ table td{
   margin-top: 18px;
   line-height: 20px;
 }
-.post-details {
-  display: none;
-  height:100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, .8);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-}
+
 .p-details-box {
   background: #fff;
-  position: fixed;
-  top:50%;
-  left:50%;
-  margin-left:-300px;
-  margin-top: -320px;
-  height: 640px;
+  margin:0 auto;
+  height: auto;
   width: 600px;
 }
 .p-details-box h2 {
@@ -620,14 +672,6 @@ table td{
   position: relative;
   top: 29px;
   left: -14px;
-}
-.post-close {
-  position: absolute;
-  right: 15px;
-  top:15px;
-  background:url(../../../images/about-us/close.png)  0 0 no-repeat;
-  width: 15px;
-  height: 15px;
 }
 .p-details-box h3{
   color:#666666;
@@ -658,7 +702,10 @@ table td{
 }
 /* line 325, ../sass/about-us.scss */
 .resume {
+  display: block !important;
   margin-top: 46px;
+  overflow: hidden;
+  padding-bottom: 30px;
 }
 /* line 327, ../sass/about-us.scss */
 .resume p {
@@ -716,61 +763,7 @@ table td{
   left: 0;
   z-index: 9999;
 }
- @-webkit-keyframes liteboxLoader {
- 0% {
--webkit-transform: rotate(0deg);
-}
- 100% {
--webkit-transform: rotate(360deg);
-}
-}
- @-moz-keyframes liteboxLoader {
- 0% {
--moz-transform: rotate(0deg);
-}
- 100% {
--moz-transform: rotate(360deg);
-}
-}
- @-ms-keyframes liteboxLoader {
- 0% {
--ms-transform: rotate(0deg);
-}
- 100% {
--ms-transform: rotate(360deg);
-}
-}
- @-o-keyframes liteboxLoader {
- 0% {
--o-transform: rotate(0deg);
-}
- 100% {
--o-transform: rotate(360deg);
-}
-}
- @keyframes liteboxLoader {
- 0% {
-transform: rotate(0deg);
-}
- 100% {
-transform: rotate(360deg);
-}
-}
- .litebox-loader {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 20px;
-  top: 20px;
-  border: 3px solid #111;
-  border-right-color: #fff;
-  border-radius: 50%;
-  -webkit-animation: liteboxLoader 1s linear infinite;
-  -moz-animation: liteboxLoader 1s linear infinite;
-  -ms-animation: liteboxLoader 1s linear infinite;
-  -o-animation: liteboxLoader 1s linear infinite;
-  animation: liteboxLoader 1s linear infinite;
-}
+
 .litebox-close {
   width: 40px;
   height: 40px;
@@ -806,15 +799,21 @@ transform: rotate(360deg);
   right: 20px;
 }
 .litebox-overlay .litebox-container {
-  position: absolute;
-  right: 10%;
-  left: 10%;
+  height:100%;
+  margin:0 auto;
+  width: 960px;
   overflow: hidden;
 }
 .litebox-content{
-  position:fixed;
-  top:50%;
-  left:50%;
+  bottom:0;
+  display: block !important;
+  left:0;
+  margin: auto !important;
+  right:0;
+  position: absolute;
+  overflow: auto;
+  top :0;
+  vertical-align:middle;
 }
 #to-view {
   color:#5b9fe2;

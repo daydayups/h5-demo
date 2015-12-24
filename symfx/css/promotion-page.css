@@ -1,0 +1,40 @@
+.promotion img {
+  border:none;
+  display: block;
+}
+.inner {
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+
+.banner-box {
+  border: 1px solid red;
+  height:420px;
+}
+.operation {
+  position:relative;
+}
+.operation a {
+  bottom: 25px;
+  background: #fa9406;
+  color: #fff;
+  display: block;
+  font-family: 'Microsoft YaHei';
+  font-weight: bold;
+  text-align: center;
+  height: 44px;
+  line-height: 44px;
+  left: 388px;
+  position: absolute;
+  width: 160px;
+  z-index: 100;
+}
+.advantage,
+.operation {
+  padding-left: 20px;
+}
+
+.currency img {
+  margin: 0 auto;
+  width: 100%;
+}

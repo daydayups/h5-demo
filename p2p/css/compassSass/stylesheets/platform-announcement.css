@@ -1,5 +1,4 @@
 /*-Edit by- fanghonghui*/
-/*--start-platform-announcement*/
 /* line 4, ../sass/platform-announcement.scss */
 .announcement {
   background: #fff;
@@ -10,10 +9,10 @@
 /* line 9, ../sass/platform-announcement.scss */
 .announcement .title {
   border-left: 4px solid #e12b2b;
+  box-sizing: border-box;
   font-size: 18px;
   line-height: 18px;
   padding-left: 22px;
-  box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
 
@@ -54,10 +53,10 @@
 /* line 42, ../sass/platform-announcement.scss */
 .paging {
   display: block;
-  overflow: hidden;
   margin: 0 auto;
-  width: 300px;
   margin-top: 30px;
+  overflow: hidden;
+  width: 300px;
 }
 
 /* line 50, ../sass/platform-announcement.scss */
@@ -65,8 +64,8 @@
   background: #fff;
   border: 1px solid #eeeeee;
   border-radius: 4px;
-  display: inline-block;
   color: #999;
+  display: inline-block;
   font-size: 14px;
   line-height: 40px;
   margin: 0 2px;
