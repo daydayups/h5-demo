@@ -610,12 +610,45 @@
   </div>
 </div><!-- /.pop-window -->
 
-<div style="background: #eeeeee; border: 1px solid #eeeeee; width: 200px;height: 30px; line-height: 30px;padding-left: 10px;position: fixed; right: 10px; bottom: 200px;">
+<div id="pop-contract" class="pop-window" style="width: 600px;">
+  <div class="window-title clearfix">
+    <span class="f-14">提示</span>
+    <span class="close">&times;</span>
+  </div>
+  <div class="window-body">
+    <div class="contract-content">
+      <iframe src="contract.html" frameborder="0" width="100%"></iframe>
+    </div><!-- /.contract-content -->
+    <div class="brd-t mt-10 mb-10"></div>
+    <form action="">
+      <div class="clearfix">
+        <p class="f-14 f-bold">甲方:</p>
+        <table>
+          <tr>
+            <td><span class="">姓名:</span></td>
+            <td><input type="text"></td>
+          </tr>
+          <tr>
+            <td><span>身份证:</span></td>
+            <td><input type="text"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="clearfix">
+        <button class="btn-cancel-a pull-right ml-10">取消</button>
+        <a class="btn-confirm-a pull-right" href="javascript:;">确定</a>
+      </div>
+    </form>
+  </div>
+</div><!-- /.pop-window -->
+
+<div style="background: #eeeeee; border: 1px solid #eeeeee; width: 200px; line-height: 30px;padding-left: 10px;position: fixed; right: 10px; bottom: 200px;">
   <a class="hint-1" href="javascript:;">提示1</a>
   <a class="hint-2" href="javascript:;">提示2</a>
   <a class="hint-3" href="javascript:;">提示3</a>
   <a class="hint-4" href="javascript:;">提示4</a>
   <a class="pop-pay-confirm" href="javascript:;">投标</a>
+  <a class="pop-contract" href="javascript:;">实名认证</a>
 </div>
 
 <script src="js/jquery-1.11.2.min.js"></script>
@@ -721,6 +754,11 @@ $(function(){
   $('.pop-pay-confirm').click(function(){
     $modal.show();
     $.popup('#pop-pay-confirm');
+  });
+
+  $('.pop-contract').click(function(){
+    $modal.show();
+    $.popup('#pop-contract');
   });
 
   $('.pop-window').find('.close').click(function(){
