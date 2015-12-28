@@ -61,7 +61,31 @@
 .platform-work {
   background: #f6f6f6;
 }
+.platform-work table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 933px;
+  position: relative;
+  bottom: 205px;
+  left: -73px;
+}
+.platform-work tr th,
+.platform-work tr td {
+  line-height: 23px;
+  font-size: 16px;
+  text-align: center;
+}
+.platform-work tr th {
+  color: #a09e9e;
+}
+.platform-work .right {
+  position: relative;
+  left: 21px;
+}
 
+.platform-work tr td {
+  color: #1b1a1a;
+}
 /* line 45, ../sass/about-us.scss */
 .platform-borrowing,
 .mission-box {
@@ -157,6 +181,8 @@
 
 .mi-details dl dd span {
   color: #e12b2b;
+  font-size: 15px;
+  font-weight:bold;
 }
 
 .mi-details dl dd p {
@@ -196,17 +222,19 @@
 
 /* line 84, ../sass/about-us.scss */
 .choose .f-18 {
-  color:#df1d1d;
-  font-family: "Helvetica Neue";
-  text-align: center;
-  font-weight: bold;
-  font-size: 24px;
-}
+  background: url(../../../images/about-us/why.png) center no-repeat;
+  display: block;
 
+  height: 54px;
+}
+.jo-details {
+  margin: 0 auto;
+  width: 736px;
+}
 /* line 90, ../sass/about-us.scss */
 .choose ul {
   margin-left: 75px;
-  margin-top: 48px;
+  margin-top: 40px;
   overflow: hidden;
 }
 /* line 94, ../sass/about-us.scss */
@@ -573,19 +601,27 @@ table td{
 /* line 265, ../sass/about-us.scss */
 .join-us .jo-margin {
   font-size: 12px;
-  line-height: 20px;
-  margin-top: 18px;
+  line-height: 28px;
+  margin-top: 34px;
 }
 
 /* line 271, ../sass/about-us.scss */
 .join-us h1 {
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   font-weight: bold;
+  font-family: "Microsoft YaHei";
 }
 
 .join-us p {
-  line-height: 20px;
+  font-family: "Microsoft YaHei";
+  text-indent :32px;
+  line-height: 28px;
+}
+
+.margin-r {
+  text-align:right;
+  margin-top: 20px;
 }
 /* line 276, ../sass/about-us.scss */
 .position {
@@ -597,7 +633,7 @@ table td{
 }
 .po-nav {
   display: block;
-  width: 780px;
+  width: 820px;
   margin :0 auto;
   padding-left: 32px;
   overflow :hidden;
@@ -606,6 +642,7 @@ table td{
 .po-nav li {
   display: inline-block;
   padding: 10px 18px;
+  font-size: 16px;
   margin: 0 18px;
 }
 /* line 290, ../sass/about-us.scss */
