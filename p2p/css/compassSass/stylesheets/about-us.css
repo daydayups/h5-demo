@@ -117,33 +117,55 @@
 }
 
 .mi-details {
-  width: 460px;
+  width: 480px;
   float: left;
+}
+.mi-details dl {
+  padding-left: 12px;
 }
 .mi-details dl dt{
   color: #e12b2b;
   text-align: left;
   font-weight: bold;
   line-height: 24px;
-  padding-left: 12px;
   vertical-align: top;
 }
 
 .mi-details dl dt em {
   background: #e12b2b;
   display: block;
-  left: -12px;
   top: 15px;
+  left:-12px;
   height: 4px;
   width: 4px;
   position: relative;
   margin-right: 8px;
 }
 
+.mi-details dl dd em {
+  background: #e12b2b;
+  display: block;
+  top: 12px;
+  left:-12px;
+  height: 3px;
+  width: 3px;
+  position: relative;
+  margin-right: 8px;
+}
+
+.mi-details dl dd span {
+  color: #e12b2b;
+}
+
+.mi-details dl dd p {
+  line-height: 24px;
+  left:-12px;
+  position: relative;
+}
 .mission-box dl dd {
   text-align: left;
   line-height: 20px;
-  margin-top:  10px;
+  margin-top:  15px;
 }
 .sy-details img {
   display: block;
