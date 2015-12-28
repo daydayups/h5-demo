@@ -2,7 +2,9 @@
 /*--start-contact-us*/
 /* line 4, ../sass/about-us.scss */
 .about-us-banner {
-  width: 100%;
+  background: url(../../../images/about-us/about-us-banner.png) no-repeat center;
+  display: block;
+  height: 200px;
 }
 /* line 6, ../sass/about-us.scss */
 .about-us-banner img {
@@ -324,7 +326,6 @@ table td{
   text-rendering:optimizeLegibility;
 }
 .logo{
-  margin:25px 0;
   text-align:center;
 }
 .logo-img{max-width:95%;}
