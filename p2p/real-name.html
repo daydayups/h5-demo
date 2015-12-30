@@ -65,7 +65,7 @@
       <!-- 用户的操作导航 -->
       <div class="user-nav">
         <div class="nav-group">
-          <a class="group-title active" href="#"><span class="icon-money-pack"></span>我的投资</a>
+          <a class="group-title" href="#"><span class="icon-money-pack"></span>我的投资</a>
         </div>
         <div class="nav-group">
           <p class="group-title cl-153"><span class="icon-money"></span>资金管理</p>
@@ -78,9 +78,17 @@
         <div class="nav-group">
           <p class="group-title cl-153"><span class="icon-red-packet"></span>红包管理</p>
           <ul>
-            <li><a class="group-item" href="#">我的红包</a></li>
-            <li><a class="group-item" href="#">任务赚红包</a></li>
-            <li><a class="group-item" href="#">提现</a></li>
+            <li><a class="group-item " href="red-packet.html">我的红包</a></li>
+            <li><a class="group-item" href="red-packet-task.html">任务赚红包</a></li>
+            <li><a class="group-item" href="to-promote.html">推广赚红包</a></li>
+          </ul>
+        </div>
+        <div class="nav-group">
+          <p class="group-title cl-153"><span class="icon-person"></span>个人设置</p>
+          <ul>
+            <li><a class="group-item " href="">基本信息</a></li>
+            <li><a class="group-item active" href="real-name.html">实名认证</a></li>
+            <li><a class="group-item " href="">我的银行卡</a></li>
           </ul>
         </div>
         <div class="nav-group">
@@ -90,168 +98,53 @@
 
       <!-- 用户的操作界面 -->
       <div class="user-main">
-        <div class="main-title"><p class="f-16">我的投资</p></div>
+        <div class="main-title border-none">
+          <p class="real-name-title f-16">实名认证</p>
+        </div><!--.main-title-->
+        
         <div class="main-content">
-          <!-- 用户操盘信息概览 -->
-          <div class="summary clearfix">
-           <div class="s-left">
-             <div class="item-a pull-left">
-               <p class="f-14">可用余额</p>
-               <p class="cl-red mt-15"><span class="f-20">100.00</span><span class="ml-5">元</span></p>
-             </div><!-- /.item-a -->
-             <div class="item-b mt-25 ml-20 pull-left">
-               <a class="btn-micro-red pull-left" href="#">充值</a>
-               <a class="btn-micro-hollow pull-left ml-10" href="#">提现</a>
-             </div><!-- /.item-b -->
-           </div><!-- /.s-left -->
-            <div class="s-right">
-              <div class="item">
-                <p>已赚利息</p>
-                <p class="mt-15">1130.00元</p>
-              </div><!-- /.item -->
-              <div class="item">
-                <p>待赚利息</p>
-                <p class="mt-15">1130.00元</p>
-              </div><!-- /.item -->
-              <div class="item">
-                <p>出借资金</p>
-                <p class="mt-15">1130.00元</p>
-              </div><!-- /.item -->
-            </div><!-- /.s-right -->
-          </div>
-          <!-- 用户操盘信息概览 结束 -->
-
-          <!-- 订单列表 -->
           <div class="order-list mt-20">
-            <!-- 具备切换功能的标签标题 -->
-            <div class="switch-title">
-              <ul class="switch-tab-wrap">
-                <li><a class="switch-tab curr" href="javascript:;">全部投资</a></li>
-                <li><a class="switch-tab" href="javascript:;">回款中 <span class="f-14 cl-deepred">0</span></a></li>
-                <li><a class="switch-tab" href="javascript:;">已回款 <span class="f-14 cl-deepred">0</span></a></li>
-              </ul>
+            <div class="prompt">
+              <p><i></i>认证信息将用于签订购买协议及提现，认证成功后不可修改</p>
+              <p>重要提示：使用非本人身份信息认证将不可提现，请使用本人身份信息进行认证。</p>
             </div>
-            <!-- 具备切换功能的标签标题 结束 -->
-
-            <div class="mt-15">
-              <span class="">投资时间：</span>
-              <select class="select-normal" name="" id="">
-                <option value="all">全部</option>
-                <option value="week">一周内</option>
-              </select>
+            <div class="login present-box">
+              <table width="100%">
+                  <form id="myform" action="/register/user-register" method="post"></form>
+                  <input type="hidden" name="vcode">
+                  <tbody>
+                    <tr class="">
+                      <td class="col-1"><span class="f-14">姓名</span></td>
+                      <td class="col-2">
+                        <div class="inp-x">
+                          <input id="name" class="" type="text" name="name" value="">
+                        </div>
+                      </td>
+                      <td class="col-3">
+                        <span id="phone-tip" class="cl-red">手机号码必须为11位</span>
+                      </td>
+                    </tr>
+                    <tr class="">
+                      <td class="col-1"><span class="f-14">身份证号码</span></td>
+                      <td class="col-2">
+                        <div class="inp-x">
+                          <input id="name" class="" type="text" name="name" value="">
+                        </div>
+                      </td>
+                      <td class="col-3">
+                        <span id="phone-tip" class="cl-red">手机号码必须为11位</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <button id="btn-register" class="btn-submit" type="button">提交</button>
+                      </td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
             </div>
-            <!-- 订单表格 -->
-            <!-- 有订单 -->
-            <table class="order-list-table table-module mt-15" >
-              <tr class="th">
-                <th class="col-1" width="30%">项目信息</th>
-                <th>年息收益</th>
-                <th>投资本金(元)</th>
-                <th>已收本息(元)</th>
-                <th>待收本息(元)</th>
-                <th>状态</th>
-                <th width="10%"></th>
-              </tr>
-              <tr>
-                <td class="col-1">
-                  <p class="f-14">发财金10号（总借款1万元）</p>
-                  <p class="f-12 cl-153">2015.10.08~2015.11.08</p>
-                </td>
-                <td><span>16%</span></td>
-                <td><span>1000.00</span></td>
-                <td><span class="cl-red">4.44</span></td>
-                <td><span class="cl-red">33.40</span></td>
-                <td><span class="">回款中</span></td>
-                <td><a class="link-blue" href="#">详情</a></td>
-              </tr>
-              <tr>
-                <td class="col-1">
-                  <p class="f-14">发财金10号（总借款1万元）</p>
-                  <p class="f-12 cl-153">2015.10.08~2015.11.08</p>
-                </td>
-                <td><span>16%</span></td>
-                <td><span>1000.00</span></td>
-                <td><span class="cl-153">0.00</span></td>
-                <td><span class="cl-153">0.00</span></td>
-                <td><span class="cl-153">筹款中</span></td>
-                <td><a class="link-blue" href="#">详情</a></td>
-              </tr>
-              <tr>
-                <td class="col-1">
-                  <p class="f-14">发财金10号（总借款1万元）</p>
-                  <p class="f-12 cl-153">2015.10.08~2015.11.08</p>
-                </td>
-                <td><span>16%</span></td>
-                <td><span>1000.00</span></td>
-                <td><span class="cl-153">0.00</span></td>
-                <td><span class="cl-153">0.00</span></td>
-                <td><span class="cl-153">已回款</span></td>
-                <td><a class="link-blue" href="#">详情</a></td>
-              </tr>
-              <tr>
-                <td class="col-1">
-                  <p class="f-14">发财金10号（总借款1万元）</p>
-                  <p class="f-12 cl-153">2015.10.08~2015.11.08</p>
-                </td>
-                <td><span>16%</span></td>
-                <td><span>1000.00</span></td>
-                <td><span class="cl-red">4.44</span></td>
-                <td><span class="cl-red">33.40</span></td>
-                <td><span class="">回款中</span></td>
-                <td><a class="link-blue" href="#">详情</a></td>
-              </tr>
-              <tr>
-                <td class="col-1">
-                  <p class="f-14">发财金10号（总借款1万元）</p>
-                  <p class="f-12 cl-153">2015.10.08~2015.11.08</p>
-                </td>
-                <td><span>16%</span></td>
-                <td><span>1000.00</span></td>
-                <td><span class="cl-red">4.44</span></td>
-                <td><span class="cl-red">33.40</span></td>
-                <td><span class="">回款中</span></td>
-                <td><a class="link-blue" href="#">详情</a></td>
-              </tr>
-            </table>
-            <!-- 有订单 结束 -->
-
-            <div class="pagination clearfix mt-20 mb-20">
-              <a class="pre mr-10" href="#">上一页</a>
-              <ul>
-                <li class="item active"><a href="#">1</a></li>
-                <li class="item"><a href="#">2</a></li>
-                <li class="item"><a href="#">3</a></li>
-                <li class="item">...</li>
-                <li class="item"><a href="#">13</a></li>
-              </ul>
-              <a class="next" href="#">下一页</a>
-            </div><!-- /.pagination -->
-
-            <!-- 无订单 -->
-            <div style="display: none;">
-              <table class="order-list-table">
-                <tr class="th">
-                  <th>操盘金额（元）</th>
-                  <th>证券总资产（元）</th>
-                  <th>盈利金额</th>
-                  <th>配资结算时间</th>
-                  <th>预付服务费</th>
-                  <th>状态</th>
-                </tr>
-              </table>
-              <!-- 无订单 结束 -->
-              <div class="icon-stock-big"></div>
-              <a href="javascript:;" class="apply-btn">立即配资</a>
-              <div class="steps-introduction">
-                <p class="f-16 cl-153">配资买股流程</p>
-                <ul class="steps-arrow-bg mt-20 clearfix">
-                  <li>1.申请实盘资金</li>
-                  <li>2.领取交易账户</li>
-                  <li>3.下载客户端，开始赚钱</li>
-                </ul>
-              </div><!-- /.steps-introduction -->
-            </div>
-            <!-- 订单表格 结束 -->
           </div><!-- /.order-list -->
         </div><!-- /.main-content -->
       </div><!-- /.user-main -->
@@ -362,7 +255,7 @@
 </div><!-- /.bar-fixed -->
 
 <!-- advisors -->
-<div class="advisor-box">
+<div class="advisor-box" style="display:none;">
   <span class="close"></span>
   <div class="inner clearfix">
     <div class="fixed-title">
@@ -428,11 +321,65 @@
   </div><!-- /.inner -->
 </div><!-- /.advisors -->
 
+<!-- pop-window -->
+<div class="modal"></div>
+<div id="pop-warning-1" class="pop-window rule">
+  <div class="window-title clearfix">
+    <span class="f-14">红包使用规则</span>
+    <span class="close">&times;</span>
+  </div>
+  <div class="window-body">
+    <p class="p1">
+      <span class="s2">1</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">执行营销计划和方案，完成各项指标和工作任务</span>
+    </p>
+    <p class="p1">
+     <span class="s1">“例：小明有一个10元红包，充值1000元并投资项目A，在投资确认页面，勾选10元红包。投资期满后，小明就可以连本带息提现啦！既赚了利息，又能多赚10元钱。”</span>
+    </p>
+    <p class="p1">
+      <span class="s2">2</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">红包均有有效期，请在红包使用期限前及时使用。 </span>
+    </p>
+    <p class="p1">
+      <span class="s2">3</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">红包不可以用于购买债权转让项目。 </span>
+    </p>
+    <p class="p1">
+      <span class="s2">4</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">普通红包有效期内能且仅能使用一次，使用后作废，过期作废。 </span>
+    </p>
+    <p class="p1">
+      <span class="s2">5</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">红包不能与其他优惠（其他红包、加息券等）叠加使用。  </span>
+    </p>
+    <p class="p1">
+      <span class="s2">6</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">红包不可直接提现。使用红包投资回款后，方可提现。 </span>
+    </p>
+    <p class="p1 margin-top">
+      <span class="s1">红包不可直接提现。使用红包投资回款后，方可提现。 </span>
+    </p>
+    <button class="btn-red m-center mt-20" >我知道了</button>
+  </div>
+</div><!-- /.pop-window -->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/app.js"></script>
 <script>
 $(function(){
 
+  //tab-red-packet
+  $.switchTabs(".switch-tab-wrap li", ".switch-tab-page", 'curr');
+
+  //pop-window
+  var $modal = $.modalInit('.modal');
+  $('.regulation').click(function(){
+    $modal.show();
+    $.popup('#pop-warning-1');
+  });
+
+  $('.pop-window').find('.close').click(function(){
+    $(this).parents('.pop-window').hide();
+    $modal.hide();
+  });
+
+  $('.btn-red').click(function(){
+    $(this).parents('.pop-window').hide();
+    $modal.hide();
+  });
 });
 </script>
 </body>

@@ -2,9 +2,8 @@
 <html>
 <head lang="en">
 <meta charset="UTF-8">
-<title>红包</title>
+<title>用户中心</title>
 <link rel="stylesheet" href="css/app.css"/>
-<link rel="stylesheet" type="text/css" href="css/red-packet.css">
 </head>
 <body>
 <div class="top">
@@ -48,58 +47,361 @@
 <div class="nav">
   <div class="inner clearfix">
     <div class="n-left">
-      <a class="logo" href="/"></a>
+      <span class="logo"></span>
     </div>
     <ul class="n-right mt-10">
-      <li class="item "><a href="/">首页</a></li>
-      <li class="item "><a href="/finance/">我要投资</a></li>
-      <li class="item "><a href="/safety/">安全保障</a></li>
-      <li class="item sp"><a href="/about/us/0/">关于我们</a></li>
-      <li class="item "><a href="/member/myInvest/all/all/">我的账户</a></li>
+      <li class="item active"><a href="#">首页</a></li>
+      <li class="item"><a href="#">安全保障</a></li>
+      <li class="item"><a href="#">关于我们</a></li>
+      <li class="item"><a href="#">我的账户</a></li>
+      <li class="item sp"><a href="#">我要投资</a></li>
     </ul>
   </div><!-- /.inner -->
 </div><!-- /.nav -->
 
-<img class="head" src="images/red-packet/top.png"  alt="">
-
-<div class="inner clearfix container">
-  <div class="register">
-    <h1>新手完成注册，即获得<span>8元红包</span></h1>
-    <a href="">注册领红包</a>
-  </div>
-  <div class="recharge">
-    <h1>首次充值大于100元，即获得<span>30元红包</span></h1>
-    <a href="">充值领红包</a>
-  </div>
-  <div class="invest">
-    <h1>首次投资理财（不包含新手标）<br>10000元（含）以上，即获得<span>50元红包</span></h1>
-    <a href="">投资领红包</a>
-  </div>
-  <p class="stern"></p>
-</div><!--.container-->
-
-<div class="footer-box">
-  <img class="bottom" src="images/red-packet/bottom.png" alt="">
+<div class="normal-gray-bg" style="padding-top: 30px;padding-bottom: 30px">
   <div class="inner clearfix">
-    <div class="p-box">
-      <p class="p1">
-        <span class="s2">1</span><span class="s1">、</span><span class="s1">红包可在“发财金”【我的账户】-【我的红包】中查看；</span>
-      </p>
-      <p class="p1">
-        <span class="s2">2</span><span class="s1">、</span><span class="s1">红包可用于投资3月以上的定期标</span>
-      </p>
-      <p class="p1">
-        <span class="s2">3</span><span class="s1">、</span><span class="s1">红包使用时可抵扣投资金额的1%；如红包面值100元，则投资10000元可抵扣10000*1%=100元；投资金额为5000元可抵扣5000*1%=50元</span>
-      </p>
-      <p class="p1">
-        <span class="s2">4</span><span class="s1">、</span><span class="s1">红包有效期为30天；本活动从即日起开始，具体结束时间以公告为准</span>
-      </p>
-      <p class="p1">
-        <span class="s2">5</span><span class="s1">、</span><span class="s1"> 本规则最终解释权归“发财金”所有。</span>
-      </p>
-    </div>
-  </div>
-</div><!--.footer-box-->
+    <div class="user-wrap clearfix">
+      <!-- 用户的操作导航 -->
+      <div class="user-nav">
+        <div class="nav-group">
+          <a class="group-title" href="#"><span class="icon-money-pack"></span>我的投资</a>
+        </div>
+        <div class="nav-group">
+          <p class="group-title cl-153"><span class="icon-money"></span>资金管理</p>
+          <ul>
+            <li><a class="group-item" href="#">资金明细</a></li>
+            <li><a class="group-item" href="#">充值</a></li>
+            <li><a class="group-item" href="#">提现</a></li>
+          </ul>
+        </div>
+        <div class="nav-group">
+          <p class="group-title cl-153"><span class="icon-red-packet"></span>红包管理</p>
+          <ul>
+            <li><a class="group-item active" href="red-packet.html">我的红包</a></li>
+            <li><a class="group-item" href="red-packet-task.html">任务赚红包</a></li>
+            <li><a class="group-item" href="red-packet-popularize.html">推广赚红包</a></li>
+          </ul>
+        </div>
+        <div class="nav-group">
+          <a class="group-title" href="#"><span class="icon-feedback"></span>投诉咨询 <span class="icon-click-me">15</span></a>
+        </div>
+      </div>
+
+      <!-- 用户的操作界面 -->
+      <div class="user-main">
+        <div class="main-title border-none">
+          <p class="red-packet-title f-16">我的红包&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>您还有<i>8</i>个可用现金红包，总额 <i>88元</i> &nbsp;&nbsp;&nbsp;<a href="#">做任务赚红包</a></span></p>
+          <span class="regulation"><i></i>红包使用规则</span>
+        </div><!--.main-title-->
+        
+        <div class="main-content">
+          <div class="order-list mt-20">
+          <!-- 具备切换功能的标签标题 -->
+            <div class="switch-title">
+              <ul class="switch-tab-wrap">
+                <li class="curr"><a class="switch-tab " href="javascript:;">可用</a></li>
+                <li><a class="switch-tab" href="javascript:;">已使用</a></li>
+                <li><a class="switch-tab" href="javascript:;">已过期</a></li>
+              </ul>
+            </div>
+            <!-- 具备切换功能的标签标题 结束 -->
+
+            <div>
+              <div class="switch-tab-page" >
+                <ul>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2>限新手标</h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">立即使用&gt;</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2></h2>
+                        <h1><span>8</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">立即使用&gt;</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2></h2>
+                        <h1><span>8</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">立即使用&gt;</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2></h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">立即使用&gt;</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2>限新手标</h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">立即使用&gt;</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2>限新手标</h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">立即使用&gt;</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2>限新手标</h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">立即使用&gt;</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2>限新手标</h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">立即使用&gt;</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2>限新手标</h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">立即使用&gt;</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2>限新手标</h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">立即使用&gt;</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2>限新手标</h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">立即使用&gt;</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2>限新手标</h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">立即使用&gt;</a></p>
+                    </div>
+                  </li>
+                </ul>
+              </div><!--switch-tab-page1 -->
+
+              <div class="switch-tab-page employ">
+                <ul>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2>限新手标</h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">已使用</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2>限新手标</h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">已使用</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2></h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">已使用</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2>限新手标</h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">已使用</a></p>
+                    </div>
+                  </li>
+                </ul>
+              </div><!--switch-tab-page2 -->
+
+              <div class="switch-tab-page employ">
+                <ul>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2>限新手标</h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">已过期</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2>限新手标</h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">已过期</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2></h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">已过期</a></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="cost-head">
+                      <div class="cost-head-box">
+                        <span class="icon-red"></span>
+                        <h2>限新手标</h2>
+                        <h1><span>18</span>元</h1>
+                        <p>有效期至 2015.12.2</p>
+                      </div>
+                    </div>
+                    <div class="cost-footer">
+                      <p><span>注册奖励红包</span><a href="#">已过期</a></p>
+                    </div>
+                  </li>
+                </ul>
+              </div><!--switch-tab-page3 -->
+            </div><!--page-box-end-->
+
+            <div class="pagination clearfix mt-20 mb-20">
+              <a class="pre mr-10" href="#">上一页</a>
+              <ul>
+                <li class="item active"><a href="#">1</a></li>
+                <li class="item"><a href="#">2</a></li>
+                <li class="item"><a href="#">3</a></li>
+                <li class="item">...</li>
+                <li class="item"><a href="#">13</a></li>
+              </ul>
+              <a class="next" href="#">下一页</a>
+            </div><!-- /.pagination -->
+            
+          </div><!-- /.order-list -->
+        </div><!-- /.main-content -->
+      </div><!-- /.user-main -->
+    </div><!-- /.user-wrap -->
+  </div><!-- /.inner -->
+</div><!-- /.index-gray-bg -->
 
 <!-- footer -->
 <div class="footer clearfix">
@@ -162,5 +464,174 @@
     </div>
   </div>
 </div><!-- /.footer -->
+
+<div class="bar-fixed">
+  <a class="item advisor-trigger" href="javascript:;">
+    <span class="ic-advisor-white ic"></span>
+    <div class="txt">
+      <p>理财</p>
+      <p style="margin-top: 2px">顾问</p>
+    </div>
+  </a>
+  <a class="item m" href="#">
+    <span class="ic-weixin-white ic"></span>
+    <div class="txt">
+      <p>添加</p>
+      <p style="margin-top: 2px">微信</p>
+    </div>
+    <div class="desc">
+      <img src="images/qrcode-weixin-public.jpg" alt=""/>
+      <p class="mt-5 txt-center">发财金公众号</p>
+    </div><!-- /.desc -->
+  </a>
+  <a class="item m" href="#">
+    <span class="ic-qq-white ic"></span>
+    <div class="txt">
+      <p>QQ</p>
+      <p style="margin-top: 2px">群号</p>
+    </div><!-- /.txt -->
+    <div class="desc">
+      <p>发财金</p>
+      <p class="mt-5">投资理财QQ群</p>
+      <p class="cl-red mt-5">450031321</p>
+    </div><!-- /.desc -->
+  </a>
+  <a class="item m" href="#">
+    <span class="ic-feedback-white ic"></span>
+    <div class="txt">
+      <p>意见</p>
+      <p style="margin-top: 2px">反馈</p>
+    </div>
+  </a>
+</div><!-- /.bar-fixed -->
+
+<!-- advisors -->
+<div class="advisor-box" style="display:none;">
+  <span class="close"></span>
+  <div class="inner clearfix">
+    <div class="fixed-title">
+      <p class="txt">理财</p>
+      <p class="txt mt-5">顾问</p>
+    </div><!-- /.fixed-title -->
+    <div class="list">
+      <div class="item">
+        <div class="i-left">
+          <div class="avatar">
+            <img src="images/avatar01.jpg" alt=""/>
+          </div>
+        </div><!-- /.i-left -->
+        <div class="i-right">
+          <p class="f-16">周艺华</p>
+          <p class="f-12 cl-153 mt-10">手机 15833845568</p>
+          <p class="f-12 cl-153 mt-5">微信 15644556445</p>
+          <a class="link-qq-normal mt-10" href="#"><i class="ic-qq-red"></i>立即咨询</a>
+        </div><!-- /.i-right -->
+      </div><!-- /.item -->
+      <div class="item">
+        <div class="i-left">
+          <div class="avatar">
+            <img src="images/avatar01.jpg" alt=""/>
+          </div>
+        </div><!-- /.i-left -->
+        <div class="i-right">
+          <p class="f-16">周艺华</p>
+          <p class="f-12 cl-153 mt-10">手机 15833845568</p>
+          <p class="f-12 cl-153 mt-5">微信 15644556445</p>
+          <a class="link-qq-normal mt-10" href="#"><i class="ic-qq-red"></i>立即咨询</a>
+        </div><!-- /.i-right -->
+      </div><!-- /.item -->
+      <div class="item">
+        <div class="i-left">
+          <div class="avatar">
+            <img src="images/avatar02.jpg" alt=""/>
+          </div>
+        </div><!-- /.i-left -->
+        <div class="i-right">
+          <p class="f-16">周艺华</p>
+          <p class="f-12 cl-153 mt-10">手机 15833845568</p>
+          <p class="f-12 cl-153 mt-5">微信 15644556445</p>
+          <a class="link-qq-normal mt-10" href="#"><i class="ic-qq-red"></i>立即咨询</a>
+        </div><!-- /.i-right -->
+      </div><!-- /.item -->
+      <div class="item">
+        <div class="i-left">
+          <div class="avatar">
+            <img src="images/avatar03.jpg" alt=""/>
+          </div>
+        </div><!-- /.i-left -->
+        <div class="i-right">
+          <p class="f-16">周艺华</p>
+          <p class="f-12 cl-153 mt-10">手机 15833845568</p>
+          <p class="f-12 cl-153 mt-5">微信 15644556445</p>
+          <a class="link-qq-normal mt-10" href="#"><i class="ic-qq-red"></i>立即咨询</a>
+        </div><!-- /.i-right -->
+      </div><!-- /.item -->
+      <button class="prev"></button>
+      <button class="next"></button>
+    </div><!-- /.list -->
+  </div><!-- /.inner -->
+</div><!-- /.advisors -->
+
+<!-- pop-window -->
+<div class="modal"></div>
+<div id="pop-warning-1" class="pop-window rule">
+  <div class="window-title clearfix">
+    <span class="f-14">红包使用规则</span>
+    <span class="close">&times;</span>
+  </div>
+  <div class="window-body">
+    <p class="p1">
+      <span class="s2">1</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">执行营销计划和方案，完成各项指标和工作任务</span>
+    </p>
+    <p class="p1">
+     <span class="s1">“例：小明有一个10元红包，充值1000元并投资项目A，在投资确认页面，勾选10元红包。投资期满后，小明就可以连本带息提现啦！既赚了利息，又能多赚10元钱。”</span>
+    </p>
+    <p class="p1">
+      <span class="s2">2</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">红包均有有效期，请在红包使用期限前及时使用。 </span>
+    </p>
+    <p class="p1">
+      <span class="s2">3</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">红包不可以用于购买债权转让项目。 </span>
+    </p>
+    <p class="p1">
+      <span class="s2">4</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">普通红包有效期内能且仅能使用一次，使用后作废，过期作废。 </span>
+    </p>
+    <p class="p1">
+      <span class="s2">5</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">红包不能与其他优惠（其他红包、加息券等）叠加使用。  </span>
+    </p>
+    <p class="p1">
+      <span class="s2">6</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">红包不可直接提现。使用红包投资回款后，方可提现。 </span>
+    </p>
+    <p class="p1 margin-top">
+      <span class="s1">红包不可直接提现。使用红包投资回款后，方可提现。 </span>
+    </p>
+    <button class="btn-red m-center mt-20" >我知道了</button>
+  </div>
+</div><!-- /.pop-window -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+$(function(){
+
+  //tab-red-packet
+  $.switchTabs(".switch-tab-wrap li", ".switch-tab-page", 'curr');
+
+  //pop-window
+  var $modal = $.modalInit('.modal');
+  $('.regulation').click(function(){
+    $modal.show();
+    $.popup('#pop-warning-1');
+  });
+
+  $('.pop-window').find('.close').click(function(){
+    $(this).parents('.pop-window').hide();
+    $modal.hide();
+  });
+
+  $('.btn-red').click(function(){
+    $(this).parents('.pop-window').hide();
+    $modal.hide();
+  });
+});
+</script>
 </body>
 </html>

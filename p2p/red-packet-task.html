@@ -65,7 +65,7 @@
       <!-- 用户的操作导航 -->
       <div class="user-nav">
         <div class="nav-group">
-          <a class="group-title active" href="#"><span class="icon-money-pack"></span>我的投资</a>
+          <a class="group-title" href="#"><span class="icon-money-pack"></span>我的投资</a>
         </div>
         <div class="nav-group">
           <p class="group-title cl-153"><span class="icon-money"></span>资金管理</p>
@@ -78,9 +78,9 @@
         <div class="nav-group">
           <p class="group-title cl-153"><span class="icon-red-packet"></span>红包管理</p>
           <ul>
-            <li><a class="group-item" href="#">我的红包</a></li>
-            <li><a class="group-item" href="#">任务赚红包</a></li>
-            <li><a class="group-item" href="#">提现</a></li>
+            <li><a class="group-item " href="red-packet.html">我的红包</a></li>
+            <li><a class="group-item active" href="red-packet-task.html">任务赚红包</a></li>
+            <li><a class="group-item" href="to-promote.html">推广赚红包</a></li>
           </ul>
         </div>
         <div class="nav-group">
@@ -90,168 +90,39 @@
 
       <!-- 用户的操作界面 -->
       <div class="user-main">
-        <div class="main-title"><p class="f-16">我的投资</p></div>
+        <div class="main-title border-none">
+          <p class="red-packet-title f-16">任务赚红包</p>
+        </div><!--.main-title-->
+        
         <div class="main-content">
-          <!-- 用户操盘信息概览 -->
-          <div class="summary clearfix">
-           <div class="s-left">
-             <div class="item-a pull-left">
-               <p class="f-14">可用余额</p>
-               <p class="cl-red mt-15"><span class="f-20">100.00</span><span class="ml-5">元</span></p>
-             </div><!-- /.item-a -->
-             <div class="item-b mt-25 ml-20 pull-left">
-               <a class="btn-micro-red pull-left" href="#">充值</a>
-               <a class="btn-micro-hollow pull-left ml-10" href="#">提现</a>
-             </div><!-- /.item-b -->
-           </div><!-- /.s-left -->
-            <div class="s-right">
-              <div class="item">
-                <p>已赚利息</p>
-                <p class="mt-15">1130.00元</p>
-              </div><!-- /.item -->
-              <div class="item">
-                <p>待赚利息</p>
-                <p class="mt-15">1130.00元</p>
-              </div><!-- /.item -->
-              <div class="item">
-                <p>出借资金</p>
-                <p class="mt-15">1130.00元</p>
-              </div><!-- /.item -->
-            </div><!-- /.s-right -->
-          </div>
-          <!-- 用户操盘信息概览 结束 -->
-
-          <!-- 订单列表 -->
           <div class="order-list mt-20">
-            <!-- 具备切换功能的标签标题 -->
-            <div class="switch-title">
-              <ul class="switch-tab-wrap">
-                <li><a class="switch-tab curr" href="javascript:;">全部投资</a></li>
-                <li><a class="switch-tab" href="javascript:;">回款中 <span class="f-14 cl-deepred">0</span></a></li>
-                <li><a class="switch-tab" href="javascript:;">已回款 <span class="f-14 cl-deepred">0</span></a></li>
-              </ul>
-            </div>
-            <!-- 具备切换功能的标签标题 结束 -->
-
-            <div class="mt-15">
-              <span class="">投资时间：</span>
-              <select class="select-normal" name="" id="">
-                <option value="all">全部</option>
-                <option value="week">一周内</option>
-              </select>
-            </div>
-            <!-- 订单表格 -->
-            <!-- 有订单 -->
-            <table class="order-list-table table-module mt-15" >
-              <tr class="th">
-                <th class="col-1" width="30%">项目信息</th>
-                <th>年息收益</th>
-                <th>投资本金(元)</th>
-                <th>已收本息(元)</th>
-                <th>待收本息(元)</th>
-                <th>状态</th>
-                <th width="10%"></th>
-              </tr>
-              <tr>
-                <td class="col-1">
-                  <p class="f-14">发财金10号（总借款1万元）</p>
-                  <p class="f-12 cl-153">2015.10.08~2015.11.08</p>
-                </td>
-                <td><span>16%</span></td>
-                <td><span>1000.00</span></td>
-                <td><span class="cl-red">4.44</span></td>
-                <td><span class="cl-red">33.40</span></td>
-                <td><span class="">回款中</span></td>
-                <td><a class="link-blue" href="#">详情</a></td>
-              </tr>
-              <tr>
-                <td class="col-1">
-                  <p class="f-14">发财金10号（总借款1万元）</p>
-                  <p class="f-12 cl-153">2015.10.08~2015.11.08</p>
-                </td>
-                <td><span>16%</span></td>
-                <td><span>1000.00</span></td>
-                <td><span class="cl-153">0.00</span></td>
-                <td><span class="cl-153">0.00</span></td>
-                <td><span class="cl-153">筹款中</span></td>
-                <td><a class="link-blue" href="#">详情</a></td>
-              </tr>
-              <tr>
-                <td class="col-1">
-                  <p class="f-14">发财金10号（总借款1万元）</p>
-                  <p class="f-12 cl-153">2015.10.08~2015.11.08</p>
-                </td>
-                <td><span>16%</span></td>
-                <td><span>1000.00</span></td>
-                <td><span class="cl-153">0.00</span></td>
-                <td><span class="cl-153">0.00</span></td>
-                <td><span class="cl-153">已回款</span></td>
-                <td><a class="link-blue" href="#">详情</a></td>
-              </tr>
-              <tr>
-                <td class="col-1">
-                  <p class="f-14">发财金10号（总借款1万元）</p>
-                  <p class="f-12 cl-153">2015.10.08~2015.11.08</p>
-                </td>
-                <td><span>16%</span></td>
-                <td><span>1000.00</span></td>
-                <td><span class="cl-red">4.44</span></td>
-                <td><span class="cl-red">33.40</span></td>
-                <td><span class="">回款中</span></td>
-                <td><a class="link-blue" href="#">详情</a></td>
-              </tr>
-              <tr>
-                <td class="col-1">
-                  <p class="f-14">发财金10号（总借款1万元）</p>
-                  <p class="f-12 cl-153">2015.10.08~2015.11.08</p>
-                </td>
-                <td><span>16%</span></td>
-                <td><span>1000.00</span></td>
-                <td><span class="cl-red">4.44</span></td>
-                <td><span class="cl-red">33.40</span></td>
-                <td><span class="">回款中</span></td>
-                <td><a class="link-blue" href="#">详情</a></td>
-              </tr>
-            </table>
-            <!-- 有订单 结束 -->
-
-            <div class="pagination clearfix mt-20 mb-20">
-              <a class="pre mr-10" href="#">上一页</a>
-              <ul>
-                <li class="item active"><a href="#">1</a></li>
-                <li class="item"><a href="#">2</a></li>
-                <li class="item"><a href="#">3</a></li>
-                <li class="item">...</li>
-                <li class="item"><a href="#">13</a></li>
-              </ul>
-              <a class="next" href="#">下一页</a>
-            </div><!-- /.pagination -->
-
-            <!-- 无订单 -->
-            <div style="display: none;">
-              <table class="order-list-table">
-                <tr class="th">
-                  <th>操盘金额（元）</th>
-                  <th>证券总资产（元）</th>
-                  <th>盈利金额</th>
-                  <th>配资结算时间</th>
-                  <th>预付服务费</th>
-                  <th>状态</th>
+            <div class="get-money">
+              <table>
+                <tr>
+                  <td class="col-1">
+                    <span class=""></span>
+                  </td>
+                  <td class="col-2">
+                    <span class="">8元现金红包</span>
+                    <p class="">完成实名认证，即送8元现金红包</p>
+                  </td>
+                  <td class="col-3">
+                    <a class="get">立即领取</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col-1"><span></span></td>
+                  <td class="col-2">
+                    <span>8元现金红包</span>
+                    <p>完成实名认证，即送8元现金红包</p>
+                  </td>
+                  <td class="col-3 ">
+                    <a class="get">立即领取</a>
+                  </td>
                 </tr>
               </table>
-              <!-- 无订单 结束 -->
-              <div class="icon-stock-big"></div>
-              <a href="javascript:;" class="apply-btn">立即配资</a>
-              <div class="steps-introduction">
-                <p class="f-16 cl-153">配资买股流程</p>
-                <ul class="steps-arrow-bg mt-20 clearfix">
-                  <li>1.申请实盘资金</li>
-                  <li>2.领取交易账户</li>
-                  <li>3.下载客户端，开始赚钱</li>
-                </ul>
-              </div><!-- /.steps-introduction -->
-            </div>
-            <!-- 订单表格 结束 -->
+            </div><!--.table-box-->
+
           </div><!-- /.order-list -->
         </div><!-- /.main-content -->
       </div><!-- /.user-main -->
@@ -362,7 +233,7 @@
 </div><!-- /.bar-fixed -->
 
 <!-- advisors -->
-<div class="advisor-box">
+<div class="advisor-box" style="display:none;">
   <span class="close"></span>
   <div class="inner clearfix">
     <div class="fixed-title">
@@ -428,11 +299,55 @@
   </div><!-- /.inner -->
 </div><!-- /.advisors -->
 
+<!-- pop-window -->
+<div id="modal" class="modal cover"></div>
+<div id="pop-warning-1" class="pop-window red-packet-box">
+  <span class="close close-1"></span>
+  <div class="how-much">
+    <p class="f-18">恭喜您获得</p>
+    <h1><span>8</span>元</h1>
+    <p class="f-18">现金红包</p>
+    <p class="examine f-12">您可以在“我的红包”中查看</p>
+    <button class="btn-yellow m-center" >我知道了</button>
+    <h2>奖励来源：实名认证</h2>
+  </div>
+</div><!-- /.pop-window -->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/app.js"></script>
 <script>
 $(function(){
 
+  //tab-red-packet
+  $.switchTabs(".switch-tab-wrap li", ".switch-tab-page", 'curr');
+
+  //pop-window
+  var $modal = $.modalInit('.modal');
+  $('#modal').css({
+    "opacity": 1,
+    "filter": "alpha(opacity=1)",
+    "background-color": "#acacac"
+  });
+
+  $('.get').on('click',function(){
+    $(this).hide();
+    $(this).parent().append('<a class="receive"><i></i>已领取</a>');
+    var $tr=$(this).parents('.get-money table tr');
+    $tr.children('.col-1').children().addClass('credential');
+    $tr.children('.col-2').children('span').addClass('cash');
+     $tr.children('.col-2').children('p').addClass('approve');
+    $modal.show();
+    $.popup('#pop-warning-1');
+  });
+
+  $('.pop-window').find('.close').click(function(){
+    $(this).parents('.pop-window').hide();
+    $modal.hide();
+  });
+
+  $('.btn-yellow').on('click',function(){
+    $(this).parents('.pop-window').hide();
+    $modal.hide();
+  });
 });
 </script>
 </body>
