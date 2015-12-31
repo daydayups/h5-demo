@@ -4010,13 +4010,13 @@ img.verify-img {
   background:#e13932;
   border-radius:3px;
   color:#fff;
+  cursor:pointer;
   display: block;
   height: 25px;
   text-align:center;
   line-height: 25px;
   width: 100px;
 }
-
 .get-money .col-3 a.receive:hover {
   cursor:default;
   text-decoration: none;
@@ -4027,9 +4027,6 @@ img.verify-img {
   height: 535px;
   top:50%;
   width: 535px;
-}
-.cover {
-  background:#acacac;
 }
 .close-1 {
   background: url(../images/user/icons.png?v=201512220102) no-repeat -263px -374px;
@@ -4075,6 +4072,7 @@ img.verify-img {
   -webkit-box-shadow:0 2px 1px #fe8707;
   -moz-box-shadow:0 2px 1px #fe8707;
   color:#7a2220;
+  cursor:pointer;
   display: block;
   height: 38px;
   width: 160px;
@@ -4338,23 +4336,68 @@ img.verify-img {
   padding:20px;
   width: 100%;
 }
-.prompt  p{
+.prompt  p,
+.certification-time {
   color:#ff9900;
   font-size: 12px;
   line-height: 20px;
   padding-left: 20px;
   position: relative;
 }
-.prompt i {
-  background: url(../images/user/icons.png?v=201512220102) no-repeat -40px -374px;
-  background-image: -webkit-image-set( url(../images/user/icons.png?v=2015122201) 1x, url(../images/user/icons@2x.png?v=2015122201) 2x);
-  background-size: 350px 400px;
+.certification-time {
+  color:#343434;
+}
+.certification-time span {
+  color:#666666;
+  margin-left: 23px;
+}
+.prompt i,
+.certification-time i {
   display: block;
   height: 18px;
   position: absolute;
   left:0;
   top:0;
   width: 18px;
+}
+.prompt i {
+  background: url(../images/user/icons.png?v=201512220102) no-repeat -40px -374px;
+  background-image: -webkit-image-set( url(../images/user/icons.png?v=2015122201) 1x, url(../images/user/icons@2x.png?v=2015122201) 2x);
+  background-size: 350px 400px;
+}
+.certification-time i {
+  background: url(../images/user/icons.png?v=201512220102) no-repeat -80px -374px;
+  background-image: -webkit-image-set( url(../images/user/icons.png?v=2015122201) 1x, url(../images/user/icons@2x.png?v=2015122201) 2x);
+  background-size: 350px 400px;
+}
+.prompt-ok {
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  background:#f7faeb;
+  display: none;
+  height: 44px;
+  padding:14px;
+  width: 100%;
+}
+.prompt-ok h2 {
+  color:#868686;
+  font-size: 16px;
+  margin-left: 18px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.person-name,
+.person-id {
+  padding-left: 20px;
+}
+.person-name span,
+.person-id span {
+  display: inline-block;
+  line-height: 28px;
+}
+.person-name-1,
+.person-id-1 {
+  width: 90px;
 }
 .present-box {
   margin-top: 34px;
@@ -4394,5 +4437,44 @@ img.verify-img {
 }
 .present-box .inp-x {
   border-radius:2px;
+}
+.affirm {
+  font-size: 16px;
+  height:36px;
+  width: 80px;
+  margin-left: 70px;
+}
+.failure {
+  color:#343434;
+  text-align: left;
+  font-size: 18px;
+  line-height: 52px;
+  padding-left: 70px;
+  position: relative;
+}
+.failure i {
+  background:url(../images/user/icons@2x.png) -160px -1500px no-repeat;
+  background-size:1400px 1600px;
+  display: block;
+  height: 52px;
+  left: 13px;
+  top: 6px;
+  position: absolute;
+  width: 52px;
+}
+.no-matching {
+  color:#666666;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 70px;
+}
+#loading {
+  display: none;
+  top:50%;
+  left:50%;
+  margin-left:-16px;
+  margin-top: -16px;
+  position: fixed;
+  z-index: 10;
 }
 /* Edit by Xiaofan Zhang | end */

@@ -108,6 +108,12 @@
               <p><i></i>认证信息将用于签订购买协议及提现，认证成功后不可修改</p>
               <p>重要提示：使用非本人身份信息认证将不可提现，请使用本人身份信息进行认证。</p>
             </div>
+            <div class="prompt-ok">
+              <p class="certification-time"><i></i>您已完成实名认证<span class="time"></span></p>
+              <h2>您的实名信息</h2>
+              <p class="person-name"><span class="person-name-1">姓名</span><span class="person-name-2"></span></p>
+              <p class="person-id"><span class="person-id-1">身份证号码</span><span class="person-id-2"></span></p>
+            </div>
             <div class="login present-box">
               <table width="100%">
                   <form id="myform" action="/register/user-register" method="post"></form>
@@ -121,24 +127,24 @@
                         </div>
                       </td>
                       <td class="col-3">
-                        <span id="phone-tip" class="cl-red">手机号码必须为11位</span>
+                        <span id="name-tip" class="cl-red"></span>
                       </td>
                     </tr>
                     <tr class="">
                       <td class="col-1"><span class="f-14">身份证号码</span></td>
                       <td class="col-2">
                         <div class="inp-x">
-                          <input id="name" class="" type="text" name="name" value="">
+                          <input id="id-card" class="" type="text" name="name" value="">
                         </div>
                       </td>
                       <td class="col-3">
-                        <span id="phone-tip" class="cl-red">手机号码必须为11位</span>
+                        <span id="id-card-tip" class="cl-red"></span>
                       </td>
                     </tr>
                     <tr>
                       <td></td>
                       <td>
-                        <button id="btn-register" class="btn-submit" type="button">提交</button>
+                        <button id="btn-submit" class="btn-submit" type="button">提交</button>
                       </td>
                       <td></td>
                     </tr>
@@ -323,37 +329,16 @@
 
 <!-- pop-window -->
 <div class="modal"></div>
+<img id="loading" src="images/user/loading.gif" height="32" width="32" alt="">
 <div id="pop-warning-1" class="pop-window rule">
   <div class="window-title clearfix">
-    <span class="f-14">红包使用规则</span>
+    <span class="f-14">认证失败</span>
     <span class="close">&times;</span>
   </div>
   <div class="window-body">
-    <p class="p1">
-      <span class="s2">1</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">执行营销计划和方案，完成各项指标和工作任务</span>
-    </p>
-    <p class="p1">
-     <span class="s1">“例：小明有一个10元红包，充值1000元并投资项目A，在投资确认页面，勾选10元红包。投资期满后，小明就可以连本带息提现啦！既赚了利息，又能多赚10元钱。”</span>
-    </p>
-    <p class="p1">
-      <span class="s2">2</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">红包均有有效期，请在红包使用期限前及时使用。 </span>
-    </p>
-    <p class="p1">
-      <span class="s2">3</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">红包不可以用于购买债权转让项目。 </span>
-    </p>
-    <p class="p1">
-      <span class="s2">4</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">普通红包有效期内能且仅能使用一次，使用后作废，过期作废。 </span>
-    </p>
-    <p class="p1">
-      <span class="s2">5</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">红包不能与其他优惠（其他红包、加息券等）叠加使用。  </span>
-    </p>
-    <p class="p1">
-      <span class="s2">6</span><span class="s1">)</span><span class="s2">&nbsp;</span><span class="s1">红包不可直接提现。使用红包投资回款后，方可提现。 </span>
-    </p>
-    <p class="p1 margin-top">
-      <span class="s1">红包不可直接提现。使用红包投资回款后，方可提现。 </span>
-    </p>
-    <button class="btn-red m-center mt-20" >我知道了</button>
+    <h1 class="failure"><i></i>实名认证失败</h1>
+    <p class="no-matching">姓名与身份证号码不匹配，请仔细核对并重新输入</p>
+    <button class="btn-red  mt-20 affirm" >确定</button>
   </div>
 </div><!-- /.pop-window -->
 <script src="js/jquery-1.11.2.min.js"></script>
@@ -364,12 +349,163 @@ $(function(){
   //tab-red-packet
   $.switchTabs(".switch-tab-wrap li", ".switch-tab-page", 'curr');
 
-  //pop-window
-  var $modal = $.modalInit('.modal');
-  $('.regulation').click(function(){
-    $modal.show();
-    $.popup('#pop-warning-1');
+  $("input:text").focus(function() {
+  $(this).parent().css("border","1px solid blue");
   });
+
+  $("input:text").blur(function() {
+  $(this).css('color','#e13932');
+  $(this).parent().css("border","1px solid #e13932");
+  });
+  
+  //验证
+  //姓名验证
+  $("#name").focusin(function() {
+    $("#name-tip").html("");
+  }).focusout(function() {
+    name('#name');
+    ok1=true;
+  });
+
+  function name (id) {
+    var value = $.trim($(id).val());
+    $(id).val(value);
+    if (value == "") {
+      $("#name-tip").html("请输入您的姓名");
+      return;
+    }
+    if (!value.match(/^[\u4e00-\u9fa5]{1,10}$/)){
+      $("#name-tip").html("姓名格式不正确！请重新输入");
+      return;
+    }
+  }
+  //身份证验证
+  var aCity = {
+    11:"北京",12:"天津",13:"河北",14:"山西",15:"内蒙古",21:"辽宁",22:"吉林",23:"黑龙江",31:"上海",32:"江苏",33:"浙江",34:"安徽",35:"福建",36:"江西",37:"山东",41:"河南",42:"湖北",43:"湖南",44:"广东",45:"广西",46:"海南",50:"重庆",51:"四川",52:"贵州",53:"云南",54:"西藏",61:"陕西",62:"甘肃",63:"青海",64:"宁夏",65:"新疆",71:"台湾",81:"香港",82:"澳门",91:"国外"
+  }
+  $("#id-card").focusin(function() {
+    $("#id-card-tip").html("");
+  }).focusout(function() {
+    idCard('#id-card');
+  });
+
+  function idCard (id) {
+    var value = $.trim($(id).val());
+    var iSum = 0; 
+    $(id).val(value);
+    if (value == "") {
+      $("#id-card-tip").html("请输入您的身份证号码");
+      return;
+    }
+    if (!/^\d{17}(\d|x)$/i.test(value)){
+      $("#id-card-tip").html("你输入的身份证长度或格式错误");
+      return;
+    }
+    if (aCity[parseInt(value.substr(0,2))]==null) {
+      $("#id-card-tip").html("你的身份证地区非法");
+      return;
+    }
+    sBirthday=value.substr(6,4)+"-"+Number(value.substr(10,2))+"-"+Number(value.substr(12,2));
+    var d=new Date(sBirthday.replace(/-/g,"/")) ;
+    if(sBirthday!=(d.getFullYear()+"-"+ (d.getMonth()+1) + "-" + d.getDate())) {
+      $("#id-card-tip").html("身份证上的出生日期非法");
+      return;
+    }
+    for(var i = 17;i>=0;i --) iSum += (Math.pow(2,i) % 11) * parseInt(value.charAt(17 - i),11) ;
+    if(iSum%11!=1) {
+      $("#id-card-tip").html("你输入的身份证号非法");
+      return;
+    }
+    
+  }
+
+  //start-submit------------------------------
+  //get time
+  function fnDate(){
+  var date=new Date();
+  var year=date.getFullYear();//当前年份
+  var month=date.getMonth();//当前月份
+  var data=date.getDate();//天
+  var hours=date.getHours();//小时
+  var minute=date.getMinutes();//分
+  var second=date.getSeconds();//秒
+  var time=year+"年"+fnW((month+1))+"月"+fnW(data)+"日"+fnW(hours)+":"+fnW(minute)+":"+fnW(second);
+
+  return time;
+  }
+  function fnW(str){
+  var num;
+
+  str>10?num=str:num="0"+str;
+  return num;
+  } 
+  var $modal = $.modalInit('.modal');
+  $('.modal').css({
+    "opacity": .5,
+    "filter": "alpha(opacity=50)",
+    'background-color' : 'rgb(255,255,255)'
+  });
+  $('#btn-submit').click(function(){
+    var error = false;
+    var value = $("#name").val();
+    if (value == "") {
+      $("#name-tip").html("请输入您的姓名");
+      error = true;
+    }
+    else if (!value.match(/^[\u4e00-\u9fa5]{1,10}$/)){
+      $("#name-tip").html("姓名格式不正确！请重新输入");
+       error = true;
+    }
+    var oId = $("#id-card").val();
+    var iSum = 0; 
+    sBirthday=oId.substr(6,4)+"-"+Number(oId.substr(10,2))+"-"+Number(oId.substr(12,2));
+    var d=new Date(sBirthday.replace(/-/g,"/")) ;
+    for(var i = 17;i>=0;i --) iSum += (Math.pow(2,i) % 11) * parseInt(oId.charAt(17 - i),11) ;
+    if (oId == "") {
+      $("#id-card-tip").html("请输入您的身份证号码");
+      error = true;
+    }
+    else if (!/^\d{17}(\d|x)$/i.test(oId)){
+      $("#id-card-tip").html("你输入的身份证长度或格式错误");
+      error = true;
+    }
+    else if (aCity[parseInt(oId.substr(0,2))]==null) {
+      $("#id-card-tip").html("你的身份证地区非法");
+      error = true;
+    }
+    else if(sBirthday!=(d.getFullYear()+"-"+ (d.getMonth()+1) + "-" + d.getDate())) {
+      $("#id-card-tip").html("身份证上的出生日期非法");
+      error = true;
+    }
+    else if(iSum%11!=1) {
+      $("#id-card-tip").html("你输入的身份证号非法");
+      error = true;
+    }
+
+  //ajax 操作-------------------------
+    if (error) {
+      $modal.show();
+      $('#loading').show();
+      //if (如果提交成功) {
+      $(".prompt, .login").hide();
+      $(".time").html(fnDate());
+      $(".prompt-ok").show();
+      var sNameLast=value.charAt(value.length - 1);
+      var sNameStr=value.substring(0,value.length-1);
+      var sNameStr=sNameStr.replace(/./g,'*');
+      var sName=sNameStr+sNameLast;
+      var reg4 = /(\d{5})(\d{3})(\d{2})(\d{2})(\d{2})(\d{3})/;  
+      oId = oId.replace(reg4,"$1********$6");  
+      $('.person-name-2').html(sName);
+      $('.person-id-2').html(oId);
+   //} else {
+      $(".prompt, .login").hide();
+      $.popup('#pop-warning-1');
+    //}
+    }
+
+  });
+ //end-submit------------------------------
 
   $('.pop-window').find('.close').click(function(){
     $(this).parents('.pop-window').hide();
@@ -380,6 +516,7 @@ $(function(){
     $(this).parents('.pop-window').hide();
     $modal.hide();
   });
+
 });
 </script>
 </body>
