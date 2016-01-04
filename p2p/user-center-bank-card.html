@@ -182,11 +182,15 @@
                   </div>
                 </td>
               </tr>
+
               <tr>
                 <td width="10%" align="right"><span class="f-14">银行卡号</span></td>
                 <td>
                   <div class="inp-box">
-                    <input type="text" class="bank-num f-20" />
+                    <input type="text" class="bank-num f-20" id="bank-number" />
+                  </div>
+                  <div class="ml-10  pull-left warning-card-box">
+                    <span id="warning-card" class="warning-card cl-red"></span>
                   </div>
                 </td>
               </tr>
@@ -194,9 +198,10 @@
                 <td width="20%" align="right"><span class="f-14">手机验证码</span></td>
                 <td class="validation">
                   <div class="verify">
-                    <input type="text" class="f-20" />
+                    <input id="phonenum" type="text" class="f-20" />
                   </div>
-                  <button type="button" class="">获取短信验证码</button>
+                  <span id="warning-card-1" class="cl-red"></span>
+                  <input id="second" type="button"  value="获取短信验证"/>
                 </td>
               </tr>
               <tr>
@@ -274,6 +279,12 @@
     </div>
   </div>
 </div><!-- /.footer -->
+
+<div class="modal"></div>
+<img id="loading" src="images/user/loading.gif" height="32" width="32" alt="">
+<div id="pop-warning-1" class=" ">
+  <div class="binding-ok"><i></i>绑定成功</div>
+</div><!-- /.pop-window -->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/app.js"></script>
 <script>
@@ -302,6 +313,10 @@ $(function(){
   $(this).css('color','#e13932');
   $(this).parent().css("border","1px solid #e13932");
   });
+
+  var ok1=false;
+  var ok2=false;
+  var ok3=false;
   /* 银行选择 */
   $(".bank-img").click(function(){
     var bankName = $(this).attr("class").split(" ");
@@ -322,11 +337,68 @@ $(function(){
     }
   });
 
-  /* 柜台/ATM汇款 发送短信 */
-  $(".message-send-btn").click(function(){
-    $(this).hide();
-    $(this).siblings(".message-sended").show();
+  $("#bank-number").focusin(function() {
+     $("#warning-card").text("");
+  }).focusout(function() {
+    var bankNumber = ($(this).val()).replace(/\s/g,'');
+    if(bankNumber == ""){
+      $("#warning-card").text("请填写银行卡!");
+      return;
+    }
+    if(bankNumber.length > 19 || bankNumber.length < 16){
+      $("#warning-card").text("银行卡号长度为16-19位！");
+      return;
+    } 
   });
+ 
+
+   
+
+ 
+  /* 验证码验证*/
+  $("#phonenum").blur(function() {
+    var value=$.trim($(this).val());
+    var code =123;
+    if (value == '') {
+      $("#warning-card-1").html('验证码不能为空');
+      return ;
+    } else {
+      $("#warning-card-1").text("")
+    }
+    if ( value != code) {
+      $("#warning-card-1").html ('验证码错误,请重新输入');
+       return ;
+    } else {
+      $("#warning-card-1").text("");
+    } 
+  });
+
+  //发送验证码
+  var wait=60; 
+  function time(o) { 
+    if (wait == 0) { 
+    o.removeAttribute("disabled"); 
+    o.value="获取短信验证"; 
+    wait = 60; 
+  } else { 
+      o.setAttribute("disabled", true); 
+      o.value="重新发送(" + wait + ")"; 
+      wait--; 
+      setTimeout(function() { 
+      time(o) 
+      },1000) 
+    } 
+  } 
+  $("#second").click (function() {
+    time(this);
+  }); 
+
+  //submit
+  $(".submit").click(function() {
+  alert()
+    
+  });
+  
 });
 </script>
 </body>

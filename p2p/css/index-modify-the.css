@@ -1,0 +1,15 @@
+@charset 'uft-8';
+.ic-column-chart,
+.ic-piggy,
+.ic-shield {
+  position: relative;
+}
+.ic-column-chart {
+  left: 22px;
+}
+.ic-piggy {
+  left: 34px;
+}
+.ic-shield {
+  left: 26px;
+}

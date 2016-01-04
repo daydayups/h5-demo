@@ -146,7 +146,7 @@
           <div class="article-content3-div">
             <div class="ac-title">
               <span class="ac-title-icon ac-title-icon-open" id="it"></span>
-              <span class="">如何充值?</span>
+              <span class="ac-title-icon-1">如何充值?</span>
             </div>
             <div class="ac-title-answer ac-title-show">
               <p>答：可以通过网上银行或易宝支付账户进行充值，目前所有的商业银行都支持个人网银业务，您
@@ -161,7 +161,7 @@
           <div class="article-content3-div">
             <div class="ac-title">
               <span class="ac-title-icon"></span>
-              <span class="">如何如何开始理财投资？</span>
+              <span class="ac-title-icon-1">如何如何开始理财投资？</span>
             </div>
             <div class="ac-title-answer">
                 <p>（1）	投资前请认真阅读该笔借款标的详细信息，以确定您所要投资的项目符合您的理财时间规划和您所要求的投资回报率；</p>
@@ -172,7 +172,7 @@
           <div class="article-content3-div">
             <div class="ac-title">
               <span class="ac-title-icon"></span>
-              <span>如何提现？</span>
+              <span class="ac-title-icon-1">如何提现？</span>
             </div>
             <div class="ac-title-answer">
                 <p>（1）您可以随时将您在“本平台”账户中的可用余额申请提现到您名下的任何一家银行的账号上;</p>
@@ -184,7 +184,7 @@
           <div class="article-content3-div">
             <div>
               <span class="ac-title-icon"></span>
-              <span>如何修改密码？</span>
+              <span class="ac-title-icon-1">如何修改密码？</span>
             </div>
             <div class="ac-title-answer">
               <p>注册后，您可以随时在“我的账户”-账户密码/”中修改您的密码。如登录密码忘记，可再登录页面选择找回密码。</p>
@@ -194,7 +194,7 @@
           <div  class="article-content3-div">
             <div>
               <span class="ac-title-icon"></span>
-              <span class="ac-title-ask">如何更换绑定的银行卡？</span>
+              <span class="ac-title-ask ac-title-icon-1">如何更换绑定的银行卡？</span>
             </div>
             <div class="ac-title-answer">
               <p>当您所绑定的银行卡遗失、被盗、过期、忘记密码等原因要更换所绑定的银行卡时为了您的资金安全，请拨打热线: 400-638-0808,或请按以下步骤更改银行卡:</p>
@@ -212,7 +212,7 @@
           <div class="article-content3-div">
             <div class="ac-title">
               <span class="ac-title-icon"></span>
-              <span>投标之前需要注意哪些事项？</span>
+              <span class="ac-title-icon-1">投标之前需要注意哪些事项？</span>
             </div>
             <div class="ac-title-answer">
               <p>对于投资用户，投资前需要您先通过实名认证，即可安心在本平台进行投资。</p>
@@ -221,7 +221,7 @@
           <div class="article-content3-div">
             <div class="ac-title">
               <span class="ac-title-icon"></span>
-              <span>投资时有没有相关费用？</span>
+              <span class="ac-title-icon-1">投资时有没有相关费用？</span>
             </div>
             <div class="ac-title-answer">
               <p>在投资人收到借款标的回款时，投资人使用回款提现是完全免费的。</p>
@@ -231,7 +231,7 @@
           <div class="article-content3-div">
             <div class="ac-title">
               <span class="ac-title-icon"></span>
-              <span>投资收益何时开始计算？</span>
+              <span class="ac-title-icon-1">投资收益何时开始计算？</span>
             </div>
             <div class="ac-title-answer">
               <p>（1）所参与投标的借款已借款完成的当日开始计算利息;</p>
@@ -310,7 +310,7 @@
 <script>
 $(function(){
   $(".ac-title-answer").eq(0).show();
-  $(".ac-title-icon").click(function(){
+  $(".ac-title-icon,.ac-title-icon-1").bind('click',function(){
     var $currAnswer = $(this).parent().siblings(".ac-title-answer");
     $(".ac-title-answer").not($currAnswer).slideUp();
     $currAnswer.slideToggle();
