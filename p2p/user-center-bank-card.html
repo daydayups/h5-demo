@@ -350,26 +350,20 @@ $(function(){
       return;
     } 
   });
- 
 
-   
-
- 
   /* 验证码验证*/
-  $("#phonenum").blur(function() {
+  $("#phonenum").focusin(function() {
+     $("#warning-card-1").text("");
+  }).focusout(function() {
     var value=$.trim($(this).val());
     var code =123;
     if (value == '') {
       $("#warning-card-1").html('验证码不能为空');
       return ;
-    } else {
-      $("#warning-card-1").text("")
-    }
+    } 
     if ( value != code) {
       $("#warning-card-1").html ('验证码错误,请重新输入');
        return ;
-    } else {
-      $("#warning-card-1").text("");
     } 
   });
 
@@ -395,8 +389,34 @@ $(function(){
 
   //submit
   $(".submit").click(function() {
-  alert()
-    
+   var error = false;
+   var value=$.trim($("#phonenum").val());
+   var code =123;
+   if (value == '') {
+     $("#warning-card-1").html('验证码不能为空');
+     error = true;
+   } 
+   else if ( value != code) {
+     $("#warning-card-1").html ('验证码错误,请重新输入');
+       error = true;
+   }
+   var bankNumber = ($("#bank-number").val()).replace(/\s/g,'');
+   if(bankNumber == ""){
+     $("#warning-card").text("请填写银行卡!");
+      error = true;
+   }
+   else if(bankNumber.length > 19 || bankNumber.length < 16){
+     $("#warning-card").text("银行卡号长度为16-19位！");
+      error = true;
+   } 
+   if (!error) {
+      $modal.show();
+      var jqXHR = $.ajax({
+        url: "real-name1.html",
+        data: {
+          bankNumber : $('#bank-number').val(),
+        }
+      });  
   });
   
 });

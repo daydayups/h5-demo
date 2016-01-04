@@ -124,7 +124,7 @@
             <div class="share clearfix">
               <div class="share-link ">
                 <h1>复制邀请链接发给好友</h1>
-                <p><a href="#">复制邀请链接</a><input type="text" value="https://www.facaijin.com/asdfasdf"></p>
+                <p><a class="copy" href="#">复制邀请链接</a><input class="url" type="text" value="https://www.facaijin.com/asdfasdf"></p>
               </div>
               <div class="share-social">
                 <h1>复制邀请链接发给好友</h1>
@@ -428,6 +428,15 @@ $(function(){
     $(this).parents('.pop-window').hide();
     $modal.hide();
   });
+
+  //copy url
+  $(".copy").click(function () {
+    $(".url").select();
+    $(".url").focus();
+    document.execCommand("Copy");
+      alert("已复制到剪贴板"); 
+   
+  })
 });
 </script>
 </body>
