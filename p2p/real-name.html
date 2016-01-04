@@ -346,9 +346,6 @@
 <script>
 $(function(){
 
-  //tab-red-packet
-  $.switchTabs(".switch-tab-wrap li", ".switch-tab-page", 'curr');
-
   $("input:text").focus(function() {
   $(this).parent().css("border","1px solid blue");
   });
@@ -364,7 +361,6 @@ $(function(){
     $("#name-tip").html("");
   }).focusout(function() {
     name('#name');
-    ok1=true;
   });
 
   function name (id) {
@@ -395,7 +391,7 @@ $(function(){
     $(id).val(value);
     if (value == "") {
       $("#id-card-tip").html("请输入您的身份证号码");
-      return;
+      return ;
     }
     if (!/^\d{17}(\d|x)$/i.test(value)){
       $("#id-card-tip").html("你输入的身份证长度或格式错误");
@@ -446,6 +442,11 @@ $(function(){
     'background-color' : 'rgb(255,255,255)'
   });
   $('#btn-submit').click(function(){
+    $(document).ajaxStart(function () {
+       $("#loading").show();
+    }).ajaxStop(function () {
+       $("#loading").hide();
+    });
     var error = false;
     var value = $("#name").val();
     if (value == "") {
@@ -483,26 +484,39 @@ $(function(){
     }
 
   //ajax 操作-------------------------
-    if (error) {
+    if (!error) {
       $modal.show();
-      $('#loading').show();
-      //if (如果提交成功) {
-      $(".prompt, .login").hide();
-      $(".time").html(fnDate());
-      $(".prompt-ok").show();
-      var sNameLast=value.charAt(value.length - 1);
-      var sNameStr=value.substring(0,value.length-1);
-      var sNameStr=sNameStr.replace(/./g,'*');
-      var sName=sNameStr+sNameLast;
-      var reg4 = /(\d{5})(\d{3})(\d{2})(\d{2})(\d{2})(\d{3})/;  
-      oId = oId.replace(reg4,"$1********$6");  
-      $('.person-name-2').html(sName);
-      $('.person-id-2').html(oId);
-   //} else {
-      $(".prompt, .login").hide();
-      $.popup('#pop-warning-1');
-    //}
-    }
+      var jqXHR = $.ajax({
+        url: "real-name11.html",
+        data: $.param({
+          name : $('#name').val(),
+          idCard : $('#id-card').val()
+        })
+      });
+      jqXHR.done(function(response) {
+        $modal.hide();
+        $(".prompt, .login").hide();
+        $(".time").html(fnDate());
+        $(".prompt-ok").show();
+        var sNameLast=value.charAt(value.length - 1);
+        var sNameStr=value.substring(0,value.length-1);
+        var sNameStr=sNameStr.replace(/./g,'*');
+        var sName=sNameStr+sNameLast;
+        var reg4 = /(\d{5})(\d{3})(\d{2})(\d{2})(\d{2})(\d{3})/;  
+        oId = oId.replace(reg4,"$1********$6");  
+        $('.person-name-2').html(sName);
+        $('.person-id-2').html(oId);
+      });
+      jqXHR.fail(function() {
+         $.popup('#pop-warning-1');
+       });
+      $(document).ajaxStart(function () {
+         $("#loading").show();
+      }).ajaxStop(function () {
+         $("#loading").hide();
+      });
+    } 
+   
 
   });
  //end-submit------------------------------
