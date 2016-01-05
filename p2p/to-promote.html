@@ -148,12 +148,12 @@
             <div class="has-invited">
               <table>
                 <thead>
-                  <tr  class="friend">
+                  <tr class="friend">
                     <th colspan="4">已邀请好友</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <!-- <tr>
                     <th >被推荐用户</th>
                     <th >注册时间</th>
                     <th>是否投资</th>
@@ -176,11 +176,20 @@
                     <td>2015.12.12 12:12:12</td>
                     <td>未投资</td>
                     <td>尚未获得</td>
-                  </tr>
+                  </tr> -->
                 </tbody>
+                <tfoot>
+                  <tr>
+                    <th>
+                      <div class="no-friend">
+                        您还没有邀请好友，赶快去邀请吧~
+                      </div>
+                    </th>
+                  </tr>
+                </tfoot>
               </table>
 
-              <div class="pagination clearfix mt-20 mb-20 ml-20">
+              <!-- <div class="pagination clearfix mt-20 mb-20 ml-20">
                 <a class="pre mr-10" href="#">上一页</a>
                 <ul>
                   <li class="item active"><a href="#">1</a></li>
@@ -190,7 +199,7 @@
                   <li class="item"><a href="#">13</a></li>
                 </ul>
                 <a class="next" href="#">下一页</a>
-              </div><!-- /.pagination -->
+              </div><!-- /.pagination --> 
             </div><!-- /.has-invited -->
 
           </div><!-- /.order-list -->
@@ -435,7 +444,6 @@ $(function(){
     $(".url").focus();
     document.execCommand("Copy");
       alert("已复制到剪贴板"); 
-   
   })
 });
 </script>
