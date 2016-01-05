@@ -4430,9 +4430,9 @@ img.verify-img {
   height: 60px;
   margin-left: 10px;
 }
-.inp-x input {
+.name-box input {
   width: 245px;
-  text-indent: 15px;
+  text-indent: 15px; 
 }
 .present-box .col-3 {
   width: 278px;
