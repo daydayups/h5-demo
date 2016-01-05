@@ -105,11 +105,11 @@
         <div class="main-content">
           <div class="order-list mt-20">
             <div class="prompt">
-              <p><i></i>认证信息将用于签订购买协议及提现，认证成功后不可修改</p>
+              <p><i class="ic-warning-small-y"></i>认证信息将用于签订购买协议及提现，认证成功后不可修改</p>
               <p>重要提示：使用非本人身份信息认证将不可提现，请使用本人身份信息进行认证。</p>
             </div>
             <div class="prompt-ok">
-              <p class="certification-time"><i></i>您已完成实名认证<span class="time"></span></p>
+              <p class="certification-time"><i class="ic-warning-small-g"></i>您已完成实名认证<span class="time"></span></p>
               <h2>您的实名信息</h2>
               <p class="person-name"><span class="person-name-1">姓名</span><span class="person-name-2"></span></p>
               <p class="person-id"><span class="person-id-1">身份证号码</span><span class="person-id-2"></span></p>
@@ -130,6 +130,7 @@
                         <span id="name-tip" class="cl-red"></span>
                       </td>
                     </tr>
+                  
                     <tr class="">
                       <td class="col-1"><span class="f-14">身份证号码</span></td>
                       <td class="col-2">
@@ -355,6 +356,7 @@ $(function(){
   $(this).parent().css("border","1px solid #e13932");
   });
   
+  //验证
   //姓名验证
   $("#name").focusin(function() {
     $("#name-tip").html("");
@@ -464,25 +466,29 @@ $(function(){
     if (oId == "") {
       $("#id-card-tip").html("请输入您的身份证号码");
       error = true;
-    } else if (!/^\d{17}(\d|x)$/i.test(oId)){
+    }
+    else if (!/^\d{17}(\d|x)$/i.test(oId)){
       $("#id-card-tip").html("你输入的身份证长度或格式错误");
       error = true;
-    } else if (aCity[parseInt(oId.substr(0,2))]==null) {
+    }
+    else if (aCity[parseInt(oId.substr(0,2))]==null) {
       $("#id-card-tip").html("你的身份证地区非法");
       error = true;
-    } else if(sBirthday!=(d.getFullYear()+"-"+ (d.getMonth()+1) + "-" + d.getDate())) {
+    }
+    else if(sBirthday!=(d.getFullYear()+"-"+ (d.getMonth()+1) + "-" + d.getDate())) {
       $("#id-card-tip").html("身份证上的出生日期非法");
       error = true;
-    } else if(iSum%11!=1) {
+    }
+    else if(iSum%11!=1) {
       $("#id-card-tip").html("你输入的身份证号非法");
       error = true;
     }
 
   //ajax 操作-------------------------
-    if (error) {
+    if (!error) {
       $modal.show();
       var jqXHR = $.ajax({
-        url: "real-name11.html",
+        url: "real-name.html",
         data: $.param({
           name : $('#name').val(),
           idCard : $('#id-card').val()
