@@ -344,6 +344,7 @@
 </div><!-- /.pop-window -->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/app.js"></script>
+<script src="js/id-verify.js"></script>
 <script>
 $(function(){
 
@@ -355,8 +356,7 @@ $(function(){
   $(this).css('color','#e13932');
   $(this).parent().css("border","1px solid #e13932");
   });
-  
-  //验证
+
   //姓名验证
   $("#name").focusin(function() {
     $("#name-tip").html("");
@@ -377,44 +377,31 @@ $(function(){
     }
   }
   //身份证验证
-  var aCity = {
-    11:"北京",12:"天津",13:"河北",14:"山西",15:"内蒙古",21:"辽宁",22:"吉林",23:"黑龙江",31:"上海",32:"江苏",33:"浙江",34:"安徽",35:"福建",36:"江西",37:"山东",41:"河南",42:"湖北",43:"湖南",44:"广东",45:"广西",46:"海南",50:"重庆",51:"四川",52:"贵州",53:"云南",54:"西藏",61:"陕西",62:"甘肃",63:"青海",64:"宁夏",65:"新疆",71:"台湾",81:"香港",82:"澳门",91:"国外"
-  }
+  var warning = {
+    check: [
+      '请填写真实姓名',
+      '请输入中文',
+      '请输入身份证号',
+      '身份证号码格式不正确'
+    ],
+    error: [
+      '身份验证失败',
+      '该身份证已被其他用户使用',
+      '网络错误'
+    ]
+  };
   $("#id-card").focusin(function() {
-    $("#id-card-tip").html("");
+  $("#id-card-tip").html("");
   }).focusout(function() {
-    idCard('#id-card');
+    var idCard = $.trim($("#id-card").val());
+    if (idCard == '') {
+      $("#id-card-tip").text(warning.check[2]);
+      return;
+    } else if (!IdCardValidate(idCard)) {
+      $("#id-card-tip").text(warning.check[3]);
+      return;
+    } 
   });
-
-  function idCard (id) {
-    var value = $.trim($(id).val());
-    var iSum = 0; 
-    $(id).val(value);
-    if (value == "") {
-      $("#id-card-tip").html("请输入您的身份证号码");
-      return ;
-    }
-    if (!/^\d{17}(\d|x)$/i.test(value)){
-      $("#id-card-tip").html("你输入的身份证长度或格式错误");
-      return;
-    }
-    if (aCity[parseInt(value.substr(0,2))]==null) {
-      $("#id-card-tip").html("你的身份证地区非法");
-      return;
-    }
-    sBirthday=value.substr(6,4)+"-"+Number(value.substr(10,2))+"-"+Number(value.substr(12,2));
-    var d=new Date(sBirthday.replace(/-/g,"/")) ;
-    if(sBirthday!=(d.getFullYear()+"-"+ (d.getMonth()+1) + "-" + d.getDate())) {
-      $("#id-card-tip").html("身份证上的出生日期非法");
-      return;
-    }
-    for(var i = 17;i>=0;i --) iSum += (Math.pow(2,i) % 11) * parseInt(value.charAt(17 - i),11) ;
-    if(iSum%11!=1) {
-      $("#id-card-tip").html("你输入的身份证号非法");
-      return;
-    }
-    
-  }
 
   //start-submit------------------------------
   //get time
@@ -458,31 +445,14 @@ $(function(){
       $("#name-tip").html("姓名格式不正确！请重新输入");
        error = true;
     }
-    var oId = $("#id-card").val();
-    var iSum = 0; 
-    sBirthday=oId.substr(6,4)+"-"+Number(oId.substr(10,2))+"-"+Number(oId.substr(12,2));
-    var d=new Date(sBirthday.replace(/-/g,"/")) ;
-    for(var i = 17;i>=0;i --) iSum += (Math.pow(2,i) % 11) * parseInt(oId.charAt(17 - i),11) ;
-    if (oId == "") {
-      $("#id-card-tip").html("请输入您的身份证号码");
-      error = true;
-    }
-    else if (!/^\d{17}(\d|x)$/i.test(oId)){
-      $("#id-card-tip").html("你输入的身份证长度或格式错误");
-      error = true;
-    }
-    else if (aCity[parseInt(oId.substr(0,2))]==null) {
-      $("#id-card-tip").html("你的身份证地区非法");
-      error = true;
-    }
-    else if(sBirthday!=(d.getFullYear()+"-"+ (d.getMonth()+1) + "-" + d.getDate())) {
-      $("#id-card-tip").html("身份证上的出生日期非法");
-      error = true;
-    }
-    else if(iSum%11!=1) {
-      $("#id-card-tip").html("你输入的身份证号非法");
-      error = true;
-    }
+    var idCard = $.trim($("#id-card").val());
+    if (idCard == '') {
+      $("#id-card-tip").text(warning.check[2]);
+       error = true;
+    } else if (!IdCardValidate(idCard)) {
+      $("#id-card-tip").text(warning.check[3]);
+       error = true;
+    } 
 
   //ajax 操作-------------------------
     if (!error) {
@@ -504,9 +474,9 @@ $(function(){
         var sNameStr=sNameStr.replace(/./g,'*');
         var sName=sNameStr+sNameLast;
         var reg4 = /(\d{5})(\d{3})(\d{2})(\d{2})(\d{2})(\d{3})/;  
-        oId = oId.replace(reg4,"$1********$6");  
+        idCard = idCard.replace(reg4,"$1********$6");  
         $('.person-name-2').html(sName);
-        $('.person-id-2').html(oId);
+        $('.person-id-2').html(idCard);
       });
       jqXHR.fail(function() {
          $.popup('#pop-warning-1');
