@@ -99,118 +99,17 @@
       <!-- 用户的操作界面 -->
 
       <div class="user-main">
-        <div class="main-title clearfix">
-          <p class="f-16"><a class="back" href="#">&lt;返回</a>&nbsp;&nbsp;&nbsp;添加银行卡
-          </p>
-          <p class="open-account"><span class="open-account-name">开户姓名*飞</span><span class="add-card">请添加相同开户名的银行卡</span></p>
+        <div class="main-title clearfix border-none">
+          <p class="f-16">我的银行卡</p>
+          <span class="unbounded">提现需绑定银行卡，您尚未绑定银行卡 </span>
         </div>
         <div class="main-content">
-          <!-- 网银支付 -->
-          <div class="mt-40">
-            <table class="form-table" cellspacing="20">
-              <tr>
-                <td align="right"><span class="f-14">银 行</span></td>
-                <td>
-                  <div class="inp-box clearfix">
-                    <div class="bank-inp">
-                      <span class="f-14 cl-153">请选择银行</span>
-                    </div>
-                    <div class="bank-trigger">
-                      <span class="trigger-text cl-blue">收 起</span>
-                      <span class="trigger-arrow ml-10"></span>
-                    </div>
-                  </div>
-                  <!-- 为了固定表格宽度 -->
-                  <div style="width: 617px;"></div>
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>
-                  <div class="bank-list" >
-                    <p class="f-14 cl-153">网银支付<span class="ml-10">需要开通网上银行</span></p>
-
-                    <table class="bank-list-table mt-10" border="1" cellspacing="0">
-                      <tr>
-                        <td>
-                          <div class="bank-img ICBC"></div>
-                        </td>
-                        <td>
-                          <div class="bank-img ABC"></div>
-                        </td>
-                        <td>
-                          <div class="bank-img CCB"></div>
-                        </td>
-                        <td>
-                          <div class="bank-img BOCO"></div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="bank-img CIB"></div>
-                        </td>
-                        <td>
-                          <div class="bank-img CMBC"></div>
-                        </td>
-                        <td>
-                          <div class="bank-img CEB"></div>
-                        </td>
-                        <td>
-                          <div class="bank-img BOC"></div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="bank-img ECITIC"></div>
-                        </td>
-                        <td>
-                          <div class="bank-img GDB"></div>
-                        </td>
-                        <td>
-                          <div class="bank-img HXB"></div>
-                        </td>
-                        <td>
-                          <div class="bank-img CMBCHINA"></div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="bank-img POST"></div>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td width="10%" align="right"><span class="f-14">银行卡号</span></td>
-                <td>
-                  <div class="inp-box">
-                    <input type="text" class="bank-num f-20" id="bank-number" />
-                  </div>
-                  <div class="ml-10  pull-left warning-card-box">
-                    <span id="warning-card" class="warning-card cl-red"></span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td width="20%" align="right"><span class="f-14">手机验证码</span></td>
-                <td class="validation">
-                  <div class="verify">
-                    <input id="phonenum" type="text" class="f-20" />
-                  </div>
-                  <span id="warning-card-1" class="cl-red"></span>
-                  <input id="second" type="button"  value="获取短信验证"/>
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td><button type="submit" class="submit">提交</button></td>
-              </tr>
-            </table>
+          <a class="bind-card-number" href="user-center-bank-card-part.html"><i class="ic-warning-small-t"></i>绑定提现银行卡</a>
+          <div class="bind-card-number-1">
+            <div  class="bank-img ICBC bank-img-1"></div>
+            <p class="card-number"></p>
+            <p class="time-box"><span class="add-time">1111</span><a class="modify-the" href="user-center-bank-card-part.html">修改</a></p>
           </div>
-          <!-- 网银支付 结束 -->
         </div>
       </div>
       <!-- 用户的操盘界面 结束 -->
@@ -280,134 +179,37 @@
   </div>
 </div><!-- /.footer -->
 
-<div class="modal"></div>
-<img id="loading" src="images/user/loading.gif" height="32" width="32" alt="">
-<div id="pop-warning-1" class=" ">
-  <div class="binding-ok"><i></i>绑定成功</div>
-</div><!-- /.pop-window -->
+<div class="modal mask"></div>
+<span class=" binding-box"><i class="ic-warning-small-ok"></i>绑定成功</span>
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/app.js"></script>
 <script>
 $(function(){
+  $(".mask").hide();
+  $(".binding-box").hide();
 
-  /* 隐藏/显示 bank-list */
-  var flag = false;
-  $(".bank-trigger").click(function(){
-    $(this).find(".trigger-arrow").toggleClass("down");
-    $(".bank-list").parents("tr").toggle();
-    if (flag) {
-      $(".bank-trigger").find(".trigger-text").html("收 起");
-      flag = false;
-    } else {
-      $(".bank-trigger").find(".trigger-text").html("更换银行卡");
-      flag = true
-    }
-  });
+  //get time
+  function fnDate(){
+  var date=new Date();
+  var year=date.getFullYear();//当前年份
+  var month=date.getMonth();//当前月份
+  var data=date.getDate();//天
+  var time=year+"-"+fnW((month+1))+"-"+fnW(data);
 
-  $("input:text").focus(function() {
-  $(this).parent().css("border","1px solid blue");
-  });
-
-  $("input:text").blur(function() {
-  $(this).css('color','#e13932');
-  $(this).parent().css("border","1px solid #e13932");
-  });
-
-  /* 银行选择 */
-  $(".bank-img").click(function(){
-    var bankName = $(this).attr("class").split(" ");
-//        var bankName = $(this).attr("class").split(" ")[1];
-//        console.info("bankName[1]: " + bankName[1]);
-    $(".bank-inp").html("<div class='" + bankName[0]+ " " + bankName[1] +"'></div>")
-  });
-
-  /* 银行卡号验证 */
-  $(".bank-num").keyup(function() {
-    var flag =  /\d$/g.test($(this).val().replace(/\s/g,''));//只能输入数字
-    if(flag == true) {
-      var value = $(this).val().replace(/\s/g,'').replace(/(\d{4})(?=\d)/g,"$1 ");
-      $(this).val(value);
-    } else {
-      this.value = this.value.replace(/[^\d.]/g,"");
-      this.value = this.value.replace("$#$").replace(/\./g,"").replace("$#$",".");
-    }
-  });
-
-  $("#bank-number").focusin(function() {
-     $("#warning-card").text("");
-  }).focusout(function() {
-    var bankNumber = ($(this).val()).replace(/\s/g,'');
-    if(bankNumber == ""){
-      $("#warning-card").text("请填写银行卡!");
-      return;
-    }
-    if(bankNumber.length > 19 || bankNumber.length < 16){
-      $("#warning-card").text("银行卡号长度为16-19位！");
-      return;
-    } 
-  });
-
-  /* 验证码验证*/
-  $("#phonenum").focusin(function() {
-     $("#warning-card-1").text("");
-  }).focusout(function() {
-    var value=$.trim($(this).val());
-    var code =123;
-    if (value == '') {
-      $("#warning-card-1").html('验证码不能为空');
-      return ;
-    } 
-    if ( value != code) {
-      $("#warning-card-1").html ('验证码错误,请重新输入');
-       return ;
-    } 
-  });
-
-  //发送验证码
-  var wait=60; 
-  function time(o) { 
-    if (wait == 0) { 
-    o.removeAttribute("disabled"); 
-    o.value="获取短信验证"; 
-    wait = 60; 
-  } else { 
-      o.setAttribute("disabled", true); 
-      o.value="重新发送(" + wait + ")"; 
-      wait--; 
-      setTimeout(function() { 
-      time(o) 
-      },1000) 
-    } 
+  return time;
+  }
+  function fnW(str){
+  var num;
+  str>10?num=str:num="0"+str;
+  return num;
   } 
-  $("#second").click (function() {
-    time(this);
-  }); 
-
-  //submit
-  $(".submit").click(function() {
-    var error = false;
-    var value=$.trim($("#phonenum").val());
-    var code =123;
-    if (value == '') {
-     $("#warning-card-1").html('验证码不能为空');
-     error = true;
-    } 
-    else if ( value != code) {
-     $("#warning-card-1").html ('验证码错误,请重新输入');
-       error = true;
-    }
-    var bankNumber = ($("#bank-number").val()).replace(/\s/g,'');
-    if(bankNumber == ""){
-     $("#warning-card").text("请填写银行卡!");
-      error = true;
-    }
-    else if(bankNumber.length > 19 || bankNumber.length < 16){
-     $("#warning-card").text("银行卡号长度为16-19位！");
-      error = true;
-    } 
-   
-  });
-  
+  var sCardNumber = '33 33 33333 33 33'
+  var pattern = /\s/g; 
+  var result = sCardNumber.replace(pattern,'');
+  var reg = /(.{0}).*(.{4})/; 
+  result = result.replace(reg,"$1**** **** **** $2");   
+  $(".add-time").html('添加日期：'+fnDate());
+  $(".card-number").html(result);
 });
 </script>
 </body>

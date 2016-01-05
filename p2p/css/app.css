@@ -4377,7 +4377,7 @@ img.verify-img {
   width: 18px;
 }
 .ic-warning-small-y {
-  background: url(../images/user/icons.png?v=201512220102) no-repeat -40px -374px;
+  background: url(../images/user/icons.png?v=201512220102) no-repeat -30px -374px;
   background-image: -webkit-image-set( url(../images/user/icons.png?v=2015122201) 1x, url(../images/user/icons@2x.png?v=2015122201) 2x);
   background-size: 350px 400px;
 }
@@ -4385,6 +4385,35 @@ img.verify-img {
   background: url(../images/user/icons.png?v=201512220102) no-repeat -80px -374px;
   background-image: -webkit-image-set( url(../images/user/icons.png?v=2015122201) 1x, url(../images/user/icons@2x.png?v=2015122201) 2x);
   background-size: 350px 400px;
+}
+.ic-warning-small-ok {
+  display: block;
+  position: absolute;
+  left: 25px;
+  top: 17px;
+  height: 50px;
+  width: 50px;
+  background: url(../images/user/iconsx.png) no-repeat 0 0px;
+  background-size: 200px 200px;
+}
+.binding-box {
+  background:#fff;
+  border:1px solid #ccc;
+  border-radius: 4px;
+  color:#343434;
+  display: none;
+  font-size: 20px;
+  text-align: center;
+  text-indent: 40px;
+  line-height: 78px;
+  width: 206px;
+  height: 78px;
+  top:50%;
+  left:50%;
+  margin-left: -102px;
+  margin-top: -39px;
+  position: fixed;
+  z-index: 888;
 }
 .prompt-ok {
   box-sizing:border-box;
@@ -4569,5 +4598,80 @@ img.verify-img {
 }
 .binding-ok {
   background:#f2f2f2;
+}
+.mask {
+  background:rgba(255,255,255,.5);
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  position: fixed;
+}
+.unbounded {
+  display: block;
+  color:#666666;
+}
+.bind-card-number {
+  background:#f6f6f6;
+  line-height: 198px;
+}
+.bind-card-number-1 {
+  background:#fff;
+}
+.bind-card-number-1,
+.bind-card-number {
+  border:1px dashed #dddddd;
+  border-radius:4px;
+  color:#999999;
+  display: block;
+  height: 138px;
+  text-align: center;
+  margin-top: 8px;
+  position: relative;
+  width: 272px;
+}
+.bank-img1 {
+  cursor:default;
+  display: block;
+  margin-top: 13px;
+  margin-left: 16px;
+}
+.bind-card-number:hover {
+  background:#fff;
+  color:#999999;
+  text-decoration: none;
+}
+.card-number {
+  color:#343434; 
+  font-size:18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 14px;
+}
+.ic-warning-small-t {
+  background: url(../images/user/icons.png?v=201512220102) no-repeat -280px -173px;
+  background-image: -webkit-image-set( url(../images/user/icons.png?v=2015122201) 1x, url(../images/user/icons@2x.png?v=2015122201) 2x);
+  background-size: 350px 400px;
+  display: block;
+  left: 102px;
+  top: 21px;
+  height: 53px;
+  position: absolute;
+  width: 66px;
+}
+.bind-card-number-1 p {
+  position: relative;
+}
+.modify-the {
+  color:#518ed1;
+  right:20px;
+  position: absolute;
+}
+.time-box {
+  margin-top: 30px;
+  text-align: left;
+}
+.add-time {
+  margin-left: 20px;
 }
 /* Edit by fang hong hui | end */

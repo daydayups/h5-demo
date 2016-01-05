@@ -347,23 +347,19 @@
 <script src="js/id-verify.js"></script>
 <script>
 $(function(){
-
   $("input:text").focus(function() {
   $(this).parent().css("border","1px solid blue");
   });
-
   $("input:text").blur(function() {
   $(this).css('color','#e13932');
   $(this).parent().css("border","1px solid #e13932");
   });
-
   //姓名验证
   $("#name").focusin(function() {
     $("#name-tip").html("");
   }).focusout(function() {
     name('#name');
   });
-
   function name (id) {
     var value = $.trim($(id).val());
     $(id).val(value);
@@ -402,7 +398,6 @@ $(function(){
       return;
     } 
   });
-
   //start-submit------------------------------
   //get time
   function fnDate(){
@@ -414,12 +409,10 @@ $(function(){
   var minute=date.getMinutes();//分
   var second=date.getSeconds();//秒
   var time=year+"年"+fnW((month+1))+"月"+fnW(data)+"日"+fnW(hours)+":"+fnW(minute)+":"+fnW(second);
-
   return time;
   }
   function fnW(str){
   var num;
-
   str>10?num=str:num="0"+str;
   return num;
   } 
@@ -430,6 +423,11 @@ $(function(){
     'background-color' : 'rgb(255,255,255)'
   });
   $('#btn-submit').click(function(){
+    $(document).ajaxStart(function () {
+       $("#loading").show();
+    }).ajaxStop(function () {
+       $("#loading").hide();
+    });
     var error = false;
     var value = $("#name").val();
     if (value == "") {
@@ -448,54 +446,50 @@ $(function(){
       $("#id-card-tip").text(warning.check[3]);
        error = true;
     } 
-
   //ajax 操作-------------------------
     if (!error) {
       $modal.show();
       var jqXHR = $.ajax({
-        url: "real-name.html",
+        url: "real-name1.html",
         data: $.param({
           name : $('#name').val(),
           idCard : $('#id-card').val()
-        })
+        }),
+        success : function(response) {
+          $modal.hide();
+          $(".prompt, .login").hide();
+          $(".time").html(fnDate());
+          $(".prompt-ok").show();
+          var sNameLast=value.charAt(value.length - 1);
+          var sNameStr=value.substring(0,value.length-1);
+          var sNameStr=sNameStr.replace(/./g,'*');
+          var sName=sNameStr+sNameLast;
+          var reg4 = /(\d{5})(\d{3})(\d{2})(\d{2})(\d{2})(\d{3})/;  
+          idCard = idCard.replace(reg4,"$1********$6");  
+          $('.person-name-2').html(sName);
+          $('.person-id-2').html(idCard);
+        },
+        error : function() {
+          $.popup('#pop-warning-1');
+        }
       });
-      jqXHR.done(function(response) {
-        $modal.hide();
-        $(".prompt, .login").hide();
-        $(".time").html(fnDate());
-        $(".prompt-ok").show();
-        var sNameLast=value.charAt(value.length - 1);
-        var sNameStr=value.substring(0,value.length-1);
-        var sNameStr=sNameStr.replace(/./g,'*');
-        var sName=sNameStr+sNameLast;
-        var reg4 = /(\d{5})(\d{3})(\d{2})(\d{2})(\d{2})(\d{3})/;  
-        idCard = idCard.replace(reg4,"$1********$6");  
-        $('.person-name-2').html(sName);
-        $('.person-id-2').html(idCard);
-      });
-      jqXHR.fail(function() {
-         $.popup('#pop-warning-1');
-       });
       $(document).ajaxStart(function () {
          $("#loading").show();
       }).ajaxStop(function () {
          $("#loading").hide();
       });
     } 
-
+   
   });
  //end-submit------------------------------
-
   $('.pop-window').find('.close').click(function(){
     $(this).parents('.pop-window').hide();
     $modal.hide();
   });
-
   $('.btn-red').click(function(){
     $(this).parents('.pop-window').hide();
     $modal.hide();
   });
-
 });
 </script>
 </body>
