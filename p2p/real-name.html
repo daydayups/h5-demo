@@ -336,7 +336,7 @@
     <span class="close">&times;</span>
   </div>
   <div class="window-body">
-    <h1 class="failure"><i></i>实名认证失败</h1>
+    <h1 class="failure callouts"><i class="ic-warning-small-y"></i>实名认证失败</h1>
     <p class="no-matching">姓名与身份证号码不匹配，请仔细核对并重新输入</p>
     <button class="btn-red  mt-20 affirm" >确定</button>
   </div>
@@ -464,26 +464,22 @@ $(function(){
     if (oId == "") {
       $("#id-card-tip").html("请输入您的身份证号码");
       error = true;
-    }
-    else if (!/^\d{17}(\d|x)$/i.test(oId)){
+    } else if (!/^\d{17}(\d|x)$/i.test(oId)){
       $("#id-card-tip").html("你输入的身份证长度或格式错误");
       error = true;
-    }
-    else if (aCity[parseInt(oId.substr(0,2))]==null) {
+    } else if (aCity[parseInt(oId.substr(0,2))]==null) {
       $("#id-card-tip").html("你的身份证地区非法");
       error = true;
-    }
-    else if(sBirthday!=(d.getFullYear()+"-"+ (d.getMonth()+1) + "-" + d.getDate())) {
+    } else if(sBirthday!=(d.getFullYear()+"-"+ (d.getMonth()+1) + "-" + d.getDate())) {
       $("#id-card-tip").html("身份证上的出生日期非法");
       error = true;
-    }
-    else if(iSum%11!=1) {
+    } else if(iSum%11!=1) {
       $("#id-card-tip").html("你输入的身份证号非法");
       error = true;
     }
 
   //ajax 操作-------------------------
-    if (!error) {
+    if (error) {
       $modal.show();
       var jqXHR = $.ajax({
         url: "real-name11.html",

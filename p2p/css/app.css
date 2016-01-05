@@ -4272,7 +4272,7 @@ img.verify-img {
   width: 100%;
   vertical-align: middle;
 }
-.has-invited tbody {
+.has-invited tr {
   text-align: center;
   box-sizing:border-box;
   -webkit-box-sizing:border-box;
@@ -4285,11 +4285,17 @@ img.verify-img {
   display: block;
   width: 100%;
 }
-.has-invited tbody th,
 .has-invited tbody td {
   width: 24%;
   text-align: center;
   display: inline-block;
+}
+.has-invited tbody th {
+   width: 24%;
+   text-align:left;
+}
+.has-invited tbody td.no-friend {
+  width: 100%;
 }
 .has-invited tr {
   line-height: 38px;
@@ -4304,14 +4310,14 @@ img.verify-img {
   border-bottom:1px solid #ccc;
   width: 100%;
 }
-.no-friend {
+.no-friend div {
   background:#fff;
+  color:#565656;
   font-size: 16px;
   line-height: 132px;
   height: 132px;
 }
 .friend th {
-  border-bottom: 1px solid #ccc;
   font-size: 16px;
   text-align: left;
   text-indent: 20px;
@@ -4330,7 +4336,7 @@ img.verify-img {
   height: 24px;
   float: left;
   background: url(../images/user/icons.png?v=201512220102) no-repeat -111px -15px;
-  background-image: -webkit-image-set( url(../images/user/icons.png?v=2015122201) 1x, url(../images/user/icons@2x.png?v=2015122201) 2x);
+  background-image: -webkit-image-set(url(../images/user/icons.png?v=2015122201) 1x, url(../images/user/icons@2x.png?v=2015122201) 2x);
   background-size: 350px 400px;
   position: absolute;
   left: 22px;
@@ -4462,7 +4468,7 @@ img.verify-img {
   padding-left: 70px;
   position: relative;
 }
-.failure i {
+.callouts .ic-warning-small-y {
   background:url(../images/user/icons@2x.png) -160px -1500px no-repeat;
   background-size:1400px 1600px;
   display: block;
