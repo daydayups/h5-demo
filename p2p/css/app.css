@@ -3895,7 +3895,7 @@ img.verify-img {
 .cost-footer {
   box-sizing:border-box;
   -webkit-box-sizing:border-box;
-  border:1px solid #ccc;
+  border:1px solid #eee;
   border-top:none;
   font-size: 12px;
   height: 40px;
