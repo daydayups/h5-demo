@@ -71,8 +71,8 @@
           </th>
           <th class="col-2"><span></span></th>
           <th class="col-3">
-            <span>2</span>
-            <p>验证手机</p>
+            <span class="">2</span>
+            <p class="">验证手机</p>
           </th>
           <th class="col-4"><span></span></th>
           <th class="col-5">
@@ -84,7 +84,9 @@
     </div>
   </div>
   <!-- 登录表单 -->
-  <div class="inner clearfix mt-30 mb-30">
+
+   <!--第-步-->
+  <div class="inner clearfix mt-30 mb-30 login-box-1">
     <div class="login-left">
       <table width="100%">
         <tr>
@@ -134,10 +136,9 @@
         <tr>
           <td></td>
           <td>
-            <label class="cl-153" for="agree-contract">已有账号？ <a class="cr-blue" href="#" target="_blank">登录</a></label>
+            <label class="cl-153" for="agree-contract">已有账号？<a class="cr-blue" href="#" target="_blank">登录</a></label>
           </td>
           <td align="left">
-            <span id="agree-tip" class="cl-red"></span>
           </td>
         </tr>
         <tr>
@@ -152,31 +153,6 @@
     <div class="login-right">
       <img class="send-red-packet" src="images/send-red-packet.png"  width="282" height="247" alt="">
     </div>
-  </div>
-
-  <div class="inner clearfix ">
-      <table class="form-table phone-verify" cellspacing="20">
-        <tr>
-          <td colspan="4"><p class="reveal">短信验证码已发送到您的手机，15分钟内输入有效，请勿泄露</p></td>
-        </tr>
-        <tr>
-          <td colspan="2"><p class="phone-code">手机号<span class="ml-10">13818895353</span></p></td>
-        </tr>
-        <tr class="rows-3">
-          <td width="20%" align="right"><span class="f-14">验证码</span></td>
-          <td class="validation">
-            <div class="verify" style="border: 1px solid rgb(225, 57, 50);">
-              <input id="phonenum" type="text" class="f-20" style="color: rgb(225, 57, 50);">
-            </div>
-            <span id="warning-card-1" class="cl-red">验证码不能为空</span>
-            <input id="second" type="button" value="获取短信验证">
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><button type="submit" class="submit">完成注册</button></td>
-        </tr>
-      </table>
   </div>
   <!-- 登录表单 结束 -->
 
@@ -295,33 +271,50 @@ $(function() {
   $(this).parent().css("border","1px solid #e13932");
   });
 
-  $("#phone").focus();
-  //发送验证码
-  $(".btn-verify-code").click(function () {
-    $.ajax({
-      url: "<@baseUrl.home />/validate-msg-times",
-      data: {phone: $("#phone").val(),action:1}
-    }).done(function(data) {
-      if (data.success) {
-        if(data.resultMsg >= 3){
-          $(".body-box-one").hide();
-          $(".body-box-two").show();
-          changeCode();
-        }else{
-          sendMsg("0");
-        }
-      }
-    });
+  /* 验证码验证*/
+  $("#phonenum").focusin(function() {
+     $("#warning-card-1").text("");
+  }).focusout(function() {
+    var value=$.trim($(this).val());
+    var code =123;
+    if (value == '') {
+      $("#warning-card-1").html('验证码不能为空');
+      return ;
+    } 
+    if ( value != code) {
+      $("#warning-card-1").html ('验证码错误,请重新输入');
+       return ;
+    } 
   });
 
-  $("#g-verify").click(function(){
-    var validateCode = $("#validateCode").val();
-    if(validateCode.length == 0){
-      $("#validateCode-tip").text("验证码不能为空");
-      return false;
-    }
-    sendMsg(validateCode);
-  });
+  //-------你写的js部分修改--------------------------------------
+  // $("#phone").focus();
+  // //发送验证码
+  // $(".btn-verify-code").click(function () {
+  //   $.ajax({
+  //     url: "<@baseUrl.home />/validate-msg-times",
+  //     data: {phone: $("#phone").val(),action:1}
+  //   }).done(function(data) {
+  //     if (data.success) {
+  //       if(data.resultMsg >= 3){
+  //         $(".body-box-one").hide();
+  //         $(".body-box-two").show();
+  //         changeCode();
+  //       }else{
+  //         sendMsg("0");
+  //       }
+  //     }
+  //   });
+  // });
+
+  // $("#g-verify").click(function(){
+  //   var validateCode = $("#validateCode").val();
+  //   if(validateCode.length == 0){
+  //     $("#validateCode-tip").text("验证码不能为空");
+  //     return false;
+  //   }
+  //   sendMsg(validateCode);
+  // });
 
   /* 关闭操作 */
   $(".btn-close").click(function () {
@@ -332,53 +325,54 @@ $(function() {
       $("#modal").hide();
     }
   });
-  $("#validatePhone").click(function(){
-    var checkCode = $("#inp-verify-code").val();
-    if(checkCode.length==0){
-      $(".warning").show();
-    }
-    var phone = $("input[name='phone']").val();
-    $.ajax({
-      url:"<@baseUrl.home/>/validate-check-code",
-      type:"get",
-      data:{"checkCode":checkCode,"phone":phone,"action":1},
-      async:false,  // 设置同步方式
-      error:function(request){
-        alert("Connection error");
-      },
-      success:function(data){
-        var resultCode = data;
-        switch(resultCode){
-          case 0://成功
-            $("input[name='vcode']").val(checkCode);
-            $("#myform").submit();
-            break;
-          case 1:
-            $("#modal").show().fadeTo(200, 0.2);
-            $("#pop-warning-dynamic .msg-text").html("验证码不能为空");
-            $.fcj.popup("#pop-warning-dynamic");
-            break;
-          case 2:
-            $("#modal").show().fadeTo(200, 0.2);
-            $("#pop-warning-dynamic .msg-text").html("手机号码有误");
-            $.fcj.popup("#pop-warning-dynamic");
-            break;
-          case 3:
-            $("#modal").show().fadeTo(200, 0.2);
-            $("#pop-warning-dynamic .msg-text").html("验证码错误或失效");
-            $.fcj.popup("#pop-warning-dynamic");
-            break;
-          case 4:
-            $("#modal").show().fadeTo(200, 0.2);
-            $("#pop-warning-dynamic .msg-text").html("请求参数有误");
-            $.fcj.popup("#pop-warning-dynamic");
-            break;
-        }
-        event.returnValue=false;
-        return false;
-      }
-    });
-  });
+
+  // $("#validatePhone").click(function(){
+  //   var checkCode = $("#inp-verify-code").val();
+  //   if(checkCode.length==0){
+  //     $(".warning").show();
+  //   }
+  //   var phone = $("input[name='phone']").val();
+  //   $.ajax({
+  //     url:"<@baseUrl.home/>/validate-check-code",
+  //     type:"get",
+  //     data:{"checkCode":checkCode,"phone":phone,"action":1},
+  //     async:false,  // 设置同步方式
+  //     error:function(request){
+  //       alert("Connection error");
+  //     },
+  //     success:function(data){
+  //       var resultCode = data;
+  //       switch(resultCode){
+  //         case 0://成功
+  //           $("input[name='vcode']").val(checkCode);
+  //           $("#myform").submit();
+  //           break;
+  //         case 1:
+  //           $("#modal").show().fadeTo(200, 0.2);
+  //           $("#pop-warning-dynamic .msg-text").html("验证码不能为空");
+  //           $.fcj.popup("#pop-warning-dynamic");
+  //           break;
+  //         case 2:
+  //           $("#modal").show().fadeTo(200, 0.2);
+  //           $("#pop-warning-dynamic .msg-text").html("手机号码有误");
+  //           $.fcj.popup("#pop-warning-dynamic");
+  //           break;
+  //         case 3:
+  //           $("#modal").show().fadeTo(200, 0.2);
+  //           $("#pop-warning-dynamic .msg-text").html("验证码错误或失效");
+  //           $.fcj.popup("#pop-warning-dynamic");
+  //           break;
+  //         case 4:
+  //           $("#modal").show().fadeTo(200, 0.2);
+  //           $("#pop-warning-dynamic .msg-text").html("请求参数有误");
+  //           $.fcj.popup("#pop-warning-dynamic");
+  //           break;
+  //       }
+  //       event.returnValue=false;
+  //       return false;
+  //     }
+  //   });
+  // });
 
   $("#phone").focusin(function() {
     $("#phone-tip").html("");
@@ -398,14 +392,14 @@ $(function() {
       return;
     }
 
-    $.ajax({
-      url: "<@baseUrl.home />/register/validatePhone",
-      data: {phone: $("#phone").val()}
-    }).done(function(data) {
-      if (data == 1) {
-        $("#phone-tip").html("您的手机号码已被注册");
-      }
-    });
+    // $.ajax({
+    //   url: "<@baseUrl.home />/register/validatePhone",
+    //   data: {phone: $("#phone").val()}
+    // }).done(function(data) {
+    //   if (data == 1) {
+    //     $("#phone-tip").html("您的手机号码已被注册");
+    //   }
+    // });
   });
 
   $("#password").focusin(function() {
@@ -471,86 +465,82 @@ $(function() {
       error = true;
     }
 
-    if ($("#agree-contract:checked").val() != 1) {
-      $("#agree-tip").html("同意后才能继续");
-      error = true;
-    } else {
-      $("#agree-tip").html("");
-    }
-
     if (!error) {
-      $.ajax({
-        url: "<@baseUrl.home />/register/validatePhone",
-        data: {phone: $("#phone").val()}
-      }).done(function(data) {
-        if (data == 0) {
-          $("#phone_check_code").text($("#phone").val());
-          $.fcj.popup("#pop-mobile-verify");
-          $("#modal1").show().fadeTo(200, 0.2);
-          $(".body-box-one").show();
-          $(".body-box-two").hide();
-        } else {
-          $("#phone-tip").html("您的手机号码已被注册");
-        }
-      });
+      
+      // $.ajax({
+      //   url: "register.html",
+      // }).done(function(data) {
+      //   if (data == 0) {
+      //     $("#phone_check_code").text($("#phone").val());
+      //     $.fcj.popup("#pop-mobile-verify");
+      //     $("#modal1").show().fadeTo(200, 0.2);
+      //     $(".body-box-one").show();
+      //     $(".body-box-two").hide();
+      //   } else {
+      //     $("#phone-tip").html("您的手机号码已被注册");
+      //   }
+      // });
     }
   });
 });
-function sendMsg(validateCode){
-  $.ajax({
-    url:"<@baseUrl.home/>/get-check-code",
-    type:"post",
-    data:{"mobile":$("#phone").val(),"action":1,validateCode:validateCode},
-    async:false,  // 设置同步方式
-    error:function(request){
-      alert("Connection error");
-    },
-    success:function(data){
-      var resultCode = data.resultCode;
-      switch(resultCode){
-        case 0://成功
-          $(".body-box-one").show();
-          $(".body-box-two").hide();
-          countTime();
-          $(".icon-yes-16X16").show();
-          break;
-        case 1://号码有误
-          alert("号码有误");
-          break;
-        case 2:
-          alert("手机号码已注册");
-          break;
-        case 6:
-          $("#validateCode-tip").text("图片验证码错误");
-          break;
-        case 7:
-          $("#validateCode-tip").text("手机号码未填写");
-          break;
-      }
-      changeCode();
-      event.returnValue=false;
-      return false;
-    }
-  });
-}
 
-function countTime(){
-  var $this = $(".btn-verify-code").hide();
-  var $btn_resend = $(".btn-verify-code").siblings(".btn-resend").show();
-  var $num = $btn_resend.find(".count-num");
-  $.fcj.countdown($num.get(0), 60, 1000, function () {
-    $this.html("重发验证码");
-    $num.html(60);
-    $btn_resend.hide();
-    $this.show();
-  });
-}
+// function sendMsg(validateCode){
+//   $.ajax({
+//     url:"<@baseUrl.home/>/get-check-code",
+//     type:"post",
+//     data:{"mobile":$("#phone").val(),"action":1,validateCode:validateCode},
+//     async:false,  // 设置同步方式
+//     error:function(request){
+//       alert("Connection error");
+//     },
+//     success:function(data){
+//       var resultCode = data.resultCode;
+//       switch(resultCode){
+//         case 0://成功
+//           $(".body-box-one").show();
+//           $(".body-box-two").hide();
+//           countTime();
+//           $(".icon-yes-16X16").show();
+//           break;
+//         case 1://号码有误
+//           alert("号码有误");
+//           break;
+//         case 2:
+//           alert("手机号码已注册");
+//           break;
+//         case 6:
+//           $("#validateCode-tip").text("图片验证码错误");
+//           break;
+//         case 7:
+//           $("#validateCode-tip").text("手机号码未填写");
+//           break;
+//       }
+//       changeCode();
+//       event.returnValue=false;
+//       return false;
+//     }
+//   });
+// }
 
-function changeCode(){
-  $('#code-img').attr("src","<@baseUrl.home />/imageServlet?date="+ new Date().getSeconds());
-  event.returnValue=false;
-  return;
-}
+// function countTime(){
+//   var $this = $(".btn-verify-code").hide();
+//   var $btn_resend = $(".btn-verify-code").siblings(".btn-resend").show();
+//   var $num = $btn_resend.find(".count-num");
+//   $.fcj.countdown($num.get(0), 60, 1000, function () {
+//     $this.html("重发验证码");
+//     $num.html(60);
+//     $btn_resend.hide();
+//     $this.show();
+//   });
+// }
+
+// function changeCode(){
+//   $('#code-img').attr("src","<@baseUrl.home />/imageServlet?date="+ new Date().getSeconds());
+//   event.returnValue=false;
+//   return;
+// }
+
+
 </script>
 </body>
 </html>

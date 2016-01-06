@@ -4382,9 +4382,12 @@ img.verify-img {
   background-size: 350px 400px;
 }
 .ic-warning-small-g {
+  display:inline-block;
   background: url(../images/user/icons.png?v=201512220102) no-repeat -80px -374px;
   background-image: -webkit-image-set( url(../images/user/icons.png?v=2015122201) 1x, url(../images/user/icons@2x.png?v=2015122201) 2x);
   background-size: 350px 400px;
+  width: 18px;
+  height: 18px;
 }
 .ic-warning-small-ok {
   display: block;
@@ -4395,6 +4398,13 @@ img.verify-img {
   width: 50px;
   background: url(../images/user/iconsx.png) no-repeat 0 0px;
   background-size: 200px 200px;
+}
+.ic-warning-small-ok-big {
+  background: url(../images/user/iconsx.png) no-repeat 0 0px;
+  background-size: 200px 200px;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
 }
 .binding-box {
   background:#fff;

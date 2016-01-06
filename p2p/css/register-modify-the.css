@@ -23,6 +23,9 @@
 .step p.cr {
   color:#343434;
 }
+.step .col-3 p.cr{
+  color:#343434;
+}
 .step .col-1 span,
 .step .col-3 span,
 .step .col-5 span {
@@ -36,6 +39,8 @@
   height: 30px;
   width: 30px;
 }
+.step .col-5 span.active,
+.step .col-3 span.active,
 .step .col-1 span.active {
   background:#e12b2b;
 }
@@ -59,20 +64,81 @@
   border: none;
   display: block;
 }
-.phone-verify {
-  width: 960px;
-}
+
 .reveal {
-  color:#666666;
-  text-align: center;
+  color: #666666;
+  text-align: left;
+  text-indent: 73px;
+  margin-top: 50px;
 }
 .phone-code {
   text-align: left;
   width: 200px;
-  margin-left: 300px;
+  margin-left: 86px;
   margin-top: 48px
 }
-.phone-verify .rows-3 {
-  width:700px;
-  margin-left: 200px;
+.phone-verify {
+  margin:0 auto;
+  margin-left: 160px;
+  margin-bottom: 50px;
 }
+.line-h {
+  line-height: 18px;
+}
+.pt-5 {
+  top:5px;
+  position: relative;
+}
+#agree-tip {
+  left:-98px;
+  position: relative;
+}
+#agree-contract {
+  top:2px;
+  position: relative;
+}
+.refister-ok {
+  background: #e13932;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 38px;
+  height: 40px;
+  width: 142px;
+}
+.register-complete {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+.register-complete span{
+  color:#343434;
+  font-size: 20px;
+  top:-30px;
+  position: relative;
+}
+.jump {
+  color :#565656;
+  margin-left:80px;
+}
+.leave-for {
+  background:#e12b2b;
+  border-radius: 3px;
+  color:#fff;
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px;
+  margin-left: 80px;
+  margin-top: 30px;
+  height: 40px;
+  width: 154px;
+}
+.leave-for:hover {
+  color:#fff;
+  text-decoration: none;
+}
+
