@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>注册-发财金-赚钱不等待</title>
   <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/register-modify-the.css"/>
 </head>
 <body>
 <div class="top">
@@ -58,16 +59,34 @@
     </ul>
   </div><!-- /.inner -->
 </div><!-- /.nav -->
-
+  
+  <div class="inner clearfix">
+    <p class="greet"><span class="f-24">欢迎注册</span></p>
+    <div class="step">
+      <table>
+        <tr>
+          <th class="col-1">
+            <span class="active">1</span>
+            <p class="cr">填写信息</p>
+          </th>
+          <th class="col-2"><span></span></th>
+          <th class="col-3">
+            <span>2</span>
+            <p>验证手机</p>
+          </th>
+          <th class="col-4"><span></span></th>
+          <th class="col-5">
+            <span>3</span>
+            <p>注册成功</p>
+          </th>
+        </tr>
+      </table>
+    </div>
+  </div>
   <!-- 登录表单 -->
   <div class="inner clearfix mt-30 mb-30">
     <div class="login-left">
       <table width="100%">
-        <tr>
-          <td width="20%"></td>
-          <td width="40%"><span class="f-24">欢迎注册</span></td>
-          <td></td>
-        </tr>
         <tr>
           <td></td>
           <td></td>
@@ -80,7 +99,7 @@
               <input id="phone" class="ml-20" type="text" name="phone">
             </div>
           </td>
-          <td align="left">
+          <td align="left" width="161">
             <span id="phone-tip" class="cl-red"></span>
           </td>
         </tr>
@@ -115,8 +134,7 @@
         <tr>
           <td></td>
           <td>
-            <input id="agree-contract" type="checkbox" value="1" checked>
-            <label class="cl-153" for="agree-contract">我已阅读并同意 <a href="#" target="_blank">《发财金用户协议》</a></label>
+            <label class="cl-153" for="agree-contract">已有账号？ <a class="cr-blue" href="#" target="_blank">登录</a></label>
           </td>
           <td align="left">
             <span id="agree-tip" class="cl-red"></span>
@@ -132,24 +150,33 @@
       </table>
     </div>
     <div class="login-right">
-      <div>
-        <a href="">
-          <img src="images/ad/ad_01.jpg" alt=""/>
-        </a>
-      </div>
-      <div class="clearfix mt-30">
-        <div class="pull-left">
-          <img src="images/qr_code_facaijin.jpg" alt=""/>
-        </div>
-        <div class="pull-left mt-30 ml-20">
-          <p class="f-14 cl-102">扫描微信二维码 <br/>关注发财金</p>
-        </div>
-      </div>
-      <p class="f-14 cl-102 mt-10">已经是发财金用户？</p>
-      <div class="mt-10">
-        <a class="apply-small-btn" href="">立即登录</a>
-      </div>
+      <img class="send-red-packet" src="images/send-red-packet.png"  width="282" height="247" alt="">
     </div>
+  </div>
+
+  <div class="inner clearfix ">
+      <table class="form-table phone-verify" cellspacing="20">
+        <tr>
+          <td colspan="4"><p class="reveal">短信验证码已发送到您的手机，15分钟内输入有效，请勿泄露</p></td>
+        </tr>
+        <tr>
+          <td colspan="2"><p class="phone-code">手机号<span class="ml-10">13818895353</span></p></td>
+        </tr>
+        <tr class="rows-3">
+          <td width="20%" align="right"><span class="f-14">验证码</span></td>
+          <td class="validation">
+            <div class="verify" style="border: 1px solid rgb(225, 57, 50);">
+              <input id="phonenum" type="text" class="f-20" style="color: rgb(225, 57, 50);">
+            </div>
+            <span id="warning-card-1" class="cl-red">验证码不能为空</span>
+            <input id="second" type="button" value="获取短信验证">
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button type="submit" class="submit">完成注册</button></td>
+        </tr>
+      </table>
   </div>
   <!-- 登录表单 结束 -->
 
@@ -258,6 +285,16 @@
 <script src="js/app.js"></script>
 <script>
 $(function() {
+  
+  $("input[id=password],input:text,input[id=passsure]").focus(function() {
+  $(this).parent().css("border","1px solid blue");
+  });
+
+  $("input[id=password],input:text,input[id=passsure]").blur(function() {
+  $(this).css('color','#e13932');
+  $(this).parent().css("border","1px solid #e13932");
+  });
+
   $("#phone").focus();
   //发送验证码
   $(".btn-verify-code").click(function () {

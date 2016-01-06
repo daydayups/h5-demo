@@ -1,0 +1,30 @@
+.pull-right .title {
+  height: 18px;
+  width: 244px;
+  overflow: hidden;
+}
+.pull-right .title .txt {
+  float: left;
+ margin-left: 20px;
+}
+.pull-right .title .more {
+  float: right;
+}
+.side-block {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  padding:20px 0;
+  height: 176px;
+  width: 270px;
+}
+.pull-right {
+  width: 270px;
+  padding:0;
+}
+.side-block .list .link {
+  width: 150px;
+}
+.list {
+  margin-left: 20px;
+  width: 223px;
+}

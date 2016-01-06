@@ -1,0 +1,78 @@
+@charset 'utf-8';
+.greet {
+  margin-top: 38px ;
+  margin-bottom :28px;
+}
+.step {
+  display: block;
+  width: 598px;
+  margin :0 auto;
+}
+.step table tr{
+  height: 60px;
+  vertical-align: middle;
+}
+.step table th {
+  text-align: center;
+}
+.step p {
+  color: #999999;
+  font-size: 12px;
+  margin-top :10px;
+}
+.step p.cr {
+  color:#343434;
+}
+.step .col-1 span,
+.step .col-3 span,
+.step .col-5 span {
+  border-radius:100%;
+  background:#dddddd;
+  color:#fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+}
+.step .col-1 span.active {
+  background:#e12b2b;
+}
+.step .col-2 span, 
+.step .col-4 span {
+  background:#dddddd;
+  display: inline-block;
+  margin:0 20px;
+  height: 2px;
+  width: 184px;
+  top:-12px;
+  position: relative;
+}
+.cr-blue {
+  color:#8bb7ea;
+}
+.login-right {
+  border-left: none;
+}
+.send-red-packet {
+  border: none;
+  display: block;
+}
+.phone-verify {
+  width: 960px;
+}
+.reveal {
+  color:#666666;
+  text-align: center;
+}
+.phone-code {
+  text-align: left;
+  width: 200px;
+  margin-left: 300px;
+  margin-top: 48px
+}
+.phone-verify .rows-3 {
+  width:700px;
+  margin-left: 200px;
+}
