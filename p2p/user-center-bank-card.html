@@ -203,13 +203,18 @@ $(function(){
   str>10?num=str:num="0"+str;
   return num;
   } 
-  var sCardNumber = '33 33 33333 33 33'
-  var pattern = /\s/g; 
-  var result = sCardNumber.replace(pattern,'');
-  var reg = /(.{0}).*(.{4})/; 
-  result = result.replace(reg,"$1**** **** **** $2");   
-  $(".add-time").html('添加日期：'+fnDate());
-  $(".card-number").html(result);
+
+  //模拟从后台数据库提取的银行卡号
+  (function (){
+    var sCardNumber = '33 33 33333 33 33'
+    var pattern = /\s/g; 
+    var result = sCardNumber.replace(pattern,'');
+    var reg = /(.{0}).*(.{4})/; 
+    result = result.replace(reg,"$1**** **** **** $2");   
+    $(".add-time").html('添加日期：'+fnDate());
+    $(".card-number").html(result);
+  })();
+  
 });
 </script>
 </body>
