@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>登录-发财金-赚钱不等待</title>
   <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/login.css"/>
 </head>
 <body>
 <div class="top">
@@ -62,76 +63,23 @@
 <!-- 登录表单 -->
 <div class="inner clearfix mt-30 mb-30">
   <div class="login-left">
-    <table>
-      <tr>
-        <td></td>
-        <td><span class="f-24">欢迎登录</span></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td align="right"><span class="f-14">注册手机号码</span></td>
-        <td>
-          <div class="inp-x">
-            <span class="icon-phone"></span>
-            <input id="log-phone" class="ml-40" type="text" name="phone-number" />
-          </div>
-        </td>
-        <td><span class="cl-red ml-10">手机号错误</span></td>
-      </tr>
-      <tr>
-        <td align="right"><span class="f-14">请输入密码</span></td>
-        <td>
-          <div class="inp-x">
-            <span class="icon-password"></span>
-            <input id="log-password" class="ml-40" type="password" name="password" />
-          </div>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>
-          <input id="auto-login" type="checkbox"/>
-          <label class="cl-153" for="auto-login">下次自动登录</label>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>
-          <button class="btn-normal">登 录</button>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>
-          <a class="link-blue" href="">忘记密码？</a>
-        </td>
-        <td></td>
-      </tr>
-    </table>
+    
   </div>
-  <div class="login-right">
-    <div>
-      <a href="">
-        <img src="images/ad/ad_01.jpg" alt=""/>
-      </a>
+  <div class="login-right ">
+    <p class="welcome">欢迎登陆</p>
+    <p class="remind"><i class="ic-warning-small-r"></i><span class="cl-red remind-text">ddddde</span></p>
+    <div class="inp-x center">
+      <span class="icon-phone"></span>
+      <input id="log-phone" class="ml-40" type="text" name="phone-number" />
     </div>
-    <div class="clearfix mt-30">
-      <div class="pull-left">
-        <img src="images/qr_code_facaijin.jpg" alt=""/>
-      </div>
-      <div class="pull-left mt-30 ml-20">
-        <p class="f-14 cl-102">扫描微信二维码 <br/>关注发财金</p>
-      </div>
+
+    <div class="inp-x center mt-20">
+      <span class="icon-password"></span>
+      <input id="log-password" class="ml-40" type="password" name="password" />
     </div>
-    <p class="f-14 cl-102 mt-10">还没帐号？</p>
-    <div class="mt-10">
-      <a class="apply-small-btn" href="">立即注册</a>
+    <div class="login-box">
+      <input class="btn-login" type="button" value="登陆">
+      <p class="help-box"><a class="forget" href="">忘记登录密码？</a><a class="login-get" href="">注册领88元红包</a></p>
     </div>
   </div>
 </div>

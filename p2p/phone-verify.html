@@ -110,7 +110,7 @@
         </tr>
         <tr>
           <td></td>
-          <td><button type="submit" class="refister-ok">完成注册</button></td>
+          <td class="refister-box"><button type="submit" class="refister-ok">完成注册</button></td>
         </tr>
         <tr>
           <td></td>
@@ -270,19 +270,12 @@ $(function() {
   $("#agree-contract").click(function() {
     if ($("#agree-contract:checked").val() != 1) {
       $(".refister-ok").text("您未同意协议");
-      $(".refister-ok").css({
-        'background' :'#ededed',
-        'color' : '#565656'
-      });
+      $(".refister-ok").addClass('active');
 
       $("#second").val('重发验证码');
-       clearTimeout(timer);
     } else {
       $(".refister-ok").text("完成注册");
-      $(".refister-ok").css({
-        'background' :'#e12b2b',
-        'color' : '#fff'
-      });
+      $(".refister-ok").removeClass('active');
     }
 
    });
@@ -306,7 +299,9 @@ $(function() {
 
   
   $(".refister-ok").click(function() {
-
+    if($(this).hasClass('active')) {
+      return false;
+    } else {
     var error = false;
     var value=$.trim($("#phonenum").val());
     var code =123;
@@ -319,23 +314,23 @@ $(function() {
       error = true;
     } 
 
-    if (!error) {
-     
-      // $.ajax({
-      //   url: "register.html",
-      // }).done(function(data) {
-      //   if (data == 0) {
-      //     $("#phone_check_code").text($("#phone").val());
-      //     $.fcj.popup("#pop-mobile-verify");
-      //     $("#modal1").show().fadeTo(200, 0.2);
-      //     $(".body-box-one").show();
-      //     $(".body-box-two").hide();
-      //   } else {
-      //     $("#phone-tip").html("您的手机号码已被注册");
-      //   }
-      // });
+      if (!error) {
+       
+        // $.ajax({
+        //   url: "register.html",
+        // }).done(function(data) {
+        //   if (data == 0) {
+        //     $("#phone_check_code").text($("#phone").val());
+        //     $.fcj.popup("#pop-mobile-verify");
+        //     $("#modal1").show().fadeTo(200, 0.2);
+        //     $(".body-box-one").show();
+        //     $(".body-box-two").hide();
+        //   } else {
+        //     $("#phone-tip").html("您的手机号码已被注册");
+        //   }
+        // });
+      }
     }
-
   });
 });
 

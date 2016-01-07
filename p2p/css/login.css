@@ -1,0 +1,75 @@
+.login-right {
+	border-bottom:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	border-top:2px solid #e12b2b;
+	box-shadow: 0 0 3px 2px #f2f2f2;
+	padding:28px 30px 50px;
+	width: 280px;
+}
+.login-box {
+
+}
+.center {
+	border-radius: 3px;
+	width: 280px;
+	display: block;
+	margin: 0 auto;
+}
+.mt-20 {
+	margin-top: 20px;
+}
+.welcome {
+	color:#343434;
+	font-size: 20px;
+}
+.remind {
+	background:#fcebeb;
+	display: block;
+	line-height: 30px;
+	height: 30px;
+	width: 280px;
+	margin: 20px 0;
+	position: relative;
+	overflow: hidden;
+}
+.ic-warning-small-r {
+  background: url(../images/user/ic-warning-small-r@x1.png) no-repeat 0px 0px;
+  background-image: -webkit-image-set( url(../images/user/ic-warning-small-r@x1.png) 1x, url(../images/user/ic-warning-small-r@x2.png) 2x);
+  background-size: 20px 20px;
+	display: block;
+	margin-top: 5px;
+  margin-left: 10px;
+	height: 20px;
+	width: 20px;
+}
+.remind-text {
+	position: absolute;
+	left:32px;
+	top:0;
+}
+.btn-login {
+	border:none;
+	background: #e12b2b;
+	border-radius:3px;
+	color:#fff;
+	display: block;
+	font-size: 14px;
+	height: 40px;
+	margin-top: 20px;
+	outline: none;
+	width: 280px;
+}
+.help-box {
+	margin-top: 20px;
+	width: 280px;
+	overflow: hidden;
+}
+.forget {
+	color:#565656;
+	float: left;
+}
+.login-get {
+	color:#fdb847;
+	float: right;
+}
