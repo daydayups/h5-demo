@@ -11,8 +11,6 @@
 	float: right;
 }
 .login-banner {
-	background:url(../images/user/login-banner.png) 0 0 no-repeat;
-	background-size: 570px 350px;
 	height: 350px;
 	width: 571px;
 }
