@@ -7,8 +7,14 @@
 	padding:28px 30px 50px;
 	width: 280px;
 }
-.login-box {
-
+.float-right {
+	float: right;
+}
+.login-banner {
+	background:url(../images/user/login-banner.png) 0 0 no-repeat;
+	background-size: 570px 350px;
+	height: 350px;
+	width: 571px;
 }
 .center {
 	border-radius: 3px;
@@ -22,10 +28,11 @@
 .welcome {
 	color:#343434;
 	font-size: 20px;
+	margin-bottom: 30px;
 }
 .remind {
 	background:#fcebeb;
-	display: block;
+	display: none;
 	line-height: 30px;
 	height: 30px;
 	width: 280px;

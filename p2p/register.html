@@ -260,28 +260,28 @@
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/app.js"></script>
 <script>
-$(function() {
+$(function(){
   
-  $("input[id=password],input:text,input[id=passsure]").focus(function() {
-  $(this).parent().css("border","1px solid blue");
+  $("input[id=password],input:text,input[id=passsure]").focus(function(){
+    $(this).parent().css("border","1px solid blue");
   });
 
-  $("input[id=password],input:text,input[id=passsure]").blur(function() {
-  $(this).css('color','#e13932');
-  $(this).parent().css("border","1px solid #e13932");
+  $("input[id=password],input:text,input[id=passsure]").blur(function(){
+    $(this).css('color','#e13932');
+    $(this).parent().css("border","1px solid #e13932");
   });
 
   /* 验证码验证*/
-  $("#phonenum").focusin(function() {
+  $("#phonenum").focusin(function(){
      $("#warning-card-1").text("");
-  }).focusout(function() {
-    var value=$.trim($(this).val());
-    var code =123;
+  }).focusout(function(){
+    var value = $.trim($(this).val());
+    var code = 123;
     if (value == '') {
       $("#warning-card-1").html('验证码不能为空');
       return ;
-    } 
-    if ( value != code) {
+    }
+    if (value != code) {
       $("#warning-card-1").html ('验证码错误,请重新输入');
        return ;
     } 
@@ -321,7 +321,7 @@ $(function() {
     $(this).parents(".pop-window").hide();
     if($(this).parents(".pop-window")[0].id=="pop-mobile-verify"){
       $("#modal1").hide();
-    }else{
+    } else {
       $("#modal").hide();
     }
   });
@@ -333,11 +333,11 @@ $(function() {
   //   }
   //   var phone = $("input[name='phone']").val();
   //   $.ajax({
-  //     url:"<@baseUrl.home/>/validate-check-code",
-  //     type:"get",
-  //     data:{"checkCode":checkCode,"phone":phone,"action":1},
-  //     async:false,  // 设置同步方式
-  //     error:function(request){
+  //     url: "<@baseUrl.home/>/validate-check-code",
+  //     type: "get",
+  //     data: {"checkCode":checkCode,"phone":phone,"action":1},
+  //     async: false,  // 设置同步方式
+  //     error: function(request){
   //       alert("Connection error");
   //     },
   //     success:function(data){

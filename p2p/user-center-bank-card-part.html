@@ -400,7 +400,9 @@ $(function(){
     } else if(bankNumber.length > 19 || bankNumber.length < 16){
      $("#warning-card").text("银行卡号长度为16-19位！");
       error = true;
-    } 
+    }
+
+    // TODO: ajax get data here
     if (!error) {
       $modal.show();
       var jqXHR = $.ajax({
