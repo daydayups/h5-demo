@@ -463,25 +463,23 @@
         <td class="col-2"><span class="cl-blue-lighter">7天</span></td>
         <td class="col-1"><span>年化利息</span></td>
       </tr>
-     
-      <tr>
-        <td class="col-1"></td>
-        <td class="col-2">
-          <input type="checkbox" id="agree">
+      <tr class="row-2">
+        <td colspan="3" align="left">
+          <span class="ml-60">投资金额：</span><span class="ml-20 cl-red f-16">1500</span><span class="cl-red f-12">元</span>
+        </td>
+      </tr>
+      <tr class="row-3">
+        <td colspan="3">
+          <button class="btn-confirm-r">确定投资</button>
+        </td>
+      </tr>
+      <tr class="row-4">
+        <td colspan="3">
+          <input type="checkbox" id="agree" value="1" checked="" >
           <label for="agree">
             <span>我已阅读并同意签署</span>
           </label>
           <a class="link-blue" href="#">《借款协议》</a>
-        </td>
-      </tr>
-      <tr>
-        <td class="col-1"></td>
-        <td class="col-2"><span class="cl-red">请阅读并同意签署《借款协议》</span></td>
-      </tr>
-      <tr>
-        <td class="col-1"></td>
-        <td class="col-2">
-          <button class="btn-confirm-a pull-left">确定</button>
         </td>
       </tr>
     </table>
@@ -507,6 +505,17 @@ $(function(){
     });
   });
   
+  //协议 去掉and 添加效果
+  $("#agree").click(function() {
+    if ($("#agree:checked").val() != 1) {
+      $(".btn-confirm-r").text("您未同意协议");
+      $(".btn-confirm-r").addClass('active');
+    } else {
+      $(".btn-confirm-r").removeClass('active');
+      $(".btn-confirm-r").text("确认投资");
+    }
+
+  });
   //pop-window
   var $modal = $.modalInit('.modal');
 

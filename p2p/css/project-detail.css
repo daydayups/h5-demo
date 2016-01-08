@@ -146,7 +146,9 @@
 }
 .down-box option {
   color:#565656;
+  display: block;
   font-size: 14px;
+  height: 30px;
   line-height: 30px;
 }
 #fast-cast {
@@ -179,8 +181,56 @@
   padding:0 10px;
 }
 .confirm-box .row-1 {
-  height: 14px;
-  padding:20px 0;
+  height: 50px;
 }
-
-
+.confirm-box .row-1 td {
+  text-align: center;
+  padding: 0;
+}
+.confirm-box .row-1 {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+.confirm-box .row-1 .col-1 {
+  width: 184px;
+}
+.confirm-box .row-1 .col-2 span,
+.confirm-box .row-1 .col-2 {
+  width: 96px;
+}
+.confirm-box .row-1 .col-2 span {
+  border-left:1px solid #ddd;
+  border-right:1px solid #ddd;
+  color:#565656;
+  display: block;
+  height: 14px;
+}
+.confirm-box .row-3 button {
+  background: #e12b2b;
+  border-radius:3px;
+  border:none;
+  color: #fff;
+  display: block;
+  line-height: 36px;
+  height: 36px;
+  outline: none;
+  margin-left: 150px;
+  width: 116px;
+}
+.confirm-box .row-3 button.active {
+  background:#ededed;
+  color:#565656;
+}
+.confirm-box .row-2 {
+  height: 60px;
+}
+.padding table td {
+  padding: 0;
+}
+ #agree {
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  top: 2px;
+ }
