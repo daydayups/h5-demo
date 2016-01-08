@@ -346,151 +346,151 @@
 <script src="js/app.js"></script>
 <script src="js/id-verify.js"></script>
 <script>
-$(function(){
-  $("input:text").focus(function() {
-  $(this).parent().css("border","1px solid blue");
-  });
-  $("input:text").blur(function() {
-  $(this).css('color','#e13932');
-  $(this).parent().css("border","1px solid #e13932");
-  });
-  //姓名验证
-  $("#name").focusin(function() {
-    $("#name-tip").html("");
-  }).focusout(function() {
-    name('#name');
-  });
-  function name (id) {
-    var value = $.trim($(id).val());
-    $(id).val(value);
-    if (value == "") {
-      $("#name-tip").html("请输入您的姓名");
-      return;
-    }
-    if (!value.match(/^[\u4e00-\u9fa5]{1,10}$/)){
-      $("#name-tip").html("姓名格式不正确！请重新输入");
-      return;
-    }
-  }
-  //身份证验证
-  var warning = {
-    check: [
-      '请填写真实姓名',
-      '请输入中文',
-      '请输入身份证号',
-      '身份证号码格式不正确'
-    ],
-    error: [
-      '身份验证失败',
-      '该身份证已被其他用户使用',
-      '网络错误'
-    ]
-  };
-  $("#id-card").focusin(function() {
-  $("#id-card-tip").html("");
-  }).focusout(function() {
-    var idCard = $.trim($("#id-card").val());
-    if (idCard == '') {
-      $("#id-card-tip").text(warning.check[2]);
-      return;
-    } else if (!IdCardValidate(idCard)) {
-      $("#id-card-tip").text(warning.check[3]);
-      return;
-    } 
-  });
-  //start-submit------------------------------
-  //get time
-  function fnDate(){
-  var date=new Date();
-  var year=date.getFullYear();//当前年份
-  var month=date.getMonth();//当前月份
-  var data=date.getDate();//天
-  var hours=date.getHours();//小时
-  var minute=date.getMinutes();//分
-  var second=date.getSeconds();//秒
-  var time=year+"年"+fnW((month+1))+"月"+fnW(data)+"日"+fnW(hours)+":"+fnW(minute)+":"+fnW(second);
-  return time;
-  }
-  function fnW(str){
-  var num;
-  str>10?num=str:num="0"+str;
-  return num;
-  } 
-  var $modal = $.modalInit('.modal');
-  $('.modal').css({
-    "opacity": .5,
-    "filter": "alpha(opacity=50)",
-    'background-color' : 'rgb(255,255,255)'
-  });
-  $('#btn-submit').click(function(){
-    $(document).ajaxStart(function () {
-       $("#loading").show();
-    }).ajaxStop(function () {
-       $("#loading").hide();
-    });
-    var error = false;
-    var value = $("#name").val();
-    if (value == "") {
-      $("#name-tip").html("请输入您的姓名");
-      error = true;
-    }
-    else if (!value.match(/^[\u4e00-\u9fa5]{1,10}$/)){
-      $("#name-tip").html("姓名格式不正确！请重新输入");
-       error = true;
-    }
-    var idCard = $.trim($("#id-card").val());
-    if (idCard == '') {
-      $("#id-card-tip").text(warning.check[2]);
-       error = true;
-    } else if (!IdCardValidate(idCard)) {
-      $("#id-card-tip").text(warning.check[3]);
-       error = true;
-    } 
-  //ajax 操作-------------------------
-    if (!error) {
-      $modal.show();
-      var jqXHR = $.ajax({
-        url: "real-name1.html",
-        data: $.param({
-          name : $('#name').val(),
-          idCard : $('#id-card').val()
-        }),
-        success : function(response) {
-          $modal.hide();
-          $(".prompt, .login").hide();
-          $(".time").html(fnDate());
-          $(".prompt-ok").show();
-          var sNameLast=value.charAt(value.length - 1);
-          var sNameStr=value.substring(0,value.length-1);
-          var sNameStr=sNameStr.replace(/./g,'*');
-          var sName=sNameStr+sNameLast;
-          var reg4 = /(\d{5})(\d{3})(\d{2})(\d{2})(\d{2})(\d{3})/;  
-          idCard = idCard.replace(reg4,"$1********$6");  
-          $('.person-name-2').html(sName);
-          $('.person-id-2').html(idCard);
-        },
-        error : function() {
-          $.popup('#pop-warning-1');
-        }
-      });
-      $(document).ajaxStart(function () {
-         $("#loading").show();
-      }).ajaxStop(function () {
-         $("#loading").hide();
-      });
-    } 
+// $(function(){
+//   $("input:text").focus(function() {
+//   $(this).parent().css("border","1px solid blue");
+//   });
+//   $("input:text").blur(function() {
+//   $(this).css('color','#e13932');
+//   $(this).parent().css("border","1px solid #e13932");
+//   });
+//   //姓名验证
+//   $("#name").focusin(function() {
+//     $("#name-tip").html("");
+//   }).focusout(function() {
+//     name('#name');
+//   });
+//   function name (id) {
+//     var value = $.trim($(id).val());
+//     $(id).val(value);
+//     if (value == "") {
+//       $("#name-tip").html("请输入您的姓名");
+//       return;
+//     }
+//     if (!value.match(/^[\u4e00-\u9fa5]{1,10}$/)){
+//       $("#name-tip").html("姓名格式不正确！请重新输入");
+//       return;
+//     }
+//   }
+//   //身份证验证
+//   var warning = {
+//     check: [
+//       '请填写真实姓名',
+//       '请输入中文',
+//       '请输入身份证号',
+//       '身份证号码格式不正确'
+//     ],
+//     error: [
+//       '身份验证失败',
+//       '该身份证已被其他用户使用',
+//       '网络错误'
+//     ]
+//   };
+//   $("#id-card").focusin(function() {
+//   $("#id-card-tip").html("");
+//   }).focusout(function() {
+//     var idCard = $.trim($("#id-card").val());
+//     if (idCard == '') {
+//       $("#id-card-tip").text(warning.check[2]);
+//       return;
+//     } else if (!IdCardValidate(idCard)) {
+//       $("#id-card-tip").text(warning.check[3]);
+//       return;
+//     } 
+//   });
+//   //start-submit------------------------------
+//   //get time
+//   function fnDate(){
+//   var date=new Date();
+//   var year=date.getFullYear();//当前年份
+//   var month=date.getMonth();//当前月份
+//   var data=date.getDate();//天
+//   var hours=date.getHours();//小时
+//   var minute=date.getMinutes();//分
+//   var second=date.getSeconds();//秒
+//   var time=year+"年"+fnW((month+1))+"月"+fnW(data)+"日"+fnW(hours)+":"+fnW(minute)+":"+fnW(second);
+//   return time;
+//   }
+//   function fnW(str){
+//   var num;
+//   str>10?num=str:num="0"+str;
+//   return num;
+//   } 
+//   var $modal = $.modalInit('.modal');
+//   $('.modal').css({
+//     "opacity": .5,
+//     "filter": "alpha(opacity=50)",
+//     'background-color' : 'rgb(255,255,255)'
+//   });
+//   $('#btn-submit').click(function(){
+//     $(document).ajaxStart(function () {
+//        $("#loading").show();
+//     }).ajaxStop(function () {
+//        $("#loading").hide();
+//     });
+//     var error = false;
+//     var value = $("#name").val();
+//     if (value == "") {
+//       $("#name-tip").html("请输入您的姓名");
+//       error = true;
+//     }
+//     else if (!value.match(/^[\u4e00-\u9fa5]{1,10}$/)){
+//       $("#name-tip").html("姓名格式不正确！请重新输入");
+//        error = true;
+//     }
+//     var idCard = $.trim($("#id-card").val());
+//     if (idCard == '') {
+//       $("#id-card-tip").text(warning.check[2]);
+//        error = true;
+//     } else if (!IdCardValidate(idCard)) {
+//       $("#id-card-tip").text(warning.check[3]);
+//        error = true;
+//     } 
+//   //ajax 操作-------------------------
+//     if (!error) {
+//       $modal.show();
+//       var jqXHR = $.ajax({
+//         url: "real-name1.html",
+//         data: $.param({
+//           name : $('#name').val(),
+//           idCard : $('#id-card').val()
+//         }),
+//         success : function(response) {
+//           $modal.hide();
+//           $(".prompt, .login").hide();
+//           $(".time").html(fnDate());
+//           $(".prompt-ok").show();
+//           var sNameLast=value.charAt(value.length - 1);
+//           var sNameStr=value.substring(0,value.length-1);
+//           var sNameStr=sNameStr.replace(/./g,'*');
+//           var sName=sNameStr+sNameLast;
+//           var reg4 = /(\d{5})(\d{3})(\d{2})(\d{2})(\d{2})(\d{3})/;  
+//           idCard = idCard.replace(reg4,"$1********$6");  
+//           $('.person-name-2').html(sName);
+//           $('.person-id-2').html(idCard);
+//         },
+//         error : function() {
+//           $.popup('#pop-warning-1');
+//         }
+//       });
+//       $(document).ajaxStart(function () {
+//          $("#loading").show();
+//       }).ajaxStop(function () {
+//          $("#loading").hide();
+//       });
+//     } 
    
-  });
- //end-submit------------------------------
-  $('.pop-window').find('.close').click(function(){
-    $(this).parents('.pop-window').hide();
-    $modal.hide();
-  });
-  $('.btn-red').click(function(){
-    $(this).parents('.pop-window').hide();
-    $modal.hide();
-  });
-});
+//   });
+//  //end-submit------------------------------
+//   $('.pop-window').find('.close').click(function(){
+//     $(this).parents('.pop-window').hide();
+//     $modal.hide();
+//   });
+//   $('.btn-red').click(function(){
+//     $(this).parents('.pop-window').hide();
+//     $modal.hide();
+//   });
+// });
 </script>
 </body>
 </html>

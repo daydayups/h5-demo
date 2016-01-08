@@ -1,3 +1,4 @@
+@charset 'utf-8';
 .surplus-money {
   color:#999999;
   font-size: 14px;
@@ -134,7 +135,7 @@
   width: 20px;
 }
 .styled-select{
-  background: url(../images/user/arrow-down@x1.png) no-repeat -260px center ;
+  background: url(../images/user/arrow-down@x1.png) no-repeat right;
   background-image: -webkit-image-set( url(../images/user/arrow-down@x1.png) 1x, url(../images/user/arrow-down@x2.png) 2x);
   background-size: 20px 10px;
   overflow: hidden;
