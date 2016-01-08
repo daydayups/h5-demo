@@ -74,6 +74,7 @@
 }
 .hint-base-1 {
   line-height: 30px;
+  position: relative;
 }
 .please-login:after, 
 .please-login:before {
@@ -289,4 +290,16 @@
   font-size: 16px;
   height: 40px;
   width: 125px;
+}
+.dy-bk {
+  display: block;
+}
+.please-login-b {
+  padding:2px 0;
+  top: -12px;
+}
+.top-up-money {
+  color:#e12b2b;
+  font-size: 14px;
+  margin-left: 10px;
 }

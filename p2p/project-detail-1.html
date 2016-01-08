@@ -123,7 +123,11 @@
             <tr>
               <td colspan="2" align="left">
                 <div class="hint-base-1 mt-10">
-                  <span class="f-14 cl-153 ">可用余额：</span><span class="ml-20 cr-red f-16 f-bold">1000.00</span><span class="f-12 cr-red ">元</span><a class="top-up float-right" href="">充值</a>
+                  <span class="f-14 cl-153 ">可用余额：</span><span class="ml-20 cr-red f-16 f-bold money">600.00</span><span class="f-12 cr-red ">元</span><a class="top-up float-right" href="">充值</a>
+                  <div id="please-login" class="please-login please-login-b">
+                    <p class="item"><span class="cl-red ml-10 f-14">余额不足</span>
+                    <span class="dy-bk top-up-money">还需充值 <i class="cl-red how-much">9990.00</i>元</span></p>
+                  </div>
                 </div><!-- /.inp-base -->
               </td>
             </tr>
@@ -669,15 +673,6 @@
 <script src="js/app.js"></script>
 <script>
 $(function(){
-  //点击立即投资如果未注册js效果
-  var $inp = $('#apply-inp');
-  $inp.focus(function(){
-    $(".please-login").show().animate({left: '104%', opacity: 1});
-  }).blur(function(){
-    $(".please-login").animate({left: '108%', opacity: 0}, 400, 'swing', function () {
-      $(".please-login").hide();
-    });
-  });
 
   //input verify
   var regNum = /^\d+$/;
@@ -687,38 +682,66 @@ $(function(){
     , $hintBox = $inp.siblings('.hint-box')
     , $hintICONs = $hintBox.find('.item .ic');
 
-  $inp.focus(function(){
-    $hintBox.show().animate({left: '105%', opacity: 1});
-  }).blur(function(){
-    $hintBox.animate({left: '108%', opacity: 0}, 400, 'swing', function () {
-      $hintBox.hide();
+  function judge() {
+    $inp.focus(function(){
+      $hintBox.show().animate({left: '105%', opacity: 1});
+    }).blur(function(){
+      $(".please-login").animate({left: '108%', opacity: 0}, 400, 'swing', function () {
+        $(".please-login").hide();
+      });
+      $hintBox.animate({left: '108%', opacity: 0}, 400, 'swing', function () {
+        $hintBox.hide();
+      });
+    }).keyup(function(){
+      var val = $(this).val().replace(/[^\d.]/g,"");
+      $(this).val(val);
+      if (regNum.test(val)) {
+        if (val < 50) {
+          $hintICONs.eq(0).attr('class', 'ic ic-warning-small-b');
+        } else {
+          $hintICONs.eq(0).attr('class', 'ic ic-tick-small-a');
+        }
+
+        if (val % 50 != 0) {
+          $hintICONs.eq(1).attr('class', 'ic ic-warning-small-b');
+        } else {
+          $hintICONs.eq(1).attr('class', 'ic ic-tick-small-a');
+        }
+
+        if (val > 54000) {
+          $hintICONs.eq(2).attr('class', 'ic ic-warning-small-b');
+        } else {
+          $hintICONs.eq(2).attr('class', 'ic ic-tick-small-a');
+        }
+      } else {
+        $hintICONs.attr('class', 'ic ic-warning-small-b');
+      }
+
+      //如果全部正确提醒隐藏
+      var ok1 = $hintICONs.eq(0).hasClass('ic-tick-small-a');
+      var ok2 = $hintICONs.eq(1).hasClass('ic-tick-small-a');
+      var ok3 = $hintICONs.eq(2).hasClass('ic-tick-small-a');
+      var sMoney = parseInt($(".money").text());
+      var sHowMuch = parseInt($(".how-much").text());
+      var sDifference = val-sMoney;
+
+      if(ok1 && ok2 && ok3) {
+        if(sMoney < val) {
+          $hintBox.animate({left: '108%', opacity: 0}, 400, 'swing', function () {
+            $hintBox.hide();
+          });
+          $(".how-much").text(sDifference);
+          $(".please-login").show().animate({left: '104%', opacity: 1});
+        } else {
+          $(".please-login").animate({left: '108%', opacity: 0}, 400, 'swing', function () {
+            $(".please-login").hide();
+            $hintBox.show().animate({left: '105%', opacity: 1});
+          });
+        }
+      }
     });
-  }).keyup(function(){
-    var val = $(this).val().replace(/[^\d.]/g,"");
-    $(this).val(val);
-    if (regNum.test(val)) {
-      if (val < 50) {
-        $hintICONs.eq(0).attr('class', 'ic ic-warning-small-b');
-      } else {
-        $hintICONs.eq(0).attr('class', 'ic ic-tick-small-a');
-      }
-
-      if (val % 50 != 0) {
-        $hintICONs.eq(1).attr('class', 'ic ic-warning-small-b');
-      } else {
-        $hintICONs.eq(1).attr('class', 'ic ic-tick-small-a');
-      }
-
-      if (val > 54000) {
-        $hintICONs.eq(2).attr('class', 'ic ic-warning-small-b');
-      } else {
-        $hintICONs.eq(2).attr('class', 'ic ic-tick-small-a');
-      }
-    } else {
-      $hintICONs.attr('class', 'ic ic-warning-small-b');
-    }
-  });
-
+  }
+  judge();
 });
 
 </script>

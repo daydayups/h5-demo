@@ -125,7 +125,7 @@
                   <span class="f-14 cl-153 ">可用余额：</span><span class="ml-10 cr-red">请登录，</span><a class="cr-blue" >立即登录&gt;</a>
                   <div id="please-login" class="please-login">
                     <p class="item"><span class="cl-red ml-5 f-14">请登录后投资</span></p>
-                  </div><!-- /.hint-box -->
+                  </div>
                 </div><!-- /.inp-base -->
               </td>
             </tr>
@@ -653,6 +653,7 @@
 <script>
 $(function(){
   //点击立即投资如果未注册js效果
+  $(".please-login").show();
   var $inp = $('#apply-inp');
   $inp.focus(function(){
     $(".please-login").show().animate({left: '104%', opacity: 1});
