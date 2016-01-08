@@ -143,16 +143,14 @@
             <tr>
               <td colspan="2" align="left">
                 <div class="hint-base mt-10">
-                  <i class="ic-arrow-down"></i>
-                  <input id="apply-inp " class="inp-a red-packet-time" type="text" placeholder="使用10元红包（2015.12.21到期）">
-                  <ul class="down-box">
-                   <li>dgfkijksjdgoj</li>
-                   <li>d4444444444</li>
-                   <li>d22222222222</li>
-                   <li>d66666666666</li>
-                   <li>d5555555555</li>
-                   <li>7777777777777777</li>
-                  </ul><!-- /.hint-box -->
+                  <select class="down-box">
+                    <option>1</option>
+                    <option>1</option>
+                    <option>1</option>
+                    <option>1</option>
+                    <option>1</option>
+                    <option>1</option>
+                  </select>
                 </div><!-- /.inp-base -->
               </td>
             </tr>
@@ -682,19 +680,7 @@ $(function(){
   });
   
   //下拉菜单
-  $(".down-box").hide();
-  $(".down-box li").on('click',function() {
-    $(".down-box").fadeOut("slow");
-    $(".red-packet-time") .val($(this).text());
-  });
-
-  $('.ic-arrow-down').click(function() {
-    if($(".down-box").is(":hidden")) {
-      $(".down-box").fadeIn("slow");
-    } else {
-      $(".down-box").fadeOut("slow");
-    }
-  });
+ 
 
   //input verify
   var regNum = /^\d+$/;

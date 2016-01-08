@@ -135,20 +135,22 @@
 }
 .down-box {
   background: #fff;
-  border:1px solid #eee;
-  border-radius:3px;
-  width: 276px;
-  left:0;
-  top:40px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  width: 278px;
+  left: 0;
+  top: 0px;
   line-height: 30px;
   position: absolute;
+  height: 38px;
 }
-.down-box li {
-  border-bottom:1px solid #eee;
+.down-box option {
   color:#565656;
   font-size: 14px;
-  text-indent: 10px;
-  width: 100%;
+  line-height: 30px;
+}
+#fast-cast {
+  margin-top: 47px;
 }
 .down-box li:last-child {
   border:none;
@@ -157,3 +159,28 @@
   background: #eee;
   color:#e12b2b;
 }
+.w-278 {
+  width: 278px;
+}
+.ic-tick-a {
+  background: url(../images/user/ic-win@x1.png) no-repeat 0 0;
+  background-image: -webkit-image-set( url(../images/user/ic-win@x1.png) 1x, url(../images/user/ic-win@x2.png) 2x);
+  background-size:52px 52px;
+  height: 52px;
+  left:10px;
+  width: 52px;
+  position: relative;
+}
+.confirm-box {
+  font-size: 14px;
+  width: 100%;
+}
+.padding {
+  padding:0 10px;
+}
+.confirm-box .row-1 {
+  height: 14px;
+  padding:20px 0;
+}
+
+
