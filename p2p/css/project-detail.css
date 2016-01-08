@@ -234,3 +234,50 @@
   position: relative;
   top: 2px;
  }
+ .has-submit {
+  display: block;
+  vertical-align: middle;
+  width: 480px;
+  margin: auto;
+  margin-top: 56px;
+ }
+ .has-submit .row-1 {
+  height: 60px;
+  vertical-align: middle;
+ }
+ .has-submit .row-1 .col-1 {
+  width: 60px;
+ }
+ .has-submit .ic-warning-small-ok-big {
+  background-size: 254px 254px;
+ }
+.has-submit  td {
+  color:#565656;
+  font-size: 12px;
+  height: 30px;
+}
+.has-submit a {
+  display: inline-block;
+  border-radius:3px;
+  margin-top:15px;
+  margin-bottom: 158px; 
+}
+.check-records {
+  border:1px solid #e12b2b;
+  color:#e12b2b;
+  font-size: 16px;
+  text-align:center;
+  line-height: 38px;
+  height: 38px;
+  width: 156px;
+}
+.financial-next,
+.financial-next:hover {
+  background: #e12b2b;
+  color:#fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  height: 40px;
+  width: 125px;
+}
