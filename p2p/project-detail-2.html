@@ -70,7 +70,7 @@
       <span class="crumb">项目详情</span>
     </div><!-- /.bread-crumbs -->
 
-    <div class="line clearfix">
+    <div class="line clearfix" style="height: 358px;">
       <div class="summary">
         <span class="ic-beginner-tag"></span>
         <div class="s-top clearfix">
@@ -111,17 +111,17 @@
         </table>
         </div><!-- /.s-bottom -->
       </div><!-- /.summary -->
-      <div class="apply-box pb-48">
+      <div class="apply-box">
         <!-- form -->
         <form id="apply-form" action="#" method="post">
           <table>
-            <tr class="row brd-b">
+            <tr class="row">
               <td><span class="f-20 ">投资金额</span></td>
               <td align="right"><span class="surplus-money">剩余可投：54,000元</span></td>
             </tr>
             <tr>
               <td colspan="2" align="left">
-                <div class="hint-base mt-25">
+                <div class="hint-base" style="display:none">
                   <span class="f-14 cl-153 ">可用余额：</span><span class="ml-10 cr-red">请登录，</span><a class="cr-blue" >立即登录&gt;</a>
                   <div id="please-login" class="please-login">
                     <p class="item"><span class="cl-red ml-5 f-14">请登录后投资</span></p>
@@ -131,10 +131,49 @@
             </tr>
             <tr>
               <td colspan="2" align="left">
+                <div class="hint-base-1" style="">
+                  <span class="f-14 cl-153 ">可用余额：</span><span class="ml-20 cr-red f-16 f-bold">1000.00</span><span class="f-12 cr-red ">元</span><a class="top-up float-right" href="">充值</a>
+                </div><!-- /.inp-base -->
+              </td>
+            </tr>
+            <tr class="row m" style="display:none">
+              <td class="brd-b"><span class="cl-153">可投金额</span></td>
+              <td class="brd-b" align="right"><span class="f-18 cl-red-lighter">54000.00</span><span class="cl-red-lighter">元</span></td>
+            </tr>
+            <tr class="row" style="display:none">
+              <td><span class="cl-153">账户金额</span></td>
+              <td align="right">
+                <!--<span class="f-18 cl-153">100100.00</span><span class="cl-153">元</span>-->
+                <a class="f-18 link-blue" >登录</a><span class="cl-153">后查看</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" align="left">
                 <div class="hint-base mt-25">
                   <input id="apply-inp" class="inp-a" type="text" placeholder="元">
+                  <div class="hint-box">
+                    <p class="item"><i class="ic ic-warning-small-a"></i><span class="txt">每次投资不可低于50元</span></p>
+                    <p class="item"><i class="ic ic-warning-small-a"></i><span class="txt">投资额必须为50元的整数倍</span></p>
+                    <p class="item"><i class="ic ic-warning-small-a"></i><span class="txt">投资额不可超过54000元</span></p>
+                  </div><!-- /.hint-box -->
                 </div><!-- /.inp-base -->
                 <p class="cl-153 mt-10">每投资 1万元 收益 <span class="cl-red-lighter">150.38</span> 元</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" align="left">
+                <div class="hint-base mt-25">
+                  <i class="ic-arrow-down"></i>
+                  <input id="apply-inp " class="inp-a red-packet-time" type="text" placeholder="使用10元红包（2015.12.21到期）">
+                  <ul class="down-box">
+                   <li>dgfkijksjdgoj</li>
+                   <li>d4444444444</li>
+                   <li>d22222222222</li>
+                   <li>d66666666666</li>
+                   <li>d5555555555</li>
+                   <li>7777777777777777</li>
+                  </ul><!-- /.hint-box -->
+                </div><!-- /.inp-base -->
               </td>
             </tr>
             <tr>
@@ -656,13 +695,26 @@ $(function(){
   var $inp = $('#apply-inp');
   $inp.focus(function(){
     $(".please-login").show().animate({left: '104%', opacity: 1});
-    $(this).val(' ');
   }).blur(function(){
     $(".please-login").animate({left: '108%', opacity: 0}, 400, 'swing', function () {
       $(".please-login").hide();
     });
   });
   
+  //下拉菜单
+  $(".down-box").hide();
+  $(".down-box li").on('click',function() {
+    $(".down-box").hide();
+    $(".red-packet-time") .val($(this).text());
+  });
+
+  $('.ic-arrow-down').click(function() {
+    if($(".down-box").is(":hidden")) {
+      $(".down-box").show();
+    } else {
+      $(".down-box").hide();
+    }
+  });
 });
 
 </script>

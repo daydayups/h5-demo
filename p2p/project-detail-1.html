@@ -111,7 +111,7 @@
         </table>
         </div><!-- /.s-bottom -->
       </div><!-- /.summary -->
-      <div class="apply-box pb-48">
+      <div class="apply-box">
         <!-- form -->
         <form id="apply-form" action="#" method="post">
           <table>
@@ -119,22 +119,41 @@
               <td><span class="f-20 ">投资金额</span></td>
               <td align="right"><span class="surplus-money">剩余可投：54,000元</span></td>
             </tr>
+           
             <tr>
               <td colspan="2" align="left">
-                <div class="hint-base mt-25">
-                  <span class="f-14 cl-153 ">可用余额：</span><span class="ml-10 cr-red">请登录，</span><a class="cr-blue" >立即登录&gt;</a>
-                  <div id="please-login" class="please-login">
-                    <p class="item"><span class="cl-red ml-5 f-14">请登录后投资</span></p>
-                  </div><!-- /.hint-box -->
+                <div class="hint-base-1 mt-10">
+                  <span class="f-14 cl-153 ">可用余额：</span><span class="ml-20 cr-red f-16 f-bold">1000.00</span><span class="f-12 cr-red ">元</span><a class="top-up float-right" href="">充值</a>
                 </div><!-- /.inp-base -->
               </td>
             </tr>
             <tr>
               <td colspan="2" align="left">
-                <div class="hint-base mt-25">
+                <div class="hint-base mt-10">
                   <input id="apply-inp" class="inp-a" type="text" placeholder="元">
+                  <div class="hint-box">
+                    <p class="item"><i class="ic ic-warning-small-a"></i><span class="txt">每次投资不可低于50元</span></p>
+                    <p class="item"><i class="ic ic-warning-small-a"></i><span class="txt">投资额必须为50元的整数倍</span></p>
+                    <p class="item"><i class="ic ic-warning-small-a"></i><span class="txt">投资额不可超过54000元</span></p>
+                  </div><!-- /.hint-box -->
                 </div><!-- /.inp-base -->
                 <p class="cl-153 mt-10">每投资 1万元 收益 <span class="cl-red-lighter">150.38</span> 元</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" align="left">
+                <div class="hint-base mt-10">
+                  <i class="ic-arrow-down"></i>
+                  <input id="apply-inp " class="inp-a red-packet-time" type="text" placeholder="使用10元红包（2015.12.21到期）">
+                  <ul class="down-box">
+                   <li>dgfkijksjdgoj</li>
+                   <li>d4444444444</li>
+                   <li>d22222222222</li>
+                   <li>d66666666666</li>
+                   <li>d5555555555</li>
+                   <li>7777777777777777</li>
+                  </ul><!-- /.hint-box -->
+                </div><!-- /.inp-base -->
               </td>
             </tr>
             <tr>
@@ -656,13 +675,67 @@ $(function(){
   var $inp = $('#apply-inp');
   $inp.focus(function(){
     $(".please-login").show().animate({left: '104%', opacity: 1});
-    $(this).val(' ');
   }).blur(function(){
     $(".please-login").animate({left: '108%', opacity: 0}, 400, 'swing', function () {
       $(".please-login").hide();
     });
   });
   
+  //下拉菜单
+  $(".down-box").hide();
+  $(".down-box li").on('click',function() {
+    $(".down-box").fadeOut("slow");
+    $(".red-packet-time") .val($(this).text());
+  });
+
+  $('.ic-arrow-down').click(function() {
+    if($(".down-box").is(":hidden")) {
+      $(".down-box").fadeIn("slow");
+    } else {
+      $(".down-box").fadeOut("slow");
+    }
+  });
+
+  //input verify
+  var regNum = /^\d+$/;
+
+  var $form = $('#apply-form')
+    , $inp = $('#apply-inp')
+    , $hintBox = $inp.siblings('.hint-box')
+    , $hintICONs = $hintBox.find('.item .ic');
+
+  $inp.focus(function(){
+    $hintBox.show().animate({left: '105%', opacity: 1});
+  }).blur(function(){
+    $hintBox.animate({left: '108%', opacity: 0}, 400, 'swing', function () {
+      $hintBox.hide();
+    });
+  }).keyup(function(){
+    var val = $(this).val().replace(/[^\d.]/g,"");
+    $(this).val(val);
+    if (regNum.test(val)) {
+      if (val < 50) {
+        $hintICONs.eq(0).attr('class', 'ic ic-warning-small-b');
+      } else {
+        $hintICONs.eq(0).attr('class', 'ic ic-tick-small-a');
+      }
+
+      if (val % 50 != 0) {
+        $hintICONs.eq(1).attr('class', 'ic ic-warning-small-b');
+      } else {
+        $hintICONs.eq(1).attr('class', 'ic ic-tick-small-a');
+      }
+
+      if (val > 54000) {
+        $hintICONs.eq(2).attr('class', 'ic ic-warning-small-b');
+      } else {
+        $hintICONs.eq(2).attr('class', 'ic ic-tick-small-a');
+      }
+    } else {
+      $hintICONs.attr('class', 'ic ic-warning-small-b');
+    }
+  });
+
 });
 
 </script>
