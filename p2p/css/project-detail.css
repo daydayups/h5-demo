@@ -133,26 +133,34 @@
   height: 10px;
   width: 20px;
 }
+.styled-select{
+  background: url(../images/user/arrow-down@x1.png) no-repeat -260px center ;
+  background-image: -webkit-image-set( url(../images/user/arrow-down@x1.png) 1x, url(../images/user/arrow-down@x2.png) 2x);
+  background-size: 20px 10px;
+  overflow: hidden;
+}
 .down-box {
-  background: #fff;
+  background: transparent;
+  -webkit-appearance: none; 
+  background:transparent;
   border: 1px solid #eee;
   border-radius: 3px;
-  width: 278px;
   left: 0;
-  top: 0px;
   line-height: 30px;
-  position: absolute;
   height: 38px;
+  text-indent: 10px;
+  width: 278px;
 }
 .down-box option {
   color:#565656;
   display: block;
   font-size: 14px;
-  height: 30px;
   line-height: 30px;
+  height: 30px;
+  text-indent: 10px;
 }
 #fast-cast {
-  margin-top: 47px;
+  margin-top: 10px;
 }
 .down-box li:last-child {
   border:none;

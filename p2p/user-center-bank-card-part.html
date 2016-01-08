@@ -303,12 +303,12 @@ $(function(){
   });
 
   $("input:text").focus(function() {
-  $(this).parent().css("border","1px solid blue");
+    $(this).parent().css("border","1px solid blue");
   });
 
   $("input:text").blur(function() {
-  $(this).css('color','#e13932');
-  $(this).parent().css("border","1px solid #e13932");
+    $(this).css('color','#e13932');
+    $(this).parent().css("border","1px solid #e13932");
   });
 
   /* 银行选择 */
@@ -421,7 +421,7 @@ $(function(){
         },1000);
       });
       jqXHR.fail(function() {
-         return false;
+        return false;
        });
     }
   });
