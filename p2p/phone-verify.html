@@ -273,9 +273,11 @@ $(function() {
       $(".refister-ok").addClass('active');
 
       $("#second").val('重发验证码');
+      clearTimeout(timer);
     } else {
       $(".refister-ok").text("完成注册");
       $(".refister-ok").removeClass('active');
+       timer = setTimeout(1000);
     }
 
    });

@@ -681,7 +681,7 @@ $(function(){
     , $inp = $('#apply-inp')
     , $hintBox = $inp.siblings('.hint-box')
     , $hintICONs = $hintBox.find('.item .ic');
-
+ 
   function judge() {
     $inp.focus(function(){
       $hintBox.show().animate({left: '105%', opacity: 1});
@@ -693,6 +693,7 @@ $(function(){
         $hintBox.hide();
       });
     }).keyup(function(){
+      $(".how-much").text('');
       var val = $(this).val().replace(/[^\d.]/g,"");
       $(this).val(val);
       if (regNum.test(val)) {
@@ -737,8 +738,11 @@ $(function(){
             $(".please-login").hide();
             $hintBox.show().animate({left: '105%', opacity: 1});
           });
+          $(".how-much").text('');
         }
       }
+      $(this).val();
+      $(".how-much").text(sDifference);
     });
   }
   judge();
