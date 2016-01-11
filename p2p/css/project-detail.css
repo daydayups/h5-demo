@@ -3,12 +3,20 @@
   color:#999999;
   font-size: 14px;
 }
+.cl-yellow {
+  color:#ff6600;
+}
+.vip {
+  line-height: 30px;
+}
 .project-detail .line .apply-box {
   border:1px solid #e5e5e5;
   background-image: none;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
   background:#fff;
   float: right;
-  height: auto;
+  height: 335px;
   width: 320px;
   padding:0 20px;
   padding-bottom: 22px;
@@ -23,6 +31,9 @@
 .project-detail .line .summary {
   background: #fff;
   border:1px solid #e5e5e5;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  height: 335px;
 }
 .w-162 {
   width: 162px;
@@ -51,11 +62,14 @@
   padding-top: 28px;
   padding-bottom: 50px;
 }
+.project-detail .line .summary .pb-20 {
+  padding-bottom: 20px;
+}
 .cr-red {
   color: #e12b2b; 
 }
 .cr-blue {
-  color:#4c95dd;
+  color: #4c95dd;
 }
 .please-login {
   background: #fcebeb;
@@ -66,14 +80,15 @@
   left: 107%;
   line-height: 24px;
   opacity: 0;
-  padding:11px 16px;
+  padding: 11px 16px;
   position: absolute;
   text-align: left;
   top: -78%;
   width: 154px;
 }
+
 .hint-base-1 {
-  line-height: 30px;
+  line-height: 40px;
   position: relative;
 }
 .please-login:after, 
@@ -113,12 +128,14 @@
   width: 55px; 
   display:inline-block;
   font-size: 14px;
+  position: relative;
+  top: 5px;
 }
 .f-bold {
   font-weight: bold;
 }
 .red-packet-time {
-  color:#565656;
+  color: #565656;
   font-size: 14px;
   text-indent: 10px;
   text-align: left;
@@ -169,7 +186,7 @@
 }
 .down-box li:hover {
   background: #eee;
-  color:#e12b2b;
+  color: #e12b2b;
 }
 .w-278 {
   width: 278px;
@@ -179,7 +196,7 @@
   background-image: -webkit-image-set( url(../images/user/ic-win@x1.png) 1x, url(../images/user/ic-win@x2.png) 2x);
   background-size:52px 52px;
   height: 52px;
-  left:10px;
+  left: 10px;
   width: 52px;
   position: relative;
 }
@@ -209,9 +226,9 @@
   width: 96px;
 }
 .confirm-box .row-1 .col-2 span {
-  border-left:1px solid #ddd;
-  border-right:1px solid #ddd;
-  color:#565656;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  color: #565656;
   display: block;
   height: 14px;
 }
@@ -228,8 +245,8 @@
   width: 116px;
 }
 .confirm-box .row-3 button.active {
-  background:#ededed;
-  color:#565656;
+  background: #ededed;
+  color: #565656;
 }
 .confirm-box .row-2 {
   height: 60px;
@@ -237,30 +254,30 @@
 .padding table td {
   padding: 0;
 }
- #agree {
+#agree {
   margin-left: 60px;
   margin-top: 20px;
   margin-bottom: 40px;
   position: relative;
   top: 2px;
- }
- .has-submit {
+}
+.has-submit {
   display: block;
   vertical-align: middle;
   width: 480px;
   margin: auto;
   margin-top: 56px;
- }
- .has-submit .row-1 {
+}
+.has-submit .row-1 {
   height: 60px;
   vertical-align: middle;
- }
- .has-submit .row-1 .col-1 {
+}
+.has-submit .row-1 .col-1 {
   width: 60px;
- }
- .has-submit .ic-warning-small-ok-big {
+}
+.has-submit .ic-warning-small-ok-big {
   background-size: 254px 254px;
- }
+}
 .has-submit  td {
   color:#565656;
   font-size: 12px;
@@ -302,4 +319,29 @@
   color:#e12b2b;
   font-size: 14px;
   margin-left: 10px;
+}
+.how-much {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  word-break:keep-all;
+}
+.h-22 {
+  height: 22px;
+}
+.project-detail .line .summary .s-middle .w-244 {
+  width: 223px;
+}
+.project-detail .line .summary .s-middle .w-150 {
+  width: 140px;
+}
+.project-detail .line .summary .s-middle .w-178 {
+  width: 182px;
+}
+
+.pl-40 {
+  padding-left: 40px;
+}
+.pl-47 {
+  padding-left: 47px;
 }

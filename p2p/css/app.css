@@ -1398,6 +1398,7 @@ a:hover {
   background: #eeedf4;
   border-radius: 5px;
   height: 5px;
+  position: relative;
   width: 100%;
 }
 .progress .percent {
@@ -1406,6 +1407,26 @@ a:hover {
   display: block;
   height: 5px;
   width: 80%;
+}
+.add-send {
+  background: #f03d3f;
+  border-radius: 2px;
+  color: #fff;
+  display: block;
+  right: 47px;
+  top: -1px;
+  font-size: 12px;
+  line-height: 18px;
+  position: absolute;
+  text-align: center;
+  width: 36px;
+}
+.progress .txt {
+  color: #a0a0a0;
+  font-size: 12px;
+  top: -3px;
+  right: -46px;
+  position: absolute;
 }
 /* pagination */
 .pagination {
@@ -2004,8 +2025,9 @@ a:hover {
 .project-detail .line .summary .s-middle .item .txt {
   font-size: 36px;
   padding-top: 10px;
+  position: relative;
 }
-.project-detail .line .summary .s-middle .item.b .txt {
+.project-detail .line .summary .border-right {
   border-right: 1px solid #e5e5e5;
 }
 .project-detail .line .summary .s-middle .item .txt .suffix {

@@ -82,31 +82,37 @@
           </div><!-- /.s-right -->
         </div><!-- /.s-top -->
         <div class="s-middle clearfix">
-          <div class="item b">
+          <div class="item b border-right w-244">
             <p class="tt">年化利息</p>
-            <p class="txt cl-red-lighter">12.60<span class="suffix">%</span></p>
+            <p class="txt cl-red-lighter">12.60<span class="suffix">%</span><span class="suffix">+12.25%</span><span class="add-send">加送</span></p>
+            <p class="f-12 cl-153 mt-10">收益方式：一次性还本付息</p>
           </div><!-- /.item -->
-          <div class="item m b">
+          <div class="item pl-40 b border-right w-150">
             <p class="tt">借款期限</p>
             <p class="txt cl-red-lighter">50<span class="suffix">天</span></p>
+            <p class="h-22"></p>
           </div><!-- /.item -->
-          <div class="item m">
+          <div class="item pl-47 w-178">
             <p class="tt">项目总额</p>
             <p class="txt cl-153">17.5<span class="suffix">万元</span></p>
           </div><!-- /.item -->
         </div><!-- /.s-middle -->
-        <div class="s-bottom">
+        <div class="s-bottom pb-20">
         <table>
           <tr>
             <td>
               <div class="w-162 float-left">
                 <div class="progress">
                   <span class="percent" style="width: 28%;"></span>
+                  <span class="txt">28%</span>
                 </div>
               </div>
             </td>
             <td><i class="ic-bao ml-88"></i></td>
-            <td width=""align='right';><p class="cl-153 float-right ml-10"><span>若项目提前结束，平台补充投资人2天利息</span></p></td>
+            <td width=""align="right";><p class="cl-153 float-right ml-10"><span>若项目提前结束，平台补充投资人2天利息</span></p></td>
+          </tr>
+          <tr>
+            <td colspan="3"><span class="cl-yellow f-12 vip">该项目为新手专享，只有未进行投资的新用户才可以投标</span></td>
           </tr>
         </table>
         </div><!-- /.s-bottom -->
@@ -119,10 +125,9 @@
               <td><span class="f-20 ">投资金额</span></td>
               <td align="right"><span class="surplus-money">剩余可投：54,000元</span></td>
             </tr>
-           
             <tr>
               <td colspan="2" align="left">
-                <div class="hint-base-1 mt-10">
+                <div class="hint-base-1 mt-30">
                   <span class="f-14 cl-153 ">可用余额：</span><span class="ml-20 cr-red f-16 f-bold money">600.00</span><span class="f-12 cr-red ">元</span><a class="top-up float-right" href="">充值</a>
                   <div id="please-login" class="please-login please-login-b">
                     <p class="item"><span class="cl-red ml-10 f-14">余额不足</span>
@@ -512,13 +517,31 @@
   </div>
 </div><!-- /.pop-window -->
 
+<div id="pop-warning-3" class="pop-window">
+  <div class="window-title clearfix">
+    <span class="f-14">提示</span>
+    <span class="close">&times;</span>
+  </div>
+  <div class="window-body">
+    <table>
+      <tr>
+        <td rowspan="2" align="right"><span class="ic-warning-a mr-20"></span></td>
+        <td align="left"><p class="f-18">该项目为新手专享</p></td>
+      </tr>
+      <tr>
+        <td align="left"><p class="f-14">只有未进行投资的新用户才可以投标</p></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button class="btn-red mt-20" style="width: 120px;">确定</button></td>
+      </tr>
+    </table>
+  </div>
+</div><!-- /.pop-window -->
+
 <div style="background: #eeeeee; border: 1px solid #eeeeee; width: 200px; line-height: 30px;padding-left: 10px;position: fixed; right: 10px; bottom: 200px;">
   <a class="hint-1" href="javascript:;">提示1</a>
-  <a class="hint-2" href="javascript:;">提示2</a>
   <a class="hint-3" href="javascript:;">提示3</a>
-  <a class="hint-4" href="javascript:;">提示4</a>
-  <a class="pop-pay-confirm" href="javascript:;">投标</a>
-  <a class="pop-contract" href="javascript:;">实名认证</a>
 </div>
 
 <script src="js/jquery-1.11.2.min.js"></script>
@@ -553,6 +576,11 @@ $(function(){
   $('.hint-1').click(function(){
     $modal.show();
     $.popup('#pop-pay-confirm');
+  });
+
+  $('.hint-3').click(function(){
+    $modal.show();
+    $.popup('#pop-warning-3');
   });
 
   $('.pop-window').find('.close').click(function(){
