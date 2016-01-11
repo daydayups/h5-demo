@@ -652,6 +652,16 @@
 <script src="js/app.js"></script>
 <script>
 $(function(){
+
+  $("input:text").focus(function() {
+    $(this).css("border","1px solid blue");
+  });
+
+  $("input:text").blur(function() {
+    $(this).css('color','#e13932');
+    $(this).css("border","1px solid #e13932");
+  });
+
   //点击立即投资如果未注册js效果
   $(".please-login").show();
   var $inp = $('#apply-inp');

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-  <meta charset="UTF-8">
-  <title>注册-发财金-赚钱不等待</title>
-  <link rel="stylesheet" href="css/app.css"/>
-  <link rel="stylesheet" href="css/project-detail.css"/>
+<meta charset="UTF-8">
+<title>项目详情页</title>
+<link rel="stylesheet" href="css/app.css"/>
+<link rel="stylesheet" href="css/project-detail.css"/>
 </head>
 <body>
 <div class="top">
@@ -60,26 +60,225 @@
   </div><!-- /.inner -->
 </div><!-- /.nav -->
 
-<div class="inner clearfix">
-  <table class="has-submit">
-    <tr class="row-1">
-      <td class="col-1"><i class="ic-warning-small-ok-big"></i></td>
-      <td><span class="ml-30 f-22">投资已提交！</span></td>
-    </tr>
-    <tr>
-      <td colspan="2"><span class="ml-88">金财宝3期，期限7天，年化利息14%，投资金额 10000元；</span></td>
-    </tr>
-    <tr>
-      <td colspan="2"><span class="ml-88">项目一旦筹满计息，我们会以短信形式通知您；</span></td>
-    </tr>
-    <tr>
-      <td colspan="2"><span class="ml-88">您可在“我的账户 - 我的投资”中查看项目信息。</span></td>
-    </tr>
-    <tr>
-      <td colspan="2"><a class="check-records ml-88">查看投资记录</a><a class="financial-next ml-10">继续理财</a></td>
-    </tr>
-  </table>
-</div>
+<div class="project-detail normal-gray-bg" style="padding-bottom: 30px">
+  <div class="inner">
+    <div class="bread-crumbs">
+      <a class="crumb" href="#">首页</a>
+      <span class="delimiter">&gt;</span>
+      <a class="crumb" href="#">投资理财</a>
+      <span class="delimiter">&gt;</span>
+      <span class="crumb">项目详情</span>
+    </div><!-- /.bread-crumbs -->
+
+    <div class="line clearfix">
+      <div class="summary">
+        <span class="ic-beginner-tag"></span>
+        <div class="s-top clearfix">
+          <div class="s-left">
+            <span class="tt">发财金10号</span>
+          </div><!-- /.s-left -->
+          <div class="s-right">
+            <span class="time"><i class="ic ic-time"></i>剩余时间1天17小时52分</span>
+          </div><!-- /.s-right -->
+        </div><!-- /.s-top -->
+        <div class="s-middle clearfix">
+          <div class="item b">
+            <p class="tt">年化利息</p>
+            <p class="txt cl-red-lighter">12.60<span class="suffix">%</span></p>
+          </div><!-- /.item -->
+          <div class="item m b">
+            <p class="tt">借款期限</p>
+            <p class="txt cl-red-lighter">50<span class="suffix">天</span></p>
+          </div><!-- /.item -->
+          <div class="item m">
+            <p class="tt">项目总额</p>
+            <p class="txt cl-153">17.5<span class="suffix">万元</span></p>
+          </div><!-- /.item -->
+        </div><!-- /.s-middle -->
+        <div class="s-bottom">
+        <table >
+          <tr>
+            <td>
+              <div class="w-162 float-left">
+                <div class="progress">
+                  <span class="percent" style="width: 100%;"></span>
+                </div>
+              </div>
+            </td>
+            <td><i class="ic-bao ml-88"></i></td>
+            <td width=""align='right';><p class="cl-153 float-right ml-10"><span>若项目提前结束，平台补充投资人2天利息</span></p></td>
+          </tr>
+        </table>
+        </div><!-- /.s-bottom -->
+      </div><!-- /.summary -->
+      <div class="apply-box">
+        <!-- form -->
+        <form id="apply-form" action="#" method="post">
+          <table style="display:none;">
+            <tr class="row">
+              <td><span class="f-20 ">投资金额</span></td>
+              <td align="right"><span class="surplus-money">剩余可投：54,000元</span></td>
+            </tr>
+            <tr>
+              <td colspan="2" align="left">
+                <div class="hint-base mt-25">
+                  <input id="apply-inp" class="inp-a" type="text" placeholder="元">
+                  <div class="hint-box">
+                    <p class="item"><i class="ic ic-warning-small-a"></i><span class="txt">每次投资不可低于50元</span></p>
+                    <p class="item"><i class="ic ic-warning-small-a"></i><span class="txt">投资额必须为50元的整数倍</span></p>
+                    <p class="item"><i class="ic ic-warning-small-a"></i><span class="txt">投资额不可超过54000元</span></p>
+                  </div><!-- /.hint-box -->
+                </div><!-- /.inp-base -->
+                <p class="cl-153 mt-10">每投资 1万元 收益 <span class="cl-red-lighter">150.38</span> 元</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button id="fast-cast" class="btn-normal f-14 mt-20" style="width: 100%;">立即投资</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+        <!-- /form -->
+        <!-- success -->
+        <table >
+          <tr class="row brd-b">
+            <td><span class="cl-blue-lighter">正在回款</span></td>
+            <td class="" align="right"></td>
+          </tr>
+          <tr>
+            <td>
+              <span class="ic-tick-a mt-30"></span>
+            </td>
+            <td>
+              <p class="f-24 mt-50">已还款完毕</p>
+              <p class="f-12 cl-102 mt-10">筹款完成时间：2015-11-28</p>
+              <p class="f-12 cl-102 mt-10">项目状态：正常还款中</p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <a class="btn-normal f-14 mt-60 w-278 mb-10" href="#">查看其它投资项目</a>
+            </td>
+          </tr>
+        </table>
+        <!-- /success -->
+
+      </div><!-- /.apply-box -->
+    </div><!-- /.line -->
+
+    <div class="detail line mt-20">
+      <div class="switcher">
+        <ul class="clearfix">
+          <li class="tab active" data-anchor="0">项目信息</li>
+          <li class="tab m" data-anchor="1">投标记录<span class="cl-red">（11）</span></li>
+          <li class="tab m" data-anchor="2">资金安全</li>
+          <li class="tab m" data-anchor="3">法律保障</li>
+        </ul>
+      </div><!-- /.switcher -->
+      <div class="content">
+        <p class="anchor">项目介绍</p>
+        <p class="f-12 cl-102 mt-10">稳盈宝是发财金推出的个人投融资服务。发财金向投资方（投资人）和融资方（借款人）提稳盈宝服务，帮助双方快捷方便地完成投资和借贷。双方通过平台的电子借贷协议，明确双方的债务与债权关系。稳盈宝服务仅向符合中华人民共和国有关法律法规及本公司相关规定的合格投资人和借款人提供。</p>
+        <p class="mt-25">投资流程</p>
+        <div class="steps clearfix mt-10">
+          <ul>
+            <li class="item">选择项目投资</li>
+            <li class="arrow"></li>
+            <li class="item">等待项目筹资</li>
+            <li class="arrow"></li>
+            <li class="item">筹款成功，开始按日计息</li>
+            <li class="arrow"></li>
+            <li class="item">项目到期，归还投资本金和利息收益</li>
+          </ul>
+        </div><!-- /.steps -->
+
+        <div class="block record mt-25 anchor">
+          <div class="b-head">
+            <span class="tt">投标记录</span>
+          </div><!-- /.b-head -->
+          <div class="b-content">
+            <p class="f-12 mt-15">投标笔数：<span class="cl-red">11</span> 笔 <span class="ml-30">投标金额： </span><span class="cl-red">￥20,838</span></p>
+            <table class="mt-15">
+              <tr>
+                <th class="col-1" width="25%">投标人</th>
+                <th width="25%">投标金额</th>
+                <th width="25%">收益</th>
+                <th>投标日期</th>
+              </tr>
+              <tr>
+                <td class="col-1">138****2342</td>
+                <td>100</td>
+                <td>0.75</td>
+                <td>2015-07-11 14:16:33</td>
+              </tr>
+              <tr>
+                <td class="col-1">138****2342</td>
+                <td>100</td>
+                <td>0.75</td>
+                <td>2015-07-11 14:16:33</td>
+              </tr>
+              <tr>
+                <td class="col-1">138****2342</td>
+                <td>100</td>
+                <td>0.75</td>
+                <td>2015-07-11 14:16:33</td>
+              </tr>
+              <tr>
+                <td class="col-1">138****2342</td>
+                <td>100</td>
+                <td>0.75</td>
+                <td>2015-07-11 14:16:33</td>
+              </tr>
+            </table>
+          </div><!-- /.b-content -->
+        </div><!-- /.block -->
+
+        <div class="block mt-25 anchor">
+          <div class="b-head">
+            <span class="tt">资金安全</span>
+          </div><!-- /.b-head -->
+          <div class="b-content">
+            <p class="ml-40 mt-40">1.  发财金在贝付开立了专款专用的第三方资金托管账户，保障资金安全。</p>
+            <p class="ml-40 cl-153 f-12 mt-15">每一笔投资人的资金，都将直接进入发财金网在贝付开的监管账户中，委托贝付全权监管，发财金网无权自行提现或挪作他用，做到”专户专款专用“。</p>
+            <p class="ml-40 mt-40">2.  关于贝付，它是浙江省第二大获得中国人民银行颁发的《支付业许可证》的第三方支付公司</p>
+            <p class="ml-40 cl-153 f-12 mt-15">公司于2011年6月成立总部设于杭州，目前在北京、上海、金华等地设立分支机构，目前超过5000万用户，年交易量超过100亿。</p>
+          </div><!-- /.b-content -->
+        </div><!-- /.block -->
+
+        <div class="block mt-25 anchor">
+          <div class="b-head">
+            <span class="tt">法律保障</span>
+          </div><!-- /.b-head -->
+          <div class="b-content">
+            <ul class="list-sp ml-40 mt-40">
+              <li>
+                <p class="f-bold">配资的合法性</p>
+                <p class="f-12 cl-153 mt-20">配资是民间借贷的一种形式，《合同法》和《最高人民法院关于人民法院审理借贷案件的若干意见》从法律上肯定了民间借贷行为的合法性；同时，可以采用第三方对借款提供担保的方式，保障出借人收回借款保证金、利息的权利。因此，配资行为受法律保护。</p>
+                <p class="f-12 cl-153 mt-20">依据《最高人民法院关于人民法院审理借贷案件的若干意见》的规定，公民之间、公民与法人之间、公民与其他组织之间的借贷属于民间借贷。因此配资行为作为一种民事法律行为，在行为人具有完全民事行为能力（年满18周岁，且不存在足以影响自身行为的精神疾病的情形）、 意愿表示真实且不违反法律、行政法规禁止性规定的情况下，受到法律的保护。</p>
+              </li>
+              <li>
+                <p class="f-bold">借款人及理财人之间的借贷关系的合法性</p>
+                <p class="f-12 cl-153 mt-20">根据《合同法》第196条规定：“借款合同是借款人向贷款人借款，到期返还借款并支付利息的合同”；根据《合同法》第十二章“借款合同”和最高人民法院《关于人民法院审理借贷案件的若干意见》，我国法律允许自然人等普通民事主体之间发生借贷关系，并允许出借方到期可以收回本金和符合法律规定的利息。理财人作为借款人，与贷款人之间形成的借贷关系受到法律保护。</p>
+              </li>
+              <li>
+                <p class="f-bold">发财金平台提供居间撮合服务的合法性</p>
+                <p class="f-12 cl-153 mt-20">根据《合同法》第23章专门对“居间合同”作出规定，其第424条明确定义为：“居间合同是居间人向委托人报告订立合同的机会或者提供订立合同的媒介服务，委托人支付报酬的合同”。发财金平台是合法设立的中介服务机构，致力于为民间借贷业务提供优质高效的撮合服务，以促成借贷双方形成借贷关系，然后收取相关报酬。此种居间服务有着明确的法律依据。</p>
+              </li>
+              <li>
+                <p class="f-bold">电子合同的合法性</p>
+                <p class="f-12 cl-153 mt-20">根据《合同法》第11条的规定，当事人可以采用合同书、信件和数据电文（包括电报、电传、传真、电子数据交换和电子邮件）等形式订立合同。电子合同是法律认可的书面合同形式之一。发财金采取用户网上点击确认的方式签署电子合同。点击确认后的电子合同符合《中华人民共和国合同法》规定的合同成立、生效的要件，其有效性也被人民法院的司法实践所接受。</p>
+              </li>
+              <li>
+                <p class="f-bold">理财人通过发财金平台获得的出借理财收益的合法性</p>
+                <p class="f-12 cl-153 mt-20">根据最高人民法院《关于人民法院审理借贷案件的若干意见》第6条：“民间借贷的利率可以适当高于银行的利率，各地人民法院可以根据本地区的实际情况具体掌握，但最高不得超过银行同类贷款利率的四倍（包含利率本数）。超出此限度的，超出部分的利息不予保护。”发财金平台上理财人向借款人出借资金并按照约定利率收取利息，该等利率未超过银行同类贷款利率的四倍，为合法利息收益，受到法律保护。</p>
+              </li>
+            </ul>
+          </div><!-- /.b-content -->
+        </div><!-- /.block -->
+      </div><!-- /.content -->
+    </div><!-- /.line -->
+  </div><!-- /.inner -->
+</div><!-- /.index-gray-bg -->
 
 <!-- footer -->
 <div class="footer clearfix">
@@ -182,17 +381,156 @@
     </div>
   </a>
 </div><!-- /.bar-fixed -->
+
+<!-- advisors -->
+<div class="advisor-box" style="display:none">
+  <span class="close"></span>
+  <div class="inner clearfix">
+    <div class="fixed-title">
+      <p class="txt">理财</p>
+      <p class="txt mt-5">顾问</p>
+    </div><!-- /.fixed-title -->
+    <div class="list">
+      <div class="item">
+        <div class="i-left">
+          <div class="avatar">
+            <img src="images/avatar01.jpg" alt=""/>
+          </div>
+        </div><!-- /.i-left -->
+        <div class="i-right">
+          <p class="f-16">周艺华</p>
+          <p class="f-12 cl-153 mt-10">手机 15833845568</p>
+          <p class="f-12 cl-153 mt-5">微信 15644556445</p>
+          <a class="link-qq-normal mt-10" href="#"><i class="ic-qq-red"></i>立即咨询</a>
+        </div><!-- /.i-right -->
+      </div><!-- /.item -->
+      <div class="item">
+        <div class="i-left">
+          <div class="avatar">
+            <img src="images/avatar01.jpg" alt=""/>
+          </div>
+        </div><!-- /.i-left -->
+        <div class="i-right">
+          <p class="f-16">周艺华</p>
+          <p class="f-12 cl-153 mt-10">手机 15833845568</p>
+          <p class="f-12 cl-153 mt-5">微信 15644556445</p>
+          <a class="link-qq-normal mt-10" href="#"><i class="ic-qq-red"></i>立即咨询</a>
+        </div><!-- /.i-right -->
+      </div><!-- /.item -->
+      <div class="item">
+        <div class="i-left">
+          <div class="avatar">
+            <img src="images/avatar02.jpg" alt=""/>
+          </div>
+        </div><!-- /.i-left -->
+        <div class="i-right">
+          <p class="f-16">周艺华</p>
+          <p class="f-12 cl-153 mt-10">手机 15833845568</p>
+          <p class="f-12 cl-153 mt-5">微信 15644556445</p>
+          <a class="link-qq-normal mt-10" href="#"><i class="ic-qq-red"></i>立即咨询</a>
+        </div><!-- /.i-right -->
+      </div><!-- /.item -->
+      <div class="item">
+        <div class="i-left">
+          <div class="avatar">
+            <img src="images/avatar03.jpg" alt=""/>
+          </div>
+        </div><!-- /.i-left -->
+        <div class="i-right">
+          <p class="f-16">周艺华</p>
+          <p class="f-12 cl-153 mt-10">手机 15833845568</p>
+          <p class="f-12 cl-153 mt-5">微信 15644556445</p>
+          <a class="link-qq-normal mt-10" href="#"><i class="ic-qq-red"></i>立即咨询</a>
+        </div><!-- /.i-right -->
+      </div><!-- /.item -->
+      <button class="prev"></button>
+      <button class="next"></button>
+    </div><!-- /.list -->
+  </div><!-- /.inner -->
+</div><!-- /.advisors -->
+
+<!-- pop-window -->
+<div class="modal"></div>
+<div id="pop-pay-confirm" class="pop-window" style="width: 482px;">
+  <div class="window-title clearfix">
+    <span class="f-14">确认投资</span>
+    <span class="close">&times;</span>
+  </div>
+  <div class="window-body padding">
+    <table class="confirm-box">
+      <tr class="row-1">
+        <td class="col-1"><span>金财宝3期</span></td>
+        <td class="col-2"><span class="cl-blue-lighter">7天</span></td>
+        <td class="col-1"><span>年化利息</span></td>
+      </tr>
+      <tr class="row-2">
+        <td colspan="3" align="left">
+          <span class="ml-60">投资金额：</span><span class="ml-20 cl-red f-16">1500</span><span class="cl-red f-12">元</span>
+        </td>
+      </tr>
+      <tr class="row-3">
+        <td colspan="3">
+          <button class="btn-confirm-r">确定投资</button>
+        </td>
+      </tr>
+      <tr class="row-4">
+        <td colspan="3">
+          <input type="checkbox" id="agree" value="1" checked="" >
+          <label for="agree">
+            <span>我已阅读并同意签署</span>
+          </label>
+          <a class="link-blue" href="#">《借款协议》</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><!-- /.pop-window -->
+
+<div style="background: #eeeeee; border: 1px solid #eeeeee; width: 200px; line-height: 30px;padding-left: 10px;position: fixed; right: 10px; bottom: 200px;">
+  <a class="hint-1" href="javascript:;">提示1</a>
+  <a class="hint-2" href="javascript:;">提示2</a>
+</div>
+
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/app.js"></script>
 <script>
-$(function() {
+$(function(){
+  //点击立即投资如果未注册js效果
+  var $inp = $('#apply-inp');
+  $inp.focus(function(){
+    $(".please-login").show().animate({left: '104%', opacity: 1});
+  }).blur(function(){
+    $(".please-login").animate({left: '108%', opacity: 0}, 400, 'swing', function () {
+      $(".please-login").hide();
+    });
+  });
+  
+  //协议 去掉and 添加效果
+  $("#agree").click(function() {
+    if ($("#agree:checked").val() != 1) {
+      $(".btn-confirm-r").text("您未同意协议");
+      $(".btn-confirm-r").addClass('active');
+    } else {
+      $(".btn-confirm-r").removeClass('active');
+      $(".btn-confirm-r").text("确认投资");
+    }
 
+  });
+  
+  //pop-window
+  var $modal = $.modalInit('.modal');
 
+  $('.hint-1').click(function(){
+    $modal.show();
+    $.popup('#pop-pay-confirm');
+  });
+
+  $('.pop-window').find('.close').click(function(){
+    $(this).parents('.pop-window').hide();
+    $modal.hide();
+  });
 
 });
-
-
-
 
 </script>
 </body>
