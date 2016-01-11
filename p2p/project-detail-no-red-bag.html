@@ -82,17 +82,17 @@
           </div><!-- /.s-right -->
         </div><!-- /.s-top -->
         <div class="s-middle clearfix">
-          <div class="item b border-right w-244">
+          <div class="item b border-right w-223">
             <p class="tt">年化利息</p>
             <p class="txt cl-red-lighter">12.60<span class="suffix">%</span><span class="suffix">+12.25%</span><span class="add-send">加送</span></p>
             <p class="f-12 cl-153 mt-10">收益方式：一次性还本付息</p>
           </div><!-- /.item -->
-          <div class="item pl-40 b border-right w-150">
+          <div class="item pl-40 b border-right w-140">
             <p class="tt">借款期限</p>
             <p class="txt cl-red-lighter">50<span class="suffix">天</span></p>
             <p class="h-22"></p>
           </div><!-- /.item -->
-          <div class="item pl-47 w-178">
+          <div class="item pl-47 w-182">
             <p class="tt">项目总额</p>
             <p class="txt cl-153">17.5<span class="suffix">万元</span></p>
           </div><!-- /.item -->
@@ -137,7 +137,8 @@
             <tr>
               <td colspan="2" align="left">
                 <div class="hint-base mt-10">
-                  <input id="apply-inp" class="inp-a" type="text" placeholder="元">
+                  <input id="apply-inp" class="inp-a" type="text" placeholder="">
+                  <span class="cr-153 f-14 unit">元</span>
                   <div class="hint-box">
                     <p class="item"><i class="ic ic-warning-small-a"></i><span class="txt">每次投资不可低于50元</span></p>
                     <p class="item"><i class="ic ic-warning-small-a"></i><span class="txt">投资额必须为50元的整数倍</span></p>
@@ -147,7 +148,6 @@
                 <p class="cl-153 mt-10 mb-5">每投资 1万元 收益 <span class="cl-red-lighter">150.38</span> 元</p>
               </td>
             </tr>
-            
             <tr>
               <td colspan="2">
                 <button id="fast-cast" class="btn-normal f-14 mt-15 mb-60" style="width: 100%;">立即投资</button>
@@ -473,25 +473,24 @@
     <span class="close">&times;</span>
   </div>
   <div class="window-body padding">
-    <table class="confirm-box">
-      <tr class="row-1">
-        <td class="col-1"><span>金财宝3期</span></td>
-        <td class="col-2"><span class="cl-blue-lighter">7天</span></td>
-        <td class="col-1"><span>年化利息</span></td>
+    <ul class="confirm-head brd-b">
+      <li class=""><span>金财宝3期</span></li>
+      <li class=""><span class="brd-l brd-r">7天</span></li>
+      <li class=""><span>年化利息</span></li>
+    </ul>
+    <table class="confirm-table-box">
+      <tr class="">
+        <td align="right" class="col-1"><span  class="cl-153">投资金额：</span></td>
+        <td align="left" class="col-2"><span class="cl-red f-16">1500</span><span class="cl-red f-12">元</span></td>
       </tr>
-      <tr class="row-2">
-        <td colspan="3" align="left">
-          <span class="ml-60">投资金额：</span><span class="ml-20 cl-red f-16">1500</span><span class="cl-red f-12">元</span>
-        </td>
+      <tr>
+        <td align="right" class="col-1"></td>
+        <td align="left" class="col-2"><button  id="btn-confirm-r" class="f-14">确定投资</button></td>
       </tr>
-      <tr class="row-3">
-        <td colspan="3">
-          <button class="btn-confirm-r">确定投资</button>
-        </td>
-      </tr>
-      <tr class="row-4">
-        <td colspan="3">
-          <input type="checkbox" id="agree" value="1" checked="" >
+      <tr>
+        <td align="right" class="col-1"></td>
+        <td align="left" class="col-2">
+          <input type="checkbox" id="agree" class="agree" value="1" checked="" >
           <label for="agree">
             <span>我已阅读并同意签署</span>
           </label>
@@ -528,11 +527,11 @@ $(function(){
   //协议 去掉and 添加效果
   $("#agree").click(function() {
     if ($("#agree:checked").val() != 1) {
-      $(".btn-confirm-r").text("您未同意协议");
-      $(".btn-confirm-r").addClass('active');
+      $("#btn-confirm-r").text("您未同意协议");
+      $("#btn-confirm-r").addClass('active');
     } else {
-      $(".btn-confirm-r").removeClass('active');
-      $(".btn-confirm-r").text("确认投资");
+      $("#btn-confirm-r").removeClass('active');
+      $("#btn-confirm-r").text("确认投资");
     }
 
   });

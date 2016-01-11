@@ -87,7 +87,7 @@
   width: 154px;
 }
 
-.hint-base-1 {
+.hint-balance {
   line-height: 40px;
   position: relative;
 }
@@ -200,8 +200,24 @@
   width: 52px;
   position: relative;
 }
-.confirm-box {
+.confirm-head,
+.confirm-head table {
   font-size: 14px;
+  width: 100%;
+}
+.confirm-head {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+.confirm-head li {
+  float: left;
+  width: 33%;
+}
+.confirm-head span {
+  display: block;
+  color: #999999;
+  height: 14px;
   width: 100%;
 }
 .padding {
@@ -254,10 +270,7 @@
 .padding table td {
   padding: 0;
 }
-#agree {
-  margin-left: 60px;
-  margin-top: 20px;
-  margin-bottom: 40px;
+.agree {
   position: relative;
   top: 2px;
 }
@@ -329,19 +342,60 @@
 .h-22 {
   height: 22px;
 }
-.project-detail .line .summary .s-middle .w-244 {
+.project-detail .line .summary .s-middle .w-223 {
   width: 223px;
 }
-.project-detail .line .summary .s-middle .w-150 {
+.project-detail .line .summary .s-middle .w-140 {
   width: 140px;
 }
-.project-detail .line .summary .s-middle .w-178 {
+.project-detail .line .summary .s-middle .w-182 {
   width: 182px;
 }
-
 .pl-40 {
   padding-left: 40px;
 }
 .pl-47 {
   padding-left: 47px;
+}
+.inp-a {
+  text-align: left;
+  text-indent: 8px;
+}
+.unit {
+  right: 12px;
+  position: absolute;
+  top: 16px
+}
+.hint-yuan {
+  position: relative;
+}
+.confirm-table-box .col-1{
+  width: 130px;
+}
+.confirm-table-box tr {
+  height: 56px;
+}
+.confirm-table-box tr:last-child {
+  vertical-align: top;
+}
+.btn-red {
+  margin-top: 0px;
+  margin: 0px;
+  width: 128px;
+  height: 36px;
+}
+.confirm-table-box button {
+  background :#e12b2b;
+  border-radius:4px;
+  border:none;
+  color: #fff;
+  margin-top: 0px;
+  margin: 0px;
+  outline: none;
+  width: 128px;
+  height: 36px;
+}
+.confirm-table-box .active {
+  background :#ededed;
+  color: #565656;
 }
