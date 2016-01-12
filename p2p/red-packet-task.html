@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>用户中心</title>
 <link rel="stylesheet" href="css/app.css"/>
+<link rel="stylesheet" type="text/css" href="css/compatibility.css">
 </head>
 <body>
 <div class="top">
@@ -333,7 +334,7 @@ $(function(){
     var $tr=$(this).parents('.get-money table tr');
     $tr.children('.col-1').children().addClass('credential');
     $tr.children('.col-2').children('span').addClass('cash');
-     $tr.children('.col-2').children('p').addClass('approve');
+    $tr.children('.col-2').children('p').addClass('approve');
     $modal.show();
     $.popup('#pop-warning-1');
   });

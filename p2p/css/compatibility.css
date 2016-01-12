@@ -61,3 +61,106 @@
   height: 14px;
   width: 506px;
 }
+.footer {
+  display: block;
+  width: 100%;
+}
+.choose ul {
+  height: 204px;
+  width: 885px;
+}
+.choose ul li {
+  float: left;
+}
+.in-nav ul.inner {
+  width: 860px;
+  margin: 0 auto;
+  padding:0 30px;
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
+.in-nav li {
+  float: left;
+}
+.po-nav li {
+  float: left;
+  margin: 0px 6px;
+}
+.position {
+  background: transparent;
+  box-sizing: content-box;
+  -webkit-box-sizing:content-box;
+  overflow: hidden;
+}
+.po-nav {
+  display: block;
+  width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.join-us {
+  padding-top: 40px;
+  height: auto !important;
+}
+.project-detail .line .apply-box {
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  background: #fff;
+  height: 335px;
+  width: 280px;
+  padding: 0 20px;
+}
+.top-up {
+  display: block;
+  float: right;
+  height: 30px;
+}
+.hint-balance span {
+  float: left;
+}
+.hint-balance {
+  line-height: 40px;
+  position: relative;
+  height: 40px;
+  width: 280px;
+}
+.apply-form tr{
+  height: 51px;
+}
+.styled-select {
+  width: 280px;
+}
+.inp-a {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding-right: 15px;
+  text-align: left;
+  width: 265px;
+}
+.down-box {
+  width: 280px;
+  margin: 0;
+}
+.user-main {
+  background-color: #fff;
+  border-left: 1px solid #dedede;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing:content-box;
+  box-sizing: content-box;
+  width: 733px;
+  min-height: 680px;
+  _height: 900px;
+  padding: 30px;
+  float: left;
+}
+.share-social a {
+  float: left;
+}
+.share-social p {
+  height: 40px;
+  width: 250px;
+}
+.w-100 {
+  width: 100px;
+}
