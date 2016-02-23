@@ -15,27 +15,33 @@
   color: #666666;
   width: 300px;
   height: 40px;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 40px;
   text-align: center;
   font-family: 'Microsoft YaHei';
-  margin:0 auto;
+  margin-left:auto;
+  margin-right: auto;
 }
 .bg_f5f5f5 {
   background: #f5f5f5;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 .circular-box {
   overflow: hidden;
-  margin-top: 82px;
-  padding-bottom: 40px;
+  margin-top: 20px;
+ 
+}
+.circular-box li {
+  width: 320px;
+  float: left;
 }
 .circular-box a {
   display: block;
   cursor: pointer;
-  width: 246px;
-  padding-top: 280px;
+  margin:0 auto;
+  width: 152px;
+  padding-top: 170px;
   font-size: 24px;
   color: #666666;
   text-align: center;
@@ -43,24 +49,26 @@
 }
 .circular-1 {
   background: url(../images/help-new/yuan01.png) top center no-repeat;
-  margin-left: 90px;
-  float: left;
 }
 .circular-2 {
-  background: url(../images/help-new/yuan02.png) 0 0 no-repeat;
-  margin-right: 90px;
-  float: right;
+  background: url(../images/help-new/yuan02.png) top center no-repeat;
+}
+.circular-3 {
+  background: url(../images/help-new/yuan03.png) top center no-repeat;
 }
 .circular-1:hover {
-  background: url(../images/help-new/yuan-hover01.png) 0 0 no-repeat;
+  background: url(../images/help-new/yuan-hover01.png) top center no-repeat;
 }
 .circular-2:hover {
-  background: url(../images/help-new/yuan-hover02.png) 0 0 no-repeat;
+  background: url(../images/help-new/yuan-hover02.png) top center no-repeat;
+}
+.circular-3:hover {
+  background: url(../images/help-new/yuan-hover03.png) top center no-repeat;
 }
 .bg-fff {
   background: #fff;
-  padding-top: 40px;
-  padding-bottom: 70px;
+  padding-top: 20px;
+  padding-bottom: 30px;
   overflow: hidden;
 }
 .table-1 {
@@ -74,7 +82,7 @@
   width: 422px;
 }
 .table-box {
-  margin-top :70px;
+  margin-top :30px;
 }
 .table-box .table {
   border: 1px solid #e1e1e1;
@@ -161,6 +169,18 @@
   font-size: 22px;
   line-height: 68px;
 }
+
+.link-navigation,
+.link-navigation a {
+  line-height: 50px;
+  color: #b0aeae;
+  font-size: 14px;
+  text-decoration: none;
+  font-family:"Microsoft Yahei";
+}
+.link-navigation a:hover {
+  color: #f3896c;
+}
 .issue-box {
   overflow: hidden;
 }
@@ -204,7 +224,7 @@
 }
 .relation-box {
   margin-top: 70px;
-  padding-bottom: 104px;
+  padding-bottom: 60px;
   overflow: hidden;
 }
 .relation-box li {
@@ -235,67 +255,74 @@
   color: #0184ff;
   text-decoration: none;
 }
-/*-new-guide*/
+.box {
+  overflow: hidden;
+}
 .nav-box {
-  background: #f5f5f5;
-  padding-bottom: 50px;
-}
-.nav-box ul {
   background: #fff;
-  overflow: hidden;
-}
-.nav-box ul li {
-  line-height: 80px;
-  width: 192px;
+  width: 190px;
   float: left;
+  padding-bottom: 500px;
+  margin-bottom: -500px;
 }
-.nav-box a {
-  color: #666666;
+.nav-box h2,
+.nav-box h3 {
+  width: 190px;
+  height: 44px;
+}
+.nav-box h2 {
+  background: #99acd4;
+}
+
+.menu_head {
+  background: #99acd4  url(../images/help-new/arrow-right.png) center right no-repeat;
+}
+.nav-box .current {
+  background: #f3896c url(../images/help-new/arrow-down.png) center right no-repeat;
+}
+.nav-box h2.active,
+.nav-box h2:hover {
+  background: #f3896c
+}
+
+.nav-box h3:hover {
+  background: #f3896c url(../images/help-new/arrow-down.png) center right no-repeat;
+}
+.nav-box h2 a,
+.nav-box h3 a {
   display: block;
-  text-decoration: none;
-  margin: 0 auto;
-  width: 96px;
-  font-family: "Microsoft YaHei";
-  font-size: 24px;
-}
-.nav-box a:hover,
-.nav-box a.active {
-  line-height: 80px;
-  color: #333333;
-  border-bottom: 2px solid #f42525;
-}
-.nevin-box {
-  background: #fff;
-  box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-  padding:20px 40px 88px 50px;
-}
-.nevin-nav ul {
-  overflow: hidden;
-}
-.nevin-nav li {
-  float: left;
-}
-.nevin-nav li a {
-  border-radius: 18px;
-  border: 1px solid #666666;
-  color: #666666;
-  display: block;
-  margin-right:28px;
+  color : #fff;
+  line-height: 44px;
   text-align: center;
   text-decoration: none;
-  font-size: 18px;
-  padding: 0 8px;
+  font-size: 20px;
+  font-family: "Microsoft Yahei";
+}
+.nav-box li a:hover {
+  color:  #f3896c;
+}
+.mt-1 {
+  margin-top: 1px;
+}
+.nav-box li a {
+  font-family: "Microsoft Yahei";
+  border-bottom :1px solid #ccc;
+  color: #a0a0a0;
+  display: block;
+  font-size: 16px;
   height: 30px;
   line-height: 30px;
-  min-width: 100px;
-  -webkit-box-sizing:border-box;
-  box-sizing:border-box;
+  text-align: center;
+  text-decoration: none;
 }
-.nevin-nav li a.active,
-.nevin-nav li a:hover {
-  color:  #dd0b14;;
-  border: 1px solid #dd0b14;
+
+.nevin-list-box {
+  background: #fff;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  padding: 18px 30px 100px 18px;
+  width: 750px;
+  float: right;
 }
 
 .ic-a {

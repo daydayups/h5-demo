@@ -5,18 +5,6 @@
   <title>充值-发财金-赚钱不等待</title>
   <link rel="stylesheet" href="css/app.css"/>
   <link rel="stylesheet" href="css/help.css">
-<style>
-.nevin-box {
-  padding-left: 25px;
-  padding-right: 15px;
-}
-.nevin-nav li a {
-  margin-right: 8px;
-}
-.nevin-content {
-  padding-right: 20px;
-}
-</style>
 </head>
 <body>
   <div class="top">
@@ -74,33 +62,37 @@
 
   <div class="container">
     <div class="help-banner">
-      <img src="images/help-banner.png" >
+      <img src="images/help-banner.jpg"  >
     </div>
-    <div class="nav-box">
-      <div class="inner clearfix">
-        <ul>
-          <li><a  href="help-center-1.html">帮助中心</a></li>
-          <li><a href="">理财产品</a></li>
-          <li><a href="">账户管理</a></li>
-          <li><a class="active" href="">安全保障</a></li>
-          <li><a  href="">常见问题</a></li>
+    <div class="inner clearfix link-navigation"><a href="">首页</a>&nbsp;&gt;&nbsp;<a href="">帮助中心</a></div>
+    <div class="inner clearfix box">
+      <div class="nav-box" id="firstpane">
+        <h3 class="menu_head current"><a  href="#">理财产品</a></h3>
+        <ul style="display:block" class="menu_body">
+          <li><a class="active" href="#">金财宝</a></li>
+          <li><a href="#">银票宝宝</a></li>
+          <li><a href="#">域名宝</a></li>
         </ul>
-      </div>
-    </div><!-- /.nav-box -->
-
-    <div class="inner clearfix nevin-box">
-      <div class="nevin-nav">
-        <ul>
-          <li><a  href="">用户利益保障机制</a></li>
-          <li><a class="active" href="">法律与政策保障</a></li>
-          <li><a href="">借款审核与风控</a></li>
-          <li><a href="">账户及隐私安全</a></li>
-          <li><a href="">用户的自我保护</a></li>
-          <li><a href="">网站相关协议</a></li>
+        <h3 class="menu_head mt-1"><a href="#">帮助导航</a></h3>
+        <ul style="display:none" class="menu_body">
+          <li><a href="#">登录注册</a></li>
+          <li><a href="#">修改密码</a></li>
+          <li><a href="#">安全认证</a></li>
+          <li><a href="#">充值</a></li>
+          <li><a href="#">提现</a></li>
+          <li><a href="#">用户利益保障机制</a></li>
+          <li><a href="#">法律与政策保障</a></li>
+          <li><a href="#">借款审核与风控</a></li>
+          <li><a href="#">账户及隐私安全</a></li>
+          <li><a href="#">用户的自我保护</a></li>
+          <li><a href="#">网站相关协议</a></li>
         </ul>
-      </div><!-- /.nevin-nav -->
+        <div class="navlist mt-1">
+          <h2 class=""><a href="#">常见问题</a></h2>
+        </div>
+      </div><!-- /.nav-box -->
 
-      <div class="nevin-list-box mt-45">
+      <div class="nevin-list-box ">
         <div class="nevin-list">
           <div class="nevin-title">
             <span class="ic-q">Q</span>
@@ -176,14 +168,19 @@
             <div class="nevin-details-box">
               <p>发财金平台的理财方式分别有：金财宝、域名宝等。</p>
               <p>金财宝是发财金为提高投资者的资金利用率和流动性，实现收益增值而推出的投资类短期投资理财计划。投资人成功
-完成委托投资程序后，金财宝受托将投资资金投资于银行、保险、信托等现金管理类产品。用户购买资金第二天即可
-计息，投资计划终止第二天即可到账。（T日15:00点前申购，T+1日起息，T日15:00点后申购，T+2日起息；T日投
-资终止，T+1日兑付，前述均为工作日，遇节假日、双休日顺延）。由金融机构严格把控资金投向，风险可控。金融
-机构以其信誉保障本息兑付。</p>
+    完成委托投资程序后，金财宝受托将投资资金投资于银行、保险、信托等现金管理类产品。用户购买资金第二天即可
+    计息，投资计划终止第二天即可到账。（T日15:00点前申购，T+1日起息，T日15:00点后申购，T+2日起息；T日投
+    资终止，T+1日兑付，前述均为工作日，遇节假日、双休日顺延）。由金融机构严格把控资金投向，风险可控。金融
+    机构以其信誉保障本息兑付。</p>
             </div>
           </div>
         </div>
       </div><!-- /.nevin-list-box -->
+    </div><!-- /. inner-->
+    
+
+    <div class="inner clearfix nevin-box">
+      
     </div><!-- /.nevin-box -->
   </div><!-- /.container -->
 
@@ -252,6 +249,15 @@
 <script src="js/app.js"></script>
 <script>
 $(function(){
+  //左导航下拉
+ $("#firstpane .menu_body:eq(0)").show();
+ $("#firstpane h3.menu_head").click(function(){
+  $(this).addClass("current").next("ul.menu_body").slideToggle(300).siblings("ul.menu_body").slideUp("slow");
+  $(this).siblings().removeClass("current");
+ });
+ 
+
+ //右导航下拉
   $(".nevin-content-show").show();
   $(".nevin-title").on('click',function(){
     var $this = $(this)
