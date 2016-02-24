@@ -67,13 +67,13 @@
     <div class="inner clearfix link-navigation"><a href="">首页</a>&nbsp;&gt;&nbsp;<a href="">帮助中心</a></div>
     <div class="inner clearfix box">
       <div class="nav-box" id="firstpane">
-        <h3 class="menu_head current"><a  href="#">理财产品</a></h3>
+        <h3 class="menu_head current">理财产品</h3>
         <ul style="display:block" class="menu_body">
-          <li><a class="active" href="#">金财宝</a></li>
+          <li><a class="cr-active" href="#">金财宝</a></li>
           <li><a href="#">银票宝宝</a></li>
           <li><a href="#">域名宝</a></li>
         </ul>
-        <h3 class="menu_head mt-1"><a href="#">帮助导航</a></h3>
+        <h3 class="menu_head mt-1">帮助导航</h3>
         <ul style="display:none" class="menu_body">
           <li><a href="#">登录注册</a></li>
           <li><a href="#">修改密码</a></li>
@@ -87,8 +87,8 @@
           <li><a href="#">用户的自我保护</a></li>
           <li><a href="#">网站相关协议</a></li>
         </ul>
-        <div class="navlist mt-1">
-          <h2 class=""><a href="#">常见问题</a></h2>
+        <div class=" mt-1">
+          <h3 class="navlist" onclick="window.location.href='contract.html'" >常见问题</h3>
         </div>
       </div><!-- /.nav-box -->
 
@@ -251,12 +251,11 @@
 $(function(){
   //左导航下拉
  $("#firstpane .menu_body:eq(0)").show();
- $("#firstpane h3.menu_head").click(function(){
+ $("#firstpane h3.menu_head").click(function() {
   $(this).addClass("current").next("ul.menu_body").slideToggle(300).siblings("ul.menu_body").slideUp("slow");
   $(this).siblings().removeClass("current");
  });
  
-
  //右导航下拉
   $(".nevin-content-show").show();
   $(".nevin-title").on('click',function(){

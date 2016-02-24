@@ -30,7 +30,6 @@
 .circular-box {
   overflow: hidden;
   margin-top: 20px;
- 
 }
 .circular-box li {
   width: 320px;
@@ -262,15 +261,14 @@
   background: #fff;
   width: 190px;
   float: left;
-  padding-bottom: 500px;
-  margin-bottom: -500px;
+  padding-bottom: 100px;
 }
-.nav-box h2,
+
 .nav-box h3 {
   width: 190px;
   height: 44px;
 }
-.nav-box h2 {
+.navlist {
   background: #99acd4;
 }
 
@@ -280,16 +278,15 @@
 .nav-box .current {
   background: #f3896c url(../images/help-new/arrow-down.png) center right no-repeat;
 }
-.nav-box h2.active,
-.nav-box h2:hover {
+.nav-box .active,
+.navlist:hover {
   background: #f3896c
 }
-
-.nav-box h3:hover {
+.nav-box .menu_head:hover {
   background: #f3896c url(../images/help-new/arrow-down.png) center right no-repeat;
 }
-.nav-box h2 a,
-.nav-box h3 a {
+
+.nav-box h3 {
   display: block;
   color : #fff;
   line-height: 44px;
@@ -298,8 +295,17 @@
   font-size: 20px;
   font-family: "Microsoft Yahei";
 }
+.nav-box ul {
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  padding: 0 10px;
+}
 .nav-box li a:hover {
   color:  #f3896c;
+}
+.nav-box li a.cr-active {
+  color: #f3896c;
+  border-color: #f3896c;
 }
 .mt-1 {
   margin-top: 1px;
@@ -315,7 +321,9 @@
   text-align: center;
   text-decoration: none;
 }
-
+.nav-box ul li:last-child a{
+  border: none;
+}
 .nevin-list-box {
   background: #fff;
   box-sizing:border-box;
