@@ -278,12 +278,10 @@
 .nav-box .current {
   background: #f3896c url(../images/help-new/arrow-down.png) center right no-repeat;
 }
+
 .nav-box .active,
 .navlist:hover {
   background: #f3896c
-}
-.nav-box .menu_head:hover {
-  background: #f3896c url(../images/help-new/arrow-down.png) center right no-repeat;
 }
 
 .nav-box h3 {

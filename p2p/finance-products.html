@@ -247,7 +247,8 @@ $(function(){
   //左导航下拉
  $("#firstpane .menu_body:eq(0)").show();
  $("#firstpane h3.menu_head").click(function() {
-  $(this).addClass("current").next("ul.menu_body").slideToggle(300).siblings("ul.menu_body").slideUp("slow");
+  $(this).toggleClass("current").siblings(".menu_head").removeClass("current");
+  $(this).next("ul.menu_body").slideToggle(300).siblings("ul.menu_body").slideUp("slow");
   $(this).siblings().removeClass("current");
  });
  
