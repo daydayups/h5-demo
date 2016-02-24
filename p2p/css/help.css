@@ -302,6 +302,7 @@
 }
 .nav-box li a:hover {
   color:  #f3896c;
+  border-color: #f3896c;
 }
 .nav-box li a.cr-active {
   color: #f3896c;
