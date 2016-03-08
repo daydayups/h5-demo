@@ -150,6 +150,7 @@ $.extend($,{
         $boxs.eq($tabs.index(this)).show();
       }
       typeof callback === 'function' && callback();
+      return false;
     });
   },
   popup: function (popWindow) {
