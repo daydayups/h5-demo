@@ -1968,6 +1968,7 @@ a:hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .project-detail .line .summary {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1977,6 +1978,7 @@ a:hover {
   position: relative;
   width: 618px;
 }
+
 .project-detail .line .ic-beginner-tag {
   left: 0;
   position: absolute;
@@ -4707,3 +4709,111 @@ img.verify-img {
   margin-left: 20px;
 }
 /* Edit by fang hong hui | end */
+/* order-detail */
+.order-steps .item {
+  border-bottom: 3px solid #dddddd;
+  float: left;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  width: 33.33%;
+}
+.order-steps .item .tt {
+  color: #c5c5c5;
+  font-weight: bold;
+  height: 24px;
+  padding-left: 35px;
+  position: relative;
+  width: 24px;
+}
+.order-steps .item .num {
+  background: #c5c5c5;
+  border-radius: 50%;
+  color: #ffffff;
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  left: 0;
+  position: absolute;
+  top: -5px;
+  width: 24px;
+}
+.order-steps .item.active {
+  border-bottom: 3px solid #e12b2b;
+  float: left;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  width: 33.33%;
+}
+.order-steps .item.active .tt {
+  color: #e12b2b;
+}
+.order-steps .item.active .num {
+  background: #e12b2b;
+}
+.order-status {
+  background: #fcf8e4;
+  border: 1px solid #feeba7;
+  padding: 30px;
+}
+.order-status .tt {
+  font-weight: bold;
+  font-size: 18px;
+}
+.order-line .tt {
+  font-size: 16px;
+}
+.order-line table {
+  width: 100%;
+}
+.order-line .order-detail-table-a td {
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+  line-height: 40px;
+}
+.order-line .order-detail-table-a .tt-a {
+  background: #f6f6f6;
+  text-align: center;
+  width: 15%;
+}
+.order-line .order-detail-table-a .ct-a {
+  padding-left: 20px;
+}
+.order-line .order-detail-table-b td {
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+  line-height: 40px;
+  text-align: center;
+}
+.order-line .order-detail-table-b th {
+  background: #f6f6f6;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+  line-height: 40px;
+}
+.order-line .order-detail-table-b .col {
+  text-align: center;
+  width: 25%;
+}
+.table-normal {
+  width: 100%;
+}
+.table-normal td {
+  padding: 10px 0;
+}
+.table-normal .col-1 {
+  padding-right: 10px;
+  text-align: right;
+}
+.table-normal .sub-table {
+  border: 1px solid #e6e6e6;
+}
+.table-normal .sub-table th {
+  background: #eeeeee;
+  color: #999999;
+  height: 35px;
+}
+.table-normal .sub-table td {
+  text-align: center;
+}
